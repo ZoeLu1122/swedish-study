@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SFI C级 · 第五单元：阅读与文本分析</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="common.css">
+<script src="common.js"></script>
+<style>
+:root{
+  --navy:#1a2744;--blue:#2e4fa3;--sky:#5b8de8;
+  --gold:#d4920a;--green:#2e8b57;--green-light:#d4f0dd;
+  --red:#c0392b;--red-light:#fdecea;--white:#f9fafb;
+  --gray:#6b7a99;--border:#dce3f0;
+  --ac:#8a4a10;--ab:#fff5eb;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Noto Sans SC',sans-serif;background:var(--white);color:var(--navy);}
+
+nav{background:var(--navy);color:white;padding:.85rem 1.5rem;display:flex;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 16px rgba(0,0,0,.25);}
+.nav-logo{font-family:'DM Serif Display',serif;font-size:1.05rem;margin-right:auto;}
+.nav-logo span{color:#f0a060;}
+.nav-tab{padding:.38rem .85rem;border-radius:100px;font-size:.73rem;cursor:pointer;border:none;background:rgba(255,255,255,.08);color:#a0b0cc;transition:all .2s;font-family:'Noto Sans SC',sans-serif;}
+.nav-tab:hover{background:rgba(255,255,255,.15);color:white;}
+.nav-tab.active{background:#8a4a10;color:white;}
+
+.page-header{background:linear-gradient(135deg,#1e0a00 0%,#5a2808 100%);color:white;padding:2rem 2rem 1.8rem;}
+.ph-inner{max-width:900px;margin:0 auto;}
+.ph-kicker{font-size:.67rem;letter-spacing:.22em;text-transform:uppercase;color:#f0a060;margin-bottom:.4rem;}
+.ph-title{font-family:'DM Serif Display',serif;font-size:clamp(1.5rem,4vw,2.2rem);margin-bottom:.4rem;}
+.ph-desc{font-size:.81rem;color:#e8904a;line-height:1.65;max-width:520px;}
+.ph-pills{display:flex;gap:.5rem;margin-top:1rem;flex-wrap:wrap;}
+.ph-pill{font-size:.67rem;padding:3px 10px;border-radius:100px;background:rgba(255,255,255,.1);color:#f8c098;}
+
+main{max-width:900px;margin:0 auto;padding:1.8rem 1.4rem 4rem;}
+.section{display:none;}
+.section.active{display:block;}
+
+.card{background:white;border:1px solid var(--border);border-radius:14px;padding:1.4rem 1.5rem;margin-bottom:1.2rem;box-shadow:0 1px 6px rgba(26,39,68,.05);}
+.card-title{font-size:.98rem;font-weight:600;color:var(--navy);margin-bottom:.25rem;display:flex;align-items:center;gap:.5rem;}
+.card-subtitle{font-size:.77rem;color:var(--gray);margin-bottom:1rem;line-height:1.55;}
+.rule-box{background:var(--ab);border-left:4px solid var(--ac);border-radius:0 10px 10px 0;padding:.9rem 1.1rem;margin:.9rem 0;font-size:.82rem;line-height:1.8;color:var(--navy);}
+.rule-box strong{color:var(--ac);}
+.tip-box{background:#fff8f0;border:1px dashed var(--ac);border-radius:10px;padding:.85rem 1rem;font-size:.79rem;color:#4a1a00;line-height:1.65;margin:.8rem 0;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0;}
+@media(max-width:540px){.two-col{grid-template-columns:1fr;}}
+.box-green{background:var(--ab);border-radius:12px;padding:1rem 1.1rem;border:1px solid #e8a060;}
+.box-red{background:#fff0ee;border-radius:12px;padding:1rem 1.1rem;border:1px solid #f0b0a0;}
+.box-title{font-size:.78rem;font-weight:700;margin-bottom:.6rem;}
+.bt-green{color:var(--ac);} .bt-red{color:var(--red);}
+.pattern-row{display:grid;grid-template-columns:auto 1fr;gap:.3rem .8rem;align-items:baseline;margin:.5rem 0;font-size:.83rem;}
+.pr-label{font-size:.67rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--gray);white-space:nowrap;}
+.pr-sv{font-weight:600;color:var(--navy);}
+.pr-zh{color:var(--gray);font-size:.75rem;}
+.hl-rel{background:rgba(138,74,16,.15);border-radius:4px;padding:0 4px;color:var(--ac);font-weight:700;}
+.hl-pas{background:rgba(46,79,163,.12);border-radius:4px;padding:0 4px;color:var(--blue);font-weight:700;}
+.hl-ex{background:rgba(46,139,87,.12);border-radius:4px;padding:0 4px;color:var(--green);font-weight:700;}
+
+/* ─── CONJ TABLE ─── */
+.conj-table{width:100%;border-collapse:collapse;font-size:.82rem;margin:.8rem 0;}
+.conj-table th{background:var(--ac);color:white;padding:.45rem .7rem;text-align:left;font-weight:600;font-size:.75rem;}
+.conj-table th:first-child{border-radius:8px 0 0 0;}
+.conj-table th:last-child{border-radius:0 8px 0 0;}
+.conj-table td{padding:.42rem .7rem;border-bottom:1px solid var(--border);}
+.conj-table tr:last-child td{border-bottom:none;}
+.conj-table tr:nth-child(even) td{background:#fff8f0;}
+.conj-table .td-hl{font-weight:700;color:var(--ac);}
+.conj-table .td-blue{font-weight:700;color:var(--blue);}
+
+/* ─── VOCAB ─── */
+.vocab-filters{display:flex;gap:.45rem;margin-bottom:1rem;flex-wrap:wrap;}
+.vf-btn{padding:.28rem .85rem;border-radius:100px;font-size:.71rem;border:1.5px solid var(--border);background:white;cursor:pointer;color:var(--gray);font-family:'Noto Sans SC',sans-serif;transition:all .2s;}
+.vf-btn:hover{border-color:var(--ac);color:var(--ac);}
+.vf-btn.active{background:var(--navy);border-color:var(--navy);color:white;}
+.vocab-mode-btn{padding:.38rem 1rem;border-radius:100px;font-size:.73rem;border:1.5px solid var(--ac);background:white;cursor:pointer;color:var(--ac);font-family:'Noto Sans SC',sans-serif;transition:all .2s;font-weight:600;}
+.vocab-mode-btn.flip-active{background:var(--ac);color:white;border-color:var(--ac);}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:.7rem;}
+
+.vocab-card{border-radius:12px;padding:.9rem 1rem;border:1.5px solid;position:relative;transition:transform .15s,box-shadow .15s;}
+.vocab-card:hover{transform:translateY(-2px);box-shadow:0 5px 14px rgba(0,0,0,.09);}
+.vocab-card.noun{background:#f4f8ff;border-color:#b0c8f8;}
+.vocab-card.verb{background:#fff5eb;border-color:#e8a060;}
+
+
+.vc-top{display:flex;align-items:center;gap:.4rem;margin-bottom:.5rem;padding-right:3rem;}
+.vc-type-badge{font-size:.62rem;font-weight:700;padding:2px 8px;border-radius:100px;color:white;}
+.noun .vc-type-badge{background:#2040a0;} .verb .vc-type-badge{background:#8a4a10;}
+.vc-en-badge{font-size:.6rem;padding:2px 7px;border-radius:100px;}
+.en-b{background:#e0eaff;color:#2040a0;} .ett-b{background:#fff0d8;color:#a04000;}
+
+.vc-headword{display:flex;align-items:baseline;gap:.4rem;margin-bottom:.6rem;flex-wrap:nowrap;}
+.vc-headword-sv{font-size:1.05rem;font-weight:700;color:var(--navy);}
+.vc-headword-py{font-size:clamp(.48rem,.68rem,1rem);color:#999;font-style:italic;white-space:nowrap;flex-shrink:1;min-width:0;}
+
+.vc-form-row{padding:.25rem 0;border-bottom:1px solid rgba(0,0,0,.06);}
+.vc-form-row:last-of-type{border-bottom:none;}
+.vc-form-top{display:flex;align-items:baseline;gap:0;flex-wrap:wrap;}
+.vc-row-label{font-size:.63rem;color:var(--gray);white-space:nowrap;flex-shrink:0;}
+.vc-row-sv{font-size:.84rem;font-weight:600;color:var(--navy);overflow-wrap:normal;}
+.vc-row-py{display:block;font-size:clamp(.48rem,.63rem,1rem);color:#aaa;font-style:italic;margin-top:.03rem;padding-left:48px;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+.vc-verb-row{padding:.25rem 0;border-bottom:1px solid rgba(0,0,0,.06);}
+.vc-verb-row:last-of-type{border-bottom:none;}
+.vc-verb-top{display:flex;align-items:baseline;gap:0;flex-wrap:wrap;}
+.vc-verb-py{display:block;font-size:clamp(.48rem,.63rem,1rem);color:#aaa;font-style:italic;margin-top:.03rem;padding-left:48px;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+.d-def{color:#c05800;font-weight:700;} .d-pl{color:#1a55c0;font-weight:700;} .d-pd{color:#1a8040;font-weight:700;}
+.vc-chinese{font-size:.82rem;color:#333;margin-top:.55rem;padding-top:.45rem;border-top:1px solid rgba(0,0,0,.07);font-weight:500;}
+
+.speak-word{cursor:pointer;border-radius:4px;padding:0 2px;transition:background .15s,color .15s;}
+.speak-word:hover{background:rgba(138,74,16,.15);color:var(--ac);}
+.speak-word.speaking{background:var(--ac);color:white;}
+.d-word{cursor:pointer;border-radius:3px;padding:0 1px;transition:background .12s,color .12s;display:inline;}
+.d-word:hover{background:rgba(138,74,16,.15);color:var(--ac);}
+.d-word.speaking{background:var(--ac);color:white;}
+
+/* ─── FLIP CARD ─── */
+.flip-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:.85rem;}
+.flip-card-wrap{perspective:900px;height:130px;}
+.flip-card-inner{position:relative;width:100%;height:100%;transition:transform .45s;transform-style:preserve-3d;cursor:pointer;}
+.flip-card-wrap.flipped .flip-card-inner{transform:rotateY(180deg);}
+.flip-front,.flip-back{position:absolute;inset:0;border-radius:12px;backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:.6rem .8rem;border:1.5px solid var(--border);}
+.flip-front{background:white;box-shadow:0 2px 8px rgba(0,0,0,.07);}
+.flip-back{background:#3a1800;color:white;transform:rotateY(180deg);}
+.flip-zh{font-size:.95rem;font-weight:600;color:var(--navy);text-align:center;}
+.flip-type{font-size:.62rem;color:var(--gray);margin-top:.3rem;}
+.flip-sv{font-size:1rem;font-weight:700;color:white;text-align:center;}
+.flip-forms{display:flex;flex-wrap:wrap;justify-content:center;gap:.15rem .25rem;margin-top:.3rem;}
+.ff-row{font-size:.68rem;color:#f8c080;font-weight:600;}
+.ff-row em{font-style:normal;font-size:.58rem;color:#d09050;margin-right:.15rem;}
+.ff-sep{font-size:.6rem;color:#604020;}
+
+/* ─── DIALOGUE ─── */
+.d-line{display:flex;gap:.75rem;margin-bottom:.75rem;align-items:flex-start;}
+.d-line.right{flex-direction:row-reverse;}
+.d-avatar{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;background:#f0f0f0;}
+.d-bubble{max-width:76%;padding:.65rem .9rem;border-radius:12px;font-size:.83rem;line-height:1.55;}
+.d-line:not(.right) .d-bubble{background:#fff5eb;border-bottom-left-radius:3px;}
+.d-line.right .d-bubble{background:#fff0e8;border-bottom-right-radius:3px;}
+.d-sv{font-weight:600;color:var(--navy);}
+.d-zh{font-size:.71rem;color:var(--gray);margin-top:.18rem;}
+.dialogue-note{background:#f0fff5;border-radius:8px;padding:.7rem .95rem;font-size:.75rem;color:#0a4020;margin-top:.4rem;line-height:1.65;}
+.tts-btn{display:inline-flex;align-items:center;margin-left:.5rem;padding:2px 7px;background:rgba(138,74,16,.1);border:1px solid rgba(138,74,16,.3);border-radius:100px;font-size:.72rem;cursor:pointer;color:var(--ac);vertical-align:middle;transition:all .2s;line-height:1;}
+.tts-btn:hover{background:var(--ac);color:white;border-color:var(--ac);}
+.tts-btn.speaking{background:var(--ac);color:white;animation:pulse 1s infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+.tts-full-btn{padding:.5rem 1.1rem;border-radius:100px;background:var(--ac);color:white;border:1.5px solid var(--ac);font-size:.78rem;cursor:pointer;font-family:'Noto Sans SC',sans-serif;transition:all .2s;}
+.tts-full-btn:hover:not(:disabled){background:#0d4020;}
+.tts-full-btn:disabled{background:#aaa;border-color:#aaa;cursor:default;}
+
+/* ─── READING PASSAGE ─── */
+.reading-passage{background:#f8fff9;border:1px solid #b8e8c4;border-radius:12px;padding:1.1rem 1.3rem;margin-bottom:1.2rem;font-size:.84rem;line-height:1.9;color:var(--navy);}
+.rp-title{font-weight:700;font-size:.92rem;color:var(--ac);margin-bottom:.6rem;}
+.rp-note{font-size:.72rem;color:var(--gray);margin-top:.7rem;font-style:italic;}
+
+/* ─── QUIZ ─── */
+.progress-dots{display:flex;gap:.35rem;margin-bottom:1.2rem;flex-wrap:wrap;}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--border);transition:background .3s;}
+.dot.current{background:#2a8a38;}.dot.correct{background:var(--green);}.dot.wrong{background:var(--red);}
+.quiz-question{margin-bottom:1.6rem;padding-bottom:1.6rem;border-bottom:1px solid var(--border);}
+.quiz-question:last-of-type{border-bottom:none;}
+.qq-meta{display:flex;align-items:center;gap:.6rem;margin-bottom:.4rem;}
+.qq-num{font-size:.67rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gray);}
+.qq-type-badge{font-size:.62rem;padding:2px 9px;border-radius:100px;font-weight:600;}
+.t-choice{background:#fff3cc;color:#7a5000;}.t-fill{background:#d8f5e0;color:#1a5030;}
+.t-sv2zh{background:#fff0d8;color:#804000;}.t-zh2sv{background:#ffd8f0;color:#800040;}
+.t-read{background:#d8eeff;color:#1a3060;}
+.qq-text{font-size:.9rem;color:var(--navy);margin-bottom:.25rem;line-height:1.55;}
+.qq-zh{font-size:.77rem;color:#555;margin-bottom:.75rem;line-height:1.4;padding:.35rem .6rem;background:#f2fbf4;border-radius:6px;border-left:3px solid #2a8a38;}
+.quiz-options{display:flex;flex-direction:column;gap:.38rem;}
+.quiz-opt{padding:.6rem 1rem;border-radius:9px;border:1.5px solid var(--border);background:white;font-size:.83rem;cursor:pointer;transition:all .2s;text-align:left;font-family:'Noto Sans SC',sans-serif;color:var(--navy);}
+.quiz-opt:hover:not(:disabled){border-color:var(--ac);background:var(--ab);}
+.quiz-opt.selected{border-color:var(--ac);background:var(--ab);}
+.quiz-opt.correct{border-color:var(--green);background:var(--green-light);color:#1a5c35;font-weight:600;}
+.quiz-opt.wrong{border-color:var(--red);background:var(--red-light);color:#8a1010;}
+.quiz-opt:disabled{cursor:default;}
+.fill-wrap{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.5rem;}
+.fill-input{padding:.48rem .8rem;border:2px solid var(--border);border-radius:8px;font-size:.87rem;font-family:'Noto Sans SC',sans-serif;color:var(--navy);width:200px;outline:none;transition:border-color .2s;}
+.fill-input:focus{border-color:var(--ac);}
+.fill-input.correct{border-color:var(--green);background:var(--green-light);}
+.fill-input.wrong{border-color:var(--red);background:var(--red-light);}
+.fill-input:disabled{cursor:default;}
+.fill-hint{font-size:.7rem;color:var(--gray);}
+.quiz-feedback{font-size:.77rem;margin-top:.5rem;padding:.5rem .8rem;border-radius:8px;display:none;line-height:1.55;}
+.quiz-feedback.show{display:block;}
+.quiz-feedback.ok{background:var(--green-light);color:#1a5030;}
+.quiz-feedback.no{background:var(--red-light);color:#7a1010;}
+.submit-btn{display:block;width:100%;margin-top:1.5rem;padding:.88rem;background:var(--ac);color:white;border:none;border-radius:10px;font-size:.88rem;font-family:'Noto Sans SC',sans-serif;cursor:pointer;transition:background .2s;font-weight:600;}
+.submit-btn:hover:not(:disabled){background:#0d4020;}
+.submit-btn:disabled{background:#b0bbc8;cursor:default;}
+.quiz-score{background:#092e14;color:white;border-radius:14px;padding:1.5rem;text-align:center;display:none;margin-top:1rem;}
+.quiz-score.show{display:block;}
+.qs-num{font-family:'DM Serif Display',serif;font-size:3rem;color:#6ddc8e;line-height:1;}
+.qs-label{font-size:.8rem;color:#80c898;margin-top:.25rem;}
+.qs-msg{font-size:.88rem;margin-top:1rem;line-height:1.6;color:#c0eeca;}
+.retry-btn{margin-top:1rem;padding:.6rem 1.5rem;background:var(--green);color:white;border:none;border-radius:100px;font-size:.82rem;cursor:pointer;font-family:'Noto Sans SC',sans-serif;}
+
+body{
+  --primary: #8a4a10;
+  --primary-light: #fff5eb;
+  --primary-dark: #6a3008;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">SFI <span>C级</span> · 第五单元</div>
+  <button class="nav-tab active" onclick="showSection('grammar',this)">📖 语法</button>
+  <button class="nav-tab" onclick="showSection('vocab',this)">📋 词汇</button>
+  <button class="nav-tab" onclick="showSection('dialogue',this)">💬 对话</button>
+  <button class="nav-tab" onclick="showSection('quiz',this)">🧪 测验</button>
+</nav>
+
+<div class="page-header">
+  <div class="ph-inner">
+    <div class="ph-kicker">SFI C级 · 第五单元 · 语法核心</div>
+    <div class="ph-title">阅读与文本分析</div>
+    <div class="ph-desc">掌握关系从句（som/vars/vilket）、-s被动语态，以及阅读理解常用句式，能够分析和讨论文章内容。</div>
+    <div class="ph-pills">
+      <span class="ph-pill">① 关系代词 som</span>
+      <span class="ph-pill">② 所有格 vars</span>
+      <span class="ph-pill">③ 句子指代 vilket</span>
+      <span class="ph-pill">④ 被动语态 -s</span>
+      <span class="ph-pill">⑤ 阅读句式</span>
+      <span class="ph-pill">⏱ 约50分钟</span>
+    </div>
+  </div>
+</div>
+
+<main>
+<!-- ===== 语法 ===== -->
+<section class="section active" id="grammar">
+
+  <div class="card">
+    <div class="card-title">① 关系从句基础：<span class="hl-rel">som</span></div>
+    <div class="card-subtitle">som 是最常用的关系代词，可以替代主语（人/物）或宾语（人/物）。</div>
+    <div class="rule-box">
+      <strong>基本结构：</strong>主句名词 + <strong>som</strong> + 从句（缺少主语或宾语）<br>
+      Mannen <strong>som</strong> arbetar här heter Anders. → 在这里工作的那个男人叫安德斯。<br>
+      Artikeln <strong>som</strong> vi läste igår var intressant. → 我们昨天读的那篇文章很有意思。<br>
+      Texten <strong>som</strong> handlar om hälsa är viktig. → 关于健康的那篇文章很重要。
+    </div>
+    <div class="two-col">
+      <div class="box-green">
+        <div class="box-title bt-green">som 替代主语（主语关系从句）</div>
+        <div style="font-size:.81rem;line-height:2;">
+          Eleven <span class="hl-rel">som</span> svarade rätt fick ett pris.<br>
+          <span style="color:var(--gray);font-size:.73rem;">答对了的那个学生得了奖。</span><br>
+          Källan <span class="hl-rel">som</span> används är pålitlig.<br>
+          <span style="color:var(--gray);font-size:.73rem;">被使用的那个来源是可信的。</span>
+        </div>
+      </div>
+      <div class="box-green">
+        <div class="box-title bt-green">som 替代宾语（宾语关系从句）</div>
+        <div style="font-size:.81rem;line-height:2;">
+          Boken <span class="hl-rel">som</span> jag rekommenderar är bra.<br>
+          <span style="color:var(--gray);font-size:.73rem;">我推荐的那本书很好。</span><br>
+          Argumentet <span class="hl-rel">som</span> hon nämnde var starkt.<br>
+          <span style="color:var(--gray);font-size:.73rem;">她提到的那个论点很有力。</span>
+        </div>
+      </div>
+    </div>
+    <div class="tip-box">💡 <strong>记忆技巧：</strong>som 后面的从句里缺少一个名词成分（主语或宾语），这个缺失的成分就是前面的名词。<br>
+    ✅ Texten som <u>vi läste</u>（缺宾语：vi läste texten → texten som vi läste）<br>
+    ✅ Texten som <u>handlar</u> om hälsa（缺主语：texten handlar → texten som handlar）</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">② 所有格关系代词：<span class="hl-rel">vars</span></div>
+    <div class="card-subtitle">vars 表示"谁的/它的"，用于说明前面名词的所属关系，相当于英语 whose。</div>
+    <div class="rule-box">
+      <strong>基本结构：</strong>主句名词 + <strong>vars</strong> + 属于该名词的事物<br>
+      Eleven <strong>vars</strong> uppsats var bäst fick ett pris. → 作文最好的那个学生得了奖。<br>
+      Författaren <strong>vars</strong> böcker jag läser är känd. → 我读他书的那位作家很有名。<br>
+      Huset <strong>vars</strong> fönster är röda är gammalt. → 窗户是红色的那栋房子很旧。
+    </div>
+    <div class="tip-box">⚠️ <strong>vars 与 som 的区别：</strong><br>
+    Eleven <span class="hl-rel">som</span> svarade rätt... → 关系到学生的动作（答对了的学生）<br>
+    Eleven <span class="hl-rel">vars</span> svar var rätt... → 关系到学生拥有的东西（答案是对的那个学生）<br>
+    简单记忆：vars 后面紧跟"属于前面名词的东西"，相当于 hans/hennes/dess。</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">③ 句子指代关系代词：<span class="hl-rel">vilket</span></div>
+    <div class="card-subtitle">vilket 用于指代整个前面的句子或情况，不是指某个具体名词，常放在逗号后。</div>
+    <div class="rule-box">
+      <strong>基本结构：</strong>完整句子，+ <strong>vilket</strong> + 对整句的说明<br>
+      Hon klarade provet, <strong>vilket</strong> var fantastiskt. → 她通过了考试，这真太棒了。<br>
+      Han kom för sent, <strong>vilket</strong> gjorde chefen arg. → 他来晚了，这让老板很生气。<br>
+      De bestämde sig för att flytta, <strong>vilket</strong> alla förstod. → 他们决定搬家，这大家都理解。
+    </div>
+    <div class="two-col">
+      <div class="box-green">
+        <div class="box-title bt-green">✅ vilket（指代整句）</div>
+        <div style="font-size:.81rem;line-height:1.9;">
+          Hon läste texten, <span class="hl-rel">vilket</span> tog lång tid.<br>
+          <span style="color:var(--gray);font-size:.73rem;">她读了文章，这花了很长时间。</span><br>
+          Det regnade hela dagen, <span class="hl-rel">vilket</span> var tråkigt.<br>
+          <span style="color:var(--gray);font-size:.73rem;">整天都在下雨，这很无聊。</span>
+        </div>
+      </div>
+      <div class="box-red">
+        <div class="box-title bt-red">❌ 不能用 som 指代整句</div>
+        <div style="font-size:.81rem;line-height:1.9;">
+          ✗ Hon klarade provet, <span style="color:var(--red);">som</span> var fantastiskt.<br>
+          <span style="color:var(--gray);font-size:.73rem;">（som 只能指代具体名词，不能指代整件事）</span><br>
+          ✅ Hon klarade provet, <span class="hl-rel">vilket</span> var fantastiskt.
+        </div>
+      </div>
+    </div>
+    <div class="tip-box">🎯 <strong>SFI考试提示：</strong><br>
+    som → 前有名词作先行词（人/物）<br>
+    vars → 前有名词，表达所属（谁的……）<br>
+    vilket → 前有整个句子，通常紧接逗号</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">④ 被动语态 -s 形式</div>
+    <div class="card-subtitle">-s被动语态是瑞典语特有的简洁被动结构，在书面语和正式场合频繁出现。</div>
+    <div class="rule-box">
+      <strong>构成规则：</strong>现在时去掉 -r，加 -s<br>
+      läser → <strong>läses</strong>（被阅读）· skriver → <strong>skrivs</strong>（被写）<br>
+      arbetar → <strong>arbetas</strong>（被工作于/被执行）· använder → <strong>används</strong>（被使用）<br>
+      finansierar → <strong>finansieras</strong>（被资助）
+    </div>
+    <table class="conj-table">
+      <tr><th>原形</th><th>主动（现在时）</th><th class="td-blue">-s被动（现在时）</th><th>中文（被动义）</th></tr>
+      <tr><td>att läsa</td><td>läser</td><td class="td-blue">läses</td><td>被阅读</td></tr>
+      <tr><td>att skriva</td><td>skriver</td><td class="td-blue">skrivs</td><td>被书写</td></tr>
+      <tr><td>att använda</td><td>använder</td><td class="td-blue">används</td><td>被使用</td></tr>
+      <tr><td>att finansiera</td><td>finansierar</td><td class="td-blue">finansieras</td><td>被资助</td></tr>
+      <tr><td>att remittera</td><td>remitterar</td><td class="td-blue">remitteras</td><td>被转介</td></tr>
+      <tr><td>att diskutera</td><td>diskuterar</td><td class="td-blue">diskuteras</td><td>被讨论</td></tr>
+    </table>
+    <div class="two-col">
+      <div class="box-green">
+        <div class="box-title bt-green">过去时 -s 被动</div>
+        <div style="font-size:.81rem;line-height:2;">
+          läste → <span class="hl-pas">lästes</span>（被阅读了）<br>
+          skickade → <span class="hl-pas">skickades</span>（被发送了）<br>
+          diskuterade → <span class="hl-pas">diskuterades</span>（被讨论了）
+        </div>
+      </div>
+      <div class="box-green">
+        <div class="box-title bt-green">常见例句</div>
+        <div style="font-size:.81rem;line-height:2;">
+          Texten <span class="hl-pas">läses</span> av alla elever.<br>
+          <span style="color:var(--gray);font-size:.73rem;">文章被所有学生阅读。</span><br>
+          Rapporten <span class="hl-pas">skickades</span> igår.<br>
+          <span style="color:var(--gray);font-size:.73rem;">报告昨天被发送了。</span>
+        </div>
+      </div>
+    </div>
+    <div class="tip-box">📝 <strong>注意：</strong>skriva→skrivs（-er变-s，不是-ers）；有些动词去掉-er直接加-s：<br>
+    arbetar→arbetas，läser→läses，skriver→skrivs，använder→används。<br>
+    规律：去掉现在时词尾 -r，加 -s。若词尾为 -er，则变成 -es（läs<strong>er</strong>→läs<strong>es</strong>）。</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">⑤ 阅读理解常用句式</div>
+    <div class="card-subtitle">这些句式在SFI阅读测试和写作中频繁使用，掌握它们有助于快速理解文章结构。</div>
+    <table class="conj-table">
+      <tr><th>瑞典语句式</th><th>中文含义</th><th>用法说明</th></tr>
+      <tr><td><strong>Texten handlar om...</strong></td><td>文章讲的是……</td><td>概述文章主题</td></tr>
+      <tr><td><strong>Författaren påstår att...</strong></td><td>作者声称……</td><td>引用作者观点</td></tr>
+      <tr><td><strong>Enligt texten...</strong></td><td>根据文章……</td><td>引用文章内容</td></tr>
+      <tr><td><strong>Det framgår av texten att...</strong></td><td>文章表明……</td><td>说明文章表达的信息</td></tr>
+      <tr><td><strong>Sammanfattningsvis...</strong></td><td>总的来说……</td><td>总结段落或文章</td></tr>
+      <tr><td><strong>Å ena sidan... å andra sidan...</strong></td><td>一方面……另一方面……</td><td>对比论述</td></tr>
+      <tr><td><strong>Texten avslutas med att...</strong></td><td>文章以……结尾</td><td>描述文章结尾</td></tr>
+    </table>
+    <div class="tip-box">🎯 <strong>SFI写作模板：</strong><br>
+    Texten handlar om [主题]. Författaren påstår att [主要观点]. Enligt texten [具体内容]. Sammanfattningsvis [总结].</div>
+  </div>
+
+</section>
+
+<!-- ===== 词汇 ===== -->
+<section class="section" id="vocab">
+  <div class="card">
+    <div class="card-title">📋 本单元词汇（14个）</div>
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.6rem;margin-bottom:.8rem;">
+      <div class="vocab-filters" id="vocabFilters">
+        <button class="vf-btn active" onclick="filterVocab('all',this)">全部（14）</button>
+        <button class="vf-btn" onclick="filterVocab('verb',this)">⚡ 动词</button>
+        <button class="vf-btn" onclick="filterVocab('noun',this)">📦 名词</button>
+      </div>
+      <button class="vocab-mode-btn" id="flipModeBtn" onclick="toggleFlipMode()">🔀 翻转模式</button>
+    </div>
+    <div class="vocab-grid" id="vocabGrid"></div>
+    <div id="flipGrid" style="display:none;" class="flip-grid"></div>
+  </div>
+</section>
+
+<!-- ===== 对话 ===== -->
+<section class="section" id="dialogue">
+  <div class="card">
+    <div class="card-title">💬 对话一：课堂讨论阅读材料</div>
+    <div class="card-subtitle">老师与学生讨论一篇关于瑞典医疗的文章。<span style="color:var(--ac);font-weight:600;">绿色</span>=关系代词（som/vars/vilket），<span style="color:var(--blue);font-weight:600;">蓝色</span>=-s被动语态。点击任意单词可听发音。</div>
+    <div style="display:flex;gap:.5rem;margin-bottom:1.1rem;flex-wrap:wrap;">
+      <button class="tts-full-btn" id="btn-full1" onclick="toggleFull(1)">▶ 朗读整段对话</button>
+    </div>
+    <div class="dialogue">
+      <div class="d-line"><div class="d-avatar">👩‍🏫</div><div class="d-bubble">
+        <div class="d-sv">Vi ska diskutera texten <span class="hl-rel">som</span> ni läste till idag. Vad handlar den om?<button class="tts-btn" onclick="speak('Vi ska diskutera texten som ni läste till idag. Vad handlar den om?')">🔊</button></div>
+        <div class="d-zh">我们来讨论你们今天读的那篇文章。它讲的是什么？</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">🧑‍🎓</div><div class="d-bubble">
+        <div class="d-sv">Den handlar om hälso- och sjukvård i Sverige. Vårdsystemet, <span class="hl-rel">som</span> <span class="hl-pas">finansieras</span> av skatterna, är tillgängligt för alla invånare.<button class="tts-btn" onclick="speak('Den handlar om hälso- och sjukvård i Sverige. Vårdsystemet, som finansieras av skatterna, är tillgängligt för alla invånare.')">🔊</button></div>
+        <div class="d-zh">它讲的是瑞典的医疗体系。这个由税收资助的医疗系统面向所有居民开放。</div>
+      </div></div>
+      <div class="d-line"><div class="d-avatar">👩‍🏫</div><div class="d-bubble">
+        <div class="d-sv">Bra! Vilket argument tycker du är starkast i texten?<button class="tts-btn" onclick="speak('Bra! Vilket argument tycker du är starkast i texten?')">🔊</button></div>
+        <div class="d-zh">好！你认为文章中哪个论点最有力？</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">🧑‍🎓</div><div class="d-bubble">
+        <div class="d-sv">Jag tycker att argumentet om jämlik vård är starkast. Det <span class="hl-pas">påstås</span> att alla har rätt till samma vård, <span class="hl-rel">vilket</span> känns rättvist.<button class="tts-btn" onclick="speak('Jag tycker att argumentet om jämlik vård är starkast. Det påstås att alla har rätt till samma vård, vilket känns rättvist.')">🔊</button></div>
+        <div class="d-zh">我认为关于平等医疗的论点最有力。文章声称所有人都有权获得同等医疗，这感觉很公平。</div>
+      </div></div>
+      <div class="d-line"><div class="d-avatar">👩‍🏫</div><div class="d-bubble">
+        <div class="d-sv">Utmärkt analys! Kan du nämna ett nyckelord <span class="hl-rel">som</span> <span class="hl-pas">används</span> genomgående i texten?<button class="tts-btn" onclick="speak('Utmärkt analys! Kan du nämna ett nyckelord som används genomgående i texten?')">🔊</button></div>
+        <div class="d-zh">分析得很好！你能说出一个在文章中贯穿始终使用的关键词吗？</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">🧑‍🎓</div><div class="d-bubble">
+        <div class="d-sv">"Jämlikhet!" Det är ett ord <span class="hl-rel">som</span> förekommer i varje stycke. Sammanfattningsvis beskriver texten ett system <span class="hl-rel">vars</span> mål är att ge alla lika vård.<button class="tts-btn" onclick="speak('Jämlikhet! Det är ett ord som förekommer i varje stycke. Sammanfattningsvis beskriver texten ett system vars mål är att ge alla lika vård.')">🔊</button></div>
+        <div class="d-zh">"平等！"这是一个出现在每个段落的词。总的来说，文章描述的是一个目标是给所有人平等医疗的系统。</div>
+      </div></div>
+    </div>
+    <div class="dialogue-note">🟢 <strong style="color:var(--ac)">关系代词：</strong>som（关系从句）、vars（所属关系）、vilket（指代整句）<br>
+    🔵 <strong style="color:var(--blue)">-s被动：</strong>finansieras（被资助）、påstås（被声称）、används（被使用）</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">💬 对话二：讨论新闻文章</div>
+    <div class="card-subtitle">两位同学课后讨论一篇气候变化的新闻文章。</div>
+    <div style="display:flex;gap:.5rem;margin-bottom:1.1rem;flex-wrap:wrap;">
+      <button class="tts-full-btn" id="btn-full2" onclick="toggleFull(2)">▶ 朗读整段对话</button>
+    </div>
+    <div class="dialogue">
+      <div class="d-line"><div class="d-avatar">🧑</div><div class="d-bubble">
+        <div class="d-sv">Har du läst artikeln <span class="hl-rel">som</span> låg på skolans hemsida?<button class="tts-btn" onclick="speak('Har du läst artikeln som låg på skolans hemsida?')">🔊</button></div>
+        <div class="d-zh">你读过学校网站上的那篇文章吗？</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">👩</div><div class="d-bubble">
+        <div class="d-sv">Ja! Den handlade om klimatförändringar. Argumenten <span class="hl-rel">som</span> <span class="hl-pas">presenterades</span> var mycket övertygande.<button class="tts-btn" onclick="speak('Ja! Den handlade om klimatförändringar. Argumenten som presenterades var mycket övertygande.')">🔊</button></div>
+        <div class="d-zh">读了！它讲的是气候变化。文中提出的论点非常有说服力。</div>
+      </div></div>
+      <div class="d-line"><div class="d-avatar">🧑</div><div class="d-bubble">
+        <div class="d-sv">Vad tyckte du om källorna <span class="hl-rel">som</span> <span class="hl-pas">användes</span>?<button class="tts-btn" onclick="speak('Vad tyckte du om källorna som användes?')">🔊</button></div>
+        <div class="d-zh">你觉得文章使用的那些来源怎么样？</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">👩</div><div class="d-bubble">
+        <div class="d-sv">De verkade trovärdiga. Fakta <span class="hl-pas">hämtades</span> från vetenskapliga rapporter, <span class="hl-rel">vilket</span> gav texten mer trovärdighet.<button class="tts-btn" onclick="speak('De verkade trovärdiga. Fakta hämtades från vetenskapliga rapporter, vilket gav texten mer trovärdighet.')">🔊</button></div>
+        <div class="d-zh">它们看起来很可信。数据来自科学报告，这使文章更有可信度。</div>
+      </div></div>
+      <div class="d-line"><div class="d-avatar">🧑</div><div class="d-bubble">
+        <div class="d-sv">Rubriken sammanfattade innehållet perfekt, tycker jag. Och budskapet <span class="hl-pas">tolkades</span> på ett nytt sätt.<button class="tts-btn" onclick="speak('Rubriken sammanfattade innehållet perfekt, tycker jag. Och budskapet tolkades på ett nytt sätt.')">🔊</button></div>
+        <div class="d-zh">我觉得标题完美地总结了内容。而且主旨是以一种新的方式被诠释的。</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">👩</div><div class="d-bubble">
+        <div class="d-sv">Ja! Ska vi analysera texten tillsammans och jämföra våra tolkningar? Författaren <span class="hl-rel">vars</span> stil jag gillar mest skriver alltid tydliga påståenden.<button class="tts-btn" onclick="speak('Ja! Ska vi analysera texten tillsammans och jämföra våra tolkningar? Författaren vars stil jag gillar mest skriver alltid tydliga påståenden.')">🔊</button></div>
+        <div class="d-zh">好啊！我们一起分析文章，比较我们的解读吧？我最喜欢的那位作家的风格总是写出清晰的论断。</div>
+      </div></div>
+    </div>
+    <div class="dialogue-note">🟢 <strong style="color:var(--ac)">关系代词：</strong>som（替代主语/宾语）、vars（所属：作家的风格）、vilket（指代整件事）<br>
+    🔵 <strong style="color:var(--blue)">-s被动：</strong>presenterades（被提出了）、användes（被使用了）、hämtades（被获取了）、tolkades（被诠释了）</div>
+  </div>
+</section>
+
+<!-- ===== 测验 ===== -->
+<section class="section" id="quiz">
+  <div class="reading-passage">
+    <div class="rp-title">📄 阅读文段（回答第8–10题时参考）</div>
+    <p><strong>Vården i Sverige</strong></p>
+    <p style="margin-top:.5rem;">Hälso- och sjukvården i Sverige <span class="hl-pas">finansieras</span> av skatterna och är tillgänglig för alla invånare. Det svenska vårdsystemet anses vara ett av de bästa i världen. Alla medborgare har rätt till jämlik vård, <span class="hl-rel">vilket</span> innebär att ingen nekas vård på grund av ekonomiska skäl.</p>
+    <p style="margin-top:.6rem;">Primärvården, <span class="hl-rel">som</span> utgör grunden i systemet, erbjuder grundläggande medicinska tjänster. Patienter <span class="hl-rel">vars</span> tillstånd är allvarliga <span class="hl-pas">remitteras</span> till specialister. Systemet <span class="hl-pas">finansieras</span> genom skatteintäkter, <span class="hl-rel">vilket</span> gör att kostnaden för enskilda patienter hålls låg.</p>
+    <div class="rp-note">🟢 绿色 = 关系代词（som/vars/vilket）　🔵 蓝色 = -s被动语态</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🧪 综合测验：阅读与文本分析</div>
+    <div class="card-subtitle">共10题，涵盖关系从句、-s被动、词汇和阅读理解，提交后显示详细解析。</div>
+    <div class="progress-dots" id="progressDots"></div>
+    <div id="quizContainer"></div>
+    <button class="submit-btn" id="submitBtn" onclick="submitQuiz()" disabled>提交全部答案</button>
+    <div class="quiz-score" id="quizScore">
+      <div class="qs-num" id="scoreNum">-</div>
+      <div class="qs-label">答对题数</div>
+      <div class="qs-msg" id="scoreMsg"></div>
+      <button class="retry-btn" onclick="resetQuiz()">🔄 重新测验</button>
+    </div>
+  </div>
+</section>
+</main>
+
+<script>
+// ═══════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════
+const UNIT_KEY = 'sfi_c5_unit5';
+window.sfiUnitKey = UNIT_KEY;
+
+// ═══════════════════════════════════════════════════════════
+// VOCAB DATA
+// ═══════════════════════════════════════════════════════════
+function diffHL(base, form, cls) {
+  let i = 0;
+  while (i < base.length && i < form.length && base[i] === form[i]) i++;
+  let j = 0;
+  while (j < base.length - i && j < form.length - i && base[base.length-1-j] === form[form.length-1-j]) j++;
+  const prefix = form.slice(0, i), changed = form.slice(i, j > 0 ? form.length - j : form.length), suffix = j > 0 ? form.slice(form.length - j) : '';
+  if (!changed) return form;
+  return `${prefix}<span class="${cls}">${changed}</span>${suffix}`;
+}
+
+const vocabData = [
+  // NOUNS
+  {type:'noun',en:'en', sv:'rubrik',         py:'鲁布里克',     def:'rubriken',          defPy:'鲁布里肯',       pl:'rubriker',          plPy:'鲁布里克尔',     plDef:'rubrikerna',          plDefPy:'鲁布里克纳',   zh:'标题/题目'},
+  {type:'noun',en:'ett',sv:'stycke',          py:'斯蒂克',       def:'stycket',           defPy:'斯蒂克特',       pl:'stycken',           plPy:'斯蒂肯',         plDef:'styckena',            plDefPy:'斯蒂克纳',     zh:'段落'},
+  {type:'noun',en:'en', sv:'sammanfattning',  py:'萨曼法特宁',   def:'sammanfattningen',  defPy:'萨曼法特宁恩',   pl:'sammanfattningar',  plPy:'萨曼法特宁阿尔', plDef:'sammanfattningarna',  plDefPy:'萨曼法特宁纳', zh:'摘要/总结'},
+  {type:'noun',en:'ett',sv:'innehåll',        py:'因纳霍尔',     def:'innehållet',        defPy:'因纳霍勒特',     pl:'innehåll',          plPy:'因纳霍尔',       plDef:'innehållen',          plDefPy:'因纳霍伦',     zh:'内容'},
+  {type:'noun',en:'ett',sv:'budskap',         py:'布德斯卡普',   def:'budskapet',         defPy:'布德斯卡佩特',   pl:'budskap',           plPy:'布德斯卡普',     plDef:'budskapen',           plDefPy:'布德斯卡彭',   zh:'主旨/信息'},
+  {type:'noun',en:'ett',sv:'påstående',       py:'波斯托安德',   def:'påståendet',        defPy:'波斯托安德特',   pl:'påståenden',        plPy:'波斯托安登',     plDef:'påståendena',         plDefPy:'波斯托安德纳', zh:'论断/声明/陈述'},
+  {type:'noun',en:'ett',sv:'argument',        py:'阿尔古门特',   def:'argumentet',        defPy:'阿尔古门特特',   pl:'argument',          plPy:'阿尔古门特',     plDef:'argumenten',          plDefPy:'阿尔古门腾',   zh:'论据/论点'},
+  {type:'noun',en:'en', sv:'källa',           py:'谢拉',         def:'källan',            defPy:'谢兰',           pl:'källor',            plPy:'谢勒',           plDef:'källorna',            plDefPy:'谢勒纳',       zh:'来源/信息源'},
+  {type:'noun',en:'ett',sv:'nyckelord',       py:'尼克尔奥尔德', def:'nyckelordet',       defPy:'尼克尔奥尔德特', pl:'nyckelord',         plPy:'尼克尔奥尔德',   plDef:'nyckelorden',         plDefPy:'尼克尔奥尔登', zh:'关键词'},
+  // VERBS
+  {type:'verb',sv:'att sammanfatta', py:'萨曼法特',   now:'sammanfattar', nowPy:'萨曼法特阿尔', past:'sammanfattade', pastPy:'萨曼法特阿德', sup:'sammanfattat', supPy:'萨曼法特阿特', zh:'总结/概括（第一组）'},
+  {type:'verb',sv:'att analysera',   py:'阿纳吕塞拉', now:'analyserar',   nowPy:'阿纳吕塞拉尔', past:'analyserade',   pastPy:'阿纳吕塞拉德', sup:'analyserat',   supPy:'阿纳吕塞拉特', zh:'分析（第一组）'},
+  {type:'verb',sv:'att jämföra',     py:'耶姆弗拉',   now:'jämför',       nowPy:'耶姆弗尔',     past:'jämförde',      pastPy:'耶姆弗德',     sup:'jämfört',      supPy:'耶姆弗特',     zh:'比较（第二组）'},
+  {type:'verb',sv:'att tolka',       py:'托尔卡',     now:'tolkar',       nowPy:'托尔卡尔',     past:'tolkade',       pastPy:'托尔卡德',     sup:'tolkat',       supPy:'托尔卡特',     zh:'解读/诠释（第一组）'},
+  {type:'verb',sv:'att beskriva',    py:'贝斯克里瓦', now:'beskriver',    nowPy:'贝斯克里弗尔', past:'beskrev',       pastPy:'贝斯克雷弗',   sup:'beskrivit',    supPy:'贝斯克里维特', zh:'描述/描写（不规则）'},
+];
+
+// ═══════════════════════════════════════════════════════════
+// RENDER VOCAB
+// ═══════════════════════════════════════════════════════════
+
+function renderNounCard(v) {
+  const enBadge = v.en === 'en' ? `<span class="vc-en-badge en-b">🔵 en</span>` : `<span class="vc-en-badge ett-b">🟠 ett</span>`;
+  const defHL = diffHL(v.sv, v.def, 'd-def'), plHL = diffHL(v.sv, v.pl, 'd-pl'), pldefHL = diffHL(v.sv, v.plDef, 'd-pd');
+  return `<div class="vocab-card noun">
+    <div class="vc-top"><span class="vc-type-badge">📦 名词</span>${enBadge}</div>
+    <div class="vc-headword">
+      <span class="vc-headword-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.sv}" title="点击发音">${v.en} ${v.sv}</span>
+      <span class="vc-headword-py">${v.py}</span>
+    </div>
+    <div class="vc-form-row"><div class="vc-form-top"><span class="vc-row-label">定冠词</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.def}" title="点击发音">${defHL}</span></div><span class="vc-row-py">${v.defPy}</span></div>
+    <div class="vc-form-row"><div class="vc-form-top"><span class="vc-row-label">复数</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.pl}" title="点击发音">${plHL}</span></div><span class="vc-row-py">${v.plPy}</span></div>
+    <div class="vc-form-row"><div class="vc-form-top"><span class="vc-row-label">复+定</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.plDef}" title="点击发音">${pldefHL}</span></div><span class="vc-row-py">${v.plDefPy}</span></div>
+    <div class="vc-chinese">${v.zh}</div>
+  </div>`;
+}
+
+function renderVerbCard(v) {
+  const base = v.sv.replace(/^att /, '');
+  const nowHL = diffHL(base, v.now, 'd-def'), pastHL = diffHL(base, v.past, 'd-pl'), supHL = diffHL(base, v.sup, 'd-pd');
+  return `<div class="vocab-card verb">
+    <div class="vc-top"><span class="vc-type-badge">⚡ 动词</span></div>
+    <div class="vc-headword">
+      <span class="vc-headword-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.sv}" title="点击发音">${v.sv}</span>
+      <span class="vc-headword-py">${v.py}</span>
+    </div>
+    <div class="vc-verb-row"><div class="vc-verb-top"><span class="vc-row-label">现在时</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.now}" title="点击发音">${nowHL}</span></div><span class="vc-verb-py">${v.nowPy}</span></div>
+    <div class="vc-verb-row"><div class="vc-verb-top"><span class="vc-row-label">过去时</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.past}" title="点击发音">${pastHL}</span></div><span class="vc-verb-py">${v.pastPy}</span></div>
+    <div class="vc-verb-row"><div class="vc-verb-top"><span class="vc-row-label">完成时</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.sup}" title="点击发音">${supHL}</span></div><span class="vc-verb-py">${v.supPy}</span></div>
+    <div class="vc-chinese">${v.zh}</div>
+  </div>`;
+}
+
+function flipForms(v) {
+  if (v.type === 'noun') return `<span class="ff-row">${v.def}</span><span class="ff-sep"> · </span><span class="ff-row">${v.pl}</span><span class="ff-sep"> · </span><span class="ff-row">${v.plDef}</span>`;
+  if (v.type === 'verb') return `<span class="ff-row">${v.now}</span><span class="ff-sep"> · </span><span class="ff-row">${v.past}</span><span class="ff-sep"> · </span><span class="ff-row">${v.sup}</span>`;
+  return '';
+}
+
+function makeFlipCard(v) {
+  const dispSv = v.type === 'noun' ? `${v.en} ${v.sv}` : v.sv;
+  const typeLabel = {noun:'名词', verb:'动词'}[v.type] || v.type;
+  return `<div class="flip-card-wrap" onclick="flipCard(this)">
+    <div class="flip-card-inner">
+      <div class="flip-front">
+        <div class="flip-zh">${v.zh}</div>
+        <div class="flip-type">${typeLabel}</div>
+      </div>
+      <div class="flip-back">
+        <div class="flip-sv speak-word" onclick="speakWord(this.dataset.word);event.stopPropagation();" data-word="${v.sv}" title="点击发音">${dispSv}</div>
+        <div class="flip-forms">${flipForms(v)}</div>
+      </div>
+    </div>
+  </div>`;
+}
+
+function flipCard(w) { w.classList.toggle('flipped'); }
+
+let currentFilter = 'all', flipMode = false;
+function getFilteredData(f) {
+  if (f === 'all') return vocabData;
+  return vocabData.filter(v => v.type === f);
+}
+function renderVocab(f) {
+  currentFilter = f;
+  const data = getFilteredData(f);
+  document.getElementById('vocabGrid').innerHTML = data.map(v => {
+    if (v.type === 'noun') return renderNounCard(v);
+    if (v.type === 'verb') return renderVerbCard(v);
+    return '';
+  }).join('');
+  renderFlipCards(data);
+}
+function renderFlipCards(data) { document.getElementById('flipGrid').innerHTML = data.map(makeFlipCard).join(''); }
+function filterVocab(f, btn) {
+  document.querySelectorAll('#vocabFilters .vf-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  renderVocab(f);
+}
+function toggleFlipMode() {
+  flipMode = !flipMode;
+  const btn = document.getElementById('flipModeBtn');
+  document.getElementById('vocabGrid').style.display = flipMode ? 'none' : 'grid';
+  document.getElementById('flipGrid').style.display  = flipMode ? 'grid' : 'none';
+  btn.classList.toggle('flip-active', flipMode);
+  btn.textContent = flipMode ? '📋 普通模式' : '🔀 翻转模式';
+}
+
+// ═══════════════════════════════════════════════════════════
+// QUIZ
+// ═══════════════════════════════════════════════════════════
+const quizData = [
+  {type:'fill',  typeName:'填空题',
+   q:'Artikeln ___ vi läste igår var mycket intressant. (填入关系代词)',
+   zh:'"我们昨天读的那篇文章非常有趣。" 填入正确的关系代词。',
+   answer:'som',
+   fb:'som 是最常用的关系代词，可替代宾语（vi läste den → artikeln som vi läste）。此处 som 替代宾语 den（artikeln）。'},
+  {type:'fill',  typeName:'填空题',
+   q:'Eleven ___ uppsats fick bäst betyg fick ett stipendium. (填入所有格关系代词)',
+   zh:'"作文得了最高分的那个学生获得了奖学金。" 填入表示所属关系的关系代词。',
+   answer:'vars',
+   fb:'vars = "谁的"，用于所有格关系从句。"Eleven vars uppsats" = 其作文（属于该学生的作文）得了最高分的学生。'},
+  {type:'choice', typeName:'选择题',
+   q:'Hon sammanfattade hela texten på fem minuter, ___ imponerade läraren.',
+   zh:'"她五分钟内总结了整篇文章，这令老师印象深刻。" 填入正确的关系代词：',
+   answer:'vilket',
+   opts:['som','vars','vilket','vilken'],
+   fb:'vilket 用于指代前面整个句子（她五分钟内总结了整篇文章→这件事）令老师印象深刻。som 只能指代具体名词，不能指代整件事。'},
+  {type:'fill',  typeName:'填空题',
+   q:'Den här texten ___ av miljontals människor varje dag. (att läsa，-s被动语态现在时)',
+   zh:'"这篇文章每天被数百万人阅读。" 用 att läsa 的-s被动语态现在时填空。',
+   answer:'läses',
+   fb:'被动语态-s形式：läser → läses（去掉-r，加-s）。läses av miljontals människor = 被数百万人阅读。'},
+  {type:'choice', typeName:'选择题',
+   q:'下列哪个句子使用了正确的 -s 被动语态？',
+   zh:'选出正确的 -s 被动语态句',
+   answer:'Boken skrivs av en känd författare.',
+   opts:['Boken skrivas av en känd författare.','Boken skrivs av en känd författare.','Boken skrev av en känd författare.','Boken skriver av en känd författare.'],
+   fb:'skrivs = skriva 的-s被动现在时（skriver → skrivs，去掉-r，若去掉后末尾已有s则合并）。skrivas 不存在；skrev 是过去时主动态；skriver 是现在时主动态。'},
+  {type:'sv2zh',  typeName:'瑞译中',
+   q:'Texten saknar en tydlig rubrik och budskapet är svårt att förstå.',
+   zh:'选出正确的中文翻译',
+   answer:'这篇文章缺少清晰的标题，主旨很难理解。',
+   opts:['这篇文章有清晰的标题，主旨很容易理解。','这篇文章缺少清晰的标题，主旨很难理解。','这篇文章有清晰的段落，论点很难理解。','这篇文章缺少清晰的总结，来源很难找到。'],
+   fb:'rubrik = 标题；saknar = 缺少；budskap = 主旨；svårt att förstå = 难以理解。'},
+  {type:'zh2sv',  typeName:'中译瑞',
+   q:'"请分析这篇文章并总结主要论点。" 选出正确的瑞典语：',
+   zh:'注意动词选用和命令式形式',
+   answer:'Analysera texten och sammanfatta de viktigaste argumenten.',
+   opts:['Tolka texten och jämföra de viktigaste argumenten.','Analysera texten och sammanfatta de viktigaste argumenten.','Beskriv texten och sammanfatta de viktigaste rubrikerna.','Analysera stycket och tolka de viktigaste källorna.'],
+   fb:'analysera（命令式）= 分析；sammanfatta（命令式）= 总结；argument = 论点。注意：jämföra 的命令式是 jämför，不是 jämföra。'},
+  {type:'choice', typeName:'阅读理解',
+   q:'（参考上方文段）Hur finansieras den svenska hälso- och sjukvården?',
+   zh:'瑞典医疗卫生系统如何获得资金？',
+   answer:'Genom skatteintäkter.',
+   opts:['Genom privata försäkringar.','Genom patientavgifter.','Genom skatteintäkter.','Genom bidrag från landstinget.'],
+   fb:'文段中明确写道："finansieras av skatterna"（由税收资助）和"Systemet finansieras genom skatteintäkter"。'},
+  {type:'choice', typeName:'阅读理解',
+   q:'（参考上方文段）Vad innebär "jämlik vård" enligt texten?',
+   zh:'"平等医疗"在文段中是什么含义？',
+   answer:'Ingen nekas vård på grund av ekonomiska skäl.',
+   opts:['Alla betalar lika mycket för vården.','Ingen nekas vård på grund av ekonomiska skäl.','Alla får exakt samma behandling.','Vården är gratis för turister.'],
+   fb:'文段原文："jämlik vård, vilket innebär att ingen nekas vård på grund av ekonomiska skäl"（平等医疗意味着没有人因经济原因被拒绝得到医疗）。'},
+  {type:'fill',  typeName:'阅读理解',
+   q:'（参考上方文段）Patienter vars tillstånd är allvarliga ___ till specialister. (从文段中找出-s被动语态动词)',
+   zh:'"病情严重的患者被转介给专科医生。" 从文段原文中找出被动语态动词填入。',
+   answer:'remitteras',
+   fb:'文段原文：remitteras（被转介/被转诊）。remittera 是第一组动词，-s 被动形式：remitteras（remitterar → remitteras）。'},
+];
+
+let qAnswers = {}, qSubmitted = false;
+function renderQuiz() {
+  document.getElementById('progressDots').innerHTML =
+    quizData.map((_, i) => `<div class="dot" id="dot-${i}"></div>`).join('');
+  const tInfo = {
+    choice:['t-choice','🔤 选择题'], fill:['t-fill','✏️ 填空题'],
+    sv2zh:['t-sv2zh','🇸🇪→🈳 瑞译中'], zh2sv:['t-zh2sv','🈳→🇸🇪 中译瑞'],
+    read:['t-read','📄 阅读理解']
+  };
+  document.getElementById('quizContainer').innerHTML = quizData.map((q, i) => {
+    const [tc, tn] = tInfo[q.type] || ['t-choice','题目'];
+    const needFill = q.type === 'fill';
+    const inp = needFill
+      ? `<div class="fill-wrap"><input class="fill-input" id="fi-${i}" type="text" placeholder="在此输入…" oninput="fillInput(${i})"><span class="fill-hint">不区分大小写</span></div>`
+      : `<div class="quiz-options" id="opts-${i}">${(q.opts||[]).map(o =>
+          `<button class="quiz-opt" onclick="selectOpt(${i},'${o.replace(/'/g,"\\'")}',this)">${o}</button>`
+        ).join('')}</div>`;
+    return `<div class="quiz-question" id="qq-${i}">
+      <div class="qq-meta"><span class="qq-num">第${i+1}题/共${quizData.length}题</span><span class="qq-type-badge ${tc}">${tn}</span></div>
+      <div class="qq-text">${q.q}</div>
+      <div class="qq-zh">${q.zh}</div>
+      ${inp}
+      <div class="quiz-feedback" id="fb-${i}"></div>
+    </div>`;
+  }).join('');
+}
+function selectOpt(i, opt, btn) {
+  if (qSubmitted) return;
+  document.querySelectorAll(`#opts-${i} .quiz-opt`).forEach(b => { b.classList.remove('selected'); b.style.cssText = ''; });
+  btn.classList.add('selected');
+  qAnswers[i] = opt;
+  document.getElementById(`dot-${i}`).className = 'dot current';
+  checkAll();
+}
+function fillInput(i) {
+  if (qSubmitted) return;
+  qAnswers[i] = document.getElementById(`fi-${i}`).value.trim();
+  document.getElementById(`dot-${i}`).className = qAnswers[i] ? 'dot current' : 'dot';
+  checkAll();
+}
+function checkAll() {
+  document.getElementById('submitBtn').disabled =
+    !quizData.every((_, i) => qAnswers[i] !== undefined && qAnswers[i] !== '');
+}
+function submitQuiz() {
+  if (qSubmitted) return;
+  qSubmitted = true;
+  document.getElementById('submitBtn').disabled = true;
+  let score = 0;
+  quizData.forEach((q, i) => {
+    const ua = (qAnswers[i]||'').trim().toLowerCase();
+    const ca = q.answer.trim().toLowerCase();
+    const ok = ua === ca;
+    if (ok) score++;
+    if (q.type === 'fill') {
+      const inp = document.getElementById(`fi-${i}`);
+      inp.disabled = true; inp.classList.add(ok ? 'correct' : 'wrong');
+    } else {
+      document.querySelectorAll(`#opts-${i} .quiz-opt`).forEach(btn => {
+        btn.disabled = true; btn.style.cssText = '';
+        if (btn.textContent.trim() === q.answer) btn.classList.add('correct');
+        else if (btn.textContent.trim() === qAnswers[i] && !ok) btn.classList.add('wrong');
+      });
+    }
+    const fb = document.getElementById(`fb-${i}`);
+    fb.textContent = (ok ? '✅ 正确！' : '❌ 正确答案：' + q.answer + '。') + '　' + q.fb;
+    fb.className = 'quiz-feedback show ' + (ok ? 'ok' : 'no');
+    document.getElementById(`dot-${i}`).className = 'dot ' + (ok ? 'correct' : 'wrong');
+  });
+  const t = quizData.length;
+  document.getElementById('scoreNum').textContent = score + '/' + t;
+  document.getElementById('scoreMsg').textContent =
+    score === t ? '🎉 完美！关系从句和-s被动语态完全掌握！' :
+    score >= t * .85 ? '👍 非常好！再复习一下 vars 与 vilket 的区别！' :
+    score >= t * .7  ? '📚 基本掌握，重点复习 som/vars/vilket 的用法和 -s 被动语态。' :
+    '🔄 建议重读语法部分，特别注意关系代词的选用和被动语态构成！';
+  document.getElementById('quizScore').classList.add('show');
+}
+function resetQuiz() {
+  qAnswers = {}; qSubmitted = false;
+  document.getElementById('quizScore').classList.remove('show');
+  document.getElementById('submitBtn').disabled = true;
+  renderQuiz();
+}
+
+// ═══════════════════════════════════════════════════════════
+// TTS
+// ═══════════════════════════════════════════════════════════
+window.dialogues = {
+  1: [
+    'Vi ska diskutera texten som ni läste till idag. Vad handlar den om?',
+    'Den handlar om hälso- och sjukvård i Sverige. Vårdsystemet, som finansieras av skatterna, är tillgängligt för alla invånare.',
+    'Bra! Vilket argument tycker du är starkast i texten?',
+    'Jag tycker att argumentet om jämlik vård är starkast. Det påstås att alla har rätt till samma vård, vilket känns rättvist.',
+    'Utmärkt analys! Kan du nämna ett nyckelord som används genomgående i texten?',
+    'Jämlikhet! Det är ett ord som förekommer i varje stycke. Sammanfattningsvis beskriver texten ett system vars mål är att ge alla lika vård.',
+  ],
+  2: [
+    'Har du läst artikeln som låg på skolans hemsida?',
+    'Ja! Den handlade om klimatförändringar. Argumenten som presenterades var mycket övertygande.',
+    'Vad tyckte du om källorna som användes?',
+    'De verkade trovärdiga. Fakta hämtades från vetenskapliga rapporter, vilket gav texten mer trovärdighet.',
+    'Rubriken sammanfattade innehållet perfekt, tycker jag. Och budskapet tolkades på ett nytt sätt.',
+    'Ja! Ska vi analysera texten tillsammans och jämföra våra tolkningar? Författaren vars stil jag gillar mest skriver alltid tydliga påståenden.',
+  ],
+};
+
+function wrapDialogueWords(html) {
+  return html.replace(/(<[^>]+>)|([^<]+)/g, (match, tag, text) => {
+    if (tag) return tag;
+    return text.replace(/(\S+)/g, word => {
+      const clean = word.replace(/^[""«»„()\[\]]+|[""»«.,!?;:)\[\]…–—]+$/g, '');
+      if (!clean) return word;
+      return `<span class="d-word" onclick="speakDialogWord('${clean.replace(/'/g,"\\'")}',this)">${word}</span>`;
+    });
+  });
+}
+
+// ═══════════════════════════════════════════════════════════
+// NAV
+// ═══════════════════════════════════════════════════════════
+const sectionScroll = {grammar:0, vocab:0, dialogue:0, quiz:0};
+let currentSection = 'grammar';
+function showSection(id, btn) {
+  sectionScroll[currentSection] = window.scrollY;
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  currentSection = id;
+  requestAnimationFrame(() => requestAnimationFrame(() => window.scrollTo(0, sectionScroll[id])));
+}
+
+// ═══════════════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════════════
+window.addEventListener('load', () => {
+  initTTS();
+  renderVocab('all');
+  renderQuiz();
+  document.querySelectorAll('.d-sv').forEach(el => {
+    const btn = el.querySelector('.tts-btn');
+    const btnHtml = btn ? btn.outerHTML : '';
+    let inner = el.innerHTML;
+    if (btn) inner = inner.replace(btn.outerHTML, '');
+    el.innerHTML = wrapDialogueWords(inner) + btnHtml;
+  });
+});
+</script>
+</body>
+</html>

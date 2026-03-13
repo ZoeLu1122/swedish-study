@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SFI A级 · 第二单元：数字、时间、日期</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="common.css">
+<script src="common.js"></script>
+<style>
+:root{
+  --navy:#1a2744;--blue:#2e4fa3;--sky:#5b8de8;
+  --gold:#d4920a;--green:#2e8b57;--green-light:#d4f0dd;
+  --red:#c0392b;--red-light:#fdecea;--white:#f9fafb;
+  --gray:#6b7a99;--border:#dce3f0;
+  --ac:#1a4a9a;--ab:#e0e8ff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Noto Sans SC',sans-serif;background:var(--white);color:var(--navy);}
+
+nav{background:var(--navy);color:white;padding:.85rem 1.5rem;display:flex;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 16px rgba(0,0,0,.25);/* gap handled by common.css */}
+.nav-logo{font-family:'DM Serif Display',serif;font-size:1.05rem;margin-right:auto;}
+.nav-logo span{color:var(--sky);}
+.nav-tab{padding:.38rem .85rem;border-radius:100px;font-size:.73rem;cursor:pointer;border:none;background:rgba(255,255,255,.08);color:#a0b0cc;transition:all .2s;font-family:'Noto Sans SC',sans-serif;}
+.nav-tab:hover{background:rgba(255,255,255,.15);color:white;}
+.nav-tab.active{background:var(--sky);color:white;}
+
+.page-header{background:linear-gradient(135deg,#1a2744 0%,#0a2860 100%);color:white;padding:2rem 2rem 1.8rem;}
+.ph-inner{max-width:900px;margin:0 auto;}
+.ph-kicker{font-size:.67rem;letter-spacing:.22em;text-transform:uppercase;color:#70d8ff;margin-bottom:.4rem;}
+.ph-title{font-family:'DM Serif Display',serif;font-size:clamp(1.5rem,4vw,2.2rem);margin-bottom:.4rem;}
+.ph-desc{font-size:.81rem;color:#a0c8e0;line-height:1.65;max-width:520px;}
+.ph-pills{display:flex;gap:.5rem;margin-top:1rem;flex-wrap:wrap;}
+.ph-pill{font-size:.67rem;padding:3px 10px;border-radius:100px;background:rgba(255,255,255,.1);color:#b0e0f8;}
+
+main{max-width:900px;margin:0 auto;padding:1.8rem 1.4rem 4rem;}
+.section{display:none;}
+.section.active{display:block;}
+
+.card{background:white;border:1px solid var(--border);border-radius:14px;padding:1.4rem 1.5rem;margin-bottom:1.2rem;box-shadow:0 1px 6px rgba(26,39,68,.05);}
+.card-title{font-size:.98rem;font-weight:600;color:var(--navy);margin-bottom:.25rem;display:flex;align-items:center;gap:.5rem;}
+.card-subtitle{font-size:.77rem;color:var(--gray);margin-bottom:1rem;line-height:1.55;}
+.rule-box{background:#e8eeff;border-left:4px solid var(--sky);border-radius:0 10px 10px 0;padding:.9rem 1.1rem;margin:.9rem 0;font-size:.82rem;line-height:1.8;color:var(--navy);}
+.rule-box strong{color:var(--ac);}
+.tip-box{background:#fffbec;border:1px dashed var(--gold);border-radius:10px;padding:.85rem 1rem;font-size:.79rem;color:#6a4400;line-height:1.65;margin:.8rem 0;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0;}
+@media(max-width:540px){.two-col{grid-template-columns:1fr;}}
+.box-teal{background:var(--ab);border-radius:12px;padding:1rem 1.1rem;border:1px solid #90a8f0;}
+.box-red{background:#fff0ee;border-radius:12px;padding:1rem 1.1rem;border:1px solid #f0b0a0;}
+.box-title{font-size:.78rem;font-weight:700;margin-bottom:.6rem;}
+.bt-teal{color:var(--ac);} .bt-red{color:var(--red);}
+
+.num-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:.4rem;margin:.8rem 0;text-align:center;}
+.num-cell{background:var(--ab);border-radius:8px;padding:.5rem .3rem;}
+.num-cell .nc-n{font-size:.62rem;color:var(--gray);}
+.num-cell .nc-sv{font-size:.82rem;font-weight:700;color:var(--navy);}
+
+.sv-table{width:100%;border-collapse:collapse;font-size:.82rem;}
+.sv-table th{text-align:left;padding:.3rem .5rem;font-size:.68rem;color:var(--gray);font-weight:600;border-bottom:1px solid var(--border);}
+.sv-table td{padding:.3rem .5rem;border-bottom:1px solid rgba(0,0,0,.05);}
+.sv-table td:first-child{font-weight:700;color:var(--navy);}
+.sv-table td:last-child{color:var(--gray);}
+
+.vocab-filters{display:flex;gap:.45rem;margin-bottom:1rem;flex-wrap:wrap;}
+.vf-btn{padding:.28rem .85rem;border-radius:100px;font-size:.71rem;border:1.5px solid var(--border);background:white;cursor:pointer;color:var(--gray);font-family:'Noto Sans SC',sans-serif;transition:all .2s;}
+.vf-btn:hover{border-color:var(--sky);color:var(--ac);}
+.vf-btn.active{background:var(--navy);border-color:var(--navy);color:white;}
+.vocab-mode-btn{padding:.38rem 1rem;border-radius:100px;font-size:.73rem;border:1.5px solid var(--sky);background:white;cursor:pointer;color:var(--ac);font-family:'Noto Sans SC',sans-serif;transition:all .2s;font-weight:600;}
+.vocab-mode-btn.flip-active{background:var(--sky);color:white;border-color:var(--sky);}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.7rem;}
+
+.vocab-card{border-radius:12px;padding:.9rem 1rem;border:1.5px solid;position:relative;transition:transform .15s,box-shadow .15s;}
+.vocab-card:hover{transform:translateY(-2px);box-shadow:0 5px 14px rgba(0,0,0,.09);}
+.vc-top{display:flex;align-items:center;gap:.4rem;margin-bottom:.5rem;padding-right:3rem;}
+.vc-type-badge{font-size:.62rem;font-weight:700;padding:2px 8px;border-radius:100px;color:white;}
+.vc-headword{display:flex;align-items:baseline;gap:.4rem;margin-bottom:.4rem;flex-wrap:nowrap;}
+.vc-headword-sv{font-size:1.05rem;font-weight:700;color:var(--navy);}
+.vc-headword-py{font-size:clamp(.48rem,.68rem,1rem);color:#999;font-style:italic;white-space:nowrap;flex-shrink:1;min-width:0;}
+.vc-chinese{font-size:.82rem;color:#333;margin-top:.4rem;padding-top:.35rem;border-top:1px solid rgba(0,0,0,.07);font-weight:500;}
+.vc-ex{font-size:.73rem;color:#888;margin-top:.3rem;font-style:italic;}
+.speak-word{cursor:pointer;border-radius:4px;padding:0 2px;transition:background .15s,color .15s;}
+.speak-word:hover{background:rgba(26,74,154,.15);color:var(--ac);}
+.speak-word.speaking{background:var(--sky);color:white;}
+.d-word{cursor:pointer;border-radius:3px;padding:0 1px;transition:background .12s,color .12s;display:inline;}
+.d-word:hover{background:rgba(26,74,154,.15);color:var(--ac);}
+.d-word.speaking{background:var(--sky);color:white;}
+
+.flip-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:.85rem;}
+.flip-card-wrap{perspective:900px;height:130px;}
+.flip-card-inner{position:relative;width:100%;height:100%;transition:transform .45s;transform-style:preserve-3d;cursor:pointer;}
+.flip-card-wrap.flipped .flip-card-inner{transform:rotateY(180deg);}
+.flip-front,.flip-back{position:absolute;inset:0;border-radius:12px;backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:.6rem .8rem;border:1.5px solid var(--border);}
+.flip-front{background:white;box-shadow:0 2px 8px rgba(0,0,0,.07);}
+.flip-back{background:var(--navy);color:white;transform:rotateY(180deg);}
+.flip-zh{font-size:.95rem;font-weight:600;color:var(--navy);text-align:center;}
+.flip-type{font-size:.62rem;color:var(--gray);margin-top:.3rem;}
+.flip-sv{font-size:1rem;font-weight:700;color:white;text-align:center;}
+.flip-forms{display:flex;flex-wrap:wrap;justify-content:center;gap:.15rem .25rem;margin-top:.3rem;}
+.ff-row{font-size:.68rem;color:#c0d8f0;}
+
+.d-line{display:flex;gap:.75rem;margin-bottom:.75rem;align-items:flex-start;}
+.d-line.right{flex-direction:row-reverse;}
+.d-avatar{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;background:#f0f0f0;}
+.d-bubble{max-width:76%;padding:.65rem .9rem;border-radius:12px;font-size:.83rem;line-height:1.55;}
+.d-line:not(.right) .d-bubble{background:#e8eeff;border-bottom-left-radius:3px;}
+.d-line.right .d-bubble{background:#f0fff4;border-bottom-right-radius:3px;}
+.d-sv{font-weight:600;color:var(--navy);}
+.d-zh{font-size:.71rem;color:var(--gray);margin-top:.18rem;}
+.hl-t{background:rgba(26,74,154,.13);border-radius:4px;padding:0 3px;color:var(--ac);font-weight:700;}
+.dialogue-note{background:#e8eeff;border-radius:8px;padding:.7rem .95rem;font-size:.75rem;color:var(--gray);margin-top:.4rem;line-height:1.65;}
+.tts-btn{display:inline-flex;align-items:center;margin-left:.5rem;padding:2px 7px;background:rgba(26,74,154,.1);border:1px solid rgba(26,74,154,.3);border-radius:100px;font-size:.72rem;cursor:pointer;color:var(--ac);vertical-align:middle;transition:all .2s;line-height:1;}
+.tts-btn:hover{background:var(--ac);color:white;border-color:var(--ac);}
+.tts-btn.speaking{background:var(--ac);color:white;animation:pulse 1s infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+.tts-full-btn{padding:.5rem 1.1rem;border-radius:100px;background:var(--ac);color:white;border:1.5px solid var(--ac);font-size:.78rem;cursor:pointer;font-family:'Noto Sans SC',sans-serif;transition:all .2s;}
+.tts-full-btn:hover:not(:disabled){background:#0a2860;}
+.tts-full-btn:disabled{background:#aaa;border-color:#aaa;cursor:default;}
+
+.progress-dots{display:flex;gap:.35rem;margin-bottom:1.2rem;flex-wrap:wrap;}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--border);transition:background .3s;}
+.dot.current{background:var(--sky);}.dot.correct{background:var(--green);}.dot.wrong{background:var(--red);}
+.quiz-question{margin-bottom:1.6rem;padding-bottom:1.6rem;border-bottom:1px solid var(--border);}
+.quiz-question:last-of-type{border-bottom:none;}
+.qq-meta{display:flex;align-items:center;gap:.6rem;margin-bottom:.4rem;}
+.qq-num{font-size:.67rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gray);}
+.qq-type-badge{font-size:.62rem;padding:2px 9px;border-radius:100px;font-weight:600;}
+.t-choice{background:#ddeeff;color:#1a3a80;}
+.qq-text{font-size:.9rem;color:var(--navy);margin-bottom:.25rem;line-height:1.55;}
+.qq-zh{font-size:.77rem;color:#555;margin-bottom:.75rem;line-height:1.4;padding:.35rem .6rem;background:#f8f9fc;border-radius:6px;border-left:3px solid #c0d0e8;}
+.quiz-options{display:flex;flex-direction:column;gap:.38rem;}
+.quiz-opt{padding:.6rem 1rem;border-radius:9px;border:1.5px solid var(--border);background:white;font-size:.83rem;cursor:pointer;transition:all .2s;text-align:left;font-family:'Noto Sans SC',sans-serif;color:var(--navy);}
+.quiz-opt:hover:not(:disabled){border-color:var(--sky);background:#f0f4ff;}
+.quiz-opt.selected{border-color:var(--sky);background:#f0f4ff;}
+.quiz-opt.correct{border-color:var(--green);background:var(--green-light);color:#1a5c35;font-weight:600;}
+.quiz-opt.wrong{border-color:var(--red);background:var(--red-light);color:#8a1010;}
+.quiz-opt:disabled{cursor:default;}
+.quiz-feedback{font-size:.77rem;margin-top:.5rem;padding:.5rem .8rem;border-radius:8px;display:none;line-height:1.55;}
+.quiz-feedback.show{display:block;}
+.quiz-feedback.ok{background:var(--green-light);color:#1a5030;}
+.quiz-feedback.no{background:var(--red-light);color:#7a1010;}
+.submit-btn{display:block;width:100%;margin-top:1.5rem;padding:.88rem;background:var(--ac);color:white;border:none;border-radius:10px;font-size:.88rem;font-family:'Noto Sans SC',sans-serif;cursor:pointer;transition:background .2s;font-weight:600;}
+.submit-btn:hover:not(:disabled){background:#0a2860;}
+.submit-btn:disabled{background:#b0bbc8;cursor:default;}
+.quiz-score{background:var(--navy);color:white;border-radius:14px;padding:1.5rem;text-align:center;display:none;margin-top:1rem;}
+.quiz-score.show{display:block;}
+.qs-num{font-family:'DM Serif Display',serif;font-size:3rem;color:#70d8ff;line-height:1;}
+.qs-label{font-size:.8rem;color:#a0c8e0;margin-top:.25rem;}
+.qs-msg{font-size:.88rem;margin-top:1rem;line-height:1.6;color:#c0e8f8;}
+.retry-btn{margin-top:1rem;padding:.6rem 1.5rem;background:var(--sky);color:white;border:none;border-radius:100px;font-size:.82rem;cursor:pointer;font-family:'Noto Sans SC',sans-serif;}
+
+.stat-box{background:white;border:1px solid var(--border);border-radius:12px;padding:.9rem 1rem;text-align:center;}
+.stat-num{font-family:'DM Serif Display',serif;font-size:1.8rem;line-height:1;}
+.stat-num.green{color:var(--green);}.stat-num.navy{color:var(--navy);}
+.stat-label{font-size:.7rem;color:var(--gray);margin-top:.2rem;}
+.progress-bar-wrap{background:#f0f0f0;border-radius:100px;height:8px;margin:.5rem 0 1rem;overflow:hidden;}
+.progress-bar{height:100%;border-radius:100px;background:linear-gradient(90deg,var(--green),var(--sky));transition:width .5s;}
+.rf-btn{padding:.28rem .85rem;border-radius:100px;font-size:.71rem;border:1.5px solid var(--border);background:white;cursor:pointer;color:var(--gray);font-family:'Noto Sans SC',sans-serif;transition:all .2s;}
+.rf-btn.active{background:var(--navy);border-color:var(--navy);color:white;}
+.empty-state{text-align:center;padding:3rem 1rem;color:var(--gray);}
+.empty-icon{font-size:2.5rem;margin-bottom:.75rem;}
+.empty-msg{font-size:.85rem;line-height:1.65;}
+body{--primary:#5b8de8;--primary-light:#e0e8ff;--primary-dark:#1a4a9a;}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">SFI <span>A级</span> · 第二单元</div>
+  <button class="nav-tab active" onclick="showSection('grammar',this)">📖 语法</button>
+  <button class="nav-tab" onclick="showSection('vocab',this)">📋 词汇</button>
+  <button class="nav-tab" onclick="showSection('dialogue',this)">💬 对话</button>
+  <button class="nav-tab" onclick="showSection('quiz',this)">🧪 测验</button>
+</nav>
+
+<div class="page-header">
+  <div class="ph-inner">
+    <div class="ph-kicker">SFI A级 · 第二单元 · 核心词汇</div>
+    <div class="ph-title">数字、时间、日期</div>
+    <div class="ph-desc">学会11–100的数字，掌握时间表达（整点、半点、一刻），认识七天和十二个月，能够在日常生活中说出时间和日期。</div>
+    <div class="ph-pills">
+      <span class="ph-pill">🔢 数字 11–100</span>
+      <span class="ph-pill">🕐 时钟表达</span>
+      <span class="ph-pill">📅 星期</span>
+      <span class="ph-pill">🗓️ 月份</span>
+      <span class="ph-pill">⏱ 约40分钟</span>
+    </div>
+  </div>
+</div>
+
+<main>
+<!-- ===== 语法 ===== -->
+<section class="section active" id="grammar">
+  <div class="card">
+    <div class="card-title">🔢 数字 11–20</div>
+    <div class="card-subtitle">11–19 是独立单词，需要逐个记忆。20 开始可以组合。</div>
+    <div class="num-grid">
+      <div class="num-cell"><div class="nc-n">11</div><div class="nc-sv">elva</div></div>
+      <div class="num-cell"><div class="nc-n">12</div><div class="nc-sv">tolv</div></div>
+      <div class="num-cell"><div class="nc-n">13</div><div class="nc-sv">tretton</div></div>
+      <div class="num-cell"><div class="nc-n">14</div><div class="nc-sv">fjorton</div></div>
+      <div class="num-cell"><div class="nc-n">15</div><div class="nc-sv">femton</div></div>
+      <div class="num-cell"><div class="nc-n">16</div><div class="nc-sv">sexton</div></div>
+      <div class="num-cell"><div class="nc-n">17</div><div class="nc-sv">sjutton</div></div>
+      <div class="num-cell"><div class="nc-n">18</div><div class="nc-sv">arton</div></div>
+      <div class="num-cell"><div class="nc-n">19</div><div class="nc-sv">nitton</div></div>
+      <div class="num-cell"><div class="nc-n">20</div><div class="nc-sv">tjugo</div></div>
+    </div>
+    <div class="rule-box"><strong>组合规律：</strong>20以上直接拼写：<strong>tjugofem</strong>（25）= tjugo + fem，<strong>trettiofem</strong>（35）= trettio + fem。数字直接连写，无空格。</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📐 整十数 20–100</div>
+    <div class="card-subtitle">记住整十数，即可组合出所有两位数。</div>
+    <div class="two-col">
+      <div>
+        <table class="sv-table">
+          <tr><th>数字</th><th>瑞典语</th></tr>
+          <tr><td>20</td><td>tjugo</td></tr>
+          <tr><td>30</td><td>trettio</td></tr>
+          <tr><td>40</td><td>fyrtio</td></tr>
+          <tr><td>50</td><td>femtio</td></tr>
+          <tr><td>60</td><td>sextio</td></tr>
+        </table>
+      </div>
+      <div>
+        <table class="sv-table">
+          <tr><th>数字</th><th>瑞典语</th></tr>
+          <tr><td>70</td><td>sjuttio</td></tr>
+          <tr><td>80</td><td>åttio</td></tr>
+          <tr><td>90</td><td>nittio</td></tr>
+          <tr><td>100</td><td>hundra</td></tr>
+          <tr><td>25</td><td>tjugofem</td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="tip-box">💡 <strong>记忆技巧：</strong>整十数 = 个位数 + "-tio"（除了 tjugo / hundra）。如：fem（5）→ fem<strong>tio</strong>（50），sex（6）→ sex<strong>tio</strong>（60）。</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🕐 几点了？— Vad är klockan?</div>
+    <div class="card-subtitle">瑞典语时间表达有独特规律，特别注意 <strong>halv</strong> 的用法与中文完全相反。</div>
+    <div class="two-col">
+      <div class="box-teal">
+        <div class="box-title bt-teal">时间表达规律</div>
+        <div style="font-size:.81rem;line-height:2.1;">
+          <span class="hl-t">Klockan är tre.</span> = 3:00<br>
+          <span class="hl-t">Kvart över tre.</span> = 3:15<br>
+          <span class="hl-t">Halv fyra.</span> = 3:30<br>
+          <span class="hl-t">Kvart i fyra.</span> = 3:45<br>
+          <span class="hl-t">Klockan är fyra.</span> = 4:00
+        </div>
+      </div>
+      <div class="box-red">
+        <div class="box-title bt-red">⚠️ halv 特殊规则！</div>
+        <div style="font-size:.81rem;line-height:1.9;">
+          <strong style="color:var(--red);">halv + 下一个小时</strong><br>
+          Halv <strong>tre</strong> = 2:30<br>
+          <span style="color:var(--gray);font-size:.73rem;">（不是3:30！）</span><br>
+          Halv <strong>åtta</strong> = 7:30<br>
+          Halv <strong>tolv</strong> = 11:30
+        </div>
+      </div>
+    </div>
+    <div class="rule-box"><strong>kvart över</strong>（过一刻 +15分）· <strong>halv</strong>（下一小时的半点）· <strong>kvart i</strong>（差一刻 -15分）<br>
+    例：kvart i sex = 5:45，kvart över nio = 9:15</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📅 星期 &amp; 月份</div>
+    <div class="card-subtitle">在瑞典语中，星期和月份<strong>不大写</strong>（和英语不同）。</div>
+    <div class="two-col">
+      <div>
+        <table class="sv-table">
+          <tr><th>星期</th><th>瑞典语</th></tr>
+          <tr><td>周一</td><td>måndag</td></tr>
+          <tr><td>周二</td><td>tisdag</td></tr>
+          <tr><td>周三</td><td>onsdag</td></tr>
+          <tr><td>周四</td><td>torsdag</td></tr>
+          <tr><td>周五</td><td>fredag</td></tr>
+          <tr><td>周六</td><td>lördag</td></tr>
+          <tr><td>周日</td><td>söndag</td></tr>
+        </table>
+      </div>
+      <div>
+        <table class="sv-table">
+          <tr><th>月份</th><th>瑞典语</th></tr>
+          <tr><td>一月</td><td>januari</td></tr>
+          <tr><td>二月</td><td>februari</td></tr>
+          <tr><td>三月</td><td>mars</td></tr>
+          <tr><td>四月</td><td>april</td></tr>
+          <tr><td>五月</td><td>maj</td></tr>
+          <tr><td>六月</td><td>juni</td></tr>
+          <tr><td>七月</td><td>juli</td></tr>
+          <tr><td>八月</td><td>augusti</td></tr>
+          <tr><td>九月</td><td>september</td></tr>
+          <tr><td>十月</td><td>oktober</td></tr>
+          <tr><td>十一月</td><td>november</td></tr>
+          <tr><td>十二月</td><td>december</td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="rule-box"><strong>介词用法：</strong>星期前用 <strong>på</strong>（på måndag = 周一）；月份前用 <strong>i</strong>（i januari = 在一月）。<br>
+    完整日期：<strong>den femtonde mars</strong>（三月十五日）= den + 序数词 + 月份。</div>
+  </div>
+</section>
+
+<!-- ===== 词汇 ===== -->
+<section class="section" id="vocab">
+  <div class="card">
+    <div class="card-title">📋 本单元词汇（32个）</div>
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.6rem;margin-bottom:.8rem;">
+      <div class="vocab-filters" id="vocabFilters">
+        <button class="vf-btn active" onclick="filterVocab('all',this)">全部（32）</button>
+        <button class="vf-btn" onclick="filterVocab('number',this)">🔢 数字</button>
+        <button class="vf-btn" onclick="filterVocab('time',this)">⏰ 时间</button>
+        <button class="vf-btn" onclick="filterVocab('day',this)">📅 星期</button>
+        <button class="vf-btn" onclick="filterVocab('month',this)">🗓️ 月份</button>
+      </div>
+      <button class="vocab-mode-btn" id="flipModeBtn" onclick="toggleFlipMode()">🔀 翻转模式</button>
+    </div>
+    <div class="vocab-grid" id="vocabGrid"></div>
+    <div id="flipGrid" style="display:none;" class="flip-grid"></div>
+  </div>
+</section>
+
+<!-- ===== 对话 ===== -->
+<section class="section" id="dialogue">
+  <div class="card">
+    <div class="card-title">💬 对话一：在公交站问时间</div>
+    <div class="card-subtitle">日常问时间场景。<span style="color:var(--ac);font-weight:600;">蓝色</span>=时间表达。点击任意单词可听发音。</div>
+    <div style="display:flex;gap:.5rem;margin-bottom:1.1rem;">
+      <button class="tts-full-btn" id="btn-full1" onclick="toggleFull(1)">▶ 朗读整段对话</button>
+    </div>
+    <div class="dialogue">
+      <div class="d-line"><div class="d-avatar">🧑</div><div class="d-bubble">
+        <div class="d-sv">Ursäkta! <span class="hl-t">Vad är klockan?</span><button class="tts-btn" onclick="speak('Ursäkta! Vad är klockan?')">🔊</button></div>
+        <div class="d-zh">打扰一下！现在几点？</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">👩</div><div class="d-bubble">
+        <div class="d-sv">Klockan är <span class="hl-t">kvart i nio</span>.<button class="tts-btn" onclick="speak('Klockan är kvart i nio.')">🔊</button></div>
+        <div class="d-zh">现在是八点四十五分。（差一刻九点）</div>
+      </div></div>
+      <div class="d-line"><div class="d-avatar">🧑</div><div class="d-bubble">
+        <div class="d-sv">Tack! Nästa buss går <span class="hl-t">klockan nio</span>, eller?<button class="tts-btn" onclick="speak('Tack! Nästa buss går klockan nio, eller?')">🔊</button></div>
+        <div class="d-zh">谢谢！下一班公交是九点，对吗？</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">👩</div><div class="d-bubble">
+        <div class="d-sv">Ja, <span class="hl-t">klockan nio</span> och sedan <span class="hl-t">halv tio</span>.<button class="tts-btn" onclick="speak('Ja, klockan nio och sedan halv tio.')">🔊</button></div>
+        <div class="d-zh">是的，九点，然后九点三十分。</div>
+      </div></div>
+      <div class="d-line"><div class="d-avatar">🧑</div><div class="d-bubble">
+        <div class="d-sv">Perfekt, tack så mycket!<button class="tts-btn" onclick="speak('Perfekt, tack så mycket!')">🔊</button></div>
+        <div class="d-zh">太好了，非常感谢！</div>
+      </div></div>
+    </div>
+    <div class="dialogue-note">🕐 <strong style="color:var(--ac)">时间表达：</strong>kvart i nio = 8:45，klockan nio = 9:00，halv tio = 9:30<br>
+    💡 <strong>halv tio</strong> = 9:30（下一小时10点的半点），不是10:30！</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">💬 对话二：在诊所预约</div>
+    <div class="card-subtitle">预约门诊场景，包含星期和日期表达。点击任意单词可听发音。</div>
+    <div style="display:flex;gap:.5rem;margin-bottom:1.1rem;">
+      <button class="tts-full-btn" id="btn-full2" onclick="toggleFull(2)">▶ 朗读整段对话</button>
+    </div>
+    <div class="dialogue">
+      <div class="d-line"><div class="d-avatar">👩‍⚕️</div><div class="d-bubble">
+        <div class="d-sv">Hej! Välkommen till Vårdcentralen. Vad kan jag hjälpa dig med?<button class="tts-btn" onclick="speak('Hej! Välkommen till Vårdcentralen. Vad kan jag hjälpa dig med?')">🔊</button></div>
+        <div class="d-zh">您好！欢迎来到诊所。我能帮您什么？</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">🤒</div><div class="d-bubble">
+        <div class="d-sv">Hej! Jag vill boka en tid, tack.<button class="tts-btn" onclick="speak('Hej! Jag vill boka en tid, tack.')">🔊</button></div>
+        <div class="d-zh">您好！我想预约，谢谢。</div>
+      </div></div>
+      <div class="d-line"><div class="d-avatar">👩‍⚕️</div><div class="d-bubble">
+        <div class="d-sv">Vilken dag passar dig?<button class="tts-btn" onclick="speak('Vilken dag passar dig?')">🔊</button></div>
+        <div class="d-zh">哪天对您方便？</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">🤒</div><div class="d-bubble">
+        <div class="d-sv">Är <span class="hl-t">tisdag</span> bra?<button class="tts-btn" onclick="speak('Är tisdag bra?')">🔊</button></div>
+        <div class="d-zh">周二可以吗？</div>
+      </div></div>
+      <div class="d-line"><div class="d-avatar">👩‍⚕️</div><div class="d-bubble">
+        <div class="d-sv">Ja! Vi har en tid <span class="hl-t">tisdag den femtonde mars</span>, <span class="hl-t">klockan tio</span>.<button class="tts-btn" onclick="speak('Ja! Vi har en tid tisdag den femtonde mars, klockan tio.')">🔊</button></div>
+        <div class="d-zh">好的！我们有一个时间是三月十五日周二，上午十点。</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">🤒</div><div class="d-bubble">
+        <div class="d-sv">Perfekt! Tack så mycket.<button class="tts-btn" onclick="speak('Perfekt! Tack så mycket.')">🔊</button></div>
+        <div class="d-zh">太好了！非常感谢。</div>
+      </div></div>
+    </div>
+    <div class="dialogue-note">📅 <strong style="color:var(--ac)">日期表达：</strong>tisdag den femtonde mars = 周二三月十五日<br>
+    <strong>den + 序数词 + 月份</strong> 是完整日期格式。klockan tio = 十点整。</div>
+  </div>
+</section>
+
+<!-- ===== 测验 ===== -->
+<section class="section" id="quiz">
+  <div class="card">
+    <div class="card-title">🧪 综合测验：数字、时间、日期</div>
+    <div class="card-subtitle">共15题，全部选择题，提交后显示详细解析。</div>
+    <div class="progress-dots" id="progressDots"></div>
+    <div id="quizContainer"></div>
+    <button class="submit-btn" id="submitBtn" onclick="submitQuiz()" disabled>提交全部答案</button>
+    <div class="quiz-score" id="quizScore">
+      <div class="qs-num" id="scoreNum">-</div>
+      <div class="qs-label">答对题数</div>
+      <div class="qs-msg" id="scoreMsg"></div>
+      <button class="retry-btn" onclick="resetQuiz()">🔄 重新测验</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script>
+const UNIT_KEY='sfi_a2_unit2';
+window.sfiUnitKey=UNIT_KEY;
+function loadState(){try{return JSON.parse(localStorage.getItem(UNIT_KEY)||'{}');}catch(e){return {};}}
+function saveState(s){try{localStorage.setItem(UNIT_KEY,JSON.stringify(s));}catch(e){}}
+let state=loadState();
+
+const vocabData=[
+  {type:'simple',cat:'number',sv:'elva',      py:'埃尔瓦',      zh:'十一（11）',          ex:'Det finns elva elever.'},
+  {type:'simple',cat:'number',sv:'tolv',      py:'托尔夫',      zh:'十二（12）',          ex:'Klockan är tolv.'},
+  {type:'simple',cat:'number',sv:'tretton',   py:'特莱图恩',    zh:'十三（13）',          ex:'Han är tretton år.'},
+  {type:'simple',cat:'number',sv:'fjorton',   py:'菲奥图恩',    zh:'十四（14）',          ex:'Det är fjorton dagar.'},
+  {type:'simple',cat:'number',sv:'femton',    py:'费姆图恩',    zh:'十五（15）',          ex:'Femton minuter kvar.'},
+  {type:'simple',cat:'number',sv:'tjugo',     py:'徐古',        zh:'二十（20）',          ex:'Hon är tjugo år.'},
+  {type:'simple',cat:'number',sv:'trettio',   py:'特莱蒂',      zh:'三十（30）',          ex:'Det kostar trettio kronor.'},
+  {type:'simple',cat:'number',sv:'femtio',    py:'费姆蒂',      zh:'五十（50）',          ex:'Femtio procent.'},
+  {type:'simple',cat:'number',sv:'hundra',    py:'洪德拉',      zh:'一百（100）',         ex:'En hundra kronor.'},
+  {type:'simple',cat:'number',sv:'tjugofem',  py:'徐古费姆',    zh:'二十五（25）',        ex:'Tjugofem elever i klassen.'},
+  {type:'simple',cat:'time',sv:'klockan',     py:'克洛坎',      zh:'时钟；几点',          ex:'Vad är klockan?'},
+  {type:'simple',cat:'time',sv:'timme',       py:'替姆',        zh:'小时',                ex:'En timme promenad.'},
+  {type:'simple',cat:'time',sv:'minut',       py:'咪努特',      zh:'分钟',                ex:'Fem minuter kvar.'},
+  {type:'simple',cat:'time',sv:'kvart',       py:'克瓦特',      zh:'一刻钟（15分）',      ex:'Kvart över tre = 3:15.'},
+  {type:'simple',cat:'time',sv:'halv',        py:'哈尔夫',      zh:'半（下一小时的半点）',ex:'Halv fyra = 3:30.'},
+  {type:'simple',cat:'time',sv:'morgon',      py:'莫根',        zh:'早晨',                ex:'God morgon!'},
+  {type:'simple',cat:'time',sv:'förmiddag',   py:'弗米达格',    zh:'上午',                ex:'Mötet är på förmiddagen.'},
+  {type:'simple',cat:'time',sv:'eftermiddag', py:'艾夫特米达格',zh:'下午',                ex:'Klockan tre på eftermiddagen.'},
+  {type:'simple',cat:'time',sv:'kväll',       py:'克维尔',      zh:'晚上',                ex:'God kväll!'},
+  {type:'simple',cat:'day',sv:'måndag',       py:'蒙达格',      zh:'周一',                ex:'Mötet är på måndag.'},
+  {type:'simple',cat:'day',sv:'tisdag',       py:'替斯达格',    zh:'周二',                ex:'Vi ses på tisdag.'},
+  {type:'simple',cat:'day',sv:'onsdag',       py:'翁斯达格',    zh:'周三',                ex:'Kurs på onsdag.'},
+  {type:'simple',cat:'day',sv:'torsdag',      py:'托斯达格',    zh:'周四',                ex:'Torsdag kväll.'},
+  {type:'simple',cat:'day',sv:'fredag',       py:'弗瑞达格',    zh:'周五',                ex:'Fredag eftermiddag.'},
+  {type:'simple',cat:'day',sv:'lördag',       py:'勒达格',      zh:'周六',                ex:'Vi städar på lördag.'},
+  {type:'simple',cat:'day',sv:'söndag',       py:'松达格',      zh:'周日',                ex:'Vila på söndag.'},
+  {type:'simple',cat:'month',sv:'januari',    py:'亚努阿里',    zh:'一月',                ex:'Nyår är i januari.'},
+  {type:'simple',cat:'month',sv:'mars',       py:'马斯',        zh:'三月',                ex:'Mars är en vårmånad.'},
+  {type:'simple',cat:'month',sv:'juni',       py:'于尼',        zh:'六月',                ex:'Midsommar i juni.'},
+  {type:'simple',cat:'month',sv:'september',  py:'塞普腾贝尔',  zh:'九月',                ex:'Skolan börjar i september.'},
+  {type:'simple',cat:'month',sv:'november',   py:'诺文贝尔',    zh:'十一月',              ex:'Mörkt i november.'},
+  {type:'simple',cat:'month',sv:'december',   py:'德塞姆贝尔',  zh:'十二月',              ex:'Jul är i december.'},
+];
+
+const catInfo={
+  number:{badge:'🔢 数字',bg:'#f0f4ff',border:'#a0b8e8',label:'#203080'},
+  time:  {badge:'⏰ 时间',bg:'#f0fff8',border:'#80c8a0',label:'#1a6040'},
+  day:   {badge:'📅 星期',bg:'#fffaf0',border:'#d0b870',label:'#604000'},
+  month: {badge:'🗓️ 月份',bg:'#fff0f8',border:'#d0a0c0',label:'#802040'},
+};
+function renderSimpleCard(v){
+  const ci=catInfo[v.cat]||catInfo.number;
+  return `<div class="vocab-card" style="background:${ci.bg};border-color:${ci.border};">
+    <div class="vc-top"><span class="vc-type-badge" style="background:${ci.label};">${ci.badge}</span></div>
+    <div class="vc-headword"><span class="vc-headword-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.sv}" title="点击发音">${v.sv}</span><span class="vc-headword-py">${v.py}</span></div>
+    <div class="vc-chinese">${v.zh}</div>
+    ${v.ex?`<div class="vc-ex">${v.ex}</div>`:''}
+  </div>`;
+}
+const catLabel={number:'数字',time:'时间',day:'星期',month:'月份'};
+function makeFlipCard(v){
+  const ex=v.ex?`<span class="ff-row" style="font-size:.63rem;color:#a8c8f0;font-style:italic;text-align:center;">${v.ex}</span>`:'';
+  return `<div class="flip-card-wrap" onclick="flipCard(this)">
+    <div class="flip-card-inner">
+      <div class="flip-front">
+        <div class="flip-zh">${v.zh}</div>
+        <div class="flip-type">${catLabel[v.cat]||'单词'}</div>
+      </div>
+      <div class="flip-back">
+        <div class="flip-sv speak-word" onclick="speakWord(this.dataset.word);event.stopPropagation();" data-word="${v.sv}" title="点击发音">${v.sv}</div>
+        <div class="flip-forms">${ex}</div>
+      </div>
+    </div>
+  </div>`;
+}
+let currentFilter='all',flipMode=false;
+function getFilteredData(f){return f==='all'?vocabData:vocabData.filter(v=>v.cat===f);}
+function renderVocab(f){
+  currentFilter=f;
+  const data=getFilteredData(f);
+  document.getElementById('vocabGrid').innerHTML=data.map(renderSimpleCard).join('');
+  document.getElementById('flipGrid').innerHTML=data.map(makeFlipCard).join('');
+}
+function flipCard(w){w.classList.toggle('flipped');}
+function filterVocab(f,btn){document.querySelectorAll('#vocabFilters .vf-btn').forEach(b=>b.classList.remove('active'));if(btn)btn.classList.add('active');renderVocab(f);}
+function toggleFlipMode(){
+  flipMode=!flipMode;
+  const btn=document.getElementById('flipModeBtn');
+  document.getElementById('vocabGrid').style.display=flipMode?'none':'grid';
+  document.getElementById('flipGrid').style.display=flipMode?'grid':'none';
+  btn.classList.toggle('flip-active',flipMode);
+  btn.textContent=flipMode?'📋 普通模式':'🔀 翻转模式';
+}
+
+const quizData=[
+  {type:'choice',q:'"tolv" 是数字几？',zh:'选择正确数字',answer:'12',opts:['11','12','13','14'],fb:'tolv = 12。elva=11，tretton=13，fjorton=14。'},
+  {type:'choice',q:'"femton" 是数字几？',zh:'选择正确数字',answer:'15',opts:['13','14','15','16'],fb:'femton = 15。tretton=13，fjorton=14，sexton=16。'},
+  {type:'choice',q:'数字 20 用瑞典语怎么说？',zh:'选择正确答案',answer:'tjugo',opts:['trettio','tjugo','tjugofem','femtio'],fb:'tjugo = 20。trettio=30，femtio=50，tjugofem=25。'},
+  {type:'choice',q:'"tjugofem" 是哪个数字？',zh:'选择正确数字',answer:'25',opts:['20','22','25','30'],fb:'tjugofem = 25 = tjugo（20）+ fem（5）。直接拼写，无空格。'},
+  {type:'choice',q:'"hundra" 是多少？',zh:'选择正确数字',answer:'100',opts:['50','80','90','100'],fb:'hundra = 100。femtio=50，åttio=80，nittio=90。'},
+  {type:'choice',q:'"Klockan är halv tre" 是几点？',zh:'注意 halv 的特殊规则！',answer:'2:30',opts:['3:30','3:15','2:30','2:45'],fb:'halv + 下一小时：halv tre = 2:30（不是3:30！halv指下一小时的前半点）。'},
+  {type:'choice',q:'"Kvart över fyra" 是几点？',zh:'选择正确的时间',answer:'4:15',opts:['4:45','4:15','3:15','3:45'],fb:'kvart över = 过一刻（+15分）。kvart över fyra = 4:15。'},
+  {type:'choice',q:'"Kvart i sex" 是几点？',zh:'选择正确的时间',answer:'5:45',opts:['6:15','6:45','5:45','5:15'],fb:'kvart i = 差一刻（-15分）。kvart i sex = 5:45（差一刻到六点）。'},
+  {type:'choice',q:'问别人"现在几点？"应该说：',zh:'选择正确的句子',answer:'Vad är klockan?',opts:['Hur är klockan?','Vad är klockan?','Var är klockan?','Vad kostar klockan?'],fb:'"Vad är klockan?" 是问时间的标准句式。'},
+  {type:'choice',q:'"morgon" 是什么意思？',zh:'选择正确的中文',answer:'早晨',opts:['下午','晚上','早晨','中午'],fb:'morgon = 早晨。förmiddag = 上午，eftermiddag = 下午，kväll = 晚上。'},
+  {type:'choice',q:'周三的瑞典语是？',zh:'选择正确答案',answer:'onsdag',opts:['måndag','tisdag','onsdag','torsdag'],fb:'onsdag = 周三。måndag=周一，tisdag=周二，torsdag=周四。'},
+  {type:'choice',q:'"fredag" 是星期几？',zh:'选择正确答案',answer:'周五',opts:['周四','周五','周六','周日'],fb:'fredag = 周五。torsdag=周四，lördag=周六，söndag=周日。'},
+  {type:'choice',q:'以下哪个表达是正确的？',zh:'星期前应该用什么介词？',answer:'Vi ses på tisdag.',opts:['Vi ses i tisdag.','Vi ses tisdag.','Vi ses på tisdag.','Vi ses till tisdag.'],fb:'星期几前用介词 på：på måndag，på fredag。月份前用 i：i januari，i mars。'},
+  {type:'choice',q:'"september" 是几月？',zh:'选择正确答案',answer:'九月',opts:['七月','八月','九月','十月'],fb:'september = 九月（9月）。juli=七月，augusti=八月，oktober=十月。'},
+  {type:'choice',q:'"tisdag den femtonde mars klockan tio" 意思是？',zh:'选择正确的中文翻译',answer:'周二三月十五日上午十点',opts:['周三五月十三日十点','周二三月十五日上午十点','周四三月五日十点','周二十一月五日十点'],fb:'tisdag=周二，femtonde=第十五，mars=三月，klockan tio=十点整。'},
+];
+
+let qAnswers={},qSubmitted=false;
+function renderQuiz(){
+  document.getElementById('progressDots').innerHTML=quizData.map((_,i)=>`<div class="dot" id="dot-${i}"></div>`).join('');
+  document.getElementById('quizContainer').innerHTML=quizData.map((q,i)=>{
+    const opts=`<div class="quiz-options" id="opts-${i}">${q.opts.map(o=>`<button class="quiz-opt" onclick="selectOpt(${i},'${o.replace(/'/g,"\\'")}',this)">${o}</button>`).join('')}</div>`;
+    return `<div class="quiz-question" id="qq-${i}">
+      <div class="qq-meta"><span class="qq-num">第${i+1}题/共${quizData.length}题</span><span class="qq-type-badge t-choice">🔤 选择题</span></div>
+      <div class="qq-text">${q.q}</div>
+      <div class="qq-zh">${q.zh}</div>
+      ${opts}
+      <div class="quiz-feedback" id="fb-${i}"></div>
+    </div>`;
+  }).join('');
+}
+function selectOpt(i,opt,btn){
+  if(qSubmitted)return;
+  document.querySelectorAll(`#opts-${i} .quiz-opt`).forEach(b=>{b.classList.remove('selected');b.style.cssText='';});
+  btn.classList.add('selected');qAnswers[i]=opt;
+  document.getElementById(`dot-${i}`).className='dot current';checkAll();
+}
+function checkAll(){document.getElementById('submitBtn').disabled=!quizData.every((_,i)=>qAnswers[i]!==undefined&&qAnswers[i]!=='');}
+function submitQuiz(){
+  if(qSubmitted)return;qSubmitted=true;document.getElementById('submitBtn').disabled=true;
+  let score=0;
+  quizData.forEach((q,i)=>{
+    const ua=(qAnswers[i]||'').trim().toLowerCase(),ca=q.answer.trim().toLowerCase(),ok=ua===ca;
+    if(ok)score++;
+    document.querySelectorAll(`#opts-${i} .quiz-opt`).forEach(btn=>{
+      btn.disabled=true;btn.style.cssText='';
+      if(btn.textContent.trim()===q.answer)btn.classList.add('correct');
+      else if(btn.textContent.trim()===qAnswers[i]&&!ok)btn.classList.add('wrong');
+    });
+    const fb=document.getElementById(`fb-${i}`);
+    fb.textContent=(ok?'✅ 正确！':'❌ 正确答案：'+q.answer+'。')+'　'+q.fb;
+    fb.className='quiz-feedback show '+(ok?'ok':'no');
+    document.getElementById(`dot-${i}`).className='dot '+(ok?'correct':'wrong');
+  });
+  const t=quizData.length;
+  document.getElementById('scoreNum').textContent=score+'/'+t;
+  document.getElementById('scoreMsg').textContent=score===t?'🎉 完美！数字时间日期完全掌握！':score>=Math.ceil(t*.85)?'👍 非常好！再复习一下继续加油！':score>=Math.ceil(t*.7)?'📚 基本掌握，重点复习 halv 时间规则。':'🔄 建议重读语法，特别注意时钟表达和数字！';
+  document.getElementById('quizScore').classList.add('show');
+}
+function resetQuiz(){qAnswers={};qSubmitted=false;document.getElementById('quizScore').classList.remove('show');document.getElementById('submitBtn').disabled=true;renderQuiz();}
+
+window.dialogues={
+  1:['Ursäkta! Vad är klockan?','Klockan är kvart i nio.','Tack! Nästa buss går klockan nio, eller?','Ja, klockan nio och sedan halv tio.','Perfekt, tack så mycket!'],
+  2:['Hej! Välkommen till Vårdcentralen. Vad kan jag hjälpa dig med?','Hej! Jag vill boka en tid, tack.','Vilken dag passar dig?','Är tisdag bra?','Ja! Vi har en tid tisdag den femtonde mars, klockan tio.','Perfekt! Tack så mycket.'],
+};
+
+function wrapDialogueWords(html){
+  return html.replace(/(<[^>]+>)|([^<]+)/g,(match,tag,text)=>{
+    if(tag)return tag;
+    return text.replace(/(\S+)/g,(word)=>{
+      const clean=word.replace(/^[""«»„()\[\]]+|[""»«.,!?;:)\[\]…–—]+$/g,'');
+      if(!clean)return word;
+      return `<span class="d-word" onclick="speakDialogWord('${clean.replace(/'/g,"\\'")}',this)">${word}</span>`;
+    });
+  });
+}
+
+const sectionScroll={grammar:0,vocab:0,dialogue:0,quiz:0};
+let currentSection='grammar';
+function showSection(id,btn){
+  sectionScroll[currentSection]=window.scrollY;
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
+  if(btn)btn.classList.add('active');
+  currentSection=id;
+  requestAnimationFrame(()=>requestAnimationFrame(()=>window.scrollTo(0,sectionScroll[id])));
+}
+
+window.addEventListener('load',()=>{
+  initTTS();
+  renderVocab('all');
+  renderQuiz();
+  document.querySelectorAll('.d-sv').forEach(el=>{
+    const btn=el.querySelector('.tts-btn');
+    const btnHtml=btn?btn.outerHTML:'';
+    let inner=el.innerHTML;
+    if(btn)inner=inner.replace(btn.outerHTML,'');
+    el.innerHTML=wrapDialogueWords(inner)+btnHtml;
+  });
+});
+</script>
+</body>
+</html>
