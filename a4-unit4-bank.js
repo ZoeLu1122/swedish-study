@@ -1,0 +1,75 @@
+window.UNIT_BANK_A4 = {
+  unit: 'a4',
+  unitTitle: '购物与食物',
+  basicPool: [
+    // ===== 单词题 =====
+    { id: 'a4_vocab_brod', kind: 'vocab_spelling', concept: 'brod', lemma: 'bröd', source: 'vocab', prompt: { zh: '面包（名词，单数）' }, answer: 'ett bröd' },
+    { id: 'a4_vocab_agg', kind: 'vocab_spelling', concept: 'agg', lemma: 'ägg', source: 'vocab', prompt: { zh: '鸡蛋（名词，单数）' }, answer: 'ett ägg' },
+    { id: 'a4_vocab_kott', kind: 'vocab_spelling', concept: 'kott', lemma: 'kött', source: 'vocab', prompt: { zh: '肉（名词，单数）' }, answer: 'ett kött' },
+    { id: 'a4_vocab_fisk', kind: 'vocab_spelling', concept: 'fisk', lemma: 'fisk', source: 'vocab', prompt: { zh: '鱼（名词，单数）' }, answer: 'en fisk' },
+    { id: 'a4_vocab_frukt', kind: 'vocab_spelling', concept: 'frukt', lemma: 'frukt', source: 'vocab', prompt: { zh: '水果（名词，单数）' }, answer: 'en frukt' },
+    { id: 'a4_vocab_ris', kind: 'vocab_spelling', concept: 'ris', lemma: 'ris', source: 'vocab', prompt: { zh: '米饭（名词，单数）' }, answer: 'ett ris' },
+    { id: 'a4_vocab_vatten', kind: 'vocab_spelling', concept: 'vatten', lemma: 'vatten', source: 'vocab', prompt: { zh: '水（名词，单数）' }, answer: 'ett vatten' },
+    { id: 'a4_vocab_kaffe', kind: 'vocab_spelling', concept: 'kaffe', lemma: 'kaffe', source: 'vocab', prompt: { zh: '咖啡（名词，单数）' }, answer: 'ett kaffe' },
+    { id: 'a4_vocab_te', kind: 'vocab_spelling', concept: 'te', lemma: 'te', source: 'vocab', prompt: { zh: '茶（名词，单数）' }, answer: 'ett te' },
+    { id: 'a4_vocab_mjolk', kind: 'vocab_spelling', concept: 'mjolk', lemma: 'mjölk', source: 'vocab', prompt: { zh: '牛奶（名词，单数）' }, answer: 'en mjölk' },
+    { id: 'a4_vocab_juice', kind: 'vocab_spelling', concept: 'juice', lemma: 'juice', source: 'vocab', prompt: { zh: '果汁（名词，单数）' }, answer: 'en juice' },
+    { id: 'a4_vocab_ost', kind: 'vocab_spelling', concept: 'ost', lemma: 'ost', source: 'vocab', prompt: { zh: '奶酪（名词，单数）' }, answer: 'en ost' },
+    { id: 'a4_vocab_billig', kind: 'vocab_spelling', concept: 'billig', lemma: 'billig', source: 'vocab', prompt: { zh: '便宜的' }, answer: 'billig' },
+    { id: 'a4_vocab_dyr', kind: 'vocab_spelling', concept: 'dyr', lemma: 'dyr', source: 'vocab', prompt: { zh: '贵的' }, answer: 'dyr' },
+    { id: 'a4_vocab_farsk', kind: 'vocab_spelling', concept: 'farsk', lemma: 'färsk', source: 'vocab', prompt: { zh: '新鲜的' }, answer: 'färsk' },
+    { id: 'a4_vocab_god', kind: 'vocab_spelling', concept: 'god', lemma: 'god', source: 'vocab', prompt: { zh: '好吃的' }, answer: 'god' },
+    { id: 'a4_vocab_sot', kind: 'vocab_spelling', concept: 'sot', lemma: 'söt', source: 'vocab', prompt: { zh: '甜的' }, answer: 'söt' },
+    { id: 'a4_vocab_salt', kind: 'vocab_spelling', concept: 'salt', lemma: 'salt', source: 'vocab', prompt: { zh: '咸的' }, answer: 'salt' },
+    // ===== 固定表达题 =====
+    { id: 'a4_phrase_vad_kostar_det', kind: 'phrase_fill', concept: 'vad_kostar_det', lemma: 'vad kostar det', source: 'phrase', prompt: { zh: '这个多少钱？' }, template: 'Vad {{kostar}} det?' },
+    { id: 'a4_phrase_det_kostar_tjugofem_kronor', kind: 'phrase_fill', concept: 'det_kostar_tjugofem_kronor', lemma: 'det kostar tjugofem kronor', source: 'phrase', prompt: { zh: '这个25克朗。' }, template: 'Det kostar tjugofem {{kronor}}.' },
+    { id: 'a4_phrase_kan_jag_betala_med_kort', kind: 'phrase_fill', concept: 'kan_jag_betala_med_kort', lemma: 'kan jag betala med kort', source: 'phrase', prompt: { zh: '我可以刷卡吗？' }, template: 'Kan jag {{betala}} med {{kort}}?' },
+    { id: 'a4_phrase_jag_vill_kopa_det_har', kind: 'phrase_fill', concept: 'jag_vill_kopa_det_har', lemma: 'jag vill köpa det här', source: 'phrase', prompt: { zh: '我想买这个。' }, template: 'Jag vill {{köpa}} det här.' },
+    { id: 'a4_phrase_ursakta_var_finns_brodet', kind: 'phrase_fill', concept: 'ursakta_var_finns_brodet', lemma: 'ursäkta var finns brödet', source: 'phrase', prompt: { zh: '请问，面包在哪里？' }, template: 'Ursäkta, var {{finns}} brödet?' },
+    { id: 'a4_phrase_jag_vill_ha_en_kaffe', kind: 'phrase_fill', concept: 'jag_vill_ha_en_kaffe', lemma: 'jag vill ha en kaffe', source: 'phrase', prompt: { zh: '我想要一杯咖啡。' }, template: 'Jag vill {{ha}} en {{kaffe}}.' },
+    { id: 'a4_phrase_vill_du_ha_en_pase', kind: 'phrase_fill', concept: 'vill_du_ha_en_pase', lemma: 'vill du ha en påse', source: 'phrase', prompt: { zh: '你要一个袋子吗？' }, template: 'Vill du {{ha}} en {{påse}}?' },
+    { id: 'a4_phrase_har_du_kvitto', kind: 'phrase_fill', concept: 'har_du_kvitto', lemma: 'har du kvitto', source: 'phrase', prompt: { zh: '你有收据吗？' }, template: 'Har du {{kvitto}}?' },
+    // ===== 对话句题 =====
+    { id: 'a4_dialog_ursakta_var_finns_brodet', kind: 'dialog_fill', concept: 'ursakta_var_finns_brodet', lemma: 'ursäkta var finns brödet', source: 'dialog', prompt: { zh: '打扰一下，面包在哪里？' }, template: 'Ursäkta, var {{finns}} brödet?' },
+    { id: 'a4_dialog_det_ar_i_gang_tre', kind: 'dialog_fill', concept: 'det_ar_i_gang_tre', lemma: 'det är i gång tre till höger', source: 'dialog', prompt: { zh: '在第三排，右边。' }, template: 'Det är i {{gång}} tre, till {{höger}}.' },
+    { id: 'a4_dialog_vad_kostar_mjolken', kind: 'dialog_fill', concept: 'vad_kostar_mjolken', lemma: 'vad kostar mjölken', source: 'dialog', prompt: { zh: '牛奶多少钱？' }, template: 'Vad {{kostar}} mjölken?' },
+    { id: 'a4_dialog_den_kostar_tjugofem_kronor', kind: 'dialog_fill', concept: 'den_kostar_tjugofem_kronor', lemma: 'den kostar tjugofem kronor', source: 'dialog', prompt: { zh: '它25克朗。' }, template: 'Den kostar tjugofem {{kronor}}.' },
+    { id: 'a4_dialog_kan_jag_betala_med_kort', kind: 'dialog_fill', concept: 'kan_jag_betala_med_kort', lemma: 'kan jag betala med kort', source: 'dialog', prompt: { zh: '我可以刷卡吗？' }, template: 'Kan jag {{betala}} med {{kort}}?' },
+    { id: 'a4_dialog_ja_sjalvklart', kind: 'dialog_fill', concept: 'ja_sjalvklart', lemma: 'ja självklart', source: 'dialog', prompt: { zh: '当然可以。' }, template: '{{Ja}}, {{självklart}}.' },
+    { id: 'a4_dialog_hej_vad_vill_du_ha', kind: 'dialog_fill', concept: 'hej_vad_vill_du_ha', lemma: 'hej vad vill du ha', source: 'dialog', prompt: { zh: '你好！你想要什么？' }, template: 'Hej! Vad vill du {{ha}}?' },
+    { id: 'a4_dialog_jag_vill_ha_en_kaffe_och_en_smorgas', kind: 'dialog_fill', concept: 'jag_vill_ha_en_kaffe_och_en_smorgas', lemma: 'jag vill ha en kaffe och en smörgås', source: 'dialog', prompt: { zh: '我想要一杯咖啡和一个三明治。' }, template: 'Jag vill ha en {{kaffe}} och en {{smörgås}}, tack.' },
+    { id: 'a4_dialog_stor_eller_liten_kaffe', kind: 'dialog_fill', concept: 'stor_eller_liten_kaffe', lemma: 'stor eller liten kaffe', source: 'dialog', prompt: { zh: '大杯还是小杯咖啡？' }, template: 'Stor eller liten {{kaffe}}?' },
+    { id: 'a4_dialog_en_liten_kaffe', kind: 'dialog_fill', concept: 'en_liten_kaffe', lemma: 'en liten kaffe', source: 'dialog', prompt: { zh: '一杯小咖啡。' }, template: 'En liten {{kaffe}}, tack.' },
+    { id: 'a4_dialog_vad_kostar_det_2', kind: 'dialog_fill', concept: 'vad_kostar_det_2', lemma: 'vad kostar det', source: 'dialog', prompt: { zh: '这个多少钱？' }, template: 'Vad {{kostar}} det?' },
+    { id: 'a4_dialog_det_kostar_fyrtio_kronor_tillsammans', kind: 'dialog_fill', concept: 'det_kostar_fyrtio_kronor_tillsammans', lemma: 'det kostar fyrtio kronor tillsammans', source: 'dialog', prompt: { zh: '一共40克朗。' }, template: 'Det kostar fyrtio {{kronor}} tillsammans.' }
+  ],
+  advancedPool: [
+    // ===== 名词变形 =====
+    { id: 'a4_noun_brod_group', kind: 'morphology', source: 'noun_forms', labelScheme: 'noun_forms', lemma: 'bröd', prompt: { zh: '面包' }, template: '{{ett}} | {{bröd}} | {{brödet}} | {{bröd}} | {{bröden}}' },
+    { id: 'a4_noun_agg_group', kind: 'morphology', source: 'noun_forms', labelScheme: 'noun_forms', lemma: 'ägg', prompt: { zh: '鸡蛋' }, template: '{{ett}} | {{ägg}} | {{ägget}} | {{ägg}} | {{äggen}}' },
+    { id: 'a4_noun_fisk_group', kind: 'morphology', source: 'noun_forms', labelScheme: 'noun_forms', lemma: 'fisk', prompt: { zh: '鱼' }, template: '{{en}} | {{fisk}} | {{fisken}} | {{fiskar}} | {{fiskarna}}' },
+    { id: 'a4_noun_affar_group', kind: 'morphology', source: 'noun_forms', labelScheme: 'noun_forms', lemma: 'affär', prompt: { zh: '商店' }, template: '{{en}} | {{affär}} | {{affären}} | {{affärer}} | {{affärerna}}' },
+    { id: 'a4_noun_kvitto_group', kind: 'morphology', source: 'noun_forms', labelScheme: 'noun_forms', lemma: 'kvitto', prompt: { zh: '收据' }, template: '{{ett}} | {{kvitto}} | {{kvittot}} | {{kvitton}} | {{kvittona}}' },
+    { id: 'a4_noun_pase_group', kind: 'morphology', source: 'noun_forms', labelScheme: 'noun_forms', lemma: 'påse', prompt: { zh: '袋子' }, template: '{{en}} | {{påse}} | {{påsen}} | {{påsar}} | {{påsarna}}' },
+    // ===== 形容词变形 =====
+    { id: 'a4_adj_billig_group', kind: 'morphology', source: 'adjective', labelScheme: 'adjective_forms', slotLabels: ['en-词形式', 'ett-词形式', '复数 / 定指形式'], lemma: 'billig', prompt: { zh: '便宜的' }, template: '{{billig}} | {{billigt}} | {{billiga}}' },
+    { id: 'a4_adj_dyr_group', kind: 'morphology', source: 'adjective', labelScheme: 'adjective_forms', slotLabels: ['en-词形式', 'ett-词形式', '复数 / 定指形式'], lemma: 'dyr', prompt: { zh: '贵的' }, template: '{{dyr}} | {{dyrt}} | {{dyra}}' },
+    { id: 'a4_adj_farsk_group', kind: 'morphology', source: 'adjective', labelScheme: 'adjective_forms', slotLabels: ['en-词形式', 'ett-词形式', '复数 / 定指形式'], lemma: 'färsk', prompt: { zh: '新鲜的' }, template: '{{färsk}} | {{färskt}} | {{färska}}' },
+    { id: 'a4_adj_god_group', kind: 'morphology', source: 'adjective', labelScheme: 'adjective_forms', slotLabels: ['en-词形式', 'ett-词形式', '复数 / 定指形式'], lemma: 'god', prompt: { zh: '好吃的' }, template: '{{god}} | {{gott}} | {{goda}}' },
+    { id: 'a4_adj_sot_group', kind: 'morphology', source: 'adjective', labelScheme: 'adjective_forms', slotLabels: ['en-词形式', 'ett-词形式', '复数 / 定指形式'], lemma: 'söt', prompt: { zh: '甜的' }, template: '{{söt}} | {{sött}} | {{söta}}' },
+    { id: 'a4_adj_salt_group', kind: 'morphology', source: 'adjective', labelScheme: 'adjective_forms', slotLabels: ['en-词形式', 'ett-词形式', '复数 / 定指形式'], lemma: 'salt', prompt: { zh: '咸的' }, template: '{{salt}} | {{salt}} | {{salta}}' },
+    // ===== 动词变形 =====
+    { id: 'a4_verb_kopa_group', kind: 'morphology', source: 'verb_forms', labelScheme: 'verb_forms', slotLabels: ['原形', '现在时', '过去时', '完成时'], lemma: 'köpa', prompt: { zh: '买' }, template: '{{köpa}} | {{köper}} | {{köpte}} | {{köpt}}' },
+    { id: 'a4_verb_betala_group', kind: 'morphology', source: 'verb_forms', labelScheme: 'verb_forms', slotLabels: ['原形', '现在时', '过去时', '完成时'], lemma: 'betala', prompt: { zh: '付款' }, template: '{{betala}} | {{betalar}} | {{betalade}} | {{betalat}}' },
+    { id: 'a4_verb_kosta_group', kind: 'morphology', source: 'verb_forms', labelScheme: 'verb_forms', slotLabels: ['原形', '现在时', '过去时', '完成时'], lemma: 'kosta', prompt: { zh: '花费；值钱' }, template: '{{kosta}} | {{kostar}} | {{kostade}} | {{kostat}}' },
+    // ===== 结构专项 =====
+    { id: 'a4_struct_hej_vad_vill_du_ha', kind: 'morphology', source: 'pattern', lemma: 'hej vad vill du ha', prompt: { zh: '你好！你想要什么？' }, template: 'Hej! Vad vill du {{ha}}?' },
+    { id: 'a4_struct_jag_vill_ha_brod_och_mjolk', kind: 'morphology', source: 'pattern', lemma: 'jag vill ha bröd och mjölk', prompt: { zh: '我想要面包和牛奶。' }, template: 'Jag vill {{ha}} {{bröd}} och {{mjölk}}.' },
+    { id: 'a4_struct_hur_mycket_kostar_det', kind: 'morphology', source: 'pattern', lemma: 'hur mycket kostar det', prompt: { zh: '这个多少钱？' }, template: 'Hur mycket {{kostar}} det?' },
+    { id: 'a4_struct_det_kostar_femtio_kronor', kind: 'morphology', source: 'pattern', lemma: 'det kostar femtio kronor', prompt: { zh: '这个五十克朗。' }, template: 'Det {{kostar}} femtio {{kronor}}.' },
+    { id: 'a4_struct_vill_du_ha_en_pase', kind: 'morphology', source: 'pattern', lemma: 'vill du ha en påse', prompt: { zh: '你要一个袋子吗？' }, template: 'Vill du {{ha}} en {{påse}}?' },
+    { id: 'a4_struct_ja_tack', kind: 'morphology', source: 'pattern', lemma: 'ja tack', prompt: { zh: '好的，谢谢。' }, template: '{{Ja}}, {{tack}}.' },
+    { id: 'a4_struct_har_du_kvitto', kind: 'morphology', source: 'pattern', lemma: 'har du kvitto', prompt: { zh: '你有收据吗？' }, template: 'Har du {{kvitto}}?' }
+  ]
+};

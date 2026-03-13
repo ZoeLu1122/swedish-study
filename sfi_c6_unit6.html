@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SFI C级 · 第六单元：写作与段落结构</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="common.css">
+<script src="common.js"></script>
+<style>
+:root{
+  --navy:#1a2744;--blue:#2e4fa3;--sky:#5b8de8;
+  --gold:#d4920a;--green:#2e8b57;--green-light:#d4f0dd;
+  --red:#c0392b;--red-light:#fdecea;--white:#f9fafb;
+  --gray:#6b7a99;--border:#dce3f0;
+  --ac:#8a1a40;--ab:#fff0f4;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Noto Sans SC',sans-serif;background:var(--white);color:var(--navy);}
+
+nav{background:var(--navy);color:white;padding:.85rem 1.5rem;display:flex;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 16px rgba(0,0,0,.25);}
+.nav-logo{font-family:'DM Serif Display',serif;font-size:1.05rem;margin-right:auto;}
+.nav-logo span{color:#f4a0c0;}
+.nav-tab{padding:.38rem .85rem;border-radius:100px;font-size:.73rem;cursor:pointer;border:none;background:rgba(255,255,255,.08);color:#a0b0cc;transition:all .2s;font-family:'Noto Sans SC',sans-serif;}
+.nav-tab:hover{background:rgba(255,255,255,.15);color:white;}
+.nav-tab.active{background:#a02050;color:white;}
+
+.page-header{background:linear-gradient(135deg,#2a0814 0%,#5a1030 100%);color:white;padding:2rem 2rem 1.8rem;}
+.ph-inner{max-width:900px;margin:0 auto;}
+.ph-kicker{font-size:.67rem;letter-spacing:.22em;text-transform:uppercase;color:#f4a0c0;margin-bottom:.4rem;}
+.ph-title{font-family:'DM Serif Display',serif;font-size:clamp(1.5rem,4vw,2.2rem);margin-bottom:.4rem;}
+.ph-desc{font-size:.81rem;color:#e898b4;line-height:1.65;max-width:520px;}
+.ph-pills{display:flex;gap:.5rem;margin-top:1rem;flex-wrap:wrap;}
+.ph-pill{font-size:.67rem;padding:3px 10px;border-radius:100px;background:rgba(255,255,255,.1);color:#f4c0d4;}
+
+main{max-width:900px;margin:0 auto;padding:1.8rem 1.4rem 4rem;}
+.section{display:none;}
+.section.active{display:block;}
+
+.card{background:white;border:1px solid var(--border);border-radius:14px;padding:1.4rem 1.5rem;margin-bottom:1.2rem;box-shadow:0 1px 6px rgba(26,39,68,.05);}
+.card-title{font-size:.98rem;font-weight:600;color:var(--navy);margin-bottom:.25rem;display:flex;align-items:center;gap:.5rem;}
+.card-subtitle{font-size:.77rem;color:var(--gray);margin-bottom:1rem;line-height:1.55;}
+.rule-box{background:var(--ab);border-left:4px solid var(--ac);border-radius:0 10px 10px 0;padding:.9rem 1.1rem;margin:.9rem 0;font-size:.82rem;line-height:1.8;color:var(--navy);}
+.rule-box strong{color:var(--ac);}
+.tip-box{background:#fff8f9;border:1px dashed #d06080;border-radius:10px;padding:.85rem 1rem;font-size:.79rem;color:#5a0a28;line-height:1.65;margin:.8rem 0;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0;}
+@media(max-width:540px){.two-col{grid-template-columns:1fr;}}
+.box-rose{background:var(--ab);border-radius:12px;padding:1rem 1.1rem;border:1px solid #f4a0c0;}
+.box-blue{background:#f0f4ff;border-radius:12px;padding:1rem 1.1rem;border:1px solid #b0c4f4;}
+.box-title{font-size:.78rem;font-weight:700;margin-bottom:.6rem;}
+.bt-rose{color:var(--ac);} .bt-blue{color:var(--blue);}
+.hl-conn{background:rgba(138,26,64,.15);border-radius:4px;padding:0 4px;color:var(--ac);font-weight:700;}
+.hl-form{background:rgba(46,79,163,.12);border-radius:4px;padding:0 4px;color:var(--blue);font-weight:700;}
+.hl-inf{background:rgba(100,100,100,.1);border-radius:4px;padding:0 4px;color:#888;text-decoration:line-through;}
+
+/* ─── CONJ TABLE ─── */
+.conj-table{width:100%;border-collapse:collapse;font-size:.82rem;margin:.8rem 0;}
+.conj-table th{background:var(--ac);color:white;padding:.45rem .7rem;text-align:left;font-weight:600;font-size:.75rem;}
+.conj-table th:first-child{border-radius:8px 0 0 0;}
+.conj-table th:last-child{border-radius:0 8px 0 0;}
+.conj-table td{padding:.42rem .7rem;border-bottom:1px solid var(--border);}
+.conj-table tr:last-child td{border-bottom:none;}
+.conj-table tr:nth-child(even) td{background:#fff5f8;}
+.conj-table .td-hl{font-weight:700;color:var(--ac);}
+.conj-table .td-blue{font-weight:700;color:var(--blue);}
+.conj-table .td-group{font-size:.68rem;background:#f8e0e8;color:#6a0030;font-weight:700;text-align:center;padding:.3rem .5rem;}
+
+/* ─── VOCAB ─── */
+.vocab-filters{display:flex;gap:.45rem;margin-bottom:1rem;flex-wrap:wrap;}
+.vf-btn{padding:.28rem .85rem;border-radius:100px;font-size:.71rem;border:1.5px solid var(--border);background:white;cursor:pointer;color:var(--gray);font-family:'Noto Sans SC',sans-serif;transition:all .2s;}
+.vf-btn:hover{border-color:var(--ac);color:var(--ac);}
+.vf-btn.active{background:var(--navy);border-color:var(--navy);color:white;}
+.vocab-mode-btn{padding:.38rem 1rem;border-radius:100px;font-size:.73rem;border:1.5px solid var(--ac);background:white;cursor:pointer;color:var(--ac);font-family:'Noto Sans SC',sans-serif;transition:all .2s;font-weight:600;}
+.vocab-mode-btn.flip-active{background:var(--ac);color:white;border-color:var(--ac);}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:.7rem;}
+
+.vocab-card{border-radius:12px;padding:.9rem 1rem;border:1.5px solid;position:relative;transition:transform .15s,box-shadow .15s;}
+.vocab-card:hover{transform:translateY(-2px);box-shadow:0 5px 14px rgba(0,0,0,.09);}
+.vocab-card.noun{background:#f4f8ff;border-color:#b0c8f8;}
+.vocab-card.verb{background:#fff5f8;border-color:#f4a0c0;}
+
+
+.vc-top{display:flex;align-items:center;gap:.4rem;margin-bottom:.5rem;padding-right:3rem;}
+.vc-type-badge{font-size:.62rem;font-weight:700;padding:2px 8px;border-radius:100px;color:white;}
+.noun .vc-type-badge{background:#2040a0;} .verb .vc-type-badge{background:#8a1a40;}
+.vc-en-badge{font-size:.6rem;padding:2px 7px;border-radius:100px;}
+.en-b{background:#e0eaff;color:#2040a0;} .ett-b{background:#fff0d8;color:#a04000;}
+
+.vc-headword{display:flex;align-items:baseline;gap:.4rem;margin-bottom:.6rem;flex-wrap:nowrap;}
+.vc-headword-sv{font-size:1.05rem;font-weight:700;color:var(--navy);}
+.vc-headword-py{font-size:clamp(.48rem,.68rem,1rem);color:#999;font-style:italic;white-space:nowrap;flex-shrink:1;min-width:0;}
+
+.vc-form-row{padding:.25rem 0;border-bottom:1px solid rgba(0,0,0,.06);}
+.vc-form-row:last-of-type{border-bottom:none;}
+.vc-form-top{display:flex;align-items:baseline;gap:0;flex-wrap:wrap;}
+.vc-row-label{font-size:.63rem;color:var(--gray);white-space:nowrap;width:88px;min-width:88px;flex-shrink:0;}
+.vc-row-sv{font-size:.84rem;font-weight:600;color:var(--navy);overflow-wrap:normal;}
+.vc-row-py{display:block;font-size:clamp(.48rem,.63rem,1rem);color:#aaa;font-style:italic;margin-top:.03rem;padding-left:90px;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+.vc-verb-row{padding:.25rem 0;border-bottom:1px solid rgba(0,0,0,.06);}
+.vc-verb-row:last-of-type{border-bottom:none;}
+.vc-verb-top{display:flex;align-items:baseline;gap:0;flex-wrap:wrap;}
+.vc-verb-py{display:block;font-size:clamp(.48rem,.63rem,1rem);color:#aaa;font-style:italic;margin-top:.03rem;padding-left:90px;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+.d-def{color:#c05800;font-weight:700;} .d-pl{color:#1a55c0;font-weight:700;} .d-pd{color:#1a8040;font-weight:700;}
+.vc-chinese{font-size:.82rem;color:#333;margin-top:.55rem;padding-top:.45rem;border-top:1px solid rgba(0,0,0,.07);font-weight:500;}
+
+.speak-word{cursor:pointer;border-radius:4px;padding:0 2px;transition:background .15s,color .15s;}
+.speak-word:hover{background:rgba(138,26,64,.15);color:var(--ac);}
+.speak-word.speaking{background:var(--ac);color:white;}
+.d-word{cursor:pointer;border-radius:3px;padding:0 1px;transition:background .12s,color .12s;display:inline;}
+.d-word:hover{background:rgba(138,26,64,.15);color:var(--ac);}
+.d-word.speaking{background:var(--ac);color:white;}
+
+/* ─── FLIP CARD ─── */
+.flip-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:.85rem;}
+.flip-card-wrap{perspective:900px;height:130px;}
+.flip-card-inner{position:relative;width:100%;height:100%;transition:transform .45s;transform-style:preserve-3d;cursor:pointer;}
+.flip-card-wrap.flipped .flip-card-inner{transform:rotateY(180deg);}
+.flip-front,.flip-back{position:absolute;inset:0;border-radius:12px;backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:.6rem .8rem;border:1.5px solid var(--border);}
+.flip-front{background:white;box-shadow:0 2px 8px rgba(0,0,0,.07);}
+.flip-back{background:#2a0814;color:white;transform:rotateY(180deg);}
+.flip-zh{font-size:.95rem;font-weight:600;color:var(--navy);text-align:center;}
+.flip-type{font-size:.62rem;color:var(--gray);margin-top:.3rem;}
+.flip-sv{font-size:1rem;font-weight:700;color:white;text-align:center;}
+.flip-forms{display:flex;flex-wrap:wrap;justify-content:center;gap:.15rem .25rem;margin-top:.3rem;}
+.ff-row{font-size:.68rem;color:#f4c0d4;font-weight:600;}
+.ff-row em{font-style:normal;font-size:.58rem;color:#c08090;margin-right:.15rem;}
+.ff-sep{font-size:.6rem;color:#806070;}
+
+/* ─── DIALOGUE ─── */
+.d-line{display:flex;gap:.75rem;margin-bottom:.75rem;align-items:flex-start;}
+.d-line.right{flex-direction:row-reverse;}
+.d-avatar{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;background:#f0f0f0;}
+.d-bubble{max-width:76%;padding:.65rem .9rem;border-radius:12px;font-size:.83rem;line-height:1.55;}
+.d-line:not(.right) .d-bubble{background:#fff5f8;border-bottom-left-radius:3px;}
+.d-line.right .d-bubble{background:#f5f8ff;border-bottom-right-radius:3px;}
+.d-sv{font-weight:600;color:var(--navy);}
+.d-zh{font-size:.71rem;color:var(--gray);margin-top:.18rem;}
+.dialogue-note{background:#fff5f8;border-radius:8px;padding:.7rem .95rem;font-size:.75rem;color:#5a0a28;margin-top:.4rem;line-height:1.65;}
+.tts-btn{display:inline-flex;align-items:center;margin-left:.5rem;padding:2px 7px;background:rgba(138,26,64,.1);border:1px solid rgba(138,26,64,.3);border-radius:100px;font-size:.72rem;cursor:pointer;color:var(--ac);vertical-align:middle;transition:all .2s;line-height:1;}
+.tts-btn:hover{background:var(--ac);color:white;border-color:var(--ac);}
+.tts-btn.speaking{background:var(--ac);color:white;animation:pulse 1s infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+.tts-full-btn{padding:.5rem 1.1rem;border-radius:100px;background:var(--ac);color:white;border:1.5px solid var(--ac);font-size:.78rem;cursor:pointer;font-family:'Noto Sans SC',sans-serif;transition:all .2s;}
+.tts-full-btn:hover:not(:disabled){background:#5a0e28;}
+.tts-full-btn:disabled{background:#aaa;border-color:#aaa;cursor:default;}
+
+/* ─── QUIZ ─── */
+.progress-dots{display:flex;gap:.35rem;margin-bottom:1.2rem;flex-wrap:wrap;}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--border);transition:background .3s;}
+.dot.current{background:#a02050;}.dot.correct{background:var(--green);}.dot.wrong{background:var(--red);}
+.quiz-question{margin-bottom:1.6rem;padding-bottom:1.6rem;border-bottom:1px solid var(--border);}
+.quiz-question:last-of-type{border-bottom:none;}
+.qq-meta{display:flex;align-items:center;gap:.6rem;margin-bottom:.4rem;}
+.qq-num{font-size:.67rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gray);}
+.qq-type-badge{font-size:.62rem;padding:2px 9px;border-radius:100px;font-weight:600;}
+.t-choice{background:#fff3cc;color:#7a5000;}.t-fill{background:#d8f5e0;color:#1a5030;}
+.t-sv2zh{background:#fff0d8;color:#804000;}.t-zh2sv{background:#ffd8f0;color:#800040;}
+.qq-text{font-size:.9rem;color:var(--navy);margin-bottom:.25rem;line-height:1.55;}
+.qq-zh{font-size:.77rem;color:#555;margin-bottom:.75rem;line-height:1.4;padding:.35rem .6rem;background:#fff5f8;border-radius:6px;border-left:3px solid #c04070;}
+.quiz-options{display:flex;flex-direction:column;gap:.38rem;}
+.quiz-opt{padding:.6rem 1rem;border-radius:9px;border:1.5px solid var(--border);background:white;font-size:.83rem;cursor:pointer;transition:all .2s;text-align:left;font-family:'Noto Sans SC',sans-serif;color:var(--navy);}
+.quiz-opt:hover:not(:disabled){border-color:var(--ac);background:var(--ab);}
+.quiz-opt.selected{border-color:var(--ac);background:var(--ab);}
+.quiz-opt.correct{border-color:var(--green);background:var(--green-light);color:#1a5c35;font-weight:600;}
+.quiz-opt.wrong{border-color:var(--red);background:var(--red-light);color:#8a1010;}
+.quiz-opt:disabled{cursor:default;}
+.fill-wrap{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.5rem;}
+.fill-input{padding:.48rem .8rem;border:2px solid var(--border);border-radius:8px;font-size:.87rem;font-family:'Noto Sans SC',sans-serif;color:var(--navy);width:220px;outline:none;transition:border-color .2s;}
+.fill-input:focus{border-color:var(--ac);}
+.fill-input.correct{border-color:var(--green);background:var(--green-light);}
+.fill-input.wrong{border-color:var(--red);background:var(--red-light);}
+.fill-input:disabled{cursor:default;}
+.fill-hint{font-size:.7rem;color:var(--gray);}
+.quiz-feedback{font-size:.77rem;margin-top:.5rem;padding:.5rem .8rem;border-radius:8px;display:none;line-height:1.55;}
+.quiz-feedback.show{display:block;}
+.quiz-feedback.ok{background:var(--green-light);color:#1a5030;}
+.quiz-feedback.no{background:var(--red-light);color:#7a1010;}
+.submit-btn{display:block;width:100%;margin-top:1.5rem;padding:.88rem;background:var(--ac);color:white;border:none;border-radius:10px;font-size:.88rem;font-family:'Noto Sans SC',sans-serif;cursor:pointer;transition:background .2s;font-weight:600;}
+.submit-btn:hover:not(:disabled){background:#5a0e28;}
+.submit-btn:disabled{background:#b0bbc8;cursor:default;}
+.quiz-score{background:#2a0814;color:white;border-radius:14px;padding:1.5rem;text-align:center;display:none;margin-top:1rem;}
+.quiz-score.show{display:block;}
+.qs-num{font-family:'DM Serif Display',serif;font-size:3rem;color:#f4a0c0;line-height:1;}
+.qs-label{font-size:.8rem;color:#e898b4;margin-top:.25rem;}
+.qs-msg{font-size:.88rem;margin-top:1rem;line-height:1.6;color:#f4c0d4;}
+.retry-btn{margin-top:1rem;padding:.6rem 1.5rem;background:#a02050;color:white;border:none;border-radius:100px;font-size:.82rem;cursor:pointer;font-family:'Noto Sans SC',sans-serif;}
+
+body{
+  --primary: #a02050;
+  --primary-light: #fff0f4;
+  --primary-dark: #8a1a40;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">SFI <span>C级</span> · 第六单元</div>
+  <button class="nav-tab active" onclick="showSection('grammar',this)">📖 语法</button>
+  <button class="nav-tab" onclick="showSection('vocab',this)">📋 词汇</button>
+  <button class="nav-tab" onclick="showSection('dialogue',this)">💬 对话</button>
+  <button class="nav-tab" onclick="showSection('quiz',this)">🧪 测验</button>
+</nav>
+
+<div class="page-header">
+  <div class="ph-inner">
+    <div class="ph-kicker">SFI C级 · 第六单元 · 语法核心</div>
+    <div class="ph-title">写作与段落结构</div>
+    <div class="ph-desc">掌握段落连接词（Konnektorer）、正式书写句式，以及三段式写作结构，能够写出逻辑清晰、表达规范的瑞典语文章。</div>
+    <div class="ph-pills">
+      <span class="ph-pill">① 段落连接词</span>
+      <span class="ph-pill">② 正式书写句式</span>
+      <span class="ph-pill">③ 三段式写作结构</span>
+      <span class="ph-pill">⏱ 约50分钟</span>
+    </div>
+  </div>
+</div>
+
+<main>
+<!-- ===== 语法 ===== -->
+<section class="section active" id="grammar">
+
+  <div class="card">
+    <div class="card-title">① 段落连接词 Konnektorer</div>
+    <div class="card-subtitle">连接词是写作的"粘合剂"，用于衔接句子与段落，让文章逻辑清晰、表达流畅。</div>
+    <table class="conj-table">
+      <tr><th>功能</th><th>连接词</th><th>中文含义</th><th>示例</th></tr>
+      <tr>
+        <td class="td-group" style="font-size:.72rem;background:#fff0f4;color:#8a1a40;">递进</td>
+        <td class="td-hl">dessutom / även / också</td>
+        <td>此外 / 也 / 也</td>
+        <td style="font-size:.76rem;">Dessutom är det billigare.</td>
+      </tr>
+      <tr>
+        <td class="td-group" style="font-size:.72rem;background:#f0f4ff;color:#1a3a8a;">转折</td>
+        <td class="td-blue">men / däremot / å andra sidan</td>
+        <td>但是 / 相反 / 另一方面</td>
+        <td style="font-size:.76rem;">Däremot är det tidskrävande.</td>
+      </tr>
+      <tr>
+        <td class="td-group" style="font-size:.72rem;background:#f0fff4;color:#1a5030;">因果</td>
+        <td style="color:#1a6a30;font-weight:700;">därför / eftersom / på grund av</td>
+        <td>因此 / 因为 / 由于</td>
+        <td style="font-size:.76rem;">Eftersom det regnar, stannar vi inne.</td>
+      </tr>
+      <tr>
+        <td class="td-group" style="font-size:.72rem;background:#fffbe0;color:#7a5000;">举例</td>
+        <td style="color:#7a5000;font-weight:700;">till exempel / bland annat</td>
+        <td>例如 / 其中包括</td>
+        <td style="font-size:.76rem;">Till exempel kan man cykla.</td>
+      </tr>
+      <tr>
+        <td class="td-group" style="font-size:.72rem;background:#fff5f8;color:#8a1a40;">总结</td>
+        <td class="td-hl">sammanfattningsvis / alltså / till slut</td>
+        <td>总的来说 / 所以 / 最后</td>
+        <td style="font-size:.76rem;">Sammanfattningsvis anser jag att…</td>
+      </tr>
+      <tr>
+        <td class="td-group" style="font-size:.72rem;background:#f8f0ff;color:#5a1a8a;">顺序</td>
+        <td style="color:#5a1a8a;font-weight:700;">först / sedan / därefter / slutligen</td>
+        <td>首先 / 然后 / 之后 / 最后</td>
+        <td style="font-size:.76rem;">Först presenteras problemet.</td>
+      </tr>
+    </table>
+    <div class="tip-box">💡 <strong>书写技巧：</strong>不要在同一段落中重复使用同一个连接词。交替使用 dessutom / även / också 可以使文章更多样。<br>
+    ⚠️ <strong>常见错误：</strong>口语中常用 "och sen"（然后），书面语应换成 <span class="hl-conn">dessutom</span>（此外）或 <span class="hl-conn">därefter</span>（之后）。</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">② 正式书写句式</div>
+    <div class="card-subtitle">SFI C级写作要求使用正式语气。以下是常见的非正式→正式表达对照。</div>
+    <table class="conj-table">
+      <tr><th>非正式（口语）</th><th>正式（书面语）</th><th>说明</th></tr>
+      <tr>
+        <td><span class="hl-inf">Jag tycker…</span></td>
+        <td class="td-hl">Enligt min åsikt… / Jag anser att…</td>
+        <td>表达个人观点</td>
+      </tr>
+      <tr>
+        <td><span class="hl-inf">Det är bra.</span></td>
+        <td class="td-hl">Det är fördelaktigt.</td>
+        <td>用更正式的形容词</td>
+      </tr>
+      <tr>
+        <td><span class="hl-inf">Det är dåligt.</span></td>
+        <td class="td-hl">Det är negativt / skadligt.</td>
+        <td>替换口语形容词</td>
+      </tr>
+      <tr>
+        <td><span class="hl-inf">Jag vill säga att…</span></td>
+        <td class="td-hl">Jag vill påpeka att…</td>
+        <td>正式指出某事</td>
+      </tr>
+      <tr>
+        <td><span class="hl-inf">Och sen…</span></td>
+        <td class="td-hl">Dessutom… / Vidare…</td>
+        <td>正式递进连接词</td>
+      </tr>
+      <tr>
+        <td><span class="hl-inf">Jag tror…</span></td>
+        <td class="td-hl">Jag hävdar att… / Det kan hävdas att…</td>
+        <td>强化论述语气</td>
+      </tr>
+    </table>
+    <div class="rule-box">
+      <strong>正式写作的四条原则：</strong><br>
+      1. 用 <strong>Enligt min åsikt</strong> 或 <strong>Jag anser att</strong> 替代 "Jag tycker"<br>
+      2. 用 <strong>dessutom / vidare / däremot</strong> 替代 "och sen / men"<br>
+      3. 用 <strong>fördelaktigt / negativt / skadligt</strong> 替代 "bra / dåligt"<br>
+      4. 避免缩写：写 <strong>det är</strong>，不写 <strong>det's</strong>；写 <strong>till exempel</strong>，不写 <strong>t.ex.</strong>（在正文中）
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">③ 写作结构：三段式 Trepunktsmodellen</div>
+    <div class="card-subtitle">瑞典语写作（作文、信件、报告）通常遵循三段式结构。</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.8rem;margin:1rem 0;">
+      <div class="box-rose">
+        <div class="box-title bt-rose">① Inledning（引言）</div>
+        <div style="font-size:.79rem;line-height:1.8;color:#5a0a28;">
+          介绍主题<br>说明写作目的<br><br>
+          <strong>句式模板：</strong><br>
+          <em>Syftet med detta brev är att…</em><br>
+          <em>I denna text vill jag diskutera…</em>
+        </div>
+      </div>
+      <div class="box-blue">
+        <div class="box-title bt-blue">② Innehåll（主体）</div>
+        <div style="font-size:.79rem;line-height:1.8;color:#1a2a6a;">
+          展开论点<br>举例说明<br>使用连接词串联<br><br>
+          <strong>句式模板：</strong><br>
+          <em>Till exempel…</em><br>
+          <em>Dessutom…</em>
+        </div>
+      </div>
+      <div class="box-rose">
+        <div class="box-title bt-rose">③ Avslutning（结尾）</div>
+        <div style="font-size:.79rem;line-height:1.8;color:#5a0a28;">
+          总结观点<br>提出建议（可选）<br><br>
+          <strong>句式模板：</strong><br>
+          <em>Sammanfattningsvis anser jag att…</em><br>
+          <em>Därför föreslår jag att…</em>
+        </div>
+      </div>
+    </div>
+    <div class="rule-box">
+      <strong>完整段落示例（关于城市绿化）：</strong><br>
+      <span class="hl-conn">①</span> <strong>Syftet med detta brev är att</strong> diskutera miljön i vår stad.<br>
+      <span class="hl-conn">②</span> Många invånare saknar tillgång till grönområden. <strong>Dessutom</strong> mår människor bättre när de har tillgång till natur. <strong>Till exempel</strong> kan man plantera träd längs gatorna.<br>
+      <span class="hl-conn">③</span> <strong>Sammanfattningsvis anser jag att</strong> mer grönska behövs i staden.
+    </div>
+    <div class="tip-box">🎯 <strong>SFI考试写作提示：</strong>确保每段都有明确的功能，引言不超过2句，主体用连接词连接至少2个论点，结尾用 <span class="hl-conn">sammanfattningsvis</span> 开头总结。</div>
+  </div>
+
+</section>
+
+<!-- ===== 词汇 ===== -->
+<section class="section" id="vocab">
+  <div class="card">
+    <div class="card-title">📋 本单元词汇（14个）</div>
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.6rem;margin-bottom:.8rem;">
+      <div class="vocab-filters" id="vocabFilters">
+        <button class="vf-btn active" onclick="filterVocab('all',this)">全部（14）</button>
+        <button class="vf-btn" onclick="filterVocab('verb',this)">⚡ 动词</button>
+        <button class="vf-btn" onclick="filterVocab('noun',this)">📦 名词</button>
+      </div>
+      <button class="vocab-mode-btn" id="flipModeBtn" onclick="toggleFlipMode()">🔀 翻转模式</button>
+    </div>
+    <div class="vocab-grid" id="vocabGrid"></div>
+    <div id="flipGrid" style="display:none;" class="flip-grid"></div>
+  </div>
+</section>
+
+<!-- ===== 对话 ===== -->
+<section class="section" id="dialogue">
+  <div class="card">
+    <div class="card-title">💬 对话一：讨论写作任务</div>
+    <div class="card-subtitle">同学之间讨论如何完成一篇写给市政局的信件。<span style="color:var(--ac);font-weight:600;">玫红色</span>=连接词，<span style="color:var(--blue);font-weight:600;">蓝色</span>=正式书写用语。点击任意单词可听发音。</div>
+    <div style="display:flex;gap:.5rem;margin-bottom:1.1rem;flex-wrap:wrap;">
+      <button class="tts-full-btn" id="btn-full1" onclick="toggleFull(1)">▶ 朗读整段对话</button>
+    </div>
+    <div class="dialogue">
+      <div class="d-line"><div class="d-avatar">🧑</div><div class="d-bubble">
+        <div class="d-sv">Vad ska vi skriva om den här veckan?<button class="tts-btn" onclick="speak('Vad ska vi skriva om den här veckan?')">🔊</button></div>
+        <div class="d-zh">我们这周要写什么？</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">👩</div><div class="d-bubble">
+        <div class="d-sv">Vi ska skriva ett brev till kommunen om parken i vårt område. Det är viktigt att <span class="hl-form">inleda</span> med att förklara <span class="hl-form">syftet</span>.<button class="tts-btn" onclick="speak('Vi ska skriva ett brev till kommunen om parken i vårt område. Det är viktigt att inleda med att förklara syftet.')">🔊</button></div>
+        <div class="d-zh">我们要给市政局写一封关于我们社区公园的信。以说明目的来开头很重要。</div>
+      </div></div>
+      <div class="d-line"><div class="d-avatar">🧑</div><div class="d-bubble">
+        <div class="d-sv">Hur ska jag börja? Kan jag skriva "Jag tycker att parken är dålig"?<button class="tts-btn" onclick="speak('Hur ska jag börja? Kan jag skriva "Jag tycker att parken är dålig"?')">🔊</button></div>
+        <div class="d-zh">我怎么开头？我可以写"我觉得公园很差"吗？</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">👩</div><div class="d-bubble">
+        <div class="d-sv">Nej, det är för informellt. Skriv istället: <span class="hl-form">"Syftet med detta brev är att påpeka</span> att parken behöver upprustning." <span class="hl-conn">Dessutom</span> bör du använda <span class="hl-form">enligt min åsikt</span> istället för "Jag tycker".<button class="tts-btn" onclick="speak('Nej, det är för informellt. Skriv istället: Syftet med detta brev är att påpeka att parken behöver upprustning. Dessutom bör du använda enligt min åsikt istället för Jag tycker.')">🔊</button></div>
+        <div class="d-zh">不，那太口语化了。可以换成："本信的目的是指出公园需要翻新。"此外，你应该用"根据我的看法"来替代"我觉得"。</div>
+      </div></div>
+      <div class="d-line"><div class="d-avatar">🧑</div><div class="d-bubble">
+        <div class="d-sv">Och hur <span class="hl-form">avslutar</span> man brevet?<button class="tts-btn" onclick="speak('Och hur avslutar man brevet?')">🔊</button></div>
+        <div class="d-zh">那信怎么结尾呢？</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">👩</div><div class="d-bubble">
+        <div class="d-sv">Sammanfatta dina <span class="hl-form">synpunkter</span> och <span class="hl-form">föreslå</span> en lösning. Använd "<span class="hl-conn">Sammanfattningsvis</span>" eller "<span class="hl-conn">Därför</span> <span class="hl-form">anser jag att</span>…"<button class="tts-btn" onclick="speak('Sammanfatta dina synpunkter och föreslå en lösning. Använd Sammanfattningsvis eller Därför anser jag att…')">🔊</button></div>
+        <div class="d-zh">总结你的观点并提出一个解决方案。用"总的来说"或"因此我认为……"</div>
+      </div></div>
+    </div>
+    <div class="dialogue-note">🔴 <strong style="color:var(--ac)">连接词：</strong>Dessutom（此外）、Sammanfattningsvis（总的来说）、Därför（因此）<br>
+    🔵 <strong style="color:var(--blue)">正式用语：</strong>syftet（目的）、inleda（引入）、påpeka（指出）、synpunkter（观点）、föreslå（建议）、according to min åsikt（根据我的看法）、avslutar（结束）</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">💬 对话二：互评作文</div>
+    <div class="card-subtitle">两位同学互相批改作文，讨论如何改进段落结构和连接词使用。</div>
+    <div style="display:flex;gap:.5rem;margin-bottom:1.1rem;flex-wrap:wrap;">
+      <button class="tts-full-btn" id="btn-full2" onclick="toggleFull(2)">▶ 朗读整段对话</button>
+    </div>
+    <div class="dialogue">
+      <div class="d-line"><div class="d-avatar">🧑‍💼</div><div class="d-bubble">
+        <div class="d-sv">Jag har läst din text. Den är bra, <span class="hl-conn">men</span> den saknar ett tydligt <span class="hl-form">avslut</span>.<button class="tts-btn" onclick="speak('Jag har läst din text. Den är bra, men den saknar ett tydligt avslut.')">🔊</button></div>
+        <div class="d-zh">我读了你的文章。写得不错，但缺少一个清晰的结尾。</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">👩‍💼</div><div class="d-bubble">
+        <div class="d-sv">Ja, jag vet. Jag hade svårt att sammanfatta mina <span class="hl-form">synpunkter</span> på ett bra sätt.<button class="tts-btn" onclick="speak('Ja, jag vet. Jag hade svårt att sammanfatta mina synpunkter på ett bra sätt.')">🔊</button></div>
+        <div class="d-zh">是的，我知道。我很难把我的观点用好的方式总结起来。</div>
+      </div></div>
+      <div class="d-line"><div class="d-avatar">🧑‍💼</div><div class="d-bubble">
+        <div class="d-sv">Prova att börja avslutningsstycket med "<span class="hl-conn">Sammanfattningsvis</span> <span class="hl-form">anser jag att</span>…" Det ger texten en tydlig <span class="hl-form">slutsats</span>.<button class="tts-btn" onclick="speak('Prova att börja avslutningsstycket med Sammanfattningsvis anser jag att… Det ger texten en tydlig slutsats.')">🔊</button></div>
+        <div class="d-zh">试着用"总的来说我认为……"来开始结尾段落。这会给文章一个清晰的结论。</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">👩‍💼</div><div class="d-bubble">
+        <div class="d-sv">Bra idé! <span class="hl-conn">Dessutom</span> kanske jag borde ge ett <span class="hl-form">exempel</span> i det andra <span class="hl-form">stycket</span>? Jag <span class="hl-form">hävdar</span> att parken behövs, <span class="hl-conn">men</span> jag ger inga bevis.<button class="tts-btn" onclick="speak('Bra idé! Dessutom kanske jag borde ge ett exempel i det andra stycket? Jag hävdar att parken behövs, men jag ger inga bevis.')">🔊</button></div>
+        <div class="d-zh">好主意！此外，我是不是应该在第二段给一个例子？我主张公园是必要的，但没有给出任何证据。</div>
+      </div></div>
+      <div class="d-line"><div class="d-avatar">🧑‍💼</div><div class="d-bubble">
+        <div class="d-sv">Precis. <span class="hl-conn">Till exempel</span> kan du skriva om din egen erfarenhet. Det är ett bra sätt att <span class="hl-form">motivera</span> ditt <span class="hl-form">argument</span>.<button class="tts-btn" onclick="speak('Precis. Till exempel kan du skriva om din egen erfarenhet. Det är ett bra sätt att motivera ditt argument.')">🔊</button></div>
+        <div class="d-zh">正是。比如你可以写写你自己的经历。这是证明你论点的好方法。</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">👩‍💼</div><div class="d-bubble">
+        <div class="d-sv">Tack! Det gör texten mer övertygande. Jag ska också byta ut "Det är dåligt" mot "<span class="hl-form">Det är negativt</span>" – det låter mer formellt.<button class="tts-btn" onclick="speak('Tack! Det gör texten mer övertygande. Jag ska också byta ut Det är dåligt mot Det är negativt – det låter mer formellt.')">🔊</button></div>
+        <div class="d-zh">谢谢！这样文章会更有说服力。我还要把"这很差"换成"这是负面的"——听起来更正式。</div>
+      </div></div>
+    </div>
+    <div class="dialogue-note">🔴 <strong style="color:var(--ac)">连接词：</strong>men（但是）、Dessutom（此外）、Sammanfattningsvis（总的来说）、Till exempel（比如）<br>
+    🔵 <strong style="color:var(--blue)">正式用语：</strong>avslut（结尾）、synpunkter（观点）、anser jag att（我认为）、slutsats（结论）、stycke（段落）、hävdar（主张）、motivera（论证）、exempel（例子）</div>
+  </div>
+</section>
+
+<!-- ===== 测验 ===== -->
+<section class="section" id="quiz">
+  <div class="card">
+    <div class="card-title">🧪 综合测验：写作与段落结构</div>
+    <div class="card-subtitle">共10题，涵盖连接词、正式表达、段落结构和词汇，提交后显示详细解析。</div>
+    <div class="progress-dots" id="progressDots"></div>
+    <div id="quizContainer"></div>
+    <button class="submit-btn" id="submitBtn" onclick="submitQuiz()" disabled>提交全部答案</button>
+    <div class="quiz-score" id="quizScore">
+      <div class="qs-num" id="scoreNum">-</div>
+      <div class="qs-label">答对题数</div>
+      <div class="qs-msg" id="scoreMsg"></div>
+      <button class="retry-btn" onclick="resetQuiz()">🔄 重新测验</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script>
+// ═══════════════════════════════════════════════════════════
+// STORAGE
+// ═══════════════════════════════════════════════════════════
+const UNIT_KEY = 'sfi_c6_unit6';
+window.sfiUnitKey = UNIT_KEY;
+
+// ═══════════════════════════════════════════════════════════
+// VOCAB DATA
+// ═══════════════════════════════════════════════════════════
+function diffHL(base, form, cls) {
+  let i = 0;
+  while (i < base.length && i < form.length && base[i] === form[i]) i++;
+  let j = 0;
+  while (j < base.length - i && j < form.length - i && base[base.length-1-j] === form[form.length-1-j]) j++;
+  const prefix = form.slice(0, i), changed = form.slice(i, j > 0 ? form.length - j : form.length), suffix = j > 0 ? form.slice(form.length - j) : '';
+  if (!changed) return form;
+  return `${prefix}<span class="${cls}">${changed}</span>${suffix}`;
+}
+
+const vocabData = [
+  // VERBS
+  {type:'verb',sv:'att inleda',    py:'因莱达',     now:'inleder',    nowPy:'因莱德尔',   past:'inledde',    pastPy:'因莱德',     sup:'inlett',     supPy:'因莱特',     zh:'开始/引入（第二组）'},
+  {type:'verb',sv:'att avsluta',   py:'阿夫斯鲁塔', now:'avslutar',   nowPy:'阿夫斯鲁塔尔',past:'avslutade', pastPy:'阿夫斯鲁塔德',sup:'avslutat',   supPy:'阿夫斯鲁塔特',zh:'结束/总结（第一组）'},
+  {type:'verb',sv:'att påpeka',    py:'波佩卡',     now:'påpekar',    nowPy:'波佩卡尔',   past:'påpekade',   pastPy:'波佩卡德',   sup:'påpekat',    supPy:'波佩卡特',   zh:'指出（第一组）'},
+  {type:'verb',sv:'att hävda',     py:'海夫达',     now:'hävdar',     nowPy:'海夫达尔',   past:'hävdade',    pastPy:'海夫达德',   sup:'hävdat',     supPy:'海夫达特',   zh:'主张/声称（第一组）'},
+  {type:'verb',sv:'att föreslå',   py:'弗雷斯洛',   now:'föreslår',   nowPy:'弗雷斯洛尔', past:'föreslog',   pastPy:'弗雷斯洛格', sup:'föreslagit', supPy:'弗雷斯拉基特',zh:'建议/提议（不规则）'},
+  {type:'verb',sv:'att motivera',  py:'莫提维拉',   now:'motiverar',  nowPy:'莫提维拉尔', past:'motiverade', pastPy:'莫提维拉德', sup:'motiverat',  supPy:'莫提维拉特', zh:'说明理由/论证（第一组）'},
+  // NOUNS
+  {type:'noun',en:'en', sv:'fördel',      py:'弗尔德尔',     def:'fördelen',      defPy:'弗尔德伦',       pl:'fördelar',      plPy:'弗尔德拉尔',   plDef:'fördelarna',      plDefPy:'弗尔德拉纳',   zh:'优点/好处'},
+  {type:'noun',en:'en', sv:'nackdel',     py:'纳克德尔',     def:'nackdelen',     defPy:'纳克德伦',       pl:'nackdelar',     plPy:'纳克德拉尔',   plDef:'nackdelarna',     plDefPy:'纳克德拉纳',   zh:'缺点'},
+  {type:'noun',en:'en', sv:'åsikt',       py:'奥西克特',     def:'åsikten',       defPy:'奥西克滕',       pl:'åsikter',       plPy:'奥西克特尔',   plDef:'åsikterna',       plDefPy:'奥西克特纳',   zh:'意见/看法'},
+  {type:'noun',en:'en', sv:'synpunkt',    py:'辛普恩克特',   def:'synpunkten',    defPy:'辛普恩克滕',     pl:'synpunkter',    plPy:'辛普恩克特尔', plDef:'synpunkterna',    plDefPy:'辛普恩克特纳', zh:'观点/视角'},
+  {type:'noun',en:'en', sv:'slutsats',    py:'斯鲁特萨茨',   def:'slutsatsen',    defPy:'斯鲁特萨茨恩',   pl:'slutsatser',    plPy:'斯鲁特萨茨尔', plDef:'slutsatserna',    plDefPy:'斯鲁特萨茨纳', zh:'结论'},
+  {type:'noun',en:'ett',sv:'syfte',       py:'系夫特',       def:'syftet',        defPy:'系夫特特',       pl:'syften',        plPy:'系夫腾',       plDef:'syftena',         plDefPy:'系夫特纳',     zh:'目的/宗旨'},
+  {type:'noun',en:'ett',sv:'exempel',     py:'埃赛姆佩尔',   def:'exemplet',      defPy:'埃赛姆佩勒特',   pl:'exempel',       plPy:'埃赛姆佩尔',   plDef:'exemplen',        plDefPy:'埃赛姆佩伦',   zh:'例子'},
+  {type:'noun',en:'ett',sv:'stycke',      py:'斯蒂克',       def:'stycket',       defPy:'斯蒂克特',       pl:'stycken',       plPy:'斯蒂肯',       plDef:'styckena',        plDefPy:'斯蒂克纳',     zh:'段落'},
+];
+
+// ═══════════════════════════════════════════════════════════
+// RENDER VOCAB
+// ═══════════════════════════════════════════════════════════
+
+function renderNounCard(v) {
+  const enBadge = v.en === 'en' ? `<span class="vc-en-badge en-b">🔵 en</span>` : `<span class="vc-en-badge ett-b">🟠 ett</span>`;
+  const defHL = diffHL(v.sv, v.def, 'd-def'), plHL = diffHL(v.sv, v.pl, 'd-pl'), pldefHL = diffHL(v.sv, v.plDef, 'd-pd');
+  return `<div class="vocab-card noun">
+    <div class="vc-top"><span class="vc-type-badge">📦 名词</span>${enBadge}</div>
+    <div class="vc-headword">
+      <span class="vc-headword-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.sv}" title="点击发音">${v.en} ${v.sv}</span>
+      <span class="vc-headword-py">${v.py}</span>
+    </div>
+    <div class="vc-form-row"><div class="vc-form-top"><span class="vc-row-label">定冠词</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.def}" title="点击发音">${defHL}</span></div><span class="vc-row-py">${v.defPy}</span></div>
+    <div class="vc-form-row"><div class="vc-form-top"><span class="vc-row-label">复数</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.pl}" title="点击发音">${plHL}</span></div><span class="vc-row-py">${v.plPy}</span></div>
+    <div class="vc-form-row"><div class="vc-form-top"><span class="vc-row-label">复+定</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.plDef}" title="点击发音">${pldefHL}</span></div><span class="vc-row-py">${v.plDefPy}</span></div>
+    <div class="vc-chinese">${v.zh}</div>
+  </div>`;
+}
+
+function renderVerbCard(v) {
+  const base = v.sv.replace(/^att /, '');
+  const nowHL = diffHL(base, v.now, 'd-def'), pastHL = diffHL(base, v.past, 'd-pl'), supHL = diffHL(base, v.sup, 'd-pd');
+  return `<div class="vocab-card verb">
+    <div class="vc-top"><span class="vc-type-badge">⚡ 动词</span></div>
+    <div class="vc-headword">
+      <span class="vc-headword-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.sv}" title="点击发音">${v.sv}</span>
+      <span class="vc-headword-py">${v.py}</span>
+    </div>
+    <div class="vc-verb-row"><div class="vc-verb-top"><span class="vc-row-label">现在时</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.now}" title="点击发音">${nowHL}</span></div><span class="vc-verb-py">${v.nowPy}</span></div>
+    <div class="vc-verb-row"><div class="vc-verb-top"><span class="vc-row-label">过去时</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.past}" title="点击发音">${pastHL}</span></div><span class="vc-verb-py">${v.pastPy}</span></div>
+    <div class="vc-verb-row"><div class="vc-verb-top"><span class="vc-row-label">完成时</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.sup}" title="点击发音">${supHL}</span></div><span class="vc-verb-py">${v.supPy}</span></div>
+    <div class="vc-chinese">${v.zh}</div>
+  </div>`;
+}
+
+function flipForms(v) {
+  if (v.type === 'noun') return `<span class="ff-row">${v.def}</span><span class="ff-sep"> · </span><span class="ff-row">${v.pl}</span><span class="ff-sep"> · </span><span class="ff-row">${v.plDef}</span>`;
+  if (v.type === 'verb') return `<span class="ff-row">${v.now}</span><span class="ff-sep"> · </span><span class="ff-row">${v.past}</span><span class="ff-sep"> · </span><span class="ff-row">${v.sup}</span>`;
+  return '';
+}
+
+function makeFlipCard(v) {
+  const dispSv = v.type === 'noun' ? `${v.en} ${v.sv}` : v.sv;
+  const typeLabel = {noun:'名词', verb:'动词'}[v.type] || v.type;
+  return `<div class="flip-card-wrap" onclick="flipCard(this)">
+    <div class="flip-card-inner">
+      <div class="flip-front">
+        <div class="flip-zh">${v.zh}</div>
+        <div class="flip-type">${typeLabel}</div>
+      </div>
+      <div class="flip-back">
+        <div class="flip-sv speak-word" onclick="speakWord(this.dataset.word);event.stopPropagation();" data-word="${v.sv}" title="点击发音">${dispSv}</div>
+        <div class="flip-forms">${flipForms(v)}</div>
+      </div>
+    </div>
+  </div>`;
+}
+
+function flipCard(w) { w.classList.toggle('flipped'); }
+
+let currentFilter = 'all', flipMode = false;
+function getFilteredData(f) {
+  if (f === 'all') return vocabData;
+  return vocabData.filter(v => v.type === f);
+}
+function renderVocab(f) {
+  currentFilter = f;
+  const data = getFilteredData(f);
+  document.getElementById('vocabGrid').innerHTML = data.map(v => {
+    if (v.type === 'noun') return renderNounCard(v);
+    if (v.type === 'verb') return renderVerbCard(v);
+    return '';
+  }).join('');
+  renderFlipCards(data);
+}
+function renderFlipCards(data) { document.getElementById('flipGrid').innerHTML = data.map(makeFlipCard).join(''); }
+function filterVocab(f, btn) {
+  document.querySelectorAll('#vocabFilters .vf-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  renderVocab(f);
+}
+function toggleFlipMode() {
+  flipMode = !flipMode;
+  const btn = document.getElementById('flipModeBtn');
+  document.getElementById('vocabGrid').style.display = flipMode ? 'none' : 'grid';
+  document.getElementById('flipGrid').style.display  = flipMode ? 'grid' : 'none';
+  btn.classList.toggle('flip-active', flipMode);
+  btn.textContent = flipMode ? '📋 普通模式' : '🔀 翻转模式';
+}
+
+// ═══════════════════════════════════════════════════════════
+// QUIZ
+// ═══════════════════════════════════════════════════════════
+const quizData = [
+  {type:'fill',  typeName:'填空题',
+   q:'Jag gillar att bo i Sverige. ______ är vädret kallt på vintern. （转折连接词）',
+   zh:'"我喜欢住在瑞典。______，冬天天气很冷。" 填入合适的转折连接词。',
+   answer:'Däremot',
+   fb:'Däremot = 相反/但是（转折）。也可用 Men（更口语）或 Å andra sidan（另一方面）。Däremot 放在句首时首字母大写，动词紧随其后（V2语序）。'},
+  {type:'fill',  typeName:'填空题',
+   q:'Hon studerar mycket. ______ jobbar hon deltid. （递进连接词）',
+   zh:'"她学习很努力。______，她还兼职工作。" 填入合适的递进连接词。',
+   answer:'Dessutom',
+   fb:'Dessutom = 此外（递进）。是书面语中替代口语 "och sen"（然后）的正式连接词。也可用 Även（也）或 Vidare（进一步）。'},
+  {type:'fill',  typeName:'填空题',
+   q:'Han kom för sent ______ bussen var försenad. （因果连接词）',
+   zh:'"他来晚了，______公共汽车误点了。" 填入合适的因果连接词。',
+   answer:'eftersom',
+   fb:'eftersom = 因为（表原因，放在原因从句前）。注意：eftersom 接从句，不接名词；如果接名词用 på grund av（由于+名词）。'},
+  {type:'fill',  typeName:'填空题',
+   q:'Det finns många fördelar, ______ bättre hälsa och mer energi. （举例连接词）',
+   zh:'"有很多优点，______更健康和更多精力。" 填入合适的举例连接词。',
+   answer:'till exempel',
+   fb:'till exempel = 例如（举例说明）。也可以用 bland annat（其中包括）。注意：till exempel 后常接具体例子，不带动词。'},
+  {type:'choice', typeName:'选择题',
+   q:'将以下非正式表达改写为正式书面语："Jag tycker det är bra." →',
+   zh:'选出最符合正式书面语规范的改写版本',
+   answer:'Enligt min åsikt är det fördelaktigt.',
+   opts:['Jag tycker verkligen att det är bra.','Enligt min åsikt är det fördelaktigt.','Det är ganska bra, tycker jag.','Jag anser att det är bra nog.'],
+   fb:'"Enligt min åsikt" = 根据我的看法（正式），替代 "Jag tycker"。"fördelaktigt" = 有益的/有利的，比 "bra" 更正式。两处替换共同提升书面语正式程度。'},
+  {type:'choice', typeName:'选择题',
+   q:'将 "Och sen kan man också prova yoga." 改写为正式书面语：',
+   zh:'选出正确的正式书面语版本',
+   answer:'Dessutom kan man prova yoga.',
+   opts:['Och sedan kan man prova yoga.','Dessutom kan man prova yoga.','Vidare, och sen kan man prova yoga.','Till slut kan man prova yoga.'],
+   fb:'"Dessutom" 是正式的递进连接词，替代口语化的 "Och sen"（然后）。注意：Vidare 也可以，但选项中的 "Vidare, och sen" 是错误的混搭。Till slut = 最后，表顺序不表递进。'},
+  {type:'choice', typeName:'选择题',
+   q:'将以下四句排成逻辑完整的三段式短文：①Sammanfattningsvis anser jag att mer grönska behövs. ②Till exempel kan man plantera träd längs gatorna. ③Syftet med detta brev är att diskutera miljön. ④Dessutom mår människor bättre när de har tillgång till natur.',
+   zh:'按照引言→主体→结尾的结构选出正确顺序',
+   answer:'③④②①',
+   opts:['①②③④','③②④①','③④②①','④③②①'],
+   fb:'正确顺序：③引言（Syftet...介绍目的）→④主体递进（Dessutom...第二论点）→②举例（Till exempel...具体例子）→①总结（Sammanfattningsvis...结论）。这是标准三段式：引言→主体（含连接词）→结尾。'},
+  {type:'sv2zh',  typeName:'瑞译中',
+   q:'Det finns både fördelar och nackdelar med att bo i en storstad.',
+   zh:'选出正确的中文翻译',
+   answer:'住在大城市既有优点也有缺点。',
+   opts:['住在大城市只有缺点，没有优点。','住在大城市既有优点也有缺点。','住在小城市有很多优点。','大城市和小城市各有不同的目的。'],
+   fb:'fördelar = 优点，nackdelar = 缺点，både...och... = 既……也……，storstad = 大城市（stor=大 + stad=城市）。'},
+  {type:'zh2sv',  typeName:'中译瑞',
+   q:'"根据我的看法，住在城市既有优点也有缺点。" 选出正确的瑞典语翻译：',
+   zh:'注意正式表达方式（Enligt min åsikt）和词汇使用',
+   answer:'Enligt min åsikt finns det både fördelar och nackdelar med att bo i staden.',
+   opts:['Jag tycker att det är bra och dåligt att bo i staden.','Enligt min åsikt finns det både fördelar och nackdelar med att bo i staden.','Enligt min åsikt har staden bara fördelar för invånarna.','Jag anser att man alltid bör bo i en storstad.'],
+   fb:'"Enligt min åsikt" = 根据我的看法（正式）；"finns det" = 有（存在）；"både fördelar och nackdelar" = 既有优点也有缺点；"att bo i staden" = 住在城市（att+原形作主语）。'},
+  {type:'choice', typeName:'选择题',
+   q:'选出最适合填入的词："Texten saknar en tydlig ______ – det är oklart vad författaren vill komma fram till."',
+   zh:'"这篇文章缺少一个清晰的______——作者想表达什么并不清楚。" 哪个词最合适？',
+   answer:'slutsats',
+   opts:['inledning','synpunkt','slutsats','stycke'],
+   fb:'slutsats (en) = 结论，指文章最终得出的观点。"vill komma fram till" = 想得出/表达到。inledning = 引言（文章开头）；synpunkt = 观点（某个具体看法）；stycke = 段落（文章结构单位）。'},
+];
+
+let qAnswers = {}, qSubmitted = false;
+function renderQuiz() {
+  document.getElementById('progressDots').innerHTML =
+    quizData.map((_, i) => `<div class="dot" id="dot-${i}"></div>`).join('');
+  const tInfo = {
+    choice:['t-choice','🔤 选择题'], fill:['t-fill','✏️ 填空题'],
+    sv2zh:['t-sv2zh','🇸🇪→🈳 瑞译中'], zh2sv:['t-zh2sv','🈳→🇸🇪 中译瑞']
+  };
+  document.getElementById('quizContainer').innerHTML = quizData.map((q, i) => {
+    const [tc, tn] = tInfo[q.type] || ['t-choice','题目'];
+    const needFill = q.type === 'fill';
+    const inp = needFill
+      ? `<div class="fill-wrap"><input class="fill-input" id="fi-${i}" type="text" placeholder="在此输入…" oninput="fillInput(${i})"><span class="fill-hint">不区分大小写</span></div>`
+      : `<div class="quiz-options" id="opts-${i}">${(q.opts||[]).map(o =>
+          `<button class="quiz-opt" onclick="selectOpt(${i},'${o.replace(/'/g,"\\'")}',this)">${o}</button>`
+        ).join('')}</div>`;
+    return `<div class="quiz-question" id="qq-${i}">
+      <div class="qq-meta"><span class="qq-num">第${i+1}题/共${quizData.length}题</span><span class="qq-type-badge ${tc}">${tn}</span></div>
+      <div class="qq-text">${q.q}</div>
+      <div class="qq-zh">${q.zh}</div>
+      ${inp}
+      <div class="quiz-feedback" id="fb-${i}"></div>
+    </div>`;
+  }).join('');
+}
+function selectOpt(i, opt, btn) {
+  if (qSubmitted) return;
+  document.querySelectorAll(`#opts-${i} .quiz-opt`).forEach(b => { b.classList.remove('selected'); b.style.cssText = ''; });
+  btn.classList.add('selected');
+  qAnswers[i] = opt;
+  document.getElementById(`dot-${i}`).className = 'dot current';
+  checkAll();
+}
+function fillInput(i) {
+  if (qSubmitted) return;
+  qAnswers[i] = document.getElementById(`fi-${i}`).value.trim();
+  document.getElementById(`dot-${i}`).className = qAnswers[i] ? 'dot current' : 'dot';
+  checkAll();
+}
+function checkAll() {
+  document.getElementById('submitBtn').disabled =
+    !quizData.every((_, i) => qAnswers[i] !== undefined && qAnswers[i] !== '');
+}
+function submitQuiz() {
+  if (qSubmitted) return;
+  qSubmitted = true;
+  document.getElementById('submitBtn').disabled = true;
+  let score = 0;
+  quizData.forEach((q, i) => {
+    const ua = (qAnswers[i]||'').trim().toLowerCase();
+    const ca = q.answer.trim().toLowerCase();
+    const ok = ua === ca;
+    if (ok) score++;
+    if (q.type === 'fill') {
+      const inp = document.getElementById(`fi-${i}`);
+      inp.disabled = true; inp.classList.add(ok ? 'correct' : 'wrong');
+    } else {
+      document.querySelectorAll(`#opts-${i} .quiz-opt`).forEach(btn => {
+        btn.disabled = true; btn.style.cssText = '';
+        if (btn.textContent.trim() === q.answer) btn.classList.add('correct');
+        else if (btn.textContent.trim() === qAnswers[i] && !ok) btn.classList.add('wrong');
+      });
+    }
+    const fb = document.getElementById(`fb-${i}`);
+    fb.textContent = (ok ? '✅ 正确！' : '❌ 正确答案：' + q.answer + '。') + '　' + q.fb;
+    fb.className = 'quiz-feedback show ' + (ok ? 'ok' : 'no');
+    document.getElementById(`dot-${i}`).className = 'dot ' + (ok ? 'correct' : 'wrong');
+  });
+  const t = quizData.length;
+  document.getElementById('scoreNum').textContent = score + '/' + t;
+  document.getElementById('scoreMsg').textContent =
+    score === t ? '🎉 完美！连接词和正式写作句式完全掌握！' :
+    score >= t * .85 ? '👍 非常好！再复习一下转折与递进连接词的区别！' :
+    score >= t * .7  ? '📚 基本掌握，重点复习正式书写句式和三段式结构。' :
+    '🔄 建议重读语法部分，特别注意连接词的功能分类和正式表达替换！';
+  document.getElementById('quizScore').classList.add('show');
+}
+function resetQuiz() {
+  qAnswers = {}; qSubmitted = false;
+  document.getElementById('quizScore').classList.remove('show');
+  document.getElementById('submitBtn').disabled = true;
+  renderQuiz();
+}
+
+// ═══════════════════════════════════════════════════════════
+// TTS
+// ═══════════════════════════════════════════════════════════
+window.dialogues = {
+  1: [
+    'Vad ska vi skriva om den här veckan?',
+    'Vi ska skriva ett brev till kommunen om parken i vårt område. Det är viktigt att inleda med att förklara syftet.',
+    'Hur ska jag börja? Kan jag skriva Jag tycker att parken är dålig?',
+    'Nej, det är för informellt. Skriv istället: Syftet med detta brev är att påpeka att parken behöver upprustning. Dessutom bör du använda enligt min åsikt istället för Jag tycker.',
+    'Och hur avslutar man brevet?',
+    'Sammanfatta dina synpunkter och föreslå en lösning. Använd Sammanfattningsvis eller Därför anser jag att…',
+  ],
+  2: [
+    'Jag har läst din text. Den är bra, men den saknar ett tydligt avslut.',
+    'Ja, jag vet. Jag hade svårt att sammanfatta mina synpunkter på ett bra sätt.',
+    'Prova att börja avslutningsstycket med Sammanfattningsvis anser jag att… Det ger texten en tydlig slutsats.',
+    'Bra idé! Dessutom kanske jag borde ge ett exempel i det andra stycket? Jag hävdar att parken behövs, men jag ger inga bevis.',
+    'Precis. Till exempel kan du skriva om din egen erfarenhet. Det är ett bra sätt att motivera ditt argument.',
+    'Tack! Det gör texten mer övertygande. Jag ska också byta ut Det är dåligt mot Det är negativt – det låter mer formellt.',
+  ],
+};
+
+function wrapDialogueWords(html) {
+  return html.replace(/(<[^>]+>)|([^<]+)/g, (match, tag, text) => {
+    if (tag) return tag;
+    return text.replace(/(\S+)/g, word => {
+      const clean = word.replace(/^[""«»„()\[\]]+|[""»«.,!?;:)\[\]…–—]+$/g, '');
+      if (!clean) return word;
+      return `<span class="d-word" onclick="speakDialogWord('${clean.replace(/'/g,"\\'")}',this)">${word}</span>`;
+    });
+  });
+}
+
+// ═══════════════════════════════════════════════════════════
+// NAV
+// ═══════════════════════════════════════════════════════════
+const sectionScroll = {grammar:0, vocab:0, dialogue:0, quiz:0};
+let currentSection = 'grammar';
+function showSection(id, btn) {
+  sectionScroll[currentSection] = window.scrollY;
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  currentSection = id;
+  requestAnimationFrame(() => requestAnimationFrame(() => window.scrollTo(0, sectionScroll[id])));
+}
+
+// ═══════════════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════════════
+window.addEventListener('load', () => {
+  initTTS();
+  renderVocab('all');
+  renderQuiz();
+  document.querySelectorAll('.d-sv').forEach(el => {
+    const btn = el.querySelector('.tts-btn');
+    const btnHtml = btn ? btn.outerHTML : '';
+    let inner = el.innerHTML;
+    if (btn) inner = inner.replace(btn.outerHTML, '');
+    el.innerHTML = wrapDialogueWords(inner) + btnHtml;
+  });
+});
+</script>
+</body>
+</html>

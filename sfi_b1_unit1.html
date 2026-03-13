@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SFI B级 · 第一单元：名词性别 en 与 ett</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="common.css">
+<script src="common.js"></script>
+<style>
+:root{
+  --navy:#1a2744;--blue:#2e4fa3;--sky:#5b8de8;
+  --gold:#d4920a;--green:#2e8b57;--green-light:#d4f0dd;
+  --red:#c0392b;--red-light:#fdecea;--white:#f9fafb;
+  --gray:#6b7a99;--border:#dce3f0;
+  --ac:#1a3a8a;--ab:#e8f0ff;
+  --enc:#1a4a9a;--enbg:#f0f4ff;--enbd:#90b0f0;
+  --ettc:#a04000;--ettbg:#fff8ee;--ettbd:#f0c070;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Noto Sans SC',sans-serif;background:var(--white);color:var(--navy);}
+nav{background:var(--navy);color:white;padding:.85rem 1.5rem;display:flex;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 16px rgba(0,0,0,.25);/* gap handled by common.css */}
+.nav-logo{font-family:'DM Serif Display',serif;font-size:1.05rem;margin-right:auto;}
+.nav-logo span{color:var(--sky);}
+.nav-tab{padding:.38rem .85rem;border-radius:100px;font-size:.73rem;cursor:pointer;border:none;background:rgba(255,255,255,.08);color:#a0b0cc;transition:all .2s;font-family:'Noto Sans SC',sans-serif;}
+.nav-tab:hover{background:rgba(255,255,255,.15);color:white;}
+.nav-tab.active{background:var(--sky);color:white;}
+.page-header{background:linear-gradient(135deg,#1a2744 0%,#0a1a5a 100%);color:white;padding:2rem 2rem 1.8rem;}
+.ph-inner{max-width:900px;margin:0 auto;}
+.ph-kicker{font-size:.67rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sky);margin-bottom:.4rem;}
+.ph-title{font-family:'DM Serif Display',serif;font-size:clamp(1.5rem,4vw,2.2rem);margin-bottom:.4rem;}
+.ph-desc{font-size:.81rem;color:#a0b8d8;line-height:1.65;max-width:520px;}
+.ph-pills{display:flex;gap:.5rem;margin-top:1rem;flex-wrap:wrap;}
+.ph-pill{font-size:.67rem;padding:3px 10px;border-radius:100px;background:rgba(255,255,255,.1);color:#c0d4f0;}
+main{max-width:900px;margin:0 auto;padding:1.8rem 1.4rem 4rem;}
+.section{display:none;}.section.active{display:block;}
+.card{background:white;border:1px solid var(--border);border-radius:14px;padding:1.4rem 1.5rem;margin-bottom:1.2rem;box-shadow:0 1px 6px rgba(26,39,68,.05);}
+.card-title{font-size:.98rem;font-weight:600;color:var(--navy);margin-bottom:.25rem;display:flex;align-items:center;gap:.5rem;}
+.card-subtitle{font-size:.77rem;color:var(--gray);margin-bottom:1rem;line-height:1.55;}
+.rule-box{background:var(--ab);border-left:4px solid var(--sky);border-radius:0 10px 10px 0;padding:.9rem 1.1rem;margin:.9rem 0;font-size:.82rem;line-height:1.8;color:var(--navy);}
+.rule-box strong{color:var(--ac);}
+.tip-box{background:#fffbec;border:1px dashed var(--gold);border-radius:10px;padding:.85rem 1rem;font-size:.79rem;color:#6a4400;line-height:1.65;margin:.8rem 0;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0;}
+@media(max-width:540px){.two-col{grid-template-columns:1fr;}}
+.gender-table{width:100%;border-collapse:collapse;font-size:.82rem;margin:.8rem 0;}
+.gender-table th{font-weight:600;padding:.45rem .8rem;text-align:left;border-bottom:2px solid var(--border);font-size:.75rem;color:var(--gray);}
+.gender-table td{padding:.4rem .8rem;border-bottom:1px solid var(--border);vertical-align:middle;}
+.gender-table tr:last-child td{border-bottom:none;}
+.gender-table tr:hover td{background:#f8f9ff;}
+.en-hl{color:var(--enc);font-weight:700;}.ett-hl{color:var(--ettc);font-weight:700;}
+.gender-badge{display:inline-block;font-size:.65rem;font-weight:700;padding:2px 9px;border-radius:100px;color:white;}
+.gb-en{background:var(--enc);}.gb-ett{background:var(--ettc);}
+.box-en{background:var(--enbg);border-radius:12px;padding:1rem 1.1rem;border:1px solid var(--enbd);}
+.box-ett{background:var(--ettbg);border-radius:12px;padding:1rem 1.1rem;border:1px solid var(--ettbd);}
+.box-title{font-size:.78rem;font-weight:700;margin-bottom:.6rem;}
+.bt-en{color:var(--enc);}.bt-ett{color:var(--ettc);}
+.vocab-filters{display:flex;gap:.45rem;margin-bottom:1rem;flex-wrap:wrap;}
+.vf-btn{padding:.28rem .85rem;border-radius:100px;font-size:.71rem;border:1.5px solid var(--border);background:white;cursor:pointer;color:var(--gray);font-family:'Noto Sans SC',sans-serif;transition:all .2s;}
+.vf-btn:hover{border-color:var(--sky);color:var(--ac);}
+.vf-btn.active{background:var(--navy);border-color:var(--navy);color:white;}
+.vocab-mode-btn{padding:.38rem 1rem;border-radius:100px;font-size:.73rem;border:1.5px solid var(--sky);background:white;cursor:pointer;color:var(--ac);font-family:'Noto Sans SC',sans-serif;transition:all .2s;font-weight:600;}
+.vocab-mode-btn.flip-active{background:var(--sky);color:white;}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:.7rem;}
+.vocab-card{border-radius:12px;padding:.9rem 1rem;border:1.5px solid;position:relative;transition:transform .15s,box-shadow .15s;}
+.vocab-card:hover{transform:translateY(-2px);box-shadow:0 5px 14px rgba(0,0,0,.09);}
+.vocab-card.en{background:var(--enbg);border-color:var(--enbd);}
+.vocab-card.ett{background:var(--ettbg);border-color:var(--ettbd);}
+.vc-top{display:flex;align-items:center;gap:.4rem;margin-bottom:.5rem;}
+.vc-cat-badge{font-size:.6rem;padding:2px 7px;border-radius:100px;background:#f0f0f8;color:var(--gray);}
+.vc-headword{display:flex;align-items:baseline;gap:.4rem;margin-bottom:.6rem;flex-wrap:nowrap;}
+.vc-headword-sv{font-size:1.05rem;font-weight:700;color:var(--navy);}
+.vc-headword-py{font-size:clamp(.48rem,.68rem,1rem);color:#999;font-style:italic;white-space:nowrap;flex-shrink:1;min-width:0;}
+.vc-form-row{padding:.25rem 0;border-bottom:1px solid rgba(0,0,0,.06);}
+.vc-form-row:last-of-type{border-bottom:none;}
+.vc-form-top{display:flex;align-items:baseline;gap:0;}
+.vc-row-label{font-size:.63rem;color:var(--gray);white-space:nowrap;width:88px;min-width:88px;flex-shrink:0;}
+.vc-row-sv{font-size:.84rem;font-weight:600;color:var(--navy);}
+.vc-row-py{display:block;font-size:clamp(.48rem,.63rem,1rem);color:#aaa;font-style:italic;margin-top:.03rem;padding-left:90px;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.d-def{color:#c05800;font-weight:700;}.d-pl{color:#1a55c0;font-weight:700;}
+.vc-chinese{font-size:.82rem;color:#333;margin-top:.55rem;padding-top:.45rem;border-top:1px solid rgba(0,0,0,.07);font-weight:500;}
+.speak-word{cursor:pointer;border-radius:4px;padding:0 2px;transition:background .15s,color .15s;}
+.speak-word:hover{background:rgba(26,58,138,.15);color:var(--ac);}
+.speak-word.speaking{background:var(--sky);color:white;}
+.d-word{cursor:pointer;border-radius:3px;padding:0 1px;transition:background .12s,color .12s;display:inline;}
+.d-word:hover{background:rgba(26,58,138,.15);color:var(--ac);}
+.d-word.speaking{background:var(--sky);color:white;}
+.flip-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:.85rem;}
+.flip-card-wrap{perspective:900px;height:130px;}
+.flip-card-inner{position:relative;width:100%;height:100%;transition:transform .45s;transform-style:preserve-3d;cursor:pointer;}
+.flip-card-wrap.flipped .flip-card-inner{transform:rotateY(180deg);}
+.flip-front,.flip-back{position:absolute;inset:0;border-radius:12px;backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:.6rem .8rem;border:1.5px solid var(--border);}
+.flip-front{background:white;box-shadow:0 2px 8px rgba(0,0,0,.07);}
+.flip-back{background:var(--navy);color:white;transform:rotateY(180deg);}
+.flip-zh{font-size:.95rem;font-weight:600;color:var(--navy);text-align:center;}
+.flip-type{font-size:.62rem;color:var(--gray);margin-top:.3rem;}
+.flip-sv{font-size:1rem;font-weight:700;color:white;text-align:center;}
+.flip-forms{display:flex;flex-wrap:wrap;justify-content:center;gap:.15rem .25rem;margin-top:.3rem;}
+.ff-row{font-size:.68rem;color:#c0d8f0;font-weight:600;}
+.ff-row em{font-style:normal;font-size:.58rem;color:#7090b0;margin-right:.15rem;}
+.ff-sep{font-size:.6rem;color:#506080;}
+.d-line{display:flex;gap:.75rem;margin-bottom:.75rem;align-items:flex-start;}
+.d-line.right{flex-direction:row-reverse;}
+.d-avatar{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;background:#f0f0f0;}
+.d-bubble{max-width:76%;padding:.65rem .9rem;border-radius:12px;font-size:.83rem;line-height:1.55;}
+.d-line:not(.right) .d-bubble{background:var(--ab);border-bottom-left-radius:3px;}
+.d-line.right .d-bubble{background:#f0fff4;border-bottom-right-radius:3px;}
+.d-sv{font-weight:600;color:var(--navy);}
+.d-zh{font-size:.71rem;color:var(--gray);margin-top:.18rem;}
+.hl-en{background:rgba(26,74,154,.12);border-radius:4px;padding:0 3px;color:var(--enc);font-weight:700;}
+.hl-ett{background:rgba(160,64,0,.12);border-radius:4px;padding:0 3px;color:var(--ettc);font-weight:700;}
+.dialogue-note{background:var(--ab);border-radius:8px;padding:.7rem .95rem;font-size:.75rem;color:var(--gray);margin-top:.4rem;line-height:1.65;}
+.tts-btn{display:inline-flex;align-items:center;margin-left:.5rem;padding:2px 7px;background:rgba(26,58,138,.1);border:1px solid rgba(26,58,138,.3);border-radius:100px;font-size:.72rem;cursor:pointer;color:var(--ac);vertical-align:middle;transition:all .2s;line-height:1;}
+.tts-btn:hover{background:var(--sky);color:white;border-color:var(--sky);}
+.tts-btn.speaking{background:var(--sky);color:white;animation:pulse 1s infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+.tts-full-btn{padding:.5rem 1.1rem;border-radius:100px;background:var(--sky);color:white;border:1.5px solid var(--sky);font-size:.78rem;cursor:pointer;font-family:'Noto Sans SC',sans-serif;transition:all .2s;}
+.tts-full-btn:hover:not(:disabled){background:var(--ac);}
+.tts-full-btn:disabled{background:#aaa;border-color:#aaa;cursor:default;}
+.progress-dots{display:flex;gap:.35rem;margin-bottom:1.2rem;flex-wrap:wrap;}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--border);transition:background .3s;}
+.dot.current{background:var(--sky);}.dot.correct{background:var(--green);}.dot.wrong{background:var(--red);}
+.quiz-question{margin-bottom:1.6rem;padding-bottom:1.6rem;border-bottom:1px solid var(--border);}
+.quiz-question:last-of-type{border-bottom:none;}
+.qq-meta{display:flex;align-items:center;gap:.6rem;margin-bottom:.4rem;}
+.qq-num{font-size:.67rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gray);}
+.qq-type-badge{font-size:.62rem;padding:2px 9px;border-radius:100px;font-weight:600;}
+.t-choice{background:#ddeeff;color:#1a3a80;}.t-fill{background:#d8f5e0;color:#1a5030;}
+.t-sv2zh{background:#fff0d8;color:#804000;}.t-zh2sv{background:#ffd8f0;color:#800040;}
+.t-enet{background:#e8e0ff;color:#400080;}.t-def{background:#d8f0ff;color:#004080;}
+.qq-text{font-size:.9rem;color:var(--navy);margin-bottom:.25rem;line-height:1.55;}
+.qq-zh{font-size:.77rem;color:#555;margin-bottom:.75rem;line-height:1.4;padding:.35rem .6rem;background:#f8f9fc;border-radius:6px;border-left:3px solid #a0b8e0;}
+.quiz-options{display:flex;flex-direction:column;gap:.38rem;}
+.quiz-opt{padding:.6rem 1rem;border-radius:9px;border:1.5px solid var(--border);background:white;font-size:.83rem;cursor:pointer;transition:all .2s;text-align:left;font-family:'Noto Sans SC',sans-serif;color:var(--navy);}
+.quiz-opt:hover:not(:disabled){border-color:var(--sky);background:var(--ab);}
+.quiz-opt.selected{border-color:var(--sky);background:var(--ab);}
+.quiz-opt.correct{border-color:var(--green);background:var(--green-light);color:#1a5c35;font-weight:600;}
+.quiz-opt.wrong{border-color:var(--red);background:var(--red-light);color:#8a1010;}
+.quiz-opt:disabled{cursor:default;}
+.fill-wrap{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.5rem;}
+.fill-input{padding:.48rem .8rem;border:2px solid var(--border);border-radius:8px;font-size:.87rem;font-family:'Noto Sans SC',sans-serif;color:var(--navy);width:200px;outline:none;transition:border-color .2s;}
+.fill-input:focus{border-color:var(--sky);}
+.fill-input.correct{border-color:var(--green);background:var(--green-light);}
+.fill-input.wrong{border-color:var(--red);background:var(--red-light);}
+.fill-input:disabled{cursor:default;}
+.fill-hint{font-size:.7rem;color:var(--gray);}
+.quiz-feedback{font-size:.77rem;margin-top:.5rem;padding:.5rem .8rem;border-radius:8px;display:none;line-height:1.55;}
+.quiz-feedback.show{display:block;}
+.quiz-feedback.ok{background:var(--green-light);color:#1a5030;}
+.quiz-feedback.no{background:var(--red-light);color:#7a1010;}
+.submit-btn{display:block;width:100%;margin-top:1.5rem;padding:.88rem;background:var(--sky);color:white;border:none;border-radius:10px;font-size:.88rem;font-family:'Noto Sans SC',sans-serif;cursor:pointer;transition:background .2s;font-weight:600;}
+.submit-btn:hover:not(:disabled){background:var(--ac);}
+.submit-btn:disabled{background:#b0bbc8;cursor:default;}
+.quiz-score{background:var(--navy);color:white;border-radius:14px;padding:1.5rem;text-align:center;display:none;margin-top:1rem;}
+.quiz-score.show{display:block;}
+.qs-num{font-family:'DM Serif Display',serif;font-size:3rem;color:#70d8ff;line-height:1;}
+.qs-label{font-size:.8rem;color:#a0c8e0;margin-top:.25rem;}
+.qs-msg{font-size:.88rem;margin-top:1rem;line-height:1.6;color:#c0e8f8;}
+.retry-btn{margin-top:1rem;padding:.6rem 1.5rem;background:var(--sky);color:white;border:none;border-radius:100px;font-size:.82rem;cursor:pointer;font-family:'Noto Sans SC',sans-serif;}
+body{
+  --primary: #5b8de8;       /* --sky：导航激活色 */
+  --primary-light: #e8f0ff; /* --ab：浅蓝背景 */
+  --primary-dark: #1a3a8a;  /* --ac：深蓝强调 */
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-logo">SFI <span>B级</span> · 第一单元</div>
+  <button class="nav-tab active" onclick="showSection('grammar',this)">📖 语法</button>
+  <button class="nav-tab" onclick="showSection('vocab',this)">📋 词汇</button>
+  <button class="nav-tab" onclick="showSection('dialogue',this)">💬 对话</button>
+  <button class="nav-tab" onclick="showSection('quiz',this)">🧪 测验</button>
+</nav>
+<div class="page-header">
+  <div class="ph-inner">
+    <div class="ph-kicker">SFI B级 · 第一单元 · 语法核心</div>
+    <div class="ph-title">名词性别：en 与 ett</div>
+    <div class="ph-desc">瑞典语最重要的语法基础。掌握名词的两种性别，才能正确使用冠词、形容词和代词，是通过SFI考试的第一步。</div>
+    <div class="ph-pills">
+      <span class="ph-pill">🏠 日常生活词汇</span>
+      <span class="ph-pill">👤 人物与职业</span>
+      <span class="ph-pill">📍 地点与场所</span>
+      <span class="ph-pill">⏱ 约40分钟</span>
+    </div>
+  </div>
+</div>
+<main>
+<section class="section active" id="grammar">
+  <div class="card">
+    <div class="card-title">📌 两种名词性别：en 与 ett</div>
+    <div class="card-subtitle">瑞典语所有名词分为两类，每个词必须记住它的性别——这决定了冠词和形容词的形式。</div>
+    <div class="two-col">
+      <div class="box-en">
+        <div class="box-title bt-en">🔵 en 性（通性）— 约75%的名词</div>
+        <table class="gender-table" style="background:transparent;">
+          <thead><tr><th>形式</th><th>规则</th><th>例子</th></tr></thead>
+          <tbody>
+            <tr><td>不定冠词</td><td><span class="en-hl">en</span> + 名词</td><td>en bil（一辆车）</td></tr>
+            <tr><td>定冠词</td><td>名词 + <span class="en-hl">-en</span></td><td>bil<span class="en-hl">en</span>（那辆车）</td></tr>
+            <tr><td>代词</td><td><span class="en-hl">den</span></td><td>Den är stor.（它很大。）</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="box-ett">
+        <div class="box-title bt-ett">🟠 ett 性（中性）— 约25%的名词</div>
+        <table class="gender-table" style="background:transparent;">
+          <thead><tr><th>形式</th><th>规则</th><th>例子</th></tr></thead>
+          <tbody>
+            <tr><td>不定冠词</td><td><span class="ett-hl">ett</span> + 名词</td><td>ett hus（一栋房子）</td></tr>
+            <tr><td>定冠词</td><td>名词 + <span class="ett-hl">-et</span></td><td>hus<span class="ett-hl">et</span>（那栋房子）</td></tr>
+            <tr><td>代词</td><td><span class="ett-hl">det</span></td><td>Det är stort.（它很大。）</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="rule-box"><strong>核心公式：</strong><br>
+    🔵 en 性：<strong>en</strong> bil → bil<strong>en</strong>（加-en变定冠词）<br>
+    🟠 ett 性：<strong>ett</strong> hus → hus<strong>et</strong>（加-et变定冠词）<br>
+    词尾已有-e的名词（如 ett äpple）：äpplet（只加-t）</div>
+    <div class="tip-box">🎯 <strong>SFI考试提示：</strong>没有绝对规律，但有规律可循——指人的词大多是 en 性；来自英语的外来词多是 ett 性。最好的方法是<strong>每次记单词时一起记住性别</strong>。</div>
+  </div>
+  <div class="card">
+    <div class="card-title">🔍 定冠词详解与特殊情况</div>
+    <div class="card-subtitle">定冠词后缀规则以及常见特殊变化。</div>
+    <table class="gender-table">
+      <thead><tr><th>词尾类型</th><th>性别</th><th>原形</th><th>定冠词</th><th>规则</th></tr></thead>
+      <tbody>
+        <tr><td>一般辅音结尾</td><td><span class="gender-badge gb-en">en</span></td><td>bil</td><td>bil<span class="en-hl">en</span></td><td>加 -en</td></tr>
+        <tr><td>-el/-er/-en结尾</td><td><span class="gender-badge gb-en">en</span></td><td>nyckel</td><td>nyckel<span class="en-hl">n</span></td><td>加 -n（省去e）</td></tr>
+        <tr><td>-are结尾</td><td><span class="gender-badge gb-en">en</span></td><td>lärare</td><td>lärare<span class="en-hl">n</span></td><td>加 -n</td></tr>
+        <tr><td>一般辅音结尾</td><td><span class="gender-badge gb-ett">ett</span></td><td>hus</td><td>hus<span class="ett-hl">et</span></td><td>加 -et</td></tr>
+        <tr><td>-e结尾</td><td><span class="gender-badge gb-ett">ett</span></td><td>arbete</td><td>arbete<span class="ett-hl">t</span></td><td>加 -t</td></tr>
+        <tr><td>辅音+辅音结尾</td><td><span class="gender-badge gb-ett">ett</span></td><td>rum</td><td>rum<span class="ett-hl">met</span></td><td>双写 + -et</td></tr>
+      </tbody>
+    </table>
+    <div class="rule-box"><strong>快速判断技巧：</strong><br>
+    • 词尾是 <strong>-ing, -het, -nad, -else</strong> → 几乎都是 <strong>en</strong> 性<br>
+    • 词尾是 <strong>-ande, -ende, -ment, -um</strong> → 多是 <strong>ett</strong> 性<br>
+    • 指人（职业、亲属）的词 → 几乎都是 <strong>en</strong> 性</div>
+  </div>
+</section>
+
+<section class="section" id="vocab">
+  <div class="card">
+    <div class="card-title">📋 本单元词汇（36个名词）</div>
+    <div class="card-subtitle"><span style="color:var(--ettc);font-weight:700;">橙色</span>=定冠词变化 · <span style="color:var(--enc);font-weight:700;">蓝色</span>=复数变化</div>
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.6rem;margin-bottom:.8rem;">
+      <div class="vocab-filters" id="vocabFilters">
+        <button class="vf-btn active" onclick="filterVocab('all',this)">全部（36）</button>
+        <button class="vf-btn" onclick="filterVocab('en',this)">🔵 en 性</button>
+        <button class="vf-btn" onclick="filterVocab('ett',this)">🟠 ett 性</button>
+        <button class="vf-btn" onclick="filterVocab('person',this)">👤 人物</button>
+        <button class="vf-btn" onclick="filterVocab('home',this)">🏠 住所</button>
+        <button class="vf-btn" onclick="filterVocab('society',this)">🏛 社会</button>
+        <button class="vf-btn" onclick="filterVocab('time',this)">⏰ 时间</button>
+      </div>
+      <button class="vocab-mode-btn" id="flipModeBtn" onclick="toggleFlipMode()">🔀 翻转模式</button>
+    </div>
+    <div class="vocab-grid" id="vocabGrid"></div>
+    <div id="flipGrid" style="display:none;" class="flip-grid"></div>
+  </div>
+</section>
+
+<section class="section" id="dialogue">
+  <div class="card">
+    <div class="card-title">💬 对话一：初次见面登记</div>
+    <div class="card-subtitle">SFI口试最常见的自我介绍场景。<span style="color:var(--enc);font-weight:600;">蓝色</span>=en性，<span style="color:var(--ettc);font-weight:600;">橙色</span>=ett性。点击任意单词可听发音。</div>
+    <div style="display:flex;gap:.5rem;margin-bottom:1.1rem;flex-wrap:wrap;">
+      <button class="tts-full-btn" id="btn-full1" onclick="toggleFull(1)">▶ 朗读整段对话</button>
+    </div>
+    <div class="dialogue">
+      <div class="d-line"><div class="d-avatar">👩‍💼</div><div class="d-bubble">
+        <div class="d-sv">Hej! Vad heter du och vad är ditt <span class="hl-ett">personnummer</span>?<button class="tts-btn" onclick="speak('Hej! Vad heter du och vad är ditt personnummer?')">🔊</button></div>
+        <div class="d-zh">你好！你叫什么名字，个人号码是多少？</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">🧑</div><div class="d-bubble">
+        <div class="d-sv">Jag heter Li Wei. Min <span class="hl-en">adress</span> är Storgatan 12 och mitt <span class="hl-ett">nummer</span> är 850415-1234.<button class="tts-btn" onclick="speak('Jag heter Li Wei. Min adress är Storgatan 12 och mitt nummer är 850415-1234.')">🔊</button></div>
+        <div class="d-zh">我叫李伟。我的地址是Storgatan 12，号码是850415-1234。</div>
+      </div></div>
+      <div class="d-line"><div class="d-avatar">👩‍💼</div><div class="d-bubble">
+        <div class="d-sv">Bra. Bor du i <span class="hl-ett">hus</span> eller <span class="hl-en">lägenhet</span>?<button class="tts-btn" onclick="speak('Bra. Bor du i hus eller lägenhet?')">🔊</button></div>
+        <div class="d-zh">好的。你住在独栋房子还是公寓？</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">🧑</div><div class="d-bubble">
+        <div class="d-sv">Jag bor i <span class="hl-en">en lägenhet</span>. <span class="hl-en">Lägenheten</span> har tre <span class="hl-ett">rum</span>.<button class="tts-btn" onclick="speak('Jag bor i en lägenhet. Lägenheten har tre rum.')">🔊</button></div>
+        <div class="d-zh">我住在一套公寓里。公寓有三个房间。</div>
+      </div></div>
+      <div class="d-line"><div class="d-avatar">👩‍💼</div><div class="d-bubble">
+        <div class="d-sv">Vilket <span class="hl-ett">land</span> kommer du från?<button class="tts-btn" onclick="speak('Vilket land kommer du från?')">🔊</button></div>
+        <div class="d-zh">你来自哪个国家？</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">🧑</div><div class="d-bubble">
+        <div class="d-sv">Jag kommer från Kina. Jag lär mig svenska. <span class="hl-en">Skolan</span> är bra och <span class="hl-en">läraren</span> är snäll.<button class="tts-btn" onclick="speak('Jag kommer från Kina. Jag lär mig svenska. Skolan är bra och läraren är snäll.')">🔊</button></div>
+        <div class="d-zh">我来自中国。我在学瑞典语。学校很好，老师很友善。</div>
+      </div></div>
+    </div>
+    <div class="dialogue-note">🔵 <strong style="color:var(--enc)">en 性：</strong>adress · lägenhet / lägenheten · skolan · läraren<br>
+    🟠 <strong style="color:var(--ettc)">ett 性：</strong>personnummer · nummer · hus · rum · land<br>
+    💡 不定→定冠词：<strong>en lägenhet → lägenheten</strong>；疑问词：ett性用 <strong>vilket</strong>，en性用 <strong>vilken</strong></div>
+  </div>
+  <div class="card">
+    <div class="card-title">💬 对话二：邻居闲聊</div>
+    <div class="card-subtitle">日常生活场景，综合使用en/ett性名词及定冠词形式。点击任意单词可听发音。</div>
+    <div style="display:flex;gap:.5rem;margin-bottom:1.1rem;flex-wrap:wrap;">
+      <button class="tts-full-btn" id="btn-full2" onclick="toggleFull(2)">▶ 朗读整段对话</button>
+    </div>
+    <div class="dialogue">
+      <div class="d-line"><div class="d-avatar">👴</div><div class="d-bubble">
+        <div class="d-sv">Hej, är du ny <span class="hl-en">granne</span> här?<button class="tts-btn" onclick="speak('Hej, är du ny granne här?')">🔊</button></div>
+        <div class="d-zh">你好，你是这里的新邻居吗？</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">👩</div><div class="d-bubble">
+        <div class="d-sv">Ja! Jag heter Mei. Jag har en <span class="hl-en">man</span>, en <span class="hl-en">son</span> och en <span class="hl-en">dotter</span>.<button class="tts-btn" onclick="speak('Ja! Jag heter Mei. Jag har en man, en son och en dotter.')">🔊</button></div>
+        <div class="d-zh">是的！我叫梅。我有一个丈夫、一个儿子和一个女儿。</div>
+      </div></div>
+      <div class="d-line"><div class="d-avatar">👴</div><div class="d-bubble">
+        <div class="d-sv">Vad jobbar din <span class="hl-en">man</span> med?<button class="tts-btn" onclick="speak('Vad jobbar din man med?')">🔊</button></div>
+        <div class="d-zh">你丈夫是做什么工作的？</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">👩</div><div class="d-bubble">
+        <div class="d-sv">Han arbetar på ett <span class="hl-ett">kontor</span>. <span class="hl-ett">Jobbet</span> är bra men <span class="hl-en">staden</span> är stor och <span class="hl-en">bussen</span> tar lång <span class="hl-en">tid</span>.<button class="tts-btn" onclick="speak('Han arbetar på ett kontor. Jobbet är bra men staden är stor och bussen tar lång tid.')">🔊</button></div>
+        <div class="d-zh">他在一间办公室工作。工作很好，但城市很大，坐公交要很长时间。</div>
+      </div></div>
+      <div class="d-line"><div class="d-avatar">👴</div><div class="d-bubble">
+        <div class="d-sv">Har du en <span class="hl-en">nyckel</span> till huset?<button class="tts-btn" onclick="speak('Har du en nyckel till huset?')">🔊</button></div>
+        <div class="d-zh">你有房子的钥匙吗？</div>
+      </div></div>
+      <div class="d-line right"><div class="d-avatar">👩</div><div class="d-bubble">
+        <div class="d-sv">Ja, jag har <span class="hl-en">nyckeln</span>. Mitt <span class="hl-ett">rum</span> har ett eget <span class="hl-ett">kök</span>.<button class="tts-btn" onclick="speak('Ja, jag har nyckeln. Mitt rum har ett eget kök.')">🔊</button></div>
+        <div class="d-zh">有，我有钥匙。我的房间有独立厨房。</div>
+      </div></div>
+    </div>
+    <div class="dialogue-note">🔵 <strong style="color:var(--enc)">en 性：</strong>granne · man · son · dotter · en nyckel / nyckeln · staden · bussen · tid<br>
+    🟠 <strong style="color:var(--ettc)">ett 性：</strong>kontor · jobbet（ett jobb定冠词）· rum · kök<br>
+    💡 不定→定冠词：<strong>en nyckel → nyckeln</strong>；<strong>ett jobb → jobbet</strong></div>
+  </div>
+</section>
+
+<section class="section" id="quiz">
+  <div class="card">
+    <div class="card-title">🧪 综合测验：名词性别 en 与 ett</div>
+    <div class="card-subtitle">共22题，涵盖6种题型，提交后显示详细解析。</div>
+    <div class="progress-dots" id="progressDots"></div>
+    <div id="quizContainer"></div>
+    <button class="submit-btn" id="submitBtn" onclick="submitQuiz()" disabled>提交全部答案</button>
+    <div class="quiz-score" id="quizScore">
+      <div class="qs-num" id="scoreNum">-</div>
+      <div class="qs-label">答对题数</div>
+      <div class="qs-msg" id="scoreMsg"></div>
+      <button class="retry-btn" onclick="resetQuiz()">🔄 重新测验</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script>
+const UNIT_KEY='sfi_b1_unit1';
+window.sfiUnitKey=UNIT_KEY;
+function loadState(){try{return JSON.parse(localStorage.getItem(UNIT_KEY)||'{}');}catch(e){return {};}}
+function saveState(s){try{localStorage.setItem(UNIT_KEY,JSON.stringify(s));}catch(e){}}
+let state=loadState();
+
+function diffHL(base,form,cls){
+  let i=0;while(i<base.length&&i<form.length&&base[i]===form[i])i++;
+  let j=0;while(j<base.length-i&&j<form.length-i&&base[base.length-1-j]===form[form.length-1-j])j++;
+  const prefix=form.slice(0,i),changed=form.slice(i,j>0?form.length-j:form.length),suffix=j>0?form.slice(form.length-j):'';
+  if(!changed)return form;
+  return `${prefix}<span class="${cls}">${changed}</span>${suffix}`;
+}
+
+const catLabel={person:'👤 人物',home:'🏠 住所',society:'🏛 社会',time:'⏰ 时间'};
+
+const vocabData=[
+  {g:'en', sv:'man',         py:'曼',          def:'mannen',      defPy:'曼恩',       pl:'män',          plPy:'门',          zh:'男人/丈夫',        cat:'person'},
+  {g:'en', sv:'kvinna',      py:'克维那',       def:'kvinnan',     defPy:'克维南',     pl:'kvinnor',      plPy:'克维诺尔',     zh:'女人',             cat:'person'},
+  {g:'en', sv:'pojke',       py:'波耶克',       def:'pojken',      defPy:'波耶肯',     pl:'pojkar',       plPy:'波耶卡尔',     zh:'男孩',             cat:'person'},
+  {g:'en', sv:'flicka',      py:'弗利卡',       def:'flickan',     defPy:'弗利坎',     pl:'flickor',      plPy:'弗利科尔',     zh:'女孩',             cat:'person'},
+  {g:'en', sv:'son',         py:'孙',           def:'sonen',       defPy:'孙恩',       pl:'söner',        plPy:'舍纳尔',       zh:'儿子',             cat:'person'},
+  {g:'en', sv:'dotter',      py:'多特尔',       def:'dottern',     defPy:'多特恩',     pl:'döttrar',      plPy:'多特拉尔',     zh:'女儿',             cat:'person'},
+  {g:'en', sv:'förälder',    py:'弗雷尔德尔',   def:'föräldern',   defPy:'弗雷尔敦',   pl:'föräldrar',    plPy:'弗雷尔德拉尔', zh:'家长/父母（单数）', cat:'person'},
+  {g:'en', sv:'vän',         py:'温',           def:'vännen',      defPy:'温恩',       pl:'vänner',       plPy:'温纳尔',       zh:'朋友',             cat:'person'},
+  {g:'en', sv:'granne',      py:'格拉纳',       def:'grannen',     defPy:'格拉南',     pl:'grannar',      plPy:'格拉纳尔',     zh:'邻居',             cat:'person'},
+  {g:'en', sv:'lärare',      py:'莱拉瑞',       def:'läraren',     defPy:'莱拉伦',     pl:'lärare',       plPy:'莱拉瑞',       zh:'老师',             cat:'person'},
+  {g:'en', sv:'lägenhet',    py:'莱根黑特',     def:'lägenheten',  defPy:'莱根黑腾',   pl:'lägenheter',   plPy:'莱根黑特尔',   zh:'公寓',             cat:'home'},
+  {g:'en', sv:'adress',      py:'阿德雷斯',     def:'adressen',    defPy:'阿德雷森',   pl:'adresser',     plPy:'阿德雷瑟尔',   zh:'地址',             cat:'home'},
+  {g:'en', sv:'nyckel',      py:'尼克尔',       def:'nyckeln',     defPy:'尼克伦',     pl:'nycklar',      plPy:'尼克拉尔',     zh:'钥匙',             cat:'home'},
+  {g:'en', sv:'telefon',     py:'泰勒丰',       def:'telefonen',   defPy:'泰勒丰恩',   pl:'telefoner',    plPy:'泰勒丰尔',     zh:'电话',             cat:'home'},
+  {g:'ett',sv:'hus',         py:'胡斯',         def:'huset',       defPy:'胡斯特',     pl:'hus',          plPy:'胡斯',         zh:'房子（独栋）',      cat:'home'},
+  {g:'ett',sv:'rum',         py:'鲁姆',         def:'rummet',      defPy:'鲁默特',     pl:'rum',          plPy:'鲁姆',         zh:'房间',             cat:'home'},
+  {g:'ett',sv:'kök',         py:'雪克',         def:'köket',       defPy:'雪克特',     pl:'kök',          plPy:'雪克',         zh:'厨房',             cat:'home'},
+  {g:'ett',sv:'nummer',      py:'努姆尔',       def:'numret',      defPy:'努姆雷特',   pl:'nummer',       plPy:'努姆尔',       zh:'号码',             cat:'home'},
+  {g:'ett',sv:'namn',        py:'纳姆恩',       def:'namnet',      defPy:'纳姆内特',   pl:'namn',         plPy:'纳姆恩',       zh:'名字',             cat:'home'},
+  {g:'en', sv:'skola',       py:'斯库拉',       def:'skolan',      defPy:'斯库兰',     pl:'skolor',       plPy:'斯库洛尔',     zh:'学校',             cat:'society'},
+  {g:'en', sv:'affär',       py:'阿费尔',       def:'affären',     defPy:'阿费伦',     pl:'affärer',      plPy:'阿费尔尔',     zh:'商店',             cat:'society'},
+  {g:'en', sv:'buss',        py:'布斯',         def:'bussen',      defPy:'布森',       pl:'bussar',       plPy:'布萨尔',       zh:'公交车',           cat:'society'},
+  {g:'en', sv:'stad',        py:'斯塔德',       def:'staden',      defPy:'斯塔敦',     pl:'städer',       plPy:'斯特德尔',     zh:'城市',             cat:'society'},
+  {g:'en', sv:'gata',        py:'嘎塔',         def:'gatan',       defPy:'嘎坦',       pl:'gator',        plPy:'嘎托尔',       zh:'街道',             cat:'society'},
+  {g:'ett',sv:'land',        py:'兰德',         def:'landet',      defPy:'兰德特',     pl:'länder',       plPy:'兰德尔',       zh:'国家',             cat:'society'},
+  {g:'ett',sv:'språk',       py:'斯普罗克',     def:'språket',     defPy:'斯普罗克特', pl:'språk',        plPy:'斯普罗克',     zh:'语言',             cat:'society'},
+  {g:'ett',sv:'arbete',      py:'阿贝特',       def:'arbetet',     defPy:'阿贝特特',   pl:'arbeten',      plPy:'阿贝腾',       zh:'工作',             cat:'society'},
+  {g:'ett',sv:'jobb',        py:'尤布',         def:'jobbet',      defPy:'尤布特',     pl:'jobb',         plPy:'尤布',         zh:'工作（口语）',      cat:'society'},
+  {g:'ett',sv:'kontor',      py:'孔托尔',       def:'kontoret',    defPy:'孔托雷特',   pl:'kontor',       plPy:'孔托尔',       zh:'办公室',           cat:'society'},
+  {g:'ett',sv:'personnummer',py:'佩尔孙努姆尔', def:'personnumret',defPy:'佩尔孙努姆雷特',pl:'personnummer',plPy:'佩尔孙努姆尔',zh:'个人身份号码',      cat:'society'},
+  {g:'en', sv:'dag',         py:'大格',         def:'dagen',       defPy:'大根',       pl:'dagar',        plPy:'大嘎尔',       zh:'天/日',            cat:'time'},
+  {g:'en', sv:'vecka',       py:'维卡',         def:'veckan',      defPy:'维坎',       pl:'veckor',       plPy:'维科尔',       zh:'周',               cat:'time'},
+  {g:'en', sv:'månad',       py:'莫纳德',       def:'månaden',     defPy:'莫纳敦',     pl:'månader',      plPy:'莫纳德尔',     zh:'月份',             cat:'time'},
+  {g:'en', sv:'tid',         py:'替德',         def:'tiden',       defPy:'替登',       pl:'tider',        plPy:'替德尔',       zh:'时间',             cat:'time'},
+  {g:'ett',sv:'år',          py:'奥尔',         def:'året',        defPy:'奥雷特',     pl:'år',           plPy:'奥尔',         zh:'年',               cat:'time'},
+  {g:'ett',sv:'datum',       py:'大图姆',       def:'datumet',     defPy:'大图姆特',   pl:'datum',        plPy:'大图姆',       zh:'日期',             cat:'time'},
+];
+
+function flipForms(v){
+  return `<span class="ff-row">${v.def}</span><span class="ff-sep"> · </span><span class="ff-row">${v.pl}</span>`;
+}
+function renderNounCard(v){
+  const gBadge=v.g==='en'?`<span class="gender-badge gb-en">🔵 en</span>`:`<span class="gender-badge gb-ett">🟠 ett</span>`;
+  const defHL=diffHL(v.sv,v.def,'d-def'),plHL=diffHL(v.sv,v.pl,'d-pl');
+  return `<div class="vocab-card ${v.g}">
+    <div class="vc-top">${gBadge}<span class="vc-cat-badge">${catLabel[v.cat]}</span></div>
+    <div class="vc-headword">
+      <span class="vc-headword-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.sv}" title="点击发音">${v.g} ${v.sv}</span>
+      <span class="vc-headword-py">${v.py}</span>
+    </div>
+    <div class="vc-form-row"><div class="vc-form-top"><span class="vc-row-label">定冠词</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.def}">${defHL}</span></div><span class="vc-row-py">${v.defPy}</span></div>
+    <div class="vc-form-row"><div class="vc-form-top"><span class="vc-row-label">复数</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.pl}">${plHL}</span></div><span class="vc-row-py">${v.plPy}</span></div>
+    <div class="vc-chinese">${v.zh}</div>
+  </div>`;
+}
+function makeFlipCard(v){
+  const gLabel=v.g==='en'?'🔵 en 性':'🟠 ett 性';
+  return `<div class="flip-card-wrap" onclick="flipCard(this)">
+    <div class="flip-card-inner">
+      <div class="flip-front">
+        <div class="flip-zh">${v.zh}</div>
+        <div class="flip-type">${gLabel} · ${catLabel[v.cat]}</div>
+      </div>
+      <div class="flip-back">
+        <div class="flip-sv speak-word" onclick="speakWord(this.dataset.word);event.stopPropagation();" data-word="${v.sv}">${v.g} ${v.sv}</div>
+        <div class="flip-forms">${flipForms(v)}</div>
+      </div>
+    </div>
+  </div>`;
+}
+function flipCard(w){w.classList.toggle('flipped');}
+let currentFilter='all',flipMode=false;
+function getFilteredData(f){
+  if(f==='all') return vocabData;
+  if(f==='en'||f==='ett') return vocabData.filter(v=>v.g===f);
+  return vocabData.filter(v=>v.cat===f);
+}
+function renderVocab(f){
+  currentFilter=f;const data=getFilteredData(f);
+  document.getElementById('vocabGrid').innerHTML=data.map(renderNounCard).join('');
+  document.getElementById('flipGrid').innerHTML=data.map(makeFlipCard).join('');
+}
+function filterVocab(f,btn){document.querySelectorAll('#vocabFilters .vf-btn').forEach(b=>b.classList.remove('active'));if(btn)btn.classList.add('active');renderVocab(f);}
+function toggleFlipMode(){
+  flipMode=!flipMode;
+  const btn=document.getElementById('flipModeBtn');
+  document.getElementById('vocabGrid').style.display=flipMode?'none':'grid';
+  document.getElementById('flipGrid').style.display=flipMode?'grid':'none';
+  btn.classList.toggle('flip-active',flipMode);
+  btn.textContent=flipMode?'📋 普通模式':'🔀 翻转模式';
+}
+const quizData=[
+  {type:'enet',typeName:'en/ett判断',q:'___ man',zh:'"男人"是en还是ett性？',answer:'en',opts:['en','ett'],fb:'man是en性：en man，定冠词：mannen，复数：män（特殊变音）。指人的名词几乎都是en性。'},
+  {type:'enet',typeName:'en/ett判断',q:'___ hus',zh:'"房子"是en还是ett性？',answer:'ett',opts:['en','ett'],fb:'hus是ett性：ett hus，定冠词：huset，复数不变：hus（第五组）。'},
+  {type:'enet',typeName:'en/ett判断',q:'___ språk',zh:'"语言"是en还是ett性？',answer:'ett',opts:['en','ett'],fb:'språk是ett性：ett språk，定冠词：språket，复数不变：språk。'},
+  {type:'enet',typeName:'en/ett判断',q:'___ skola',zh:'"学校"是en还是ett性？',answer:'en',opts:['en','ett'],fb:'skola是en性：en skola，定冠词：skolan，复数：skolor。'},
+  {type:'enet',typeName:'en/ett判断',q:'___ vecka',zh:'"周"是en还是ett性？',answer:'en',opts:['en','ett'],fb:'vecka是en性：en vecka，定冠词：veckan，复数：veckor。'},
+  {type:'enet',typeName:'en/ett判断',q:'___ år',zh:'"年"是en还是ett性？',answer:'ett',opts:['en','ett'],fb:'år是ett性：ett år，定冠词：året，复数不变：år。注意"年"是ett，"月/周/天"是en。'},
+  {type:'def',typeName:'定冠词填写',q:'en bil → 定冠词形式是？',zh:'"汽车"的定冠词怎么写？',answer:'bilen',fb:'en性名词定冠词加-en：bil + en = bilen。'},
+  {type:'def',typeName:'定冠词填写',q:'ett hus → 定冠词形式是？',zh:'"房子"的定冠词怎么写？',answer:'huset',fb:'ett性名词定冠词加-et：hus + et = huset。'},
+  {type:'def',typeName:'定冠词填写',q:'en lägenhet → 定冠词形式是？',zh:'"公寓"的定冠词怎么写？',answer:'lägenheten',fb:'lägenhet是en性，直接加-en：lägenheten。'},
+  {type:'def',typeName:'定冠词填写',q:'ett rum → 定冠词形式是？',zh:'"房间"的定冠词怎么写？',answer:'rummet',fb:'rum（ett性，短辅音结尾），双写辅音+et：rummet。'},
+  {type:'def',typeName:'定冠词填写',q:'en lärare → 定冠词形式是？',zh:'"老师"的定冠词怎么写？',answer:'läraren',fb:'-are结尾的en性名词加-n：läraren（不加-en）。'},
+  {type:'def',typeName:'定冠词填写',q:'ett kök → 定冠词形式是？',zh:'"厨房"的定冠词怎么写？',answer:'köket',fb:'kök是ett性辅音结尾，加-et：köket。'},
+  {type:'choice',typeName:'选择题',q:'Jag bor i ___ lägenhet.',zh:'我住在一套公寓里。（不定冠词）',answer:'en',opts:['en','ett','den','det'],fb:'lägenhet是en性，不定冠词用en：en lägenhet。'},
+  {type:'choice',typeName:'选择题',q:'___ huset är stort.',zh:'那栋房子很大。（定冠词形式）',answer:'Huset',opts:['Huset','Ett hus','Husen','Husa'],fb:'定冠词：ett hus → huset（加-et后缀，不分开写）。'},
+  {type:'choice',typeName:'选择题',q:'Vilket ___ kommer du från?',zh:'你来自哪个国家？',answer:'land',opts:['land','landen','ett land','lander'],fb:'Vilket用于ett性名词提问：Vilket land? Vilken用于en性：Vilken dag?'},
+  {type:'sv2zh',typeName:'瑞译中',q:'Nyckeln till lägenheten ligger på bordet.',zh:'选出正确的中文翻译',answer:'公寓的钥匙放在桌子上。',opts:['我找到了公寓的钥匙。','公寓的钥匙放在桌子上。','钥匙在门旁边。','公寓没有钥匙。'],fb:'nyckeln=钥匙（定冠词），lägenheten=公寓（定冠词），bordet=桌子（定冠词）。三个都是定冠词形式。'},
+  {type:'sv2zh',typeName:'瑞译中',q:'Hon är lärare och jobbar på en skola i staden.',zh:'选出正确的中文翻译',answer:'她是老师，在城里的一所学校工作。',opts:['她在城里找工作。','她是老师，在城里的一所学校工作。','她在学校学习瑞典语。','她是城里最好的老师。'],fb:'lärare=老师（en性），en skola=一所学校（不定），staden=城市（定冠词）。'},
+  {type:'zh2sv',typeName:'中译瑞',q:'"我有一个朋友"，选出正确翻译：',zh:'注意vän的性别',answer:'Jag har en vän.',opts:['Jag har ett vän.','Jag har en vän.','Jag har den vän.','Jag har vännen.'],fb:'vän是en性：en vän（不定），vännen（定冠词）。指人的词用en。'},
+  {type:'zh2sv',typeName:'中译瑞',q:'"工作很好"，选出正确翻译：',zh:'注意jobbet的性别和形式',answer:'Jobbet är bra.',opts:['Jobben är bra.','Job är bra.','Jobbet är bra.','Jobb är bra.'],fb:'ett jobb → jobbet（定冠词）。特指某份工作用定冠词。'},
+  {type:'def',typeName:'定冠词填写',q:'en nyckel → 定冠词形式是？',zh:'"钥匙"的定冠词怎么写？',answer:'nyckeln',fb:'-el结尾的en性名词：去掉中间e加-n：nyckel → nyckeln。'},
+  {type:'choice',typeName:'选择题',q:'哪个词是ett性？',zh:'从以下选项中选出ett性名词',answer:'arbete',opts:['dag','stad','arbete','granne'],fb:'arbete（工作）是ett性：ett arbete / arbetet。dag/stad/granne都是en性。'},
+  {type:'sv2zh',typeName:'瑞译中',q:'Hur många rum har din lägenhet?',zh:'选出正确的中文翻译',answer:'你的公寓有几个房间？',opts:['你的公寓多大？','你的公寓有几个房间？','你住在几楼？','你的公寓租金多少？'],fb:'rum是ett性（第五组，复数不变）；hur många=多少；lägenhet=公寓（en性）。'},
+];
+
+let qAnswers={},qSubmitted=false;
+function renderQuiz(){
+  document.getElementById('progressDots').innerHTML=quizData.map((_,i)=>`<div class="dot" id="dot-${i}"></div>`).join('');
+  const tInfo={choice:['t-choice','🔤 选择题'],sv2zh:['t-sv2zh','🇸🇪→🈳 瑞译中'],zh2sv:['t-zh2sv','🈳→🇸🇪 中译瑞'],enet:['t-enet','🔵/🟠 en/ett'],def:['t-def','📝 定冠词']};
+  document.getElementById('quizContainer').innerHTML=quizData.map((q,i)=>{
+    const [tc,tn]=tInfo[q.type]||['t-choice','题目'];
+    const needFill=q.type==='def';
+    const inp=needFill
+      ?`<div class="fill-wrap"><input class="fill-input" id="fi-${i}" type="text" placeholder="在此输入…" oninput="fillInput(${i})"><span class="fill-hint">不区分大小写</span></div>`
+      :`<div class="quiz-options" id="opts-${i}">${(q.opts||[]).map(o=>`<button class="quiz-opt" onclick="selectOpt(${i},'${o.replace(/'/g,"\\'")}',this)">${o}</button>`).join('')}</div>`;
+    return `<div class="quiz-question" id="qq-${i}">
+      <div class="qq-meta"><span class="qq-num">第${i+1}题/共${quizData.length}题</span><span class="qq-type-badge ${tc}">${tn}</span></div>
+      <div class="qq-text">${q.q}</div>
+      <div class="qq-zh">${q.zh}</div>
+      ${inp}
+      <div class="quiz-feedback" id="fb-${i}"></div>
+    </div>`;
+  }).join('');
+}
+function selectOpt(i,opt,btn){if(qSubmitted)return;document.querySelectorAll(`#opts-${i} .quiz-opt`).forEach(b=>{b.classList.remove('selected');b.style.cssText='';});btn.classList.add('selected');qAnswers[i]=opt;document.getElementById(`dot-${i}`).className='dot current';checkAll();}
+function fillInput(i){if(qSubmitted)return;qAnswers[i]=document.getElementById(`fi-${i}`).value.trim();document.getElementById(`dot-${i}`).className=qAnswers[i]?'dot current':'dot';checkAll();}
+function checkAll(){document.getElementById('submitBtn').disabled=!quizData.every((_,i)=>qAnswers[i]!==undefined&&qAnswers[i]!=='');}
+function submitQuiz(){
+  if(qSubmitted)return;qSubmitted=true;document.getElementById('submitBtn').disabled=true;
+  let score=0;
+  quizData.forEach((q,i)=>{
+    const ua=(qAnswers[i]||'').trim().toLowerCase(),ca=q.answer.trim().toLowerCase(),ok=ua===ca;
+    if(ok)score++;
+    const needFill=q.type==='def';
+    if(needFill){const inp=document.getElementById(`fi-${i}`);inp.disabled=true;inp.classList.add(ok?'correct':'wrong');}
+    else{document.querySelectorAll(`#opts-${i} .quiz-opt`).forEach(btn=>{btn.disabled=true;btn.style.cssText='';if(btn.textContent.trim()===q.answer)btn.classList.add('correct');else if(btn.textContent.trim()===qAnswers[i]&&!ok)btn.classList.add('wrong');});}
+    const fb=document.getElementById(`fb-${i}`);
+    fb.textContent=(ok?'✅ 正确！':'❌ 正确答案：'+q.answer+'。')+'　'+q.fb;
+    fb.className='quiz-feedback show '+(ok?'ok':'no');
+    document.getElementById(`dot-${i}`).className='dot '+(ok?'correct':'wrong');
+  });
+  const t=quizData.length;
+  document.getElementById('scoreNum').textContent=score+'/'+t;
+  document.getElementById('scoreMsg').textContent=score===t?'🎉 完美！en/ett性别完全掌握！':score>=t*.85?'👍 非常好！复习一下错题继续！':score>=t*.7?'📚 基本掌握，重点复习定冠词变化规则。':'🔄 建议重读语法，特别注意en/ett判断和定冠词规则！';
+  document.getElementById('quizScore').classList.add('show');
+}
+function resetQuiz(){qAnswers={};qSubmitted=false;document.getElementById('quizScore').classList.remove('show');document.getElementById('submitBtn').disabled=true;renderQuiz();}
+
+window.dialogues={
+  1:['Hej! Vad heter du och vad är ditt personnummer?','Jag heter Li Wei. Min adress är Storgatan 12 och mitt nummer är 850415-1234.','Bra. Bor du i hus eller lägenhet?','Jag bor i en lägenhet. Lägenheten har tre rum.','Vilket land kommer du från?','Jag kommer från Kina. Jag lär mig svenska. Skolan är bra och läraren är snäll.'],
+  2:['Hej, är du ny granne här?','Ja! Jag heter Mei. Jag har en man, en son och en dotter.','Vad jobbar din man med?','Han arbetar på ett kontor. Jobbet är bra men staden är stor och bussen tar lång tid.','Har du en nyckel till huset?','Ja, jag har nyckeln. Mitt rum har ett eget kök.'],
+};
+function wrapDialogueWords(html){
+  return html.replace(/(<[^>]+>)|([^<]+)/g,(match,tag,text)=>{
+    if(tag)return tag;
+    return text.replace(/(\S+)/g,(word)=>{
+      const clean=word.replace(/^[""«»„()\[\]]+|[""»«.,!?;:)\[\]…–—]+$/g,'');
+      if(!clean)return word;
+      return `<span class="d-word" onclick="speakDialogWord('${clean.replace(/'/g,"\\'")}',this)">${word}</span>`;
+    });
+  });
+}
+
+const sectionScroll={grammar:0,vocab:0,dialogue:0,quiz:0};
+let currentSection='grammar';
+function showSection(id,btn){
+  sectionScroll[currentSection]=window.scrollY;
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
+  if(btn)btn.classList.add('active');
+  currentSection=id;
+  requestAnimationFrame(()=>requestAnimationFrame(()=>window.scrollTo(0,sectionScroll[id])));
+}
+window.addEventListener('load',()=>{
+  initTTS();renderVocab('all');renderQuiz();
+  document.querySelectorAll('.d-sv').forEach(el=>{
+    const btn=el.querySelector('.tts-btn');const btnHtml=btn?btn.outerHTML:'';
+    let inner=el.innerHTML;if(btn)inner=inner.replace(btn.outerHTML,'');
+    el.innerHTML=wrapDialogueWords(inner)+btnHtml;
+  });
+});
+</script>
+</body>
+</html>
