@@ -185,7 +185,7 @@
       },
       _flush() {
         const q = this._queue.splice(0);
-        q.forEach(function (fn) { try { fn(); } catch (e) {} });
+        q.forEach(function (fn) { try { fn(); } catch (e) { console.error('[SfiCore] manifest callback error:', e); } });
       },
       getFilePath(audioId) {
         const a = this._audioById[audioId];
@@ -213,7 +213,12 @@
         return this._el;
       },
       stop() {
-        if (this._el) { this._el.pause(); this._el.src = ''; }
+        if (this._el) {
+          this._el.onended = null;
+          this._el.onerror = null;
+          this._el.pause();
+          this._el.src = '';
+        }
       },
       play(src, onEnd, onFallback) {
         const el = this._getEl();
@@ -221,9 +226,15 @@
         el.playbackRate = window.SfiCore.state.ttsRate;
         el.src = src;
         el.onended = function () { if (onEnd) onEnd(); };
-        el.onerror = function () { if (onFallback) onFallback(); };
+        el.onerror = function () {
+          console.warn('[SfiCore] audio error, falling back. src:', src);
+          if (onFallback) onFallback();
+        };
         el.load();
-        el.play().catch(function () { if (onFallback) onFallback(); });
+        el.play().catch(function (err) {
+          console.warn('[SfiCore] audio play() rejected:', err);
+          if (onFallback) onFallback();
+        });
       },
       playSequence(paths, onEnd, onFallback) {
         const self = this;
@@ -337,8 +348,10 @@
       if (!window.SfiCore.audio) { fallback(); return; }
       window.SfiCore.manifest.ensure(function () {
         const item = window.SfiCore.manifest.lookupBySourceText(word, 'vocab');
+        console.log('[SfiCore] speakWord lookup:', word, '→', item ? item.audioRef : 'NOT FOUND');
         if (!item || !item.audioRef) { fallback(); return; }
         const path = window.SfiCore.manifest.getFilePath(item.audioRef);
+        console.log('[SfiCore] speakWord path:', path);
         if (!path) { fallback(); return; }
         window.SfiCore.audio.play(path, onDone, fallback);
       });
