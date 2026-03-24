@@ -197,7 +197,13 @@
         return this._byContentId[cid] || null;
       },
       lookupBySourceText(text, audioType) {
-        const arr = this._bySourceText[this._normalize(text)] || [];
+        const key = this._normalize(text);
+        // Direct match first; if not found, try with Swedish article prefixes
+        // (manifest sourceText may include "ett"/"en", vocab page may pass bare word)
+        const arr = this._bySourceText[key]
+          || this._bySourceText['ett ' + key]
+          || this._bySourceText['en ' + key]
+          || [];
         if (!audioType) return arr[0] || null;
         return arr.find(function (i) { return i.audioType === audioType; }) || null;
       }
