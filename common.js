@@ -185,7 +185,9 @@
       },
       getFilePath(audioId) {
         const a = this._audioById[audioId];
-        return (a && a.filePath) || null;
+        if (!a || !a.filePath) return null;
+        // Strip leading slash so path is relative (works in subdirectory deploys like GitHub Pages /swedish-study/)
+        return a.filePath.replace(/^\//, '');
       },
       lookupByContentId(cid) {
         return this._byContentId[cid] || null;
