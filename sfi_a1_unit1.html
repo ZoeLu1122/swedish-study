@@ -299,10 +299,6 @@ main{ max-width:900px; margin:0 auto; padding:1.8rem 1.4rem 4rem; }
 .speak-word:hover{ background:rgba(212,146,10,.18); color:var(--gold); }
 .speak-word.speaking{ background:var(--gold); color:white; }
 
-/* 对话词（点击单词发音） */
-.d-word{ cursor:pointer; border-radius:3px; transition:background .12s; }
-.d-word:hover{ background:rgba(88,166,255,.18); }
-.d-word.speaking{ background:var(--a-c); color:white; }
 
 /* 词汇模式切换按钮 */
 .vocab-mode-btn{
@@ -1155,17 +1151,6 @@ window.dialogueContentIds = {
   ]
 };
 
-// 对话中点击单个词发音
-function wrapDialogueWords(html) {
-  return html.replace(/(<[^>]+>)|([^<]+)/g, (match, tag, text) => {
-    if (tag) return tag;
-    return text.replace(/(\S+)/g, word => {
-      const clean = word.replace(/^[""«»„()\[\]]+|[""»«.,!?;:)\[\]…–—]+$/g, '');
-      if (!clean) return word;
-      return `<span class="d-word" onclick="speakWord('${clean.replace(/'/g,"\\'")}',this)">${word}</span>`;
-    });
-  });
-}
 
 /* ═══════════════════════════════════════
    渲染测验
@@ -1273,14 +1258,7 @@ window.addEventListener('load', () => {
   initTTS();
   renderVocab('all');
   renderQuiz();
-  // 对话文字包裹为可点击单词（跳过已有的 .tts-btn）
-  document.querySelectorAll('.d-sv').forEach(el => {
-    const btn = el.querySelector('.tts-btn');
-    const btnHtml = btn ? btn.outerHTML : '';
-    let inner = el.innerHTML;
-    if (btn) inner = inner.replace(btn.outerHTML, '');
-    el.innerHTML = wrapDialogueWords(inner) + btnHtml;
-  });
+
 });
 </script>
 
