@@ -122,6 +122,111 @@
         window.SfiCore.state.ttsRate = val;
         localStorage.setItem(RATE_KEY, val);
         window.sfiTTSRate = val;
+        if (window.SfiCore.audio && window.SfiCore.audio._el) {
+          window.SfiCore.audio._el.playbackRate = val;
+        }
+      }
+    },
+
+    manifest: {
+      _byContentId: {},
+      _bySourceText: {},
+      _audioById: {},
+      _state: 'idle',
+      _queue: [],
+      _getBase() {
+        const uk = window.sfiUnitKey || '';
+        const m = uk.match(/sfi_([a-z])(\d+)_unit(\d+)/i);
+        if (m) return 'audio/sv/' + m[1].toLowerCase() + m[2] + '/unit' + m[3];
+        const pc = (window.PAGE_CONFIG && window.PAGE_CONFIG.unit) || '';
+        const m2 = pc.match(/^([a-z])(\d+)$/i);
+        if (m2) return 'audio/sv/' + m2[1].toLowerCase() + m2[2] + '/unit' + m2[2];
+        return null;
+      },
+      ensure(cb) {
+        if (this._state === 'ready' || this._state === 'error') { cb(); return; }
+        this._queue.push(cb);
+        if (this._state === 'loading') return;
+        this._state = 'loading';
+        const self = this;
+        const base = this._getBase();
+        if (!base) { self._state = 'error'; self._flush(); return; }
+        Promise.all([
+          fetch(base + '/content-manifest.json').then(r => r.json()),
+          fetch(base + '/audio-manifest.json').then(r => r.json())
+        ]).then(function (results) {
+          const rawContent = results[0];
+          const rawAudio = results[1];
+          const contentList = Array.isArray(rawContent) ? rawContent
+            : (rawContent && Array.isArray(rawContent.items) ? rawContent.items : []);
+          const audioList = Array.isArray(rawAudio) ? rawAudio
+            : (rawAudio && Array.isArray(rawAudio.items) ? rawAudio.items : []);
+          audioList.forEach(function (a) {
+            if (a.audioId) self._audioById[a.audioId] = a;
+          });
+          contentList.forEach(function (item) {
+            if (item.contentId) self._byContentId[item.contentId] = item;
+            if (item.sourceText) {
+              const key = item.sourceText.trim();
+              if (!self._bySourceText[key]) self._bySourceText[key] = [];
+              self._bySourceText[key].push(item);
+            }
+          });
+          self._state = 'ready';
+          self._flush();
+        }).catch(function () {
+          self._state = 'error';
+          self._flush();
+        });
+      },
+      _flush() {
+        const q = this._queue.splice(0);
+        q.forEach(function (fn) { try { fn(); } catch (e) {} });
+      },
+      getFilePath(audioId) {
+        const a = this._audioById[audioId];
+        return (a && a.filePath) || null;
+      },
+      lookupByContentId(cid) {
+        return this._byContentId[cid] || null;
+      },
+      lookupBySourceText(text, audioType) {
+        const arr = this._bySourceText[String(text || '').trim()] || [];
+        if (!audioType) return arr[0] || null;
+        return arr.find(function (i) { return i.audioType === audioType; }) || null;
+      }
+    },
+
+    audio: {
+      _el: null,
+      _getEl() {
+        if (!this._el) {
+          this._el = new Audio();
+          this._el.playbackRate = window.SfiCore.state.ttsRate;
+        }
+        return this._el;
+      },
+      stop() {
+        if (this._el) { this._el.pause(); this._el.src = ''; }
+      },
+      play(src, onEnd, onFallback) {
+        const el = this._getEl();
+        this.stop();
+        el.playbackRate = window.SfiCore.state.ttsRate;
+        el.src = src;
+        el.onended = function () { if (onEnd) onEnd(); };
+        el.onerror = function () { if (onFallback) onFallback(); };
+        el.load();
+        el.play().catch(function () { if (onFallback) onFallback(); });
+      },
+      playSequence(paths, onEnd, onFallback) {
+        const self = this;
+        const queue = paths.slice();
+        function next() {
+          if (!queue.length) { if (onEnd) onEnd(); return; }
+          self.play(queue.shift(), next, function () { if (onFallback) onFallback(); });
+        }
+        next();
       }
     }
   };
@@ -155,6 +260,7 @@
 
     window.stopFullDialogueAction = function () {
       if (window.speechSynthesis) window.speechSynthesis.cancel();
+      if (window.SfiCore && window.SfiCore.audio) window.SfiCore.audio.stop();
       clearActiveButton();
       if (ttsUiState.isFullSpeaking && ttsUiState.currentFullDialogueId !== null) {
         const oldBtn = document.getElementById(`btn-full${ttsUiState.currentFullDialogueId}`);
@@ -166,22 +272,70 @@
 
     window.speak = function (text, btn) {
       window.stopFullDialogueAction();
-      if (!text || !window.SfiCore || !window.SfiCore.tts) return;
+      if (!window.SfiCore || !window.SfiCore.tts) return;
       if (btn && btn.classList) {
         clearActiveButton();
         btn.classList.add('speaking');
         ttsUiState.activeButton = btn;
       }
-      window.SfiCore.tts.speak(text, () => {
+      function onDone() {
         if (btn && btn.classList) {
           btn.classList.remove('speaking');
           if (ttsUiState.activeButton === btn) ttsUiState.activeButton = null;
+        }
+      }
+      function fallback() {
+        if (!text) { onDone(); return; }
+        window.SfiCore.tts.speak(text, onDone);
+      }
+      if (!window.SfiCore.audio) { fallback(); return; }
+      const cid = btn && btn.dataset && btn.dataset.contentId;
+      window.SfiCore.manifest.ensure(function () {
+        const item = cid
+          ? window.SfiCore.manifest.lookupByContentId(cid)
+          : window.SfiCore.manifest.lookupBySourceText(text, 'dialogue_line_group');
+        if (!item) { fallback(); return; }
+        if (item.audioRefs && item.audioRefs.length) {
+          const paths = item.audioRefs.map(function (id) {
+            return window.SfiCore.manifest.getFilePath(id);
+          }).filter(Boolean);
+          if (!paths.length) { fallback(); return; }
+          window.SfiCore.audio.playSequence(paths, onDone, fallback);
+        } else if (item.audioRef) {
+          const path = window.SfiCore.manifest.getFilePath(item.audioRef);
+          if (!path) { fallback(); return; }
+          window.SfiCore.audio.play(path, onDone, fallback);
+        } else {
+          fallback();
         }
       });
     };
 
     window.speakWord = function (word, btn) {
-      window.speak(word, btn || null);
+      if (!window.SfiCore || !window.SfiCore.tts) return;
+      if (btn && btn.classList) {
+        clearActiveButton();
+        btn.classList.add('speaking');
+        ttsUiState.activeButton = btn;
+      }
+      function onDone() {
+        if (btn && btn.classList) {
+          btn.classList.remove('speaking');
+          if (ttsUiState.activeButton === btn) ttsUiState.activeButton = null;
+        }
+      }
+      function fallback() {
+        if (!word) { onDone(); return; }
+        window.SfiCore.tts.speak(word, onDone);
+      }
+      if (!window.SfiCore.audio) { fallback(); return; }
+      window.SfiCore.manifest.ensure(function () {
+        const item = window.SfiCore.manifest.lookupBySourceText(word, 'vocab');
+        if (!item || !item.audioRef) { fallback(); return; }
+        const path = window.SfiCore.manifest.getFilePath(item.audioRef);
+        if (!path) { fallback(); return; }
+        window.SfiCore.audio.play(path, onDone, fallback);
+      });
     };
 
     window.speakDialogWord = function (word, btn) {
@@ -201,16 +355,47 @@
         return;
       }
       window.stopFullDialogueAction();
-      const fullText = lines.join(' ');
       ttsUiState.isFullSpeaking = true;
       ttsUiState.currentFullDialogueId = dialogueId;
       if (clickedBtn) clickedBtn.textContent = '⏹ 停止播放';
-      window.SfiCore.tts.speak(fullText, () => {
+
+      function onFullEnd() {
         if (ttsUiState.currentFullDialogueId === dialogueId) {
           ttsUiState.isFullSpeaking = false;
           ttsUiState.currentFullDialogueId = null;
           if (clickedBtn) clickedBtn.textContent = '▶ 朗读整段对话';
         }
+      }
+      function fallbackTTS() {
+        window.SfiCore.tts.speak(lines.join(' '), onFullEnd);
+      }
+
+      // 优先用 mp3 顺序播放，降级到 TTS
+      if (!window.SfiCore.audio) { fallbackTTS(); return; }
+      window.SfiCore.manifest.ensure(function () {
+        // lines 是对话文本数组；对每行用 dialogue_line_group 匹配 contentId
+        // 需要从 window.dialogueContentIds[dialogueId] 取 contentId 列表
+        // 若页面未提供则降级 TTS
+        const cidList = window.dialogueContentIds && window.dialogueContentIds[dialogueId];
+        if (!cidList || !cidList.length) { fallbackTTS(); return; }
+
+        const allPaths = [];
+        for (const cid of cidList) {
+          const item = window.SfiCore.manifest.lookupByContentId(cid);
+          if (!item) { fallbackTTS(); return; }
+          if (item.audioRefs && item.audioRefs.length) {
+            const paths = item.audioRefs.map(id => window.SfiCore.manifest.getFilePath(id)).filter(Boolean);
+            if (!paths.length) { fallbackTTS(); return; }
+            allPaths.push(...paths);
+          } else if (item.audioRef) {
+            const path = window.SfiCore.manifest.getFilePath(item.audioRef);
+            if (!path) { fallbackTTS(); return; }
+            allPaths.push(path);
+          } else {
+            fallbackTTS(); return;
+          }
+        }
+        window.SfiCore.audio.playSequence(allPaths, onFullEnd, fallbackTTS);
       });
     };
   }

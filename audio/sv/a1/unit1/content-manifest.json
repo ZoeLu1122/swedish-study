@@ -1,0 +1,1141 @@
+{
+  "unit": "a1",
+  "unitCode": "u1",
+  "unitTitle": "基础问候与自我介绍",
+  "version": 1,
+  "defaults": {
+    "lang": "sv",
+    "speedProfile": "normal",
+    "outputFormat": "mp3_44100_128"
+  },
+  "items": [
+    {
+      "contentId": "a1_vocab_hej",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "Hej",
+      "sourceText": "Hej",
+      "audioRef": "sv_a1_u1_vocab_001",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_hej_da",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "Hej då",
+      "sourceText": "Hej då",
+      "audioRef": "sv_a1_u1_vocab_002",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_halla",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "Hallå",
+      "sourceText": "Hallå",
+      "audioRef": "sv_a1_u1_vocab_003",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_god_morgon",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "God morgon",
+      "sourceText": "God morgon",
+      "audioRef": "sv_a1_u1_vocab_004",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_god_dag",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "God dag",
+      "sourceText": "God dag",
+      "audioRef": "sv_a1_u1_vocab_005",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_god_kvall",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "God kväll",
+      "sourceText": "God kväll",
+      "audioRef": "sv_a1_u1_vocab_006",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_god_natt",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "God natt",
+      "sourceText": "God natt",
+      "audioRef": "sv_a1_u1_vocab_007",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_vi_ses",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "Vi ses",
+      "sourceText": "Vi ses",
+      "audioRef": "sv_a1_u1_vocab_008",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_ha_det_bra",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "Ha det bra",
+      "sourceText": "Ha det bra",
+      "audioRef": "sv_a1_u1_vocab_009",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_heta",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "heta",
+      "sourceText": "heta",
+      "audioRef": "sv_a1_u1_vocab_010",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_vara",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "vara",
+      "sourceText": "vara",
+      "audioRef": "sv_a1_u1_vocab_011",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_heter",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "heter",
+      "sourceText": "heter",
+      "audioRef": "sv_a1_u1_vocab_012",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_ar",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "är",
+      "sourceText": "är",
+      "audioRef": "sv_a1_u1_vocab_013",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_fran",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "från",
+      "sourceText": "från",
+      "audioRef": "sv_a1_u1_vocab_014",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_namn",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "ett namn",
+      "sourceText": "ett namn",
+      "audioRef": "sv_a1_u1_vocab_015",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_land",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "ett land",
+      "sourceText": "ett land",
+      "audioRef": "sv_a1_u1_vocab_016",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_trevligt_att_traffas",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "Trevligt att träffas",
+      "sourceText": "Trevligt att träffas",
+      "audioRef": "sv_a1_u1_vocab_017",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_var_ar_du_fran",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "Var är du från",
+      "sourceText": "Var är du från",
+      "audioRef": "sv_a1_u1_vocab_018",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_tack",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "Tack",
+      "sourceText": "Tack",
+      "audioRef": "sv_a1_u1_vocab_019",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_tack_sa_mycket",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "Tack så mycket",
+      "sourceText": "Tack så mycket",
+      "audioRef": "sv_a1_u1_vocab_020",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_varsagod",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "Varsågod",
+      "sourceText": "Varsågod",
+      "audioRef": "sv_a1_u1_vocab_021",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_forlat",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "Förlåt",
+      "sourceText": "Förlåt",
+      "audioRef": "sv_a1_u1_vocab_022",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_ursakta",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "Ursäkta",
+      "sourceText": "Ursäkta",
+      "audioRef": "sv_a1_u1_vocab_023",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_ja",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "Ja",
+      "sourceText": "Ja",
+      "audioRef": "sv_a1_u1_vocab_024",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_nej",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "Nej",
+      "sourceText": "Nej",
+      "audioRef": "sv_a1_u1_vocab_025",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_hur_mar_du",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "Hur mår du",
+      "sourceText": "Hur mår du",
+      "audioRef": "sv_a1_u1_vocab_026",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_bra",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "Bra",
+      "sourceText": "Bra",
+      "audioRef": "sv_a1_u1_vocab_027",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_ett_en",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "ett / en",
+      "sourceText": "ett / en",
+      "audioRef": "sv_a1_u1_vocab_028",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_tva",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "två",
+      "sourceText": "två",
+      "audioRef": "sv_a1_u1_vocab_029",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_tre",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "tre",
+      "sourceText": "tre",
+      "audioRef": "sv_a1_u1_vocab_030",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_fyra",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "fyra",
+      "sourceText": "fyra",
+      "audioRef": "sv_a1_u1_vocab_031",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_fem",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "fem",
+      "sourceText": "fem",
+      "audioRef": "sv_a1_u1_vocab_032",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_sex",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "sex",
+      "sourceText": "sex",
+      "audioRef": "sv_a1_u1_vocab_033",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_sju",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "sju",
+      "sourceText": "sju",
+      "audioRef": "sv_a1_u1_vocab_034",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_atta",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "åtta",
+      "sourceText": "åtta",
+      "audioRef": "sv_a1_u1_vocab_035",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_nio",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "nio",
+      "sourceText": "nio",
+      "audioRef": "sv_a1_u1_vocab_036",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_vocab_tio",
+      "bankKind": "vocab_spelling",
+      "audioType": "vocab",
+      "displayText": "tio",
+      "sourceText": "tio",
+      "audioRef": "sv_a1_u1_vocab_037",
+      "source": "vocab"
+    },
+    {
+      "contentId": "a1_phrase_hej",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "___!",
+      "sourceText": "Hej!",
+      "audioRef": "sv_a1_u1_qp_001",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_phrase_god_morgon",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "___!",
+      "sourceText": "God morgon!",
+      "audioRef": "sv_a1_u1_qp_002",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_phrase_hej_da",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "___!",
+      "sourceText": "Hej då!",
+      "audioRef": "sv_a1_u1_qp_003",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_phrase_ha_det_bra",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "___!",
+      "sourceText": "Ha det bra!",
+      "audioRef": "sv_a1_u1_qp_004",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_phrase_god_natt",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "___!",
+      "sourceText": "God natt!",
+      "audioRef": "sv_a1_u1_qp_005",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_phrase_jag_heter_anna",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "Jag ___ Anna.",
+      "sourceText": "Jag heter Anna.",
+      "audioRef": "sv_a1_u1_qp_006",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_phrase_vad_heter_du",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "Vad ___ du?",
+      "sourceText": "Vad heter du?",
+      "audioRef": "sv_a1_u1_qp_007",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_phrase_jag_ar_fran_kina",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "Jag ___ Kina.",
+      "sourceText": "Jag är från Kina.",
+      "audioRef": "sv_a1_u1_qp_008",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_phrase_jag_ar_student",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "Jag ___ student.",
+      "sourceText": "Jag är student.",
+      "audioRef": "sv_a1_u1_qp_009",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_phrase_han_ar_larare",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "Han ___ lärare.",
+      "sourceText": "Han är lärare.",
+      "audioRef": "sv_a1_u1_qp_010",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_phrase_trevligt_att_traffas",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "___!",
+      "sourceText": "Trevligt att träffas!",
+      "audioRef": "sv_a1_u1_qp_011",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_phrase_var_ar_du_fran",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "___?",
+      "sourceText": "Var är du från?",
+      "audioRef": "sv_a1_u1_qp_012",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_phrase_tack",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "___!",
+      "sourceText": "Tack!",
+      "audioRef": "sv_a1_u1_qp_013",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_phrase_tack_sa_mycket",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "___!",
+      "sourceText": "Tack så mycket!",
+      "audioRef": "sv_a1_u1_qp_014",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_phrase_varsagod",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "___!",
+      "sourceText": "Varsågod!",
+      "audioRef": "sv_a1_u1_qp_015",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_phrase_forlat",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "___!",
+      "sourceText": "Förlåt!",
+      "audioRef": "sv_a1_u1_qp_016",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_phrase_hur_mar_du",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "___?",
+      "sourceText": "Hur mår du?",
+      "audioRef": "sv_a1_u1_qp_017",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_phrase_bra_tack",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "___, tack!",
+      "sourceText": "Bra, tack!",
+      "audioRef": "sv_a1_u1_qp_018",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_phrase_ja_nej",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "___/ ___",
+      "sourceText": "Ja/ Nej",
+      "audioRef": "sv_a1_u1_qp_019",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_phrase_tva_kaffe",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "___ kaffe",
+      "sourceText": "två kaffe",
+      "audioRef": "sv_a1_u1_qp_020",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_phrase_klockan_atta",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "klockan ___",
+      "sourceText": "klockan åtta",
+      "audioRef": "sv_a1_u1_qp_021",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_phrase_klockan_tio",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "klockan ___",
+      "sourceText": "klockan tio",
+      "audioRef": "sv_a1_u1_qp_022",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_phrase_sju_dagar",
+      "bankKind": "phrase_fill",
+      "audioType": "question_prompt",
+      "displayText": "___ dagar",
+      "sourceText": "sju dagar",
+      "audioRef": "sv_a1_u1_qp_023",
+      "source": "phrase"
+    },
+    {
+      "contentId": "a1_dialog_hej_jag_heter_anna",
+      "bankKind": "dialog_fill",
+      "audioType": "dialogue_line_group",
+      "displayText": "___! Jag ___ Anna. Vad ___ du?",
+      "sourceText": "Hej! Jag heter Anna. Vad heter du?",
+      "audioRefs": [
+        "sv_a1_u1_dialog_001_line_01",
+        "sv_a1_u1_dialog_001_line_02",
+        "sv_a1_u1_dialog_001_line_03"
+      ],
+      "dialogueId": "a1_dialogue_001",
+      "speaker": "F",
+      "source": "dialog"
+    },
+    {
+      "contentId": "a1_dialog_hej_jag_heter_wei",
+      "bankKind": "dialog_fill",
+      "audioType": "dialogue_line_group",
+      "displayText": "___! Jag heter Wei. ___!",
+      "sourceText": "Hej! Jag heter Wei. Trevligt att träffas!",
+      "audioRefs": [
+        "sv_a1_u1_dialog_001_line_04",
+        "sv_a1_u1_dialog_001_line_05",
+        "sv_a1_u1_dialog_001_line_06"
+      ],
+      "dialogueId": "a1_dialogue_001",
+      "speaker": "M",
+      "source": "dialog"
+    },
+    {
+      "contentId": "a1_dialog_var_ar_du_fran",
+      "bankKind": "dialog_fill",
+      "audioType": "dialogue_line_group",
+      "displayText": "Trevligt! ___?",
+      "sourceText": "Trevligt! Var är du från?",
+      "audioRefs": [
+        "sv_a1_u1_dialog_001_line_07",
+        "sv_a1_u1_dialog_001_line_08"
+      ],
+      "dialogueId": "a1_dialogue_001",
+      "speaker": "F",
+      "source": "dialog"
+    },
+    {
+      "contentId": "a1_dialog_jag_ar_fran_kina",
+      "bankKind": "dialog_fill",
+      "audioType": "dialogue_line_group",
+      "displayText": "Jag ___ Kina. Och du?",
+      "sourceText": "Jag är från Kina. Och du?",
+      "audioRefs": [
+        "sv_a1_u1_dialog_001_line_09",
+        "sv_a1_u1_dialog_001_line_10"
+      ],
+      "dialogueId": "a1_dialogue_001",
+      "speaker": "M",
+      "source": "dialog"
+    },
+    {
+      "contentId": "a1_dialog_jag_ar_larare_har",
+      "bankKind": "dialog_fill",
+      "audioType": "dialogue_line_group",
+      "displayText": "Jag är från Sverige. Jag ___ lärare här.",
+      "sourceText": "Jag är från Sverige. Jag är lärare här.",
+      "audioRefs": [
+        "sv_a1_u1_dialog_001_line_11",
+        "sv_a1_u1_dialog_001_line_12"
+      ],
+      "dialogueId": "a1_dialogue_001",
+      "speaker": "F",
+      "source": "dialog"
+    },
+    {
+      "contentId": "a1_dialog_hej_da_student",
+      "bankKind": "dialog_fill",
+      "audioType": "dialogue_line_group",
+      "displayText": "Jag förstår. Jag är student. ___!",
+      "sourceText": "Jag förstår. Jag är student. Hej då!",
+      "audioRefs": [
+        "sv_a1_u1_dialog_001_line_13",
+        "sv_a1_u1_dialog_001_line_14",
+        "sv_a1_u1_dialog_001_line_15"
+      ],
+      "dialogueId": "a1_dialogue_001",
+      "speaker": "M",
+      "source": "dialog"
+    },
+    {
+      "contentId": "a1_dialog_hej_da_ha_det_bra",
+      "bankKind": "dialog_fill",
+      "audioType": "dialogue_line_group",
+      "displayText": "___! ___!",
+      "sourceText": "Hej då! Ha det bra!",
+      "audioRefs": [
+        "sv_a1_u1_dialog_001_line_16",
+        "sv_a1_u1_dialog_001_line_17"
+      ],
+      "dialogueId": "a1_dialogue_001",
+      "speaker": "F",
+      "source": "dialog"
+    },
+    {
+      "contentId": "a1_dialog_god_morgon_hur_mar_du",
+      "bankKind": "dialog_fill",
+      "audioType": "dialogue_line_group",
+      "displayText": "___! Hur mår du?",
+      "sourceText": "God morgon! Hur mår du?",
+      "audioRefs": [
+        "sv_a1_u1_dialog_002_line_01",
+        "sv_a1_u1_dialog_002_line_02"
+      ],
+      "dialogueId": "a1_dialogue_002",
+      "speaker": "M",
+      "source": "dialog"
+    },
+    {
+      "contentId": "a1_dialog_god_morgon_bra_tack",
+      "bankKind": "dialog_fill",
+      "audioType": "dialogue_line_group",
+      "displayText": "___! Bra, ___! Och du?",
+      "sourceText": "God morgon! Bra, tack! Och du?",
+      "audioRefs": [
+        "sv_a1_u1_dialog_002_line_03",
+        "sv_a1_u1_dialog_002_line_04",
+        "sv_a1_u1_dialog_002_line_05"
+      ],
+      "dialogueId": "a1_dialogue_002",
+      "speaker": "F",
+      "source": "dialog"
+    },
+    {
+      "contentId": "a1_dialog_tva_kaffe_varsagod",
+      "bankKind": "dialog_fill",
+      "audioType": "dialogue_line_group",
+      "displayText": "Också bra, tack! Det är ___ kaffe, ___.",
+      "sourceText": "Också bra, tack! Det är två kaffe, varsågod.",
+      "audioRefs": [
+        "sv_a1_u1_dialog_002_line_06",
+        "sv_a1_u1_dialog_002_line_07"
+      ],
+      "dialogueId": "a1_dialogue_002",
+      "speaker": "M",
+      "source": "dialog"
+    },
+    {
+      "contentId": "a1_dialog_tack_sa_mycket",
+      "bankKind": "dialog_fill",
+      "audioType": "dialogue_line_group",
+      "displayText": "___!",
+      "sourceText": "Tack så mycket!",
+      "audioRefs": [
+        "sv_a1_u1_dialog_002_line_08"
+      ],
+      "dialogueId": "a1_dialogue_002",
+      "speaker": "F",
+      "source": "dialog"
+    },
+    {
+      "contentId": "a1_dialog_varsagod_ha_det_bra",
+      "bankKind": "dialog_fill",
+      "audioType": "dialogue_line_group",
+      "displayText": "___! ___!",
+      "sourceText": "Varsågod! Ha det bra!",
+      "audioRefs": [
+        "sv_a1_u1_dialog_002_line_09",
+        "sv_a1_u1_dialog_002_line_10"
+      ],
+      "dialogueId": "a1_dialogue_002",
+      "speaker": "M",
+      "source": "dialog"
+    },
+    {
+      "contentId": "a1_dialog_halla",
+      "bankKind": "dialog_fill",
+      "audioType": "dialogue_line_group",
+      "displayText": "___?",
+      "sourceText": "Hallå?",
+      "audioRefs": [
+        "sv_a1_u1_dialog_003_line_01"
+      ],
+      "dialogueId": "a1_dialogue_003",
+      "speaker": "M",
+      "source": "dialog"
+    },
+    {
+      "contentId": "a1_dialog_hej_det_ar_anna",
+      "bankKind": "dialog_fill",
+      "audioType": "dialogue_line_group",
+      "displayText": "___! Det är Anna. Hur mår du?",
+      "sourceText": "Hej! Det är Anna. Hur mår du?",
+      "audioRefs": [
+        "sv_a1_u1_dialog_003_line_02",
+        "sv_a1_u1_dialog_003_line_03",
+        "sv_a1_u1_dialog_003_line_04"
+      ],
+      "dialogueId": "a1_dialogue_003",
+      "speaker": "F",
+      "source": "dialog"
+    },
+    {
+      "contentId": "a1_dialog_bra_tack_vad_heter_du",
+      "bankKind": "dialog_fill",
+      "audioType": "dialogue_line_group",
+      "displayText": "Bra, ___! Vad heter du på svenska?",
+      "sourceText": "Bra, tack! Vad heter du på svenska?",
+      "audioRefs": [
+        "sv_a1_u1_dialog_003_line_05",
+        "sv_a1_u1_dialog_003_line_06"
+      ],
+      "dialogueId": "a1_dialogue_003",
+      "speaker": "M",
+      "source": "dialog"
+    },
+    {
+      "contentId": "a1_dialog_jag_heter_anna_larsson",
+      "bankKind": "dialog_fill",
+      "audioType": "dialogue_line_group",
+      "displayText": "Jag ___ Anna Larsson. ___, jag måste gå nu.",
+      "sourceText": "Jag heter Anna Larsson. Förlåt, jag måste gå nu.",
+      "audioRefs": [
+        "sv_a1_u1_dialog_003_line_07",
+        "sv_a1_u1_dialog_003_line_08"
+      ],
+      "dialogueId": "a1_dialogue_003",
+      "speaker": "F",
+      "source": "dialog"
+    },
+    {
+      "contentId": "a1_dialog_vi_ses_hej_da",
+      "bankKind": "dialog_fill",
+      "audioType": "dialogue_line_group",
+      "displayText": "Okej! ___! ___!",
+      "sourceText": "Okej! Vi ses! Hej då!",
+      "audioRefs": [
+        "sv_a1_u1_dialog_003_line_09",
+        "sv_a1_u1_dialog_003_line_10",
+        "sv_a1_u1_dialog_003_line_11"
+      ],
+      "dialogueId": "a1_dialogue_003",
+      "speaker": "M",
+      "source": "dialog"
+    }
+  ],
+  "dialogueGroups": [
+    {
+      "dialogueId": "a1_dialogue_001",
+      "title": "第一次见面",
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "F",
+          "contentId": "a1_dialog_hej_jag_heter_anna",
+          "sourceText": "Hej! Jag heter Anna. Vad heter du?",
+          "lines": [
+            {
+              "audioRef": "sv_a1_u1_dialog_001_line_01",
+              "speaker": "F",
+              "sourceText": "Hej!"
+            },
+            {
+              "audioRef": "sv_a1_u1_dialog_001_line_02",
+              "speaker": "F",
+              "sourceText": "Jag heter Anna."
+            },
+            {
+              "audioRef": "sv_a1_u1_dialog_001_line_03",
+              "speaker": "F",
+              "sourceText": "Vad heter du?"
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "speaker": "M",
+          "contentId": "a1_dialog_hej_jag_heter_wei",
+          "sourceText": "Hej! Jag heter Wei. Trevligt att träffas!",
+          "lines": [
+            {
+              "audioRef": "sv_a1_u1_dialog_001_line_04",
+              "speaker": "M",
+              "sourceText": "Hej!"
+            },
+            {
+              "audioRef": "sv_a1_u1_dialog_001_line_05",
+              "speaker": "M",
+              "sourceText": "Jag heter Wei."
+            },
+            {
+              "audioRef": "sv_a1_u1_dialog_001_line_06",
+              "speaker": "M",
+              "sourceText": "Trevligt att träffas!"
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "speaker": "F",
+          "contentId": "a1_dialog_var_ar_du_fran",
+          "sourceText": "Trevligt! Var är du från?",
+          "lines": [
+            {
+              "audioRef": "sv_a1_u1_dialog_001_line_07",
+              "speaker": "F",
+              "sourceText": "Trevligt!"
+            },
+            {
+              "audioRef": "sv_a1_u1_dialog_001_line_08",
+              "speaker": "F",
+              "sourceText": "Var är du från?"
+            }
+          ]
+        },
+        {
+          "turn": 4,
+          "speaker": "M",
+          "contentId": "a1_dialog_jag_ar_fran_kina",
+          "sourceText": "Jag är från Kina. Och du?",
+          "lines": [
+            {
+              "audioRef": "sv_a1_u1_dialog_001_line_09",
+              "speaker": "M",
+              "sourceText": "Jag är från Kina."
+            },
+            {
+              "audioRef": "sv_a1_u1_dialog_001_line_10",
+              "speaker": "M",
+              "sourceText": "Och du?"
+            }
+          ]
+        },
+        {
+          "turn": 5,
+          "speaker": "F",
+          "contentId": "a1_dialog_jag_ar_larare_har",
+          "sourceText": "Jag är från Sverige. Jag är lärare här.",
+          "lines": [
+            {
+              "audioRef": "sv_a1_u1_dialog_001_line_11",
+              "speaker": "F",
+              "sourceText": "Jag är från Sverige."
+            },
+            {
+              "audioRef": "sv_a1_u1_dialog_001_line_12",
+              "speaker": "F",
+              "sourceText": "Jag är lärare här."
+            }
+          ]
+        },
+        {
+          "turn": 6,
+          "speaker": "M",
+          "contentId": "a1_dialog_hej_da_student",
+          "sourceText": "Jag förstår. Jag är student. Hej då!",
+          "lines": [
+            {
+              "audioRef": "sv_a1_u1_dialog_001_line_13",
+              "speaker": "M",
+              "sourceText": "Jag förstår."
+            },
+            {
+              "audioRef": "sv_a1_u1_dialog_001_line_14",
+              "speaker": "M",
+              "sourceText": "Jag är student."
+            },
+            {
+              "audioRef": "sv_a1_u1_dialog_001_line_15",
+              "speaker": "M",
+              "sourceText": "Hej då!"
+            }
+          ]
+        },
+        {
+          "turn": 7,
+          "speaker": "F",
+          "contentId": "a1_dialog_hej_da_ha_det_bra",
+          "sourceText": "Hej då! Ha det bra!",
+          "lines": [
+            {
+              "audioRef": "sv_a1_u1_dialog_001_line_16",
+              "speaker": "F",
+              "sourceText": "Hej då!"
+            },
+            {
+              "audioRef": "sv_a1_u1_dialog_001_line_17",
+              "speaker": "F",
+              "sourceText": "Ha det bra!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "dialogueId": "a1_dialogue_002",
+      "title": "在咖啡馆",
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "M",
+          "contentId": "a1_dialog_god_morgon_hur_mar_du",
+          "sourceText": "God morgon! Hur mår du?",
+          "lines": [
+            {
+              "audioRef": "sv_a1_u1_dialog_002_line_01",
+              "speaker": "M",
+              "sourceText": "God morgon!"
+            },
+            {
+              "audioRef": "sv_a1_u1_dialog_002_line_02",
+              "speaker": "M",
+              "sourceText": "Hur mår du?"
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "speaker": "F",
+          "contentId": "a1_dialog_god_morgon_bra_tack",
+          "sourceText": "God morgon! Bra, tack! Och du?",
+          "lines": [
+            {
+              "audioRef": "sv_a1_u1_dialog_002_line_03",
+              "speaker": "F",
+              "sourceText": "God morgon!"
+            },
+            {
+              "audioRef": "sv_a1_u1_dialog_002_line_04",
+              "speaker": "F",
+              "sourceText": "Bra, tack!"
+            },
+            {
+              "audioRef": "sv_a1_u1_dialog_002_line_05",
+              "speaker": "F",
+              "sourceText": "Och du?"
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "speaker": "M",
+          "contentId": "a1_dialog_tva_kaffe_varsagod",
+          "sourceText": "Också bra, tack! Det är två kaffe, varsågod.",
+          "lines": [
+            {
+              "audioRef": "sv_a1_u1_dialog_002_line_06",
+              "speaker": "M",
+              "sourceText": "Också bra, tack!"
+            },
+            {
+              "audioRef": "sv_a1_u1_dialog_002_line_07",
+              "speaker": "M",
+              "sourceText": "Det är två kaffe, varsågod."
+            }
+          ]
+        },
+        {
+          "turn": 4,
+          "speaker": "F",
+          "contentId": "a1_dialog_tack_sa_mycket",
+          "sourceText": "Tack så mycket!",
+          "lines": [
+            {
+              "audioRef": "sv_a1_u1_dialog_002_line_08",
+              "speaker": "F",
+              "sourceText": "Tack så mycket!"
+            }
+          ]
+        },
+        {
+          "turn": 5,
+          "speaker": "M",
+          "contentId": "a1_dialog_varsagod_ha_det_bra",
+          "sourceText": "Varsågod! Ha det bra!",
+          "lines": [
+            {
+              "audioRef": "sv_a1_u1_dialog_002_line_09",
+              "speaker": "M",
+              "sourceText": "Varsågod!"
+            },
+            {
+              "audioRef": "sv_a1_u1_dialog_002_line_10",
+              "speaker": "M",
+              "sourceText": "Ha det bra!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "dialogueId": "a1_dialogue_003",
+      "title": "电话问候",
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "M",
+          "contentId": "a1_dialog_halla",
+          "sourceText": "Hallå?",
+          "lines": [
+            {
+              "audioRef": "sv_a1_u1_dialog_003_line_01",
+              "speaker": "M",
+              "sourceText": "Hallå?"
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "speaker": "F",
+          "contentId": "a1_dialog_hej_det_ar_anna",
+          "sourceText": "Hej! Det är Anna. Hur mår du?",
+          "lines": [
+            {
+              "audioRef": "sv_a1_u1_dialog_003_line_02",
+              "speaker": "F",
+              "sourceText": "Hej!"
+            },
+            {
+              "audioRef": "sv_a1_u1_dialog_003_line_03",
+              "speaker": "F",
+              "sourceText": "Det är Anna."
+            },
+            {
+              "audioRef": "sv_a1_u1_dialog_003_line_04",
+              "speaker": "F",
+              "sourceText": "Hur mår du?"
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "speaker": "M",
+          "contentId": "a1_dialog_bra_tack_vad_heter_du",
+          "sourceText": "Bra, tack! Vad heter du på svenska?",
+          "lines": [
+            {
+              "audioRef": "sv_a1_u1_dialog_003_line_05",
+              "speaker": "M",
+              "sourceText": "Bra, tack!"
+            },
+            {
+              "audioRef": "sv_a1_u1_dialog_003_line_06",
+              "speaker": "M",
+              "sourceText": "Vad heter du på svenska?"
+            }
+          ]
+        },
+        {
+          "turn": 4,
+          "speaker": "F",
+          "contentId": "a1_dialog_jag_heter_anna_larsson",
+          "sourceText": "Jag heter Anna Larsson. Förlåt, jag måste gå nu.",
+          "lines": [
+            {
+              "audioRef": "sv_a1_u1_dialog_003_line_07",
+              "speaker": "F",
+              "sourceText": "Jag heter Anna Larsson."
+            },
+            {
+              "audioRef": "sv_a1_u1_dialog_003_line_08",
+              "speaker": "F",
+              "sourceText": "Förlåt, jag måste gå nu."
+            }
+          ]
+        },
+        {
+          "turn": 5,
+          "speaker": "M",
+          "contentId": "a1_dialog_vi_ses_hej_da",
+          "sourceText": "Okej! Vi ses! Hej då!",
+          "lines": [
+            {
+              "audioRef": "sv_a1_u1_dialog_003_line_09",
+              "speaker": "M",
+              "sourceText": "Okej!"
+            },
+            {
+              "audioRef": "sv_a1_u1_dialog_003_line_10",
+              "speaker": "M",
+              "sourceText": "Vi ses!"
+            },
+            {
+              "audioRef": "sv_a1_u1_dialog_003_line_11",
+              "speaker": "M",
+              "sourceText": "Hej då!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

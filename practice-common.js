@@ -548,8 +548,25 @@
   function speakCurrentQuestion() {
     const q = getActiveQuestion();
     if (!q) return;
-    const text = q.audio || getQuestionAnswers(q).join(' ');
-    if (text) SfiCore.tts.speak(text);
+
+    function fallback(text) {
+      if (text) SfiCore.tts.speak(text);
+    }
+
+    if (!SfiCore.audio) {
+      fallback(q.audio || getQuestionAnswers(q).join(' '));
+      return;
+    }
+
+    SfiCore.manifest.ensure(function () {
+      const item = SfiCore.manifest.lookupByContentId(q.id);
+      const fallbackText = (item && item.sourceText) || q.audio || getQuestionAnswers(q).join(' ');
+
+      if (!item || !item.audioRef) { fallback(fallbackText); return; }
+      const path = SfiCore.manifest.getFilePath(item.audioRef);
+      if (!path) { fallback(fallbackText); return; }
+      SfiCore.audio.play(path, null, function () { fallback(fallbackText); });
+    });
   }
 
   function updateAnswerReveal(question) {
@@ -906,6 +923,7 @@
     refreshDOM();
     resetInputStates();
     focusFirstInput();
+    setTimeout(function () { speakCurrentQuestion(); }, 400);
   }
 
   function showCompletionScreen() {
