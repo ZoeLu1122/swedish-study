@@ -134,6 +134,10 @@
       _audioById: {},
       _state: 'idle',
       _queue: [],
+      // Remove all non-letter/non-number/non-space characters, collapse whitespace
+      _normalize(text) {
+        return String(text || '').replace(/[^\p{L}\p{N}\s]/gu, '').replace(/\s+/g, ' ').trim();
+      },
       _getBase() {
         const uk = window.sfiUnitKey || '';
         const m = uk.match(/sfi_([a-z])(\d+)_unit(\d+)/i);
@@ -167,7 +171,7 @@
           contentList.forEach(function (item) {
             if (item.contentId) self._byContentId[item.contentId] = item;
             if (item.sourceText) {
-              const key = item.sourceText.trim();
+              const key = self._normalize(item.sourceText);
               if (!self._bySourceText[key]) self._bySourceText[key] = [];
               self._bySourceText[key].push(item);
             }
@@ -193,7 +197,7 @@
         return this._byContentId[cid] || null;
       },
       lookupBySourceText(text, audioType) {
-        const arr = this._bySourceText[String(text || '').trim()] || [];
+        const arr = this._bySourceText[this._normalize(text)] || [];
         if (!audioType) return arr[0] || null;
         return arr.find(function (i) { return i.audioType === audioType; }) || null;
       }
