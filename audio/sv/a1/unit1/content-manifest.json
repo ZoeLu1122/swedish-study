@@ -140,7 +140,7 @@
       "bankKind": "vocab_spelling",
       "audioType": "vocab",
       "displayText": "ett namn",
-      "sourceText": "ett namn",
+      "sourceText": "namn",
       "audioRef": "sv_a1_u1_vocab_015",
       "source": "vocab"
     },
@@ -149,7 +149,7 @@
       "bankKind": "vocab_spelling",
       "audioType": "vocab",
       "displayText": "ett land",
-      "sourceText": "ett land",
+      "sourceText": "land",
       "audioRef": "sv_a1_u1_vocab_016",
       "source": "vocab"
     },
