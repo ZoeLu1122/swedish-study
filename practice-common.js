@@ -562,7 +562,21 @@
       const item = SfiCore.manifest.lookupByContentId(q.id);
       const fallbackText = (item && item.sourceText) || q.audio || getQuestionAnswers(q).join(' ');
 
-      if (!item || !item.audioRef) { fallback(fallbackText); return; }
+      if (!item) { fallback(fallbackText); return; }
+
+      // Handle audioRefs array (dialogue items with multiple lines)
+      if (item.audioRefs && item.audioRefs.length) {
+        const paths = item.audioRefs.map(function (ref) {
+          return SfiCore.manifest.getFilePath(ref);
+        }).filter(Boolean);
+        if (paths.length) {
+          SfiCore.audio.playSequence(paths, null, function () { fallback(fallbackText); });
+          return;
+        }
+      }
+
+      // Handle single audioRef (vocab / question_prompt items)
+      if (!item.audioRef) { fallback(fallbackText); return; }
       const path = SfiCore.manifest.getFilePath(item.audioRef);
       if (!path) { fallback(fallbackText); return; }
       SfiCore.audio.play(path, null, function () { fallback(fallbackText); });
