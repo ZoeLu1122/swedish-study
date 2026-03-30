@@ -1136,6 +1136,24 @@
           ]
         }
       ]
+    },
+    {
+      "contentId": "a1_noun_namn_group",
+      "audioType": "morphology_prompt",
+      "sourceText": "namn",
+      "audioRefs": ["sv_a1_u1_adv_001", "sv_a1_u1_adv_002", "sv_a1_u1_adv_003"]
+    },
+    {
+      "contentId": "a1_noun_land_group",
+      "audioType": "morphology_prompt",
+      "sourceText": "land",
+      "audioRefs": ["sv_a1_u1_adv_004", "sv_a1_u1_adv_005", "sv_a1_u1_adv_006", "sv_a1_u1_adv_007"]
+    },
+    {
+      "contentId": "a1_comp_bra_group",
+      "audioType": "morphology_prompt",
+      "sourceText": "bättre",
+      "audioRefs": ["sv_a1_u1_adv_008", "sv_a1_u1_adv_009"]
     }
   ]
 }
