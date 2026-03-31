@@ -1309,16 +1309,32 @@
     });
   };
 
-  // Sync speed button UI with saved localStorage rate on page load
+  // Sync speed button UI and SfiCore rate on page load
   function syncSpeedButtonUI() {
     const RATE_KEY = 'sfi_tts_rate';
-    const saved = parseFloat(localStorage.getItem(RATE_KEY));
-    if (!saved) return;
     const btns = document.querySelectorAll('.seg-btn[data-speed]');
     if (!btns.length) return;
-    btns.forEach(function (btn) {
-      btn.classList.toggle('active', parseFloat(btn.dataset.speed) === saved);
-    });
+
+    const saved = parseFloat(localStorage.getItem(RATE_KEY));
+    if (saved && !isNaN(saved)) {
+      // Restore from localStorage: update buttons to match
+      btns.forEach(function (btn) {
+        btn.classList.toggle('active', parseFloat(btn.dataset.speed) === saved);
+      });
+      // Ensure SfiCore rate matches saved value
+      if (window.SfiCore && window.SfiCore.tts) {
+        window.SfiCore.tts.setRate(saved);
+      }
+    } else {
+      // No saved rate: read active button value and sync SfiCore to it
+      const activeBtn = document.querySelector('.seg-btn[data-speed].active');
+      if (activeBtn) {
+        const btnRate = parseFloat(activeBtn.dataset.speed);
+        if (!isNaN(btnRate) && window.SfiCore && window.SfiCore.tts) {
+          window.SfiCore.tts.setRate(btnRate);
+        }
+      }
+    }
   }
 
   function init() {
