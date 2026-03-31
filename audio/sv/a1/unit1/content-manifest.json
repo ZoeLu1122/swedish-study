@@ -796,8 +796,9 @@
       "audioType": "morphology_prompt",
       "sourceText": "namn",
       "audioRefs": [
-        "sv_a1_u1_adv_001",
+        "sv_a1_u1_vocab_ett_namn",
         "sv_a1_u1_adv_002",
+        "sv_a1_u1_adv_001",
         "sv_a1_u1_adv_003"
       ]
     },
@@ -806,7 +807,7 @@
       "audioType": "morphology_prompt",
       "sourceText": "land",
       "audioRefs": [
-        "sv_a1_u1_adv_004",
+        "sv_a1_u1_vocab_ett_land",
         "sv_a1_u1_adv_005",
         "sv_a1_u1_adv_006",
         "sv_a1_u1_adv_007"
