@@ -560,12 +560,12 @@
 
     SfiCore.manifest.ensure(function () {
       var item = SfiCore.manifest.lookupByContentId(q.id);
-      // For morphology questions with no dedicated manifest entry, use TTS for all forms
+      // Morphology with no manifest entry: TTS reads all forms
       if (!item && q.kind === 'morphology') {
-        fallback(getQuestionAnswers(q).join('  '));
+        var forms = getQuestionAnswers(q);
+        fallback(forms.length ? forms.join('  ') : (q.lemma || ''));
         return;
       }
-      // For other question types, try lemma as vocab lookup
       if (!item && (q.lemma || q.concept)) {
         item = SfiCore.manifest.lookupBySourceText(q.lemma || q.concept, 'vocab');
       }
