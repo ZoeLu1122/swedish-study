@@ -560,7 +560,12 @@
 
     SfiCore.manifest.ensure(function () {
       var item = SfiCore.manifest.lookupByContentId(q.id);
-      // For morphology/advanced questions not in manifest, try lemma as vocab lookup
+      // For morphology questions with no dedicated manifest entry, use TTS for all forms
+      if (!item && q.kind === 'morphology') {
+        fallback(getQuestionAnswers(q).join('  '));
+        return;
+      }
+      // For other question types, try lemma as vocab lookup
       if (!item && (q.lemma || q.concept)) {
         item = SfiCore.manifest.lookupBySourceText(q.lemma || q.concept, 'vocab');
       }
