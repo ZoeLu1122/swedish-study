@@ -238,6 +238,7 @@
         };
         el.load();
         el.play().catch(function (err) {
+          if (err.name === 'NotAllowedError') return; // autoplay blocked, user hasn't interacted yet
           console.warn('[SfiCore] audio play() rejected:', err);
           if (onFallback) onFallback();
         });
