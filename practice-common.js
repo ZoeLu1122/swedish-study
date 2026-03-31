@@ -560,12 +560,6 @@
 
     SfiCore.manifest.ensure(function () {
       var item = SfiCore.manifest.lookupByContentId(q.id);
-      // Morphology with no manifest entry: TTS reads all forms
-      if (!item && q.kind === 'morphology') {
-        var forms = getQuestionAnswers(q);
-        fallback(forms.length ? forms.join('  ') : (q.lemma || ''));
-        return;
-      }
       if (!item && (q.lemma || q.concept)) {
         item = SfiCore.manifest.lookupBySourceText(q.lemma || q.concept, 'vocab');
       }
