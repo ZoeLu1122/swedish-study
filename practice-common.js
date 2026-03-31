@@ -1297,9 +1297,34 @@
     console.log('练习引擎已就绪，请开始答题。');
   };
 
+  // ── Speed control: called by practice page's setSpeed(val, btn) buttons ──
+  window.setSpeed = function (val, clickedBtn) {
+    // Delegate to SfiCore rate system
+    if (window.SfiCore && window.SfiCore.tts && typeof window.SfiCore.tts.setRate === 'function') {
+      window.SfiCore.tts.setRate(val);
+    }
+    // Update active state on all [data-speed] segment buttons
+    document.querySelectorAll('.seg-btn[data-speed]').forEach(function (btn) {
+      btn.classList.toggle('active', parseFloat(btn.dataset.speed) === val);
+    });
+  };
+
+  // Sync speed button UI with saved localStorage rate on page load
+  function syncSpeedButtonUI() {
+    const RATE_KEY = 'sfi_tts_rate';
+    const saved = parseFloat(localStorage.getItem(RATE_KEY));
+    if (!saved) return;
+    const btns = document.querySelectorAll('.seg-btn[data-speed]');
+    if (!btns.length) return;
+    btns.forEach(function (btn) {
+      btn.classList.toggle('active', parseFloat(btn.dataset.speed) === saved);
+    });
+  }
+
   function init() {
     injectInlineAlignmentStyles();
     bindEvents();
+    syncSpeedButtonUI();
   }
 
   if (document.readyState === 'loading') {

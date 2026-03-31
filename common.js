@@ -489,35 +489,40 @@
       `);
     }
 
-    const speedHtml = `
-      <div class="nav-speed-ctrl nav-speed-wrap" id="sfiSpeedCtrl">
-        <button class="nav-speed-btn" id="speedBtn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <span class="speed-val">${window.SfiCore.state.ttsRate}×</span>
-        </button>
-        <div class="speed-dropdown" id="speedMenu">
-          ${RATES.map(r => `<div class="speed-opt" data-v="${r.v}">${r.label}</div>`).join('')}
+    // Only inject our speed dropdown if the page doesn't already have its own speed buttons
+    const hasOwnSpeedCtrl = !!document.querySelector('[data-speed]');
+    let menu = null;
+    if (!hasOwnSpeedCtrl) {
+      const speedHtml = `
+        <div class="nav-speed-ctrl nav-speed-wrap" id="sfiSpeedCtrl">
+          <button class="nav-speed-btn" id="speedBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span class="speed-val">${window.SfiCore.state.ttsRate}×</span>
+          </button>
+          <div class="speed-dropdown" id="speedMenu">
+            ${RATES.map(r => `<div class="speed-opt" data-v="${r.v}">${r.label}</div>`).join('')}
+          </div>
         </div>
-      </div>
-    `;
-    window.SfiCore.ui.inject('nav', speedHtml, 'beforeend');
+      `;
+      window.SfiCore.ui.inject('nav', speedHtml, 'beforeend');
 
-    const btn = document.getElementById('speedBtn');
-    const menu = document.getElementById('speedMenu');
-    if (btn && menu) {
-      btn.onclick = (e) => {
-        e.stopPropagation();
-        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-      };
-      menu.querySelectorAll('.speed-opt').forEach(opt => {
-        opt.onclick = function () {
-          const val = parseFloat(this.dataset.v);
-          window.SfiCore.tts.setRate(val);
-          const valDisplay = document.querySelector('.speed-val');
-          if (valDisplay) valDisplay.textContent = val + '×';
-          menu.style.display = 'none';
+      const btn = document.getElementById('speedBtn');
+      menu = document.getElementById('speedMenu');
+      if (btn && menu) {
+        btn.onclick = (e) => {
+          e.stopPropagation();
+          menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
         };
-      });
+        menu.querySelectorAll('.speed-opt').forEach(opt => {
+          opt.onclick = function () {
+            const val = parseFloat(this.dataset.v);
+            window.SfiCore.tts.setRate(val);
+            const valDisplay = document.querySelector('.speed-val');
+            if (valDisplay) valDisplay.textContent = val + '×';
+            menu.style.display = 'none';
+          };
+        });
+      }
     }
 
     document.addEventListener('click', () => {
