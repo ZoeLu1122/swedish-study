@@ -130,6 +130,12 @@
     { "audioId": "sv_a1_u1_adv_006", "contentId": "a1_noun_land_group", "audioType": "morphology_form", "sourceText": "länder",   "fileName": "a1_u1_adv_006_lander_v1.mp3",   "filePath": "/audio/sv/a1/unit1/question/a1_u1_adv_006_lander_v1.mp3",   "status": "ready", "version": 1 },
     { "audioId": "sv_a1_u1_adv_007", "contentId": "a1_noun_land_group", "audioType": "morphology_form", "sourceText": "länderna", "fileName": "a1_u1_adv_007_landerna_v1.mp3", "filePath": "/audio/sv/a1/unit1/question/a1_u1_adv_007_landerna_v1.mp3", "status": "ready", "version": 1 },
     { "audioId": "sv_a1_u1_adv_008", "contentId": "a1_comp_bra_group", "audioType": "morphology_form", "sourceText": "bättre",   "fileName": "a1_u1_adv_008_battre_v1.mp3",   "filePath": "/audio/sv/a1/unit1/question/a1_u1_adv_008_battre_v1.mp3",   "status": "ready", "version": 1 },
-    { "audioId": "sv_a1_u1_adv_009", "contentId": "a1_comp_bra_group", "audioType": "morphology_form", "sourceText": "bäst",     "fileName": "a1_u1_adv_009_bast_v1.mp3",     "filePath": "/audio/sv/a1/unit1/question/a1_u1_adv_009_bast_v1.mp3",     "status": "ready", "version": 1 }
+    { "audioId": "sv_a1_u1_adv_009", "contentId": "a1_comp_bra_group", "audioType": "morphology_form", "sourceText": "bäst",     "fileName": "a1_u1_adv_009_bast_v1.mp3",     "filePath": "/audio/sv/a1/unit1/question/a1_u1_adv_009_bast_v1.mp3",     "status": "ready", "version": 1 },
+    { "audioId": "sv_a1_u1_adv_011", "contentId": "a1_verb_vara_group", "audioType": "morphology_form", "sourceText": "var",   "fileName": "a1_u1_adv_011_var_v1.mp3",   "filePath": "/audio/sv/a1/unit1/question/a1_u1_adv_011_var_v1.mp3",   "status": "ready", "version": 1 },
+    { "audioId": "sv_a1_u1_adv_012", "contentId": "a1_verb_vara_group", "audioType": "morphology_form", "sourceText": "varit", "fileName": "a1_u1_adv_012_varit_v1.mp3", "filePath": "/audio/sv/a1/unit1/question/a1_u1_adv_012_varit_v1.mp3", "status": "ready", "version": 1 },
+    { "audioId": "sv_a1_u1_adv_013", "contentId": "a1_verb_heta_group", "audioType": "morphology_form", "sourceText": "hette", "fileName": "a1_u1_adv_013_hette_v1.mp3", "filePath": "/audio/sv/a1/unit1/question/a1_u1_adv_013_hette_v1.mp3", "status": "ready", "version": 1 },
+    { "audioId": "sv_a1_u1_adv_014", "contentId": "a1_verb_heta_group", "audioType": "morphology_form", "sourceText": "hetat", "fileName": "a1_u1_adv_014_hetat_v1.mp3", "filePath": "/audio/sv/a1/unit1/question/a1_u1_adv_014_hetat_v1.mp3", "status": "ready", "version": 1 }
+  ]
+}
   ]
 }
