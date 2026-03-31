@@ -821,6 +821,24 @@
         "sv_a1_u1_adv_008",
         "sv_a1_u1_adv_009"
       ]
+    },
+    {
+      "contentId": "a1_verb_heta_group",
+      "audioType": "morphology_prompt",
+      "sourceText": "heta",
+      "audioRefs": [
+        "sv_a1_u1_vocab_010",
+        "sv_a1_u1_vocab_012"
+      ]
+    },
+    {
+      "contentId": "a1_verb_vara_group",
+      "audioType": "morphology_prompt",
+      "sourceText": "vara",
+      "audioRefs": [
+        "sv_a1_u1_vocab_011",
+        "sv_a1_u1_vocab_013"
+      ]
     }
   ],
   "dialogueGroups": [
