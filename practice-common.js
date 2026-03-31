@@ -559,8 +559,13 @@
     }
 
     SfiCore.manifest.ensure(function () {
-      const item = SfiCore.manifest.lookupByContentId(q.id);
-      const fallbackText = (item && item.sourceText) || q.audio || getQuestionAnswers(q).join(' ');
+      var item = SfiCore.manifest.lookupByContentId(q.id);
+      // For morphology/advanced questions not in manifest, try lemma as vocab lookup
+      if (!item && (q.lemma || q.concept)) {
+        item = SfiCore.manifest.lookupBySourceText(q.lemma || q.concept, 'vocab');
+      }
+      console.log('[SfiCore] speakQ:', q.id, '→', item ? (item.audioRefs ? 'audioRefs['+item.audioRefs.length+']' : item.audioRef || 'no ref') : 'NOT FOUND');
+      const fallbackText = (item && item.sourceText) || q.lemma || q.audio || getQuestionAnswers(q).join(' ');
 
       if (!item) { fallback(fallbackText); return; }
 
