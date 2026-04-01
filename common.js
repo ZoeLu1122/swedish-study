@@ -237,6 +237,7 @@
         };
         el.load();
         el.playbackRate = window.SfiCore.state.ttsRate; // set AFTER load() to prevent reset
+        console.log('[SfiCore] play() rate:', el.playbackRate, '| state:', window.SfiCore.state.ttsRate);
         el.play().catch(function (err) {
           if (err.name === 'NotAllowedError') return; // autoplay blocked, user hasn't interacted yet
           console.warn('[SfiCore] audio play() rejected:', err);
