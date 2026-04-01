@@ -1,0 +1,929 @@
+{
+  "unit": "a2_unit2",
+  "items": [
+    {
+      "audioId": "sv_a2_u2_vocab_elva",
+      "sourceText": "elva",
+      "fileName": "a1_u2_vocab_001_elva_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_001_elva_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_tolv",
+      "sourceText": "tolv",
+      "fileName": "a1_u2_vocab_002_tolv_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_002_tolv_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_tretton",
+      "sourceText": "tretton",
+      "fileName": "a1_u2_vocab_003_tretton_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_003_tretton_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_fjorton",
+      "sourceText": "fjorton",
+      "fileName": "a1_u2_vocab_004_fjorton_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_004_fjorton_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_femton",
+      "sourceText": "femton",
+      "fileName": "a1_u2_vocab_005_femton_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_005_femton_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_tjugo",
+      "sourceText": "tjugo",
+      "fileName": "a1_u2_vocab_006_tjugo_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_006_tjugo_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_trettio",
+      "sourceText": "trettio",
+      "fileName": "a1_u2_vocab_007_trettio_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_007_trettio_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_femtio",
+      "sourceText": "femtio",
+      "fileName": "a1_u2_vocab_008_femtio_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_008_femtio_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_hundra",
+      "sourceText": "hundra",
+      "fileName": "a1_u2_vocab_009_hundra_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_009_hundra_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_tjugofem",
+      "sourceText": "tjugofem",
+      "fileName": "a1_u2_vocab_010_tjugofem_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_010_tjugofem_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_klockan",
+      "sourceText": "klockan",
+      "fileName": "a1_u2_vocab_011_klockan_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_011_klockan_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_timme",
+      "sourceText": "timme",
+      "fileName": "a1_u2_vocab_012_timme_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_012_timme_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_minut",
+      "sourceText": "minut",
+      "fileName": "a1_u2_vocab_013_minut_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_013_minut_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_kvart",
+      "sourceText": "kvart",
+      "fileName": "a1_u2_vocab_014_kvart_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_014_kvart_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_halv",
+      "sourceText": "halv",
+      "fileName": "a1_u2_vocab_015_halv_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_015_halv_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_morgon",
+      "sourceText": "morgon",
+      "fileName": "a1_u2_vocab_016_morgon_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_016_morgon_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_formiddag",
+      "sourceText": "förmiddag",
+      "fileName": "a1_u2_vocab_017_formiddag_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_017_formiddag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_eftermiddag",
+      "sourceText": "eftermiddag",
+      "fileName": "a1_u2_vocab_018_eftermiddag_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_018_eftermiddag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_kvall",
+      "sourceText": "kväll",
+      "fileName": "a1_u2_vocab_019_kvall_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_019_kvall_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_mandag",
+      "sourceText": "måndag",
+      "fileName": "a1_u2_vocab_020_mandag_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_020_mandag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_tisdag",
+      "sourceText": "tisdag",
+      "fileName": "a1_u2_vocab_021_tisdag_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_021_tisdag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_onsdag",
+      "sourceText": "onsdag",
+      "fileName": "a1_u2_vocab_022_onsdag_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_022_onsdag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_torsdag",
+      "sourceText": "torsdag",
+      "fileName": "a1_u2_vocab_023_torsdag_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_023_torsdag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_fredag",
+      "sourceText": "fredag",
+      "fileName": "a1_u2_vocab_024_fredag_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_024_fredag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_lordag",
+      "sourceText": "lördag",
+      "fileName": "a1_u2_vocab_025_lordag_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_025_lordag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_sondag",
+      "sourceText": "söndag",
+      "fileName": "a1_u2_vocab_026_sondag_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_026_sondag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_januari",
+      "sourceText": "januari",
+      "fileName": "a1_u2_vocab_027_januari_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_027_januari_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_februari",
+      "sourceText": "februari",
+      "fileName": "a1_u2_vocab_028_februari_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_028_februari_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_mars",
+      "sourceText": "mars",
+      "fileName": "a1_u2_vocab_028_mars_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_028_mars_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_april",
+      "sourceText": "april",
+      "fileName": "a1_u2_vocab_030_april_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_030_april_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_maj",
+      "sourceText": "maj",
+      "fileName": "a1_u2_vocab_031_maj_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_031_maj_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_juni",
+      "sourceText": "juni",
+      "fileName": "a1_u2_vocab_029_juni_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_029_juni_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_juli",
+      "sourceText": "juli",
+      "fileName": "a1_u2_vocab_033_juli_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_033_juli_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_augusti",
+      "sourceText": "augusti",
+      "fileName": "a1_u2_vocab_034_augusti_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_034_augusti_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_september",
+      "sourceText": "september",
+      "fileName": "a1_u2_vocab_030_september_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_030_september_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_oktober",
+      "sourceText": "oktober",
+      "fileName": "a1_u2_vocab_036_oktober_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_036_oktober_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_november",
+      "sourceText": "november",
+      "fileName": "a1_u2_vocab_031_november_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_031_november_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_december",
+      "sourceText": "december",
+      "fileName": "a1_u2_vocab_032_december_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_032_december_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_dialog_001_line_01",
+      "sourceText": "Ursäkta! Vad är klockan?",
+      "fileName": "a1_u2_dialog_001_line_01_ursakta_vad_ar_klockan_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/dialogue/a1_u2_dialog_001_line_01_ursakta_vad_ar_klockan_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_dialog_001_line_02",
+      "sourceText": "Klockan är kvart i nio.",
+      "fileName": "a1_u2_dialog_001_line_02_klockan_ar_kvart_i_nio_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/dialogue/a1_u2_dialog_001_line_02_klockan_ar_kvart_i_nio_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_dialog_001_line_03",
+      "sourceText": "Tack! Nästa buss går klockan nio, eller?",
+      "fileName": "a1_u2_dialog_001_line_03_tack_nasta_buss_gar_klockan_nio_eller_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/dialogue/a1_u2_dialog_001_line_03_tack_nasta_buss_gar_klockan_nio_eller_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_dialog_001_line_04",
+      "sourceText": "Ja, klockan nio och sedan halv tio.",
+      "fileName": "a1_u2_dialog_001_line_04_ja_klockan_nio_och_sedan_halv_tio_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/dialogue/a1_u2_dialog_001_line_04_ja_klockan_nio_och_sedan_halv_tio_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_dialog_001_line_05",
+      "sourceText": "Perfekt, tack så mycket!",
+      "fileName": "a1_u2_dialog_001_line_05_perfekt_tack_sa_mycket_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/dialogue/a1_u2_dialog_001_line_05_perfekt_tack_sa_mycket_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_dialog_002_line_01",
+      "sourceText": "Hej! Välkommen till Vårdcentralen. Vad kan jag hjälpa dig med?",
+      "fileName": "a1_u2_dialog_002_line_01_hej_valkommen_till_vardcentralen_vad_kan_jag_hjalpa_dig_med_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/dialogue/a1_u2_dialog_002_line_01_hej_valkommen_till_vardcentralen_vad_kan_jag_hjalpa_dig_med_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_dialog_002_line_02",
+      "sourceText": "Hej! Jag vill boka en tid, tack.",
+      "fileName": "a1_u2_dialog_002_line_02_hej_jag_vill_boka_en_tid_tack_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/dialogue/a1_u2_dialog_002_line_02_hej_jag_vill_boka_en_tid_tack_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_dialog_002_line_03",
+      "sourceText": "Vilken dag passar dig?",
+      "fileName": "a1_u2_dialog_002_line_03_vilken_dag_passar_dig_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/dialogue/a1_u2_dialog_002_line_03_vilken_dag_passar_dig_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_dialog_002_line_04",
+      "sourceText": "Är tisdag bra?",
+      "fileName": "a1_u2_dialog_002_line_04_ar_tisdag_bra_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/dialogue/a1_u2_dialog_002_line_04_ar_tisdag_bra_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_dialog_002_line_05",
+      "sourceText": "Ja! Vi har en tid tisdag den femtonde mars, klockan tio.",
+      "fileName": "a1_u2_dialog_002_line_05_ja_vi_har_en_tid_tisdag_den_femtonde_mars_klockan_tio_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/dialogue/a1_u2_dialog_002_line_05_ja_vi_har_en_tid_tisdag_den_femtonde_mars_klockan_tio_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_dialog_002_line_06",
+      "sourceText": "Perfekt! Tack så mycket.",
+      "fileName": "a1_u2_dialog_002_line_06_perfekt_tack_sa_mycket_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/dialogue/a1_u2_dialog_002_line_06_perfekt_tack_sa_mycket_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_001",
+      "sourceText": "elva",
+      "fileName": "a1_u2_qp_001_elva_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_001_elva_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_002",
+      "sourceText": "tolv",
+      "fileName": "a1_u2_qp_002_tolv_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_002_tolv_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_003",
+      "sourceText": "tretton",
+      "fileName": "a1_u2_qp_003_tretton_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_003_tretton_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_004",
+      "sourceText": "fjorton",
+      "fileName": "a1_u2_qp_004_fjorton_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_004_fjorton_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_005",
+      "sourceText": "femton",
+      "fileName": "a1_u2_qp_005_femton_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_005_femton_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_006",
+      "sourceText": "tjugo",
+      "fileName": "a1_u2_qp_006_tjugo_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_006_tjugo_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_007",
+      "sourceText": "trettio",
+      "fileName": "a1_u2_qp_007_trettio_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_007_trettio_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_008",
+      "sourceText": "femtio",
+      "fileName": "a1_u2_qp_008_femtio_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_008_femtio_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_009",
+      "sourceText": "hundra",
+      "fileName": "a1_u2_qp_009_hundra_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_009_hundra_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_010",
+      "sourceText": "tjugofem",
+      "fileName": "a1_u2_qp_010_tjugofem_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_010_tjugofem_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_011",
+      "sourceText": "klockan",
+      "fileName": "a1_u2_qp_011_klockan_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_011_klockan_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_012",
+      "sourceText": "timme",
+      "fileName": "a1_u2_qp_012_timme_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_012_timme_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_013",
+      "sourceText": "minut",
+      "fileName": "a1_u2_qp_013_minut_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_013_minut_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_014",
+      "sourceText": "kvart",
+      "fileName": "a1_u2_qp_014_kvart_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_014_kvart_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_015",
+      "sourceText": "halv",
+      "fileName": "a1_u2_qp_015_halv_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_015_halv_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_016",
+      "sourceText": "morgon",
+      "fileName": "a1_u2_qp_016_morgon_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_016_morgon_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_017",
+      "sourceText": "förmiddag",
+      "fileName": "a1_u2_qp_017_formiddag_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_017_formiddag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_018",
+      "sourceText": "eftermiddag",
+      "fileName": "a1_u2_qp_018_eftermiddag_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_018_eftermiddag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_019",
+      "sourceText": "kväll",
+      "fileName": "a1_u2_qp_019_kvall_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_019_kvall_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_020",
+      "sourceText": "måndag",
+      "fileName": "a1_u2_qp_020_mandag_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_020_mandag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_021",
+      "sourceText": "tisdag",
+      "fileName": "a1_u2_qp_021_tisdag_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_021_tisdag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_022",
+      "sourceText": "onsdag",
+      "fileName": "a1_u2_qp_022_onsdag_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_022_onsdag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_023",
+      "sourceText": "torsdag",
+      "fileName": "a1_u2_qp_023_torsdag_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_023_torsdag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_024",
+      "sourceText": "fredag",
+      "fileName": "a1_u2_qp_024_fredag_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_024_fredag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_025",
+      "sourceText": "lördag",
+      "fileName": "a1_u2_qp_025_lordag_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_025_lordag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_026",
+      "sourceText": "söndag",
+      "fileName": "a1_u2_qp_026_sondag_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_026_sondag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_027",
+      "sourceText": "januari",
+      "fileName": "a1_u2_qp_027_januari_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_027_januari_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_028",
+      "sourceText": "februari",
+      "fileName": "a1_u2_qp_028_februari_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_028_februari_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_029",
+      "sourceText": "mars",
+      "fileName": "a1_u2_qp_029_mars_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_029_mars_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_030",
+      "sourceText": "april",
+      "fileName": "a1_u2_qp_030_april_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_030_april_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_031",
+      "sourceText": "maj",
+      "fileName": "a1_u2_qp_031_maj_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_031_maj_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_032",
+      "sourceText": "juni",
+      "fileName": "a1_u2_qp_032_juni_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_032_juni_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_033",
+      "sourceText": "juli",
+      "fileName": "a1_u2_qp_033_juli_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_033_juli_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_034",
+      "sourceText": "augusti",
+      "fileName": "a1_u2_qp_034_augusti_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_034_augusti_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_035",
+      "sourceText": "september",
+      "fileName": "a1_u2_qp_035_september_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_035_september_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_036",
+      "sourceText": "oktober",
+      "fileName": "a1_u2_qp_036_oktober_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_036_oktober_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_037",
+      "sourceText": "november",
+      "fileName": "a1_u2_qp_037_november_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_037_november_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_038",
+      "sourceText": "december",
+      "fileName": "a1_u2_qp_038_december_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_038_december_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_039",
+      "sourceText": "tjugofem elever",
+      "fileName": "a1_u2_qp_039_tjugofem_elever_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_039_tjugofem_elever_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_040",
+      "sourceText": "klockan tolv",
+      "fileName": "a1_u2_qp_040_klockan_tolv_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_040_klockan_tolv_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_041",
+      "sourceText": "femtio kronor",
+      "fileName": "a1_u2_qp_041_femtio_kronor_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_041_femtio_kronor_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_042",
+      "sourceText": "hundra kronor",
+      "fileName": "a1_u2_qp_042_hundra_kronor_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_042_hundra_kronor_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_043",
+      "sourceText": "Vad är klockan?",
+      "fileName": "a1_u2_qp_043_vad_ar_klockan_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_043_vad_ar_klockan_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_044",
+      "sourceText": "Klockan är tre.",
+      "fileName": "a1_u2_qp_044_klockan_ar_tre_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_044_klockan_ar_tre_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_045",
+      "sourceText": "Kvart över tre.",
+      "fileName": "a1_u2_qp_045_kvart_over_tre_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_045_kvart_over_tre_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_046",
+      "sourceText": "Halv fyra.",
+      "fileName": "a1_u2_qp_046_halv_fyra_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_046_halv_fyra_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_047",
+      "sourceText": "Kvart i fyra.",
+      "fileName": "a1_u2_qp_047_kvart_i_fyra_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_047_kvart_i_fyra_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_048",
+      "sourceText": "klockan tio",
+      "fileName": "a1_u2_qp_048_klockan_tio_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_048_klockan_tio_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_049",
+      "sourceText": "Vi ses på tisdag.",
+      "fileName": "a1_u2_qp_049_vi_ses_pa_tisdag_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_049_vi_ses_pa_tisdag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_050",
+      "sourceText": "Mötet är på måndag.",
+      "fileName": "a1_u2_qp_050_motet_ar_pa_mandag_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_050_motet_ar_pa_mandag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_051",
+      "sourceText": "i januari",
+      "fileName": "a1_u2_qp_051_i_januari_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_051_i_januari_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_052",
+      "sourceText": "i mars",
+      "fileName": "a1_u2_qp_052_i_mars_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_052_i_mars_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_053",
+      "sourceText": "i december",
+      "fileName": "a1_u2_qp_053_i_december_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_053_i_december_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_054",
+      "sourceText": "Ursäkta! Vad är klockan?",
+      "fileName": "a1_u2_qp_054_ursakta_vad_ar_klockan_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_054_ursakta_vad_ar_klockan_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_055",
+      "sourceText": "Klockan är kvart i nio.",
+      "fileName": "a1_u2_qp_055_klockan_ar_kvart_i_nio_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_055_klockan_ar_kvart_i_nio_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_056",
+      "sourceText": "Tack! Nästa buss går klockan nio, eller?",
+      "fileName": "a1_u2_qp_056_tack_nasta_buss_gar_klockan_nio_eller_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_056_tack_nasta_buss_gar_klockan_nio_eller_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_057",
+      "sourceText": "Ja, klockan nio och sedan halv tio.",
+      "fileName": "a1_u2_qp_057_ja_klockan_nio_och_sedan_halv_tio_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_057_ja_klockan_nio_och_sedan_halv_tio_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_058",
+      "sourceText": "Hej! Jag vill boka en tid, tack.",
+      "fileName": "a1_u2_qp_058_hej_jag_vill_boka_en_tid_tack_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_058_hej_jag_vill_boka_en_tid_tack_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_059",
+      "sourceText": "Vilken dag passar dig?",
+      "fileName": "a1_u2_qp_059_vilken_dag_passar_dig_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_059_vilken_dag_passar_dig_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_060",
+      "sourceText": "Är tisdag bra?",
+      "fileName": "a1_u2_qp_060_ar_tisdag_bra_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_060_ar_tisdag_bra_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_qp_061",
+      "sourceText": "Ja! Vi har en tid tisdag den femtonde mars, klockan tio.",
+      "fileName": "a1_u2_qp_061_ja_vi_har_en_tid_tisdag_den_femtonde_mars_klockan_tio_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_qp_061_ja_vi_har_en_tid_tisdag_den_femtonde_mars_klockan_tio_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_adv_001",
+      "sourceText": "klockan tre",
+      "fileName": "a1_u2_adv_001_klockan_tre_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_adv_001_klockan_tre_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_adv_002",
+      "sourceText": "kvart över tre",
+      "fileName": "a1_u2_adv_002_kvart_over_tre_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_adv_002_kvart_over_tre_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_adv_003",
+      "sourceText": "halv fyra",
+      "fileName": "a1_u2_adv_003_halv_fyra_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_adv_003_halv_fyra_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_adv_004",
+      "sourceText": "kvart i fyra",
+      "fileName": "a1_u2_adv_004_kvart_i_fyra_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_adv_004_kvart_i_fyra_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_adv_005",
+      "sourceText": "klockan tio",
+      "fileName": "a1_u2_adv_005_klockan_tio_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_adv_005_klockan_tio_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_adv_006",
+      "sourceText": "en",
+      "fileName": "a1_u2_adv_006_en_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_adv_006_en_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_adv_007",
+      "sourceText": "timme",
+      "fileName": "a1_u2_adv_007_timme_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_adv_007_timme_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_adv_008",
+      "sourceText": "timmen",
+      "fileName": "a1_u2_adv_008_timmen_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_adv_008_timmen_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_adv_009",
+      "sourceText": "timmar",
+      "fileName": "a1_u2_adv_009_timmar_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_adv_009_timmar_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_adv_010",
+      "sourceText": "timmarna",
+      "fileName": "a1_u2_adv_010_timmarna_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_adv_010_timmarna_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_adv_011",
+      "sourceText": "minut",
+      "fileName": "a1_u2_adv_011_minut_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_adv_011_minut_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_adv_012",
+      "sourceText": "minuten",
+      "fileName": "a1_u2_adv_012_minuten_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_adv_012_minuten_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_adv_013",
+      "sourceText": "minuter",
+      "fileName": "a1_u2_adv_013_minuter_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_adv_013_minuter_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_adv_014",
+      "sourceText": "minuterna",
+      "fileName": "a1_u2_adv_014_minuterna_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_adv_014_minuterna_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_adv_015",
+      "sourceText": "dag",
+      "fileName": "a1_u2_adv_015_dag_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_adv_015_dag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_adv_016",
+      "sourceText": "dagen",
+      "fileName": "a1_u2_adv_016_dagen_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_adv_016_dagen_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_adv_017",
+      "sourceText": "dagar",
+      "fileName": "a1_u2_adv_017_dagar_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_adv_017_dagar_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_adv_018",
+      "sourceText": "dagarna",
+      "fileName": "a1_u2_adv_018_dagarna_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_adv_018_dagarna_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_adv_019",
+      "sourceText": "månad",
+      "fileName": "a1_u2_adv_019_manad_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_adv_019_manad_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_adv_020",
+      "sourceText": "månaden",
+      "fileName": "a1_u2_adv_020_manaden_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_adv_020_manaden_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_adv_021",
+      "sourceText": "månader",
+      "fileName": "a1_u2_adv_021_manader_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_adv_021_manader_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_adv_022",
+      "sourceText": "månaderna",
+      "fileName": "a1_u2_adv_022_manaderna_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/question/a1_u2_adv_022_manaderna_v1.mp3",
+      "status": "ready"
+    }
+  ]
+}

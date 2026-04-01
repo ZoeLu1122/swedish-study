@@ -1,0 +1,705 @@
+{
+  "unit": "a2_unit2",
+  "items": [
+    {
+      "audioType": "vocab",
+      "sourceText": "elva",
+      "audioRef": "sv_a2_u2_vocab_elva"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "tolv",
+      "audioRef": "sv_a2_u2_vocab_tolv"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "tretton",
+      "audioRef": "sv_a2_u2_vocab_tretton"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "fjorton",
+      "audioRef": "sv_a2_u2_vocab_fjorton"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "femton",
+      "audioRef": "sv_a2_u2_vocab_femton"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "tjugo",
+      "audioRef": "sv_a2_u2_vocab_tjugo"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "trettio",
+      "audioRef": "sv_a2_u2_vocab_trettio"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "femtio",
+      "audioRef": "sv_a2_u2_vocab_femtio"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "hundra",
+      "audioRef": "sv_a2_u2_vocab_hundra"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "tjugofem",
+      "audioRef": "sv_a2_u2_vocab_tjugofem"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "klockan",
+      "audioRef": "sv_a2_u2_vocab_klockan"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "timme",
+      "audioRef": "sv_a2_u2_vocab_timme"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "minut",
+      "audioRef": "sv_a2_u2_vocab_minut"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "kvart",
+      "audioRef": "sv_a2_u2_vocab_kvart"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "halv",
+      "audioRef": "sv_a2_u2_vocab_halv"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "morgon",
+      "audioRef": "sv_a2_u2_vocab_morgon"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "förmiddag",
+      "audioRef": "sv_a2_u2_vocab_formiddag"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "eftermiddag",
+      "audioRef": "sv_a2_u2_vocab_eftermiddag"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "kväll",
+      "audioRef": "sv_a2_u2_vocab_kvall"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "måndag",
+      "audioRef": "sv_a2_u2_vocab_mandag"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "tisdag",
+      "audioRef": "sv_a2_u2_vocab_tisdag"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "onsdag",
+      "audioRef": "sv_a2_u2_vocab_onsdag"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "torsdag",
+      "audioRef": "sv_a2_u2_vocab_torsdag"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "fredag",
+      "audioRef": "sv_a2_u2_vocab_fredag"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "lördag",
+      "audioRef": "sv_a2_u2_vocab_lordag"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "söndag",
+      "audioRef": "sv_a2_u2_vocab_sondag"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "januari",
+      "audioRef": "sv_a2_u2_vocab_januari"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "februari",
+      "audioRef": "sv_a2_u2_vocab_februari"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "mars",
+      "audioRef": "sv_a2_u2_vocab_mars"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "april",
+      "audioRef": "sv_a2_u2_vocab_april"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "maj",
+      "audioRef": "sv_a2_u2_vocab_maj"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "juni",
+      "audioRef": "sv_a2_u2_vocab_juni"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "juli",
+      "audioRef": "sv_a2_u2_vocab_juli"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "augusti",
+      "audioRef": "sv_a2_u2_vocab_augusti"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "september",
+      "audioRef": "sv_a2_u2_vocab_september"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "oktober",
+      "audioRef": "sv_a2_u2_vocab_oktober"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "november",
+      "audioRef": "sv_a2_u2_vocab_november"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "december",
+      "audioRef": "sv_a2_u2_vocab_december"
+    },
+    {
+      "contentId": "a2_dialog_line_001_01",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Ursäkta! Vad är klockan?",
+      "audioRef": "sv_a2_u2_dialog_001_line_01"
+    },
+    {
+      "contentId": "a2_dialog_line_001_02",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Klockan är kvart i nio.",
+      "audioRef": "sv_a2_u2_dialog_001_line_02"
+    },
+    {
+      "contentId": "a2_dialog_line_001_03",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Tack! Nästa buss går klockan nio, eller?",
+      "audioRef": "sv_a2_u2_dialog_001_line_03"
+    },
+    {
+      "contentId": "a2_dialog_line_001_04",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Ja, klockan nio och sedan halv tio.",
+      "audioRef": "sv_a2_u2_dialog_001_line_04"
+    },
+    {
+      "contentId": "a2_dialog_line_001_05",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Perfekt, tack så mycket!",
+      "audioRef": "sv_a2_u2_dialog_001_line_05"
+    },
+    {
+      "contentId": "a2_dialog_line_002_01",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Hej! Välkommen till Vårdcentralen. Vad kan jag hjälpa dig med?",
+      "audioRef": "sv_a2_u2_dialog_002_line_01"
+    },
+    {
+      "contentId": "a2_dialog_line_002_02",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Hej! Jag vill boka en tid, tack.",
+      "audioRef": "sv_a2_u2_dialog_002_line_02"
+    },
+    {
+      "contentId": "a2_dialog_line_002_03",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Vilken dag passar dig?",
+      "audioRef": "sv_a2_u2_dialog_002_line_03"
+    },
+    {
+      "contentId": "a2_dialog_line_002_04",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Är tisdag bra?",
+      "audioRef": "sv_a2_u2_dialog_002_line_04"
+    },
+    {
+      "contentId": "a2_dialog_line_002_05",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Ja! Vi har en tid tisdag den femtonde mars, klockan tio.",
+      "audioRef": "sv_a2_u2_dialog_002_line_05"
+    },
+    {
+      "contentId": "a2_dialog_line_002_06",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Perfekt! Tack så mycket.",
+      "audioRef": "sv_a2_u2_dialog_002_line_06"
+    },
+    {
+      "contentId": "a2_vocab_elva",
+      "audioType": "question_prompt",
+      "sourceText": "elva",
+      "audioRef": "sv_a2_u2_qp_001"
+    },
+    {
+      "contentId": "a2_vocab_tolv",
+      "audioType": "question_prompt",
+      "sourceText": "tolv",
+      "audioRef": "sv_a2_u2_qp_002"
+    },
+    {
+      "contentId": "a2_vocab_tretton",
+      "audioType": "question_prompt",
+      "sourceText": "tretton",
+      "audioRef": "sv_a2_u2_qp_003"
+    },
+    {
+      "contentId": "a2_vocab_fjorton",
+      "audioType": "question_prompt",
+      "sourceText": "fjorton",
+      "audioRef": "sv_a2_u2_qp_004"
+    },
+    {
+      "contentId": "a2_vocab_femton",
+      "audioType": "question_prompt",
+      "sourceText": "femton",
+      "audioRef": "sv_a2_u2_qp_005"
+    },
+    {
+      "contentId": "a2_vocab_tjugo",
+      "audioType": "question_prompt",
+      "sourceText": "tjugo",
+      "audioRef": "sv_a2_u2_qp_006"
+    },
+    {
+      "contentId": "a2_vocab_trettio",
+      "audioType": "question_prompt",
+      "sourceText": "trettio",
+      "audioRef": "sv_a2_u2_qp_007"
+    },
+    {
+      "contentId": "a2_vocab_femtio",
+      "audioType": "question_prompt",
+      "sourceText": "femtio",
+      "audioRef": "sv_a2_u2_qp_008"
+    },
+    {
+      "contentId": "a2_vocab_hundra",
+      "audioType": "question_prompt",
+      "sourceText": "hundra",
+      "audioRef": "sv_a2_u2_qp_009"
+    },
+    {
+      "contentId": "a2_vocab_tjugofem",
+      "audioType": "question_prompt",
+      "sourceText": "tjugofem",
+      "audioRef": "sv_a2_u2_qp_010"
+    },
+    {
+      "contentId": "a2_vocab_klockan",
+      "audioType": "question_prompt",
+      "sourceText": "klockan",
+      "audioRef": "sv_a2_u2_qp_011"
+    },
+    {
+      "contentId": "a2_vocab_timme",
+      "audioType": "question_prompt",
+      "sourceText": "timme",
+      "audioRef": "sv_a2_u2_qp_012"
+    },
+    {
+      "contentId": "a2_vocab_minut",
+      "audioType": "question_prompt",
+      "sourceText": "minut",
+      "audioRef": "sv_a2_u2_qp_013"
+    },
+    {
+      "contentId": "a2_vocab_kvart",
+      "audioType": "question_prompt",
+      "sourceText": "kvart",
+      "audioRef": "sv_a2_u2_qp_014"
+    },
+    {
+      "contentId": "a2_vocab_halv",
+      "audioType": "question_prompt",
+      "sourceText": "halv",
+      "audioRef": "sv_a2_u2_qp_015"
+    },
+    {
+      "contentId": "a2_vocab_morgon",
+      "audioType": "question_prompt",
+      "sourceText": "morgon",
+      "audioRef": "sv_a2_u2_qp_016"
+    },
+    {
+      "contentId": "a2_vocab_formiddag",
+      "audioType": "question_prompt",
+      "sourceText": "förmiddag",
+      "audioRef": "sv_a2_u2_qp_017"
+    },
+    {
+      "contentId": "a2_vocab_eftermiddag",
+      "audioType": "question_prompt",
+      "sourceText": "eftermiddag",
+      "audioRef": "sv_a2_u2_qp_018"
+    },
+    {
+      "contentId": "a2_vocab_kvall",
+      "audioType": "question_prompt",
+      "sourceText": "kväll",
+      "audioRef": "sv_a2_u2_qp_019"
+    },
+    {
+      "contentId": "a2_vocab_mandag",
+      "audioType": "question_prompt",
+      "sourceText": "måndag",
+      "audioRef": "sv_a2_u2_qp_020"
+    },
+    {
+      "contentId": "a2_vocab_tisdag",
+      "audioType": "question_prompt",
+      "sourceText": "tisdag",
+      "audioRef": "sv_a2_u2_qp_021"
+    },
+    {
+      "contentId": "a2_vocab_onsdag",
+      "audioType": "question_prompt",
+      "sourceText": "onsdag",
+      "audioRef": "sv_a2_u2_qp_022"
+    },
+    {
+      "contentId": "a2_vocab_torsdag",
+      "audioType": "question_prompt",
+      "sourceText": "torsdag",
+      "audioRef": "sv_a2_u2_qp_023"
+    },
+    {
+      "contentId": "a2_vocab_fredag",
+      "audioType": "question_prompt",
+      "sourceText": "fredag",
+      "audioRef": "sv_a2_u2_qp_024"
+    },
+    {
+      "contentId": "a2_vocab_lordag",
+      "audioType": "question_prompt",
+      "sourceText": "lördag",
+      "audioRef": "sv_a2_u2_qp_025"
+    },
+    {
+      "contentId": "a2_vocab_sondag",
+      "audioType": "question_prompt",
+      "sourceText": "söndag",
+      "audioRef": "sv_a2_u2_qp_026"
+    },
+    {
+      "contentId": "a2_vocab_januari",
+      "audioType": "question_prompt",
+      "sourceText": "januari",
+      "audioRef": "sv_a2_u2_qp_027"
+    },
+    {
+      "contentId": "a2_vocab_februari",
+      "audioType": "question_prompt",
+      "sourceText": "februari",
+      "audioRef": "sv_a2_u2_qp_028"
+    },
+    {
+      "contentId": "a2_vocab_mars",
+      "audioType": "question_prompt",
+      "sourceText": "mars",
+      "audioRef": "sv_a2_u2_qp_029"
+    },
+    {
+      "contentId": "a2_vocab_april",
+      "audioType": "question_prompt",
+      "sourceText": "april",
+      "audioRef": "sv_a2_u2_qp_030"
+    },
+    {
+      "contentId": "a2_vocab_maj",
+      "audioType": "question_prompt",
+      "sourceText": "maj",
+      "audioRef": "sv_a2_u2_qp_031"
+    },
+    {
+      "contentId": "a2_vocab_juni",
+      "audioType": "question_prompt",
+      "sourceText": "juni",
+      "audioRef": "sv_a2_u2_qp_032"
+    },
+    {
+      "contentId": "a2_vocab_juli",
+      "audioType": "question_prompt",
+      "sourceText": "juli",
+      "audioRef": "sv_a2_u2_qp_033"
+    },
+    {
+      "contentId": "a2_vocab_augusti",
+      "audioType": "question_prompt",
+      "sourceText": "augusti",
+      "audioRef": "sv_a2_u2_qp_034"
+    },
+    {
+      "contentId": "a2_vocab_september",
+      "audioType": "question_prompt",
+      "sourceText": "september",
+      "audioRef": "sv_a2_u2_qp_035"
+    },
+    {
+      "contentId": "a2_vocab_oktober",
+      "audioType": "question_prompt",
+      "sourceText": "oktober",
+      "audioRef": "sv_a2_u2_qp_036"
+    },
+    {
+      "contentId": "a2_vocab_november",
+      "audioType": "question_prompt",
+      "sourceText": "november",
+      "audioRef": "sv_a2_u2_qp_037"
+    },
+    {
+      "contentId": "a2_vocab_december",
+      "audioType": "question_prompt",
+      "sourceText": "december",
+      "audioRef": "sv_a2_u2_qp_038"
+    },
+    {
+      "contentId": "a2_phrase_tjugofem_elever",
+      "audioType": "question_prompt",
+      "sourceText": "tjugofem elever",
+      "audioRef": "sv_a2_u2_qp_039"
+    },
+    {
+      "contentId": "a2_phrase_klockan_tolv",
+      "audioType": "question_prompt",
+      "sourceText": "klockan tolv",
+      "audioRef": "sv_a2_u2_qp_040"
+    },
+    {
+      "contentId": "a2_phrase_femtio_kronor",
+      "audioType": "question_prompt",
+      "sourceText": "femtio kronor",
+      "audioRef": "sv_a2_u2_qp_041"
+    },
+    {
+      "contentId": "a2_phrase_hundra_kronor",
+      "audioType": "question_prompt",
+      "sourceText": "hundra kronor",
+      "audioRef": "sv_a2_u2_qp_042"
+    },
+    {
+      "contentId": "a2_phrase_vad_ar_klockan",
+      "audioType": "question_prompt",
+      "sourceText": "Vad är klockan?",
+      "audioRef": "sv_a2_u2_qp_043"
+    },
+    {
+      "contentId": "a2_phrase_klockan_ar_tre",
+      "audioType": "question_prompt",
+      "sourceText": "Klockan är tre.",
+      "audioRef": "sv_a2_u2_qp_044"
+    },
+    {
+      "contentId": "a2_phrase_kvart_over_tre",
+      "audioType": "question_prompt",
+      "sourceText": "Kvart över tre.",
+      "audioRef": "sv_a2_u2_qp_045"
+    },
+    {
+      "contentId": "a2_phrase_halv_fyra",
+      "audioType": "question_prompt",
+      "sourceText": "Halv fyra.",
+      "audioRef": "sv_a2_u2_qp_046"
+    },
+    {
+      "contentId": "a2_phrase_kvart_i_fyra",
+      "audioType": "question_prompt",
+      "sourceText": "Kvart i fyra.",
+      "audioRef": "sv_a2_u2_qp_047"
+    },
+    {
+      "contentId": "a2_phrase_klockan_tio",
+      "audioType": "question_prompt",
+      "sourceText": "klockan tio",
+      "audioRef": "sv_a2_u2_qp_048"
+    },
+    {
+      "contentId": "a2_phrase_vi_ses_pa_tisdag",
+      "audioType": "question_prompt",
+      "sourceText": "Vi ses på tisdag.",
+      "audioRef": "sv_a2_u2_qp_049"
+    },
+    {
+      "contentId": "a2_phrase_motet_ar_pa_mandag",
+      "audioType": "question_prompt",
+      "sourceText": "Mötet är på måndag.",
+      "audioRef": "sv_a2_u2_qp_050"
+    },
+    {
+      "contentId": "a2_phrase_i_januari",
+      "audioType": "question_prompt",
+      "sourceText": "i januari",
+      "audioRef": "sv_a2_u2_qp_051"
+    },
+    {
+      "contentId": "a2_phrase_i_mars",
+      "audioType": "question_prompt",
+      "sourceText": "i mars",
+      "audioRef": "sv_a2_u2_qp_052"
+    },
+    {
+      "contentId": "a2_phrase_i_december",
+      "audioType": "question_prompt",
+      "sourceText": "i december",
+      "audioRef": "sv_a2_u2_qp_053"
+    },
+    {
+      "contentId": "a2_dialog_vad_ar_klockan",
+      "audioType": "question_prompt",
+      "sourceText": "Ursäkta! Vad är klockan?",
+      "audioRef": "sv_a2_u2_qp_054"
+    },
+    {
+      "contentId": "a2_dialog_klockan_ar_kvart_i_nio",
+      "audioType": "question_prompt",
+      "sourceText": "Klockan är kvart i nio.",
+      "audioRef": "sv_a2_u2_qp_055"
+    },
+    {
+      "contentId": "a2_dialog_nasta_buss_gar_klockan_nio",
+      "audioType": "question_prompt",
+      "sourceText": "Tack! Nästa buss går klockan nio, eller?",
+      "audioRef": "sv_a2_u2_qp_056"
+    },
+    {
+      "contentId": "a2_dialog_halv_tio",
+      "audioType": "question_prompt",
+      "sourceText": "Ja, klockan nio och sedan halv tio.",
+      "audioRef": "sv_a2_u2_qp_057"
+    },
+    {
+      "contentId": "a2_dialog_jag_vill_boka_en_tid",
+      "audioType": "question_prompt",
+      "sourceText": "Hej! Jag vill boka en tid, tack.",
+      "audioRef": "sv_a2_u2_qp_058"
+    },
+    {
+      "contentId": "a2_dialog_vilken_dag_passar_dig",
+      "audioType": "question_prompt",
+      "sourceText": "Vilken dag passar dig?",
+      "audioRef": "sv_a2_u2_qp_059"
+    },
+    {
+      "contentId": "a2_dialog_ar_tisdag_bra",
+      "audioType": "question_prompt",
+      "sourceText": "Är tisdag bra?",
+      "audioRef": "sv_a2_u2_qp_060"
+    },
+    {
+      "contentId": "a2_dialog_tisdag_den_femtonde_mars_klockan_tio",
+      "audioType": "question_prompt",
+      "sourceText": "Ja! Vi har en tid tisdag den femtonde mars, klockan tio.",
+      "audioRef": "sv_a2_u2_qp_061"
+    },
+    {
+      "contentId": "a2_time_klockan_tre",
+      "audioType": "question_prompt",
+      "sourceText": "klockan tre",
+      "audioRef": "sv_a2_u2_adv_001"
+    },
+    {
+      "contentId": "a2_time_kvart_over_tre",
+      "audioType": "question_prompt",
+      "sourceText": "kvart över tre",
+      "audioRef": "sv_a2_u2_adv_002"
+    },
+    {
+      "contentId": "a2_time_halv_fyra",
+      "audioType": "question_prompt",
+      "sourceText": "halv fyra",
+      "audioRef": "sv_a2_u2_adv_003"
+    },
+    {
+      "contentId": "a2_time_kvart_i_fyra",
+      "audioType": "question_prompt",
+      "sourceText": "kvart i fyra",
+      "audioRef": "sv_a2_u2_adv_004"
+    },
+    {
+      "contentId": "a2_time_klockan_tio",
+      "audioType": "question_prompt",
+      "sourceText": "klockan tio",
+      "audioRef": "sv_a2_u2_adv_005"
+    },
+    {
+      "contentId": "a2_noun_timme_group",
+      "audioType": "morphology",
+      "sourceText": "timme",
+      "audioRefs": [
+        "sv_a2_u2_adv_006",
+        "sv_a2_u2_adv_007",
+        "sv_a2_u2_adv_008",
+        "sv_a2_u2_adv_009",
+        "sv_a2_u2_adv_010"
+      ]
+    },
+    {
+      "contentId": "a2_noun_minut_group",
+      "audioType": "morphology",
+      "sourceText": "minut",
+      "audioRefs": [
+        "sv_a2_u2_adv_006",
+        "sv_a2_u2_adv_011",
+        "sv_a2_u2_adv_012",
+        "sv_a2_u2_adv_013",
+        "sv_a2_u2_adv_014"
+      ]
+    },
+    {
+      "contentId": "a2_noun_dag_group",
+      "audioType": "morphology",
+      "sourceText": "dag",
+      "audioRefs": [
+        "sv_a2_u2_adv_006",
+        "sv_a2_u2_adv_015",
+        "sv_a2_u2_adv_016",
+        "sv_a2_u2_adv_017",
+        "sv_a2_u2_adv_018"
+      ]
+    },
+    {
+      "contentId": "a2_noun_manad_group",
+      "audioType": "morphology",
+      "sourceText": "månad",
+      "audioRefs": [
+        "sv_a2_u2_adv_006",
+        "sv_a2_u2_adv_019",
+        "sv_a2_u2_adv_020",
+        "sv_a2_u2_adv_021",
+        "sv_a2_u2_adv_022"
+      ]
+    }
+  ]
+}
