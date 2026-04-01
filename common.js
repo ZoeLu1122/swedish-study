@@ -229,7 +229,6 @@
       play(src, onEnd, onFallback) {
         const el = this._getEl();
         this.stop();
-        el.playbackRate = window.SfiCore.state.ttsRate;
         el.src = src;
         el.onended = function () { if (onEnd) onEnd(); };
         el.onerror = function () {
@@ -237,6 +236,7 @@
           if (onFallback) onFallback();
         };
         el.load();
+        el.playbackRate = window.SfiCore.state.ttsRate; // set AFTER load() to prevent reset
         el.play().catch(function (err) {
           if (err.name === 'NotAllowedError') return; // autoplay blocked, user hasn't interacted yet
           console.warn('[SfiCore] audio play() rejected:', err);
