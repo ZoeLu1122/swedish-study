@@ -563,8 +563,7 @@
       if (!item && (q.lemma || q.concept)) {
         item = SfiCore.manifest.lookupBySourceText(q.lemma || q.concept, 'vocab');
       }
-      console.log('[SfiCore] speakQ:', q.id, '→', item ? (item.audioRefs ? 'audioRefs['+item.audioRefs.length+']' : item.audioRef || 'no ref') : 'NOT FOUND');
-      const fallbackText = (item && item.sourceText) || q.lemma || q.audio || getQuestionAnswers(q).join(' ');
+const fallbackText = (item && item.sourceText) || q.lemma || q.audio || getQuestionAnswers(q).join(' ');
 
       if (!item) { fallback(fallbackText); return; }
 
