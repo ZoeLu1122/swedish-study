@@ -1,0 +1,576 @@
+[
+  {
+    "audioType": "vocab",
+    "sourceText": "en mamma",
+    "audioRef": "sv_a3_u3_vocab_mamma"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "en pappa",
+    "audioRef": "sv_a3_u3_vocab_pappa"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "en syster",
+    "audioRef": "sv_a3_u3_vocab_syster"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "en bror",
+    "audioRef": "sv_a3_u3_vocab_bror"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "ett barn",
+    "audioRef": "sv_a3_u3_vocab_barn"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "en familj",
+    "audioRef": "sv_a3_u3_vocab_familj"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "en fru",
+    "audioRef": "sv_a3_u3_vocab_fru"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "en man",
+    "audioRef": "sv_a3_u3_vocab_man"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "en dotter",
+    "audioRef": "sv_a3_u3_vocab_dotter"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "en son",
+    "audioRef": "sv_a3_u3_vocab_son"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "ett hus",
+    "audioRef": "sv_a3_u3_vocab_hus"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "en lägenhet",
+    "audioRef": "sv_a3_u3_vocab_lagenhet"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "ett rum",
+    "audioRef": "sv_a3_u3_vocab_rum"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "ett kök",
+    "audioRef": "sv_a3_u3_vocab_kok"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "ett badrum",
+    "audioRef": "sv_a3_u3_vocab_badrum"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "ett sovrum",
+    "audioRef": "sv_a3_u3_vocab_sovrum"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "ett vardagsrum",
+    "audioRef": "sv_a3_u3_vocab_vardagsrum"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "en trädgård",
+    "audioRef": "sv_a3_u3_vocab_tradgard"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "en adress",
+    "audioRef": "sv_a3_u3_vocab_adress"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "en granne",
+    "audioRef": "sv_a3_u3_vocab_granne"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "stor",
+    "audioRef": "sv_a3_u3_vocab_stor"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "liten",
+    "audioRef": "sv_a3_u3_vocab_liten"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "fin",
+    "audioRef": "sv_a3_u3_vocab_fin"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "gammal",
+    "audioRef": "sv_a3_u3_vocab_gammal"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "ny",
+    "audioRef": "sv_a3_u3_vocab_ny"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "mysig",
+    "audioRef": "sv_a3_u3_vocab_mysig"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "städa",
+    "audioRef": "sv_a3_u3_vocab_stada"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "handla",
+    "audioRef": "sv_a3_u3_vocab_handla"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "laga mat",
+    "audioRef": "sv_a3_u3_vocab_laga_mat"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "promenera",
+    "audioRef": "sv_a3_u3_vocab_promenera"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "vila",
+    "audioRef": "sv_a3_u3_vocab_vila"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "bo",
+    "audioRef": "sv_a3_u3_vocab_bo"
+  },
+  {
+    "contentId": "a3_dialog_line_001_01",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Berätta om din familj!",
+    "audioRef": "sv_a3_u3_dialog_001_01"
+  },
+  {
+    "contentId": "a3_dialog_line_001_02",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Jag har en man och två barn. Min man heter David och han är lärare.",
+    "audioRef": "sv_a3_u3_dialog_001_02"
+  },
+  {
+    "contentId": "a3_dialog_line_001_03",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Hur gamla är barnen?",
+    "audioRef": "sv_a3_u3_dialog_001_03"
+  },
+  {
+    "contentId": "a3_dialog_line_001_04",
+    "audioType": "dialogue_line_group",
+    "sourceText": "De är fem och åtta år gamla.",
+    "audioRef": "sv_a3_u3_dialog_001_04"
+  },
+  {
+    "contentId": "a3_dialog_line_001_05",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Bor ni i en lägenhet eller i ett hus?",
+    "audioRef": "sv_a3_u3_dialog_001_05"
+  },
+  {
+    "contentId": "a3_dialog_line_001_06",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Vi bor i en lägenhet i Malmö. Det finns tre rum och ett kök.",
+    "audioRef": "sv_a3_u3_dialog_001_06"
+  },
+  {
+    "contentId": "a3_dialog_line_002_01",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Hej! Jag är din nya granne. Jag heter Sara.",
+    "audioRef": "sv_a3_u3_dialog_002_01"
+  },
+  {
+    "contentId": "a3_dialog_line_002_02",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Hej Sara! Välkommen! Jag heter Wei.",
+    "audioRef": "sv_a3_u3_dialog_002_02"
+  },
+  {
+    "contentId": "a3_dialog_line_002_03",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Är det en stor lägenhet?",
+    "audioRef": "sv_a3_u3_dialog_002_03"
+  },
+  {
+    "contentId": "a3_dialog_line_002_04",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Ja, det finns tre rum, ett kök och ett badrum. Det är mycket mysigt!",
+    "audioRef": "sv_a3_u3_dialog_002_04"
+  },
+  {
+    "contentId": "a3_dialog_line_002_05",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Bor du ensam?",
+    "audioRef": "sv_a3_u3_dialog_002_05"
+  },
+  {
+    "contentId": "a3_dialog_line_002_06",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Nej, jag bor med min man och vår dotter.",
+    "audioRef": "sv_a3_u3_dialog_002_06"
+  },
+  {
+    "contentId": "a3_vocab_mamma",
+    "audioType": "question_prompt",
+    "sourceText": "en mamma",
+    "audioRef": "sv_a3_u3_qp_001"
+  },
+  {
+    "contentId": "a3_vocab_pappa",
+    "audioType": "question_prompt",
+    "sourceText": "en pappa",
+    "audioRef": "sv_a3_u3_qp_002"
+  },
+  {
+    "contentId": "a3_vocab_bror",
+    "audioType": "question_prompt",
+    "sourceText": "en bror",
+    "audioRef": "sv_a3_u3_qp_003"
+  },
+  {
+    "contentId": "a3_vocab_familj",
+    "audioType": "question_prompt",
+    "sourceText": "en familj",
+    "audioRef": "sv_a3_u3_qp_004"
+  },
+  {
+    "contentId": "a3_vocab_fru",
+    "audioType": "question_prompt",
+    "sourceText": "en fru",
+    "audioRef": "sv_a3_u3_qp_005"
+  },
+  {
+    "contentId": "a3_vocab_son",
+    "audioType": "question_prompt",
+    "sourceText": "en son",
+    "audioRef": "sv_a3_u3_qp_006"
+  },
+  {
+    "contentId": "a3_vocab_sovrum",
+    "audioType": "question_prompt",
+    "sourceText": "ett sovrum",
+    "audioRef": "sv_a3_u3_qp_007"
+  },
+  {
+    "contentId": "a3_vocab_vardagsrum",
+    "audioType": "question_prompt",
+    "sourceText": "ett vardagsrum",
+    "audioRef": "sv_a3_u3_qp_008"
+  },
+  {
+    "contentId": "a3_vocab_tradgard",
+    "audioType": "question_prompt",
+    "sourceText": "en trädgård",
+    "audioRef": "sv_a3_u3_qp_009"
+  },
+  {
+    "contentId": "a3_vocab_adress",
+    "audioType": "question_prompt",
+    "sourceText": "en adress",
+    "audioRef": "sv_a3_u3_qp_010"
+  },
+  {
+    "contentId": "a3_vocab_stada",
+    "audioType": "question_prompt",
+    "sourceText": "städa",
+    "audioRef": "sv_a3_u3_qp_011"
+  },
+  {
+    "contentId": "a3_vocab_handla",
+    "audioType": "question_prompt",
+    "sourceText": "handla",
+    "audioRef": "sv_a3_u3_qp_012"
+  },
+  {
+    "contentId": "a3_vocab_laga_mat",
+    "audioType": "question_prompt",
+    "sourceText": "laga mat",
+    "audioRef": "sv_a3_u3_qp_013"
+  },
+  {
+    "contentId": "a3_vocab_promenera",
+    "audioType": "question_prompt",
+    "sourceText": "promenera",
+    "audioRef": "sv_a3_u3_qp_014"
+  },
+  {
+    "contentId": "a3_vocab_vila",
+    "audioType": "question_prompt",
+    "sourceText": "vila",
+    "audioRef": "sv_a3_u3_qp_015"
+  },
+  {
+    "contentId": "a3_phrase_jag_har_en_syster",
+    "audioType": "question_prompt",
+    "sourceText": "Jag har en syster.",
+    "audioRef": "sv_a3_u3_qp_016"
+  },
+  {
+    "contentId": "a3_phrase_jag_har_tva_barn",
+    "audioType": "question_prompt",
+    "sourceText": "Jag har två barn.",
+    "audioRef": "sv_a3_u3_qp_017"
+  },
+  {
+    "contentId": "a3_phrase_min_syster_heter_anna",
+    "audioType": "question_prompt",
+    "sourceText": "Min syster heter Anna.",
+    "audioRef": "sv_a3_u3_qp_018"
+  },
+  {
+    "contentId": "a3_phrase_min_pappa_arbetar_som_larare",
+    "audioType": "question_prompt",
+    "sourceText": "Min pappa arbetar som lärare.",
+    "audioRef": "sv_a3_u3_qp_019"
+  },
+  {
+    "contentId": "a3_phrase_hon_ar_tjugo_ar_gammal",
+    "audioType": "question_prompt",
+    "sourceText": "Hon är tjugo år gammal.",
+    "audioRef": "sv_a3_u3_qp_020"
+  },
+  {
+    "contentId": "a3_phrase_de_ar_fem_och_atta_ar_gamla",
+    "audioType": "question_prompt",
+    "sourceText": "De är fem och åtta år gamla.",
+    "audioRef": "sv_a3_u3_qp_021"
+  },
+  {
+    "contentId": "a3_phrase_jag_bor_i_ett_hus",
+    "audioType": "question_prompt",
+    "sourceText": "Jag bor i ett hus.",
+    "audioRef": "sv_a3_u3_qp_022"
+  },
+  {
+    "contentId": "a3_phrase_det_finns_tre_rum",
+    "audioType": "question_prompt",
+    "sourceText": "Det finns tre rum.",
+    "audioRef": "sv_a3_u3_qp_023"
+  },
+  {
+    "contentId": "a3_phrase_lagenheten_ar_stor_och_mysig",
+    "audioType": "question_prompt",
+    "sourceText": "Lägenheten är stor och mysig.",
+    "audioRef": "sv_a3_u3_qp_024"
+  },
+  {
+    "contentId": "a3_phrase_jag_bor_i_stockholm",
+    "audioType": "question_prompt",
+    "sourceText": "Jag bor i Stockholm.",
+    "audioRef": "sv_a3_u3_qp_025"
+  },
+  {
+    "contentId": "a3_phrase_jag_bor_pa_storgatan",
+    "audioType": "question_prompt",
+    "sourceText": "Jag bor på Storgatan.",
+    "audioRef": "sv_a3_u3_qp_026"
+  },
+  {
+    "contentId": "a3_phrase_jag_ar_hemma_idag",
+    "audioType": "question_prompt",
+    "sourceText": "Jag är hemma idag.",
+    "audioRef": "sv_a3_u3_qp_027"
+  },
+  {
+    "contentId": "a3_phrase_jag_gar_hem_nu",
+    "audioType": "question_prompt",
+    "sourceText": "Jag går hem nu.",
+    "audioRef": "sv_a3_u3_qp_028"
+  },
+  {
+    "contentId": "a3_dialog_beratta_om_din_familj",
+    "audioType": "question_prompt",
+    "sourceText": "Berätta om din familj!",
+    "audioRef": "sv_a3_u3_qp_029"
+  },
+  {
+    "contentId": "a3_dialog_jag_har_en_man_och_tva_barn",
+    "audioType": "question_prompt",
+    "sourceText": "Jag har en man och två barn.",
+    "audioRef": "sv_a3_u3_qp_030"
+  },
+  {
+    "contentId": "a3_dialog_hur_gamla_ar_barnen",
+    "audioType": "question_prompt",
+    "sourceText": "Hur gamla är barnen?",
+    "audioRef": "sv_a3_u3_qp_031"
+  },
+  {
+    "contentId": "a3_dialog_de_ar_fem_och_atta_ar_gamla",
+    "audioType": "question_prompt",
+    "sourceText": "De är fem och åtta år gamla.",
+    "audioRef": "sv_a3_u3_qp_032"
+  },
+  {
+    "contentId": "a3_dialog_vi_bor_i_en_lagenhet_i_malmo",
+    "audioType": "question_prompt",
+    "sourceText": "Vi bor i en lägenhet i Malmö.",
+    "audioRef": "sv_a3_u3_qp_033"
+  },
+  {
+    "contentId": "a3_dialog_det_finns_tre_rum_och_ett_kok",
+    "audioType": "question_prompt",
+    "sourceText": "Det finns tre rum och ett kök.",
+    "audioRef": "sv_a3_u3_qp_034"
+  },
+  {
+    "contentId": "a3_dialog_jag_ar_din_nya_granne",
+    "audioType": "question_prompt",
+    "sourceText": "Jag är din nya granne.",
+    "audioRef": "sv_a3_u3_qp_035"
+  },
+  {
+    "contentId": "a3_dialog_ar_det_en_stor_lagenhet",
+    "audioType": "question_prompt",
+    "sourceText": "Är det en stor lägenhet?",
+    "audioRef": "sv_a3_u3_qp_036"
+  },
+  {
+    "contentId": "a3_dialog_ja_det_finns_tre_rum_ett_kok_och_ett_badrum",
+    "audioType": "question_prompt",
+    "sourceText": "Ja, det finns tre rum, ett kök och ett badrum.",
+    "audioRef": "sv_a3_u3_qp_037"
+  },
+  {
+    "contentId": "a3_dialog_det_ar_mycket_mysigt",
+    "audioType": "question_prompt",
+    "sourceText": "Det är mycket mysigt!",
+    "audioRef": "sv_a3_u3_qp_038"
+  },
+  {
+    "contentId": "a3_dialog_bor_du_ensam",
+    "audioType": "question_prompt",
+    "sourceText": "Bor du ensam?",
+    "audioRef": "sv_a3_u3_qp_039"
+  },
+  {
+    "contentId": "a3_dialog_nej_jag_bor_med_min_man_och_var_dotter",
+    "audioType": "question_prompt",
+    "sourceText": "Nej, jag bor med min man och vår dotter.",
+    "audioRef": "sv_a3_u3_qp_040"
+  },
+  {
+    "contentId": "a3_poss_min_group",
+    "audioType": "morphology",
+    "sourceText": "min",
+    "audioRefs": ["sv_a3_u3_adv_001", "sv_a3_u3_adv_002", "sv_a3_u3_adv_003"]
+  },
+  {
+    "contentId": "a3_poss_din_group",
+    "audioType": "morphology",
+    "sourceText": "din",
+    "audioRefs": ["sv_a3_u3_adv_004", "sv_a3_u3_adv_005", "sv_a3_u3_adv_006"]
+  },
+  {
+    "contentId": "a3_poss_var_group",
+    "audioType": "morphology",
+    "sourceText": "vår",
+    "audioRefs": ["sv_a3_u3_adv_007", "sv_a3_u3_adv_008", "sv_a3_u3_adv_009"]
+  },
+  {
+    "contentId": "a3_adj_stor_group",
+    "audioType": "morphology",
+    "sourceText": "stor",
+    "audioRefs": ["sv_a3_u3_adv_010", "sv_a3_u3_adv_011", "sv_a3_u3_adv_012"]
+  },
+  {
+    "contentId": "a3_adj_mysig_group",
+    "audioType": "morphology",
+    "sourceText": "mysig",
+    "audioRefs": ["sv_a3_u3_adv_013", "sv_a3_u3_adv_014", "sv_a3_u3_adv_015"]
+  },
+  {
+    "contentId": "a3_adj_gammal_group",
+    "audioType": "morphology",
+    "sourceText": "gammal",
+    "audioRefs": ["sv_a3_u3_adv_016", "sv_a3_u3_adv_017", "sv_a3_u3_adv_018"]
+  },
+  {
+    "contentId": "a3_adj_ny_group",
+    "audioType": "morphology",
+    "sourceText": "ny",
+    "audioRefs": ["sv_a3_u3_adv_019", "sv_a3_u3_adv_020", "sv_a3_u3_adv_021"]
+  },
+  {
+    "contentId": "a3_noun_familj_group",
+    "audioType": "morphology",
+    "sourceText": "familj",
+    "audioRefs": ["sv_a3_u3_adv_022", "sv_a3_u3_adv_023", "sv_a3_u3_adv_024", "sv_a3_u3_adv_025", "sv_a3_u3_adv_026"]
+  },
+  {
+    "contentId": "a3_noun_lagenhet_group",
+    "audioType": "morphology",
+    "sourceText": "lägenhet",
+    "audioRefs": ["sv_a3_u3_adv_027", "sv_a3_u3_adv_028", "sv_a3_u3_adv_029", "sv_a3_u3_adv_030", "sv_a3_u3_adv_031"]
+  },
+  {
+    "contentId": "a3_noun_granne_group",
+    "audioType": "morphology",
+    "sourceText": "granne",
+    "audioRefs": ["sv_a3_u3_adv_032", "sv_a3_u3_adv_033", "sv_a3_u3_adv_034", "sv_a3_u3_adv_035", "sv_a3_u3_adv_036"]
+  },
+  {
+    "contentId": "a3_noun_rum_group",
+    "audioType": "morphology",
+    "sourceText": "rum",
+    "audioRefs": ["sv_a3_u3_adv_037", "sv_a3_u3_adv_038", "sv_a3_u3_adv_039", "sv_a3_u3_adv_040", "sv_a3_u3_adv_041"]
+  },
+  {
+    "contentId": "a3_verb_bo_group",
+    "audioType": "morphology",
+    "sourceText": "bo",
+    "audioRefs": ["sv_a3_u3_adv_042", "sv_a3_u3_adv_043", "sv_a3_u3_adv_044", "sv_a3_u3_adv_045"]
+  },
+  {
+    "contentId": "a3_example_jag_har_en_man",
+    "audioType": "example",
+    "sourceText": "Jag har en man och två barn.",
+    "audioRef": "sv_a3_u3_adv_046"
+  },
+  {
+    "contentId": "a3_example_min_man_heter_david",
+    "audioType": "example",
+    "sourceText": "Min man heter David och han är lärare.",
+    "audioRef": "sv_a3_u3_adv_047"
+  },
+  {
+    "contentId": "a3_example_de_ar_fem_och_atta",
+    "audioType": "example",
+    "sourceText": "De är fem och åtta år gamla.",
+    "audioRef": "sv_a3_u3_adv_048"
+  },
+  {
+    "contentId": "a3_example_vi_bor_i_malmo",
+    "audioType": "example",
+    "sourceText": "Vi bor i en lägenhet i Malmö.",
+    "audioRef": "sv_a3_u3_adv_049"
+  },
+  {
+    "contentId": "a3_example_det_finns_tre_rum_och_ett_kok",
+    "audioType": "example",
+    "sourceText": "Det finns tre rum och ett kök.",
+    "audioRef": "sv_a3_u3_adv_050"
+  }
+]

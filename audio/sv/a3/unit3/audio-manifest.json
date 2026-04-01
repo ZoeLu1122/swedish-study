@@ -1,0 +1,944 @@
+{
+  "unit": "a3_unit3",
+  "generatedAt": "2026-04-02",
+  "items": [
+    {
+      "audioId": "sv_a3_u3_vocab_mamma",
+      "sourceText": "en mamma",
+      "fileName": "a1_u3_vocab_001_en_mamma_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_001_en_mamma_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_pappa",
+      "sourceText": "en pappa",
+      "fileName": "a1_u3_vocab_002_en_pappa_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_002_en_pappa_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_syster",
+      "sourceText": "en syster",
+      "fileName": "a1_u3_vocab_003_en_syster_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_003_en_syster_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_bror",
+      "sourceText": "en bror",
+      "fileName": "a1_u3_vocab_004_en_bror_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_004_en_bror_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_barn",
+      "sourceText": "ett barn",
+      "fileName": "a1_u3_vocab_005_ett_barn_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_005_ett_barn_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_familj",
+      "sourceText": "en familj",
+      "fileName": "a1_u3_vocab_006_en_familj_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_006_en_familj_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_fru",
+      "sourceText": "en fru",
+      "fileName": "a1_u3_vocab_007_en_fru_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_007_en_fru_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_man",
+      "sourceText": "en man",
+      "fileName": "a1_u3_vocab_008_en_man_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_008_en_man_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_dotter",
+      "sourceText": "en dotter",
+      "fileName": "a1_u3_vocab_009_en_dotter_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_009_en_dotter_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_son",
+      "sourceText": "en son",
+      "fileName": "a1_u3_vocab_010_en_son_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_010_en_son_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_hus",
+      "sourceText": "ett hus",
+      "fileName": "a1_u3_vocab_011_ett_hus_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_011_ett_hus_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_lagenhet",
+      "sourceText": "en lägenhet",
+      "fileName": "a1_u3_vocab_012_en_lagenhet_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_012_en_lagenhet_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_rum",
+      "sourceText": "ett rum",
+      "fileName": "a1_u3_vocab_013_ett_rum_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_013_ett_rum_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_kok",
+      "sourceText": "ett kök",
+      "fileName": "a1_u3_vocab_014_ett_kok_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_014_ett_kok_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_badrum",
+      "sourceText": "ett badrum",
+      "fileName": "a1_u3_vocab_015_ett_badrum_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_015_ett_badrum_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_sovrum",
+      "sourceText": "ett sovrum",
+      "fileName": "a1_u3_vocab_016_ett_sovrum_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_016_ett_sovrum_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_vardagsrum",
+      "sourceText": "ett vardagsrum",
+      "fileName": "a1_u3_vocab_017_ett_vardagsrum_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_017_ett_vardagsrum_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_tradgard",
+      "sourceText": "en trädgård",
+      "fileName": "a1_u3_vocab_018_en_tradgard_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_018_en_tradgard_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_adress",
+      "sourceText": "en adress",
+      "fileName": "a1_u3_vocab_019_en_adress_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_019_en_adress_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_granne",
+      "sourceText": "en granne",
+      "fileName": "a1_u3_vocab_020_en_granne_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_020_en_granne_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_stor",
+      "sourceText": "stor",
+      "fileName": "a1_u3_vocab_021_stor_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_021_stor_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_liten",
+      "sourceText": "liten",
+      "fileName": "a1_u3_vocab_022_liten_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_022_liten_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_fin",
+      "sourceText": "fin",
+      "fileName": "a1_u3_vocab_023_fin_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_023_fin_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_gammal",
+      "sourceText": "gammal",
+      "fileName": "a1_u3_vocab_024_gammal_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_024_gammal_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_ny",
+      "sourceText": "ny",
+      "fileName": "a1_u3_vocab_025_ny_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_025_ny_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_mysig",
+      "sourceText": "mysig",
+      "fileName": "a1_u3_vocab_026_mysig_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_026_mysig_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_stada",
+      "sourceText": "städa",
+      "fileName": "a1_u3_vocab_027_stada_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_027_stada_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_handla",
+      "sourceText": "handla",
+      "fileName": "a1_u3_vocab_028_handla_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_028_handla_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_laga_mat",
+      "sourceText": "laga mat",
+      "fileName": "a1_u3_vocab_029_laga_mat_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_029_laga_mat_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_promenera",
+      "sourceText": "promenera",
+      "fileName": "a1_u3_vocab_030_promenera_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_030_promenera_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_vila",
+      "sourceText": "vila",
+      "fileName": "a1_u3_vocab_031_vila_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_031_vila_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_vocab_bo",
+      "sourceText": "bo",
+      "fileName": "a1_u3_vocab_032_bo_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_032_bo_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_dialog_001_01",
+      "sourceText": "Berätta om din familj!",
+      "fileName": "a1_u3_dialog_001_line_01_beratta_om_din_familj_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/dialogue/a1_u3_dialog_001_line_01_beratta_om_din_familj_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_dialog_001_02",
+      "sourceText": "Jag har en man och två barn. Min man heter David och han är lärare.",
+      "fileName": "a1_u3_dialog_001_line_02_jag_har_en_man_och_tva_barn_min_man_heter_david_och_han_ar_larare_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/dialogue/a1_u3_dialog_001_line_02_jag_har_en_man_och_tva_barn_min_man_heter_david_och_han_ar_larare_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_dialog_001_03",
+      "sourceText": "Hur gamla är barnen?",
+      "fileName": "a1_u3_dialog_001_line_03_hur_gamla_ar_barnen_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/dialogue/a1_u3_dialog_001_line_03_hur_gamla_ar_barnen_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_dialog_001_04",
+      "sourceText": "De är fem och åtta år gamla.",
+      "fileName": "a1_u3_dialog_001_line_04_de_ar_fem_och_atta_ar_gamla_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/dialogue/a1_u3_dialog_001_line_04_de_ar_fem_och_atta_ar_gamla_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_dialog_001_05",
+      "sourceText": "Bor ni i en lägenhet eller i ett hus?",
+      "fileName": "a1_u3_dialog_001_line_05_bor_ni_i_en_lagenhet_eller_i_ett_hus_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/dialogue/a1_u3_dialog_001_line_05_bor_ni_i_en_lagenhet_eller_i_ett_hus_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_dialog_001_06",
+      "sourceText": "Vi bor i en lägenhet i Malmö. Det finns tre rum och ett kök.",
+      "fileName": "a1_u3_dialog_001_line_06_vi_bor_i_en_lagenhet_i_malmo_det_finns_tre_rum_och_ett_kok_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/dialogue/a1_u3_dialog_001_line_06_vi_bor_i_en_lagenhet_i_malmo_det_finns_tre_rum_och_ett_kok_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_dialog_002_01",
+      "sourceText": "Hej! Jag är din nya granne. Jag heter Sara.",
+      "fileName": "a1_u3_dialog_002_line_01_hej_jag_ar_din_nya_granne_jag_heter_sara_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/dialogue/a1_u3_dialog_002_line_01_hej_jag_ar_din_nya_granne_jag_heter_sara_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_dialog_002_02",
+      "sourceText": "Hej Sara! Välkommen! Jag heter Wei.",
+      "fileName": "a1_u3_dialog_002_line_02_hej_sara_valkommen_jag_heter_wei_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/dialogue/a1_u3_dialog_002_line_02_hej_sara_valkommen_jag_heter_wei_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_dialog_002_03",
+      "sourceText": "Är det en stor lägenhet?",
+      "fileName": "a1_u3_dialog_002_line_03_ar_det_en_stor_lagenhet_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/dialogue/a1_u3_dialog_002_line_03_ar_det_en_stor_lagenhet_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_dialog_002_04",
+      "sourceText": "Ja, det finns tre rum, ett kök och ett badrum. Det är mycket mysigt!",
+      "fileName": "a1_u3_dialog_002_line_04_ja_det_finns_tre_rum_ett_kok_och_ett_badrum_det_ar_mycket_mysigt_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/dialogue/a1_u3_dialog_002_line_04_ja_det_finns_tre_rum_ett_kok_och_ett_badrum_det_ar_mycket_mysigt_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_dialog_002_05",
+      "sourceText": "Bor du ensam?",
+      "fileName": "a1_u3_dialog_002_line_05_bor_du_ensam_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/dialogue/a1_u3_dialog_002_line_05_bor_du_ensam_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_dialog_002_06",
+      "sourceText": "Nej, jag bor med min man och vår dotter.",
+      "fileName": "a1_u3_dialog_002_line_06_nej_jag_bor_med_min_man_och_var_dotter_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/dialogue/a1_u3_dialog_002_line_06_nej_jag_bor_med_min_man_och_var_dotter_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_001",
+      "sourceText": "en mamma",
+      "fileName": "a1_u3_qp_001_en_mamma_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_001_en_mamma_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_002",
+      "sourceText": "en pappa",
+      "fileName": "a1_u3_qp_002_en_pappa_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_002_en_pappa_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_003",
+      "sourceText": "en bror",
+      "fileName": "a1_u3_qp_003_en_bror_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_003_en_bror_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_004",
+      "sourceText": "en familj",
+      "fileName": "a1_u3_qp_004_en_familj_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_004_en_familj_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_005",
+      "sourceText": "en fru",
+      "fileName": "a1_u3_qp_005_en_fru_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_005_en_fru_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_006",
+      "sourceText": "en son",
+      "fileName": "a1_u3_qp_006_en_son_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_006_en_son_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_007",
+      "sourceText": "ett sovrum",
+      "fileName": "a1_u3_qp_007_ett_sovrum_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_007_ett_sovrum_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_008",
+      "sourceText": "ett vardagsrum",
+      "fileName": "a1_u3_qp_008_ett_vardagsrum_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_008_ett_vardagsrum_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_009",
+      "sourceText": "en trädgård",
+      "fileName": "a1_u3_qp_009_en_tradgard_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_009_en_tradgard_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_010",
+      "sourceText": "en adress",
+      "fileName": "a1_u3_qp_010_en_adress_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_010_en_adress_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_011",
+      "sourceText": "städa",
+      "fileName": "a1_u3_qp_011_stada_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_011_stada_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_012",
+      "sourceText": "handla",
+      "fileName": "a1_u3_qp_012_handla_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_012_handla_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_013",
+      "sourceText": "laga mat",
+      "fileName": "a1_u3_qp_013_laga_mat_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_013_laga_mat_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_014",
+      "sourceText": "promenera",
+      "fileName": "a1_u3_qp_014_promenera_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_014_promenera_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_015",
+      "sourceText": "vila",
+      "fileName": "a1_u3_qp_015_vila_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_015_vila_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_016",
+      "sourceText": "Jag har en syster.",
+      "fileName": "a1_u3_qp_016_jag_har_en_syster_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_016_jag_har_en_syster_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_017",
+      "sourceText": "Jag har två barn.",
+      "fileName": "a1_u3_qp_017_jag_har_tva_barn_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_017_jag_har_tva_barn_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_018",
+      "sourceText": "Min syster heter Anna.",
+      "fileName": "a1_u3_qp_018_min_syster_heter_anna_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_018_min_syster_heter_anna_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_019",
+      "sourceText": "Min pappa arbetar som lärare.",
+      "fileName": "a1_u3_qp_019_min_pappa_arbetar_som_larare_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_019_min_pappa_arbetar_som_larare_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_020",
+      "sourceText": "Hon är tjugo år gammal.",
+      "fileName": "a1_u3_qp_020_hon_ar_tjugo_ar_gammal_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_020_hon_ar_tjugo_ar_gammal_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_021",
+      "sourceText": "De är fem och åtta år gamla.",
+      "fileName": "a1_u3_qp_021_de_ar_fem_och_atta_ar_gamla_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_021_de_ar_fem_och_atta_ar_gamla_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_022",
+      "sourceText": "Jag bor i ett hus.",
+      "fileName": "a1_u3_qp_022_jag_bor_i_ett_hus_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_022_jag_bor_i_ett_hus_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_023",
+      "sourceText": "Det finns tre rum.",
+      "fileName": "a1_u3_qp_023_det_finns_tre_rum_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_023_det_finns_tre_rum_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_024",
+      "sourceText": "Lägenheten är stor och mysig.",
+      "fileName": "a1_u3_qp_024_lagenheten_ar_stor_och_mysig_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_024_lagenheten_ar_stor_och_mysig_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_025",
+      "sourceText": "Jag bor i Stockholm.",
+      "fileName": "a1_u3_qp_025_jag_bor_i_stockholm_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_025_jag_bor_i_stockholm_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_026",
+      "sourceText": "Jag bor på Storgatan.",
+      "fileName": "a1_u3_qp_026_jag_bor_pa_storgatan_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_026_jag_bor_pa_storgatan_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_027",
+      "sourceText": "Jag är hemma idag.",
+      "fileName": "a1_u3_qp_027_jag_ar_hemma_idag_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_027_jag_ar_hemma_idag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_028",
+      "sourceText": "Jag går hem nu.",
+      "fileName": "a1_u3_qp_028_jag_gar_hem_nu_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_028_jag_gar_hem_nu_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_029",
+      "sourceText": "Berätta om din familj!",
+      "fileName": "a1_u3_qp_029_beratta_om_din_familj_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_029_beratta_om_din_familj_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_030",
+      "sourceText": "Jag har en man och två barn.",
+      "fileName": "a1_u3_qp_030_jag_har_en_man_och_tva_barn_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_030_jag_har_en_man_och_tva_barn_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_031",
+      "sourceText": "Hur gamla är barnen?",
+      "fileName": "a1_u3_qp_031_hur_gamla_ar_barnen_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_031_hur_gamla_ar_barnen_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_032",
+      "sourceText": "De är fem och åtta år gamla.",
+      "fileName": "a1_u3_qp_032_de_ar_fem_och_atta_ar_gamla_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_032_de_ar_fem_och_atta_ar_gamla_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_033",
+      "sourceText": "Vi bor i en lägenhet i Malmö.",
+      "fileName": "a1_u3_qp_033_vi_bor_i_en_lagenhet_i_malmo_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_033_vi_bor_i_en_lagenhet_i_malmo_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_034",
+      "sourceText": "Det finns tre rum och ett kök.",
+      "fileName": "a1_u3_qp_034_det_finns_tre_rum_och_ett_kok_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_034_det_finns_tre_rum_och_ett_kok_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_035",
+      "sourceText": "Jag är din nya granne.",
+      "fileName": "a1_u3_qp_035_jag_ar_din_nya_granne_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_035_jag_ar_din_nya_granne_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_036",
+      "sourceText": "Är det en stor lägenhet?",
+      "fileName": "a1_u3_qp_036_ar_det_en_stor_lagenhet_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_036_ar_det_en_stor_lagenhet_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_037",
+      "sourceText": "Ja, det finns tre rum, ett kök och ett badrum.",
+      "fileName": "a1_u3_qp_037_ja_det_finns_tre_rum_ett_kok_och_ett_badrum_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_037_ja_det_finns_tre_rum_ett_kok_och_ett_badrum_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_038",
+      "sourceText": "Det är mycket mysigt!",
+      "fileName": "a1_u3_qp_038_det_ar_mycket_mysigt_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_038_det_ar_mycket_mysigt_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_039",
+      "sourceText": "Bor du ensam?",
+      "fileName": "a1_u3_qp_039_bor_du_ensam_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_039_bor_du_ensam_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_qp_040",
+      "sourceText": "Nej, jag bor med min man och vår dotter.",
+      "fileName": "a1_u3_qp_040_nej_jag_bor_med_min_man_och_var_dotter_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_040_nej_jag_bor_med_min_man_och_var_dotter_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_001",
+      "sourceText": "min",
+      "fileName": "a1_u3_adv_001_min_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_001_min_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_002",
+      "sourceText": "mitt",
+      "fileName": "a1_u3_adv_002_mitt_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_002_mitt_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_003",
+      "sourceText": "mina",
+      "fileName": "a1_u3_adv_003_mina_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_003_mina_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_004",
+      "sourceText": "din",
+      "fileName": "a1_u3_adv_004_din_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_004_din_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_005",
+      "sourceText": "ditt",
+      "fileName": "a1_u3_adv_005_ditt_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_005_ditt_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_006",
+      "sourceText": "dina",
+      "fileName": "a1_u3_adv_006_dina_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_006_dina_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_007",
+      "sourceText": "vår",
+      "fileName": "a1_u3_adv_007_var_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_007_var_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_008",
+      "sourceText": "vårt",
+      "fileName": "a1_u3_adv_008_vart_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_008_vart_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_009",
+      "sourceText": "våra",
+      "fileName": "a1_u3_adv_009_vara_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_009_vara_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_010",
+      "sourceText": "stor",
+      "fileName": "a1_u3_adv_010_stor_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_010_stor_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_011",
+      "sourceText": "stort",
+      "fileName": "a1_u3_adv_011_stort_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_011_stort_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_012",
+      "sourceText": "stora",
+      "fileName": "a1_u3_adv_012_stora_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_012_stora_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_013",
+      "sourceText": "mysig",
+      "fileName": "a1_u3_adv_013_mysig_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_013_mysig_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_014",
+      "sourceText": "mysigt",
+      "fileName": "a1_u3_adv_014_mysigt_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_014_mysigt_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_015",
+      "sourceText": "mysiga",
+      "fileName": "a1_u3_adv_015_mysiga_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_015_mysiga_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_016",
+      "sourceText": "gammal",
+      "fileName": "a1_u3_adv_016_gammal_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_016_gammal_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_017",
+      "sourceText": "gammalt",
+      "fileName": "a1_u3_adv_017_gammalt_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_017_gammalt_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_018",
+      "sourceText": "gamla",
+      "fileName": "a1_u3_adv_018_gamla_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_018_gamla_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_019",
+      "sourceText": "ny",
+      "fileName": "a1_u3_adv_019_ny_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_019_ny_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_020",
+      "sourceText": "nytt",
+      "fileName": "a1_u3_adv_020_nytt_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_020_nytt_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_021",
+      "sourceText": "nya",
+      "fileName": "a1_u3_adv_021_nya_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_021_nya_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_022",
+      "sourceText": "en",
+      "fileName": "a1_u3_adv_022_en_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_022_en_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_023",
+      "sourceText": "familj",
+      "fileName": "a1_u3_adv_023_familj_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_023_familj_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_024",
+      "sourceText": "familjen",
+      "fileName": "a1_u3_adv_024_familjen_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_024_familjen_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_025",
+      "sourceText": "familjer",
+      "fileName": "a1_u3_adv_025_familjer_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_025_familjer_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_026",
+      "sourceText": "familjerna",
+      "fileName": "a1_u3_adv_026_familjerna_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_026_familjerna_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_027",
+      "sourceText": "en",
+      "fileName": "a1_u3_adv_027_en_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_027_en_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_028",
+      "sourceText": "lägenhet",
+      "fileName": "a1_u3_adv_028_lagenhet_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_028_lagenhet_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_029",
+      "sourceText": "lägenheten",
+      "fileName": "a1_u3_adv_029_lagenheten_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_029_lagenheten_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_030",
+      "sourceText": "lägenheter",
+      "fileName": "a1_u3_adv_030_lagenheter_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_030_lagenheter_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_031",
+      "sourceText": "lägenheterna",
+      "fileName": "a1_u3_adv_031_lagenheterna_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_031_lagenheterna_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_032",
+      "sourceText": "en",
+      "fileName": "a1_u3_adv_032_en_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_032_en_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_033",
+      "sourceText": "granne",
+      "fileName": "a1_u3_adv_033_granne_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_033_granne_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_034",
+      "sourceText": "grannen",
+      "fileName": "a1_u3_adv_034_grannen_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_034_grannen_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_035",
+      "sourceText": "grannar",
+      "fileName": "a1_u3_adv_035_grannar_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_035_grannar_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_036",
+      "sourceText": "grannarna",
+      "fileName": "a1_u3_adv_036_grannarna_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_036_grannarna_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_037",
+      "sourceText": "ett",
+      "fileName": "a1_u3_adv_037_ett_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_037_ett_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_038",
+      "sourceText": "rum",
+      "fileName": "a1_u3_adv_038_rum_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_038_rum_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_039",
+      "sourceText": "rummet",
+      "fileName": "a1_u3_adv_039_rummet_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_039_rummet_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_040",
+      "sourceText": "rum",
+      "fileName": "a1_u3_adv_040_rum_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_040_rum_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_041",
+      "sourceText": "rummen",
+      "fileName": "a1_u3_adv_041_rummen_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_041_rummen_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_042",
+      "sourceText": "bo",
+      "fileName": "a1_u3_adv_042_bo_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_042_bo_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_043",
+      "sourceText": "bor",
+      "fileName": "a1_u3_adv_043_bor_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_043_bor_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_044",
+      "sourceText": "bodde",
+      "fileName": "a1_u3_adv_044_bodde_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_044_bodde_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_045",
+      "sourceText": "bott",
+      "fileName": "a1_u3_adv_045_bott_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_045_bott_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_046",
+      "sourceText": "Jag har en man och två barn.",
+      "fileName": "a1_u3_adv_046_jag_har_en_man_och_tva_barn_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_046_jag_har_en_man_och_tva_barn_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_047",
+      "sourceText": "Min man heter David och han är lärare.",
+      "fileName": "a1_u3_adv_047_min_man_heter_david_och_han_ar_larare_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_047_min_man_heter_david_och_han_ar_larare_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_048",
+      "sourceText": "De är fem och åtta år gamla.",
+      "fileName": "a1_u3_adv_048_de_ar_fem_och_atta_ar_gamla_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_048_de_ar_fem_och_atta_ar_gamla_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_049",
+      "sourceText": "Vi bor i en lägenhet i Malmö.",
+      "fileName": "a1_u3_adv_049_vi_bor_i_en_lagenhet_i_malmo_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_049_vi_bor_i_en_lagenhet_i_malmo_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a3_u3_adv_050",
+      "sourceText": "Det finns tre rum och ett kök.",
+      "fileName": "a1_u3_adv_050_det_finns_tre_rum_och_ett_kok_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_050_det_finns_tre_rum_och_ett_kok_v1.mp3",
+      "status": "ready"
+    }
+  ]
+}
