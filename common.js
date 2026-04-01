@@ -489,10 +489,9 @@
       `);
     }
 
-    // Only inject our speed dropdown if the page doesn't already have its own speed buttons
-    const hasOwnSpeedCtrl = !!document.querySelector('[data-speed]');
+    // Only inject once (guard against double-injection)
     let menu = null;
-    if (!hasOwnSpeedCtrl) {
+    if (!document.getElementById('sfiSpeedCtrl')) {
       const speedHtml = `
         <div class="nav-speed-ctrl nav-speed-wrap" id="sfiSpeedCtrl">
           <button class="nav-speed-btn" id="speedBtn">
@@ -500,7 +499,7 @@
             <span class="speed-val">${window.SfiCore.state.ttsRate}×</span>
           </button>
           <div class="speed-dropdown" id="speedMenu">
-            ${RATES.map(r => `<div class="speed-opt" data-v="${r.v}">${r.label}</div>`).join('')}
+            ${RATES.map(r => `<div class="speed-opt${r.v === window.SfiCore.state.ttsRate ? ' active' : ''}" data-v="${r.v}">${r.label}</div>`).join('')}
           </div>
         </div>
       `;
@@ -519,6 +518,8 @@
             window.SfiCore.tts.setRate(val);
             const valDisplay = document.querySelector('.speed-val');
             if (valDisplay) valDisplay.textContent = val + '×';
+            // Update active highlight in dropdown
+            menu.querySelectorAll('.speed-opt').forEach(o => o.classList.toggle('active', parseFloat(o.dataset.v) === val));
             menu.style.display = 'none';
           };
         });
