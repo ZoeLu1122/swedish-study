@@ -37,6 +37,34 @@
       "status": "ready"
     },
     {
+      "audioId": "sv_a2_u2_vocab_sexton",
+      "sourceText": "sexton",
+      "fileName": "a1_u2_vocab_037_sexton_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_037_sexton_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_sjutton",
+      "sourceText": "sjutton",
+      "fileName": "a1_u2_vocab_038_sjutton_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_038_sjutton_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_arton",
+      "sourceText": "arton",
+      "fileName": "a1_u2_vocab_039_arton_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_039_arton_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_a2_u2_vocab_nitton",
+      "sourceText": "nitton",
+      "fileName": "a1_u2_vocab_040_nitton_v1.mp3",
+      "filePath": "/audio/sv/a2/unit2/vocab/a1_u2_vocab_040_nitton_v1.mp3",
+      "status": "ready"
+    },
+    {
       "audioId": "sv_a2_u2_vocab_tjugo",
       "sourceText": "tjugo",
       "fileName": "a1_u2_vocab_006_tjugo_v1.mp3",

@@ -28,6 +28,26 @@
     },
     {
       "audioType": "vocab",
+      "sourceText": "sexton",
+      "audioRef": "sv_a2_u2_vocab_sexton"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "sjutton",
+      "audioRef": "sv_a2_u2_vocab_sjutton"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "arton",
+      "audioRef": "sv_a2_u2_vocab_arton"
+    },
+    {
+      "audioType": "vocab",
+      "sourceText": "nitton",
+      "audioRef": "sv_a2_u2_vocab_nitton"
+    },
+    {
+      "audioType": "vocab",
       "sourceText": "tjugo",
       "audioRef": "sv_a2_u2_vocab_tjugo"
     },
