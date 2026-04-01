@@ -578,6 +578,25 @@ window.dialogues={
   2:['Hej! Välkommen till Vårdcentralen. Vad kan jag hjälpa dig med?','Hej! Jag vill boka en tid, tack.','Vilken dag passar dig?','Är tisdag bra?','Ja! Vi har en tid tisdag den femtonde mars, klockan tio.','Perfekt! Tack så mycket.'],
 };
 
+// 每段对话各句的 contentId（用于"朗读整段"mp3 顺序播放）
+window.dialogueContentIds = {
+  1: [
+    'a2_dialog_line_001_01',
+    'a2_dialog_line_001_02',
+    'a2_dialog_line_001_03',
+    'a2_dialog_line_001_04',
+    'a2_dialog_line_001_05'
+  ],
+  2: [
+    'a2_dialog_line_002_01',
+    'a2_dialog_line_002_02',
+    'a2_dialog_line_002_03',
+    'a2_dialog_line_002_04',
+    'a2_dialog_line_002_05',
+    'a2_dialog_line_002_06'
+  ]
+};
+
 function wrapDialogueWords(html){
   return html.replace(/(<[^>]+>)|([^<]+)/g,(match,tag,text)=>{
     if(tag)return tag;
