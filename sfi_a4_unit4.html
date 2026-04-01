@@ -542,6 +542,11 @@ window.dialogues={
   1:['Ursäkta, var finns brödet?','Det är i gång tre, till höger.','Tack! Vad kostar mjölken?','Den kostar tjugofem kronor.','Bra, jag tar den. Kan jag betala med kort?','Ja, självklart. Kassan är där borta.'],
   2:['Hej! Vad vill du ha?','Hej! Jag vill ha en kaffe och en smörgås, tack.','Stor eller liten kaffe?','En liten kaffe, tack. Vad kostar det?','Det kostar fyrtio kronor tillsammans.','Varsågod!','Tack! Varsågod. Ha en bra dag!'],
 };
+// 每段对话各句的 contentId（用于"朗读整段"mp3 顺序播放）
+window.dialogueContentIds = {
+  1: ['a4_dialog_line_001_01','a4_dialog_line_001_02','a4_dialog_line_001_03','a4_dialog_line_001_04','a4_dialog_line_001_05','a4_dialog_line_001_06'],
+  2: ['a4_dialog_line_002_01','a4_dialog_line_002_02','a4_dialog_line_002_03','a4_dialog_line_002_04','a4_dialog_line_002_05','a4_dialog_line_002_06','a4_dialog_line_002_07']
+};
 
 function wrapDialogueWords(html){
   return html.replace(/(<[^>]+>)|([^<]+)/g,(match,tag,text)=>{
