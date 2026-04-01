@@ -1,0 +1,585 @@
+[
+  {
+    "audioType": "vocab",
+    "sourceText": "ett bröd",
+    "audioRef": "sv_a4_u4_vocab_brod"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "ett ägg",
+    "audioRef": "sv_a4_u4_vocab_agg"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "ett kött",
+    "audioRef": "sv_a4_u4_vocab_kott"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "en fisk",
+    "audioRef": "sv_a4_u4_vocab_fisk"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "grönsaker",
+    "audioRef": "sv_a4_u4_vocab_gronsaker"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "en frukt",
+    "audioRef": "sv_a4_u4_vocab_frukt"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "ett ris",
+    "audioRef": "sv_a4_u4_vocab_ris"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "en ost",
+    "audioRef": "sv_a4_u4_vocab_ost"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "smör",
+    "audioRef": "sv_a4_u4_vocab_smor"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "soppa",
+    "audioRef": "sv_a4_u4_vocab_soppa"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "ett vatten",
+    "audioRef": "sv_a4_u4_vocab_vatten"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "ett kaffe",
+    "audioRef": "sv_a4_u4_vocab_kaffe"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "ett te",
+    "audioRef": "sv_a4_u4_vocab_te"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "en juice",
+    "audioRef": "sv_a4_u4_vocab_juice"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "en mjölk",
+    "audioRef": "sv_a4_u4_vocab_mjolk"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "öl",
+    "audioRef": "sv_a4_u4_vocab_ol"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "en affär",
+    "audioRef": "sv_a4_u4_vocab_affar"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "butik",
+    "audioRef": "sv_a4_u4_vocab_butik"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "kassa",
+    "audioRef": "sv_a4_u4_vocab_kassa"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "ett kvitto",
+    "audioRef": "sv_a4_u4_vocab_kvitto"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "handla",
+    "audioRef": "sv_a4_u4_vocab_handla"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "betala",
+    "audioRef": "sv_a4_u4_vocab_betala"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "köpa",
+    "audioRef": "sv_a4_u4_vocab_kopa"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "kostar",
+    "audioRef": "sv_a4_u4_vocab_kostar"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "en påse",
+    "audioRef": "sv_a4_u4_vocab_pase"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "kort",
+    "audioRef": "sv_a4_u4_vocab_kort"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "billig",
+    "audioRef": "sv_a4_u4_vocab_billig"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "dyr",
+    "audioRef": "sv_a4_u4_vocab_dyr"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "färsk",
+    "audioRef": "sv_a4_u4_vocab_farsk"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "god",
+    "audioRef": "sv_a4_u4_vocab_god"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "söt",
+    "audioRef": "sv_a4_u4_vocab_sot"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "salt",
+    "audioRef": "sv_a4_u4_vocab_salt"
+  },
+  {
+    "contentId": "a4_dialog_line_001_01",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Ursäkta, var finns brödet?",
+    "audioRef": "sv_a4_u4_dialog_001_01"
+  },
+  {
+    "contentId": "a4_dialog_line_001_02",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Det är i gång tre, till höger.",
+    "audioRef": "sv_a4_u4_dialog_001_02"
+  },
+  {
+    "contentId": "a4_dialog_line_001_03",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Tack! Vad kostar mjölken?",
+    "audioRef": "sv_a4_u4_dialog_001_03"
+  },
+  {
+    "contentId": "a4_dialog_line_001_04",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Den kostar tjugofem kronor.",
+    "audioRef": "sv_a4_u4_dialog_001_04"
+  },
+  {
+    "contentId": "a4_dialog_line_001_05",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Bra, jag tar den. Kan jag betala med kort?",
+    "audioRef": "sv_a4_u4_dialog_001_05"
+  },
+  {
+    "contentId": "a4_dialog_line_001_06",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Ja, självklart. Kassan är där borta.",
+    "audioRef": "sv_a4_u4_dialog_001_06"
+  },
+  {
+    "contentId": "a4_dialog_line_002_01",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Hej! Vad vill du ha?",
+    "audioRef": "sv_a4_u4_dialog_002_01"
+  },
+  {
+    "contentId": "a4_dialog_line_002_02",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Hej! Jag vill ha en kaffe och en smörgås, tack.",
+    "audioRef": "sv_a4_u4_dialog_002_02"
+  },
+  {
+    "contentId": "a4_dialog_line_002_03",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Stor eller liten kaffe?",
+    "audioRef": "sv_a4_u4_dialog_002_03"
+  },
+  {
+    "contentId": "a4_dialog_line_002_04",
+    "audioType": "dialogue_line_group",
+    "sourceText": "En liten kaffe, tack. Vad kostar det?",
+    "audioRef": "sv_a4_u4_dialog_002_04"
+  },
+  {
+    "contentId": "a4_dialog_line_002_05",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Det kostar fyrtio kronor tillsammans.",
+    "audioRef": "sv_a4_u4_dialog_002_05"
+  },
+  {
+    "contentId": "a4_dialog_line_002_06",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Varsågod!",
+    "audioRef": "sv_a4_u4_dialog_002_06"
+  },
+  {
+    "contentId": "a4_dialog_line_002_07",
+    "audioType": "dialogue_line_group",
+    "sourceText": "Tack! Varsågod. Ha en bra dag!",
+    "audioRef": "sv_a4_u4_dialog_002_07"
+  },
+  {
+    "contentId": "a4_vocab_brod",
+    "audioType": "question_prompt",
+    "sourceText": "ett bröd",
+    "audioRef": "sv_a4_u4_qp_001"
+  },
+  {
+    "contentId": "a4_vocab_agg",
+    "audioType": "question_prompt",
+    "sourceText": "ett ägg",
+    "audioRef": "sv_a4_u4_qp_002"
+  },
+  {
+    "contentId": "a4_vocab_kott",
+    "audioType": "question_prompt",
+    "sourceText": "ett kött",
+    "audioRef": "sv_a4_u4_qp_003"
+  },
+  {
+    "contentId": "a4_vocab_fisk",
+    "audioType": "question_prompt",
+    "sourceText": "en fisk",
+    "audioRef": "sv_a4_u4_qp_004"
+  },
+  {
+    "contentId": "a4_vocab_frukt",
+    "audioType": "question_prompt",
+    "sourceText": "en frukt",
+    "audioRef": "sv_a4_u4_qp_005"
+  },
+  {
+    "contentId": "a4_vocab_ris",
+    "audioType": "question_prompt",
+    "sourceText": "ett ris",
+    "audioRef": "sv_a4_u4_qp_006"
+  },
+  {
+    "contentId": "a4_vocab_vatten",
+    "audioType": "question_prompt",
+    "sourceText": "ett vatten",
+    "audioRef": "sv_a4_u4_qp_007"
+  },
+  {
+    "contentId": "a4_vocab_kaffe",
+    "audioType": "question_prompt",
+    "sourceText": "ett kaffe",
+    "audioRef": "sv_a4_u4_qp_008"
+  },
+  {
+    "contentId": "a4_vocab_te",
+    "audioType": "question_prompt",
+    "sourceText": "ett te",
+    "audioRef": "sv_a4_u4_qp_009"
+  },
+  {
+    "contentId": "a4_vocab_mjolk",
+    "audioType": "question_prompt",
+    "sourceText": "en mjölk",
+    "audioRef": "sv_a4_u4_qp_010"
+  },
+  {
+    "contentId": "a4_vocab_juice",
+    "audioType": "question_prompt",
+    "sourceText": "en juice",
+    "audioRef": "sv_a4_u4_qp_011"
+  },
+  {
+    "contentId": "a4_vocab_ost",
+    "audioType": "question_prompt",
+    "sourceText": "en ost",
+    "audioRef": "sv_a4_u4_qp_012"
+  },
+  {
+    "contentId": "a4_vocab_billig",
+    "audioType": "question_prompt",
+    "sourceText": "billig",
+    "audioRef": "sv_a4_u4_qp_013"
+  },
+  {
+    "contentId": "a4_vocab_dyr",
+    "audioType": "question_prompt",
+    "sourceText": "dyr",
+    "audioRef": "sv_a4_u4_qp_014"
+  },
+  {
+    "contentId": "a4_vocab_farsk",
+    "audioType": "question_prompt",
+    "sourceText": "färsk",
+    "audioRef": "sv_a4_u4_qp_015"
+  },
+  {
+    "contentId": "a4_vocab_god",
+    "audioType": "question_prompt",
+    "sourceText": "god",
+    "audioRef": "sv_a4_u4_qp_016"
+  },
+  {
+    "contentId": "a4_vocab_sot",
+    "audioType": "question_prompt",
+    "sourceText": "söt",
+    "audioRef": "sv_a4_u4_qp_017"
+  },
+  {
+    "contentId": "a4_vocab_salt",
+    "audioType": "question_prompt",
+    "sourceText": "salt",
+    "audioRef": "sv_a4_u4_qp_018"
+  },
+  {
+    "contentId": "a4_phrase_vad_kostar_det",
+    "audioType": "question_prompt",
+    "sourceText": "Vad kostar det?",
+    "audioRef": "sv_a4_u4_qp_019"
+  },
+  {
+    "contentId": "a4_phrase_det_kostar_tjugofem_kronor",
+    "audioType": "question_prompt",
+    "sourceText": "Det kostar tjugofem kronor.",
+    "audioRef": "sv_a4_u4_qp_020"
+  },
+  {
+    "contentId": "a4_phrase_kan_jag_betala_med_kort",
+    "audioType": "question_prompt",
+    "sourceText": "Kan jag betala med kort?",
+    "audioRef": "sv_a4_u4_qp_021"
+  },
+  {
+    "contentId": "a4_phrase_jag_vill_kopa_det_har",
+    "audioType": "question_prompt",
+    "sourceText": "Jag vill köpa det här.",
+    "audioRef": "sv_a4_u4_qp_022"
+  },
+  {
+    "contentId": "a4_phrase_ursakta_var_finns_brodet",
+    "audioType": "question_prompt",
+    "sourceText": "Ursäkta, var finns brödet?",
+    "audioRef": "sv_a4_u4_qp_023"
+  },
+  {
+    "contentId": "a4_phrase_jag_vill_ha_en_kaffe",
+    "audioType": "question_prompt",
+    "sourceText": "Jag vill ha en kaffe.",
+    "audioRef": "sv_a4_u4_qp_024"
+  },
+  {
+    "contentId": "a4_phrase_vill_du_ha_en_pase",
+    "audioType": "question_prompt",
+    "sourceText": "Vill du ha en påse?",
+    "audioRef": "sv_a4_u4_qp_025"
+  },
+  {
+    "contentId": "a4_phrase_har_du_kvitto",
+    "audioType": "question_prompt",
+    "sourceText": "Har du kvitto?",
+    "audioRef": "sv_a4_u4_qp_026"
+  },
+  {
+    "contentId": "a4_dialog_ursakta_var_finns_brodet",
+    "audioType": "question_prompt",
+    "sourceText": "Ursäkta, var finns brödet?",
+    "audioRef": "sv_a4_u4_qp_027"
+  },
+  {
+    "contentId": "a4_dialog_det_ar_i_gang_tre_till_hoger",
+    "audioType": "question_prompt",
+    "sourceText": "Det är i gång tre, till höger.",
+    "audioRef": "sv_a4_u4_qp_028"
+  },
+  {
+    "contentId": "a4_dialog_vad_kostar_mjolken",
+    "audioType": "question_prompt",
+    "sourceText": "Vad kostar mjölken?",
+    "audioRef": "sv_a4_u4_qp_029"
+  },
+  {
+    "contentId": "a4_dialog_den_kostar_tjugofem_kronor",
+    "audioType": "question_prompt",
+    "sourceText": "Den kostar tjugofem kronor.",
+    "audioRef": "sv_a4_u4_qp_030"
+  },
+  {
+    "contentId": "a4_dialog_kan_jag_betala_med_kort",
+    "audioType": "question_prompt",
+    "sourceText": "Kan jag betala med kort?",
+    "audioRef": "sv_a4_u4_qp_031"
+  },
+  {
+    "contentId": "a4_dialog_ja_sjalvklart",
+    "audioType": "question_prompt",
+    "sourceText": "Ja, självklart.",
+    "audioRef": "sv_a4_u4_qp_032"
+  },
+  {
+    "contentId": "a4_dialog_hej_vad_vill_du_ha",
+    "audioType": "question_prompt",
+    "sourceText": "Hej! Vad vill du ha?",
+    "audioRef": "sv_a4_u4_qp_033"
+  },
+  {
+    "contentId": "a4_dialog_jag_vill_ha_en_kaffe_och_en_smorgas_tack",
+    "audioType": "question_prompt",
+    "sourceText": "Jag vill ha en kaffe och en smörgås, tack.",
+    "audioRef": "sv_a4_u4_qp_034"
+  },
+  {
+    "contentId": "a4_dialog_stor_eller_liten_kaffe",
+    "audioType": "question_prompt",
+    "sourceText": "Stor eller liten kaffe?",
+    "audioRef": "sv_a4_u4_qp_035"
+  },
+  {
+    "contentId": "a4_dialog_en_liten_kaffe_tack",
+    "audioType": "question_prompt",
+    "sourceText": "En liten kaffe, tack.",
+    "audioRef": "sv_a4_u4_qp_036"
+  },
+  {
+    "contentId": "a4_dialog_vad_kostar_det",
+    "audioType": "question_prompt",
+    "sourceText": "Vad kostar det?",
+    "audioRef": "sv_a4_u4_qp_037"
+  },
+  {
+    "contentId": "a4_dialog_det_kostar_fyrtio_kronor_tillsammans",
+    "audioType": "question_prompt",
+    "sourceText": "Det kostar fyrtio kronor tillsammans.",
+    "audioRef": "sv_a4_u4_qp_038"
+  },
+  {
+    "contentId": "a4_noun_brod_group",
+    "audioType": "morphology",
+    "audioRefs": ["sv_a4_u4_adv_001","sv_a4_u4_adv_002","sv_a4_u4_adv_003","sv_a4_u4_adv_004","sv_a4_u4_adv_005"]
+  },
+  {
+    "contentId": "a4_noun_agg_group",
+    "audioType": "morphology",
+    "audioRefs": ["sv_a4_u4_adv_006","sv_a4_u4_adv_007","sv_a4_u4_adv_008","sv_a4_u4_adv_009","sv_a4_u4_adv_010"]
+  },
+  {
+    "contentId": "a4_noun_fisk_group",
+    "audioType": "morphology",
+    "audioRefs": ["sv_a4_u4_adv_011","sv_a4_u4_adv_012","sv_a4_u4_adv_013","sv_a4_u4_adv_014","sv_a4_u4_adv_015"]
+  },
+  {
+    "contentId": "a4_noun_affar_group",
+    "audioType": "morphology",
+    "audioRefs": ["sv_a4_u4_adv_016","sv_a4_u4_adv_017","sv_a4_u4_adv_018","sv_a4_u4_adv_019","sv_a4_u4_adv_020"]
+  },
+  {
+    "contentId": "a4_noun_kvitto_group",
+    "audioType": "morphology",
+    "audioRefs": ["sv_a4_u4_adv_021","sv_a4_u4_adv_022","sv_a4_u4_adv_023","sv_a4_u4_adv_024","sv_a4_u4_adv_025"]
+  },
+  {
+    "contentId": "a4_noun_pase_group",
+    "audioType": "morphology",
+    "audioRefs": ["sv_a4_u4_adv_026","sv_a4_u4_adv_027","sv_a4_u4_adv_028","sv_a4_u4_adv_029","sv_a4_u4_adv_030"]
+  },
+  {
+    "contentId": "a4_adj_billig_group",
+    "audioType": "morphology",
+    "audioRefs": ["sv_a4_u4_adv_031","sv_a4_u4_adv_032","sv_a4_u4_adv_033"]
+  },
+  {
+    "contentId": "a4_adj_dyr_group",
+    "audioType": "morphology",
+    "audioRefs": ["sv_a4_u4_adv_034","sv_a4_u4_adv_035","sv_a4_u4_adv_036"]
+  },
+  {
+    "contentId": "a4_adj_farsk_group",
+    "audioType": "morphology",
+    "audioRefs": ["sv_a4_u4_adv_037","sv_a4_u4_adv_038","sv_a4_u4_adv_039"]
+  },
+  {
+    "contentId": "a4_adj_god_group",
+    "audioType": "morphology",
+    "audioRefs": ["sv_a4_u4_adv_040","sv_a4_u4_adv_041","sv_a4_u4_adv_042"]
+  },
+  {
+    "contentId": "a4_adj_sot_group",
+    "audioType": "morphology",
+    "audioRefs": ["sv_a4_u4_adv_043","sv_a4_u4_adv_044","sv_a4_u4_adv_045"]
+  },
+  {
+    "contentId": "a4_adj_salt_group",
+    "audioType": "morphology",
+    "audioRefs": ["sv_a4_u4_adv_046","sv_a4_u4_adv_047","sv_a4_u4_adv_048"]
+  },
+  {
+    "contentId": "a4_verb_kopa_group",
+    "audioType": "morphology",
+    "audioRefs": ["sv_a4_u4_adv_049","sv_a4_u4_adv_050","sv_a4_u4_adv_051","sv_a4_u4_adv_052"]
+  },
+  {
+    "contentId": "a4_verb_betala_group",
+    "audioType": "morphology",
+    "audioRefs": ["sv_a4_u4_adv_053","sv_a4_u4_adv_054","sv_a4_u4_adv_055","sv_a4_u4_adv_056"]
+  },
+  {
+    "contentId": "a4_verb_kosta_group",
+    "audioType": "morphology",
+    "audioRefs": ["sv_a4_u4_adv_057","sv_a4_u4_adv_058","sv_a4_u4_adv_059","sv_a4_u4_adv_060"]
+  },
+  {
+    "contentId": "a4_example_hej_vad_vill_du_ha",
+    "audioType": "example",
+    "sourceText": "Hej! Vad vill du ha?",
+    "audioRef": "sv_a4_u4_adv_061"
+  },
+  {
+    "contentId": "a4_example_jag_vill_ha_brod_och_mjolk",
+    "audioType": "example",
+    "sourceText": "Jag vill ha bröd och mjölk.",
+    "audioRef": "sv_a4_u4_adv_062"
+  },
+  {
+    "contentId": "a4_example_hur_mycket_kostar_det",
+    "audioType": "example",
+    "sourceText": "Hur mycket kostar det?",
+    "audioRef": "sv_a4_u4_adv_063"
+  },
+  {
+    "contentId": "a4_example_det_kostar_femtio_kronor",
+    "audioType": "example",
+    "sourceText": "Det kostar femtio kronor.",
+    "audioRef": "sv_a4_u4_adv_064"
+  },
+  {
+    "contentId": "a4_example_vill_du_ha_en_pase",
+    "audioType": "example",
+    "sourceText": "Vill du ha en påse?",
+    "audioRef": "sv_a4_u4_adv_065"
+  },
+  {
+    "contentId": "a4_example_ja_tack",
+    "audioType": "example",
+    "sourceText": "Ja, tack.",
+    "audioRef": "sv_a4_u4_adv_066"
+  },
+  {
+    "contentId": "a4_example_har_du_kvitto",
+    "audioType": "example",
+    "sourceText": "Har du kvitto?",
+    "audioRef": "sv_a4_u4_adv_067"
+  }
+]
