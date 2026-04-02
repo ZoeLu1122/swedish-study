@@ -228,7 +228,7 @@
   {
     "contentId": "a3_dialog_line_002_06",
     "audioType": "dialogue_line_group",
-    "sourceText": "Nej, jag bor med min man och vår dotter.",
+    "sourceText": "Nej, jag bor med min fru och vår dotter.",
     "audioRef": "sv_a3_u3_dialog_002_06"
   },
   {
@@ -466,9 +466,9 @@
     "audioRef": "sv_a3_u3_qp_039"
   },
   {
-    "contentId": "a3_dialog_nej_jag_bor_med_min_man_och_var_dotter",
+    "contentId": "a3_dialog_nej_jag_bor_med_min_fru_och_var_dotter",
     "audioType": "question_prompt",
-    "sourceText": "Nej, jag bor med min man och vår dotter.",
+    "sourceText": "Nej, jag bor med min fru och vår dotter.",
     "audioRef": "sv_a3_u3_qp_040"
   },
   {

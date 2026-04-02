@@ -305,9 +305,9 @@
     },
     {
       "audioId": "sv_a3_u3_dialog_002_06",
-      "sourceText": "Nej, jag bor med min man och vår dotter.",
-      "fileName": "a1_u3_dialog_002_line_06_nej_jag_bor_med_min_man_och_var_dotter_v1.mp3",
-      "filePath": "/audio/sv/a3/unit3/dialogue/a1_u3_dialog_002_line_06_nej_jag_bor_med_min_man_och_var_dotter_v1.mp3",
+      "sourceText": "Nej, jag bor med min fru och vår dotter.",
+      "fileName": "a1_u3_dialog_002_line_06_nej_jag_bor_med_min_fru_och_var_dotter_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/dialogue/a1_u3_dialog_002_line_06_nej_jag_bor_med_min_fru_och_var_dotter_v1.mp3",
       "status": "ready"
     },
     {
@@ -585,9 +585,9 @@
     },
     {
       "audioId": "sv_a3_u3_qp_040",
-      "sourceText": "Nej, jag bor med min man och vår dotter.",
-      "fileName": "a1_u3_qp_040_nej_jag_bor_med_min_man_och_var_dotter_v1.mp3",
-      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_040_nej_jag_bor_med_min_man_och_var_dotter_v1.mp3",
+      "sourceText": "Nej, jag bor med min fru och vår dotter.",
+      "fileName": "a1_u3_qp_040_nej_jag_bor_med_min_fru_och_var_dotter_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_qp_040_nej_jag_bor_med_min_fru_och_var_dotter_v1.mp3",
       "status": "ready"
     },
     {
