@@ -535,6 +535,26 @@ window.dialogues={
   1:['Hej! Vad heter du och vad är ditt personnummer?','Jag heter Li Wei. Min adress är Storgatan 12 och mitt nummer är 850415-1234.','Bra. Bor du i hus eller lägenhet?','Jag bor i en lägenhet. Lägenheten har tre rum.','Vilket land kommer du från?','Jag kommer från Kina. Jag lär mig svenska. Skolan är bra och läraren är snäll.'],
   2:['Hej, är du ny granne här?','Ja! Jag heter Mei. Jag har en man, en son och en dotter.','Vad jobbar din man med?','Han arbetar på ett kontor. Jobbet är bra men staden är stor och bussen tar lång tid.','Har du en nyckel till huset?','Ja, jag har nyckeln. Mitt rum har ett eget kök.'],
 };
+
+window.dialogueContentIds = {
+  1: [
+    'b1_dialog_line_001_01',
+    'b1_dialog_line_001_02',
+    'b1_dialog_line_001_03',
+    'b1_dialog_line_001_04',
+    'b1_dialog_line_001_05',
+    'b1_dialog_line_001_06'
+  ],
+  2: [
+    'b1_dialog_line_002_01',
+    'b1_dialog_line_002_02',
+    'b1_dialog_line_002_03',
+    'b1_dialog_line_002_04',
+    'b1_dialog_line_002_05',
+    'b1_dialog_line_002_06'
+  ]
+};
+
 function wrapDialogueWords(html){
   return html.replace(/(<[^>]+>)|([^<]+)/g,(match,tag,text)=>{
     if(tag)return tag;
