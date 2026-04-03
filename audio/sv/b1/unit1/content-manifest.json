@@ -914,5 +914,167 @@
       "sv_b1_u1_vocab_085_ett_kontor",
       "sv_b1_u1_vocab_086_kontoret"
     ]
+  },
+  {
+    "contentId": "b1_vocab_foralder",
+    "audioType": "question_prompt",
+    "sourceText": "en förälder",
+    "audioRef": "sv_b1_u1_vocab_019_en_foralder"
+  },
+  {
+    "contentId": "b1_vocab_nyckel",
+    "audioType": "question_prompt",
+    "sourceText": "en nyckel",
+    "audioRef": "sv_b1_u1_vocab_037_en_nyckel"
+  },
+  {
+    "contentId": "b1_vocab_telefon",
+    "audioType": "question_prompt",
+    "sourceText": "en telefon",
+    "audioRef": "sv_b1_u1_vocab_040_en_telefon"
+  },
+  {
+    "contentId": "b1_vocab_stad",
+    "audioType": "question_prompt",
+    "sourceText": "en stad",
+    "audioRef": "sv_b1_u1_vocab_067_en_stad"
+  },
+  {
+    "contentId": "b1_vocab_buss",
+    "audioType": "question_prompt",
+    "sourceText": "en buss",
+    "audioRef": "sv_b1_u1_vocab_064_en_buss"
+  },
+  {
+    "contentId": "b1_vocab_kontor",
+    "audioType": "question_prompt",
+    "sourceText": "ett kontor",
+    "audioRef": "sv_b1_u1_vocab_085_ett_kontor"
+  },
+  {
+    "contentId": "b1_vocab_jobb",
+    "audioType": "question_prompt",
+    "sourceText": "ett jobb",
+    "audioRef": "sv_b1_u1_vocab_082_ett_jobb"
+  },
+  {
+    "contentId": "b1_vocab_land",
+    "audioType": "question_prompt",
+    "sourceText": "ett land",
+    "audioRef": "sv_b1_u1_vocab_073_ett_land"
+  },
+  {
+    "contentId": "b1_vocab_sprak",
+    "audioType": "question_prompt",
+    "sourceText": "ett språk",
+    "audioRef": "sv_b1_u1_vocab_076_ett_sprak"
+  },
+  {
+    "contentId": "b1_vocab_vecka",
+    "audioType": "question_prompt",
+    "sourceText": "en vecka",
+    "audioRef": "sv_b1_u1_vocab_094_en_vecka"
+  },
+  {
+    "contentId": "b1_vocab_tid",
+    "audioType": "question_prompt",
+    "sourceText": "en tid",
+    "audioRef": "sv_b1_u1_vocab_100_en_tid"
+  },
+  {
+    "contentId": "b1_phrase_en_nyckel",
+    "audioType": "question_prompt",
+    "sourceText": "en nyckel",
+    "audioRef": "sv_b1_u1_vocab_037_en_nyckel"
+  },
+  {
+    "contentId": "b1_phrase_en_telefon",
+    "audioType": "question_prompt",
+    "sourceText": "en telefon",
+    "audioRef": "sv_b1_u1_vocab_040_en_telefon"
+  },
+  {
+    "contentId": "b1_phrase_en_buss",
+    "audioType": "question_prompt",
+    "sourceText": "en buss",
+    "audioRef": "sv_b1_u1_vocab_064_en_buss"
+  },
+  {
+    "contentId": "b1_phrase_ett_kontor",
+    "audioType": "question_prompt",
+    "sourceText": "ett kontor",
+    "audioRef": "sv_b1_u1_vocab_085_ett_kontor"
+  },
+  {
+    "contentId": "b1_phrase_ett_jobb",
+    "audioType": "question_prompt",
+    "sourceText": "ett jobb",
+    "audioRef": "sv_b1_u1_vocab_082_ett_jobb"
+  },
+  {
+    "contentId": "b1_phrase_ett_sprak",
+    "audioType": "question_prompt",
+    "sourceText": "ett språk",
+    "audioRef": "sv_b1_u1_vocab_076_ett_sprak"
+  },
+  {
+    "contentId": "b1_phrase_en_vecka",
+    "audioType": "question_prompt",
+    "sourceText": "en vecka",
+    "audioRef": "sv_b1_u1_vocab_094_en_vecka"
+  },
+  {
+    "contentId": "b1_phrase_han_arbetar_pa_ett_kontor",
+    "audioType": "question_prompt",
+    "sourceText": "Han arbetar på ett kontor.",
+    "audioRef": "sv_b1_u1_qp_019_han_arbetar_pa_ett_kontor"
+  },
+  {
+    "contentId": "b1_phrase_jobbet_ar_bra",
+    "audioType": "question_prompt",
+    "sourceText": "Jobbet är bra.",
+    "audioRef": "sv_b1_u1_qp_020_jobbet_ar_bra"
+  },
+  {
+    "contentId": "b1_phrase_vilket_sprak_talar_du",
+    "audioType": "question_prompt",
+    "sourceText": "Vilket språk talar du?",
+    "audioRef": "sv_b1_u1_qp_021_vilket_sprak_talar_du"
+  },
+  {
+    "contentId": "b1_phrase_har_du_en_nyckel",
+    "audioType": "question_prompt",
+    "sourceText": "Har du en nyckel?",
+    "audioRef": "sv_b1_u1_qp_022_har_du_en_nyckel"
+  },
+  {
+    "contentId": "b1_phrase_ja_jag_har_nyckeln",
+    "audioType": "question_prompt",
+    "sourceText": "Ja, jag har nyckeln.",
+    "audioRef": "sv_b1_u1_qp_023_ja_jag_har_nyckeln"
+  },
+  {
+    "contentId": "b1_dialog_vad_jobbar_din_familj_med",
+    "audioType": "question_prompt",
+    "sourceText": "Vad jobbar din familj med?",
+    "audioRef": "sv_b1_u1_qp_024_vad_jobbar_din_familj_med"
+  },
+  {
+    "contentId": "b1_dialog_jobbet_ar_bra_men_staden_ar_stor_och_bussen_tar_lang_tid",
+    "audioType": "question_prompt",
+    "sourceText": "Jobbet är bra men staden är stor och bussen tar lång tid.",
+    "audioRef": "sv_b1_u1_qp_025_jobbet_ar_bra_men_staden_ar_stor_och_bussen_tar_lang_tid"
+  },
+  {
+    "contentId": "b1_dialog_hon_talar_ett_sprak_hemma",
+    "audioType": "question_prompt",
+    "sourceText": "Hon talar ett språk hemma och ett annat på jobbet.",
+    "audioRef": "sv_b1_u1_qp_026_hon_talar_ett_sprak_hemma_och_ett_annat_pa_jobbet"
+  },
+  {
+    "contentId": "b1_dialog_telefonen_ligger_pa_bordet",
+    "audioType": "question_prompt",
+    "sourceText": "Telefonen ligger på bordet.",
+    "audioRef": "sv_b1_u1_qp_027_telefonen_ligger_pa_bordet"
   }
 ]
