@@ -104,9 +104,29 @@ nav{
 .vocab-grid > *,
 .flip-grid > * { min-width: 0; }
 .vc-headword-sv,
-.vc-row-sv { overflow-wrap: break-word; min-width: 0; }
-/* 标签列宽缩至 64px，减少标签与词形之间的视觉间距 */
-.vc-row-label { width: 64px !important; min-width: 64px !important; }
+.vc-row-sv {
+  min-width: 0;
+  overflow-wrap: normal !important;
+  word-break: keep-all !important;
+  white-space: normal;
+}
+
+/* 统一缩小标签列与词形间距，避免长词被挤成字母换行 */
+.vc-form-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px !important;
+}
+
+.vc-row-label {
+  width: 56px !important;
+  min-width: 56px !important;
+  flex-shrink: 0;
+}
+
+.vc-row-sv {
+  flex: 1 1 auto;
+}
 
 /* ===================================================
    NAV HOME BUTTON  (由 common.js 自动注入)
