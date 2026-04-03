@@ -419,7 +419,7 @@ function renderNounCard(v){
   return `<div class="vocab-card ${v.g}">
     <div class="vc-top">${gBadge}<span class="vc-cat-badge">${catLabel[v.cat]}</span></div>
     <div class="vc-headword">
-      <span class="vc-headword-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.sv}" title="点击发音">${v.g} ${v.sv}</span>
+      <span class="vc-headword-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.g} ${v.sv}" title="点击发音">${v.g} ${v.sv}</span>
       <span class="vc-headword-py">${v.py}</span>
     </div>
     <div class="vc-form-row"><div class="vc-form-top"><span class="vc-row-label">定冠词</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.def}">${defHL}</span></div><span class="vc-row-py">${v.defPy}</span></div>
@@ -436,7 +436,7 @@ function makeFlipCard(v){
         <div class="flip-type">${gLabel} · ${catLabel[v.cat]}</div>
       </div>
       <div class="flip-back">
-        <div class="flip-sv speak-word" onclick="speakWord(this.dataset.word);event.stopPropagation();" data-word="${v.sv}">${v.g} ${v.sv}</div>
+        <div class="flip-sv speak-word" onclick="speakWord(this.dataset.word);event.stopPropagation();" data-word="${v.g} ${v.sv}">${v.g} ${v.sv}</div>
         <div class="flip-forms">${flipForms(v)}</div>
       </div>
     </div>

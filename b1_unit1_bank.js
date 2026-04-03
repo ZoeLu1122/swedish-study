@@ -127,8 +127,8 @@ window.UNIT_BANK_B1 = {
     },
     // ===== 结构专项 =====
     { id: 'b1_struct_en_buss_bussen', kind: 'morphology', source: 'pattern', lemma: 'en buss bussen', prompt: { zh: '公交车（单数不定式 → 单数定式）' }, template: '{{en}} buss → buss{{en}}' },
-    { id: 'b1_struct_ett_jobb_jobbet', kind: 'morphology', source: 'pattern', lemma: 'ett jobb jobbet', prompt: { zh: '工作（单数不定式 → 单数定式）' }, template: '{{ett}} jobb → jobb{{et}}' },
+    { id: 'b1_struct_ett_jobb_jobbet', kind: 'morphology', source: 'pattern', lemma: 'ett jobb jobbet', prompt: { zh: '工作（单数不定式 → 单数定式）' }, template: '{{ett jobb}} → {{jobbet}}' },
     { id: 'b1_struct_en_telefon_telefonen', kind: 'morphology', source: 'pattern', lemma: 'en telefon telefonen', prompt: { zh: '电话（单数不定式 → 单数定式）' }, template: '{{en}} telefon → telefon{{en}}' },
-    { id: 'b1_struct_ett_kontor_kontoret', kind: 'morphology', source: 'pattern', lemma: 'ett kontor kontoret', prompt: { zh: '办公室（单数不定式 → 单数定式）' }, template: '{{ett}} kontor → kontor{{et}}' }
+    { id: 'b1_struct_ett_kontor_kontoret', kind: 'morphology', source: 'pattern', lemma: 'ett kontor kontoret', prompt: { zh: '办公室（单数不定式 → 单数定式）' }, template: '{{ett kontor}} → {{kontoret}}' }
   ]
 };
