@@ -369,22 +369,47 @@
   function tokenizeTemplate(template) {
     const tokens = [];
     template = expandTemplateBlanks(template || '');
-    const re = /{{(.*?)}}|([^\s]+)/g;
+
+    const pushTextChunk = (chunk) => {
+      if (!chunk) return;
+      const parts = String(chunk).match(/\s+|[^\s]+/g) || [];
+      parts.forEach(part => {
+        if (!part) return;
+        if (/^\s+$/u.test(part)) return;
+
+        if (/^[.,!?;:·→]+$/u.test(part)) {
+          tokens.push({ type: 'punct', value: part });
+          return;
+        }
+
+        const m = part.match(/^(.+?)([.,!?;:]+)$/u);
+        if (m) {
+          if (m[1]) tokens.push({ type: 'word', value: m[1] });
+          if (m[2]) tokens.push({ type: 'punct', value: m[2] });
+          return;
+        }
+
+        tokens.push({ type: 'word', value: part });
+      });
+    };
+
+    const re = /{{(.*?)}}/g;
+    let lastIndex = 0;
     let match;
 
-    while ((match = re.exec(template || ''))) {
-      if (match[1] !== undefined) {
-        tokens.push({
-          type: 'blank',
-          value: match[1].trim()
-        });
-      } else if (match[2] !== undefined) {
-        tokens.push({
-          type: /^[.,!?;:·]$/.test(match[2]) ? 'punct' : 'word',
-          value: match[2]
-        });
-      }
+    while ((match = re.exec(template)) !== null) {
+      const before = template.slice(lastIndex, match.index);
+      pushTextChunk(before);
+
+      tokens.push({
+        type: 'blank',
+        value: String(match[1] || '').trim()
+      });
+
+      lastIndex = re.lastIndex;
     }
+
+    pushTextChunk(template.slice(lastIndex));
     return tokens;
   }
 
