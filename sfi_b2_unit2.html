@@ -600,6 +600,25 @@ window.dialogues={
   1:['Hej! Vad heter du?','Jag heter Wei. Jag kommer från Kina och bor nu i Stockholm.','Vad arbetar du med?','Jag studerar svenska nu. Tidigare jobbade jag som kock i Kina.','Talar du något annat språk?','Ja, jag talar kinesiska och lite engelska. Jag förstår inte så mycket svenska än, men jag lär mig varje dag.'],
   2:['Vad gör du på morgonen?','Jag går upp klockan sex, äter frukost och sedan tar jag bussen till skolan.','Handlar du mat varje dag?','Nej, jag handlar två gånger i veckan. Jag köper oftast mat på ICA som finns nära mitt hus.','Vet du om det finns en bra restaurang här?','Ja! Det finns en kinesisk restaurang på gatan här. Jag tror att de lagar mycket god mat.'],
 };
+window.dialogueContentIds={
+  1:[
+    'b2_dialog_line_001_01',
+    'b2_dialog_line_001_02',
+    'b2_dialog_line_001_03',
+    'b2_dialog_line_001_04',
+    'b2_dialog_line_001_05',
+    'b2_dialog_line_001_06'
+  ],
+  2:[
+    'b2_dialog_line_002_01',
+    'b2_dialog_line_002_02',
+    'b2_dialog_line_002_03',
+    'b2_dialog_line_002_04',
+    'b2_dialog_line_002_05',
+    'b2_dialog_line_002_06'
+  ]
+};
+
 function wrapDialogueWords(html){
   return html.replace(/(<[^>]+>)|([^<]+)/g,(match,tag,text)=>{
     if(tag)return tag;
