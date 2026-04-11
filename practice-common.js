@@ -434,6 +434,11 @@
     return question.template || question.template_basic || question.template_adv || '';
   }
 
+  function renderFilledTemplateText(question) {
+    const template = getDisplayTemplate(question);
+    return String(template || '').replace(/{{(.*?)}}/g, '$1').replace(/\s+/g, ' ').trim();
+  }
+
   function isMorphologyQuestion(q) {
     const schemes = ['noun_forms', 'verb_forms', 'adjective_forms'];
     return schemes.includes(q.labelScheme) || q.type === 'noun_paradigm';
@@ -588,7 +593,10 @@
       if (!item && (q.lemma || q.concept)) {
         item = SfiCore.manifest.lookupBySourceText(q.lemma || q.concept, 'vocab');
       }
-const fallbackText = (item && item.sourceText) || q.lemma || q.audio || getQuestionAnswers(q).join(' ');
+const fallbackText = (item && item.sourceText) ||
+        (q.kind === 'dialog_fill' || q.kind === 'phrase_fill' ? renderFilledTemplateText(q) : '') ||
+        (q.kind === 'vocab_spelling' ? renderFilledTemplateText(q) : '') ||
+        q.lemma || q.audio || getQuestionAnswers(q).join(' ');
 
       if (!item) { fallback(fallbackText); return; }
 
