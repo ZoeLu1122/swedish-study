@@ -141,6 +141,11 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "/ en",
+    "audioRef": "sv_a1_u1_vocab_028_ett_en_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "två",
     "audioRef": "sv_a1_u1_vocab_029_tva_v1"
   },
@@ -401,7 +406,17 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "mamma",
+    "audioRef": "sv_a1_u3_vocab_001_en_mamma_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "en pappa",
+    "audioRef": "sv_a1_u3_vocab_002_en_pappa_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "pappa",
     "audioRef": "sv_a1_u3_vocab_002_en_pappa_v1"
   },
   {
@@ -411,7 +426,17 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "syster",
+    "audioRef": "sv_a1_u3_vocab_003_en_syster_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "en bror",
+    "audioRef": "sv_a1_u3_vocab_004_en_bror_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "bror",
     "audioRef": "sv_a1_u3_vocab_004_en_bror_v1"
   },
   {
@@ -421,7 +446,17 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "barn",
+    "audioRef": "sv_a1_u3_vocab_005_ett_barn_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "en familj",
+    "audioRef": "sv_a1_u3_vocab_006_en_familj_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "familj",
     "audioRef": "sv_a1_u3_vocab_006_en_familj_v1"
   },
   {
@@ -431,7 +466,17 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "fru",
+    "audioRef": "sv_a1_u3_vocab_007_en_fru_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "en man",
+    "audioRef": "sv_a1_u3_vocab_008_en_man_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "man",
     "audioRef": "sv_a1_u3_vocab_008_en_man_v1"
   },
   {
@@ -441,7 +486,17 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "dotter",
+    "audioRef": "sv_a1_u3_vocab_009_en_dotter_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "en son",
+    "audioRef": "sv_a1_u3_vocab_010_en_son_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "son",
     "audioRef": "sv_a1_u3_vocab_010_en_son_v1"
   },
   {
@@ -451,7 +506,17 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "hus",
+    "audioRef": "sv_a1_u3_vocab_011_ett_hus_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "en lägenhet",
+    "audioRef": "sv_a1_u3_vocab_012_en_lagenhet_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "lägenhet",
     "audioRef": "sv_a1_u3_vocab_012_en_lagenhet_v1"
   },
   {
@@ -461,7 +526,17 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "rum",
+    "audioRef": "sv_a1_u3_vocab_013_ett_rum_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "ett kök",
+    "audioRef": "sv_a1_u3_vocab_014_ett_kok_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "kök",
     "audioRef": "sv_a1_u3_vocab_014_ett_kok_v1"
   },
   {
@@ -471,7 +546,17 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "badrum",
+    "audioRef": "sv_a1_u3_vocab_015_ett_badrum_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "ett sovrum",
+    "audioRef": "sv_a1_u3_vocab_016_ett_sovrum_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "sovrum",
     "audioRef": "sv_a1_u3_vocab_016_ett_sovrum_v1"
   },
   {
@@ -481,7 +566,17 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "vardagsrum",
+    "audioRef": "sv_a1_u3_vocab_017_ett_vardagsrum_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "en trädgård",
+    "audioRef": "sv_a1_u3_vocab_018_en_tradgard_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "trädgård",
     "audioRef": "sv_a1_u3_vocab_018_en_tradgard_v1"
   },
   {
@@ -491,7 +586,17 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "adress",
+    "audioRef": "sv_a1_u3_vocab_019_en_adress_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "en granne",
+    "audioRef": "sv_a1_u3_vocab_020_en_granne_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "granne",
     "audioRef": "sv_a1_u3_vocab_020_en_granne_v1"
   },
   {
@@ -561,7 +666,17 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "bröd",
+    "audioRef": "sv_a1_u4_vocab_001_ett_brod_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "ett ägg",
+    "audioRef": "sv_a1_u4_vocab_002_ett_agg_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "ägg",
     "audioRef": "sv_a1_u4_vocab_002_ett_agg_v1"
   },
   {
@@ -571,7 +686,17 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "kött",
+    "audioRef": "sv_a1_u4_vocab_003_ett_kott_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "en fisk",
+    "audioRef": "sv_a1_u4_vocab_004_en_fisk_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "fisk",
     "audioRef": "sv_a1_u4_vocab_004_en_fisk_v1"
   },
   {
@@ -586,12 +711,27 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "frukt",
+    "audioRef": "sv_a1_u4_vocab_006_en_frukt_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "ett ris",
     "audioRef": "sv_a1_u4_vocab_007_ett_ris_v1"
   },
   {
     "audioType": "vocab",
+    "sourceText": "ris",
+    "audioRef": "sv_a1_u4_vocab_007_ett_ris_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "en ost",
+    "audioRef": "sv_a1_u4_vocab_008_en_ost_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "ost",
     "audioRef": "sv_a1_u4_vocab_008_en_ost_v1"
   },
   {
@@ -611,7 +751,17 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "vatten",
+    "audioRef": "sv_a1_u4_vocab_011_ett_vatten_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "ett kaffe",
+    "audioRef": "sv_a1_u4_vocab_012_ett_kaffe_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "kaffe",
     "audioRef": "sv_a1_u4_vocab_012_ett_kaffe_v1"
   },
   {
@@ -621,12 +771,27 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "te",
+    "audioRef": "sv_a1_u4_vocab_013_ett_te_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "en juice",
     "audioRef": "sv_a1_u4_vocab_014_en_juice_v1"
   },
   {
     "audioType": "vocab",
+    "sourceText": "juice",
+    "audioRef": "sv_a1_u4_vocab_014_en_juice_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "en mjölk",
+    "audioRef": "sv_a1_u4_vocab_015_en_mjolk_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "mjölk",
     "audioRef": "sv_a1_u4_vocab_015_en_mjolk_v1"
   },
   {
@@ -637,6 +802,11 @@
   {
     "audioType": "vocab",
     "sourceText": "en affär",
+    "audioRef": "sv_a1_u4_vocab_017_en_affar_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "affär",
     "audioRef": "sv_a1_u4_vocab_017_en_affar_v1"
   },
   {
@@ -652,6 +822,11 @@
   {
     "audioType": "vocab",
     "sourceText": "ett kvitto",
+    "audioRef": "sv_a1_u4_vocab_020_ett_kvitto_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "kvitto",
     "audioRef": "sv_a1_u4_vocab_020_ett_kvitto_v1"
   },
   {
@@ -672,6 +847,11 @@
   {
     "audioType": "vocab",
     "sourceText": "en påse",
+    "audioRef": "sv_a1_u4_vocab_025_en_pase_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "påse",
     "audioRef": "sv_a1_u4_vocab_025_en_pase_v1"
   },
   {
@@ -716,6 +896,11 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "blomma",
+    "audioRef": "sv_b1_u3_vocab_001_en_blomma_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "blomman",
     "audioRef": "sv_b1_u3_vocab_002_blomman_v1"
   },
@@ -732,6 +917,11 @@
   {
     "audioType": "vocab",
     "sourceText": "en gata",
+    "audioRef": "sv_b1_u1_vocab_070_en_gata_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "gata",
     "audioRef": "sv_b1_u1_vocab_070_en_gata_v1"
   },
   {
@@ -756,6 +946,11 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "flicka",
+    "audioRef": "sv_b1_u1_vocab_010_en_flicka_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "flickan",
     "audioRef": "sv_b1_u1_vocab_011_flickan_v1"
   },
@@ -772,6 +967,11 @@
   {
     "audioType": "vocab",
     "sourceText": "en vecka",
+    "audioRef": "sv_b1_u1_vocab_094_en_vecka_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "vecka",
     "audioRef": "sv_b1_u1_vocab_094_en_vecka_v1"
   },
   {
@@ -796,6 +996,11 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "skola",
+    "audioRef": "sv_b1_u1_vocab_058_en_skola_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "skolan",
     "audioRef": "sv_b1_u1_vocab_059_skolan_v1"
   },
@@ -812,6 +1017,11 @@
   {
     "audioType": "vocab",
     "sourceText": "en timme",
+    "audioRef": "sv_b1_u3_vocab_021_en_timme_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "timme",
     "audioRef": "sv_b1_u3_vocab_021_en_timme_v1"
   },
   {
@@ -836,6 +1046,11 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "kvinna",
+    "audioRef": "sv_b1_u1_vocab_004_en_kvinna_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "kvinnan",
     "audioRef": "sv_b1_u1_vocab_005_kvinnan_v1"
   },
@@ -852,6 +1067,11 @@
   {
     "audioType": "vocab",
     "sourceText": "en dag",
+    "audioRef": "sv_b1_u1_vocab_091_en_dag_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "dag",
     "audioRef": "sv_b1_u1_vocab_091_en_dag_v1"
   },
   {
@@ -876,6 +1096,11 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "pojke",
+    "audioRef": "sv_b1_u1_vocab_007_en_pojke_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "pojken",
     "audioRef": "sv_b1_u1_vocab_008_pojken_v1"
   },
@@ -896,6 +1121,11 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "bil",
+    "audioRef": "sv_b1_u3_vocab_037_en_bil_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "bilen",
     "audioRef": "sv_b1_u3_vocab_038_bilen_v1"
   },
@@ -912,6 +1142,11 @@
   {
     "audioType": "vocab",
     "sourceText": "en månad",
+    "audioRef": "sv_b1_u1_vocab_097_en_manad_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "månad",
     "audioRef": "sv_b1_u1_vocab_097_en_manad_v1"
   },
   {
@@ -951,6 +1186,11 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "nyckel",
+    "audioRef": "sv_b1_u1_vocab_037_en_nyckel_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "nyckeln",
     "audioRef": "sv_b1_u1_vocab_038_nyckeln_v1"
   },
@@ -967,6 +1207,11 @@
   {
     "audioType": "vocab",
     "sourceText": "en förälder",
+    "audioRef": "sv_b1_u1_vocab_019_en_foralder_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "förälder",
     "audioRef": "sv_b1_u1_vocab_019_en_foralder_v1"
   },
   {
@@ -991,6 +1236,11 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "stad",
+    "audioRef": "sv_b1_u1_vocab_067_en_stad_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "staden",
     "audioRef": "sv_b1_u1_vocab_068_staden_v1"
   },
@@ -1007,6 +1257,11 @@
   {
     "audioType": "vocab",
     "sourceText": "en hand",
+    "audioRef": "sv_b1_u3_vocab_061_en_hand_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "hand",
     "audioRef": "sv_b1_u3_vocab_061_en_hand_v1"
   },
   {
@@ -1061,6 +1316,11 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "medicin",
+    "audioRef": "sv_b1_u3_vocab_073_en_medicin_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "medicinen",
     "audioRef": "sv_b1_u3_vocab_074_medicinen_v1"
   },
@@ -1092,6 +1352,11 @@
   {
     "audioType": "vocab",
     "sourceText": "en natt",
+    "audioRef": "sv_b1_u3_vocab_081_en_natt_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "natt",
     "audioRef": "sv_b1_u3_vocab_081_en_natt_v1"
   },
   {
@@ -1131,6 +1396,11 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "äpple",
+    "audioRef": "sv_b1_u3_vocab_089_ett_apple_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "äpplet",
     "audioRef": "sv_b1_u3_vocab_090_applet_v1"
   },
@@ -1147,6 +1417,11 @@
   {
     "audioType": "vocab",
     "sourceText": "ett yrke",
+    "audioRef": "sv_b1_u3_vocab_093_ett_yrke_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "yrke",
     "audioRef": "sv_b1_u3_vocab_093_ett_yrke_v1"
   },
   {
@@ -1171,6 +1446,11 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "kontor",
+    "audioRef": "sv_b1_u1_vocab_085_ett_kontor_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "kontoret",
     "audioRef": "sv_b1_u1_vocab_086_kontoret_v1"
   },
@@ -1191,6 +1471,11 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "leende",
+    "audioRef": "sv_b1_u3_vocab_101_ett_leende_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "leendet",
     "audioRef": "sv_b1_u3_vocab_102_leendet_v1"
   },
@@ -1207,6 +1492,11 @@
   {
     "audioType": "vocab",
     "sourceText": "ett ögonblick",
+    "audioRef": "sv_b1_u3_vocab_105_ett_ogonblick_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "ögonblick",
     "audioRef": "sv_b1_u3_vocab_105_ett_ogonblick_v1"
   },
   {
@@ -1246,6 +1536,11 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "år",
+    "audioRef": "sv_b1_u1_vocab_103_ett_ar_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "året",
     "audioRef": "sv_b1_u1_vocab_104_aret_v1"
   },
@@ -1277,6 +1572,11 @@
   {
     "audioType": "vocab",
     "sourceText": "ett brev",
+    "audioRef": "sv_b1_u3_vocab_121_ett_brev_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "brev",
     "audioRef": "sv_b1_u3_vocab_121_ett_brev_v1"
   },
   {
@@ -1316,6 +1616,11 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "lärare",
+    "audioRef": "sv_b1_u1_vocab_028_en_larare_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "läraren",
     "audioRef": "sv_b1_u1_vocab_029_lararen_v1"
   },
@@ -1336,6 +1641,11 @@
   },
   {
     "audioType": "vocab",
+    "sourceText": "doktor",
+    "audioRef": "sv_b1_u3_vocab_133_en_doktor_v1"
+  },
+  {
+    "audioType": "vocab",
     "sourceText": "doktorn",
     "audioRef": "sv_b1_u3_vocab_134_doktorn_v1"
   },
@@ -1352,6 +1662,11 @@
   {
     "audioType": "vocab",
     "sourceText": "ett program",
+    "audioRef": "sv_b1_u3_vocab_137_ett_program_v1"
+  },
+  {
+    "audioType": "vocab",
+    "sourceText": "program",
     "audioRef": "sv_b1_u3_vocab_137_ett_program_v1"
   },
   {
