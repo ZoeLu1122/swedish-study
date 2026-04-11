@@ -469,183 +469,65 @@ const gbClass={'p1':'gb1','p2':'gb2','p3':'gb3','p4':'gb4','p5':'gb5'};
 
 const vocabData=[
   // 第一组 -or
-  {p:'p1',en:'en',sv:'blomma',   py:'布洛玛',      def:'blomman',     defPy:'布洛曼',      pl:'blommor',    plPy:'布洛摩尔',     plDef:'blommorna',    plDefPy:'布洛摩纳',   zh:'花'},
-  {p:'p1',en:'en',sv:'gata',     py:'嘎塔',        def:'gatan',       defPy:'嘎坦',        pl:'gator',      plPy:'嘎托尔',       plDef:'gatorna',      plDefPy:'嘎托纳',     zh:'街道'},
-  {p:'p1',en:'en',sv:'flicka',   py:'弗利卡',      def:'flickan',     defPy:'弗利坎',      pl:'flickor',    plPy:'弗利科尔',     plDef:'flickorna',    plDefPy:'弗利科纳',   zh:'女孩'},
-  {p:'p1',en:'en',sv:'vecka',    py:'维卡',        def:'veckan',      defPy:'维坎',        pl:'veckor',     plPy:'维科尔',       plDef:'veckorna',     plDefPy:'维科纳',     zh:'周'},
-  {p:'p1',en:'en',sv:'skola',    py:'斯库拉',      def:'skolan',      defPy:'斯库兰',      pl:'skolor',     plPy:'斯库洛尔',     plDef:'skolorna',     plDefPy:'斯库洛纳',   zh:'学校'},
-  {p:'p1',en:'en',sv:'timme',    py:'替姆',        def:'timmen',      defPy:'替姆恩',      pl:'timmar',     plPy:'替玛尔',       plDef:'timmarna',     plDefPy:'替玛纳',     zh:'小时'},
-  {p:'p1',en:'en',sv:'kvinna',   py:'克维那',      def:'kvinnan',     defPy:'克维南',      pl:'kvinnor',    plPy:'克维诺尔',     plDef:'kvinnorna',    plDefPy:'克维诺纳',   zh:'女人'},
+  {p:'p1',en:'en',sv:'blomma',headAudioRef:'sv_b1_u3_vocab_001_en_blomma_v1',   py:'布洛玛',      def:'blomman',     defPy:'布洛曼',      pl:'blommor',    plPy:'布洛摩尔',     plDef:'blommorna',    plDefPy:'布洛摩纳',   zh:'花'},
+  {p:'p1',en:'en',sv:'gata',headAudioRef:'sv_b1_u1_vocab_070_en_gata_v1',     py:'嘎塔',        def:'gatan',       defPy:'嘎坦',        pl:'gator',      plPy:'嘎托尔',       plDef:'gatorna',      plDefPy:'嘎托纳',     zh:'街道'},
+  {p:'p1',en:'en',sv:'flicka',headAudioRef:'sv_b1_u1_vocab_010_en_flicka_v1',   py:'弗利卡',      def:'flickan',     defPy:'弗利坎',      pl:'flickor',    plPy:'弗利科尔',     plDef:'flickorna',    plDefPy:'弗利科纳',   zh:'女孩'},
+  {p:'p1',en:'en',sv:'vecka',headAudioRef:'sv_b1_u1_vocab_094_en_vecka_v1',    py:'维卡',        def:'veckan',      defPy:'维坎',        pl:'veckor',     plPy:'维科尔',       plDef:'veckorna',     plDefPy:'维科纳',     zh:'周'},
+  {p:'p1',en:'en',sv:'skola',headAudioRef:'sv_b1_u1_vocab_058_en_skola_v1',    py:'斯库拉',      def:'skolan',      defPy:'斯库兰',      pl:'skolor',     plPy:'斯库洛尔',     plDef:'skolorna',     plDefPy:'斯库洛纳',   zh:'学校'},
+  {p:'p1',en:'en',sv:'timme',headAudioRef:'sv_b1_u3_vocab_021_en_timme_v1',    py:'替姆',        def:'timmen',      defPy:'替姆恩',      pl:'timmar',     plPy:'替玛尔',       plDef:'timmarna',     plDefPy:'替玛纳',     zh:'小时'},
+  {p:'p1',en:'en',sv:'kvinna',headAudioRef:'sv_b1_u1_vocab_004_en_kvinna_v1',   py:'克维那',      def:'kvinnan',     defPy:'克维南',      pl:'kvinnor',    plPy:'克维诺尔',     plDef:'kvinnorna',    plDefPy:'克维诺纳',   zh:'女人'},
   // 第二组 -ar
-  {p:'p2',en:'en',sv:'dag',      py:'大格',        def:'dagen',       defPy:'大根',        pl:'dagar',      plPy:'大嘎尔',       plDef:'dagarna',      plDefPy:'大嘎纳',     zh:'天/日'},
-  {p:'p2',en:'en',sv:'pojke',    py:'波耶克',      def:'pojken',      defPy:'波耶肯',      pl:'pojkar',     plPy:'波耶卡尔',     plDef:'pojkarna',     plDefPy:'波耶卡纳',   zh:'男孩'},
-  {p:'p2',en:'en',sv:'bil',      py:'贝尔',        def:'bilen',       defPy:'贝伦',        pl:'bilar',      plPy:'贝拉尔',       plDef:'bilarna',      plDefPy:'贝拉纳',     zh:'汽车'},
-  {p:'p2',en:'en',sv:'månad',    py:'莫纳德',      def:'månaden',     defPy:'莫纳敦',      pl:'månader',    plPy:'莫纳德尔',     plDef:'månaderna',    plDefPy:'莫纳德纳',   zh:'月份'},
-  {p:'p2',en:'en',sv:'bror',     py:'布鲁尔',      def:'brodern',     defPy:'布鲁登',      pl:'bröder',     plPy:'布勒德尔',     plDef:'bröderna',     plDefPy:'布勒德纳',   zh:'兄弟'},
-  {p:'p2',en:'en',sv:'nyckel',   py:'尼克尔',      def:'nyckeln',     defPy:'尼克伦',      pl:'nycklar',    plPy:'尼克拉尔',     plDef:'nycklarna',    plDefPy:'尼克拉纳',   zh:'钥匙'},
-  {p:'p2',en:'en',sv:'förälder', py:'弗雷尔德',    def:'föräldern',   defPy:'弗雷尔敦',    pl:'föräldrar',  plPy:'弗雷尔德拉尔', plDef:'föräldrarna',  plDefPy:'弗雷尔德拉纳',zh:'父/母'},
+  {p:'p2',en:'en',sv:'dag',headAudioRef:'sv_b1_u1_vocab_091_en_dag_v1',      py:'大格',        def:'dagen',       defPy:'大根',        pl:'dagar',      plPy:'大嘎尔',       plDef:'dagarna',      plDefPy:'大嘎纳',     zh:'天/日'},
+  {p:'p2',en:'en',sv:'pojke',headAudioRef:'sv_b1_u1_vocab_007_en_pojke_v1',    py:'波耶克',      def:'pojken',      defPy:'波耶肯',      pl:'pojkar',     plPy:'波耶卡尔',     plDef:'pojkarna',     plDefPy:'波耶卡纳',   zh:'男孩'},
+  {p:'p2',en:'en',sv:'bil',headAudioRef:'sv_b1_u3_vocab_037_en_bil_v1',      py:'贝尔',        def:'bilen',       defPy:'贝伦',        pl:'bilar',      plPy:'贝拉尔',       plDef:'bilarna',      plDefPy:'贝拉纳',     zh:'汽车'},
+  {p:'p2',en:'en',sv:'månad',headAudioRef:'sv_b1_u1_vocab_097_en_manad_v1',    py:'莫纳德',      def:'månaden',     defPy:'莫纳敦',      pl:'månader',    plPy:'莫纳德尔',     plDef:'månaderna',    plDefPy:'莫纳德纳',   zh:'月份'},
+  {p:'p2',en:'en',sv:'bror',headAudioRef:'sv_a1_u3_vocab_004_en_bror_v1',     py:'布鲁尔',      def:'brodern',     defPy:'布鲁登',      pl:'bröder',     plPy:'布勒德尔',     plDef:'bröderna',     plDefPy:'布勒德纳',   zh:'兄弟'},
+  {p:'p2',en:'en',sv:'nyckel',headAudioRef:'sv_b1_u1_vocab_037_en_nyckel_v1',   py:'尼克尔',      def:'nyckeln',     defPy:'尼克伦',      pl:'nycklar',    plPy:'尼克拉尔',     plDef:'nycklarna',    plDefPy:'尼克拉纳',   zh:'钥匙'},
+  {p:'p2',en:'en',sv:'förälder',headAudioRef:'sv_b1_u1_vocab_019_en_foralder_v1', py:'弗雷尔德',    def:'föräldern',   defPy:'弗雷尔敦',    pl:'föräldrar',  plPy:'弗雷尔德拉尔', plDef:'föräldrarna',  plDefPy:'弗雷尔德拉纳',zh:'父/母'},
   // 第三组 -er
-  {p:'p3',en:'en',sv:'stad',     py:'斯塔德',      def:'staden',      defPy:'斯塔敦',      pl:'städer',     plPy:'斯特德尔',     plDef:'städerna',     plDefPy:'斯特德纳',   zh:'城市'},
-  {p:'p3',en:'en',sv:'hand',     py:'汉德',        def:'handen',      defPy:'汉敦',        pl:'händer',     plPy:'亨德尔',       plDef:'händerna',     plDefPy:'亨德纳',     zh:'手'},
-  {p:'p3',en:'en',sv:'son',      py:'孙',          def:'sonen',       defPy:'孙恩',        pl:'söner',      plPy:'舍纳尔',       plDef:'sönerna',      plDefPy:'舍纳纳',     zh:'儿子'},
-  {p:'p3',en:'en',sv:'syster',   py:'雪斯特尔',    def:'systern',     defPy:'雪斯滕',      pl:'systrar',    plPy:'雪斯特拉尔',   plDef:'systrarna',    plDefPy:'雪斯特拉纳', zh:'姐妹'},
-  {p:'p3',en:'en',sv:'medicin',  py:'梅迪辛',      def:'medicinen',   defPy:'梅迪西南',    pl:'mediciner',  plPy:'梅迪西纳尔',   plDef:'medicinerna',  plDefPy:'梅迪西纳纳', zh:'药物'},
-  {p:'p3',en:'en',sv:'man',      py:'曼',          def:'mannen',      defPy:'曼恩',        pl:'män',        plPy:'门',           plDef:'männen',       plDefPy:'门恩',       zh:'男人/丈夫'},
-  {p:'p3',en:'en',sv:'natt',     py:'纳特',        def:'natten',      defPy:'纳腾',        pl:'nätter',     plPy:'内特尔',       plDef:'nätterna',     plDefPy:'内特纳',     zh:'夜晚'},
-  {p:'p3',en:'en',sv:'dotter',   py:'多特尔',      def:'dottern',     defPy:'多特恩',      pl:'döttrar',    plPy:'多特拉尔',     plDef:'döttrarna',    plDefPy:'多特拉纳',   zh:'女儿'},
+  {p:'p3',en:'en',sv:'stad',headAudioRef:'sv_b1_u1_vocab_067_en_stad_v1',     py:'斯塔德',      def:'staden',      defPy:'斯塔敦',      pl:'städer',     plPy:'斯特德尔',     plDef:'städerna',     plDefPy:'斯特德纳',   zh:'城市'},
+  {p:'p3',en:'en',sv:'hand',headAudioRef:'sv_b1_u3_vocab_061_en_hand_v1',     py:'汉德',        def:'handen',      defPy:'汉敦',        pl:'händer',     plPy:'亨德尔',       plDef:'händerna',     plDefPy:'亨德纳',     zh:'手'},
+  {p:'p3',en:'en',sv:'son',headAudioRef:'sv_a1_u3_vocab_010_en_son_v1',      py:'孙',          def:'sonen',       defPy:'孙恩',        pl:'söner',      plPy:'舍纳尔',       plDef:'sönerna',      plDefPy:'舍纳纳',     zh:'儿子'},
+  {p:'p3',en:'en',sv:'syster',headAudioRef:'sv_a1_u3_vocab_003_en_syster_v1',   py:'雪斯特尔',    def:'systern',     defPy:'雪斯滕',      pl:'systrar',    plPy:'雪斯特拉尔',   plDef:'systrarna',    plDefPy:'雪斯特拉纳', zh:'姐妹'},
+  {p:'p3',en:'en',sv:'medicin',headAudioRef:'sv_b1_u3_vocab_073_en_medicin_v1',  py:'梅迪辛',      def:'medicinen',   defPy:'梅迪西南',    pl:'mediciner',  plPy:'梅迪西纳尔',   plDef:'medicinerna',  plDefPy:'梅迪西纳纳', zh:'药物'},
+  {p:'p3',en:'en',sv:'man',headAudioRef:'sv_a1_u3_vocab_008_en_man_v1',      py:'曼',          def:'mannen',      defPy:'曼恩',        pl:'män',        plPy:'门',           plDef:'männen',       plDefPy:'门恩',       zh:'男人/丈夫'},
+  {p:'p3',en:'en',sv:'natt',headAudioRef:'sv_b1_u3_vocab_081_en_natt_v1',     py:'纳特',        def:'natten',      defPy:'纳腾',        pl:'nätter',     plPy:'内特尔',       plDef:'nätterna',     plDefPy:'内特纳',     zh:'夜晚'},
+  {p:'p3',en:'en',sv:'dotter',headAudioRef:'sv_a1_u3_vocab_009_en_dotter_v1',   py:'多特尔',      def:'dottern',     defPy:'多特恩',      pl:'döttrar',    plPy:'多特拉尔',     plDef:'döttrarna',    plDefPy:'多特拉纳',   zh:'女儿'},
   // 第四组 -n
-  {p:'p4',en:'ett',sv:'äpple',   py:'艾普勒',      def:'äpplet',      defPy:'艾普勒特',    pl:'äpplen',     plPy:'艾普勒恩',     plDef:'äpplena',      plDefPy:'艾普勒纳',   zh:'苹果'},
-  {p:'p4',en:'ett',sv:'yrke',    py:'尤尔克',      def:'yrket',       defPy:'尤尔克特',    pl:'yrken',      plPy:'尤尔克恩',     plDef:'yrkena',       plDefPy:'尤尔克纳',   zh:'职业'},
-  {p:'p4',en:'ett',sv:'kontor',  py:'孔托尔',      def:'kontoret',    defPy:'孔托雷特',    pl:'kontor',     plPy:'孔托尔',       plDef:'kontoren',     plDefPy:'孔托伦',     zh:'办公室'},
-  {p:'p4',en:'ett',sv:'leende',  py:'莱恩德',      def:'leendet',     defPy:'莱恩德特',    pl:'leenden',    plPy:'莱恩德恩',     plDef:'leendena',     plDefPy:'莱恩德纳',   zh:'微笑'},
-  {p:'p4',en:'ett',sv:'ögonblick',py:'哦根布利克', def:'ögonblicket', defPy:'哦根布利克特',pl:'ögonblick',  plPy:'哦根布利克',   plDef:'ögonblicken',  plDefPy:'哦根布利肯', zh:'瞬间/一会儿'},
+  {p:'p4',en:'ett',sv:'äpple',headAudioRef:'sv_b1_u3_vocab_089_ett_apple_v1',   py:'艾普勒',      def:'äpplet',      defPy:'艾普勒特',    pl:'äpplen',     plPy:'艾普勒恩',     plDef:'äpplena',      plDefPy:'艾普勒纳',   zh:'苹果'},
+  {p:'p4',en:'ett',sv:'yrke',headAudioRef:'sv_b1_u3_vocab_093_ett_yrke_v1',    py:'尤尔克',      def:'yrket',       defPy:'尤尔克特',    pl:'yrken',      plPy:'尤尔克恩',     plDef:'yrkena',       plDefPy:'尤尔克纳',   zh:'职业'},
+  {p:'p4',en:'ett',sv:'kontor',headAudioRef:'sv_b1_u1_vocab_087_kontor_v1',  py:'孔托尔',      def:'kontoret',    defPy:'孔托雷特',    pl:'kontor',     plPy:'孔托尔',       plDef:'kontoren',     plDefPy:'孔托伦',     zh:'办公室'},
+  {p:'p4',en:'ett',sv:'leende',headAudioRef:'sv_b1_u3_vocab_101_ett_leende_v1',  py:'莱恩德',      def:'leendet',     defPy:'莱恩德特',    pl:'leenden',    plPy:'莱恩德恩',     plDef:'leendena',     plDefPy:'莱恩德纳',   zh:'微笑'},
+  {p:'p4',en:'ett',sv:'ögonblick',headAudioRef:'sv_b1_u3_vocab_107_ogonblick_v1',py:'哦根布利克', def:'ögonblicket', defPy:'哦根布利克特',pl:'ögonblick',  plPy:'哦根布利克',   plDef:'ögonblicken',  plDefPy:'哦根布利肯', zh:'瞬间/一会儿'},
   // 第五组 不变
-  {p:'p5',en:'ett',sv:'hus',     py:'胡斯',        def:'huset',       defPy:'胡斯特',      pl:'hus',        plPy:'胡斯',         plDef:'husen',        plDefPy:'胡森',       zh:'房子'},
-  {p:'p5',en:'ett',sv:'år',      py:'奥尔',        def:'året',        defPy:'奥雷特',      pl:'år',         plPy:'奥尔',         plDef:'åren',         plDefPy:'奥伦',       zh:'年'},
-  {p:'p5',en:'ett',sv:'barn',    py:'巴恩',        def:'barnet',      defPy:'巴恩内特',    pl:'barn',       plPy:'巴恩',         plDef:'barnen',       plDefPy:'巴内恩',     zh:'孩子'},
-  {p:'p5',en:'ett',sv:'brev',    py:'布雷夫',      def:'brevet',      defPy:'布雷夫特',    pl:'brev',       plPy:'布雷夫',       plDef:'breven',       plDefPy:'布雷文',     zh:'信件'},
-  {p:'p5',en:'ett',sv:'rum',     py:'鲁姆',        def:'rummet',      defPy:'鲁默特',      pl:'rum',        plPy:'鲁姆',         plDef:'rummen',       plDefPy:'鲁们',       zh:'房间'},
-  {p:'p5',en:'en',sv:'lärare',   py:'莱拉瑞',      def:'läraren',     defPy:'莱拉伦',      pl:'lärare',     plPy:'莱拉瑞',       plDef:'lärarna',      plDefPy:'莱拉纳',     zh:'老师'},
-  {p:'p5',en:'en',sv:'doktor',   py:'多克托尔',    def:'doktorn',     defPy:'多克托恩',    pl:'doktorer',   plPy:'多克托雷尔',   plDef:'doktorerna',   plDefPy:'多克托雷纳', zh:'医生'},
-  {p:'p5',en:'ett',sv:'program', py:'普罗格拉姆',  def:'programmet',  defPy:'普罗格拉默特',pl:'program',    plPy:'普罗格拉姆',   plDef:'programmen',   plDefPy:'普罗格拉门', zh:'节目/程序'},
+  {p:'p5',en:'ett',sv:'hus',headAudioRef:'sv_b1_u1_vocab_045_hus_v1',     py:'胡斯',        def:'huset',       defPy:'胡斯特',      pl:'hus',        plPy:'胡斯',         plDef:'husen',        plDefPy:'胡森',       zh:'房子'},
+  {p:'p5',en:'ett',sv:'år',headAudioRef:'sv_b1_u1_vocab_105_ar_v1',      py:'奥尔',        def:'året',        defPy:'奥雷特',      pl:'år',         plPy:'奥尔',         plDef:'åren',         plDefPy:'奥伦',       zh:'年'},
+  {p:'p5',en:'ett',sv:'barn',headAudioRef:'sv_b1_u3_vocab_119_barn_v1',    py:'巴恩',        def:'barnet',      defPy:'巴恩内特',    pl:'barn',       plPy:'巴恩',         plDef:'barnen',       plDefPy:'巴内恩',     zh:'孩子'},
+  {p:'p5',en:'ett',sv:'brev',headAudioRef:'sv_b1_u3_vocab_123_brev_v1',    py:'布雷夫',      def:'brevet',      defPy:'布雷夫特',    pl:'brev',       plPy:'布雷夫',       plDef:'breven',       plDefPy:'布雷文',     zh:'信件'},
+  {p:'p5',en:'ett',sv:'rum',headAudioRef:'sv_a1_u3_adv_038_rum_v1',     py:'鲁姆',        def:'rummet',      defPy:'鲁默特',      pl:'rum',        plPy:'鲁姆',         plDef:'rummen',       plDefPy:'鲁们',       zh:'房间'},
+  {p:'p5',en:'en',sv:'lärare',headAudioRef:'sv_b1_u1_vocab_030_larare_v1',   py:'莱拉瑞',      def:'läraren',     defPy:'莱拉伦',      pl:'lärare',     plPy:'莱拉瑞',       plDef:'lärarna',      plDefPy:'莱拉纳',     zh:'老师'},
+  {p:'p5',en:'en',sv:'doktor',headAudioRef:'sv_b1_u3_vocab_133_en_doktor_v1',   py:'多克托尔',    def:'doktorn',     defPy:'多克托恩',    pl:'doktorer',   plPy:'多克托雷尔',   plDef:'doktorerna',   plDefPy:'多克托雷纳', zh:'医生'},
+  {p:'p5',en:'ett',sv:'program',headAudioRef:'sv_b1_u3_vocab_139_program_v1', py:'普罗格拉姆',  def:'programmet',  defPy:'普罗格拉默特',pl:'program',    plPy:'普罗格拉姆',   plDef:'programmen',   plDefPy:'普罗格拉门', zh:'节目/程序'},
 ];
 
 
-const HEADWORD_LOOKUP = {
-  "blomma": "en blomma",
-  "blomman": "blomman",
-  "blommor": "blommor",
-  "blommorna": "blommorna",
-  "gata": "en gata",
-  "gatan": "gatan",
-  "gator": "gator",
-  "gatorna": "gatorna",
-  "flicka": "en flicka",
-  "flickan": "flickan",
-  "flickor": "flickor",
-  "flickorna": "flickorna",
-  "vecka": "en vecka",
-  "veckan": "veckan",
-  "veckor": "veckor",
-  "veckorna": "veckorna",
-  "skola": "en skola",
-  "skolan": "skolan",
-  "skolor": "skolor",
-  "skolorna": "skolorna",
-  "timme": "en timme",
-  "timmen": "timmen",
-  "timmar": "timmar",
-  "timmarna": "timmarna",
-  "kvinna": "en kvinna",
-  "kvinnan": "kvinnan",
-  "kvinnor": "kvinnor",
-  "kvinnorna": "kvinnorna",
-  "dag": "en dag",
-  "dagen": "dagen",
-  "dagar": "dagar",
-  "dagarna": "dagarna",
-  "pojke": "en pojke",
-  "pojken": "pojken",
-  "pojkar": "pojkar",
-  "pojkarna": "pojkarna",
-  "bil": "en bil",
-  "bilen": "bilen",
-  "bilar": "bilar",
-  "bilarna": "bilarna",
-  "månad": "en månad",
-  "månaden": "månaden",
-  "månader": "månader",
-  "månaderna": "månaderna",
-  "bror": "en bror",
-  "brodern": "brodern",
-  "bröder": "bröder",
-  "bröderna": "bröderna",
-  "nyckel": "en nyckel",
-  "nyckeln": "nyckeln",
-  "nycklar": "nycklar",
-  "nycklarna": "nycklarna",
-  "förälder": "en förälder",
-  "föräldern": "föräldern",
-  "föräldrar": "föräldrar",
-  "föräldrarna": "föräldrarna",
-  "stad": "en stad",
-  "staden": "staden",
-  "städer": "städer",
-  "städerna": "städerna",
-  "hand": "en hand",
-  "handen": "handen",
-  "händer": "händer",
-  "händerna": "händerna",
-  "son": "en son",
-  "sonen": "sonen",
-  "söner": "söner",
-  "sönerna": "sönerna",
-  "syster": "en syster",
-  "systern": "systern",
-  "systrar": "systrar",
-  "systrarna": "systrarna",
-  "medicin": "en medicin",
-  "medicinen": "medicinen",
-  "mediciner": "mediciner",
-  "medicinerna": "medicinerna",
-  "man": "en man",
-  "mannen": "mannen",
-  "män": "män",
-  "männen": "männen",
-  "natt": "en natt",
-  "natten": "natten",
-  "nätter": "nätter",
-  "nätterna": "nätterna",
-  "dotter": "en dotter",
-  "dottern": "dottern",
-  "döttrar": "döttrar",
-  "döttrarna": "döttrarna",
-  "äpple": "ett äpple",
-  "äpplet": "äpplet",
-  "äpplen": "äpplen",
-  "äpplena": "äpplena",
-  "yrke": "ett yrke",
-  "yrket": "yrket",
-  "yrken": "yrken",
-  "yrkena": "yrkena",
-  "kontor": "kontor",
-  "kontoret": "kontoret",
-  "kontoren": "kontoren",
-  "leende": "ett leende",
-  "leendet": "leendet",
-  "leenden": "leenden",
-  "leendena": "leendena",
-  "ögonblick": "ögonblick",
-  "ögonblicket": "ögonblicket",
-  "ögonblicken": "ögonblicken",
-  "hus": "hus",
-  "huset": "huset",
-  "husen": "husen",
-  "år": "år",
-  "året": "året",
-  "åren": "åren",
-  "barn": "barn",
-  "barnet": "barnet",
-  "barnen": "barnen",
-  "brev": "brev",
-  "brevet": "brevet",
-  "breven": "breven",
-  "rum": "rum",
-  "rummet": "rummet",
-  "rummen": "rummen",
-  "lärare": "lärare",
-  "läraren": "läraren",
-  "lärarna": "lärarna",
-  "doktor": "en doktor",
-  "doktorn": "doktorn",
-  "doktorer": "doktorer",
-  "doktorerna": "doktorerna",
-  "program": "program",
-  "programmet": "programmet",
-  "programmen": "programmen"
-};
-function getHeadwordLookup(v){
-  return HEADWORD_LOOKUP[v.sv] || `${v.en} ${v.sv}`;
+function speakAudioRef(audioRef,fallbackText,el){
+  const SfiCore=window.SfiCore;
+  if(!audioRef||!SfiCore||!SfiCore.manifest||!SfiCore.audio){
+    if(fallbackText) speakWord(fallbackText,el);
+    return;
+  }
+  SfiCore.manifest.ensure(function(){
+    const path=SfiCore.manifest.getFilePath(audioRef);
+    if(!path){
+      if(fallbackText) speakWord(fallbackText,el);
+      return;
+    }
+    if(el) el.classList.add('speaking');
+    SfiCore.audio.play(path,null,function(){
+      if(el) el.classList.remove('speaking');
+    });
+  });
 }
 
 // ═══════════════════════════════════════════════════════════
@@ -662,7 +544,7 @@ function renderNounCard(v){
   return `<div class="vocab-card ${v.p}">
     <div class="vc-top">${pgBadge}${enBadge}</div>
     <div class="vc-headword">
-      <span class="vc-headword-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.sv}" title="点击发音">${v.en} ${v.sv}</span>
+      <span class="vc-headword-sv speak-word" onclick="speakAudioRef(this.dataset.audioref,this.dataset.fallback,this)" data-audioref="${v.headAudioRef}" data-fallback="${v.en} ${v.sv}" title="点击发音">${v.en} ${v.sv}</span>
       <span class="vc-headword-py">${v.py}</span>
     </div>
     <div class="vc-form-row"><div class="vc-form-top"><span class="vc-row-label">定冠词</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.def}" title="点击发音">${defHL}</span></div><span class="vc-row-py">${v.defPy}</span></div>
@@ -680,7 +562,7 @@ function makeFlipCard(v){
         <div class="flip-type">${pLabel[v.p]}</div>
       </div>
       <div class="flip-back">
-        <div class="flip-sv speak-word" onclick="speakWord(this.dataset.word);event.stopPropagation();" data-word="${v.sv}" title="点击发音">${v.en} ${v.sv}</div>
+        <div class="flip-sv speak-word" onclick="speakAudioRef(this.dataset.audioref,this.dataset.fallback,this);event.stopPropagation();" data-audioref="${v.headAudioRef}" data-fallback="${v.en} ${v.sv}" title="点击发音">${v.en} ${v.sv}</div>
         <div class="flip-forms">${flipForms(v)}</div>
       </div>
     </div>
@@ -791,6 +673,11 @@ window.dialogues={
   1:['Hur många rum har din nya lägenhet?','Den har tre rum. Och det finns många fönster, så det är ljust.','Har du köpt några nya möbler?','Ja! Jag köpte två stolar och ett bord. Mina gamla möbler är kvar i mitt gamla hus.','Bor det många barn i huset?','Ja, det finns tre familjer med barn. Jag ser deras cyklar utanför varje dag.'],
   2:['Hur många elever är det i din klass?','Vi är tjugo elever. Vi kommer från många olika länder.','Har ni bra böcker och datorer?','Ja, vi har många böcker. Men vi behöver fler datorer. Det är bara fem datorer på tjugo elever.','Hur många timmar studerar du svenska varje vecka?','Jag studerar ungefär femton timmar i skolan och läser böcker hemma på kvällarna.'],
 };
+window.dialogueContentIds={
+  1:['b3_dialog_line_001_01','b3_dialog_line_001_02','b3_dialog_line_001_03','b3_dialog_line_001_04','b3_dialog_line_001_05','b3_dialog_line_001_06'],
+  2:['b3_dialog_line_002_01','b3_dialog_line_002_02','b3_dialog_line_002_03','b3_dialog_line_002_04','b3_dialog_line_002_05','b3_dialog_line_002_06']
+};
+
 function wrapDialogueWords(html){
   return html.replace(/(<[^>]+>)|([^<]+)/g,(match,tag,text)=>{
     if(tag)return tag;
