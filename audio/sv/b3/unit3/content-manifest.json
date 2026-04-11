@@ -4629,5 +4629,263 @@
     "audioRefs": [
       "sv_a1_u2_adv_009_timmar_v1"
     ]
+  },
+  {
+    "contentId": "b3_vocab_hus",
+    "audioType": "question_prompt",
+    "sourceText": "ett hus",
+    "audioRef": "sv_a1_u3_vocab_011_ett_hus_v1"
+  },
+  {
+    "contentId": "b3_vocab_rum",
+    "audioType": "question_prompt",
+    "sourceText": "ett rum",
+    "audioRef": "sv_a1_u3_vocab_013_ett_rum_v1"
+  },
+  {
+    "contentId": "b3_vocab_fonster",
+    "audioType": "question_prompt",
+    "sourceText": "ett fönster",
+    "audioRef": "sv_b1_u3_qp_003_ett_fonster_v1"
+  },
+  {
+    "contentId": "b3_vocab_mobel",
+    "audioType": "question_prompt",
+    "sourceText": "en möbel",
+    "audioRef": "sv_b1_u3_adv_052_mobel_v1"
+  },
+  {
+    "contentId": "b3_vocab_stol",
+    "audioType": "question_prompt",
+    "sourceText": "en stol",
+    "audioRef": "sv_b1_u3_adv_037_stol_v1"
+  },
+  {
+    "contentId": "b3_vocab_bord",
+    "audioType": "question_prompt",
+    "sourceText": "ett bord",
+    "audioRef": "sv_b1_u3_qp_006_ett_bord_v1"
+  },
+  {
+    "contentId": "b3_vocab_cykel",
+    "audioType": "question_prompt",
+    "sourceText": "en cykel",
+    "audioRef": "sv_b1_u3_adv_042_cykel_v1"
+  },
+  {
+    "contentId": "b3_vocab_barn",
+    "audioType": "question_prompt",
+    "sourceText": "ett barn",
+    "audioRef": "sv_a1_u3_vocab_005_ett_barn_v1"
+  },
+  {
+    "contentId": "b3_vocab_familj",
+    "audioType": "question_prompt",
+    "sourceText": "en familj",
+    "audioRef": "sv_a1_u3_vocab_006_en_familj_v1"
+  },
+  {
+    "contentId": "b3_vocab_elev",
+    "audioType": "question_prompt",
+    "sourceText": "en elev",
+    "audioRef": "sv_b1_u3_adv_062_elev_v1"
+  },
+  {
+    "contentId": "b3_vocab_bok",
+    "audioType": "question_prompt",
+    "sourceText": "en bok",
+    "audioRef": "sv_b1_u3_adv_072_bok_v1"
+  },
+  {
+    "contentId": "b3_vocab_dator",
+    "audioType": "question_prompt",
+    "sourceText": "en dator",
+    "audioRef": "sv_b1_u3_adv_067_dator_v1"
+  },
+  {
+    "contentId": "b3_vocab_land",
+    "audioType": "question_prompt",
+    "sourceText": "ett land",
+    "audioRef": "sv_a1_u1_vocab_016_land_v1"
+  },
+  {
+    "contentId": "b3_vocab_timme",
+    "audioType": "question_prompt",
+    "sourceText": "en timme",
+    "audioRef": "sv_b1_u3_vocab_021_en_timme_v1"
+  },
+  {
+    "contentId": "b3_vocab_vecka",
+    "audioType": "question_prompt",
+    "sourceText": "en vecka",
+    "audioRef": "sv_b1_u1_vocab_094_en_vecka_v1"
+  },
+  {
+    "contentId": "b3_vocab_ar",
+    "audioType": "question_prompt",
+    "sourceText": "ett år",
+    "audioRef": "sv_b1_u1_vocab_103_ett_ar_v1"
+  },
+  {
+    "contentId": "b3_vocab_skola",
+    "audioType": "question_prompt",
+    "sourceText": "en skola",
+    "audioRef": "sv_b1_u1_vocab_058_en_skola_v1"
+  },
+  {
+    "contentId": "b3_phrase_jag_har_tre_bilar",
+    "audioType": "question_prompt",
+    "sourceText": "Jag har tre bilar.",
+    "audioRef": "sv_b1_u3_qp_018_jag_har_tre_bilar_v1"
+  },
+  {
+    "contentId": "b3_phrase_vi_har_manga_bocker",
+    "audioType": "question_prompt",
+    "sourceText": "Vi har många böcker.",
+    "audioRef": "sv_b1_u3_qp_019_vi_har_manga_bocker_v1"
+  },
+  {
+    "contentId": "b3_phrase_vi_behover_fler_datorer",
+    "audioType": "question_prompt",
+    "sourceText": "Vi behöver fler datorer.",
+    "audioRef": "sv_b1_u3_qp_020_vi_behover_fler_datorer_v1"
+  },
+  {
+    "contentId": "b3_phrase_det_finns_tre_familjer",
+    "audioType": "question_prompt",
+    "sourceText": "Det finns tre familjer i huset.",
+    "audioRef": "sv_b1_u3_qp_021_det_finns_tre_familjer_i_huset_v1"
+  },
+  {
+    "contentId": "b3_phrase_jag_ser_deras_cyklar",
+    "audioType": "question_prompt",
+    "sourceText": "Jag ser deras cyklar varje dag.",
+    "audioRef": "sv_b1_u3_qp_022_jag_ser_deras_cyklar_varje_dag_v1"
+  },
+  {
+    "contentId": "b3_phrase_den_har_tre_rum",
+    "audioType": "question_prompt",
+    "sourceText": "Den har tre rum.",
+    "audioRef": "sv_b1_u3_qp_023_den_har_tre_rum_v1"
+  },
+  {
+    "contentId": "b3_phrase_det_finns_manga_fonster",
+    "audioType": "question_prompt",
+    "sourceText": "Det finns många fönster, så det är ljust.",
+    "audioRef": "sv_b1_u3_qp_024_det_finns_manga_fonster_sa_det_ar_ljust_v1"
+  },
+  {
+    "contentId": "b3_phrase_jag_kopte_tva_stolar",
+    "audioType": "question_prompt",
+    "sourceText": "Jag köpte två stolar och ett bord.",
+    "audioRef": "sv_b1_u3_qp_025_jag_kopte_tva_stolar_och_ett_bord_v1"
+  },
+  {
+    "contentId": "b3_phrase_vi_ar_tjugo_elever",
+    "audioType": "question_prompt",
+    "sourceText": "Vi är tjugo elever.",
+    "audioRef": "sv_b1_u3_qp_026_vi_ar_tjugo_elever_v1"
+  },
+  {
+    "contentId": "b3_phrase_femton_timmar_varje_vecka",
+    "audioType": "question_prompt",
+    "sourceText": "Jag studerar ungefär femton timmar varje vecka.",
+    "audioRef": "sv_b1_u3_qp_027_jag_studerar_ungefar_femton_timmar_varje_vecka_v1"
+  },
+  {
+    "contentId": "b3_dialog_hur_manga_rum_har_den",
+    "audioType": "question_prompt",
+    "sourceText": "Hur många rum har din nya lägenhet?",
+    "audioRef": "sv_b1_u3_dialog_001_line_01_hur_manga_rum_har_din_nya_lagenhet_v1"
+  },
+  {
+    "contentId": "b3_dialog_den_har_tre_rum",
+    "audioType": "question_prompt",
+    "sourceText": "Den har tre rum.",
+    "audioRef": "sv_b1_u3_qp_023_den_har_tre_rum_v1"
+  },
+  {
+    "contentId": "b3_dialog_det_finns_manga_fonster",
+    "audioType": "question_prompt",
+    "sourceText": "Det finns många fönster.",
+    "audioRef": "sv_b1_u3_qp_030_det_finns_manga_fonster_v1"
+  },
+  {
+    "contentId": "b3_dialog_har_du_kopt_nya_mobler",
+    "audioType": "question_prompt",
+    "sourceText": "Har du köpt några nya möbler?",
+    "audioRef": "sv_b1_u3_dialog_001_line_03_har_du_kopt_nagra_nya_mobler_v1"
+  },
+  {
+    "contentId": "b3_dialog_jag_kopte_tva_stolar_och_ett_bord",
+    "audioType": "question_prompt",
+    "sourceText": "Jag köpte två stolar och ett bord.",
+    "audioRef": "sv_b1_u3_qp_025_jag_kopte_tva_stolar_och_ett_bord_v1"
+  },
+  {
+    "contentId": "b3_dialog_bor_det_manga_barn",
+    "audioType": "question_prompt",
+    "sourceText": "Bor det många barn i huset?",
+    "audioRef": "sv_b1_u3_dialog_001_line_05_bor_det_manga_barn_i_huset_v1"
+  },
+  {
+    "contentId": "b3_dialog_det_finns_tre_familjer_med_barn",
+    "audioType": "question_prompt",
+    "sourceText": "Det finns tre familjer med barn.",
+    "audioRef": "sv_b1_u3_qp_034_det_finns_tre_familjer_med_barn_v1"
+  },
+  {
+    "contentId": "b3_dialog_jag_ser_deras_cyklar_utanfor",
+    "audioType": "question_prompt",
+    "sourceText": "Jag ser deras cyklar utanför varje dag.",
+    "audioRef": "sv_b1_u3_qp_035_jag_ser_deras_cyklar_utanfor_varje_dag_v1"
+  },
+  {
+    "contentId": "b3_dialog_hur_manga_elever_ar_det",
+    "audioType": "question_prompt",
+    "sourceText": "Hur många elever är det i din klass?",
+    "audioRef": "sv_b1_u3_dialog_002_line_01_hur_manga_elever_ar_det_i_din_klass_v1"
+  },
+  {
+    "contentId": "b3_dialog_vi_ar_tjugo_elever",
+    "audioType": "question_prompt",
+    "sourceText": "Vi är tjugo elever.",
+    "audioRef": "sv_b1_u3_qp_026_vi_ar_tjugo_elever_v1"
+  },
+  {
+    "contentId": "b3_dialog_har_ni_bra_bocker_och_datorer",
+    "audioType": "question_prompt",
+    "sourceText": "Har ni bra böcker och datorer?",
+    "audioRef": "sv_b1_u3_dialog_002_line_03_har_ni_bra_bocker_och_datorer_v1"
+  },
+  {
+    "contentId": "b3_dialog_vi_har_manga_bocker",
+    "audioType": "question_prompt",
+    "sourceText": "Vi har många böcker.",
+    "audioRef": "sv_b1_u3_qp_019_vi_har_manga_bocker_v1"
+  },
+  {
+    "contentId": "b3_dialog_vi_behover_fler_datorer",
+    "audioType": "question_prompt",
+    "sourceText": "Men vi behöver fler datorer.",
+    "audioRef": "sv_b1_u3_qp_040_men_vi_behover_fler_datorer_v1"
+  },
+  {
+    "contentId": "b3_dialog_hur_manga_timmar_studerar_du",
+    "audioType": "question_prompt",
+    "sourceText": "Hur många timmar studerar du svenska varje vecka?",
+    "audioRef": "sv_b1_u3_dialog_002_line_05_hur_manga_timmar_studerar_du_svenska_varje_vecka_v1"
+  },
+  {
+    "contentId": "b3_dialog_jag_studerar_femton_timmar",
+    "audioType": "question_prompt",
+    "sourceText": "Jag studerar ungefär femton timmar i skolan.",
+    "audioRef": "sv_b1_u3_qp_042_jag_studerar_ungefar_femton_timmar_i_skolan_v1"
+  },
+  {
+    "contentId": "b3_dialog_jag_laser_bocker_hemma",
+    "audioType": "question_prompt",
+    "sourceText": "Jag läser böcker hemma på kvällarna.",
+    "audioRef": "sv_b1_u3_qp_043_jag_laser_bocker_hemma_pa_kvallarna_v1"
   }
 ]
