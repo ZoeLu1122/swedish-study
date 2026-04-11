@@ -141,11 +141,6 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "/ en",
-    "audioRef": "sv_a1_u1_vocab_028_ett_en_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "två",
     "audioRef": "sv_a1_u1_vocab_029_tva_v1"
   },
@@ -406,17 +401,7 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "mamma",
-    "audioRef": "sv_a1_u3_vocab_001_en_mamma_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "en pappa",
-    "audioRef": "sv_a1_u3_vocab_002_en_pappa_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "pappa",
     "audioRef": "sv_a1_u3_vocab_002_en_pappa_v1"
   },
   {
@@ -426,17 +411,7 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "syster",
-    "audioRef": "sv_a1_u3_vocab_003_en_syster_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "en bror",
-    "audioRef": "sv_a1_u3_vocab_004_en_bror_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "bror",
     "audioRef": "sv_a1_u3_vocab_004_en_bror_v1"
   },
   {
@@ -446,17 +421,7 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "barn",
-    "audioRef": "sv_a1_u3_vocab_005_ett_barn_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "en familj",
-    "audioRef": "sv_a1_u3_vocab_006_en_familj_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "familj",
     "audioRef": "sv_a1_u3_vocab_006_en_familj_v1"
   },
   {
@@ -466,17 +431,7 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "fru",
-    "audioRef": "sv_a1_u3_vocab_007_en_fru_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "en man",
-    "audioRef": "sv_a1_u3_vocab_008_en_man_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "man",
     "audioRef": "sv_a1_u3_vocab_008_en_man_v1"
   },
   {
@@ -486,17 +441,7 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "dotter",
-    "audioRef": "sv_a1_u3_vocab_009_en_dotter_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "en son",
-    "audioRef": "sv_a1_u3_vocab_010_en_son_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "son",
     "audioRef": "sv_a1_u3_vocab_010_en_son_v1"
   },
   {
@@ -506,17 +451,7 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "hus",
-    "audioRef": "sv_a1_u3_vocab_011_ett_hus_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "en lägenhet",
-    "audioRef": "sv_a1_u3_vocab_012_en_lagenhet_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "lägenhet",
     "audioRef": "sv_a1_u3_vocab_012_en_lagenhet_v1"
   },
   {
@@ -526,17 +461,7 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "rum",
-    "audioRef": "sv_a1_u3_vocab_013_ett_rum_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "ett kök",
-    "audioRef": "sv_a1_u3_vocab_014_ett_kok_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "kök",
     "audioRef": "sv_a1_u3_vocab_014_ett_kok_v1"
   },
   {
@@ -546,17 +471,7 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "badrum",
-    "audioRef": "sv_a1_u3_vocab_015_ett_badrum_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "ett sovrum",
-    "audioRef": "sv_a1_u3_vocab_016_ett_sovrum_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "sovrum",
     "audioRef": "sv_a1_u3_vocab_016_ett_sovrum_v1"
   },
   {
@@ -566,17 +481,7 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "vardagsrum",
-    "audioRef": "sv_a1_u3_vocab_017_ett_vardagsrum_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "en trädgård",
-    "audioRef": "sv_a1_u3_vocab_018_en_tradgard_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "trädgård",
     "audioRef": "sv_a1_u3_vocab_018_en_tradgard_v1"
   },
   {
@@ -586,17 +491,7 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "adress",
-    "audioRef": "sv_a1_u3_vocab_019_en_adress_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "en granne",
-    "audioRef": "sv_a1_u3_vocab_020_en_granne_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "granne",
     "audioRef": "sv_a1_u3_vocab_020_en_granne_v1"
   },
   {
@@ -666,17 +561,7 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "bröd",
-    "audioRef": "sv_a1_u4_vocab_001_ett_brod_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "ett ägg",
-    "audioRef": "sv_a1_u4_vocab_002_ett_agg_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "ägg",
     "audioRef": "sv_a1_u4_vocab_002_ett_agg_v1"
   },
   {
@@ -686,17 +571,7 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "kött",
-    "audioRef": "sv_a1_u4_vocab_003_ett_kott_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "en fisk",
-    "audioRef": "sv_a1_u4_vocab_004_en_fisk_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "fisk",
     "audioRef": "sv_a1_u4_vocab_004_en_fisk_v1"
   },
   {
@@ -711,27 +586,12 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "frukt",
-    "audioRef": "sv_a1_u4_vocab_006_en_frukt_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "ett ris",
     "audioRef": "sv_a1_u4_vocab_007_ett_ris_v1"
   },
   {
     "audioType": "vocab",
-    "sourceText": "ris",
-    "audioRef": "sv_a1_u4_vocab_007_ett_ris_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "en ost",
-    "audioRef": "sv_a1_u4_vocab_008_en_ost_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "ost",
     "audioRef": "sv_a1_u4_vocab_008_en_ost_v1"
   },
   {
@@ -751,17 +611,7 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "vatten",
-    "audioRef": "sv_a1_u4_vocab_011_ett_vatten_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "ett kaffe",
-    "audioRef": "sv_a1_u4_vocab_012_ett_kaffe_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "kaffe",
     "audioRef": "sv_a1_u4_vocab_012_ett_kaffe_v1"
   },
   {
@@ -771,27 +621,12 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "te",
-    "audioRef": "sv_a1_u4_vocab_013_ett_te_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "en juice",
     "audioRef": "sv_a1_u4_vocab_014_en_juice_v1"
   },
   {
     "audioType": "vocab",
-    "sourceText": "juice",
-    "audioRef": "sv_a1_u4_vocab_014_en_juice_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "en mjölk",
-    "audioRef": "sv_a1_u4_vocab_015_en_mjolk_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "mjölk",
     "audioRef": "sv_a1_u4_vocab_015_en_mjolk_v1"
   },
   {
@@ -802,11 +637,6 @@
   {
     "audioType": "vocab",
     "sourceText": "en affär",
-    "audioRef": "sv_a1_u4_vocab_017_en_affar_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "affär",
     "audioRef": "sv_a1_u4_vocab_017_en_affar_v1"
   },
   {
@@ -822,11 +652,6 @@
   {
     "audioType": "vocab",
     "sourceText": "ett kvitto",
-    "audioRef": "sv_a1_u4_vocab_020_ett_kvitto_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "kvitto",
     "audioRef": "sv_a1_u4_vocab_020_ett_kvitto_v1"
   },
   {
@@ -847,11 +672,6 @@
   {
     "audioType": "vocab",
     "sourceText": "en påse",
-    "audioRef": "sv_a1_u4_vocab_025_en_pase_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "påse",
     "audioRef": "sv_a1_u4_vocab_025_en_pase_v1"
   },
   {
@@ -896,11 +716,6 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "blomma",
-    "audioRef": "sv_b1_u3_vocab_001_en_blomma_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "blomman",
     "audioRef": "sv_b1_u3_vocab_002_blomman_v1"
   },
@@ -917,11 +732,6 @@
   {
     "audioType": "vocab",
     "sourceText": "en gata",
-    "audioRef": "sv_b1_u1_vocab_070_en_gata_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "gata",
     "audioRef": "sv_b1_u1_vocab_070_en_gata_v1"
   },
   {
@@ -946,11 +756,6 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "flicka",
-    "audioRef": "sv_b1_u1_vocab_010_en_flicka_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "flickan",
     "audioRef": "sv_b1_u1_vocab_011_flickan_v1"
   },
@@ -967,11 +772,6 @@
   {
     "audioType": "vocab",
     "sourceText": "en vecka",
-    "audioRef": "sv_b1_u1_vocab_094_en_vecka_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "vecka",
     "audioRef": "sv_b1_u1_vocab_094_en_vecka_v1"
   },
   {
@@ -996,11 +796,6 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "skola",
-    "audioRef": "sv_b1_u1_vocab_058_en_skola_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "skolan",
     "audioRef": "sv_b1_u1_vocab_059_skolan_v1"
   },
@@ -1017,11 +812,6 @@
   {
     "audioType": "vocab",
     "sourceText": "en timme",
-    "audioRef": "sv_b1_u3_vocab_021_en_timme_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "timme",
     "audioRef": "sv_b1_u3_vocab_021_en_timme_v1"
   },
   {
@@ -1046,11 +836,6 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "kvinna",
-    "audioRef": "sv_b1_u1_vocab_004_en_kvinna_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "kvinnan",
     "audioRef": "sv_b1_u1_vocab_005_kvinnan_v1"
   },
@@ -1067,11 +852,6 @@
   {
     "audioType": "vocab",
     "sourceText": "en dag",
-    "audioRef": "sv_b1_u1_vocab_091_en_dag_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "dag",
     "audioRef": "sv_b1_u1_vocab_091_en_dag_v1"
   },
   {
@@ -1096,11 +876,6 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "pojke",
-    "audioRef": "sv_b1_u1_vocab_007_en_pojke_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "pojken",
     "audioRef": "sv_b1_u1_vocab_008_pojken_v1"
   },
@@ -1121,11 +896,6 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "bil",
-    "audioRef": "sv_b1_u3_vocab_037_en_bil_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "bilen",
     "audioRef": "sv_b1_u3_vocab_038_bilen_v1"
   },
@@ -1142,11 +912,6 @@
   {
     "audioType": "vocab",
     "sourceText": "en månad",
-    "audioRef": "sv_b1_u1_vocab_097_en_manad_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "månad",
     "audioRef": "sv_b1_u1_vocab_097_en_manad_v1"
   },
   {
@@ -1186,11 +951,6 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "nyckel",
-    "audioRef": "sv_b1_u1_vocab_037_en_nyckel_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "nyckeln",
     "audioRef": "sv_b1_u1_vocab_038_nyckeln_v1"
   },
@@ -1207,11 +967,6 @@
   {
     "audioType": "vocab",
     "sourceText": "en förälder",
-    "audioRef": "sv_b1_u1_vocab_019_en_foralder_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "förälder",
     "audioRef": "sv_b1_u1_vocab_019_en_foralder_v1"
   },
   {
@@ -1236,11 +991,6 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "stad",
-    "audioRef": "sv_b1_u1_vocab_067_en_stad_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "staden",
     "audioRef": "sv_b1_u1_vocab_068_staden_v1"
   },
@@ -1257,11 +1007,6 @@
   {
     "audioType": "vocab",
     "sourceText": "en hand",
-    "audioRef": "sv_b1_u3_vocab_061_en_hand_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "hand",
     "audioRef": "sv_b1_u3_vocab_061_en_hand_v1"
   },
   {
@@ -1316,11 +1061,6 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "medicin",
-    "audioRef": "sv_b1_u3_vocab_073_en_medicin_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "medicinen",
     "audioRef": "sv_b1_u3_vocab_074_medicinen_v1"
   },
@@ -1352,11 +1092,6 @@
   {
     "audioType": "vocab",
     "sourceText": "en natt",
-    "audioRef": "sv_b1_u3_vocab_081_en_natt_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "natt",
     "audioRef": "sv_b1_u3_vocab_081_en_natt_v1"
   },
   {
@@ -1396,11 +1131,6 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "äpple",
-    "audioRef": "sv_b1_u3_vocab_089_ett_apple_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "äpplet",
     "audioRef": "sv_b1_u3_vocab_090_applet_v1"
   },
@@ -1417,11 +1147,6 @@
   {
     "audioType": "vocab",
     "sourceText": "ett yrke",
-    "audioRef": "sv_b1_u3_vocab_093_ett_yrke_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "yrke",
     "audioRef": "sv_b1_u3_vocab_093_ett_yrke_v1"
   },
   {
@@ -1446,11 +1171,6 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "kontor",
-    "audioRef": "sv_b1_u1_vocab_085_ett_kontor_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "kontoret",
     "audioRef": "sv_b1_u1_vocab_086_kontoret_v1"
   },
@@ -1471,11 +1191,6 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "leende",
-    "audioRef": "sv_b1_u3_vocab_101_ett_leende_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "leendet",
     "audioRef": "sv_b1_u3_vocab_102_leendet_v1"
   },
@@ -1492,11 +1207,6 @@
   {
     "audioType": "vocab",
     "sourceText": "ett ögonblick",
-    "audioRef": "sv_b1_u3_vocab_105_ett_ogonblick_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "ögonblick",
     "audioRef": "sv_b1_u3_vocab_105_ett_ogonblick_v1"
   },
   {
@@ -1536,11 +1246,6 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "år",
-    "audioRef": "sv_b1_u1_vocab_103_ett_ar_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "året",
     "audioRef": "sv_b1_u1_vocab_104_aret_v1"
   },
@@ -1572,11 +1277,6 @@
   {
     "audioType": "vocab",
     "sourceText": "ett brev",
-    "audioRef": "sv_b1_u3_vocab_121_ett_brev_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "brev",
     "audioRef": "sv_b1_u3_vocab_121_ett_brev_v1"
   },
   {
@@ -1616,11 +1316,6 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "lärare",
-    "audioRef": "sv_b1_u1_vocab_028_en_larare_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "läraren",
     "audioRef": "sv_b1_u1_vocab_029_lararen_v1"
   },
@@ -1637,11 +1332,6 @@
   {
     "audioType": "vocab",
     "sourceText": "en doktor",
-    "audioRef": "sv_b1_u3_vocab_133_en_doktor_v1"
-  },
-  {
-    "audioType": "vocab",
-    "sourceText": "doktor",
     "audioRef": "sv_b1_u3_vocab_133_en_doktor_v1"
   },
   {
@@ -1666,11 +1356,6 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "program",
-    "audioRef": "sv_b1_u3_vocab_137_ett_program_v1"
-  },
-  {
-    "audioType": "vocab",
     "sourceText": "programmet",
     "audioRef": "sv_b1_u3_vocab_138_programmet_v1"
   },
@@ -1688,73 +1373,73 @@
     "contentId": "b3_dialog_line_001_01",
     "audioType": "dialogue_line_group",
     "sourceText": "Hur många rum har din nya lägenhet?",
-    "audioRef": "sv_b1_u3_dialog_001_line_01_hur_manga_rum_har_din_nya_lagenhet_v1"
+    "audioRef": "sv_b3_dialog_001_line_01_hur_manga_rum_har_din_nya_lagenhet_v1"
   },
   {
     "contentId": "b3_dialog_line_001_02",
     "audioType": "dialogue_line_group",
     "sourceText": "Den har tre rum. Och det finns många fönster, så det är ljust.",
-    "audioRef": "sv_b1_u3_dialog_001_line_02_den_har_tre_rum_och_det_finns_manga_fonster_sa_det_ar_ljust_v1"
+    "audioRef": "sv_b3_dialog_001_line_02_den_har_tre_rum_och_det_finns_manga_fonster_sa_det_ar_ljust_v1"
   },
   {
     "contentId": "b3_dialog_line_001_03",
     "audioType": "dialogue_line_group",
     "sourceText": "Har du köpt några nya möbler?",
-    "audioRef": "sv_b1_u3_dialog_001_line_03_har_du_kopt_nagra_nya_mobler_v1"
+    "audioRef": "sv_b3_dialog_001_line_03_har_du_kopt_nagra_nya_mobler_v1"
   },
   {
     "contentId": "b3_dialog_line_001_04",
     "audioType": "dialogue_line_group",
     "sourceText": "Ja! Jag köpte två stolar och ett bord. Mina gamla möbler är kvar i mitt gamla hus.",
-    "audioRef": "sv_b1_u3_dialog_001_line_04_ja_jag_kopte_tva_stolar_och_ett_bord_mina_gamla_mobler_ar_kvar_i_mitt_gamla_hus_v1"
+    "audioRef": "sv_b3_dialog_001_line_04_ja_jag_kopte_tva_stolar_och_ett_bord_mina_gamla_mobler_ar_kvar_i_mitt_gamla_hus_v1"
   },
   {
     "contentId": "b3_dialog_line_001_05",
     "audioType": "dialogue_line_group",
     "sourceText": "Bor det många barn i huset?",
-    "audioRef": "sv_b1_u3_dialog_001_line_05_bor_det_manga_barn_i_huset_v1"
+    "audioRef": "sv_b3_dialog_001_line_05_bor_det_manga_barn_i_huset_v1"
   },
   {
     "contentId": "b3_dialog_line_001_06",
     "audioType": "dialogue_line_group",
     "sourceText": "Ja, det finns tre familjer med barn. Jag ser deras cyklar utanför varje dag.",
-    "audioRef": "sv_b1_u3_dialog_001_line_06_ja_det_finns_tre_familjer_med_barn_jag_ser_deras_cyklar_utanfor_varje_dag_v1"
+    "audioRef": "sv_b3_dialog_001_line_06_ja_det_finns_tre_familjer_med_barn_jag_ser_deras_cyklar_utanfor_varje_dag_v1"
   },
   {
     "contentId": "b3_dialog_line_002_01",
     "audioType": "dialogue_line_group",
     "sourceText": "Hur många elever är det i din klass?",
-    "audioRef": "sv_b1_u3_dialog_002_line_01_hur_manga_elever_ar_det_i_din_klass_v1"
+    "audioRef": "sv_b3_dialog_002_line_01_hur_manga_elever_ar_det_i_din_klass_v1"
   },
   {
     "contentId": "b3_dialog_line_002_02",
     "audioType": "dialogue_line_group",
     "sourceText": "Vi är tjugo elever. Vi kommer från många olika länder.",
-    "audioRef": "sv_b1_u3_dialog_002_line_02_vi_ar_tjugo_elever_vi_kommer_fran_manga_olika_lander_v1"
+    "audioRef": "sv_b3_dialog_002_line_02_vi_ar_tjugo_elever_vi_kommer_fran_manga_olika_lander_v1"
   },
   {
     "contentId": "b3_dialog_line_002_03",
     "audioType": "dialogue_line_group",
     "sourceText": "Har ni bra böcker och datorer?",
-    "audioRef": "sv_b1_u3_dialog_002_line_03_har_ni_bra_bocker_och_datorer_v1"
+    "audioRef": "sv_b3_dialog_002_line_03_har_ni_bra_bocker_och_datorer_v1"
   },
   {
     "contentId": "b3_dialog_line_002_04",
     "audioType": "dialogue_line_group",
     "sourceText": "Ja, vi har många böcker. Men vi behöver fler datorer. Det är bara fem datorer på tjugo elever.",
-    "audioRef": "sv_b1_u3_dialog_002_line_04_ja_vi_har_manga_bocker_men_vi_behover_fler_datorer_det_ar_bara_fem_datorer_pa_tjugo_elever_v1"
+    "audioRef": "sv_b3_dialog_002_line_04_ja_vi_har_manga_bocker_men_vi_behover_fler_datorer_det_ar_bara_fem_datorer_pa_tjugo_elever_v1"
   },
   {
     "contentId": "b3_dialog_line_002_05",
     "audioType": "dialogue_line_group",
     "sourceText": "Hur många timmar studerar du svenska varje vecka?",
-    "audioRef": "sv_b1_u3_dialog_002_line_05_hur_manga_timmar_studerar_du_svenska_varje_vecka_v1"
+    "audioRef": "sv_b3_dialog_002_line_05_hur_manga_timmar_studerar_du_svenska_varje_vecka_v1"
   },
   {
     "contentId": "b3_dialog_line_002_06",
     "audioType": "dialogue_line_group",
     "sourceText": "Jag studerar ungefär femton timmar i skolan och läser böcker hemma på kvällarna.",
-    "audioRef": "sv_b1_u3_dialog_002_line_06_jag_studerar_ungefar_femton_timmar_i_skolan_och_laser_bocker_hemma_pa_kvallarna_v1"
+    "audioRef": "sv_b3_dialog_002_line_06_jag_studerar_ungefar_femton_timmar_i_skolan_och_laser_bocker_hemma_pa_kvallarna_v1"
   },
   {
     "contentId": "a1_u1_qp_001_hej_v1",
@@ -4629,263 +4314,5 @@
     "audioRefs": [
       "sv_a1_u2_adv_009_timmar_v1"
     ]
-  },
-  {
-    "contentId": "b3_vocab_hus",
-    "audioType": "question_prompt",
-    "sourceText": "ett hus",
-    "audioRef": "sv_a1_u3_vocab_011_ett_hus_v1"
-  },
-  {
-    "contentId": "b3_vocab_rum",
-    "audioType": "question_prompt",
-    "sourceText": "ett rum",
-    "audioRef": "sv_a1_u3_vocab_013_ett_rum_v1"
-  },
-  {
-    "contentId": "b3_vocab_fonster",
-    "audioType": "question_prompt",
-    "sourceText": "ett fönster",
-    "audioRef": "sv_b1_u3_qp_003_ett_fonster_v1"
-  },
-  {
-    "contentId": "b3_vocab_mobel",
-    "audioType": "question_prompt",
-    "sourceText": "en möbel",
-    "audioRef": "sv_b1_u3_adv_052_mobel_v1"
-  },
-  {
-    "contentId": "b3_vocab_stol",
-    "audioType": "question_prompt",
-    "sourceText": "en stol",
-    "audioRef": "sv_b1_u3_adv_037_stol_v1"
-  },
-  {
-    "contentId": "b3_vocab_bord",
-    "audioType": "question_prompt",
-    "sourceText": "ett bord",
-    "audioRef": "sv_b1_u3_qp_006_ett_bord_v1"
-  },
-  {
-    "contentId": "b3_vocab_cykel",
-    "audioType": "question_prompt",
-    "sourceText": "en cykel",
-    "audioRef": "sv_b1_u3_adv_042_cykel_v1"
-  },
-  {
-    "contentId": "b3_vocab_barn",
-    "audioType": "question_prompt",
-    "sourceText": "ett barn",
-    "audioRef": "sv_a1_u3_vocab_005_ett_barn_v1"
-  },
-  {
-    "contentId": "b3_vocab_familj",
-    "audioType": "question_prompt",
-    "sourceText": "en familj",
-    "audioRef": "sv_a1_u3_vocab_006_en_familj_v1"
-  },
-  {
-    "contentId": "b3_vocab_elev",
-    "audioType": "question_prompt",
-    "sourceText": "en elev",
-    "audioRef": "sv_b1_u3_adv_062_elev_v1"
-  },
-  {
-    "contentId": "b3_vocab_bok",
-    "audioType": "question_prompt",
-    "sourceText": "en bok",
-    "audioRef": "sv_b1_u3_adv_072_bok_v1"
-  },
-  {
-    "contentId": "b3_vocab_dator",
-    "audioType": "question_prompt",
-    "sourceText": "en dator",
-    "audioRef": "sv_b1_u3_adv_067_dator_v1"
-  },
-  {
-    "contentId": "b3_vocab_land",
-    "audioType": "question_prompt",
-    "sourceText": "ett land",
-    "audioRef": "sv_a1_u1_vocab_016_land_v1"
-  },
-  {
-    "contentId": "b3_vocab_timme",
-    "audioType": "question_prompt",
-    "sourceText": "en timme",
-    "audioRef": "sv_b1_u3_vocab_021_en_timme_v1"
-  },
-  {
-    "contentId": "b3_vocab_vecka",
-    "audioType": "question_prompt",
-    "sourceText": "en vecka",
-    "audioRef": "sv_b1_u1_vocab_094_en_vecka_v1"
-  },
-  {
-    "contentId": "b3_vocab_ar",
-    "audioType": "question_prompt",
-    "sourceText": "ett år",
-    "audioRef": "sv_b1_u1_vocab_103_ett_ar_v1"
-  },
-  {
-    "contentId": "b3_vocab_skola",
-    "audioType": "question_prompt",
-    "sourceText": "en skola",
-    "audioRef": "sv_b1_u1_vocab_058_en_skola_v1"
-  },
-  {
-    "contentId": "b3_phrase_jag_har_tre_bilar",
-    "audioType": "question_prompt",
-    "sourceText": "Jag har tre bilar.",
-    "audioRef": "sv_b1_u3_qp_018_jag_har_tre_bilar_v1"
-  },
-  {
-    "contentId": "b3_phrase_vi_har_manga_bocker",
-    "audioType": "question_prompt",
-    "sourceText": "Vi har många böcker.",
-    "audioRef": "sv_b1_u3_qp_019_vi_har_manga_bocker_v1"
-  },
-  {
-    "contentId": "b3_phrase_vi_behover_fler_datorer",
-    "audioType": "question_prompt",
-    "sourceText": "Vi behöver fler datorer.",
-    "audioRef": "sv_b1_u3_qp_020_vi_behover_fler_datorer_v1"
-  },
-  {
-    "contentId": "b3_phrase_det_finns_tre_familjer",
-    "audioType": "question_prompt",
-    "sourceText": "Det finns tre familjer i huset.",
-    "audioRef": "sv_b1_u3_qp_021_det_finns_tre_familjer_i_huset_v1"
-  },
-  {
-    "contentId": "b3_phrase_jag_ser_deras_cyklar",
-    "audioType": "question_prompt",
-    "sourceText": "Jag ser deras cyklar varje dag.",
-    "audioRef": "sv_b1_u3_qp_022_jag_ser_deras_cyklar_varje_dag_v1"
-  },
-  {
-    "contentId": "b3_phrase_den_har_tre_rum",
-    "audioType": "question_prompt",
-    "sourceText": "Den har tre rum.",
-    "audioRef": "sv_b1_u3_qp_023_den_har_tre_rum_v1"
-  },
-  {
-    "contentId": "b3_phrase_det_finns_manga_fonster",
-    "audioType": "question_prompt",
-    "sourceText": "Det finns många fönster, så det är ljust.",
-    "audioRef": "sv_b1_u3_qp_024_det_finns_manga_fonster_sa_det_ar_ljust_v1"
-  },
-  {
-    "contentId": "b3_phrase_jag_kopte_tva_stolar",
-    "audioType": "question_prompt",
-    "sourceText": "Jag köpte två stolar och ett bord.",
-    "audioRef": "sv_b1_u3_qp_025_jag_kopte_tva_stolar_och_ett_bord_v1"
-  },
-  {
-    "contentId": "b3_phrase_vi_ar_tjugo_elever",
-    "audioType": "question_prompt",
-    "sourceText": "Vi är tjugo elever.",
-    "audioRef": "sv_b1_u3_qp_026_vi_ar_tjugo_elever_v1"
-  },
-  {
-    "contentId": "b3_phrase_femton_timmar_varje_vecka",
-    "audioType": "question_prompt",
-    "sourceText": "Jag studerar ungefär femton timmar varje vecka.",
-    "audioRef": "sv_b1_u3_qp_027_jag_studerar_ungefar_femton_timmar_varje_vecka_v1"
-  },
-  {
-    "contentId": "b3_dialog_hur_manga_rum_har_den",
-    "audioType": "question_prompt",
-    "sourceText": "Hur många rum har din nya lägenhet?",
-    "audioRef": "sv_b1_u3_dialog_001_line_01_hur_manga_rum_har_din_nya_lagenhet_v1"
-  },
-  {
-    "contentId": "b3_dialog_den_har_tre_rum",
-    "audioType": "question_prompt",
-    "sourceText": "Den har tre rum.",
-    "audioRef": "sv_b1_u3_qp_023_den_har_tre_rum_v1"
-  },
-  {
-    "contentId": "b3_dialog_det_finns_manga_fonster",
-    "audioType": "question_prompt",
-    "sourceText": "Det finns många fönster.",
-    "audioRef": "sv_b1_u3_qp_030_det_finns_manga_fonster_v1"
-  },
-  {
-    "contentId": "b3_dialog_har_du_kopt_nya_mobler",
-    "audioType": "question_prompt",
-    "sourceText": "Har du köpt några nya möbler?",
-    "audioRef": "sv_b1_u3_dialog_001_line_03_har_du_kopt_nagra_nya_mobler_v1"
-  },
-  {
-    "contentId": "b3_dialog_jag_kopte_tva_stolar_och_ett_bord",
-    "audioType": "question_prompt",
-    "sourceText": "Jag köpte två stolar och ett bord.",
-    "audioRef": "sv_b1_u3_qp_025_jag_kopte_tva_stolar_och_ett_bord_v1"
-  },
-  {
-    "contentId": "b3_dialog_bor_det_manga_barn",
-    "audioType": "question_prompt",
-    "sourceText": "Bor det många barn i huset?",
-    "audioRef": "sv_b1_u3_dialog_001_line_05_bor_det_manga_barn_i_huset_v1"
-  },
-  {
-    "contentId": "b3_dialog_det_finns_tre_familjer_med_barn",
-    "audioType": "question_prompt",
-    "sourceText": "Det finns tre familjer med barn.",
-    "audioRef": "sv_b1_u3_qp_034_det_finns_tre_familjer_med_barn_v1"
-  },
-  {
-    "contentId": "b3_dialog_jag_ser_deras_cyklar_utanfor",
-    "audioType": "question_prompt",
-    "sourceText": "Jag ser deras cyklar utanför varje dag.",
-    "audioRef": "sv_b1_u3_qp_035_jag_ser_deras_cyklar_utanfor_varje_dag_v1"
-  },
-  {
-    "contentId": "b3_dialog_hur_manga_elever_ar_det",
-    "audioType": "question_prompt",
-    "sourceText": "Hur många elever är det i din klass?",
-    "audioRef": "sv_b1_u3_dialog_002_line_01_hur_manga_elever_ar_det_i_din_klass_v1"
-  },
-  {
-    "contentId": "b3_dialog_vi_ar_tjugo_elever",
-    "audioType": "question_prompt",
-    "sourceText": "Vi är tjugo elever.",
-    "audioRef": "sv_b1_u3_qp_026_vi_ar_tjugo_elever_v1"
-  },
-  {
-    "contentId": "b3_dialog_har_ni_bra_bocker_och_datorer",
-    "audioType": "question_prompt",
-    "sourceText": "Har ni bra böcker och datorer?",
-    "audioRef": "sv_b1_u3_dialog_002_line_03_har_ni_bra_bocker_och_datorer_v1"
-  },
-  {
-    "contentId": "b3_dialog_vi_har_manga_bocker",
-    "audioType": "question_prompt",
-    "sourceText": "Vi har många böcker.",
-    "audioRef": "sv_b1_u3_qp_019_vi_har_manga_bocker_v1"
-  },
-  {
-    "contentId": "b3_dialog_vi_behover_fler_datorer",
-    "audioType": "question_prompt",
-    "sourceText": "Men vi behöver fler datorer.",
-    "audioRef": "sv_b1_u3_qp_040_men_vi_behover_fler_datorer_v1"
-  },
-  {
-    "contentId": "b3_dialog_hur_manga_timmar_studerar_du",
-    "audioType": "question_prompt",
-    "sourceText": "Hur många timmar studerar du svenska varje vecka?",
-    "audioRef": "sv_b1_u3_dialog_002_line_05_hur_manga_timmar_studerar_du_svenska_varje_vecka_v1"
-  },
-  {
-    "contentId": "b3_dialog_jag_studerar_femton_timmar",
-    "audioType": "question_prompt",
-    "sourceText": "Jag studerar ungefär femton timmar i skolan.",
-    "audioRef": "sv_b1_u3_qp_042_jag_studerar_ungefar_femton_timmar_i_skolan_v1"
-  },
-  {
-    "contentId": "b3_dialog_jag_laser_bocker_hemma",
-    "audioType": "question_prompt",
-    "sourceText": "Jag läser böcker hemma på kvällarna.",
-    "audioRef": "sv_b1_u3_qp_043_jag_laser_bocker_hemma_pa_kvallarna_v1"
   }
 ]
