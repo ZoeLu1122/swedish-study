@@ -1,4 +1,4 @@
-window.UNIT_CONTENT_MANIFEST_B3 = [
+[
   {
     "audioType": "vocab",
     "sourceText": "Hej!",
@@ -72,7 +72,7 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
   {
     "audioType": "vocab",
     "sourceText": "namn",
-    "audioRef": "sv_a1_u1_vocab_015_namn"
+    "audioRef": "sv_a1_u1_vocab_015_namn_v1"
   },
   {
     "audioType": "vocab",
@@ -432,37 +432,37 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
   {
     "audioType": "vocab",
     "sourceText": "en man",
-    "audioRef": "sv_a3_u3_vocab_008_en_man"
+    "audioRef": "sv_a1_u3_vocab_008_en_man_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "en dotter",
-    "audioRef": "sv_a3_u3_vocab_009_en_dotter"
+    "audioRef": "sv_a1_u3_vocab_009_en_dotter_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "en son",
-    "audioRef": "sv_a3_u3_vocab_010_en_son"
+    "audioRef": "sv_a1_u3_vocab_010_en_son_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "ett hus",
-    "audioRef": "sv_a3_u3_vocab_011_ett_hus"
+    "audioRef": "sv_a1_u3_vocab_011_ett_hus_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "en lägenhet",
-    "audioRef": "sv_a3_u3_vocab_012_en_lagenhet"
+    "audioRef": "sv_a1_u3_vocab_012_en_lagenhet_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "ett rum",
-    "audioRef": "sv_a3_u3_vocab_013_ett_rum"
+    "audioRef": "sv_a1_u3_vocab_013_ett_rum_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "ett kök",
-    "audioRef": "sv_a3_u3_vocab_014_ett_kok"
+    "audioRef": "sv_a1_u3_vocab_014_ett_kok_v1"
   },
   {
     "audioType": "vocab",
@@ -487,12 +487,12 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
   {
     "audioType": "vocab",
     "sourceText": "en adress",
-    "audioRef": "sv_a3_u3_vocab_019_en_adress"
+    "audioRef": "sv_a1_u3_vocab_019_en_adress_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "en granne",
-    "audioRef": "sv_a3_u3_vocab_020_en_granne"
+    "audioRef": "sv_a1_u3_vocab_020_en_granne_v1"
   },
   {
     "audioType": "vocab",
@@ -637,7 +637,7 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
   {
     "audioType": "vocab",
     "sourceText": "en affär",
-    "audioRef": "sv_a4_u4_vocab_017_en_affar"
+    "audioRef": "sv_a1_u4_vocab_017_en_affar_v1"
   },
   {
     "audioType": "vocab",
@@ -732,17 +732,17 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
   {
     "audioType": "vocab",
     "sourceText": "en gata",
-    "audioRef": "sv_b1_u1_vocab_070_en_gata"
+    "audioRef": "sv_b1_u1_vocab_070_en_gata_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "gatan",
-    "audioRef": "sv_b1_u1_vocab_071_gatan"
+    "audioRef": "sv_b1_u1_vocab_071_gatan_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "gator",
-    "audioRef": "sv_b1_u1_vocab_072_gator"
+    "audioRef": "sv_b1_u1_vocab_072_gator_v1"
   },
   {
     "audioType": "vocab",
@@ -752,17 +752,17 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
   {
     "audioType": "vocab",
     "sourceText": "en flicka",
-    "audioRef": "sv_b1_u1_vocab_010_en_flicka"
+    "audioRef": "sv_b1_u1_vocab_010_en_flicka_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "flickan",
-    "audioRef": "sv_b1_u1_vocab_011_flickan"
+    "audioRef": "sv_b1_u1_vocab_011_flickan_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "flickor",
-    "audioRef": "sv_b1_u1_vocab_012_flickor"
+    "audioRef": "sv_b1_u1_vocab_012_flickor_v1"
   },
   {
     "audioType": "vocab",
@@ -772,37 +772,37 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
   {
     "audioType": "vocab",
     "sourceText": "en vecka",
-    "audioRef": "sv_b1_u1_vocab_094_en_vecka"
+    "audioRef": "sv_b1_u1_vocab_094_en_vecka_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "veckan",
-    "audioRef": "sv_b1_u1_vocab_095_veckan"
+    "audioRef": "sv_b1_u1_vocab_095_veckan_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "veckor",
-    "audioRef": "sv_b1_u1_vocab_096_veckor"
+    "audioRef": "sv_b1_u1_vocab_096_veckor_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "veckorna",
-    "audioRef": "sv_b1_u1_adv_024_veckorna"
+    "audioRef": "sv_b1_u1_adv_024_veckorna_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "en skola",
-    "audioRef": "sv_b1_u1_vocab_058_en_skola"
+    "audioRef": "sv_b1_u1_vocab_058_en_skola_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "skolan",
-    "audioRef": "sv_b1_u1_vocab_059_skolan"
+    "audioRef": "sv_b1_u1_vocab_059_skolan_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "skolor",
-    "audioRef": "sv_b1_u1_vocab_060_skolor"
+    "audioRef": "sv_b1_u1_vocab_060_skolor_v1"
   },
   {
     "audioType": "vocab",
@@ -832,17 +832,17 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
   {
     "audioType": "vocab",
     "sourceText": "en kvinna",
-    "audioRef": "sv_b1_u1_vocab_004_en_kvinna"
+    "audioRef": "sv_b1_u1_vocab_004_en_kvinna_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "kvinnan",
-    "audioRef": "sv_b1_u1_vocab_005_kvinnan"
+    "audioRef": "sv_b1_u1_vocab_005_kvinnan_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "kvinnor",
-    "audioRef": "sv_b1_u1_vocab_006_kvinnor"
+    "audioRef": "sv_b1_u1_vocab_006_kvinnor_v1"
   },
   {
     "audioType": "vocab",
@@ -852,17 +852,17 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
   {
     "audioType": "vocab",
     "sourceText": "en dag",
-    "audioRef": "sv_b1_u1_vocab_091_en_dag"
+    "audioRef": "sv_b1_u1_vocab_091_en_dag_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "dagen",
-    "audioRef": "sv_a2_u2_adv_016_dagen"
+    "audioRef": "sv_a1_u2_adv_016_dagen_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "dagar",
-    "audioRef": "sv_a2_u2_adv_017_dagar"
+    "audioRef": "sv_a1_u2_adv_017_dagar_v1"
   },
   {
     "audioType": "vocab",
@@ -872,17 +872,17 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
   {
     "audioType": "vocab",
     "sourceText": "en pojke",
-    "audioRef": "sv_b1_u1_vocab_007_en_pojke"
+    "audioRef": "sv_b1_u1_vocab_007_en_pojke_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "pojken",
-    "audioRef": "sv_b1_u1_vocab_008_pojken"
+    "audioRef": "sv_b1_u1_vocab_008_pojken_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "pojkar",
-    "audioRef": "sv_b1_u1_vocab_009_pojkar"
+    "audioRef": "sv_b1_u1_vocab_009_pojkar_v1"
   },
   {
     "audioType": "vocab",
@@ -912,17 +912,17 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
   {
     "audioType": "vocab",
     "sourceText": "en månad",
-    "audioRef": "sv_b1_u1_vocab_097_en_manad"
+    "audioRef": "sv_b1_u1_vocab_097_en_manad_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "månaden",
-    "audioRef": "sv_a2_u2_adv_020_manaden"
+    "audioRef": "sv_a1_u2_adv_020_manaden_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "månader",
-    "audioRef": "sv_a2_u2_adv_021_manader"
+    "audioRef": "sv_a1_u2_adv_021_manader_v1"
   },
   {
     "audioType": "vocab",
@@ -947,62 +947,62 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
   {
     "audioType": "vocab",
     "sourceText": "en nyckel",
-    "audioRef": "sv_b1_u1_vocab_037_en_nyckel"
+    "audioRef": "sv_b1_u1_vocab_037_en_nyckel_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "nyckeln",
-    "audioRef": "sv_b1_u1_vocab_038_nyckeln"
+    "audioRef": "sv_b1_u1_vocab_038_nyckeln_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "nycklar",
-    "audioRef": "sv_b1_u1_vocab_039_nycklar"
+    "audioRef": "sv_b1_u1_vocab_039_nycklar_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "nycklarna",
-    "audioRef": "sv_b1_u1_adv_008_nycklarna"
+    "audioRef": "sv_b1_u1_adv_008_nycklarna_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "en förälder",
-    "audioRef": "sv_b1_u1_vocab_019_en_foralder"
+    "audioRef": "sv_b1_u1_vocab_019_en_foralder_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "föräldern",
-    "audioRef": "sv_b1_u1_vocab_020_foraldern"
+    "audioRef": "sv_b1_u1_vocab_020_foraldern_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "föräldrar",
-    "audioRef": "sv_b1_u1_vocab_021_foraldrar"
+    "audioRef": "sv_b1_u1_vocab_021_foraldrar_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "föräldrarna",
-    "audioRef": "sv_b1_u1_adv_004_foraldrarna"
+    "audioRef": "sv_b1_u1_adv_004_foraldrarna_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "en stad",
-    "audioRef": "sv_b1_u1_vocab_067_en_stad"
+    "audioRef": "sv_b1_u1_vocab_067_en_stad_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "staden",
-    "audioRef": "sv_b1_u1_vocab_068_staden"
+    "audioRef": "sv_b1_u1_vocab_068_staden_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "städer",
-    "audioRef": "sv_b1_u1_vocab_069_stader"
+    "audioRef": "sv_b1_u1_vocab_069_stader_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "städerna",
-    "audioRef": "sv_b1_u1_adv_016_staderna"
+    "audioRef": "sv_b1_u1_adv_016_staderna_v1"
   },
   {
     "audioType": "vocab",
@@ -1027,12 +1027,12 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
   {
     "audioType": "vocab",
     "sourceText": "sonen",
-    "audioRef": "sv_b1_u1_vocab_014_sonen"
+    "audioRef": "sv_b1_u1_vocab_014_sonen_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "söner",
-    "audioRef": "sv_b1_u1_vocab_015_soner"
+    "audioRef": "sv_b1_u1_vocab_015_soner_v1"
   },
   {
     "audioType": "vocab",
@@ -1077,12 +1077,12 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
   {
     "audioType": "vocab",
     "sourceText": "mannen",
-    "audioRef": "sv_b1_u1_vocab_002_mannen"
+    "audioRef": "sv_b1_u1_vocab_002_mannen_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "män",
-    "audioRef": "sv_b1_u1_vocab_003_man"
+    "audioRef": "sv_b1_u1_vocab_003_man_v1"
   },
   {
     "audioType": "vocab",
@@ -1112,12 +1112,12 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
   {
     "audioType": "vocab",
     "sourceText": "dottern",
-    "audioRef": "sv_b1_u1_vocab_017_dottern"
+    "audioRef": "sv_b1_u1_vocab_017_dottern_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "döttrar",
-    "audioRef": "sv_b1_u1_vocab_018_dottrar"
+    "audioRef": "sv_b1_u1_vocab_018_dottrar_v1"
   },
   {
     "audioType": "vocab",
@@ -1167,22 +1167,22 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
   {
     "audioType": "vocab",
     "sourceText": "ett kontor",
-    "audioRef": "sv_b1_u1_vocab_085_ett_kontor"
+    "audioRef": "sv_b1_u1_vocab_085_ett_kontor_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "kontoret",
-    "audioRef": "sv_b1_u1_vocab_086_kontoret"
+    "audioRef": "sv_b1_u1_vocab_086_kontoret_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "kontor",
-    "audioRef": "sv_b1_u1_vocab_087_kontor"
+    "audioRef": "sv_b1_u1_vocab_087_kontor_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "kontoren",
-    "audioRef": "sv_b1_u1_adv_032_kontoren"
+    "audioRef": "sv_b1_u1_adv_032_kontoren_v1"
   },
   {
     "audioType": "vocab",
@@ -1227,12 +1227,12 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
   {
     "audioType": "vocab",
     "sourceText": "huset",
-    "audioRef": "sv_b1_u1_vocab_044_huset"
+    "audioRef": "sv_b1_u1_vocab_044_huset_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "hus",
-    "audioRef": "sv_b1_u1_vocab_045_hus"
+    "audioRef": "sv_b1_u1_vocab_045_hus_v1"
   },
   {
     "audioType": "vocab",
@@ -1242,17 +1242,17 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
   {
     "audioType": "vocab",
     "sourceText": "ett år",
-    "audioRef": "sv_b1_u1_vocab_103_ett_ar"
+    "audioRef": "sv_b1_u1_vocab_103_ett_ar_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "året",
-    "audioRef": "sv_b1_u1_vocab_104_aret"
+    "audioRef": "sv_b1_u1_vocab_104_aret_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "år",
-    "audioRef": "sv_b1_u1_vocab_105_ar"
+    "audioRef": "sv_b1_u1_vocab_105_ar_v1"
   },
   {
     "audioType": "vocab",
@@ -1297,12 +1297,12 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
   {
     "audioType": "vocab",
     "sourceText": "rummet",
-    "audioRef": "sv_a3_u3_adv_039_rummet"
+    "audioRef": "sv_a1_u3_adv_039_rummet_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "rum",
-    "audioRef": "sv_a3_u3_adv_038_rum"
+    "audioRef": "sv_a1_u3_adv_038_rum_v1"
   },
   {
     "audioType": "vocab",
@@ -1312,17 +1312,17 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
   {
     "audioType": "vocab",
     "sourceText": "en lärare",
-    "audioRef": "sv_b1_u1_vocab_028_en_larare"
+    "audioRef": "sv_b1_u1_vocab_028_en_larare_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "läraren",
-    "audioRef": "sv_b1_u1_vocab_029_lararen"
+    "audioRef": "sv_b1_u1_vocab_029_lararen_v1"
   },
   {
     "audioType": "vocab",
     "sourceText": "lärare",
-    "audioRef": "sv_b1_u1_vocab_030_larare"
+    "audioRef": "sv_b1_u1_vocab_030_larare_v1"
   },
   {
     "audioType": "vocab",
@@ -1583,13 +1583,13 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
     "contentId": "a1_u1_adv_001_namn_v1",
     "audioType": "question_prompt",
     "sourceText": "namn",
-    "audioRef": "sv_a1_u1_vocab_015_namn"
+    "audioRef": "sv_a1_u1_vocab_015_namn_v1"
   },
   {
     "contentId": "a1_u1_adv_002_namnet_v1",
     "audioType": "question_prompt",
     "sourceText": "namnet",
-    "audioRef": "sv_a1_u1_adv_002_namnet"
+    "audioRef": "sv_a1_u1_adv_002_namnet_v1"
   },
   {
     "contentId": "a1_u1_adv_003_namnen_v1",
@@ -1607,19 +1607,19 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
     "contentId": "a1_u1_adv_005_landet_v1",
     "audioType": "question_prompt",
     "sourceText": "landet",
-    "audioRef": "sv_a1_u1_adv_005_landet"
+    "audioRef": "sv_a1_u1_adv_005_landet_v1"
   },
   {
     "contentId": "a1_u1_adv_006_lander_v1",
     "audioType": "question_prompt",
     "sourceText": "länder",
-    "audioRef": "sv_a1_u1_adv_006_lander"
+    "audioRef": "sv_a1_u1_adv_006_lander_v1"
   },
   {
     "contentId": "a1_u1_adv_007_landerna_v1",
     "audioType": "question_prompt",
     "sourceText": "länderna",
-    "audioRef": "sv_a1_u1_adv_007_landerna"
+    "audioRef": "sv_a1_u1_adv_007_landerna_v1"
   },
   {
     "contentId": "a1_u1_adv_008_battre_v1",
@@ -2105,13 +2105,13 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
     "contentId": "a1_u2_adv_016_dagen_v1",
     "audioType": "question_prompt",
     "sourceText": "dagen",
-    "audioRef": "sv_a2_u2_adv_016_dagen"
+    "audioRef": "sv_a1_u2_adv_016_dagen_v1"
   },
   {
     "contentId": "a1_u2_adv_017_dagar_v1",
     "audioType": "question_prompt",
     "sourceText": "dagar",
-    "audioRef": "sv_a2_u2_adv_017_dagar"
+    "audioRef": "sv_a1_u2_adv_017_dagar_v1"
   },
   {
     "contentId": "a1_u2_adv_018_dagarna_v1",
@@ -2129,13 +2129,13 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
     "contentId": "a1_u2_adv_020_manaden_v1",
     "audioType": "question_prompt",
     "sourceText": "månaden",
-    "audioRef": "sv_a2_u2_adv_020_manaden"
+    "audioRef": "sv_a1_u2_adv_020_manaden_v1"
   },
   {
     "contentId": "a1_u2_adv_021_manader_v1",
     "audioType": "question_prompt",
     "sourceText": "månader",
-    "audioRef": "sv_a2_u2_adv_021_manader"
+    "audioRef": "sv_a1_u2_adv_021_manader_v1"
   },
   {
     "contentId": "a1_u2_adv_022_manaderna_v1",
@@ -2177,7 +2177,7 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
     "contentId": "a1_u3_qp_006_en_son_v1",
     "audioType": "question_prompt",
     "sourceText": "en son",
-    "audioRef": "sv_a3_u3_vocab_010_en_son"
+    "audioRef": "sv_a1_u3_vocab_010_en_son_v1"
   },
   {
     "contentId": "a1_u3_qp_007_ett_sovrum_v1",
@@ -2201,7 +2201,7 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
     "contentId": "a1_u3_qp_010_en_adress_v1",
     "audioType": "question_prompt",
     "sourceText": "en adress",
-    "audioRef": "sv_a3_u3_vocab_019_en_adress"
+    "audioRef": "sv_a1_u3_vocab_019_en_adress_v1"
   },
   {
     "contentId": "a1_u3_qp_011_stada_v1",
@@ -2555,13 +2555,13 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
     "contentId": "a1_u3_adv_029_lagenheten_v1",
     "audioType": "question_prompt",
     "sourceText": "lägenheten",
-    "audioRef": "sv_a3_u3_adv_029_lagenheten"
+    "audioRef": "sv_a1_u3_adv_029_lagenheten_v1"
   },
   {
     "contentId": "a1_u3_adv_030_lagenheter_v1",
     "audioType": "question_prompt",
     "sourceText": "lägenheter",
-    "audioRef": "sv_a3_u3_adv_030_lagenheter"
+    "audioRef": "sv_a1_u3_adv_030_lagenheter_v1"
   },
   {
     "contentId": "a1_u3_adv_031_lagenheterna_v1",
@@ -2585,13 +2585,13 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
     "contentId": "a1_u3_adv_034_grannen_v1",
     "audioType": "question_prompt",
     "sourceText": "grannen",
-    "audioRef": "sv_a3_u3_adv_034_grannen"
+    "audioRef": "sv_a1_u3_adv_034_grannen_v1"
   },
   {
     "contentId": "a1_u3_adv_035_grannar_v1",
     "audioType": "question_prompt",
     "sourceText": "grannar",
-    "audioRef": "sv_a3_u3_adv_035_grannar"
+    "audioRef": "sv_a1_u3_adv_035_grannar_v1"
   },
   {
     "contentId": "a1_u3_adv_036_grannarna_v1",
@@ -2609,19 +2609,19 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
     "contentId": "a1_u3_adv_038_rum_v1",
     "audioType": "question_prompt",
     "sourceText": "rum",
-    "audioRef": "sv_a3_u3_adv_038_rum"
+    "audioRef": "sv_a1_u3_adv_038_rum_v1"
   },
   {
     "contentId": "a1_u3_adv_039_rummet_v1",
     "audioType": "question_prompt",
     "sourceText": "rummet",
-    "audioRef": "sv_a3_u3_adv_039_rummet"
+    "audioRef": "sv_a1_u3_adv_039_rummet_v1"
   },
   {
     "contentId": "a1_u3_adv_040_rum_v1",
     "audioType": "question_prompt",
     "sourceText": "rum",
-    "audioRef": "sv_a3_u3_adv_038_rum"
+    "audioRef": "sv_a1_u3_adv_038_rum_v1"
   },
   {
     "contentId": "a1_u3_adv_041_rummen_v1",
@@ -3017,13 +3017,13 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
     "contentId": "a1_u4_adv_018_affaren_v1",
     "audioType": "question_prompt",
     "sourceText": "affären",
-    "audioRef": "sv_a4_u4_adv_018_affaren"
+    "audioRef": "sv_a1_u4_adv_018_affaren_v1"
   },
   {
     "contentId": "a1_u4_adv_019_affarer_v1",
     "audioType": "question_prompt",
     "sourceText": "affärer",
-    "audioRef": "sv_a4_u4_adv_019_affarer"
+    "audioRef": "sv_a1_u4_adv_019_affarer_v1"
   },
   {
     "contentId": "a1_u4_adv_020_affarerna_v1",
@@ -3317,13 +3317,13 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
     "contentId": "b1_u3_qp_001_ett_hus_v1",
     "audioType": "question_prompt",
     "sourceText": "ett hus",
-    "audioRef": "sv_a3_u3_vocab_011_ett_hus"
+    "audioRef": "sv_a1_u3_vocab_011_ett_hus_v1"
   },
   {
     "contentId": "b1_u3_qp_002_ett_rum_v1",
     "audioType": "question_prompt",
     "sourceText": "ett rum",
-    "audioRef": "sv_a3_u3_vocab_013_ett_rum"
+    "audioRef": "sv_a1_u3_vocab_013_ett_rum_v1"
   },
   {
     "contentId": "b1_u3_qp_003_ett_fonster_v1",
@@ -3437,19 +3437,19 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
     "contentId": "b1_u3_qp_015_en_vecka_v1",
     "audioType": "question_prompt",
     "sourceText": "en vecka",
-    "audioRef": "sv_b1_u1_vocab_094_en_vecka"
+    "audioRef": "sv_b1_u1_vocab_094_en_vecka_v1"
   },
   {
     "contentId": "b1_u3_qp_016_ett_ar_v1",
     "audioType": "question_prompt",
     "sourceText": "ett år",
-    "audioRef": "sv_b1_u1_vocab_103_ett_ar"
+    "audioRef": "sv_b1_u1_vocab_103_ett_ar_v1"
   },
   {
     "contentId": "b1_u3_qp_017_en_skola_v1",
     "audioType": "question_prompt",
     "sourceText": "en skola",
-    "audioRef": "sv_b1_u1_vocab_058_en_skola"
+    "audioRef": "sv_b1_u1_vocab_058_en_skola_v1"
   },
   {
     "contentId": "b1_u3_qp_018_jag_har_tre_bilar_v1",
@@ -3617,19 +3617,19 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
     "contentId": "b1_u3_adv_002_hus_v1",
     "audioType": "question_prompt",
     "sourceText": "hus",
-    "audioRef": "sv_b1_u1_vocab_045_hus"
+    "audioRef": "sv_b1_u1_vocab_045_hus_v1"
   },
   {
     "contentId": "b1_u3_adv_003_huset_v1",
     "audioType": "question_prompt",
     "sourceText": "huset",
-    "audioRef": "sv_b1_u1_vocab_044_huset"
+    "audioRef": "sv_b1_u1_vocab_044_huset_v1"
   },
   {
     "contentId": "b1_u3_adv_004_hus_v1",
     "audioType": "question_prompt",
     "sourceText": "hus",
-    "audioRef": "sv_b1_u1_vocab_045_hus"
+    "audioRef": "sv_b1_u1_vocab_045_hus_v1"
   },
   {
     "contentId": "b1_u3_adv_005_husen_v1",
@@ -3647,19 +3647,19 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
     "contentId": "b1_u3_adv_007_rum_v1",
     "audioType": "question_prompt",
     "sourceText": "rum",
-    "audioRef": "sv_a3_u3_adv_038_rum"
+    "audioRef": "sv_a1_u3_adv_038_rum_v1"
   },
   {
     "contentId": "b1_u3_adv_008_rummet_v1",
     "audioType": "question_prompt",
     "sourceText": "rummet",
-    "audioRef": "sv_a3_u3_adv_039_rummet"
+    "audioRef": "sv_a1_u3_adv_039_rummet_v1"
   },
   {
     "contentId": "b1_u3_adv_009_rum_v1",
     "audioType": "question_prompt",
     "sourceText": "rum",
-    "audioRef": "sv_a3_u3_adv_038_rum"
+    "audioRef": "sv_a1_u3_adv_038_rum_v1"
   },
   {
     "contentId": "b1_u3_adv_010_rummen_v1",
@@ -3707,19 +3707,19 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
     "contentId": "b1_u3_adv_017_ar_v1",
     "audioType": "question_prompt",
     "sourceText": "år",
-    "audioRef": "sv_b1_u1_vocab_105_ar"
+    "audioRef": "sv_b1_u1_vocab_105_ar_v1"
   },
   {
     "contentId": "b1_u3_adv_018_aret_v1",
     "audioType": "question_prompt",
     "sourceText": "året",
-    "audioRef": "sv_b1_u1_vocab_104_aret"
+    "audioRef": "sv_b1_u1_vocab_104_aret_v1"
   },
   {
     "contentId": "b1_u3_adv_019_ar_v1",
     "audioType": "question_prompt",
     "sourceText": "år",
-    "audioRef": "sv_b1_u1_vocab_105_ar"
+    "audioRef": "sv_b1_u1_vocab_105_ar_v1"
   },
   {
     "contentId": "b1_u3_adv_020_aren_v1",
@@ -3773,19 +3773,19 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
     "contentId": "b1_u3_adv_028_veckan_v1",
     "audioType": "question_prompt",
     "sourceText": "veckan",
-    "audioRef": "sv_b1_u1_vocab_095_veckan"
+    "audioRef": "sv_b1_u1_vocab_095_veckan_v1"
   },
   {
     "contentId": "b1_u3_adv_029_veckor_v1",
     "audioType": "question_prompt",
     "sourceText": "veckor",
-    "audioRef": "sv_b1_u1_vocab_096_veckor"
+    "audioRef": "sv_b1_u1_vocab_096_veckor_v1"
   },
   {
     "contentId": "b1_u3_adv_030_veckorna_v1",
     "audioType": "question_prompt",
     "sourceText": "veckorna",
-    "audioRef": "sv_b1_u1_adv_024_veckorna"
+    "audioRef": "sv_b1_u1_adv_024_veckorna_v1"
   },
   {
     "contentId": "b1_u3_adv_031_en_v1",
@@ -3803,13 +3803,13 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
     "contentId": "b1_u3_adv_033_skolan_v1",
     "audioType": "question_prompt",
     "sourceText": "skolan",
-    "audioRef": "sv_b1_u1_vocab_059_skolan"
+    "audioRef": "sv_b1_u1_vocab_059_skolan_v1"
   },
   {
     "contentId": "b1_u3_adv_034_skolor_v1",
     "audioType": "question_prompt",
     "sourceText": "skolor",
-    "audioRef": "sv_b1_u1_vocab_060_skolor"
+    "audioRef": "sv_b1_u1_vocab_060_skolor_v1"
   },
   {
     "contentId": "b1_u3_adv_035_skolorna_v1",
@@ -4116,9 +4116,9 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
     "audioType": "morphology",
     "audioRefs": [
       "sv_a1_u3_adv_037_ett_v1",
-      "sv_b1_u1_vocab_045_hus",
-      "sv_b1_u1_vocab_044_huset",
-      "sv_b1_u1_vocab_045_hus",
+      "sv_b1_u1_vocab_045_hus_v1",
+      "sv_b1_u1_vocab_044_huset_v1",
+      "sv_b1_u1_vocab_045_hus_v1",
       "sv_b1_u3_vocab_112_husen_v1"
     ]
   },
@@ -4127,9 +4127,9 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
     "audioType": "morphology",
     "audioRefs": [
       "sv_a1_u3_adv_037_ett_v1",
-      "sv_a3_u3_adv_038_rum",
-      "sv_a3_u3_adv_039_rummet",
-      "sv_a3_u3_adv_038_rum",
+      "sv_a1_u3_adv_038_rum_v1",
+      "sv_a1_u3_adv_039_rummet_v1",
+      "sv_a1_u3_adv_038_rum_v1",
       "sv_a1_u3_adv_041_rummen_v1"
     ]
   },
@@ -4149,9 +4149,9 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
     "audioType": "morphology",
     "audioRefs": [
       "sv_a1_u3_adv_037_ett_v1",
-      "sv_b1_u1_vocab_105_ar",
-      "sv_b1_u1_vocab_104_aret",
-      "sv_b1_u1_vocab_105_ar",
+      "sv_b1_u1_vocab_105_ar_v1",
+      "sv_b1_u1_vocab_104_aret_v1",
+      "sv_b1_u1_vocab_105_ar_v1",
       "sv_b1_u3_vocab_116_aren_v1"
     ]
   },
@@ -4172,9 +4172,9 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
     "audioRefs": [
       "sv_a1_u2_adv_006_en_v1",
       "sv_b1_u3_adv_027_vecka_v1",
-      "sv_b1_u1_vocab_095_veckan",
-      "sv_b1_u1_vocab_096_veckor",
-      "sv_b1_u1_adv_024_veckorna"
+      "sv_b1_u1_vocab_095_veckan_v1",
+      "sv_b1_u1_vocab_096_veckor_v1",
+      "sv_b1_u1_adv_024_veckorna_v1"
     ]
   },
   {
@@ -4183,8 +4183,8 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
     "audioRefs": [
       "sv_a1_u2_adv_006_en_v1",
       "sv_b1_u3_adv_032_skola_v1",
-      "sv_b1_u1_vocab_059_skolan",
-      "sv_b1_u1_vocab_060_skolor",
+      "sv_b1_u1_vocab_059_skolan_v1",
+      "sv_b1_u1_vocab_060_skolor_v1",
       "sv_b1_u3_vocab_020_skolorna_v1"
     ]
   },
@@ -4315,4 +4315,4 @@ window.UNIT_CONTENT_MANIFEST_B3 = [
       "sv_a1_u2_adv_009_timmar_v1"
     ]
   }
-];
+]
