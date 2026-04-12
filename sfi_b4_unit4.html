@@ -485,15 +485,16 @@ function flipForms(v){
 function renderNounCard(v){
   const enBadge=v.en==='en'?`<span class="vc-en-badge en-b">🔵 en</span>`:`<span class="vc-en-badge ett-b">🟠 ett</span>`;
   const defHL=diffHL(v.sv,v.def,'d-def'),plHL=diffHL(v.sv,v.pl,'d-pl'),pldefHL=diffHL(v.sv,v.plDef,'d-pd');
+  const headword=`${v.en} ${v.sv}`;
   return `<div class="vocab-card noun">
     <div class="vc-top"><span class="vc-type-badge">📦 名词</span>${enBadge}</div>
     <div class="vc-headword">
-      <span class="vc-headword-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.sv}" title="点击发音">${v.en} ${v.sv}</span>
+      <span class="vc-headword-sv speak-word" onclick="speakWord(this.dataset.word,this)" data-word="${headword}" title="点击发音">${headword}</span>
       <span class="vc-headword-py">${v.py}</span>
     </div>
-    <div class="vc-form-row"><div class="vc-form-top"><span class="vc-row-label">定冠词</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.def}" title="点击发音">${defHL}</span></div><span class="vc-row-py">${v.defPy}</span></div>
-    <div class="vc-form-row"><div class="vc-form-top"><span class="vc-row-label">复数</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.pl}" title="点击发音">${plHL}</span></div><span class="vc-row-py">${v.plPy}</span></div>
-    <div class="vc-form-row"><div class="vc-form-top"><span class="vc-row-label">复+定</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.plDef}" title="点击发音">${pldefHL}</span></div><span class="vc-row-py">${v.plDefPy}</span></div>
+    <div class="vc-form-row"><div class="vc-form-top"><span class="vc-row-label">定冠词</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word,this)" data-word="${v.def}" title="点击发音">${defHL}</span></div><span class="vc-row-py">${v.defPy}</span></div>
+    <div class="vc-form-row"><div class="vc-form-top"><span class="vc-row-label">复数</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word,this)" data-word="${v.pl}" title="点击发音">${plHL}</span></div><span class="vc-row-py">${v.plPy}</span></div>
+    <div class="vc-form-row"><div class="vc-form-top"><span class="vc-row-label">复+定</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word,this)" data-word="${v.plDef}" title="点击发音">${pldefHL}</span></div><span class="vc-row-py">${v.plDefPy}</span></div>
     <div class="vc-chinese">${v.zh}</div>
   </div>`;
 }
@@ -504,12 +505,12 @@ function renderVerbCard(v){
   return `<div class="vocab-card verb">
     <div class="vc-top"><span class="vc-type-badge">⚡ 动词</span></div>
     <div class="vc-headword">
-      <span class="vc-headword-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.sv}" title="点击发音">${v.sv}</span>
+      <span class="vc-headword-sv speak-word" onclick="speakWord(this.dataset.word,this)" data-word="${base}" title="点击发音">${base}</span>
       <span class="vc-headword-py">${v.py}</span>
     </div>
-    <div class="vc-verb-row"><div class="vc-verb-top"><span class="vc-row-label">现在时</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.now}" title="点击发音">${nowHL}</span></div><span class="vc-verb-py">${v.nowPy}</span></div>
-    <div class="vc-verb-row"><div class="vc-verb-top"><span class="vc-row-label">过去时</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.past}" title="点击发音">${pastHL}</span></div><span class="vc-verb-py">${v.pastPy}</span></div>
-    <div class="vc-verb-row"><div class="vc-verb-top"><span class="vc-row-label">完成时</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.sup}" title="点击发音">${supHL}</span></div><span class="vc-verb-py">${v.supPy}</span></div>
+    <div class="vc-verb-row"><div class="vc-verb-top"><span class="vc-row-label">现在时</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word,this)" data-word="${v.now}" title="点击发音">${nowHL}</span></div><span class="vc-verb-py">${v.nowPy}</span></div>
+    <div class="vc-verb-row"><div class="vc-verb-top"><span class="vc-row-label">过去时</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word,this)" data-word="${v.past}" title="点击发音">${pastHL}</span></div><span class="vc-verb-py">${v.pastPy}</span></div>
+    <div class="vc-verb-row"><div class="vc-verb-top"><span class="vc-row-label">完成时</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word,this)" data-word="${v.sup}" title="点击发音">${supHL}</span></div><span class="vc-verb-py">${v.supPy}</span></div>
     <div class="vc-chinese">${v.zh}</div>
   </div>`;
 }
@@ -518,7 +519,7 @@ function renderAdjCard(v){
   return `<div class="vocab-card adj">
     <div class="vc-top"><span class="vc-type-badge">🎨 形容词</span></div>
     <div class="vc-headword">
-      <span class="vc-headword-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.sv}" title="点击发音">${v.sv}</span>
+      <span class="vc-headword-sv speak-word" onclick="speakWord(this.dataset.word,this)" data-word="${v.sv}" title="点击发音">${v.sv}</span>
       <span class="vc-headword-py">${v.py}</span>
     </div>
     <div class="vc-chinese">${v.zh}</div>
@@ -529,7 +530,7 @@ function renderAdvCard(v){
   return `<div class="vocab-card adv">
     <div class="vc-top"><span class="vc-type-badge">⏩ 副词</span></div>
     <div class="vc-headword">
-      <span class="vc-headword-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.sv}" title="点击发音">${v.sv}</span>
+      <span class="vc-headword-sv speak-word" onclick="speakWord(this.dataset.word,this)" data-word="${v.sv}" title="点击发音">${v.sv}</span>
       <span class="vc-headword-py">${v.py}</span>
     </div>
     <div class="vc-chinese">${v.zh}</div>
@@ -556,7 +557,8 @@ function renderVocab(f){
 }
 
 function makeFlipCard(v){
-  const dispSv=v.type==='noun'?`${v.en} ${v.sv}`:v.sv;
+  const dispSv=v.type==='noun'?`${v.en} ${v.sv}`:v.type==='verb'?v.sv.replace(/^att /,''):v.sv;
+  const speakKey=v.type==='noun'?dispSv:v.sv.replace(/^att /,'');
   const typeLabel={noun:'名词',verb:'动词',adj:'形容词',adv:'副词'}[v.type];
   return `<div class="flip-card-wrap" onclick="flipCard(this)">
     <div class="flip-card-inner">
@@ -565,7 +567,7 @@ function makeFlipCard(v){
         <div class="flip-type">${typeLabel}</div>
       </div>
       <div class="flip-back">
-        <div class="flip-sv speak-word" onclick="speakWord(this.dataset.word);event.stopPropagation();" data-word="${v.sv}" title="点击发音">${dispSv}</div>
+        <div class="flip-sv speak-word" onclick="speakWord(this.dataset.word,this);event.stopPropagation();" data-word="${speakKey}" title="点击发音">${dispSv}</div>
         <div class="flip-forms">${flipForms(v)}</div>
       </div>
     </div>
@@ -662,6 +664,11 @@ function resetQuiz(){qAnswers={};qSubmitted=false;document.getElementById('quizS
 window.dialogues={
   1:['Vad vill du ha?','Jag vill ha en kaffe, tack. Men jag vill inte ha socker.','Okej! Vill du ha något att äta?','Nej, jag är inte hungrig. Jag äter aldrig på förmiddagen.','Hur mycket kostar det?','Kaffen kostar tjugofem kronor. Vi tar inte kontanter, bara kort.','Det är inga problem. Jag har ett kort.'],
   2:['Hej, det här är Vårdcentralen i Täby. Vad kan jag hjälpa dig med?','Hej! Jag heter Li Wei och jag mår inte bra. Kan jag få en tid idag?','Tyvärr har vi inga tider kvar idag. Kan du komma imorgon klockan tio?','Imorgon arbetar jag inte. Ja, klockan tio är bra.','Bra. Har du ett personnummer?','Ja. Jag har inte personnumret med mig nu, men jag kan ringa tillbaka.'],
+};
+
+window.dialogueContentIds={
+  1:['b4_dialog_line_001_01','b4_dialog_line_001_02','b4_dialog_line_001_03','b4_dialog_line_001_04','b4_dialog_line_001_05','b4_dialog_line_001_06','b4_dialog_line_001_07'],
+  2:['b4_dialog_line_002_01','b4_dialog_line_002_02','b4_dialog_line_002_03','b4_dialog_line_002_04','b4_dialog_line_002_05','b4_dialog_line_002_06']
 };
 
 function wrapDialogueWords(html){

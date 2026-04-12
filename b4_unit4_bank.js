@@ -49,11 +49,11 @@ window.UNIT_BANK_B4 = {
     { id: 'b4_phrase_jag_vet_att_han_inte_kommer', kind: 'phrase_fill', concept: 'jag_vet_att_han_inte_kommer', lemma: 'inte', source: 'phrase', prompt: { zh: '我知道他明天不来。' }, template: 'Jag vet att han {{inte}} kommer imorgon.' },
     { id: 'b4_phrase_hon_arbetar_inte_idag', kind: 'phrase_fill', concept: 'hon_arbetar_inte_idag', lemma: 'inte', source: 'phrase', prompt: { zh: '她今天不工作。' }, template: 'Hon arbetar {{inte}} idag.' },
     { id: 'b4_phrase_idag_arbetar_jag_hemma', kind: 'phrase_fill', concept: 'idag_arbetar_jag_hemma', lemma: 'arbetar', source: 'phrase', prompt: { zh: '今天我在家工作。' }, template: 'Idag {{arbetar}} jag hemma.' },
-    { id: 'b4_phrase_ofta_ater_vi_pizza', kind: 'phrase_fill', concept: 'ofta_ater_vi_pizza', lemma: 'äter', source: 'phrase', prompt: { zh: '我经常吃披萨。' }, template: 'Ofta {{äter}} vi pizza.' },
+    { id: 'b4_phrase_ofta_ater_vi_pizza', kind: 'phrase_fill', concept: 'ofta_ater_vi_pizza', lemma: 'äter', source: 'phrase', prompt: { zh: '我们经常吃披萨。' }, template: 'Ofta {{äter}} vi pizza.' },
     { id: 'b4_phrase_imorgon_arbetar_jag_inte', kind: 'phrase_fill', concept: 'imorgon_arbetar_jag_inte', lemma: 'arbetar', source: 'phrase', prompt: { zh: '明天我不上班。' }, template: 'Imorgon {{arbetar}} jag inte.' },
     // ===== 对话句题 =====
     { id: 'b4_dialog_vad_vill_du_ha', kind: 'dialog_fill', concept: 'vad_vill_du_ha', lemma: 'vad', source: 'dialog', prompt: { zh: '你想要什么？' }, template: '{{Vad}} vill du ha?' },
-    { id: 'b4_dialog_jag_vill_ha_en_kaffe', kind: 'dialog_fill', concept: 'jag_vill_ha_en_kaffe', lemma: 'kaffe', source: 'dialog', prompt: { zh: '我想要一杯咖啡，谢谢。' }, template: 'Jag vill ha en kaffe, tack.' },
+    { id: 'b4_dialog_jag_vill_ha_en_kaffe', kind: 'dialog_fill', concept: 'jag_vill_ha_en_kaffe', lemma: 'kaffe', source: 'dialog', prompt: { zh: '我想要一杯咖啡，谢谢。' }, template: 'Jag vill ha en {{kaffe}}, tack.' },
     { id: 'b4_dialog_men_jag_vill_inte_ha_socker', kind: 'dialog_fill', concept: 'men_jag_vill_inte_ha_socker', lemma: 'inte', source: 'dialog', prompt: { zh: '但我不要糖。' }, template: 'Men jag vill {{inte}} ha socker.' },
     { id: 'b4_dialog_vill_du_ha_nagot_att_ata', kind: 'dialog_fill', concept: 'vill_du_ha_nagot_att_ata', lemma: 'vill', source: 'dialog', prompt: { zh: '你想吃点什么吗？' }, template: '{{Vill}} du ha något att äta?' },
     { id: 'b4_dialog_nej_jag_ar_inte_hungrig', kind: 'dialog_fill', concept: 'nej_jag_ar_inte_hungrig', lemma: 'inte', source: 'dialog', prompt: { zh: '不，我不饿。' }, template: 'Nej, jag är {{inte}} hungrig.' },
@@ -93,9 +93,9 @@ window.UNIT_BANK_B4 = {
     { id: 'b4_adj_kall_group', kind: 'morphology', source: 'adjective', labelScheme: 'adjective_forms', slotLabels: ['en-词形式', 'ett-词形式', '复数 / 定指形式'], lemma: 'kall', prompt: { zh: '冷的' }, template: '{{kall}} | {{kallt}} | {{kalla}}' },
     { id: 'b4_adj_bra_group', kind: 'morphology', source: 'adjective', labelScheme: 'adjective_forms', slotLabels: ['en-词形式', 'ett-词形式', '复数 / 定指形式'], lemma: 'bra', prompt: { zh: '好的' }, template: '{{bra}} | {{bra}} | {{bra}}' },
     // ===== negation pattern =====
-    { id: 'b4_neg_jag_ater_inte_frukost_idag', kind: 'morphology', source: 'pattern', lemma: 'jag äter inte frukost idag', prompt: { zh: '主句否定：动词 + inte' }, template: 'Jag äter {{inte}} frukost idag.' },
-    { id: 'b4_neg_jag_vet_att_han_inte_kommer', kind: 'morphology', source: 'pattern', lemma: 'jag vet att han inte kommer imorgon', prompt: { zh: '从句否定：inte + 动词' }, template: 'Jag vet att han {{inte}} kommer imorgon.' },
-    { id: 'b4_neg_det_finns_inga_applen_kvar', kind: 'morphology', source: 'pattern', lemma: 'det finns inga äpplen kvar', prompt: { zh: '复数名词否定：inga' }, template: 'Det finns {{inga}} äpplen kvar.' },
-    { id: 'b4_neg_hon_ater_aldrig_kott', kind: 'morphology', source: 'pattern', lemma: 'hon äter aldrig kött', prompt: { zh: '强否定频率：aldrig' }, template: 'Hon äter {{aldrig}} kött.' }
+    { id: 'b4_neg_jag_ater_inte_frukost_idag', kind: 'morphology', source: 'pattern', lemma: 'jag äter inte frukost idag', prompt: { zh: '我今天不吃早饭。' }, template: 'Jag äter {{inte}} frukost idag.' },
+    { id: 'b4_neg_jag_vet_att_han_inte_kommer', kind: 'morphology', source: 'pattern', lemma: 'jag vet att han inte kommer imorgon', prompt: { zh: '我知道他明天不来。' }, template: 'Jag vet att han {{inte}} kommer imorgon.' },
+    { id: 'b4_neg_det_finns_inga_applen_kvar', kind: 'morphology', source: 'pattern', lemma: 'det finns inga äpplen kvar', prompt: { zh: '没有苹果了。' }, template: 'Det finns {{inga}} äpplen kvar.' },
+    { id: 'b4_neg_hon_ater_aldrig_kott', kind: 'morphology', source: 'pattern', lemma: 'hon äter aldrig kött', prompt: { zh: '她从不吃肉。' }, template: 'Hon äter {{aldrig}} kött.' }
   ]
 };
