@@ -156,6 +156,7 @@
           type: 'inline_fill',
           template: buildVocabTemplate(item.answer || ''),
           prompt: { zh: item?.prompt?.zh || '' },
+          autoPlay: item.autoPlay !== false,
           modes: ['basic']
         };
       }
@@ -170,6 +171,7 @@
           type: 'inline_fill',
           template: item.template || buildVocabTemplate(item.answer || ''),
           prompt: { zh: item?.prompt?.zh || '' },
+          autoPlay: item.autoPlay !== false,
           modes: ['basic']
         };
       }
@@ -184,6 +186,7 @@
           type: 'inline_fill',
           template: item.template || '',
           prompt: { zh: item?.prompt?.zh || item.sentenceZh || '' },
+          autoPlay: item.autoPlay !== false,
           modes: ['basic']
         };
       }
@@ -200,6 +203,7 @@
           type: 'inline_fill',
           template: item.template || '',
           prompt: { zh: item?.prompt?.zh || '' },
+          autoPlay: item.autoPlay !== false,
           modes: ['basic']
         };
       }
@@ -218,6 +222,7 @@
         slotLabels: Array.isArray(item.slotLabels) ? item.slotLabels : null,
         prompt: { zh: item?.prompt?.zh || '' },
         template: item.template || '',
+        autoPlay: item.autoPlay !== false,
         modes: ['advanced']
       };
       if (item.labelScheme === 'noun_forms' || item.source === 'noun_forms') {
@@ -1010,7 +1015,9 @@ const fallbackText = (item && item.sourceText) ||
     refreshDOM();
     resetInputStates();
     focusFirstInput();
-    setTimeout(function () { speakCurrentQuestion(); }, 400);
+    if (question.autoPlay !== false) {
+      setTimeout(function () { speakCurrentQuestion(); }, 400);
+    }
   }
 
   function showCompletionScreen() {
