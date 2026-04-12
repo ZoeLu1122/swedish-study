@@ -237,9 +237,11 @@
         };
         el.load();
         el.playbackRate = window.SfiCore.state.ttsRate; // set AFTER load() to prevent reset
-        console.log('[SfiCore] play() rate:', el.playbackRate, '| state:', window.SfiCore.state.ttsRate);
         el.play().catch(function (err) {
-          if (err.name === 'NotAllowedError') return; // autoplay blocked, user hasn't interacted yet
+          if (err.name === 'NotAllowedError') {
+            console.info('[SfiCore] audio autoplay blocked. Use the prompt replay button.');
+            return;
+          }
           console.warn('[SfiCore] audio play() rejected:', err);
           if (onFallback) onFallback();
         });
@@ -356,10 +358,8 @@
       if (!window.SfiCore.audio) { fallback(); return; }
       window.SfiCore.manifest.ensure(function () {
         const item = window.SfiCore.manifest.lookupBySourceText(word, 'vocab');
-        console.log('[SfiCore] speakWord lookup:', word, '→', item ? item.audioRef : 'NOT FOUND');
         if (!item || !item.audioRef) { fallback(); return; }
         const path = window.SfiCore.manifest.getFilePath(item.audioRef);
-        console.log('[SfiCore] speakWord path:', path);
         if (!path) { fallback(); return; }
         window.SfiCore.audio.play(path, onDone, fallback);
       });

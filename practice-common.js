@@ -583,6 +583,32 @@
       if (text) SfiCore.tts.speak(text);
     }
 
+    function getNounParadigmNaturalRefs(question, manifestItem) {
+      if (!(question && question.labelScheme === 'noun_forms' && manifestItem)) return null;
+
+      const answers = getQuestionAnswers(question);
+      if (answers.length < 2 || !Array.isArray(manifestItem.audioRefs) || manifestItem.audioRefs.length < 2) {
+        return null;
+      }
+
+      if (manifestItem.audioRefs.length === answers.length - 1) {
+        return manifestItem.audioRefs;
+      }
+
+      const headword = `${answers[0]} ${answers[1]}`.replace(/\s+/g, ' ').trim();
+      if (!headword) return null;
+
+      const headwordItem =
+        SfiCore.manifest.lookupBySourceText(headword, 'vocab') ||
+        SfiCore.manifest.lookupBySourceText(headword, 'question_prompt') ||
+        SfiCore.manifest.lookupBySourceText(headword);
+
+      if (!headwordItem || !headwordItem.audioRef) return null;
+      if (manifestItem.audioRefs[0] === headwordItem.audioRef) return manifestItem.audioRefs;
+
+      return [headwordItem.audioRef].concat(manifestItem.audioRefs.slice(2));
+    }
+
     if (!SfiCore.audio) {
       fallback(q.audio || getQuestionAnswers(q).join(' '));
       return;
@@ -599,6 +625,17 @@ const fallbackText = (item && item.sourceText) ||
         q.lemma || q.audio || getQuestionAnswers(q).join(' ');
 
       if (!item) { fallback(fallbackText); return; }
+
+      const naturalRefs = getNounParadigmNaturalRefs(q, item);
+      if (naturalRefs && naturalRefs.length) {
+        const naturalPaths = naturalRefs.map(function (ref) {
+          return SfiCore.manifest.getFilePath(ref);
+        }).filter(Boolean);
+        if (naturalPaths.length === naturalRefs.length) {
+          SfiCore.audio.playSequence(naturalPaths, null, function () { fallback(fallbackText); });
+          return;
+        }
+      }
 
       // Handle audioRefs array (dialogue items with multiple lines)
       if (item.audioRefs && item.audioRefs.length) {
