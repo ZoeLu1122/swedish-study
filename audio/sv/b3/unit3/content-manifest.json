@@ -1011,22 +1011,10 @@
       "audioRef": "sv_b1_u3_qp_004_01_en_v1"
     },
     {
-      "contentId": "b1_u3_qp_004_02_mobel_v1",
-      "audioType": "question_prompt",
-      "sourceText": "möbel",
-      "audioRef": "sv_b1_u3_qp_004_02_mobel_v1"
-    },
-    {
       "contentId": "b1_u3_qp_005_01_en_v1",
       "audioType": "question_prompt",
       "sourceText": "en",
       "audioRef": "sv_b1_u3_qp_005_01_en_v1"
-    },
-    {
-      "contentId": "b1_u3_qp_005_02_stol_v1",
-      "audioType": "question_prompt",
-      "sourceText": "stol",
-      "audioRef": "sv_b1_u3_qp_005_02_stol_v1"
     },
     {
       "contentId": "b1_u3_qp_006_ett_bord_v1",
@@ -1039,12 +1027,6 @@
       "audioType": "question_prompt",
       "sourceText": "en",
       "audioRef": "sv_b1_u3_qp_007_01_en_v1"
-    },
-    {
-      "contentId": "b1_u3_qp_007_02_cykel_v1",
-      "audioType": "question_prompt",
-      "sourceText": "cykel",
-      "audioRef": "sv_b1_u3_qp_007_02_cykel_v1"
     },
     {
       "contentId": "b1_u3_qp_008_ett_barn_v1",
@@ -1065,34 +1047,16 @@
       "audioRef": "sv_b1_u3_qp_010_01_en_v1"
     },
     {
-      "contentId": "b1_u3_qp_010_02_elev_v1",
-      "audioType": "question_prompt",
-      "sourceText": "elev",
-      "audioRef": "sv_b1_u3_qp_010_02_elev_v1"
-    },
-    {
       "contentId": "b1_u3_qp_011_01_en_v1",
       "audioType": "question_prompt",
       "sourceText": "en",
       "audioRef": "sv_b1_u3_qp_011_01_en_v1"
     },
     {
-      "contentId": "b1_u3_qp_011_02_bok_v1",
-      "audioType": "question_prompt",
-      "sourceText": "bok",
-      "audioRef": "sv_b1_u3_qp_011_02_bok_v1"
-    },
-    {
       "contentId": "b1_u3_qp_012_01_en_v1",
       "audioType": "question_prompt",
       "sourceText": "en",
       "audioRef": "sv_b1_u3_qp_012_01_en_v1"
-    },
-    {
-      "contentId": "b1_u3_qp_012_02_dator_v1",
-      "audioType": "question_prompt",
-      "sourceText": "dator",
-      "audioRef": "sv_b1_u3_qp_012_02_dator_v1"
     },
     {
       "contentId": "b1_u3_qp_013_ett_land_v1",
@@ -1281,16 +1245,10 @@
       "audioRef": "sv_b1_u3_qp_043_jag_laser_bocker_hemma_pa_kvallarna_v1"
     },
     {
-      "contentId": "b1_u3_adv_001_ett_v1",
+      "contentId": "b1_u3_adv_001_ett_hus_v1",
       "audioType": "question_prompt",
-      "sourceText": "ett",
-      "audioRef": "sv_b1_u3_adv_001_ett_v1"
-    },
-    {
-      "contentId": "b1_u3_adv_002_hus_v1",
-      "audioType": "question_prompt",
-      "sourceText": "hus",
-      "audioRef": "sv_b1_u3_adv_002_hus_v1"
+      "sourceText": "ett hus",
+      "audioRef": "sv_b1_u3_adv_001_ett_hus_v1"
     },
     {
       "contentId": "b1_u3_adv_003_huset_v1",
@@ -1311,16 +1269,10 @@
       "audioRef": "sv_b1_u3_adv_005_husen_v1"
     },
     {
-      "contentId": "b1_u3_adv_006_ett_v1",
+      "contentId": "b1_u3_adv_006_ett_rum_v1",
       "audioType": "question_prompt",
-      "sourceText": "ett",
-      "audioRef": "sv_b1_u3_adv_006_ett_v1"
-    },
-    {
-      "contentId": "b1_u3_adv_007_rum_v1",
-      "audioType": "question_prompt",
-      "sourceText": "rum",
-      "audioRef": "sv_b1_u3_adv_007_rum_v1"
+      "sourceText": "ett rum",
+      "audioRef": "sv_b1_u3_adv_006_ett_rum_v1"
     },
     {
       "contentId": "b1_u3_adv_008_rummet_v1",
@@ -1341,16 +1293,10 @@
       "audioRef": "sv_b1_u3_adv_010_rummen_v1"
     },
     {
-      "contentId": "b1_u3_adv_011_ett_v1",
+      "contentId": "b1_u3_adv_011_ett_barn_v1",
       "audioType": "question_prompt",
-      "sourceText": "ett",
-      "audioRef": "sv_b1_u3_adv_011_ett_v1"
-    },
-    {
-      "contentId": "b1_u3_adv_012_barn_v1",
-      "audioType": "question_prompt",
-      "sourceText": "barn",
-      "audioRef": "sv_b1_u3_adv_012_barn_v1"
+      "sourceText": "ett barn",
+      "audioRef": "sv_b1_u3_adv_011_ett_barn_v1"
     },
     {
       "contentId": "b1_u3_adv_013_barnet_v1",
@@ -1371,16 +1317,10 @@
       "audioRef": "sv_b1_u3_adv_015_barnen_v1"
     },
     {
-      "contentId": "b1_u3_adv_016_ett_v1",
+      "contentId": "b1_u3_adv_016_ett_ar_v1",
       "audioType": "question_prompt",
-      "sourceText": "ett",
-      "audioRef": "sv_b1_u3_adv_016_ett_v1"
-    },
-    {
-      "contentId": "b1_u3_adv_017_ar_v1",
-      "audioType": "question_prompt",
-      "sourceText": "år",
-      "audioRef": "sv_b1_u3_adv_017_ar_v1"
+      "sourceText": "ett år",
+      "audioRef": "sv_b1_u3_adv_016_ett_ar_v1"
     },
     {
       "contentId": "b1_u3_adv_018_aret_v1",
@@ -1401,16 +1341,10 @@
       "audioRef": "sv_b1_u3_adv_020_aren_v1"
     },
     {
-      "contentId": "b1_u3_adv_021_ett_v1",
+      "contentId": "b1_u3_adv_021_ett_fonster_v1",
       "audioType": "question_prompt",
-      "sourceText": "ett",
-      "audioRef": "sv_b1_u3_adv_021_ett_v1"
-    },
-    {
-      "contentId": "b1_u3_adv_022_fonster_v1",
-      "audioType": "question_prompt",
-      "sourceText": "fönster",
-      "audioRef": "sv_b1_u3_adv_022_fonster_v1"
+      "sourceText": "ett fönster",
+      "audioRef": "sv_b1_u3_adv_021_ett_fonster_v1"
     },
     {
       "contentId": "b1_u3_adv_023_fonstret_v1",
@@ -1431,16 +1365,10 @@
       "audioRef": "sv_b1_u3_adv_025_fonstren_v1"
     },
     {
-      "contentId": "b1_u3_adv_026_en_v1",
+      "contentId": "b1_u3_adv_026_en_vecka_v1",
       "audioType": "question_prompt",
-      "sourceText": "en",
-      "audioRef": "sv_b1_u3_adv_026_en_v1"
-    },
-    {
-      "contentId": "b1_u3_adv_027_vecka_v1",
-      "audioType": "question_prompt",
-      "sourceText": "vecka",
-      "audioRef": "sv_b1_u3_adv_027_vecka_v1"
+      "sourceText": "en vecka",
+      "audioRef": "sv_b1_u3_adv_026_en_vecka_v1"
     },
     {
       "contentId": "b1_u3_adv_028_veckan_v1",
@@ -1461,18 +1389,6 @@
       "audioRef": "sv_b1_u3_adv_030_veckorna_v1"
     },
     {
-      "contentId": "b1_u3_adv_031_en_v1",
-      "audioType": "question_prompt",
-      "sourceText": "en",
-      "audioRef": "sv_b1_u3_adv_031_en_v1"
-    },
-    {
-      "contentId": "b1_u3_adv_032_skola_v1",
-      "audioType": "question_prompt",
-      "sourceText": "skola",
-      "audioRef": "sv_b1_u3_adv_032_skola_v1"
-    },
-    {
       "contentId": "b1_u3_adv_033_skolan_v1",
       "audioType": "question_prompt",
       "sourceText": "skolan",
@@ -1489,18 +1405,6 @@
       "audioType": "question_prompt",
       "sourceText": "skolorna",
       "audioRef": "sv_b1_u3_adv_035_skolorna_v1"
-    },
-    {
-      "contentId": "b1_u3_adv_036_en_v1",
-      "audioType": "question_prompt",
-      "sourceText": "en",
-      "audioRef": "sv_b1_u3_adv_036_en_v1"
-    },
-    {
-      "contentId": "b1_u3_adv_037_stol_v1",
-      "audioType": "question_prompt",
-      "sourceText": "stol",
-      "audioRef": "sv_b1_u3_adv_037_stol_v1"
     },
     {
       "contentId": "b1_u3_adv_038_stolen_v1",
@@ -1521,18 +1425,6 @@
       "audioRef": "sv_b1_u3_adv_040_stolarna_v1"
     },
     {
-      "contentId": "b1_u3_adv_041_en_v1",
-      "audioType": "question_prompt",
-      "sourceText": "en",
-      "audioRef": "sv_b1_u3_adv_041_en_v1"
-    },
-    {
-      "contentId": "b1_u3_adv_042_cykel_v1",
-      "audioType": "question_prompt",
-      "sourceText": "cykel",
-      "audioRef": "sv_b1_u3_adv_042_cykel_v1"
-    },
-    {
       "contentId": "b1_u3_adv_043_cykeln_v1",
       "audioType": "question_prompt",
       "sourceText": "cykeln",
@@ -1551,16 +1443,10 @@
       "audioRef": "sv_b1_u3_adv_045_cyklarna_v1"
     },
     {
-      "contentId": "b1_u3_adv_046_en_v1",
+      "contentId": "b1_u3_adv_046_en_hand_v1",
       "audioType": "question_prompt",
-      "sourceText": "en",
-      "audioRef": "sv_b1_u3_adv_046_en_v1"
-    },
-    {
-      "contentId": "b1_u3_adv_047_hand_v1",
-      "audioType": "question_prompt",
-      "sourceText": "hand",
-      "audioRef": "sv_b1_u3_adv_047_hand_v1"
+      "sourceText": "en hand",
+      "audioRef": "sv_b1_u3_adv_046_en_hand_v1"
     },
     {
       "contentId": "b1_u3_adv_048_handen_v1",
@@ -1581,18 +1467,6 @@
       "audioRef": "sv_b1_u3_adv_050_handerna_v1"
     },
     {
-      "contentId": "b1_u3_adv_051_en_v1",
-      "audioType": "question_prompt",
-      "sourceText": "en",
-      "audioRef": "sv_b1_u3_adv_051_en_v1"
-    },
-    {
-      "contentId": "b1_u3_adv_052_mobel_v1",
-      "audioType": "question_prompt",
-      "sourceText": "möbel",
-      "audioRef": "sv_b1_u3_adv_052_mobel_v1"
-    },
-    {
       "contentId": "b1_u3_adv_053_mobeln_v1",
       "audioType": "question_prompt",
       "sourceText": "möbeln",
@@ -1609,18 +1483,6 @@
       "audioType": "question_prompt",
       "sourceText": "möblerna",
       "audioRef": "sv_b1_u3_adv_055_moblerna_v1"
-    },
-    {
-      "contentId": "b1_u3_adv_056_en_v1",
-      "audioType": "question_prompt",
-      "sourceText": "en",
-      "audioRef": "sv_b1_u3_adv_056_en_v1"
-    },
-    {
-      "contentId": "b1_u3_adv_057_familj_v1",
-      "audioType": "question_prompt",
-      "sourceText": "familj",
-      "audioRef": "sv_b1_u3_adv_057_familj_v1"
     },
     {
       "contentId": "b1_u3_adv_058_familjen_v1",
@@ -1641,18 +1503,6 @@
       "audioRef": "sv_b1_u3_adv_060_familjerna_v1"
     },
     {
-      "contentId": "b1_u3_adv_061_en_v1",
-      "audioType": "question_prompt",
-      "sourceText": "en",
-      "audioRef": "sv_b1_u3_adv_061_en_v1"
-    },
-    {
-      "contentId": "b1_u3_adv_062_elev_v1",
-      "audioType": "question_prompt",
-      "sourceText": "elev",
-      "audioRef": "sv_b1_u3_adv_062_elev_v1"
-    },
-    {
       "contentId": "b1_u3_adv_063_eleven_v1",
       "audioType": "question_prompt",
       "sourceText": "eleven",
@@ -1669,18 +1519,6 @@
       "audioType": "question_prompt",
       "sourceText": "eleverna",
       "audioRef": "sv_b1_u3_adv_065_eleverna_v1"
-    },
-    {
-      "contentId": "b1_u3_adv_066_en_v1",
-      "audioType": "question_prompt",
-      "sourceText": "en",
-      "audioRef": "sv_b1_u3_adv_066_en_v1"
-    },
-    {
-      "contentId": "b1_u3_adv_067_dator_v1",
-      "audioType": "question_prompt",
-      "sourceText": "dator",
-      "audioRef": "sv_b1_u3_adv_067_dator_v1"
     },
     {
       "contentId": "b1_u3_adv_068_datorn_v1",
@@ -1701,18 +1539,6 @@
       "audioRef": "sv_b1_u3_adv_070_datorerna_v1"
     },
     {
-      "contentId": "b1_u3_adv_071_en_v1",
-      "audioType": "question_prompt",
-      "sourceText": "en",
-      "audioRef": "sv_b1_u3_adv_071_en_v1"
-    },
-    {
-      "contentId": "b1_u3_adv_072_bok_v1",
-      "audioType": "question_prompt",
-      "sourceText": "bok",
-      "audioRef": "sv_b1_u3_adv_072_bok_v1"
-    },
-    {
       "contentId": "b1_u3_adv_073_boken_v1",
       "audioType": "question_prompt",
       "sourceText": "boken",
@@ -1731,16 +1557,10 @@
       "audioRef": "sv_b1_u3_adv_075_bockerna_v1"
     },
     {
-      "contentId": "b1_u3_adv_076_ett_v1",
+      "contentId": "b1_u3_adv_076_ett_yrke_v1",
       "audioType": "question_prompt",
-      "sourceText": "ett",
-      "audioRef": "sv_b1_u3_adv_076_ett_v1"
-    },
-    {
-      "contentId": "b1_u3_adv_077_yrke_v1",
-      "audioType": "question_prompt",
-      "sourceText": "yrke",
-      "audioRef": "sv_b1_u3_adv_077_yrke_v1"
+      "sourceText": "ett yrke",
+      "audioRef": "sv_b1_u3_adv_076_ett_yrke_v1"
     },
     {
       "contentId": "b1_u3_adv_078_yrket_v1",
@@ -1785,6 +1605,42 @@
       "audioRef": "sv_b1_u3_adv_084_femton_timmar_v1"
     },
     {
+      "contentId": "b1_u3_adv_085_en_stol_v1",
+      "audioType": "question_prompt",
+      "sourceText": "en stol",
+      "audioRef": "sv_b1_u3_adv_085_en_stol_v1"
+    },
+    {
+      "contentId": "b1_u3_adv_086_en_cykel_v1",
+      "audioType": "question_prompt",
+      "sourceText": "en cykel",
+      "audioRef": "sv_b1_u3_adv_086_en_cykel_v1"
+    },
+    {
+      "contentId": "b1_u3_adv_087_en_mobel_v1",
+      "audioType": "question_prompt",
+      "sourceText": "en möbel",
+      "audioRef": "sv_b1_u3_adv_087_en_mobel_v1"
+    },
+    {
+      "contentId": "b1_u3_adv_088_en_elev_v1",
+      "audioType": "question_prompt",
+      "sourceText": "en elev",
+      "audioRef": "sv_b1_u3_adv_088_en_elev_v1"
+    },
+    {
+      "contentId": "b1_u3_adv_089_en_dator_v1",
+      "audioType": "question_prompt",
+      "sourceText": "en dator",
+      "audioRef": "sv_b1_u3_adv_089_en_dator_v1"
+    },
+    {
+      "contentId": "b1_u3_adv_090_en_bok_v1",
+      "audioType": "question_prompt",
+      "sourceText": "en bok",
+      "audioRef": "sv_b1_u3_adv_090_en_bok_v1"
+    },
+    {
       "contentId": "b3_vocab_hus",
       "audioType": "question_prompt",
       "sourceText": "ett hus",
@@ -1806,19 +1662,13 @@
       "contentId": "b3_vocab_mobel",
       "audioType": "question_prompt",
       "sourceText": "en möbel",
-      "audioRefs": [
-        "sv_b1_u3_qp_004_01_en_v1",
-        "sv_b1_u3_qp_004_02_mobel_v1"
-      ]
+      "audioRef": "sv_b1_u3_adv_087_en_mobel_v1"
     },
     {
       "contentId": "b3_vocab_stol",
       "audioType": "question_prompt",
       "sourceText": "en stol",
-      "audioRefs": [
-        "sv_b1_u3_qp_004_01_en_v1",
-        "sv_b1_u3_qp_005_02_stol_v1"
-      ]
+      "audioRef": "sv_b1_u3_adv_085_en_stol_v1"
     },
     {
       "contentId": "b3_vocab_bord",
@@ -1830,10 +1680,7 @@
       "contentId": "b3_vocab_cykel",
       "audioType": "question_prompt",
       "sourceText": "en cykel",
-      "audioRefs": [
-        "sv_b1_u3_qp_004_01_en_v1",
-        "sv_b1_u3_qp_007_02_cykel_v1"
-      ]
+      "audioRef": "sv_b1_u3_adv_086_en_cykel_v1"
     },
     {
       "contentId": "b3_vocab_barn",
@@ -1851,28 +1698,19 @@
       "contentId": "b3_vocab_elev",
       "audioType": "question_prompt",
       "sourceText": "en elev",
-      "audioRefs": [
-        "sv_b1_u3_qp_004_01_en_v1",
-        "sv_b1_u3_qp_010_02_elev_v1"
-      ]
+      "audioRef": "sv_b1_u3_adv_088_en_elev_v1"
     },
     {
       "contentId": "b3_vocab_bok",
       "audioType": "question_prompt",
       "sourceText": "en bok",
-      "audioRefs": [
-        "sv_b1_u3_qp_004_01_en_v1",
-        "sv_b1_u3_qp_011_02_bok_v1"
-      ]
+      "audioRef": "sv_b1_u3_adv_090_en_bok_v1"
     },
     {
       "contentId": "b3_vocab_dator",
       "audioType": "question_prompt",
       "sourceText": "en dator",
-      "audioRefs": [
-        "sv_b1_u3_qp_004_01_en_v1",
-        "sv_b1_u3_qp_012_02_dator_v1"
-      ]
+      "audioRef": "sv_b1_u3_adv_089_en_dator_v1"
     },
     {
       "contentId": "b3_vocab_land",
@@ -2065,10 +1903,9 @@
       "audioType": "question_prompt",
       "sourceText": "ett hus huset hus husen",
       "audioRefs": [
-        "sv_b1_u3_adv_001_ett_v1",
-        "sv_b1_u3_adv_002_hus_v1",
+        "sv_b1_u3_qp_001_ett_hus_v1",
         "sv_b1_u3_adv_003_huset_v1",
-        "sv_b1_u3_adv_002_hus_v1",
+        "sv_b1_u3_adv_004_hus_v1",
         "sv_b1_u3_adv_005_husen_v1"
       ]
     },
@@ -2077,10 +1914,9 @@
       "audioType": "question_prompt",
       "sourceText": "ett rum rummet rum rummen",
       "audioRefs": [
-        "sv_b1_u3_adv_001_ett_v1",
-        "sv_b1_u3_adv_007_rum_v1",
+        "sv_b1_u3_qp_002_ett_rum_v1",
         "sv_b1_u3_adv_008_rummet_v1",
-        "sv_b1_u3_adv_007_rum_v1",
+        "sv_b1_u3_adv_009_rum_v1",
         "sv_b1_u3_adv_010_rummen_v1"
       ]
     },
@@ -2089,10 +1925,9 @@
       "audioType": "question_prompt",
       "sourceText": "ett barn barnet barn barnen",
       "audioRefs": [
-        "sv_b1_u3_adv_001_ett_v1",
-        "sv_b1_u3_adv_012_barn_v1",
+        "sv_b1_u3_qp_008_ett_barn_v1",
         "sv_b1_u3_adv_013_barnet_v1",
-        "sv_b1_u3_adv_012_barn_v1",
+        "sv_b1_u3_adv_014_barn_v1",
         "sv_b1_u3_adv_015_barnen_v1"
       ]
     },
@@ -2101,10 +1936,9 @@
       "audioType": "question_prompt",
       "sourceText": "ett år året år åren",
       "audioRefs": [
-        "sv_b1_u3_adv_001_ett_v1",
-        "sv_b1_u3_adv_017_ar_v1",
+        "sv_b1_u3_qp_016_ett_ar_v1",
         "sv_b1_u3_adv_018_aret_v1",
-        "sv_b1_u3_adv_017_ar_v1",
+        "sv_b1_u3_adv_019_ar_v1",
         "sv_b1_u3_adv_020_aren_v1"
       ]
     },
@@ -2113,10 +1947,9 @@
       "audioType": "question_prompt",
       "sourceText": "ett fönster fönstret fönster fönstren",
       "audioRefs": [
-        "sv_b1_u3_adv_001_ett_v1",
-        "sv_b1_u3_adv_022_fonster_v1",
+        "sv_b1_u3_qp_003_ett_fonster_v1",
         "sv_b1_u3_adv_023_fonstret_v1",
-        "sv_b1_u3_adv_022_fonster_v1",
+        "sv_b1_u3_adv_024_fonster_v1",
         "sv_b1_u3_adv_025_fonstren_v1"
       ]
     },
@@ -2125,8 +1958,7 @@
       "audioType": "question_prompt",
       "sourceText": "en vecka veckan veckor veckorna",
       "audioRefs": [
-        "sv_b1_u3_qp_004_01_en_v1",
-        "sv_b1_u3_adv_027_vecka_v1",
+        "sv_b1_u3_qp_015_en_vecka_v1",
         "sv_b1_u3_adv_028_veckan_v1",
         "sv_b1_u3_adv_029_veckor_v1",
         "sv_b1_u3_adv_030_veckorna_v1"
@@ -2137,8 +1969,7 @@
       "audioType": "question_prompt",
       "sourceText": "en skola skolan skolor skolorna",
       "audioRefs": [
-        "sv_b1_u3_qp_004_01_en_v1",
-        "sv_b1_u3_adv_032_skola_v1",
+        "sv_b1_u3_qp_017_en_skola_v1",
         "sv_b1_u3_adv_033_skolan_v1",
         "sv_b1_u3_adv_034_skolor_v1",
         "sv_b1_u3_adv_035_skolorna_v1"
@@ -2149,8 +1980,7 @@
       "audioType": "question_prompt",
       "sourceText": "en stol stolen stolar stolarna",
       "audioRefs": [
-        "sv_b1_u3_qp_004_01_en_v1",
-        "sv_b1_u3_qp_005_02_stol_v1",
+        "sv_b1_u3_adv_085_en_stol_v1",
         "sv_b1_u3_adv_038_stolen_v1",
         "sv_b1_u3_adv_039_stolar_v1",
         "sv_b1_u3_adv_040_stolarna_v1"
@@ -2161,8 +1991,7 @@
       "audioType": "question_prompt",
       "sourceText": "en cykel cykeln cyklar cyklarna",
       "audioRefs": [
-        "sv_b1_u3_qp_004_01_en_v1",
-        "sv_b1_u3_qp_007_02_cykel_v1",
+        "sv_b1_u3_adv_086_en_cykel_v1",
         "sv_b1_u3_adv_043_cykeln_v1",
         "sv_b1_u3_adv_044_cyklar_v1",
         "sv_b1_u3_adv_045_cyklarna_v1"
@@ -2173,8 +2002,7 @@
       "audioType": "question_prompt",
       "sourceText": "en hand handen händer händerna",
       "audioRefs": [
-        "sv_b1_u3_qp_004_01_en_v1",
-        "sv_b1_u3_adv_047_hand_v1",
+        "sv_b1_u3_adv_046_en_hand_v1",
         "sv_b1_u3_adv_048_handen_v1",
         "sv_b1_u3_adv_049_hander_v1",
         "sv_b1_u3_adv_050_handerna_v1"
@@ -2185,8 +2013,7 @@
       "audioType": "question_prompt",
       "sourceText": "en möbel möbeln möbler möblerna",
       "audioRefs": [
-        "sv_b1_u3_qp_004_01_en_v1",
-        "sv_b1_u3_qp_004_02_mobel_v1",
+        "sv_b1_u3_adv_087_en_mobel_v1",
         "sv_b1_u3_adv_053_mobeln_v1",
         "sv_b1_u3_adv_054_mobler_v1",
         "sv_b1_u3_adv_055_moblerna_v1"
@@ -2197,8 +2024,7 @@
       "audioType": "question_prompt",
       "sourceText": "en familj familjen familjer familjerna",
       "audioRefs": [
-        "sv_b1_u3_qp_004_01_en_v1",
-        "sv_b1_u3_adv_057_familj_v1",
+        "sv_b1_u3_qp_009_en_familj_v1",
         "sv_b1_u3_adv_058_familjen_v1",
         "sv_b1_u3_adv_059_familjer_v1",
         "sv_b1_u3_adv_060_familjerna_v1"
@@ -2209,8 +2035,7 @@
       "audioType": "question_prompt",
       "sourceText": "en elev eleven elever eleverna",
       "audioRefs": [
-        "sv_b1_u3_qp_004_01_en_v1",
-        "sv_b1_u3_qp_010_02_elev_v1",
+        "sv_b1_u3_adv_088_en_elev_v1",
         "sv_b1_u3_adv_063_eleven_v1",
         "sv_b1_u3_adv_064_elever_v1",
         "sv_b1_u3_adv_065_eleverna_v1"
@@ -2221,8 +2046,7 @@
       "audioType": "question_prompt",
       "sourceText": "en dator datorn datorer datorerna",
       "audioRefs": [
-        "sv_b1_u3_qp_004_01_en_v1",
-        "sv_b1_u3_qp_012_02_dator_v1",
+        "sv_b1_u3_adv_089_en_dator_v1",
         "sv_b1_u3_adv_068_datorn_v1",
         "sv_b1_u3_adv_069_datorer_v1",
         "sv_b1_u3_adv_070_datorerna_v1"
@@ -2233,8 +2057,7 @@
       "audioType": "question_prompt",
       "sourceText": "en bok boken böcker böckerna",
       "audioRefs": [
-        "sv_b1_u3_qp_004_01_en_v1",
-        "sv_b1_u3_qp_011_02_bok_v1",
+        "sv_b1_u3_adv_090_en_bok_v1",
         "sv_b1_u3_adv_073_boken_v1",
         "sv_b1_u3_adv_074_bocker_v1",
         "sv_b1_u3_adv_075_bockerna_v1"
@@ -2245,8 +2068,7 @@
       "audioType": "question_prompt",
       "sourceText": "ett yrke yrket yrken yrkena",
       "audioRefs": [
-        "sv_b1_u3_adv_001_ett_v1",
-        "sv_b1_u3_adv_077_yrke_v1",
+        "sv_b1_u3_adv_076_ett_yrke_v1",
         "sv_b1_u3_adv_078_yrket_v1",
         "sv_b1_u3_adv_079_yrken_v1",
         "sv_b1_u3_adv_080_yrkena_v1"
