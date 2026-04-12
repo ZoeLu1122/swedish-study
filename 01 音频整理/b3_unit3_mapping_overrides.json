@@ -1,0 +1,31 @@
+{
+  "unit": "b3",
+  "notes": "Manual corrections confirmed while the Excel mapping file is catching up.",
+  "rows": [
+    {
+      "newFileName": "b1_u3_vocab_024_timmarna_v1",
+      "isPrimary": false,
+      "originalFileName": "a1_u2_adv_010_timmarna_v1"
+    },
+    {
+      "newFileName": "b1_u3_vocab_030_dagen_v1",
+      "isPrimary": false,
+      "originalFileName": "a1_u2_adv_016_dagen_v1"
+    },
+    {
+      "newFileName": "b1_u3_vocab_031_dagar_v1",
+      "isPrimary": false,
+      "originalFileName": "a1_u2_adv_017_dagar_v1"
+    },
+    {
+      "newFileName": "b1_u3_vocab_042_manaden_v1",
+      "isPrimary": false,
+      "originalFileName": "a1_u2_adv_020_manaden_v1"
+    },
+    {
+      "newFileName": "b1_u3_vocab_043_manader_v1",
+      "isPrimary": false,
+      "originalFileName": "a1_u2_adv_021_manader_v1"
+    }
+  ]
+}
