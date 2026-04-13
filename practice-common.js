@@ -696,6 +696,10 @@ const fallbackText = (item && item.sourceText) ||
         justify-content: flex-end !important;
       }
 
+      .inline-sentence .word-slot-group {
+        transform: translateY(-4px);
+      }
+
       .word-slot-label {
         font-size: 12px;
         color: #888;
