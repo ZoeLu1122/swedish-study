@@ -15,7 +15,6 @@ window.UNIT_BANK_B3 = {
     { id: 'b3_vocab_elev', kind: 'vocab_spelling', concept: 'elev', lemma: 'elev', source: 'vocab', prompt: { zh: '学生（名词，单数）' }, answer: 'en elev' },
     { id: 'b3_vocab_bok', kind: 'vocab_spelling', concept: 'bok', lemma: 'bok', source: 'vocab', prompt: { zh: '书（名词，单数）' }, answer: 'en bok' },
     { id: 'b3_vocab_dator', kind: 'vocab_spelling', concept: 'dator', lemma: 'dator', source: 'vocab', prompt: { zh: '电脑（名词，单数）' }, answer: 'en dator' },
-    { id: 'b3_vocab_land', kind: 'vocab_spelling', concept: 'land', lemma: 'land', source: 'vocab', prompt: { zh: '国家（名词，单数）' }, answer: 'ett land' },
     { id: 'b3_vocab_timme', kind: 'vocab_spelling', concept: 'timme', lemma: 'timme', source: 'vocab', prompt: { zh: '小时（名词，单数）' }, answer: 'en timme' },
     { id: 'b3_vocab_vecka', kind: 'vocab_spelling', concept: 'vecka', lemma: 'vecka', source: 'vocab', prompt: { zh: '周（名词，单数）' }, answer: 'en vecka' },
     { id: 'b3_vocab_ar', kind: 'vocab_spelling', concept: 'år', lemma: 'år', source: 'vocab', prompt: { zh: '年（名词，单数）' }, answer: 'ett år' },
