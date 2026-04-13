@@ -190,7 +190,8 @@ main{ max-width:900px; margin:0 auto; padding:1.8rem 1.4rem 4rem; }
   font-size:0.62rem; font-weight:700; letter-spacing:0.1em;
   text-transform:uppercase; color:var(--a-c); margin-bottom:0.3rem;
 }
-.vc-swedish{ font-size:1rem; font-weight:600; color:var(--navy); }
+.vc-swedish{ display:inline-block; font-size:1rem; font-weight:600; color:var(--navy); white-space:nowrap; overflow-wrap:normal; word-break:keep-all; }
+.vc-swedish.long-phrase{ font-size:0.92rem; }
 .vc-pron{ font-size:0.7rem; color:var(--gray); font-style:italic; margin-top:0.05rem; }
 .vc-chinese{ font-size:0.8rem; color:#444; margin-top:0.4rem; padding-top:0.4rem; border-top:1px solid rgba(0,0,0,0.06); }
 .vc-example{ font-size:0.72rem; color:var(--gray); margin-top:0.2rem; font-style:italic; }
@@ -1062,9 +1063,10 @@ function renderVocab(filter) {
   const data = filter === 'all' ? vocabData : vocabData.filter(v => v.cat === filter);
   document.getElementById('vocabGrid').innerHTML = data.map(v => {
     const safe = v.sv.replace(/'/g, "\\'");
+    const phraseClass = v.sv.length > 16 ? ' long-phrase' : '';
     return `<div class="vocab-card">
       <div class="vc-pos">${v.pos}</div>
-      <div class="vc-swedish speak-word" onclick="speakWord('${safe}',this)" data-word="${v.sv}" title="点击发音">${v.sv}</div>
+      <div class="vc-swedish speak-word${phraseClass}" onclick="speakWord('${safe}',this)" data-word="${v.sv}" title="点击发音">${v.sv}</div>
       <div class="vc-chinese">${v.zh}</div>
       ${v.ex ? `<div class="vc-example">${v.ex}</div>` : ''}
       <span class="vc-category">${catLabel(v.cat)}</span>
