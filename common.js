@@ -65,6 +65,16 @@
           const defaultBtn = container.querySelector(`[data-tab-id="${config.defaultTab}"]`);
           window.showSection(config.defaultTab, defaultBtn);
         }
+      },
+      goToSection(sectionId) {
+        const btn =
+          document.querySelector(`[data-tab-id="${sectionId}"]`) ||
+          document.querySelector(`.nav-tab[onclick*="'${sectionId}'"]`) ||
+          document.querySelector(`.nav-tab[onclick*='"${sectionId}"']`);
+
+        if (typeof window.showSection === 'function') {
+          window.showSection(sectionId, btn);
+        }
       }
     },
 
@@ -155,9 +165,11 @@
         const self = this;
         const base = this._getBase();
         if (!base) { self._state = 'error'; self._flush(); return; }
+        const manifestVersion = window.SFI_MANIFEST_VERSION || window.SFI_ASSET_VERSION || '';
+        const manifestSuffix = manifestVersion ? '?v=' + encodeURIComponent(manifestVersion) : '';
         Promise.all([
-          fetch(base + '/content-manifest.json').then(r => r.json()),
-          fetch(base + '/audio-manifest.json').then(r => r.json())
+          fetch(base + '/content-manifest.json' + manifestSuffix, { cache: 'no-cache' }).then(r => r.json()),
+          fetch(base + '/audio-manifest.json' + manifestSuffix, { cache: 'no-cache' }).then(r => r.json())
         ]).then(function (results) {
           const rawContent = results[0];
           const rawAudio = results[1];
@@ -534,6 +546,80 @@
     if (window.SfiCore && window.SfiCore.ui && typeof window.SfiCore.ui.initNav === 'function') {
       window.SfiCore.ui.initNav();
     }
+
+    injectSectionNextButtons();
+  }
+
+  function injectSectionNextButtons() {
+    const steps = [
+      { from: 'grammar', to: 'vocab', label: '下一节：词汇表 →' },
+      { from: 'vocab', to: 'dialogue', label: '下一节：对话练习 →' },
+      { from: 'dialogue', to: 'quiz', label: '下一节：单元测验 →' }
+    ];
+
+    if (!steps.every(step => document.getElementById(step.from)) || !document.getElementById('quiz')) {
+      return;
+    }
+
+    injectSectionNextStyles();
+
+    steps.forEach(step => {
+      const section = document.getElementById(step.from);
+      if (!section || section.querySelector('.section-footer')) return;
+
+      const footer = document.createElement('div');
+      footer.className = 'section-footer sfi-auto-section-footer';
+
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'sec-next-btn';
+      button.textContent = step.label;
+      button.addEventListener('click', function () {
+        window.SfiCore.ui.goToSection(step.to);
+      });
+
+      footer.appendChild(button);
+      section.appendChild(footer);
+    });
+  }
+
+  function injectSectionNextStyles() {
+    if (document.getElementById('sfi-section-next-styles')) return;
+
+    const style = document.createElement('style');
+    style.id = 'sfi-section-next-styles';
+    style.textContent = `
+      .section-footer {
+        margin: 1.6rem 0 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .sec-next-btn {
+        border: none;
+        border-radius: 999px;
+        padding: .72rem 1.35rem;
+        background: var(--ac, #315f8c);
+        color: #fff;
+        font-family: 'Noto Sans SC', sans-serif;
+        font-size: .88rem;
+        font-weight: 700;
+        cursor: pointer;
+        box-shadow: 0 6px 16px rgba(0,0,0,.12);
+        transition: transform .16s ease, box-shadow .16s ease, opacity .16s ease;
+      }
+
+      .sec-next-btn:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 8px 20px rgba(0,0,0,.16);
+      }
+
+      .sec-next-btn:active {
+        transform: translateY(0);
+        opacity: .9;
+      }
+    `;
+    document.head.appendChild(style);
   }
 
   function injectPracticeFeedbackStyles() {
