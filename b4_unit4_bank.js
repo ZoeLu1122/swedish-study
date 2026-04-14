@@ -91,7 +91,6 @@ window.UNIT_BANK_B4 = {
     // ===== adjective / pattern =====
     { id: 'b4_adj_hungrig_group', kind: 'morphology', source: 'adjective', labelScheme: 'adjective_forms', slotLabels: ['en-词形式', 'ett-词形式', '复数 / 定指形式'], lemma: 'hungrig', prompt: { zh: '饿的' }, template: '{{hungrig}} | {{hungrigt}} | {{hungriga}}' },
     { id: 'b4_adj_kall_group', kind: 'morphology', source: 'adjective', labelScheme: 'adjective_forms', slotLabels: ['en-词形式', 'ett-词形式', '复数 / 定指形式'], lemma: 'kall', prompt: { zh: '冷的' }, template: '{{kall}} | {{kallt}} | {{kalla}}' },
-    { id: 'b4_adj_bra_group', kind: 'morphology', source: 'adjective', labelScheme: 'adjective_forms', slotLabels: ['en-词形式', 'ett-词形式', '复数 / 定指形式'], lemma: 'bra', prompt: { zh: '好的' }, template: '{{bra}} | {{bra}} | {{bra}}', autoPlay: false },
     // ===== negation pattern =====
     { id: 'b4_neg_jag_ater_inte_frukost_idag', kind: 'morphology', source: 'pattern', lemma: 'jag äter inte frukost idag', prompt: { zh: '我今天不吃早饭。' }, template: 'Jag äter {{inte}} frukost idag.' },
     { id: 'b4_neg_jag_vet_att_han_inte_kommer', kind: 'morphology', source: 'pattern', lemma: 'jag vet att han inte kommer imorgon', prompt: { zh: '我知道他明天不来。' }, template: 'Jag vet att han {{inte}} kommer imorgon.' },
