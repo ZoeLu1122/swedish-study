@@ -904,11 +904,7 @@ body {
       <div class="cs-key">用时</div>
     </div>
   </div>
-  <div class="completion-actions">
-    <a class="ca-btn ca-primary" id="nextUnitBtn" href="#">➡ 进入下一单元</a>
-    <button class="ca-btn ca-secondary" onclick="restartPractice()">🔄 再练一次</button>
-    <a class="ca-btn ca-ghost" href="index.html">🏠 返回主界面</a>
-  </div>
+  <div class="completion-actions" data-managed="practice-common"></div>
 </div>
 <div class="countdown-ring" id="countdownRing">
   <svg viewBox="0 0 36 36" width="36" height="36">
@@ -942,7 +938,7 @@ body {
 </div>
 <div class="vocab-toast" id="vocabToast"></div>
 <script src="common.js"></script>
-<script src="practice-common.js?v=20260414-completion-advanced"></script>
+<script src="practice-common.js?v=20260414-answer-reveal-mistakes"></script>
 <script>
   (function () {
     const script = document.createElement('script');
@@ -963,6 +959,7 @@ body {
         title: bank.unitTitle || bank.title || '',
         basicPool: bank.basicPool || [],
         advancedPool: bank.advancedPool || [],
+        practiceSets: { enabled: true, size: 20 },
         properNames: (window.PAGE_CONFIG && window.PAGE_CONFIG.properNames) || []
       });
     };

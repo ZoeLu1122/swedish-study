@@ -30,6 +30,8 @@
     isCompleted: false,
     currentIndex: 0,
     currentMode: 'basic',
+    practiceSet: null,
+    answerRevealedForCurrentQuestion: false,
     questions: [],
     filteredQuestions: [],
     errorInputs: [],
@@ -45,6 +47,8 @@
   const REVIEW_INTERVALS_DAYS = [1, 2, 4, 7, 15, 30, 45];
   const BASIC_REVIEW_TRIGGER_COUNT = 20;
   const DAY_MS = 24 * 60 * 60 * 1000;
+  const PRACTICE_PROGRESS_KEY = 'sfi_practice_progress_v1';
+  const DEFAULT_PRACTICE_SET_SIZE = 20;
 
   function readReviewScheduleStore() {
     try {
@@ -61,6 +65,21 @@
     } catch (e) {}
   }
 
+  function readPracticeProgressStore() {
+    try {
+      const raw = JSON.parse(localStorage.getItem(PRACTICE_PROGRESS_KEY) || '{}');
+      return raw && typeof raw === 'object' ? raw : {};
+    } catch (e) {
+      return {};
+    }
+  }
+
+  function writePracticeProgressStore(store) {
+    try {
+      localStorage.setItem(PRACTICE_PROGRESS_KEY, JSON.stringify(store));
+    } catch (e) {}
+  }
+
   function getCurrentUnitId() {
     const pageConfig = window.PAGE_CONFIG || {};
     const candidate = typeof pageConfig.unit === 'string' ? pageConfig.unit.trim() : '';
@@ -74,6 +93,47 @@
     if (m) return `${m[1].toLowerCase()}${m[2]}`;
 
     return '';
+  }
+
+  function getPracticeSetOptions() {
+    const pageConfig = window.PAGE_CONFIG || {};
+    const raw = pageConfig.practiceSets || {};
+    const enabled = raw === true || (raw && raw.enabled === true);
+    const size = Math.max(1, Number(raw.size || DEFAULT_PRACTICE_SET_SIZE) || DEFAULT_PRACTICE_SET_SIZE);
+    return { enabled, size };
+  }
+
+  function isPracticeSetEnabled() {
+    return getPracticeSetOptions().enabled;
+  }
+
+  function getPracticeProgressScope() {
+    const unitId = getCurrentUnitId() || 'default';
+    const mode = STATE.currentMode === 'advanced' ? 'advanced' : 'basic';
+    return { unitId, mode };
+  }
+
+  function getModeProgress() {
+    const store = readPracticeProgressStore();
+    const scope = getPracticeProgressScope();
+    const unit = store[scope.unitId] && typeof store[scope.unitId] === 'object' ? store[scope.unitId] : {};
+    const mode = unit[scope.mode] && typeof unit[scope.mode] === 'object' ? unit[scope.mode] : {};
+    return {
+      mistakes: mode.mistakes && typeof mode.mistakes === 'object' ? mode.mistakes : {},
+      sets: mode.sets && typeof mode.sets === 'object' ? mode.sets : {}
+    };
+  }
+
+  function saveModeProgress(progress) {
+    const store = readPracticeProgressStore();
+    const scope = getPracticeProgressScope();
+    const unit = store[scope.unitId] && typeof store[scope.unitId] === 'object' ? store[scope.unitId] : {};
+    unit[scope.mode] = {
+      mistakes: progress.mistakes && typeof progress.mistakes === 'object' ? progress.mistakes : {},
+      sets: progress.sets && typeof progress.sets === 'object' ? progress.sets : {}
+    };
+    store[scope.unitId] = unit;
+    writePracticeProgressStore(store);
   }
 
   function updateReviewScheduleOnSessionComplete() {
@@ -267,6 +327,8 @@
       qTypeLabel: document.getElementById('qTypeLabel'),
       progressBar: document.getElementById('progressBar'),
       completionScreen: document.getElementById('completionScreen'),
+      completionSub: document.querySelector('#completionScreen .completion-sub'),
+      completionActions: document.querySelector('#completionScreen .completion-actions'),
       statTotal: document.getElementById('stat-total'),
       statAcc: document.getElementById('stat-acc'),
       statTime: document.getElementById('stat-time'),
@@ -292,6 +354,16 @@
     const dom = getDOM();
     if (dom.answerReveal) {
       dom.answerReveal.classList.remove('show');
+    }
+  }
+
+  function toggleAnswerReveal() {
+    const dom = getDOM();
+    if (!dom.answerReveal) return;
+    const willShow = !dom.answerReveal.classList.contains('show');
+    dom.answerReveal.classList.toggle('show');
+    if (willShow && getActiveQuestion()) {
+      STATE.answerRevealedForCurrentQuestion = true;
     }
   }
 
@@ -457,21 +529,45 @@
   }
 
   function isQuestionVisibleInMode(question) {
+    return isQuestionVisibleInModeFor(question, STATE.currentMode);
+  }
+
+  function isQuestionVisibleInModeFor(question, mode) {
     const modes = Array.isArray(question.modes) ? question.modes : [];
 
-    if (STATE.currentMode === 'basic') {
+    if (mode === 'basic') {
       return !modes.includes('advanced');
     }
 
-    if (STATE.currentMode === 'advanced') {
+    if (mode === 'advanced') {
       return modes.includes('advanced');
     }
 
     return true;
   }
 
+  function getModeCandidates(mode) {
+    return STATE.questions.filter(question => isQuestionVisibleInModeFor(question, mode || STATE.currentMode));
+  }
+
   function applyModeFilter() {
-    const candidates = STATE.questions.filter(isQuestionVisibleInMode);
+    const candidates = getModeCandidates();
+
+    if (isPracticeSetEnabled()) {
+      if (!STATE.practiceSet || STATE.practiceSet.mode !== STATE.currentMode) {
+        STATE.filteredQuestions = [];
+      } else {
+        const byId = new Map(candidates.map(q => [q.id, q]));
+        STATE.filteredQuestions = (STATE.practiceSet.ids || [])
+          .map(id => byId.get(id))
+          .filter(Boolean);
+      }
+
+      if (STATE.currentIndex >= STATE.filteredQuestions.length) {
+        STATE.currentIndex = 0;
+      }
+      return;
+    }
 
     if (STATE.currentMode === 'basic') {
       const unitKey = (window.PAGE_CONFIG && window.PAGE_CONFIG.unit) || 'default';
@@ -560,8 +656,167 @@
     STATE.currentErrorIndex = -1;
   }
 
+  function getMistakeIdsForCandidates(candidates) {
+    const byId = new Set(candidates.map(q => q.id));
+    const mistakes = getModeProgress().mistakes || {};
+    return Object.keys(mistakes)
+      .filter(id => byId.has(id))
+      .sort((a, b) => Number(mistakes[b]?.lastWrongAt || 0) - Number(mistakes[a]?.lastWrongAt || 0));
+  }
+
+  function buildPracticeSetIds(type, groupIndex) {
+    const candidates = getModeCandidates();
+    const options = getPracticeSetOptions();
+    const size = options.size;
+
+    if (type === 'group') {
+      const start = Math.max(0, Number(groupIndex || 0)) * size;
+      return candidates.slice(start, start + size).map(q => q.id);
+    }
+
+    const mistakeIds = getMistakeIdsForCandidates(candidates);
+    if (type === 'mistakes') {
+      return shuffleArray(mistakeIds).slice(0, size);
+    }
+
+    const selected = [];
+    const selectedSet = new Set();
+    shuffleArray(mistakeIds).forEach(id => {
+      if (selected.length < size && !selectedSet.has(id)) {
+        selected.push(id);
+        selectedSet.add(id);
+      }
+    });
+
+    shuffleArray(candidates).forEach(question => {
+      if (selected.length >= size) return;
+      if (selectedSet.has(question.id)) return;
+      selected.push(question.id);
+      selectedSet.add(question.id);
+    });
+
+    return selected;
+  }
+
+  function startPracticeSet(type, groupIndex) {
+    const candidates = getModeCandidates();
+    const ids = buildPracticeSetIds(type || 'smart', groupIndex).filter(Boolean);
+
+    if (!ids.length && candidates.length) {
+      ids.push(...candidates.slice(0, getPracticeSetOptions().size).map(q => q.id));
+    }
+
+    STATE.practiceSet = {
+      mode: STATE.currentMode,
+      type: type || 'smart',
+      groupIndex: type === 'group' ? Number(groupIndex || 0) : null,
+      key: type === 'group' ? `group-${Number(groupIndex || 0)}` : (type || 'smart'),
+      ids
+    };
+    STATE.currentIndex = 0;
+    STATE.isCompleted = false;
+    resetSessionStats();
+    resetErrorNavigation();
+    applyModeFilter();
+    renderCurrentQuestion();
+  }
+
+  function formatAccuracy(value) {
+    return Number.isFinite(Number(value)) ? `${Math.round(Number(value))}%` : '未完成';
+  }
+
+  function buildPracticeSetPanelHtml(candidates) {
+    const options = getPracticeSetOptions();
+    const size = options.size;
+    const modeName = STATE.currentMode === 'advanced' ? '进阶模式' : '基础模式';
+    const progress = getModeProgress();
+    const mistakes = progress.mistakes || {};
+    const sets = progress.sets || {};
+    const mistakeIds = getMistakeIdsForCandidates(candidates);
+    const groupCount = Math.ceil(candidates.length / size);
+
+    const smartStat = sets.smart || {};
+    const mistakeDisabled = mistakeIds.length ? '' : ' disabled';
+    const mistakeText = mistakeIds.length ? `错题 ${mistakeIds.length} 道` : '暂无错题';
+
+    const groupCards = Array.from({ length: groupCount }, (_, index) => {
+      const start = index * size + 1;
+      const end = Math.min((index + 1) * size, candidates.length);
+      const key = `group-${index}`;
+      const stat = sets[key] || {};
+      const groupIds = candidates.slice(index * size, (index + 1) * size).map(q => q.id);
+      const groupMistakes = groupIds.filter(id => mistakes[id]).length;
+      return `
+        <button class="practice-set-card" type="button" data-set-type="group" data-group-index="${index}">
+          <span class="psc-title">第 ${index + 1} 组</span>
+          <span class="psc-sub">${start}-${end} 题</span>
+          <span class="psc-meta">完成 ${Number(stat.completedCount || 0)} 次 · ${formatAccuracy(stat.lastAccuracy)} · 错题 ${groupMistakes}</span>
+        </button>
+      `;
+    }).join('');
+
+    return `
+      <div class="practice-set-panel">
+        <div class="practice-set-head">
+          <div class="practice-set-kicker">${escapeHtml(modeName)}</div>
+          <div class="practice-set-title">选择本次练习</div>
+          <div class="practice-set-desc">每次智能练习随机出现 ${size} 题，错题会优先复现。</div>
+        </div>
+        <div class="practice-set-grid">
+          <button class="practice-set-card primary" type="button" data-set-type="smart">
+            <span class="psc-title">智能练习 ${Math.min(size, candidates.length)} 题</span>
+            <span class="psc-sub">推荐</span>
+            <span class="psc-meta">优先错题 · 随机补足 · 上次 ${formatAccuracy(smartStat.lastAccuracy)}</span>
+          </button>
+          <button class="practice-set-card" type="button" data-set-type="mistakes"${mistakeDisabled}>
+            <span class="psc-title">错题重练</span>
+            <span class="psc-sub">${escapeHtml(mistakeText)}</span>
+            <span class="psc-meta">先把容易错的题捞回来</span>
+          </button>
+          ${groupCards}
+        </div>
+      </div>
+    `;
+  }
+
+  function renderPracticeSetScreen() {
+    const dom = refreshDOM();
+    const candidates = getModeCandidates();
+
+    if (!dom.wrap || !dom.qCard) return;
+    dom.wrap.style.display = 'flex';
+    if (dom.completionScreen) dom.completionScreen.classList.remove('show');
+    dom.qCard.style.display = 'flex';
+    STATE.isCompleted = false;
+    STATE.answerRevealedForCurrentQuestion = false;
+    resetErrorNavigation();
+    showNextButton(false);
+    setFeedback('', 'idle');
+
+    if (dom.qTypeLabel) dom.qTypeLabel.textContent = '选择练习';
+    if (dom.promptContent) {
+      dom.promptContent.innerHTML = `<div class="prompt-cn">请选择本次练习范围</div>`;
+    }
+    if (dom.qPrompt) dom.qPrompt.dataset.answer = '';
+    if (dom.qInputArea) {
+      dom.qInputArea.dataset.answer = '';
+      dom.qInputArea.innerHTML = buildPracticeSetPanelHtml(candidates);
+      dom.qInputArea.querySelectorAll('[data-set-type]').forEach(button => {
+        button.addEventListener('click', function () {
+          if (button.disabled) return;
+          startPracticeSet(button.dataset.setType, button.dataset.groupIndex);
+        });
+      });
+    }
+    if (dom.qCur) dom.qCur.textContent = '0';
+    if (dom.qTotal) dom.qTotal.textContent = String(candidates.length || 0);
+    if (dom.progressBar) dom.progressBar.style.width = '0%';
+    closeAnswerReveal();
+  }
+
   function setMode(mode) {
     STATE.currentMode = mode === 'advanced' ? 'advanced' : 'basic';
+    STATE.practiceSet = null;
 
     const dom = getDOM();
     if (dom.modeBasicBtn && dom.modeAdvBtn) {
@@ -574,7 +829,11 @@
     applyModeFilter();
     STATE.isCompleted = false;
     resetErrorNavigation();
-    renderCurrentQuestion();
+    if (isPracticeSetEnabled()) {
+      renderPracticeSetScreen();
+    } else {
+      renderCurrentQuestion();
+    }
   }
 
   function getTypeLabel(question) {
@@ -734,6 +993,86 @@ const fallbackText = (item && item.sourceText) ||
         line-height: 1;
         padding-bottom: .3rem;
         user-select: none;
+      }
+
+      .practice-set-panel {
+        width: min(880px, 100%);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      .practice-set-head {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .practice-set-kicker,
+      .practice-set-desc,
+      .psc-meta {
+        color: #8b949e;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .practice-set-title {
+        color: #e6edf3;
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 1.2;
+      }
+
+      .practice-set-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 12px;
+      }
+
+      .practice-set-card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        min-height: 132px;
+        padding: 18px;
+        border-radius: 8px;
+        border: 1px solid rgba(139, 148, 158, .28);
+        background: rgba(22, 27, 34, .82);
+        color: #e6edf3;
+        text-align: left;
+        cursor: pointer;
+        transition: border-color .18s, background .18s, transform .18s;
+      }
+
+      .practice-set-card:hover:not(:disabled) {
+        border-color: #58a6ff;
+        background: rgba(31, 41, 55, .92);
+        transform: translateY(-1px);
+      }
+
+      .practice-set-card.primary {
+        border-color: rgba(88, 166, 255, .62);
+      }
+
+      .practice-set-card:disabled {
+        cursor: default;
+        opacity: .52;
+      }
+
+      .psc-title {
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 1.25;
+      }
+
+      .psc-sub {
+        color: #58a6ff;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.25;
       }
     `;
     document.head.appendChild(style);
@@ -948,6 +1287,65 @@ const fallbackText = (item && item.sourceText) ||
     dom.nextBtn.classList.toggle('show', !!show);
   }
 
+  function resetSessionStats() {
+    STATE.stats.startTime = Date.now();
+    STATE.stats.correctCount = 0;
+    STATE.stats.attemptedCount = 0;
+  }
+
+  function startAdvancedMode() {
+    STATE.currentMode = 'advanced';
+    STATE.practiceSet = null;
+    STATE.currentIndex = 0;
+    STATE.isCompleted = false;
+    resetSessionStats();
+    resetErrorNavigation();
+    setMode('advanced');
+  }
+
+  function configureCompletionActions() {
+    const dom = getDOM();
+    if (!dom.completionActions) return;
+
+    const isBasicComplete = STATE.currentMode === 'basic';
+
+    if (isBasicComplete) {
+      dom.completionActions.innerHTML = `
+        <button class="ca-btn ca-primary" id="completionPrimaryBtn" type="button">➡ 进入进阶模式</button>
+        <button class="ca-btn ca-secondary" id="completionRetryBtn" type="button">🔄 再练一次</button>
+        <a class="ca-btn ca-ghost" id="completionHomeBtn" href="index.html">🏠 返回主界面</a>
+      `;
+      if (dom.completionSub) {
+        dom.completionSub.textContent = '你已完成基础练习，可以继续进入进阶模式，或再练一次巩固。';
+      }
+    } else {
+      dom.completionActions.innerHTML = `
+        <a class="ca-btn ca-primary" id="completionPrimaryBtn" href="#">➡ 进入下一单元</a>
+        <button class="ca-btn ca-secondary" id="completionRetryBtn" type="button">🔄 再练一次</button>
+        <a class="ca-btn ca-ghost" id="completionHomeBtn" href="index.html">🏠 返回主界面</a>
+      `;
+      if (dom.completionSub) {
+        dom.completionSub.textContent = '你已完成本单元练习，可以继续下一单元，或返回目录查看进度。';
+      }
+    }
+
+    const primaryBtn = document.getElementById('completionPrimaryBtn');
+    const retryBtn = document.getElementById('completionRetryBtn');
+
+    if (primaryBtn && isBasicComplete) {
+      primaryBtn.addEventListener('click', function (event) {
+        event.preventDefault();
+        startAdvancedMode();
+      });
+    }
+
+    if (retryBtn) {
+      retryBtn.addEventListener('click', function () {
+        restartPractice();
+      });
+    }
+  }
+
   function updateProgress() {
     const dom = getDOM();
     const total = STATE.filteredQuestions.length;
@@ -1002,6 +1400,12 @@ const fallbackText = (item && item.sourceText) ||
 
   function renderCurrentQuestion() {
     const dom = refreshDOM();
+
+    if (isPracticeSetEnabled() && !STATE.practiceSet) {
+      renderPracticeSetScreen();
+      return;
+    }
+
     const question = getActiveQuestion();
 
     if (!dom.wrap || !dom.qCard) return;
@@ -1068,6 +1472,62 @@ const fallbackText = (item && item.sourceText) ||
     if (dom.statTotal) dom.statTotal.textContent = String(total);
     if (dom.statAcc) dom.statAcc.textContent = `${acc}%`;
     if (dom.statTime) dom.statTime.textContent = timeStr;
+    recordPracticeSetCompletion(acc, total);
+    configureCompletionActions();
+  }
+
+  function recordQuestionProgress(question, hasError, usedAnswerReveal) {
+    if (!isPracticeSetEnabled() || !question || !question.id) return;
+
+    const progress = getModeProgress();
+    const mistakes = progress.mistakes || {};
+    const now = Date.now();
+
+    if (hasError || usedAnswerReveal) {
+      const current = mistakes[question.id] || {};
+      mistakes[question.id] = {
+        wrongCount: Number(current.wrongCount || 0) + 1,
+        correctStreak: 0,
+        lastWrongAt: now,
+        reason: usedAnswerReveal ? 'answer_revealed' : 'wrong'
+      };
+    } else if (mistakes[question.id]) {
+      const current = mistakes[question.id];
+      const nextStreak = Number(current.correctStreak || 0) + 1;
+      if (nextStreak >= 2) {
+        delete mistakes[question.id];
+      } else {
+        mistakes[question.id] = {
+          wrongCount: Number(current.wrongCount || 1),
+          correctStreak: nextStreak,
+          lastWrongAt: Number(current.lastWrongAt || now),
+          lastCorrectAt: now
+        };
+      }
+    }
+
+    progress.mistakes = mistakes;
+    saveModeProgress(progress);
+  }
+
+  function recordPracticeSetCompletion(acc, total) {
+    if (!isPracticeSetEnabled() || !STATE.practiceSet || !STATE.practiceSet.key) return;
+
+    const progress = getModeProgress();
+    const sets = progress.sets || {};
+    const current = sets[STATE.practiceSet.key] || {};
+    const best = Math.max(Number(current.bestAccuracy || 0), Number(acc || 0));
+
+    sets[STATE.practiceSet.key] = {
+      completedCount: Number(current.completedCount || 0) + 1,
+      lastAccuracy: Number(acc || 0),
+      bestAccuracy: best,
+      lastTotal: Number(total || 0),
+      lastCompletedAt: Date.now()
+    };
+
+    progress.sets = sets;
+    saveModeProgress(progress);
   }
 
   function validateCurrentAnswer() {
@@ -1094,6 +1554,7 @@ const fallbackText = (item && item.sourceText) ||
 
     const hasError = results.some(r => r.status === 'error');
     const hasWarn = !hasError && results.some(r => r.status === 'warn');
+    recordQuestionProgress(question, hasError, STATE.answerRevealedForCurrentQuestion);
 
     if (!hasError) {
       STATE.isCompleted = true;
@@ -1142,12 +1603,16 @@ const fallbackText = (item && item.sourceText) ||
   function restartPractice() {
     STATE.currentIndex = 0;
     STATE.isCompleted = false;
-    STATE.stats.startTime = Date.now();
-    STATE.stats.correctCount = 0;
-    STATE.stats.attemptedCount = 0;
+    resetSessionStats();
     resetErrorNavigation();
-    applyModeFilter();
-    renderCurrentQuestion();
+    if (isPracticeSetEnabled()) {
+      STATE.practiceSet = null;
+      applyModeFilter();
+      renderPracticeSetScreen();
+    } else {
+      applyModeFilter();
+      renderCurrentQuestion();
+    }
   }
 
   function bindEvents() {
@@ -1189,10 +1654,7 @@ const fallbackText = (item && item.sourceText) ||
 
         if ((event.metaKey || event.ctrlKey) && event.key === '.') {
           event.preventDefault();
-          const d = getDOM();
-          if (d.answerReveal) {
-            d.answerReveal.classList.toggle('show');
-          }
+          toggleAnswerReveal();
           return;
         }
 
@@ -1388,9 +1850,7 @@ const fallbackText = (item && item.sourceText) ||
     STATE.currentIndex = 0;
     STATE.isCompleted = false;
     resetErrorNavigation();
-    STATE.stats.startTime = Date.now();
-    STATE.stats.correctCount = 0;
-    STATE.stats.attemptedCount = 0;
+    resetSessionStats();
 
     const dom = refreshDOM();
     if (dom.wrap) {
