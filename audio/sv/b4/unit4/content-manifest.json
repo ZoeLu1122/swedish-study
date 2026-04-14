@@ -2313,16 +2313,6 @@
       ]
     },
     {
-      "contentId": "b4_adj_bra_group",
-      "audioType": "question_prompt",
-      "sourceText": "bra bra bra",
-      "audioRefs": [
-        "sv_b1_u4_adv_099_bra_v1",
-        "sv_b1_u4_adv_099_bra_v1",
-        "sv_b1_u4_adv_099_bra_v1"
-      ]
-    },
-    {
       "contentId": "b4_neg_jag_ater_inte_frukost_idag",
       "audioType": "question_prompt",
       "sourceText": "Jag äter inte frukost idag.",
