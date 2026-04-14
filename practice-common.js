@@ -439,6 +439,13 @@
     return question.template || question.template_basic || question.template_adv || '';
   }
 
+  function isComparisonChainQuestion(question) {
+    if (!question) return false;
+    if (question.source === 'comparison') return true;
+    const labels = Array.isArray(question.slotLabels) ? question.slotLabels.join('|') : '';
+    return labels === '原级|比较级|最高级';
+  }
+
   function renderFilledTemplateText(question) {
     const template = getDisplayTemplate(question);
     return String(template || '').replace(/{{(.*?)}}/g, '$1').replace(/\s+/g, ' ').trim();
@@ -715,6 +722,19 @@ const fallbackText = (item && item.sourceText) ||
         position: relative;
         top: -6.3px;
       }
+
+      .inline-chain-arrow {
+        display: inline-flex;
+        align-items: flex-end;
+        position: relative;
+        top: -6.3px;
+        color: #8b949e;
+        font-family: 'DM Serif Display', serif;
+        font-size: 1.55rem;
+        line-height: 1;
+        padding-bottom: .3rem;
+        user-select: none;
+      }
     `;
     document.head.appendChild(style);
   }
@@ -777,11 +797,12 @@ const fallbackText = (item && item.sourceText) ||
   function buildInlineFillHtml(question) {
     const template = getDisplayTemplate(question);
     const tokens = tokenizeTemplate(template);
+    const isComparisonChain = isComparisonChainQuestion(question);
     let blankIndex = 0;
 
     const html = tokens.map((token) => {
       if (token.type === 'blank') {
-        const label = getSmartLabel(blankIndex, question);
+        const label = isComparisonChain ? '' : getSmartLabel(blankIndex, question);
         const width = getInlineBlankWidth(token.value, question);
         const out = `
           <div class="word-slot-group">
@@ -808,10 +829,15 @@ const fallbackText = (item && item.sourceText) ||
         return `<span class="inline-punct">${escapeHtml(token.value)}</span>`;
       }
 
+      if (isComparisonChain && token.value === '|') {
+        return `<span class="inline-chain-arrow">→</span>`;
+      }
+
       return `<span class="inline-word">${escapeHtml(token.value)}</span>`;
     }).join('');
 
-    return `<div class="inline-sentence">${html}</div>`;
+    const className = isComparisonChain ? 'inline-sentence comparison-chain' : 'inline-sentence';
+    return `<div class="${className}">${html}</div>`;
   }
 
   function buildNounParadigmHtml(question) {
