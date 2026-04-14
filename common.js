@@ -3,7 +3,7 @@
    1. 命名空间隔离：所有 API 挂载在 window.SfiCore
    2. 统一音效服务：sfx.play(), sfx.correct(), sfx.warn(), sfx.error()
    3. 统一 TTS 拦截与增强：支持全局倍速控制
-   4. UI 自动化注入：导航栏、倍速菜单、生词本入口
+   4. UI 自动化注入：主页入口、导航栏、倍速菜单、生词本入口
    5. 鲁棒性：防御性 DOM 操作，确保不干扰业务逻辑
 ================================================================ */
 
@@ -496,10 +496,24 @@
 
     if (!document.body.classList.contains('is-home') && !document.querySelector('.tb-home, .nav-home-btn')) {
       window.SfiCore.ui.inject('nav', `
-        <a href="index.html" class="tb-home nav-home-btn" title="返回首页">
+        <a href="index.html" class="tb-home nav-home-btn" title="返回主页" aria-label="返回主页">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         </a>
       `);
+    }
+
+    const config = window.PAGE_CONFIG || {};
+    const shouldShowVocabBook =
+      window.SFI_SHOW_VOCAB_BOOK === true ||
+      config.showVocabBook === true ||
+      (config.nav && config.nav.showVocabBook === true);
+
+    if (shouldShowVocabBook && !document.querySelector('.nav-vocab-btn, #vocabNavBtn')) {
+      window.SfiCore.ui.inject('nav', `
+        <a href="vocab-book.html" class="nav-vocab-btn" title="生词本" aria-label="生词本">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg>
+        </a>
+      `, 'beforeend');
     }
 
     // Only inject once (guard against double-injection)

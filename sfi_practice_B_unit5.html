@@ -7,9 +7,8 @@
 <link rel="stylesheet" href="common.css">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+SC:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-/* Hide built-in speed + vocab (use common injected controls) */
-#speed-ctrl, .settings-group .settings-label { display: none !important; }
-#vocabNavBtn { display: none !important; }
+/* Shared nav controls are injected by common.js */
+.settings-group .settings-label { display: none !important; }
 /* ══════════════════════════════════════════════
    TOKENS
 ══════════════════════════════════════════════ */
@@ -62,21 +61,6 @@ body {
   top: 0;
   z-index: 50;
 }
-.tb-home {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px; height: 32px;
-  border-radius: 8px;
-  background: rgba(255,255,255,.05);
-  border: 1px solid var(--border);
-  color: var(--text2);
-  text-decoration: none;
-  font-size: 1rem;
-  transition: all .18s;
-  flex-shrink: 0;
-}
-.tb-home:hover { background: var(--bg3); color: var(--text); border-color: var(--border2); }
 .tb-unit {
   font-size: .78rem;
   color: var(--text2);
@@ -688,26 +672,6 @@ body {
 /* ══════════════════════════════════════════════
    生词本 / 快捷键条 / 答案浮层
 ══════════════════════════════════════════════ */
-.tb-vocab-btn {
-  display: flex; align-items: center; justify-content: center;
-  width: 32px; height: 32px;
-  border-radius: 8px;
-  background: rgba(255,255,255,.05);
-  border: 1px solid var(--border);
-  color: var(--text2);
-  text-decoration: none; font-size: 1.1rem;
-  transition: all .18s; flex-shrink: 0; cursor: pointer;
-  position: relative;
-}
-.tb-vocab-btn:hover { background: var(--bg3); color: var(--gold); border-color: var(--border2); }
-.vocab-badge {
-  position: absolute; top: -4px; right: -4px;
-  background: var(--gold); color: #0d1117;
-  font-size: .5rem; font-family: 'JetBrains Mono', monospace; font-weight: 700;
-  border-radius: 10px; padding: 1px 4px; min-width: 14px;
-  text-align: center; display: none;
-}
-.vocab-badge.show { display: block; }
 .shortcut-bar {
   display: flex; align-items: center; justify-content: center;
   gap: 2rem; padding: .5rem 1.5rem;
@@ -814,7 +778,6 @@ body {
 </head>
 <body>
 <nav class="topbar">
-  <a class="tb-home" href="index.html" title="返回主界面">🏠</a>
   <div class="tb-unit">
     <span>SFI</span>
     <span class="sep">›</span>
@@ -827,24 +790,12 @@ body {
   <div class="tb-spacer"></div>
   <div class="tb-settings">
     <div class="settings-group">
-      <span class="settings-label">语速</span>
-      <div class="seg-ctrl" id="speed-ctrl">
-        <button class="seg-btn" data-speed="1.0" onclick="setSpeed(1.0,this)">1.0×</button>
-        <button class="seg-btn" data-speed="0.75" onclick="setSpeed(0.75,this)">0.75×</button>
-        <button class="seg-btn active" data-speed="0.5" onclick="setSpeed(0.5,this)">0.5×</button>
-      </div>
-    </div>
-    <div class="settings-group">
       <span class="settings-label">音效</span>
       <div class="seg-ctrl">
         <button class="seg-btn active-sound" data-sound="on" onclick="setSound('on',this)">开</button>
         <button class="seg-btn" data-sound="off" onclick="setSound('off',this)">关</button>
       </div>
     </div>
-    <a class="tb-vocab-btn" href="vocab-book.html" title="生词本" id="vocabNavBtn">
-      📖
-      <span class="vocab-badge" id="vocabBadge"></span>
-    </a>
   </div>
 </nav>
 <div class="progress-bar-wrap">
@@ -937,8 +888,8 @@ body {
   </div>
 </div>
 <div class="vocab-toast" id="vocabToast"></div>
-<script src="common.js"></script>
-<script src="practice-common.js?v=20260414-answer-reveal-mistakes"></script>
+<script src="common.js?v=20260415-shared-nav-controls"></script>
+<script src="practice-common.js?v=20260415-shared-nav-controls"></script>
 <script>
   (function () {
     const script = document.createElement('script');
