@@ -91,6 +91,6 @@ window.UNIT_BANK_A1 = {
     { id: 'a1_noun_namn_group', kind: 'morphology', source: 'noun_forms', labelScheme: 'noun_forms', lemma: 'namn', prompt: { zh: '名字' }, template: '{{ett}} | {{namn}} | {{namnet}} | {{namn}} | {{namnen}}' },
     { id: 'a1_noun_land_group', kind: 'morphology', source: 'noun_forms', labelScheme: 'noun_forms', lemma: 'land', prompt: { zh: '国家' }, template: '{{ett}} | {{land}} | {{landet}} | {{länder}} | {{länderna}}' },
     // ===== comparison_forms =====
-    { id: 'a1_comp_bra_group', kind: 'morphology', source: 'comparison', slotLabels: ['原级', '比较级', '最高级'], lemma: 'bra', prompt: { zh: '好的' }, template: '{{bra}} | {{bättre}} | {{bäst}}' }
+    { id: 'a1_comp_bra_group', kind: 'morphology', source: 'comparison', slotLabels: ['原级', '比较级', '最高级'], lemma: 'bra', prompt: { zh: '好的 → 更好的 → 最好的' }, template: '{{bra}} | {{bättre}} | {{bäst}}' }
   ]
 };
