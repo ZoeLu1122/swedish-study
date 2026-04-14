@@ -725,6 +725,10 @@
     return Number.isFinite(Number(value)) ? `${Math.round(Number(value))}%` : '未完成';
   }
 
+  function formatAccuracyMeta(value) {
+    return Number.isFinite(Number(value)) ? `正确率${Math.round(Number(value))}%` : '未完成';
+  }
+
   function buildPracticeSetPanelHtml(candidates) {
     const options = getPracticeSetOptions();
     const size = options.size;
@@ -750,7 +754,7 @@
         <button class="practice-set-card" type="button" data-set-type="group" data-group-index="${index}">
           <span class="psc-title">第 ${index + 1} 组</span>
           <span class="psc-sub">${start}-${end} 题</span>
-          <span class="psc-meta">完成 ${Number(stat.completedCount || 0)} 次 · ${formatAccuracy(stat.lastAccuracy)} · 错题 ${groupMistakes}</span>
+          <span class="psc-meta">完成 ${Number(stat.completedCount || 0)} 次 · ${formatAccuracyMeta(stat.lastAccuracy)} · 错题 ${groupMistakes}</span>
         </button>
       `;
     }).join('');
@@ -766,7 +770,7 @@
           <button class="practice-set-card primary" type="button" data-set-type="smart">
             <span class="psc-title">智能练习 ${Math.min(size, candidates.length)} 题</span>
             <span class="psc-sub">推荐</span>
-            <span class="psc-meta">优先错题 · 随机补足 · 上次 ${formatAccuracy(smartStat.lastAccuracy)}</span>
+            <span class="psc-meta">优先错题 · 随机补足 · ${formatAccuracyMeta(smartStat.lastAccuracy)}</span>
           </button>
           <button class="practice-set-card" type="button" data-set-type="mistakes"${mistakeDisabled}>
             <span class="psc-title">错题重练</span>
