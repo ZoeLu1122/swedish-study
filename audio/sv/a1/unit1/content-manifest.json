@@ -140,8 +140,8 @@
       "bankKind": "vocab_spelling",
       "audioType": "vocab",
       "displayText": "ett namn",
-      "sourceText": "namn",
-      "audioRef": "sv_a1_u1_vocab_015",
+      "sourceText": "ett namn",
+      "audioRef": "sv_a1_u1_vocab_ett_namn",
       "source": "vocab"
     },
     {
@@ -149,8 +149,8 @@
       "bankKind": "vocab_spelling",
       "audioType": "vocab",
       "displayText": "ett land",
-      "sourceText": "land",
-      "audioRef": "sv_a1_u1_vocab_016",
+      "sourceText": "ett land",
+      "audioRef": "sv_a1_u1_vocab_ett_land",
       "source": "vocab"
     },
     {
@@ -446,7 +446,7 @@
       "bankKind": "phrase_fill",
       "audioType": "question_prompt",
       "displayText": "___?",
-      "sourceText": "Var är du från?",
+      "sourceText": "Var är du ifrån?",
       "audioRef": "sv_a1_u1_qp_012",
       "source": "phrase"
     },
@@ -584,7 +584,7 @@
       "bankKind": "dialog_fill",
       "audioType": "dialogue_line_group",
       "displayText": "Trevligt! ___?",
-      "sourceText": "Trevligt! Var är du från?",
+      "sourceText": "Trevligt! Var är du ifrån?",
       "audioRefs": [
         "sv_a1_u1_dialog_001_line_07",
         "sv_a1_u1_dialog_001_line_08"
@@ -901,7 +901,7 @@
           "turn": 3,
           "speaker": "F",
           "contentId": "a1_dialog_var_ar_du_fran",
-          "sourceText": "Trevligt! Var är du från?",
+          "sourceText": "Trevligt! Var är du ifrån?",
           "lines": [
             {
               "audioRef": "sv_a1_u1_dialog_001_line_07",
@@ -911,7 +911,7 @@
             {
               "audioRef": "sv_a1_u1_dialog_001_line_08",
               "speaker": "F",
-              "sourceText": "Var är du från?"
+              "sourceText": "Var är du ifrån?"
             }
           ]
         },
