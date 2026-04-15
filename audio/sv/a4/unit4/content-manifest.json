@@ -21,8 +21,8 @@
   },
   {
     "audioType": "vocab",
-    "sourceText": "grönsaker",
-    "audioRef": "sv_a4_u4_vocab_gronsaker"
+    "sourceText": "en grönsak",
+    "audioRef": "sv_a4_u4_vocab_en_gronsak"
   },
   {
     "audioType": "vocab",

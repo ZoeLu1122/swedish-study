@@ -6,7 +6,7 @@
     { "audioId": "sv_a4_u4_vocab_agg",        "sourceText": "ett ägg",     "fileName": "a1_u4_vocab_002_ett_agg_v1.mp3",     "filePath": "/audio/sv/a4/unit4/vocab/a1_u4_vocab_002_ett_agg_v1.mp3",     "status": "ready" },
     { "audioId": "sv_a4_u4_vocab_kott",       "sourceText": "ett kött",    "fileName": "a1_u4_vocab_003_ett_kott_v1.mp3",    "filePath": "/audio/sv/a4/unit4/vocab/a1_u4_vocab_003_ett_kott_v1.mp3",    "status": "ready" },
     { "audioId": "sv_a4_u4_vocab_fisk",       "sourceText": "en fisk",     "fileName": "a1_u4_vocab_004_en_fisk_v1.mp3",     "filePath": "/audio/sv/a4/unit4/vocab/a1_u4_vocab_004_en_fisk_v1.mp3",     "status": "ready" },
-    { "audioId": "sv_a4_u4_vocab_gronsaker",  "sourceText": "grönsaker",   "fileName": "a1_u4_vocab_005_gronsaker_v1.mp3",   "filePath": "/audio/sv/a4/unit4/vocab/a1_u4_vocab_005_gronsaker_v1.mp3",   "status": "ready" },
+    { "audioId": "sv_a4_u4_vocab_en_gronsak", "sourceText": "en grönsak",  "fileName": "a1_u4_vocab_005_en_gronsaker_v1.mp3","filePath": "/audio/sv/a4/unit4/vocab/a1_u4_vocab_005_en_gronsaker_v1.mp3","status": "ready" },
     { "audioId": "sv_a4_u4_vocab_frukt",      "sourceText": "en frukt",    "fileName": "a1_u4_vocab_006_en_frukt_v1.mp3",    "filePath": "/audio/sv/a4/unit4/vocab/a1_u4_vocab_006_en_frukt_v1.mp3",    "status": "ready" },
     { "audioId": "sv_a4_u4_vocab_ris",        "sourceText": "ett ris",     "fileName": "a1_u4_vocab_007_ett_ris_v1.mp3",     "filePath": "/audio/sv/a4/unit4/vocab/a1_u4_vocab_007_ett_ris_v1.mp3",     "status": "ready" },
     { "audioId": "sv_a4_u4_vocab_ost",        "sourceText": "en ost",      "fileName": "a1_u4_vocab_008_en_ost_v1.mp3",      "filePath": "/audio/sv/a4/unit4/vocab/a1_u4_vocab_008_en_ost_v1.mp3",      "status": "ready" },
