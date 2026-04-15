@@ -207,10 +207,7 @@ body{
 
 <nav>
   <div class="nav-logo">SFI <span>C级</span> · 第五单元</div>
-  <button class="nav-tab active" onclick="showSection('grammar',this)">📖 语法</button>
-  <button class="nav-tab" onclick="showSection('vocab',this)">📋 词汇</button>
-  <button class="nav-tab" onclick="showSection('dialogue',this)">💬 对话</button>
-  <button class="nav-tab" onclick="showSection('quiz',this)">🧪 测验</button>
+  <div id="unit-nav-container" class="unit-nav-tabs"></div>
 </nav>
 
 <div class="page-header">
@@ -326,13 +323,13 @@ body{
       finansierar → <strong>finansieras</strong>（被资助）
     </div>
     <table class="conj-table">
-      <tr><th>原形</th><th>主动（现在时）</th><th class="td-blue">-s被动（现在时）</th><th>中文（被动义）</th></tr>
-      <tr><td>att läsa</td><td>läser</td><td class="td-blue">läses</td><td>被阅读</td></tr>
-      <tr><td>att skriva</td><td>skriver</td><td class="td-blue">skrivs</td><td>被书写</td></tr>
-      <tr><td>att använda</td><td>använder</td><td class="td-blue">används</td><td>被使用</td></tr>
-      <tr><td>att finansiera</td><td>finansierar</td><td class="td-blue">finansieras</td><td>被资助</td></tr>
-      <tr><td>att remittera</td><td>remitterar</td><td class="td-blue">remitteras</td><td>被转介</td></tr>
-      <tr><td>att diskutera</td><td>diskuterar</td><td class="td-blue">diskuteras</td><td>被讨论</td></tr>
+      <tr><th>原形</th><th>主动（现在时）</th><th>-s被动（现在时）</th><th>中文（被动义）</th></tr>
+      <tr><td>läsa</td><td>läser</td><td class="td-blue">läses</td><td>被阅读</td></tr>
+      <tr><td>skriva</td><td>skriver</td><td class="td-blue">skrivs</td><td>被书写</td></tr>
+      <tr><td>använda</td><td>använder</td><td class="td-blue">används</td><td>被使用</td></tr>
+      <tr><td>finansiera</td><td>finansierar</td><td class="td-blue">finansieras</td><td>被资助</td></tr>
+      <tr><td>remittera</td><td>remitterar</td><td class="td-blue">remitteras</td><td>被转介</td></tr>
+      <tr><td>diskutera</td><td>diskuterar</td><td class="td-blue">diskuteras</td><td>被讨论</td></tr>
     </table>
     <div class="two-col">
       <div class="box-green">
@@ -398,7 +395,7 @@ body{
 <section class="section" id="dialogue">
   <div class="card">
     <div class="card-title">💬 对话一：课堂讨论阅读材料</div>
-    <div class="card-subtitle">老师与学生讨论一篇关于瑞典医疗的文章。<span style="color:var(--ac);font-weight:600;">绿色</span>=关系代词（som/vars/vilket），<span style="color:var(--blue);font-weight:600;">蓝色</span>=-s被动语态。点击任意单词可听发音。</div>
+    <div class="card-subtitle">老师与学生讨论一篇关于瑞典医疗的文章。<span style="color:var(--ac);font-weight:600;">绿色</span>=关系代词（som/vars/vilket），<span style="color:var(--blue);font-weight:600;">蓝色</span>=-s被动语态。</div>
     <div style="display:flex;gap:.5rem;margin-bottom:1.1rem;flex-wrap:wrap;">
       <button class="tts-full-btn" id="btn-full1" onclick="toggleFull(1)">▶ 朗读整段对话</button>
     </div>
@@ -526,11 +523,11 @@ const vocabData = [
   {type:'noun',en:'en', sv:'källa',           py:'谢拉',         def:'källan',            defPy:'谢兰',           pl:'källor',            plPy:'谢勒',           plDef:'källorna',            plDefPy:'谢勒纳',       zh:'来源/信息源'},
   {type:'noun',en:'ett',sv:'nyckelord',       py:'尼克尔奥尔德', def:'nyckelordet',       defPy:'尼克尔奥尔德特', pl:'nyckelord',         plPy:'尼克尔奥尔德',   plDef:'nyckelorden',         plDefPy:'尼克尔奥尔登', zh:'关键词'},
   // VERBS
-  {type:'verb',sv:'att sammanfatta', py:'萨曼法特',   now:'sammanfattar', nowPy:'萨曼法特阿尔', past:'sammanfattade', pastPy:'萨曼法特阿德', sup:'sammanfattat', supPy:'萨曼法特阿特', zh:'总结/概括（第一组）'},
-  {type:'verb',sv:'att analysera',   py:'阿纳吕塞拉', now:'analyserar',   nowPy:'阿纳吕塞拉尔', past:'analyserade',   pastPy:'阿纳吕塞拉德', sup:'analyserat',   supPy:'阿纳吕塞拉特', zh:'分析（第一组）'},
-  {type:'verb',sv:'att jämföra',     py:'耶姆弗拉',   now:'jämför',       nowPy:'耶姆弗尔',     past:'jämförde',      pastPy:'耶姆弗德',     sup:'jämfört',      supPy:'耶姆弗特',     zh:'比较（第二组）'},
-  {type:'verb',sv:'att tolka',       py:'托尔卡',     now:'tolkar',       nowPy:'托尔卡尔',     past:'tolkade',       pastPy:'托尔卡德',     sup:'tolkat',       supPy:'托尔卡特',     zh:'解读/诠释（第一组）'},
-  {type:'verb',sv:'att beskriva',    py:'贝斯克里瓦', now:'beskriver',    nowPy:'贝斯克里弗尔', past:'beskrev',       pastPy:'贝斯克雷弗',   sup:'beskrivit',    supPy:'贝斯克里维特', zh:'描述/描写（不规则）'},
+  {type:'verb',sv:'sammanfatta', py:'萨曼法特',   now:'sammanfattar', nowPy:'萨曼法特阿尔', past:'sammanfattade', pastPy:'萨曼法特阿德', sup:'sammanfattat', supPy:'萨曼法特阿特', zh:'总结/概括（第一组）'},
+  {type:'verb',sv:'analysera',   py:'阿纳吕塞拉', now:'analyserar',   nowPy:'阿纳吕塞拉尔', past:'analyserade',   pastPy:'阿纳吕塞拉德', sup:'analyserat',   supPy:'阿纳吕塞拉特', zh:'分析（第一组）'},
+  {type:'verb',sv:'jämföra',     py:'耶姆弗拉',   now:'jämför',       nowPy:'耶姆弗尔',     past:'jämförde',      pastPy:'耶姆弗德',     sup:'jämfört',      supPy:'耶姆弗特',     zh:'比较（第二组）'},
+  {type:'verb',sv:'tolka',       py:'托尔卡',     now:'tolkar',       nowPy:'托尔卡尔',     past:'tolkade',       pastPy:'托尔卡德',     sup:'tolkat',       supPy:'托尔卡特',     zh:'解读/诠释（第一组）'},
+  {type:'verb',sv:'beskriva',    py:'贝斯克里瓦', now:'beskriver',    nowPy:'贝斯克里弗尔', past:'beskrev',       pastPy:'贝斯克雷弗',   sup:'beskrivit',    supPy:'贝斯克里维特', zh:'描述/描写（不规则）'},
 ];
 
 // ═══════════════════════════════════════════════════════════
@@ -645,8 +642,8 @@ const quizData = [
    opts:['som','vars','vilket','vilken'],
    fb:'vilket 用于指代前面整个句子（她五分钟内总结了整篇文章→这件事）令老师印象深刻。som 只能指代具体名词，不能指代整件事。'},
   {type:'fill',  typeName:'填空题',
-   q:'Den här texten ___ av miljontals människor varje dag. (att läsa，-s被动语态现在时)',
-   zh:'"这篇文章每天被数百万人阅读。" 用 att läsa 的-s被动语态现在时填空。',
+   q:'Den här texten ___ av miljontals människor varje dag. (läsa，-s被动语态现在时)',
+   zh:'"这篇文章每天被数百万人阅读。" 用 läsa 的-s被动语态现在时填空。',
    answer:'läses',
    fb:'被动语态-s形式：läser → läses（去掉-r，加-s）。läses av miljontals människor = 被数百万人阅读。'},
   {type:'choice', typeName:'选择题',

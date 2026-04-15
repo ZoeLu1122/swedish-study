@@ -169,10 +169,7 @@ body{
 
 <nav>
   <div class="nav-logo">SFI <span>C级</span> · 第四单元</div>
-  <button class="nav-tab active" onclick="showSection('grammar',this)">📖 语法</button>
-  <button class="nav-tab" onclick="showSection('vocab',this)">📋 词汇</button>
-  <button class="nav-tab" onclick="showSection('dialogue',this)">💬 对话</button>
-  <button class="nav-tab" onclick="showSection('quiz',this)">🧪 测验</button>
+  <div id="unit-nav-container" class="unit-nav-tabs"></div>
 </nav>
 
 <div class="page-header">
@@ -276,7 +273,7 @@ body{
 <section class="section" id="dialogue">
   <div class="card">
     <div class="card-title">💬 对话一：预约医生</div>
-    <div class="card-subtitle">在医疗机构预约时间的场景。<span style="color:var(--ac);font-weight:600;">蓝色</span>=礼貌句型或关键词。点击任意单词可听发音。</div>
+    <div class="card-subtitle">在医疗机构预约时间的场景。<span style="color:var(--ac);font-weight:600;">蓝色</span>=礼貌句型或关键词。</div>
     <div style="display:flex;gap:.5rem;margin-bottom:1.1rem;flex-wrap:wrap;">
       <button class="tts-full-btn" id="btn-full1" onclick="toggleFull(1)">▶ 朗读整段对话</button>
     </div>
@@ -318,7 +315,7 @@ body{
 
   <div class="card">
     <div class="card-title">💬 对话二：服务投诉与解决</div>
-    <div class="card-subtitle">在服务场景中礼貌投诉并寻求解决方案。点击任意单词可听发音。</div>
+    <div class="card-subtitle">在服务场景中礼貌投诉并寻求解决方案。</div>
     <div style="display:flex;gap:.5rem;margin-bottom:1.1rem;flex-wrap:wrap;">
       <button class="tts-full-btn" id="btn-full2" onclick="toggleFull(2)">▶ 朗读整段对话</button>
     </div>
@@ -389,14 +386,14 @@ window.sfiUnitKey = UNIT_KEY;
 // VOCAB DATA
 // ═══════════════════════════════════════════════════════════
 const vocabData = [
-  {cat:'verb', sv:'att be om',        py:'be om',       zh:'请求',      ex:'Jag vill be om hjälp.'},
-  {cat:'verb', sv:'att erbjuda',      py:'erbjuda',     zh:'提供/邀请', ex:'Hon erbjuder kaffe.'},
-  {cat:'verb', sv:'att tacka',        py:'tacka',       zh:'感谢',      ex:'Jag vill tacka dig.'},
-  {cat:'verb', sv:'att avboka',       py:'avboka',      zh:'取消预约',  ex:'Jag måste avboka mötet.'},
-  {cat:'verb', sv:'att boka',         py:'boka',        zh:'预约/预订', ex:'Kan jag boka en tid?'},
-  {cat:'verb', sv:'att klaga',        py:'klaga',       zh:'投诉/抱怨', ex:'Han klagade på maten.'},
-  {cat:'verb', sv:'att påminna',      py:'påminna',     zh:'提醒',      ex:'Påminn mig om mötet.'},
-  {cat:'verb', sv:'att meddela',      py:'meddela',     zh:'通知/告知', ex:'Jag ska meddela dig.'},
+  {cat:'verb', sv:'be om',        py:'be om',       zh:'请求',      ex:'Jag vill be om hjälp.'},
+  {cat:'verb', sv:'erbjuda',      py:'erbjuda',     zh:'提供/邀请', ex:'Hon erbjuder kaffe.'},
+  {cat:'verb', sv:'tacka',        py:'tacka',       zh:'感谢',      ex:'Jag vill tacka dig.'},
+  {cat:'verb', sv:'avboka',       py:'avboka',      zh:'取消预约',  ex:'Jag måste avboka mötet.'},
+  {cat:'verb', sv:'boka',         py:'boka',        zh:'预约/预订', ex:'Kan jag boka en tid?'},
+  {cat:'verb', sv:'klaga',        py:'klaga',       zh:'投诉/抱怨', ex:'Han klagade på maten.'},
+  {cat:'verb', sv:'påminna',      py:'påminna',     zh:'提醒',      ex:'Påminn mig om mötet.'},
+  {cat:'verb', sv:'meddela',      py:'meddela',     zh:'通知/告知', ex:'Jag ska meddela dig.'},
   {cat:'noun', en:'ett', sv:'ärende',      py:'ärende',      zh:'事务/来意', ex:'Vad är ditt ärende?'},
   {cat:'noun', en:'ett', sv:'klagomål',    py:'klagomål',    zh:'投诉',      ex:'Jag har ett klagomål.'},
   {cat:'noun', en:'en',  sv:'bokning',     py:'bokning',     zh:'预订',      ex:'Bokningen är bekräftad.'},
@@ -485,7 +482,7 @@ const quizData = [
    answer:'Jag undrar om det finns lediga tider.',
    opts:['Jag frågar om det finns lediga tider.','Jag undrar om det finns lediga tider.','Finns det lediga tider, säg mig!'],
    fb:'Jag undrar om... = 我想知道是否…，委婉礼貌。fråga=直接问，undra=心里想知道。'},
-  {type:'fill',  typeName:'填空题', q:'Jag behöver ______ en tid hos tandläkaren.（预约）',                       zh:'预约用哪个动词？',                          answer:'boka',     fb:'boka = 预约/预订。att boka en tid = 预约一个时间。'},
+  {type:'fill',  typeName:'填空题', q:'Jag behöver ______ en tid hos tandläkaren.（预约）',                       zh:'预约用哪个动词？',                          answer:'boka',     fb:'boka = 预约/预订。boka en tid = 预约一个时间。'},
   {type:'fill',  typeName:'填空题', q:'Hon ringde för att ______ mötet.（取消预约）',                              zh:'取消预约使用哪个动词？',                    answer:'avboka',   fb:'avboka = 取消预约。前缀 av- 表示"取消/撤销"。'},
   {type:'fill',  typeName:'填空题', q:'Kan du ______ mig om mötet imorgon?（提醒）',                               zh:'提醒用哪个动词？',                          answer:'påminna',  fb:'påminna = 提醒。påminna någon om något（提醒某人某事）。'},
   {type:'choice',typeName:'选择题', q:'"我同意这一点"的正确瑞典语是？',                                            zh:'选择正确的同意表达',

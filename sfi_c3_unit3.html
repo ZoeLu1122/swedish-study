@@ -56,6 +56,10 @@ main{max-width:900px;margin:0 auto;padding:1.8rem 1.4rem 4rem;}
 .hl-b{background:rgba(46,79,163,.12);border-radius:4px;padding:0 4px;color:var(--blue);font-weight:700;}
 .hl-neg{background:rgba(192,57,43,.12);border-radius:4px;padding:0 4px;color:var(--red);font-weight:700;}
 .hl-conj{background:rgba(106,26,138,.2);border-radius:4px;padding:0 4px;color:#4a0a6a;font-weight:700;}
+.bisats-examples{margin-top:.45rem;line-height:2.05;}
+.bisats-line{display:block;}
+.bisats-clause{background:rgba(106,26,138,.08);border-bottom:2px solid rgba(106,26,138,.45);border-radius:4px;padding:0 3px;}
+.bisats-cn{color:var(--gray);}
 
 /* ─── STRUCTURE TABLE ─── */
 .struct-table{width:100%;border-collapse:collapse;font-size:.82rem;margin:.8rem 0;}
@@ -215,10 +219,12 @@ main{max-width:900px;margin:0 auto;padding:1.8rem 1.4rem 4rem;}
     <div class="card-title">📌 什么是从句（Bisats）？</div>
     <div class="card-subtitle">从句是依附于主句的子句，不能单独使用，由连接词引导。</div>
     <div class="rule-box">
-      <strong>基本结构：</strong>主句（Huvudsats）+ 连接词 + 从句（Bisats）<br>
-      Jag vet <span class="hl-conj">[att</span> han är trött<span class="hl-conj">]</span>. → 我知道[他很累]。<br>
-      Det är läraren <span class="hl-conj">[som</span> undervisar oss<span class="hl-conj">]</span>. → 那是[教我们的]老师。<br>
-      Jag undrar <span class="hl-conj">[var</span> hon bor<span class="hl-conj">]</span>. → 我想知道[她住在哪里]。
+      <strong>基本结构：</strong>主句（Huvudsats）+ 连接词 + 从句（Bisats）
+      <div class="bisats-examples">
+        <span class="bisats-line">Jag vet <span class="bisats-clause"><span class="hl-conj">att</span> han är trött</span>. <span class="bisats-cn">→ 我知道：他很累。</span></span>
+        <span class="bisats-line">Det är läraren <span class="bisats-clause"><span class="hl-conj">som</span> undervisar oss</span>. <span class="bisats-cn">→ 那是教我们的老师。</span></span>
+        <span class="bisats-line">Jag undrar <span class="bisats-clause"><span class="hl-conj">var</span> hon bor</span>. <span class="bisats-cn">→ 我想知道：她住在哪里。</span></span>
+      </div>
     </div>
     <div class="tip-box">📌 <strong>三类从句：</strong><br>
     · <strong>att-sats</strong>（宾语从句）：Jag tror att... / 我认为...<br>

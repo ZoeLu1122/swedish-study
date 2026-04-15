@@ -189,10 +189,7 @@ main{max-width:900px;margin:0 auto;padding:1.8rem 1.4rem 4rem;}
 
 <nav>
   <div class="nav-logo">SFI <span>C级</span> · 第二单元</div>
-  <button class="nav-tab active" onclick="showSection('grammar',this)">📖 语法</button>
-  <button class="nav-tab" onclick="showSection('vocab',this)">📋 词汇</button>
-  <button class="nav-tab" onclick="showSection('dialogue',this)">💬 对话</button>
-  <button class="nav-tab" onclick="showSection('quiz',this)">🧪 测验</button>
+  <div id="unit-nav-container" class="unit-nav-tabs"></div>
 </nav>
 
 <div class="page-header">
@@ -232,13 +229,13 @@ main{max-width:900px;margin:0 auto;padding:1.8rem 1.4rem 4rem;}
     <div class="card-subtitle">掌握现在时与过去时形式，理解各自的核心语义。</div>
     <table class="modal-table">
       <tr><th>原形</th><th>现在时</th><th>过去时</th><th>核心含义</th></tr>
-      <tr><td>att kunna</td><td class="td-pres">kan</td><td class="td-past">kunde</td><td>能/会（能力）</td></tr>
-      <tr><td>att vilja</td><td class="td-pres">vill</td><td class="td-past">ville</td><td>想要（意愿）</td></tr>
-      <tr><td>att ska/skola</td><td class="td-pres">ska</td><td class="td-past">skulle</td><td>将要/打算（计划）</td></tr>
-      <tr><td>att måste</td><td class="td-pres">måste</td><td class="td-past">måste</td><td>必须（义务）</td></tr>
-      <tr><td>att få</td><td class="td-pres">får</td><td class="td-past">fick</td><td>可以/被允许（许可）</td></tr>
-      <tr><td>att böra</td><td class="td-pres">bör</td><td class="td-past">borde</td><td>应该（建议）</td></tr>
-      <tr><td>att behöva</td><td class="td-pres">behöver</td><td class="td-past">behövde</td><td>需要/不必（必要性）</td></tr>
+      <tr><td>kunna</td><td class="td-pres">kan</td><td class="td-past">kunde</td><td>能/会（能力）</td></tr>
+      <tr><td>vilja</td><td class="td-pres">vill</td><td class="td-past">ville</td><td>想要（意愿）</td></tr>
+      <tr><td>skola</td><td class="td-pres">ska</td><td class="td-past">skulle</td><td>将要/打算（计划）</td></tr>
+      <tr><td>måste</td><td class="td-pres">måste</td><td class="td-past">måste</td><td>必须（义务）</td></tr>
+      <tr><td>få</td><td class="td-pres">får</td><td class="td-past">fick</td><td>可以/被允许（许可）</td></tr>
+      <tr><td>böra</td><td class="td-pres">bör</td><td class="td-past">borde</td><td>应该（建议）</td></tr>
+      <tr><td>behöva</td><td class="td-pres">behöver</td><td class="td-past">behövde</td><td>需要/不必（必要性）</td></tr>
     </table>
     <div class="tip-box">💡 <strong>特别注意：</strong><br>
     · <strong>måste</strong> 的现在时和过去时形式完全相同，都是 måste。<br>
@@ -444,13 +441,13 @@ function diffHL(base,form,cls){
 
 const vocabData=[
   // MODAL VERBS
-  {type:'verb',sv:'att kunna',  py:'昆纳',    now:'kan',      nowPy:'坎',      past:'kunde',   pastPy:'昆德',   sup:'kunnat',  supPy:'昆纳特',  zh:'能/会（能力）'},
-  {type:'verb',sv:'att vilja',  py:'维利亚',  now:'vill',     nowPy:'维尔',    past:'ville',   pastPy:'维勒',   sup:'velat',   supPy:'维拉特',  zh:'想要（意愿）'},
-  {type:'verb',sv:'att skola',  py:'斯科拉',  now:'ska',      nowPy:'斯卡',    past:'skulle',  pastPy:'斯库勒', sup:'skolat',  supPy:'斯科拉特',zh:'将要/打算（计划）'},
-  {type:'verb',sv:'att måste',  py:'莫斯特',  now:'måste',    nowPy:'莫斯特',  past:'måste',   pastPy:'莫斯特', sup:'måst',    supPy:'莫斯特',  zh:'必须（义务，过去时同形）'},
-  {type:'verb',sv:'att få',     py:'弗',      now:'får',      nowPy:'弗尔',    past:'fick',    pastPy:'菲克',   sup:'fått',    supPy:'弗特',    zh:'可以/被允许（许可）'},
-  {type:'verb',sv:'att böra',   py:'布拉',    now:'bör',      nowPy:'布尔',    past:'borde',   pastPy:'布德',   sup:'bort',    supPy:'布特',    zh:'应该（建议）'},
-  {type:'verb',sv:'att behöva', py:'贝霍瓦',  now:'behöver',  nowPy:'贝霍弗尔',past:'behövde', pastPy:'贝霍夫德',sup:'behövt', supPy:'贝霍夫特',zh:'需要（必要性）'},
+  {type:'verb',sv:'kunna',  py:'昆纳',    now:'kan',      nowPy:'坎',      past:'kunde',   pastPy:'昆德',   sup:'kunnat',  supPy:'昆纳特',  zh:'能/会（能力）'},
+  {type:'verb',sv:'vilja',  py:'维利亚',  now:'vill',     nowPy:'维尔',    past:'ville',   pastPy:'维勒',   sup:'velat',   supPy:'维拉特',  zh:'想要（意愿）'},
+  {type:'verb',sv:'skola',  py:'斯科拉',  now:'ska',      nowPy:'斯卡',    past:'skulle',  pastPy:'斯库勒', sup:'skolat',  supPy:'斯科拉特',zh:'将要/打算（计划）'},
+  {type:'verb',sv:'måste',  py:'莫斯特',  now:'måste',    nowPy:'莫斯特',  past:'måste',   pastPy:'莫斯特', sup:'måst',    supPy:'莫斯特',  zh:'必须（义务，过去时同形）'},
+  {type:'verb',sv:'få',     py:'弗',      now:'får',      nowPy:'弗尔',    past:'fick',    pastPy:'菲克',   sup:'fått',    supPy:'弗特',    zh:'可以/被允许（许可）'},
+  {type:'verb',sv:'böra',   py:'布拉',    now:'bör',      nowPy:'布尔',    past:'borde',   pastPy:'布德',   sup:'bort',    supPy:'布特',    zh:'应该（建议）'},
+  {type:'verb',sv:'behöva', py:'贝霍瓦',  now:'behöver',  nowPy:'贝霍弗尔',past:'behövde', pastPy:'贝霍夫德',sup:'behövt', supPy:'贝霍夫特',zh:'需要（必要性）'},
   // NOUNS
   {type:'noun',en:'en',sv:'möjlighet',  py:'莫伊利黑特',   def:'möjligheten',  defPy:'莫伊利黑腾',  pl:'möjligheter',  plPy:'莫伊利黑特尔', plDef:'möjligheterna', plDefPy:'莫伊利黑特纳', zh:'可能性/机会'},
   {type:'noun',en:'ett',sv:'tillstånd', py:'替尔斯通德',   def:'tillståndet',  defPy:'替尔斯通德特', pl:'tillstånd',    plPy:'替尔斯通德',   plDef:'tillstånden',   plDefPy:'替尔斯通登',  zh:'许可/状态'},
@@ -548,9 +545,9 @@ function toggleFlipMode(){
 }
 
 const quizData=[
-  {type:'conj',typeName:'动词变形',q:'att kunna → 现在时是？',zh:'"能/会"的现在时',answer:'kan',fb:'att kunna的现在时是kan。情态动词现在时形式特殊，不按普通规则变位。例：Jag kan svenska.'},
-  {type:'conj',typeName:'动词变形',q:'att vilja → 过去时是？',zh:'"想要"的过去时',answer:'ville',fb:'att vilja的过去时是ville。例：Hon ville inte gå dit. 她（那时）不想去那里。'},
-  {type:'conj',typeName:'动词变形',q:'att ska → 过去时是？',zh:'"将要/打算"的过去时',answer:'skulle',fb:'ska的过去时是skulle。skulle也用于礼貌的条件句：Skulle du vilja...?（你愿意...吗？）'},
+  {type:'conj',typeName:'动词变形',q:'kunna → 现在时是？',zh:'"能/会"的现在时',answer:'kan',fb:'kunna的现在时是kan。情态动词现在时形式特殊，不按普通规则变位。例：Jag kan svenska.'},
+  {type:'conj',typeName:'动词变形',q:'vilja → 过去时是？',zh:'"想要"的过去时',answer:'ville',fb:'vilja的过去时是ville。例：Hon ville inte gå dit. 她（那时）不想去那里。'},
+  {type:'conj',typeName:'动词变形',q:'ska → 过去时是？',zh:'"将要/打算"的过去时',answer:'skulle',fb:'ska的过去时是skulle。skulle也用于礼貌的条件句：Skulle du vilja...?（你愿意...吗？）'},
   {type:'choice',typeName:'情境选择',q:'表达"我可以开窗吗？" ___ jag öppna fönstret?',zh:'询问许可，应用哪个情态动词？',answer:'Får',opts:['Kan','Vill','Får','Bör'],fb:'Får jag...? 是询问许可的标准表达。Kan jag...? 也可以，但更侧重"我有这能力吗"。Vill和Bör不用于询问许可。'},
   {type:'choice',typeName:'情境选择',q:'表达"你必须出示证件" Du ___ visa legitimation.',zh:'强烈义务，不可缺少',answer:'måste',opts:['bör','ska','måste','kan'],fb:'måste表达强烈义务"必须"。bör表建议（应该），ska表计划，kan表能力。这里是强制性义务，用måste。'},
   {type:'choice',typeName:'情境选择',q:'温和建议朋友多睡觉："Du ___ sova mer."',zh:'建议语气，不是命令',answer:'borde',opts:['måste','borde','ska','kan'],fb:'borde（böra的过去时）表示温和建议，比bör更委婉礼貌。例：Du borde träna mer.（你应该多锻炼。）'},

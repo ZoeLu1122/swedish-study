@@ -198,10 +198,7 @@ body{
 
 <nav>
   <div class="nav-logo">SFI <span>C级</span> · 第六单元</div>
-  <button class="nav-tab active" onclick="showSection('grammar',this)">📖 语法</button>
-  <button class="nav-tab" onclick="showSection('vocab',this)">📋 词汇</button>
-  <button class="nav-tab" onclick="showSection('dialogue',this)">💬 对话</button>
-  <button class="nav-tab" onclick="showSection('quiz',this)">🧪 测验</button>
+  <div id="unit-nav-container" class="unit-nav-tabs"></div>
 </nav>
 
 <div class="page-header">
@@ -377,7 +374,7 @@ body{
 <section class="section" id="dialogue">
   <div class="card">
     <div class="card-title">💬 对话一：讨论写作任务</div>
-    <div class="card-subtitle">同学之间讨论如何完成一篇写给市政局的信件。<span style="color:var(--ac);font-weight:600;">玫红色</span>=连接词，<span style="color:var(--blue);font-weight:600;">蓝色</span>=正式书写用语。点击任意单词可听发音。</div>
+    <div class="card-subtitle">同学之间讨论如何完成一篇写给市政局的信件。<span style="color:var(--ac);font-weight:600;">玫红色</span>=连接词，<span style="color:var(--blue);font-weight:600;">蓝色</span>=正式书写用语。</div>
     <div style="display:flex;gap:.5rem;margin-bottom:1.1rem;flex-wrap:wrap;">
       <button class="tts-full-btn" id="btn-full1" onclick="toggleFull(1)">▶ 朗读整段对话</button>
     </div>
@@ -489,12 +486,12 @@ function diffHL(base, form, cls) {
 
 const vocabData = [
   // VERBS
-  {type:'verb',sv:'att inleda',    py:'因莱达',     now:'inleder',    nowPy:'因莱德尔',   past:'inledde',    pastPy:'因莱德',     sup:'inlett',     supPy:'因莱特',     zh:'开始/引入（第二组）'},
-  {type:'verb',sv:'att avsluta',   py:'阿夫斯鲁塔', now:'avslutar',   nowPy:'阿夫斯鲁塔尔',past:'avslutade', pastPy:'阿夫斯鲁塔德',sup:'avslutat',   supPy:'阿夫斯鲁塔特',zh:'结束/总结（第一组）'},
-  {type:'verb',sv:'att påpeka',    py:'波佩卡',     now:'påpekar',    nowPy:'波佩卡尔',   past:'påpekade',   pastPy:'波佩卡德',   sup:'påpekat',    supPy:'波佩卡特',   zh:'指出（第一组）'},
-  {type:'verb',sv:'att hävda',     py:'海夫达',     now:'hävdar',     nowPy:'海夫达尔',   past:'hävdade',    pastPy:'海夫达德',   sup:'hävdat',     supPy:'海夫达特',   zh:'主张/声称（第一组）'},
-  {type:'verb',sv:'att föreslå',   py:'弗雷斯洛',   now:'föreslår',   nowPy:'弗雷斯洛尔', past:'föreslog',   pastPy:'弗雷斯洛格', sup:'föreslagit', supPy:'弗雷斯拉基特',zh:'建议/提议（不规则）'},
-  {type:'verb',sv:'att motivera',  py:'莫提维拉',   now:'motiverar',  nowPy:'莫提维拉尔', past:'motiverade', pastPy:'莫提维拉德', sup:'motiverat',  supPy:'莫提维拉特', zh:'说明理由/论证（第一组）'},
+  {type:'verb',sv:'inleda',    py:'因莱达',     now:'inleder',    nowPy:'因莱德尔',   past:'inledde',    pastPy:'因莱德',     sup:'inlett',     supPy:'因莱特',     zh:'开始/引入（第二组）'},
+  {type:'verb',sv:'avsluta',   py:'阿夫斯鲁塔', now:'avslutar',   nowPy:'阿夫斯鲁塔尔',past:'avslutade', pastPy:'阿夫斯鲁塔德',sup:'avslutat',   supPy:'阿夫斯鲁塔特',zh:'结束/总结（第一组）'},
+  {type:'verb',sv:'påpeka',    py:'波佩卡',     now:'påpekar',    nowPy:'波佩卡尔',   past:'påpekade',   pastPy:'波佩卡德',   sup:'påpekat',    supPy:'波佩卡特',   zh:'指出（第一组）'},
+  {type:'verb',sv:'hävda',     py:'海夫达',     now:'hävdar',     nowPy:'海夫达尔',   past:'hävdade',    pastPy:'海夫达德',   sup:'hävdat',     supPy:'海夫达特',   zh:'主张/声称（第一组）'},
+  {type:'verb',sv:'föreslå',   py:'弗雷斯洛',   now:'föreslår',   nowPy:'弗雷斯洛尔', past:'föreslog',   pastPy:'弗雷斯洛格', sup:'föreslagit', supPy:'弗雷斯拉基特',zh:'建议/提议（不规则）'},
+  {type:'verb',sv:'motivera',  py:'莫提维拉',   now:'motiverar',  nowPy:'莫提维拉尔', past:'motiverade', pastPy:'莫提维拉德', sup:'motiverat',  supPy:'莫提维拉特', zh:'说明理由/论证（第一组）'},
   // NOUNS
   {type:'noun',en:'en', sv:'fördel',      py:'弗尔德尔',     def:'fördelen',      defPy:'弗尔德伦',       pl:'fördelar',      plPy:'弗尔德拉尔',   plDef:'fördelarna',      plDefPy:'弗尔德拉纳',   zh:'优点/好处'},
   {type:'noun',en:'en', sv:'nackdel',     py:'纳克德尔',     def:'nackdelen',     defPy:'纳克德伦',       pl:'nackdelar',     plPy:'纳克德拉尔',   plDef:'nackdelarna',     plDefPy:'纳克德拉纳',   zh:'缺点'},
