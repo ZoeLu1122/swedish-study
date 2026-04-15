@@ -189,10 +189,7 @@ main{max-width:900px;margin:0 auto;padding:1.8rem 1.4rem 4rem;}
 
 <nav>
   <div class="nav-logo">SFI <span>C级</span> · 第三单元</div>
-  <button class="nav-tab active" onclick="showSection('grammar',this)">📖 语法</button>
-  <button class="nav-tab" onclick="showSection('vocab',this)">📋 词汇</button>
-  <button class="nav-tab" onclick="showSection('dialogue',this)">💬 对话</button>
-  <button class="nav-tab" onclick="showSection('quiz',this)">🧪 测验</button>
+  <div id="unit-nav-container" class="unit-nav-tabs"></div>
 </nav>
 
 <div class="page-header">
@@ -443,14 +440,14 @@ function diffHL(base,form,cls){
 
 const vocabData=[
   // VERBS
-  {type:'verb',sv:'att tro',     py:'特罗',    now:'tror',     nowPy:'特罗尔',   past:'trodde',  pastPy:'特罗德',  sup:'trott',    supPy:'特罗特',   zh:'认为/相信'},
-  {type:'verb',sv:'att veta',    py:'维塔',    now:'vet',      nowPy:'维特',     past:'visste',  pastPy:'维斯特',  sup:'vetat',    supPy:'维塔特',   zh:'知道'},
-  {type:'verb',sv:'att tycka',   py:'蒂卡',    now:'tycker',   nowPy:'蒂克尔',   past:'tyckte',  pastPy:'蒂克特',  sup:'tyckt',    supPy:'蒂克特',   zh:'觉得/认为'},
-  {type:'verb',sv:'att hoppas',  py:'霍帕斯',  now:'hoppas',   nowPy:'霍帕斯',   past:'hoppades',pastPy:'霍帕德斯',sup:'hoppats',  supPy:'霍帕斯',   zh:'希望'},
-  {type:'verb',sv:'att berätta', py:'贝雷塔',  now:'berättar', nowPy:'贝雷塔尔', past:'berättade',pastPy:'贝雷塔德',sup:'berättat', supPy:'贝雷塔特', zh:'讲述/告诉'},
-  {type:'verb',sv:'att fråga',   py:'弗罗加',  now:'frågar',   nowPy:'弗罗加尔', past:'frågade', pastPy:'弗罗加德',sup:'frågat',   supPy:'弗罗加特', zh:'询问'},
-  {type:'verb',sv:'att förstå',  py:'弗斯托',  now:'förstår',  nowPy:'弗斯托尔', past:'förstod', pastPy:'弗斯托德',sup:'förstått', supPy:'弗斯托特', zh:'理解/明白'},
-  {type:'verb',sv:'att undra',   py:'温德拉',  now:'undrar',   nowPy:'温德拉尔', past:'undrade', pastPy:'温德拉德',sup:'undrat',   supPy:'温德拉特', zh:'想知道/纳闷'},
+  {type:'verb',sv:'tro',     py:'特罗',    now:'tror',     nowPy:'特罗尔',   past:'trodde',  pastPy:'特罗德',  sup:'trott',    supPy:'特罗特',   zh:'认为/相信'},
+  {type:'verb',sv:'veta',    py:'维塔',    now:'vet',      nowPy:'维特',     past:'visste',  pastPy:'维斯特',  sup:'vetat',    supPy:'维塔特',   zh:'知道'},
+  {type:'verb',sv:'tycka',   py:'蒂卡',    now:'tycker',   nowPy:'蒂克尔',   past:'tyckte',  pastPy:'蒂克特',  sup:'tyckt',    supPy:'蒂克特',   zh:'觉得/认为'},
+  {type:'verb',sv:'hoppas',  py:'霍帕斯',  now:'hoppas',   nowPy:'霍帕斯',   past:'hoppades',pastPy:'霍帕德斯',sup:'hoppats',  supPy:'霍帕斯',   zh:'希望'},
+  {type:'verb',sv:'berätta', py:'贝雷塔',  now:'berättar', nowPy:'贝雷塔尔', past:'berättade',pastPy:'贝雷塔德',sup:'berättat', supPy:'贝雷塔特', zh:'讲述/告诉'},
+  {type:'verb',sv:'fråga',   py:'弗罗加',  now:'frågar',   nowPy:'弗罗加尔', past:'frågade', pastPy:'弗罗加德',sup:'frågat',   supPy:'弗罗加特', zh:'询问'},
+  {type:'verb',sv:'förstå',  py:'弗斯托',  now:'förstår',  nowPy:'弗斯托尔', past:'förstod', pastPy:'弗斯托德',sup:'förstått', supPy:'弗斯托特', zh:'理解/明白'},
+  {type:'verb',sv:'undra',   py:'温德拉',  now:'undrar',   nowPy:'温德拉尔', past:'undrade', pastPy:'温德拉德',sup:'undrat',   supPy:'温德拉特', zh:'想知道/纳闷'},
   // NOUNS
   {type:'noun',en:'en',sv:'mening',  py:'梅宁',   def:'meningen',  defPy:'梅宁恩',  pl:'meningar',  plPy:'梅宁阿尔',  plDef:'meningarna', plDefPy:'梅宁纳',  zh:'句子/意思'},
   {type:'noun',en:'ett',sv:'svar',   py:'斯瓦尔', def:'svaret',    defPy:'斯瓦雷特',pl:'svar',      plPy:'斯瓦尔',    plDef:'svaren',     plDefPy:'斯瓦伦',  zh:'回答/答案'},
@@ -501,11 +498,17 @@ function renderVerbCard(v){
   </div>`;
 }
 
+function formatAdvMeaning(zh){
+  const parts=String(zh||'').split('——');
+  if(parts.length<2) return zh;
+  return `<span class="vc-meaning-main">${parts[0]}</span><span class="vc-meaning-note">${parts.slice(1).join('——')}</span>`;
+}
+
 function renderAdvCard(v){
   return `<div class="vocab-card adv">
     <div class="vc-top"><span class="vc-type-badge">🔗 连接词</span></div>
     <div class="vc-headword"><span class="vc-headword-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.sv}" title="点击发音">${v.sv}</span><span class="vc-headword-py">${v.py}</span></div>
-    <div class="vc-chinese">${v.zh}</div>
+    <div class="vc-chinese">${formatAdvMeaning(v.zh)}</div>
   </div>`;
 }
 

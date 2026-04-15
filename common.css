@@ -50,8 +50,9 @@ nav{
   gap: var(--nav-tab-gap);
 }
 
-/* If a wrapper .nav-tabs exists (B5/A1), it controls the gap between buttons */
-.nav-tabs{
+/* If a wrapper exists (B5/A1/C pages), it controls the gap between buttons */
+.nav-tabs,
+.unit-nav-tabs{
   display:flex;
   align-items:center;
   gap: var(--nav-tab-gap);
@@ -132,6 +133,18 @@ nav{
 .vc-chinese {
   margin-top: .55rem !important;
   padding-top: .45rem !important;
+}
+
+.vc-meaning-main,
+.vc-meaning-note {
+  display: block;
+}
+
+.vc-meaning-note {
+  margin-top: .18rem;
+  color: #68758d;
+  font-size: .94em;
+  line-height: 1.45;
 }
 
 /* 防止长单词撑宽 grid 列（min-content 问题） */
