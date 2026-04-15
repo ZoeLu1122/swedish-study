@@ -18,6 +18,12 @@
     { v: 1,    label: '1×'    },
     { v: 1.25, label: '1.25×' }
   ];
+  const DEFAULT_UNIT_TABS = [
+    { id: 'grammar',  label: '📖 语法' },
+    { id: 'vocab',    label: '📋 词汇' },
+    { id: 'dialogue', label: '💬 对话' },
+    { id: 'quiz',     label: '🧪 测验' }
+  ];
 
   window.SfiCore = {
     version: '2.0.0-architect',
@@ -41,10 +47,10 @@
       },
       initNav() {
         const config = window.PAGE_CONFIG || {};
-        const tabs = Array.isArray(config.tabs) ? config.tabs : null;
+        const tabs = Array.isArray(config.tabs) ? config.tabs : DEFAULT_UNIT_TABS;
         const container = document.getElementById('unit-nav-container');
 
-        if (!tabs || !container) return;
+        if (!container) return;
 
         container.innerHTML = tabs.map((tab, index) => `
           <button class="nav-tab ${index === 0 ? 'active' : ''}" data-tab-id="${tab.id}">
@@ -269,6 +275,42 @@
       }
     }
   };
+
+  function normalizeExistingNavTabs() {
+    const tabs = document.querySelectorAll('.nav-tab');
+    if (!tabs.length) return;
+
+    DEFAULT_UNIT_TABS.forEach((tab, index) => {
+      const btn =
+        document.querySelector(`.nav-tab[data-tab-id="${tab.id}"]`) ||
+        document.querySelector(`.nav-tab[onclick*="'${tab.id}'"]`) ||
+        document.querySelector(`.nav-tab[onclick*='"${tab.id}"']`) ||
+        tabs[index];
+
+      if (!btn) return;
+      btn.setAttribute('data-tab-id', tab.id);
+      if (btn.tagName === 'BUTTON') btn.type = 'button';
+      btn.textContent = tab.label;
+
+      if (!btn.getAttribute('onclick') && !btn.dataset.sfiNavBound) {
+        btn.dataset.sfiNavBound = '1';
+        btn.addEventListener('click', function () {
+          if (typeof window.showSection === 'function') {
+            window.showSection(tab.id, this);
+          }
+        });
+      }
+    });
+  }
+
+  function applyCommonDisplayConfig() {
+    const config = window.PAGE_CONFIG || {};
+    const showQuizTypeBadges =
+      window.SFI_SHOW_QUIZ_TYPE_BADGES === true ||
+      config.showQuizTypeBadges === true ||
+      (config.quiz && config.quiz.showTypeBadges === true);
+    document.body.classList.toggle('sfi-show-quiz-type-badges', showQuizTypeBadges);
+  }
 
 
   if (typeof window.initTTS !== 'function') {
@@ -560,6 +602,8 @@
     if (window.SfiCore && window.SfiCore.ui && typeof window.SfiCore.ui.initNav === 'function') {
       window.SfiCore.ui.initNav();
     }
+    normalizeExistingNavTabs();
+    applyCommonDisplayConfig();
 
     injectSectionNextButtons();
   }
@@ -576,6 +620,10 @@
     }
 
     injectSectionNextStyles();
+
+    document.querySelectorAll('.section-footer:not(.sfi-auto-section-footer)').forEach(footer => {
+      if (footer.querySelector('.sec-next-btn')) footer.remove();
+    });
 
     steps.forEach(step => {
       const section = document.getElementById(step.from);

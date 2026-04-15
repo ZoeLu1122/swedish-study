@@ -332,6 +332,49 @@ nav{
 }
 
 /* ===================================================
+   测验页题型标签：界面不显示，数据仍保留
+=================================================== */
+.qq-type-badge {
+  display: none !important;
+}
+
+body.sfi-show-quiz-type-badges .qq-type-badge {
+  display: inline-flex !important;
+}
+
+/* ===================================================
+   音频按钮与点击高亮：统一兜底
+   各单元仍可用 --ac / --sky / --primary 调整主色。
+=================================================== */
+.tts-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.tts-btn.speaking,
+.tts-full-btn.speaking {
+  color: #fff !important;
+}
+
+.speak-word,
+.d-word {
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.speak-word.speaking,
+.d-word.speaking {
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  background: var(--ac, var(--primary, #5b8de8)) !important;
+  color: #fff !important;
+}
+
+/* ===================================================
    INLINE-FILL 排版间距（统一控制）
    row-gap / line-height 用 !important 确保覆盖各单元本地样式，
    无需逐一修改 HTML 即可全局生效。
