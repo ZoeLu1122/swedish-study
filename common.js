@@ -25,6 +25,40 @@
     { id: 'quiz',     label: '🧪 测验' }
   ];
 
+  function inferUnitMeta() {
+    const explicitKey = window.sfiUnitKey || '';
+    let match = explicitKey.match(/sfi_([a-z])(\d+)_unit(\d+)/i);
+    if (match) {
+      return {
+        level: match[1].toLowerCase(),
+        unitCode: `${match[1].toLowerCase()}${match[2]}`,
+        unitNumber: match[3]
+      };
+    }
+
+    const pageUnit = (window.PAGE_CONFIG && window.PAGE_CONFIG.unit) || '';
+    match = String(pageUnit).match(/^([a-d])(\d+)$/i);
+    if (match) {
+      return {
+        level: match[1].toLowerCase(),
+        unitCode: `${match[1].toLowerCase()}${match[2]}`,
+        unitNumber: match[2]
+      };
+    }
+
+    const fileName = (window.location.pathname.split('/').pop() || '').toLowerCase();
+    match = fileName.match(/^sfi_(?:practice_)?([a-d])_unit(\d+)\.html$/i);
+    if (match) {
+      return {
+        level: match[1].toLowerCase(),
+        unitCode: `${match[1].toLowerCase()}${match[2]}`,
+        unitNumber: match[2]
+      };
+    }
+
+    return null;
+  }
+
   window.SfiCore = {
     version: '2.0.0-architect',
 
@@ -81,6 +115,14 @@
         if (typeof window.showSection === 'function') {
           window.showSection(sectionId, btn);
         }
+      }
+    },
+
+    unit: {
+      infer: inferUnitMeta,
+      audioBase() {
+        const meta = inferUnitMeta();
+        return meta ? `audio/sv/${meta.unitCode}/unit${meta.unitNumber}` : null;
       }
     },
 
@@ -155,13 +197,7 @@
         return String(text || '').replace(/[^\p{L}\p{N}\s]/gu, '').replace(/\s+/g, ' ').trim();
       },
       _getBase() {
-        const uk = window.sfiUnitKey || '';
-        const m = uk.match(/sfi_([a-z])(\d+)_unit(\d+)/i);
-        if (m) return 'audio/sv/' + m[1].toLowerCase() + m[2] + '/unit' + m[3];
-        const pc = (window.PAGE_CONFIG && window.PAGE_CONFIG.unit) || '';
-        const m2 = pc.match(/^([a-z])(\d+)$/i);
-        if (m2) return 'audio/sv/' + m2[1].toLowerCase() + m2[2] + '/unit' + m2[2];
-        return null;
+        return window.SfiCore.unit.audioBase();
       },
       ensure(cb) {
         if (this._state === 'ready' || this._state === 'error') { cb(); return; }
@@ -310,6 +346,45 @@
       config.showQuizTypeBadges === true ||
       (config.quiz && config.quiz.showTypeBadges === true);
     document.body.classList.toggle('sfi-show-quiz-type-badges', showQuizTypeBadges);
+  }
+
+  function normalizeVocabCardFlow(root = document) {
+    const cards = root.querySelectorAll ? root.querySelectorAll('.vocab-card') : [];
+    cards.forEach(card => {
+      const formTexts = Array.from(card.querySelectorAll('.vc-headword-sv, .vc-row-sv'))
+        .map(el => (el.textContent || '').trim())
+        .filter(Boolean);
+      const hasLongForm = formTexts.some(text => {
+        const longestPart = Math.max(...text.split(/\s+/).map(part => part.length), 0);
+        return longestPart >= 10 || text.length >= 14;
+      });
+      const headwordText = (card.querySelector('.vc-headword-sv')?.textContent || '').trim();
+      const headwordLongestPart = Math.max(...headwordText.split(/\s+/).map(part => part.length), 0);
+      const needsCompactHeadword = headwordLongestPart >= 13 || headwordText.length >= 17;
+      card.classList.toggle('sfi-vocab-stacked', hasLongForm);
+      card.classList.toggle('sfi-vocab-compact-headword', needsCompactHeadword);
+    });
+  }
+
+  function initVocabCardFlowObserver() {
+    normalizeVocabCardFlow();
+
+    let scheduled = false;
+    const schedule = () => {
+      if (scheduled) return;
+      scheduled = true;
+      requestAnimationFrame(() => {
+        scheduled = false;
+        normalizeVocabCardFlow();
+      });
+    };
+
+    const observer = new MutationObserver(mutations => {
+      if (mutations.some(m => Array.from(m.addedNodes || []).some(node => node.nodeType === 1))) {
+        schedule();
+      }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
   }
 
 
@@ -604,6 +679,7 @@
     }
     normalizeExistingNavTabs();
     applyCommonDisplayConfig();
+    initVocabCardFlowObserver();
 
     injectSectionNextButtons();
   }

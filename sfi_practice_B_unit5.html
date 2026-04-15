@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>练习 · SFI</title>
-<link rel="stylesheet" href="common.css?v=20260415-common-second-priority">
+<link rel="stylesheet" href="common.css?v=20260415-vocab-card-uniform">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+SC:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-/* Shared nav controls are injected by common.js */
+/* Shared nav controls are injected by common.js?v=20260415-vocab-card-uniform */
 .settings-group .settings-label { display: none !important; }
 /* ══════════════════════════════════════════════
    TOKENS
@@ -888,37 +888,13 @@ body {
   </div>
 </div>
 <div class="vocab-toast" id="vocabToast"></div>
-<script src="common.js?v=20260415-common-second-priority"></script>
-<script src="practice-common.js?v=20260415-shared-nav-controls"></script>
+<script src="common.js?v=20260415-vocab-card-uniform"></script>
+<script src="practice-common.js?v=20260415-vocab-card-uniform"></script>
 <script>
-  (function () {
-    const script = document.createElement('script');
-    script.src = 'b5_unit5_bank.js?v=20260415-comparison-prompts';
-    script.onload = function () {
-      const bank = window.UNIT_BANK_B5;
-      if (!bank) {
-        console.error('Bank object not found: UNIT_BANK_B5');
-        return;
-      }
-      document.title = `${bank.unitTitle || bank.title || '练习'} · SFI`;
-      const tbLevel = document.getElementById('tb-level');
-      const tbUnitName = document.getElementById('tb-unit-name');
-      if (tbLevel) tbLevel.textContent = 'B级';
-      if (tbUnitName) tbUnitName.textContent = bank.unitTitle || bank.title || '单元练习';
-      window.SFI_BOOT({
-        unit: bank.unit,
-        title: bank.unitTitle || bank.title || '',
-        basicPool: bank.basicPool || [],
-        advancedPool: bank.advancedPool || [],
-        practiceSets: { enabled: true, size: 20 },
-        properNames: (window.PAGE_CONFIG && window.PAGE_CONFIG.properNames) || []
-      });
-    };
-    script.onerror = function () {
-      console.error('Failed to load bank file: b5_unit5_bank.js');
-    };
-    document.body.appendChild(script);
-  })();
+  window.PracticeCommon.bootFromBank({
+    bankVersion: '20260415-comparison-prompts',
+    practiceSets: { enabled: true, size: 20 }
+  });
 </script>
 </body>
 </html>

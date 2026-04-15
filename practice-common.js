@@ -1867,6 +1867,89 @@ const fallbackText = (item && item.sourceText) ||
     console.log('练习引擎已就绪，请开始答题。');
   };
 
+  function inferPracticeUnit(fallbackUnit) {
+    const params = new URLSearchParams(window.location.search);
+    const fromQuery = params.get('unit');
+    if (fromQuery) return fromQuery.toLowerCase();
+
+    const fileName = (window.location.pathname.split('/').pop() || '').toLowerCase();
+    const match = fileName.match(/^sfi_practice_([a-d])_unit(\d+)\.html$/i);
+    if (match) return `${match[1].toLowerCase()}${match[2]}`;
+
+    return (fallbackUnit || '').toLowerCase();
+  }
+
+  function appendVersion(src, version) {
+    if (!version) return src;
+    return `${src}${src.includes('?') ? '&' : '?'}v=${encodeURIComponent(version)}`;
+  }
+
+  function getPracticeBankDefaults(unit) {
+    const match = String(unit || '').match(/^([a-d])(\d+)$/i);
+    if (!match) return null;
+
+    const level = match[1].toLowerCase();
+    const unitNumber = match[2];
+    return {
+      unit: `${level}${unitNumber}`,
+      levelLabel: `${level.toUpperCase()}级`,
+      src: `${level}${unitNumber}_unit${unitNumber}_bank.js`,
+      globalName: `UNIT_BANK_${level.toUpperCase()}${unitNumber}`
+    };
+  }
+
+  function bootPracticeFromBank(options = {}) {
+    const unit = inferPracticeUnit(options.unit);
+    const defaults = getPracticeBankDefaults(unit);
+    if (!defaults) {
+      console.error('Unknown practice unit:', unit);
+      return;
+    }
+
+    const src = appendVersion(options.src || defaults.src, options.bankVersion);
+    const globalName = options.globalName || defaults.globalName;
+    const levelLabel = options.levelLabel || defaults.levelLabel;
+
+    const script = document.createElement('script');
+    script.src = src;
+    script.onload = function () {
+      const bank = window[globalName];
+      if (!bank) {
+        console.error('Bank object not found:', globalName);
+        return;
+      }
+
+      const title = bank.unitTitle || bank.title || '';
+      document.title = `${title || '练习'} · SFI`;
+
+      const tbLevel = document.getElementById('tb-level');
+      const tbUnitName = document.getElementById('tb-unit-name');
+      if (tbLevel) tbLevel.textContent = levelLabel;
+      if (tbUnitName) tbUnitName.textContent = title || '单元练习';
+
+      const config = {
+        unit: bank.unit,
+        title,
+        basicPool: bank.basicPool || [],
+        advancedPool: bank.advancedPool || [],
+        properNames: (window.PAGE_CONFIG && window.PAGE_CONFIG.properNames) || []
+      };
+
+      if (options.practiceSets) config.practiceSets = options.practiceSets;
+      if (options.bootConfig && typeof options.bootConfig === 'object') {
+        Object.assign(config, options.bootConfig);
+      }
+
+      window.SFI_BOOT(config);
+    };
+    script.onerror = function () {
+      console.error('Failed to load bank file:', src);
+    };
+    document.body.appendChild(script);
+  }
+
+  window.PracticeCommon.bootFromBank = bootPracticeFromBank;
+
   // ── Speed control: called by practice page's setSpeed(val, btn) buttons ──
   window.setSpeed = function (val, clickedBtn) {
     // Delegate to SfiCore rate system

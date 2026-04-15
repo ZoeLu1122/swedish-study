@@ -100,6 +100,40 @@ nav{
 .flip-grid {
   grid-template-columns: repeat(4, 1fr) !important;
 }
+
+.vocab-grid {
+  gap: .7rem !important;
+}
+
+.vocab-card {
+  box-sizing: border-box;
+  padding: .9rem 1rem !important;
+}
+
+.vc-headword {
+  display: flex !important;
+  align-items: baseline !important;
+  gap: .4rem !important;
+  margin-bottom: .6rem !important;
+  flex-wrap: nowrap !important;
+}
+
+.vc-form-row,
+.vc-verb-row {
+  padding: .25rem 0 !important;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+
+.vc-form-row:last-of-type,
+.vc-verb-row:last-of-type {
+  border-bottom: none !important;
+}
+
+.vc-chinese {
+  margin-top: .55rem !important;
+  padding-top: .45rem !important;
+}
+
 /* 防止长单词撑宽 grid 列（min-content 问题） */
 .vocab-grid > *,
 .flip-grid > * { min-width: 0; }
@@ -111,21 +145,54 @@ nav{
   white-space: normal;
 }
 
-/* 统一缩小标签列与词形间距，避免长词被挤成字母换行 */
-.vc-form-top {
+/* 统一缩小标签列与词形间距，避免长词被挤出卡片 */
+.vc-form-top,
+.vc-verb-top {
   display: flex;
   align-items: flex-start;
-  gap: 6px !important;
+  gap: 4px !important;
 }
 
 .vc-row-label {
-  width: 56px !important;
-  min-width: 56px !important;
+  width: 46px !important;
+  min-width: 46px !important;
   flex-shrink: 0;
 }
 
 .vc-row-sv {
   flex: 1 1 auto;
+  max-width: 100%;
+}
+
+/* Long-form cards: stack every form consistently inside the card. */
+.vocab-card.sfi-vocab-stacked .vc-headword-sv {
+  font-size: 1rem;
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow-wrap: normal !important;
+  word-break: keep-all !important;
+}
+
+.vocab-card.sfi-vocab-compact-headword .vc-headword-sv {
+  font-size: .92rem;
+}
+
+.vocab-card.sfi-vocab-stacked .vc-form-top,
+.vocab-card.sfi-vocab-stacked .vc-verb-top {
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 2px !important;
+}
+
+.vocab-card.sfi-vocab-stacked .vc-row-label {
+  width: auto !important;
+  min-width: 0 !important;
+}
+
+.vocab-card.sfi-vocab-stacked .vc-row-sv {
+  width: 100%;
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
 }
 
 /* ===================================================
