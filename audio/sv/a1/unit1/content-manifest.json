@@ -139,18 +139,18 @@
       "contentId": "a1_vocab_namn",
       "bankKind": "vocab_spelling",
       "audioType": "vocab",
-      "displayText": "ett namn",
-      "sourceText": "ett namn",
-      "audioRef": "sv_a1_u1_vocab_ett_namn",
+      "displayText": "namn",
+      "sourceText": "namn",
+      "audioRef": "sv_a1_u1_vocab_015",
       "source": "vocab"
     },
     {
       "contentId": "a1_vocab_land",
       "bankKind": "vocab_spelling",
       "audioType": "vocab",
-      "displayText": "ett land",
-      "sourceText": "ett land",
-      "audioRef": "sv_a1_u1_vocab_ett_land",
+      "displayText": "land",
+      "sourceText": "land",
+      "audioRef": "sv_a1_u1_vocab_016",
       "source": "vocab"
     },
     {
