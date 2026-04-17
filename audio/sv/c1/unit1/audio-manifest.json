@@ -1,0 +1,3064 @@
+{
+  "unit": "c1_unit1",
+  "generatedBy": "02 tools/build_unit_audio_manifests.py",
+  "items": [
+    {
+      "audioId": "sv_c1_u1_vocab_001_arbeta_v1",
+      "sourceText": "arbeta",
+      "fileName": "b1_u2_vocab_001_arbeta_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_001_arbeta_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_001_arbeta_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_001_arbeta_v1",
+      "sourceText": "arbeta",
+      "fileName": "b1_u2_vocab_001_arbeta_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_001_arbeta_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_001_arbeta_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_002_arbetar_v1",
+      "sourceText": "arbetar",
+      "fileName": "b1_u2_vocab_002_arbetar_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_002_arbetar_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_002_arbetar_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_002_arbetar_v1",
+      "sourceText": "arbetar",
+      "fileName": "b1_u2_vocab_002_arbetar_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_002_arbetar_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_002_arbetar_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_003_arbetade_v1",
+      "sourceText": "arbetade",
+      "fileName": "b1_u2_vocab_003_arbetade_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_003_arbetade_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_003_arbetade_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_003_arbetade_v1",
+      "sourceText": "arbetade",
+      "fileName": "b1_u2_vocab_003_arbetade_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_003_arbetade_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_003_arbetade_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_004_arbetat_v1",
+      "sourceText": "arbetat",
+      "fileName": "b1_u2_vocab_004_arbetat_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_004_arbetat_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_004_arbetat_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_004_arbetat_v1",
+      "sourceText": "arbetat",
+      "fileName": "b1_u2_vocab_004_arbetat_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_004_arbetat_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_004_arbetat_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_005_stanna_v1",
+      "sourceText": "stanna",
+      "fileName": "c1_u1_vocab_005_stanna_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_005_stanna_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_006_stannar_v1",
+      "sourceText": "stannar",
+      "fileName": "c1_u1_vocab_006_stannar_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_006_stannar_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_007_stannade_v1",
+      "sourceText": "stannade",
+      "fileName": "c1_u1_vocab_007_stannade_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_007_stannade_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_008_stannat_v1",
+      "sourceText": "stannat",
+      "fileName": "c1_u1_vocab_008_stannat_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_008_stannat_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_009_besoka_v1",
+      "sourceText": "besöka",
+      "fileName": "c1_u1_vocab_009_besoka_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_009_besoka_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_010_besoker_v1",
+      "sourceText": "besöker",
+      "fileName": "c1_u1_vocab_010_besoker_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_010_besoker_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_011_besokte_v1",
+      "sourceText": "besökte",
+      "fileName": "c1_u1_vocab_011_besokte_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_011_besokte_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_012_besokt_v1",
+      "sourceText": "besökt",
+      "fileName": "c1_u1_vocab_012_besokt_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_012_besokt_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_013_traffa_v1",
+      "sourceText": "träffa",
+      "fileName": "c1_u1_vocab_013_traffa_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_013_traffa_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_014_traffar_v1",
+      "sourceText": "träffar",
+      "fileName": "c1_u1_vocab_014_traffar_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_014_traffar_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_015_traffade_v1",
+      "sourceText": "träffade",
+      "fileName": "c1_u1_vocab_015_traffade_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_015_traffade_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_016_traffat_v1",
+      "sourceText": "träffat",
+      "fileName": "c1_u1_vocab_016_traffat_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_016_traffat_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_017_prata_v1",
+      "sourceText": "prata",
+      "fileName": "b1_u2_vocab_021_prata_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_021_prata_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_021_prata_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_021_prata_v1",
+      "sourceText": "prata",
+      "fileName": "b1_u2_vocab_021_prata_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_021_prata_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_017_prata_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_018_pratar_v1",
+      "sourceText": "pratar",
+      "fileName": "b1_u2_vocab_022_pratar_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_022_pratar_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_022_pratar_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_022_pratar_v1",
+      "sourceText": "pratar",
+      "fileName": "b1_u2_vocab_022_pratar_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_022_pratar_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_018_pratar_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_019_pratade_v1",
+      "sourceText": "pratade",
+      "fileName": "b1_u2_vocab_023_pratade_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_023_pratade_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_023_pratade_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_023_pratade_v1",
+      "sourceText": "pratade",
+      "fileName": "b1_u2_vocab_023_pratade_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_023_pratade_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_019_pratade_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_020_pratat_v1",
+      "sourceText": "pratat",
+      "fileName": "b1_u2_vocab_024_pratat_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_024_pratat_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_024_pratat_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_024_pratat_v1",
+      "sourceText": "pratat",
+      "fileName": "b1_u2_vocab_024_pratat_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_024_pratat_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_020_pratat_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_021_glomma_v1",
+      "sourceText": "glömma",
+      "fileName": "c1_u1_vocab_021_glomma_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_021_glomma_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_022_glommer_v1",
+      "sourceText": "glömmer",
+      "fileName": "c1_u1_vocab_022_glommer_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_022_glommer_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_023_glomde_v1",
+      "sourceText": "glömde",
+      "fileName": "c1_u1_vocab_023_glomde_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_023_glomde_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_024_glomt_v1",
+      "sourceText": "glömt",
+      "fileName": "c1_u1_vocab_024_glomt_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_024_glomt_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_025_diskutera_v1",
+      "sourceText": "diskutera",
+      "fileName": "c1_u1_vocab_025_diskutera_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_025_diskutera_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_026_diskuterar_v1",
+      "sourceText": "diskuterar",
+      "fileName": "c1_u1_vocab_026_diskuterar_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_026_diskuterar_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_027_diskuterade_v1",
+      "sourceText": "diskuterade",
+      "fileName": "c1_u1_vocab_027_diskuterade_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_027_diskuterade_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_028_diskuterat_v1",
+      "sourceText": "diskuterat",
+      "fileName": "c1_u1_vocab_028_diskuterat_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_028_diskuterat_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_029_bestamma_v1",
+      "sourceText": "bestämma",
+      "fileName": "c1_u1_vocab_029_bestamma_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_029_bestamma_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_030_bestammer_v1",
+      "sourceText": "bestämmer",
+      "fileName": "c1_u1_vocab_030_bestammer_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_030_bestammer_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_031_bestamde_v1",
+      "sourceText": "bestämde",
+      "fileName": "c1_u1_vocab_031_bestamde_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_031_bestamde_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_032_bestamt_v1",
+      "sourceText": "bestämt",
+      "fileName": "c1_u1_vocab_032_bestamt_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_032_bestamt_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_033_skicka_v1",
+      "sourceText": "skicka",
+      "fileName": "c1_u1_vocab_033_skicka_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_033_skicka_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_034_skickar_v1",
+      "sourceText": "skickar",
+      "fileName": "c1_u1_vocab_034_skickar_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_034_skickar_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_035_skickade_v1",
+      "sourceText": "skickade",
+      "fileName": "c1_u1_vocab_035_skickade_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_035_skickade_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_036_skickat_v1",
+      "sourceText": "skickat",
+      "fileName": "c1_u1_vocab_036_skickat_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_036_skickat_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_037_lasa_v1",
+      "sourceText": "läsa",
+      "fileName": "b1_u2_vocab_045_lasa_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_045_lasa_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_045_lasa_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_045_lasa_v1",
+      "sourceText": "läsa",
+      "fileName": "b1_u2_vocab_045_lasa_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_045_lasa_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_037_lasa_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_038_laser_v1",
+      "sourceText": "läser",
+      "fileName": "b1_u2_vocab_046_laser_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_046_laser_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_046_laser_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_046_laser_v1",
+      "sourceText": "läser",
+      "fileName": "b1_u2_vocab_046_laser_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_046_laser_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_038_laser_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_039_laste_v1",
+      "sourceText": "läste",
+      "fileName": "b1_u2_vocab_047_laste_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_047_laste_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_047_laste_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_047_laste_v1",
+      "sourceText": "läste",
+      "fileName": "b1_u2_vocab_047_laste_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_047_laste_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_039_laste_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_040_last_v1",
+      "sourceText": "läst",
+      "fileName": "b1_u2_vocab_048_last_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_048_last_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_048_last_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_048_last_v1",
+      "sourceText": "läst",
+      "fileName": "b1_u2_vocab_048_last_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_048_last_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_040_last_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_041_bo_v1",
+      "sourceText": "bo",
+      "fileName": "a1_u3_vocab_032_bo_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_032_bo_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_a1_u3_vocab_032_bo_v1"
+    },
+    {
+      "audioId": "sv_a1_u3_vocab_032_bo_v1",
+      "sourceText": "bo",
+      "fileName": "a1_u3_vocab_032_bo_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_032_bo_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_041_bo_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_042_bor_v1",
+      "sourceText": "bor",
+      "fileName": "a1_u3_adv_043_bor_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_043_bor_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_a1_u3_adv_043_bor_v1"
+    },
+    {
+      "audioId": "sv_a1_u3_adv_043_bor_v1",
+      "sourceText": "bor",
+      "fileName": "a1_u3_adv_043_bor_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_043_bor_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_042_bor_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_043_bodde_v1",
+      "sourceText": "bodde",
+      "fileName": "a1_u3_adv_044_bodde_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_044_bodde_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_a1_u3_adv_044_bodde_v1"
+    },
+    {
+      "audioId": "sv_a1_u3_adv_044_bodde_v1",
+      "sourceText": "bodde",
+      "fileName": "a1_u3_adv_044_bodde_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_044_bodde_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_043_bodde_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_044_bott_v1",
+      "sourceText": "bott",
+      "fileName": "a1_u3_adv_045_bott_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_045_bott_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_a1_u3_adv_045_bott_v1"
+    },
+    {
+      "audioId": "sv_a1_u3_adv_045_bott_v1",
+      "sourceText": "bott",
+      "fileName": "a1_u3_adv_045_bott_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_045_bott_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_044_bott_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_045_aka_v1",
+      "sourceText": "åka",
+      "fileName": "c1_u1_vocab_045_aka_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_045_aka_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_046_aker_v1",
+      "sourceText": "åker",
+      "fileName": "c1_u1_vocab_046_aker_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_046_aker_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_047_akte_v1",
+      "sourceText": "åkte",
+      "fileName": "c1_u1_vocab_047_akte_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_047_akte_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_048_akt_v1",
+      "sourceText": "åkt",
+      "fileName": "c1_u1_vocab_048_akt_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_048_akt_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_049_handa_v1",
+      "sourceText": "hända",
+      "fileName": "c1_u1_vocab_049_handa_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_049_handa_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_050_hander_v1",
+      "sourceText": "händer",
+      "fileName": "b1_u3_vocab_063_hander_v1.mp3",
+      "filePath": "/audio/sv/b3/unit3/vocab/b1_u3_vocab_063_hander_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u3_vocab_063_hander_v1"
+    },
+    {
+      "audioId": "sv_b1_u3_vocab_063_hander_v1",
+      "sourceText": "händer",
+      "fileName": "b1_u3_vocab_063_hander_v1.mp3",
+      "filePath": "/audio/sv/b3/unit3/vocab/b1_u3_vocab_063_hander_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_050_hander_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_051_hande_v1",
+      "sourceText": "hände",
+      "fileName": "c1_u1_vocab_051_hande_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_051_hande_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_052_hant_v1",
+      "sourceText": "hänt",
+      "fileName": "c1_u1_vocab_052_hant_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_052_hant_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_053_vara_v1",
+      "sourceText": "vara",
+      "fileName": "a1_u1_vocab_011_vara_v1.mp3",
+      "filePath": "/audio/sv/a1/unit1/vocab/a1_u1_vocab_011_vara_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_a1_u1_vocab_011_vara_v1"
+    },
+    {
+      "audioId": "sv_a1_u1_vocab_011_vara_v1",
+      "sourceText": "vara",
+      "fileName": "a1_u1_vocab_011_vara_v1.mp3",
+      "filePath": "/audio/sv/a1/unit1/vocab/a1_u1_vocab_011_vara_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_053_vara_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_054_ar_v1",
+      "sourceText": "är",
+      "fileName": "a1_u1_vocab_013_ar_v1.mp3",
+      "filePath": "/audio/sv/a1/unit1/vocab/a1_u1_vocab_013_ar_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_a1_u1_vocab_013_ar_v1"
+    },
+    {
+      "audioId": "sv_a1_u1_vocab_013_ar_v1",
+      "sourceText": "är",
+      "fileName": "a1_u1_vocab_013_ar_v1.mp3",
+      "filePath": "/audio/sv/a1/unit1/vocab/a1_u1_vocab_013_ar_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_054_ar_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_055_var_v1",
+      "sourceText": "var",
+      "fileName": "a1_u1_adv_011_var_v1.mp3",
+      "filePath": "/audio/sv/a1/unit1/question/a1_u1_adv_011_var_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_a1_u1_adv_011_var_v1"
+    },
+    {
+      "audioId": "sv_a1_u1_adv_011_var_v1",
+      "sourceText": "var",
+      "fileName": "a1_u1_adv_011_var_v1.mp3",
+      "filePath": "/audio/sv/a1/unit1/question/a1_u1_adv_011_var_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_055_var_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_056_varit_v1",
+      "sourceText": "varit",
+      "fileName": "a1_u1_adv_012_varit_v1.mp3",
+      "filePath": "/audio/sv/a1/unit1/question/a1_u1_adv_012_varit_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_a1_u1_adv_012_varit_v1"
+    },
+    {
+      "audioId": "sv_a1_u1_adv_012_varit_v1",
+      "sourceText": "varit",
+      "fileName": "a1_u1_adv_012_varit_v1.mp3",
+      "filePath": "/audio/sv/a1/unit1/question/a1_u1_adv_012_varit_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_056_varit_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_057_ha_v1",
+      "sourceText": "ha",
+      "fileName": "c1_u1_vocab_057_ha_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_057_ha_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_058_har_v1",
+      "sourceText": "har",
+      "fileName": "b1_u2_vocab_094_har_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_094_har_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_094_har_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_094_har_v1",
+      "sourceText": "har",
+      "fileName": "b1_u2_vocab_094_har_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_094_har_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_058_har_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_059_hade_v1",
+      "sourceText": "hade",
+      "fileName": "b1_u2_vocab_095_hade_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_095_hade_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_095_hade_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_095_hade_v1",
+      "sourceText": "hade",
+      "fileName": "b1_u2_vocab_095_hade_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_095_hade_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_059_hade_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_060_haft_v1",
+      "sourceText": "haft",
+      "fileName": "b1_u2_vocab_096_haft_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_096_haft_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_096_haft_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_096_haft_v1",
+      "sourceText": "haft",
+      "fileName": "b1_u2_vocab_096_haft_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_096_haft_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_060_haft_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_061_ga_v1",
+      "sourceText": "gå",
+      "fileName": "b1_u2_vocab_073_ga_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_073_ga_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_073_ga_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_073_ga_v1",
+      "sourceText": "gå",
+      "fileName": "b1_u2_vocab_073_ga_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_073_ga_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_061_ga_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_062_gar_v1",
+      "sourceText": "går",
+      "fileName": "b1_u2_vocab_074_gar_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_074_gar_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_074_gar_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_074_gar_v1",
+      "sourceText": "går",
+      "fileName": "b1_u2_vocab_074_gar_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_074_gar_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_062_gar_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_063_gick_v1",
+      "sourceText": "gick",
+      "fileName": "b1_u2_vocab_075_gick_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_075_gick_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_075_gick_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_075_gick_v1",
+      "sourceText": "gick",
+      "fileName": "b1_u2_vocab_075_gick_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_075_gick_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_063_gick_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_064_gatt_v1",
+      "sourceText": "gått",
+      "fileName": "b1_u2_vocab_076_gatt_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_076_gatt_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_076_gatt_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_076_gatt_v1",
+      "sourceText": "gått",
+      "fileName": "b1_u2_vocab_076_gatt_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_076_gatt_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_064_gatt_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_065_komma_v1",
+      "sourceText": "komma",
+      "fileName": "b1_u2_vocab_041_komma_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_041_komma_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_041_komma_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_041_komma_v1",
+      "sourceText": "komma",
+      "fileName": "b1_u2_vocab_041_komma_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_041_komma_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_065_komma_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_066_kommer_v1",
+      "sourceText": "kommer",
+      "fileName": "b1_u2_vocab_042_kommer_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_042_kommer_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_042_kommer_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_042_kommer_v1",
+      "sourceText": "kommer",
+      "fileName": "b1_u2_vocab_042_kommer_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_042_kommer_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_066_kommer_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_067_kom_v1",
+      "sourceText": "kom",
+      "fileName": "b1_u2_vocab_043_kom_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_043_kom_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_043_kom_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_043_kom_v1",
+      "sourceText": "kom",
+      "fileName": "b1_u2_vocab_043_kom_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_043_kom_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_067_kom_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_068_kommit_v1",
+      "sourceText": "kommit",
+      "fileName": "b1_u2_vocab_044_kommit_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_044_kommit_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_044_kommit_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_044_kommit_v1",
+      "sourceText": "kommit",
+      "fileName": "b1_u2_vocab_044_kommit_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_044_kommit_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_068_kommit_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_069_ta_v1",
+      "sourceText": "ta",
+      "fileName": "b1_u2_vocab_077_ta_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_077_ta_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_077_ta_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_077_ta_v1",
+      "sourceText": "ta",
+      "fileName": "b1_u2_vocab_077_ta_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_077_ta_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_069_ta_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_070_tar_v1",
+      "sourceText": "tar",
+      "fileName": "b1_u2_vocab_078_tar_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_078_tar_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_078_tar_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_078_tar_v1",
+      "sourceText": "tar",
+      "fileName": "b1_u2_vocab_078_tar_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_078_tar_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_070_tar_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_071_tog_v1",
+      "sourceText": "tog",
+      "fileName": "b1_u2_vocab_079_tog_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_079_tog_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_079_tog_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_079_tog_v1",
+      "sourceText": "tog",
+      "fileName": "b1_u2_vocab_079_tog_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_079_tog_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_071_tog_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_072_tagit_v1",
+      "sourceText": "tagit",
+      "fileName": "b1_u2_vocab_080_tagit_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_080_tagit_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_080_tagit_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_080_tagit_v1",
+      "sourceText": "tagit",
+      "fileName": "b1_u2_vocab_080_tagit_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_080_tagit_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_072_tagit_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_073_se_v1",
+      "sourceText": "se",
+      "fileName": "b1_u2_vocab_097_se_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_097_se_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_097_se_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_097_se_v1",
+      "sourceText": "se",
+      "fileName": "b1_u2_vocab_097_se_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_097_se_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_073_se_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_074_ser_v1",
+      "sourceText": "ser",
+      "fileName": "b1_u2_vocab_098_ser_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_098_ser_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_098_ser_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_098_ser_v1",
+      "sourceText": "ser",
+      "fileName": "b1_u2_vocab_098_ser_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_098_ser_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_074_ser_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_075_sag_v1",
+      "sourceText": "såg",
+      "fileName": "b1_u2_vocab_099_sag_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_099_sag_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_099_sag_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_099_sag_v1",
+      "sourceText": "såg",
+      "fileName": "b1_u2_vocab_099_sag_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_099_sag_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_075_sag_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_076_sett_v1",
+      "sourceText": "sett",
+      "fileName": "b1_u2_vocab_100_sett_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_100_sett_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_100_sett_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_100_sett_v1",
+      "sourceText": "sett",
+      "fileName": "b1_u2_vocab_100_sett_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_100_sett_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_076_sett_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_077_ata_v1",
+      "sourceText": "äta",
+      "fileName": "b1_u4_vocab_049_ata_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_049_ata_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u4_vocab_049_ata_v1"
+    },
+    {
+      "audioId": "sv_b1_u4_vocab_049_ata_v1",
+      "sourceText": "äta",
+      "fileName": "b1_u4_vocab_049_ata_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_049_ata_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_077_ata_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_078_ater_v1",
+      "sourceText": "äter",
+      "fileName": "b1_u4_vocab_050_ater_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_050_ater_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u4_vocab_050_ater_v1"
+    },
+    {
+      "audioId": "sv_b1_u4_vocab_050_ater_v1",
+      "sourceText": "äter",
+      "fileName": "b1_u4_vocab_050_ater_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_050_ater_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_078_ater_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_079_at_v1",
+      "sourceText": "åt",
+      "fileName": "b1_u4_vocab_051_at_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_051_at_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u4_vocab_051_at_v1"
+    },
+    {
+      "audioId": "sv_b1_u4_vocab_051_at_v1",
+      "sourceText": "åt",
+      "fileName": "b1_u4_vocab_051_at_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_051_at_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_079_at_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_080_atit_v1",
+      "sourceText": "ätit",
+      "fileName": "b1_u4_vocab_052_atit_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_052_atit_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u4_vocab_052_atit_v1"
+    },
+    {
+      "audioId": "sv_b1_u4_vocab_052_atit_v1",
+      "sourceText": "ätit",
+      "fileName": "b1_u4_vocab_052_atit_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_052_atit_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_080_atit_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_081_saga_v1",
+      "sourceText": "säga",
+      "fileName": "b1_u2_vocab_117_saga_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_117_saga_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_117_saga_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_117_saga_v1",
+      "sourceText": "säga",
+      "fileName": "b1_u2_vocab_117_saga_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_117_saga_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_081_saga_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_082_sager_v1",
+      "sourceText": "säger",
+      "fileName": "b1_u2_vocab_118_sager_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_118_sager_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_118_sager_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_118_sager_v1",
+      "sourceText": "säger",
+      "fileName": "b1_u2_vocab_118_sager_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_118_sager_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_082_sager_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_083_sa_v1",
+      "sourceText": "sa",
+      "fileName": "b1_u2_vocab_119_sa_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_119_sa_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_119_sa_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_119_sa_v1",
+      "sourceText": "sa",
+      "fileName": "b1_u2_vocab_119_sa_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_119_sa_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_083_sa_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_084_sagt_v1",
+      "sourceText": "sagt",
+      "fileName": "b1_u2_vocab_120_sagt_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_120_sagt_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_120_sagt_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_120_sagt_v1",
+      "sourceText": "sagt",
+      "fileName": "b1_u2_vocab_120_sagt_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_120_sagt_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_084_sagt_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_085_ett_mote_v1",
+      "sourceText": "ett möte",
+      "fileName": "c1_u1_vocab_085_ett_mote_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_085_ett_mote_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_086_motet_v1",
+      "sourceText": "mötet",
+      "fileName": "c1_u1_vocab_086_motet_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_086_motet_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_087_moten_v1",
+      "sourceText": "möten",
+      "fileName": "c1_u1_vocab_087_moten_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_087_moten_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_088_motena_v1",
+      "sourceText": "mötena",
+      "fileName": "c1_u1_vocab_088_motena_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_088_motena_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_089_ett_projekt_v1",
+      "sourceText": "ett projekt",
+      "fileName": "c1_u1_vocab_089_ett_projekt_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_089_ett_projekt_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_090_projektet_v1",
+      "sourceText": "projektet",
+      "fileName": "c1_u1_vocab_090_projektet_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_090_projektet_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_091_projekt_v1",
+      "sourceText": "projekt",
+      "fileName": "c1_u1_vocab_091_projekt_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_091_projekt_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_092_projekten_v1",
+      "sourceText": "projekten",
+      "fileName": "c1_u1_vocab_092_projekten_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_092_projekten_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_093_en_plan_v1",
+      "sourceText": "en plan",
+      "fileName": "c1_u1_vocab_093_en_plan_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_093_en_plan_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_094_planen_v1",
+      "sourceText": "planen",
+      "fileName": "c1_u1_vocab_094_planen_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_094_planen_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_095_planer_v1",
+      "sourceText": "planer",
+      "fileName": "c1_u1_vocab_095_planer_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_095_planer_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_096_planerna_v1",
+      "sourceText": "planerna",
+      "fileName": "c1_u1_vocab_096_planerna_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_096_planerna_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_097_en_hamn_v1",
+      "sourceText": "en hamn",
+      "fileName": "c1_u1_vocab_097_en_hamn_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_097_en_hamn_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_098_hamnen_v1",
+      "sourceText": "hamnen",
+      "fileName": "c1_u1_vocab_098_hamnen_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_098_hamnen_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_099_hamnar_v1",
+      "sourceText": "hamnar",
+      "fileName": "c1_u1_vocab_099_hamnar_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_099_hamnar_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_100_hamnarna_v1",
+      "sourceText": "hamnarna",
+      "fileName": "c1_u1_vocab_100_hamnarna_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_100_hamnarna_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_101_igar_v1",
+      "sourceText": "igår",
+      "fileName": "c1_u1_vocab_101_igar_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_101_igar_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_102_i_helgen_v1",
+      "sourceText": "i helgen",
+      "fileName": "c1_u1_vocab_102_i_helgen_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_102_i_helgen_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_103_forra_veckan_v1",
+      "sourceText": "förra veckan",
+      "fileName": "c1_u1_vocab_103_forra_veckan_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_103_forra_veckan_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_104_forra_aret_v1",
+      "sourceText": "förra året",
+      "fileName": "c1_u1_vocab_104_forra_aret_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_104_forra_aret_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_105_da_v1",
+      "sourceText": "då",
+      "fileName": "c1_u1_vocab_105_da_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_105_da_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_106_sedan_v1",
+      "sourceText": "sedan",
+      "fileName": "c1_u1_vocab_106_sedan_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_106_sedan_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_107_nyss_v1",
+      "sourceText": "nyss",
+      "fileName": "c1_u1_vocab_107_nyss_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_107_nyss_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_108_tidigare_v1",
+      "sourceText": "tidigare",
+      "fileName": "c1_u1_vocab_108_tidigare_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_108_tidigare_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_109_plotsligt_v1",
+      "sourceText": "plötsligt",
+      "fileName": "c1_u1_vocab_109_plotsligt_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_109_plotsligt_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_110_aldrig_v1",
+      "sourceText": "aldrig",
+      "fileName": "b1_u4_vocab_100_aldrig_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_100_aldrig_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u4_vocab_100_aldrig_v1"
+    },
+    {
+      "audioId": "sv_b1_u4_vocab_100_aldrig_v1",
+      "sourceText": "aldrig",
+      "fileName": "b1_u4_vocab_100_aldrig_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_100_aldrig_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_vocab_110_aldrig_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_vocab_111_just_v1",
+      "sourceText": "just",
+      "fileName": "c1_u1_vocab_111_just_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_111_just_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_dialog_001_line_01_hej_vad_gjorde_du_i_helgen_v1",
+      "sourceText": "Hej! Vad gjorde du i helgen?",
+      "fileName": "c1_u1_dialog_001_line_01_hej_vad_gjorde_du_i_helgen_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/dialogue/c1_u1_dialog_001_line_01_hej_vad_gjorde_du_i_helgen_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_dialog_001_line_02_jag_akte_till_goteborg_med_familjen_vi_bodde_pa_hotell_och_besokte_liseberg_v1",
+      "sourceText": "Jag åkte till Göteborg med familjen. Vi bodde på hotell och besökte Liseberg.",
+      "fileName": "c1_u1_dialog_001_line_02_jag_akte_till_goteborg_med_familjen_vi_bodde_pa_hotell_och_besokte_liseberg_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/dialogue/c1_u1_dialog_001_line_02_jag_akte_till_goteborg_med_familjen_vi_bodde_pa_hotell_och_besokte_liseberg_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_dialog_001_line_03_vad_roligt_at_ni_nagot_speciellt_v1",
+      "sourceText": "Vad roligt! Åt ni något speciellt?",
+      "fileName": "c1_u1_dialog_001_line_03_vad_roligt_at_ni_nagot_speciellt_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/dialogue/c1_u1_dialog_001_line_03_vad_roligt_at_ni_nagot_speciellt_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_dialog_001_line_04_ja_vi_at_fisk_och_rakor_vid_hamnen_det_var_jattegott_barnen_drack_saft_och_vi_vuxna_drack_vin_v1",
+      "sourceText": "Ja! Vi åt fisk och räkor vid hamnen. Det var jättegott! Barnen drack saft och vi vuxna drack vin.",
+      "fileName": "c1_u1_dialog_001_line_04_ja_vi_at_fisk_och_rakor_vid_hamnen_det_var_jattegott_barnen_drack_saft_och_vi_vuxna_drack_vin_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/dialogue/c1_u1_dialog_001_line_04_ja_vi_at_fisk_och_rakor_vid_hamnen_det_var_jattegott_barnen_drack_saft_och_vi_vuxna_drack_vin_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_dialog_001_line_05_traffade_ni_nagra_gamla_vanner_v1",
+      "sourceText": "Träffade ni några gamla vänner?",
+      "fileName": "c1_u1_dialog_001_line_05_traffade_ni_nagra_gamla_vanner_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/dialogue/c1_u1_dialog_001_line_05_traffade_ni_nagra_gamla_vanner_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_dialog_001_line_06_ja_vi_traffade_min_gamla_klasskompis_vi_pratade_i_flera_timmar_och_kom_ihag_massa_saker_fran_skolan_v1",
+      "sourceText": "Ja, vi träffade min gamla klasskompis. Vi pratade i flera timmar och kom ihåg massa saker från skolan.",
+      "fileName": "c1_u1_dialog_001_line_06_ja_vi_traffade_min_gamla_klasskompis_vi_pratade_i_flera_timmar_och_kom_ihag_massa_saker_fran_skolan_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/dialogue/c1_u1_dialog_001_line_06_ja_vi_traffade_min_gamla_klasskompis_vi_pratade_i_flera_timmar_och_kom_ihag_massa_saker_fran_skolan_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_dialog_002_line_01_du_var_inte_pa_motet_igar_vad_hande_v1",
+      "sourceText": "Du var inte på mötet igår. Vad hände?",
+      "fileName": "c1_u1_dialog_002_line_01_du_var_inte_pa_motet_igar_vad_hande_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/dialogue/c1_u1_dialog_002_line_01_du_var_inte_pa_motet_igar_vad_hande_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_dialog_002_line_02_forlat_jag_glomde_det_jag_hade_ont_i_magen_och_stannade_hemma_v1",
+      "sourceText": "Förlåt, jag glömde det. Jag hade ont i magen och stannade hemma.",
+      "fileName": "c1_u1_dialog_002_line_02_forlat_jag_glomde_det_jag_hade_ont_i_magen_och_stannade_hemma_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/dialogue/c1_u1_dialog_002_line_02_forlat_jag_glomde_det_jag_hade_ont_i_magen_och_stannade_hemma_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_dialog_002_line_03_okej_vi_diskuterade_det_nya_projektet_chefen_presenterade_planen_och_alla_tyckte_att_det_lat_bra_v1",
+      "sourceText": "Okej. Vi diskuterade det nya projektet. Chefen presenterade planen och alla tyckte att det lät bra.",
+      "fileName": "c1_u1_dialog_002_line_03_okej_vi_diskuterade_det_nya_projektet_chefen_presenterade_planen_och_alla_tyckte_att_det_lat_bra_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/dialogue/c1_u1_dialog_002_line_03_okej_vi_diskuterade_det_nya_projektet_chefen_presenterade_planen_och_alla_tyckte_att_det_lat_bra_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_dialog_002_line_04_bestamde_ni_nagot_v1",
+      "sourceText": "Bestämde ni något?",
+      "fileName": "c1_u1_dialog_002_line_04_bestamde_ni_nagot_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/dialogue/c1_u1_dialog_002_line_04_bestamde_ni_nagot_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_dialog_002_line_05_ja_vi_bestamde_att_starta_projektet_nasta_manad_jag_skickade_ett_mejl_med_all_information_fick_du_det_v1",
+      "sourceText": "Ja, vi bestämde att starta projektet nästa månad. Jag skickade ett mejl med all information. Fick du det?",
+      "fileName": "c1_u1_dialog_002_line_05_ja_vi_bestamde_att_starta_projektet_nasta_manad_jag_skickade_ett_mejl_med_all_information_fick_du_det_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/dialogue/c1_u1_dialog_002_line_05_ja_vi_bestamde_att_starta_projektet_nasta_manad_jag_skickade_ett_mejl_med_all_information_fick_du_det_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_dialog_002_line_06_ja_tack_jag_laste_det_just_det_verkade_intressant_v1",
+      "sourceText": "Ja, tack! Jag läste det just. Det verkade intressant!",
+      "fileName": "c1_u1_dialog_002_line_06_ja_tack_jag_laste_det_just_det_verkade_intressant_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/dialogue/c1_u1_dialog_002_line_06_ja_tack_jag_laste_det_just_det_verkade_intressant_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_001_ga_v1",
+      "sourceText": "gå",
+      "fileName": "b1_u2_vocab_073_ga_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_073_ga_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_073_ga_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_002_ata_v1",
+      "sourceText": "äta",
+      "fileName": "b1_u4_vocab_049_ata_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_049_ata_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u4_vocab_049_ata_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_003_komma_v1",
+      "sourceText": "komma",
+      "fileName": "b1_u2_vocab_041_komma_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_041_komma_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_041_komma_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_004_dricka_v1",
+      "sourceText": "dricka",
+      "fileName": "b1_u4_vocab_053_dricka_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_053_dricka_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u4_vocab_053_dricka_v1"
+    },
+    {
+      "audioId": "sv_b1_u4_vocab_053_dricka_v1",
+      "sourceText": "dricka",
+      "fileName": "b1_u4_vocab_053_dricka_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_053_dricka_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_qp_004_dricka_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_005_fa_v1",
+      "sourceText": "få",
+      "fileName": "b1_u2_vocab_113_fa_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_113_fa_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_113_fa_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_113_fa_v1",
+      "sourceText": "få",
+      "fileName": "b1_u2_vocab_113_fa_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_113_fa_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_qp_005_fa_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_006_lasa_v1",
+      "sourceText": "läsa",
+      "fileName": "b1_u2_vocab_045_lasa_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_045_lasa_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_045_lasa_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_007_glomma_v1",
+      "sourceText": "glömma",
+      "fileName": "c1_u1_vocab_021_glomma_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_021_glomma_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_021_glomma_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_008_stanna_v1",
+      "sourceText": "stanna",
+      "fileName": "c1_u1_vocab_005_stanna_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_005_stanna_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_005_stanna_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_009_diskutera_v1",
+      "sourceText": "diskutera",
+      "fileName": "c1_u1_vocab_025_diskutera_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_025_diskutera_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_025_diskutera_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_010_presentera_v1",
+      "sourceText": "presentera",
+      "fileName": "c1_u1_qp_010_presentera_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_010_presentera_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_011_tycka_v1",
+      "sourceText": "tycka",
+      "fileName": "c1_u1_qp_011_tycka_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_011_tycka_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_012_bestamma_v1",
+      "sourceText": "bestämma",
+      "fileName": "c1_u1_vocab_029_bestamma_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_029_bestamma_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_029_bestamma_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_013_starta_v1",
+      "sourceText": "starta",
+      "fileName": "c1_u1_qp_013_starta_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_013_starta_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_014_skicka_v1",
+      "sourceText": "skicka",
+      "fileName": "c1_u1_vocab_033_skicka_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_033_skicka_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_033_skicka_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_015_prata_v1",
+      "sourceText": "prata",
+      "fileName": "b1_u2_vocab_021_prata_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_021_prata_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_021_prata_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_016_komma_ihag_v1",
+      "sourceText": "komma ihåg",
+      "fileName": "c1_u1_qp_016_komma_ihag_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_016_komma_ihag_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_017_handa_v1",
+      "sourceText": "hända",
+      "fileName": "c1_u1_vocab_049_handa_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_049_handa_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_049_handa_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_018_besoka_v1",
+      "sourceText": "besöka",
+      "fileName": "c1_u1_vocab_009_besoka_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_009_besoka_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_009_besoka_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_019_traffa_v1",
+      "sourceText": "träffa",
+      "fileName": "c1_u1_vocab_013_traffa_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_013_traffa_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_013_traffa_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_020_aka_v1",
+      "sourceText": "åka",
+      "fileName": "c1_u1_vocab_045_aka_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_045_aka_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_045_aka_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_021_en_helg_v1",
+      "sourceText": "en helg",
+      "fileName": "c1_u1_qp_021_en_helg_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_021_en_helg_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_022_en_familj_v1",
+      "sourceText": "en familj",
+      "fileName": "a1_u3_vocab_006_en_familj_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_006_en_familj_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_a1_u3_vocab_006_en_familj_v1"
+    },
+    {
+      "audioId": "sv_a1_u3_vocab_006_en_familj_v1",
+      "sourceText": "en familj",
+      "fileName": "a1_u3_vocab_006_en_familj_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_006_en_familj_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_qp_022_en_familj_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_023_ett_hotell_v1",
+      "sourceText": "ett hotell",
+      "fileName": "c1_u1_qp_023_ett_hotell_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_023_ett_hotell_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_024_en_hamn_v1",
+      "sourceText": "en hamn",
+      "fileName": "c1_u1_vocab_097_en_hamn_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_097_en_hamn_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_097_en_hamn_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_025_en_van_v1",
+      "sourceText": "en vän",
+      "fileName": "b1_u1_vocab_022_en_van_v1.mp3",
+      "filePath": "/audio/sv/b1/unit1/vocab/b1_u1_vocab_022_en_van_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u1_vocab_022_en_van_v1"
+    },
+    {
+      "audioId": "sv_b1_u1_vocab_022_en_van_v1",
+      "sourceText": "en vän",
+      "fileName": "b1_u1_vocab_022_en_van_v1.mp3",
+      "filePath": "/audio/sv/b1/unit1/vocab/b1_u1_vocab_022_en_van_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_qp_025_en_van_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_026_en_skola_v1",
+      "sourceText": "en skola",
+      "fileName": "b1_u1_vocab_058_en_skola_v1.mp3",
+      "filePath": "/audio/sv/b1/unit1/vocab/b1_u1_vocab_058_en_skola_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u1_vocab_058_en_skola_v1"
+    },
+    {
+      "audioId": "sv_b1_u1_vocab_058_en_skola_v1",
+      "sourceText": "en skola",
+      "fileName": "b1_u1_vocab_058_en_skola_v1.mp3",
+      "filePath": "/audio/sv/b1/unit1/vocab/b1_u1_vocab_058_en_skola_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_qp_026_en_skola_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_027_ett_mote_v1",
+      "sourceText": "ett möte",
+      "fileName": "c1_u1_vocab_085_ett_mote_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_085_ett_mote_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_085_ett_mote_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_028_ett_projekt_v1",
+      "sourceText": "ett projekt",
+      "fileName": "c1_u1_vocab_089_ett_projekt_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_089_ett_projekt_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_089_ett_projekt_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_029_en_chef_v1",
+      "sourceText": "en chef",
+      "fileName": "c1_u1_qp_029_en_chef_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_029_en_chef_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_030_en_plan_v1",
+      "sourceText": "en plan",
+      "fileName": "c1_u1_vocab_093_en_plan_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_093_en_plan_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_093_en_plan_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_031_en_manad_v1",
+      "sourceText": "en månad",
+      "fileName": "b1_u1_vocab_097_en_manad_v1.mp3",
+      "filePath": "/audio/sv/b1/unit1/vocab/b1_u1_vocab_097_en_manad_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u1_vocab_097_en_manad_v1"
+    },
+    {
+      "audioId": "sv_b1_u1_vocab_097_en_manad_v1",
+      "sourceText": "en månad",
+      "fileName": "b1_u1_vocab_097_en_manad_v1.mp3",
+      "filePath": "/audio/sv/b1/unit1/vocab/b1_u1_vocab_097_en_manad_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_qp_031_en_manad_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_032_ett_mejl_v1",
+      "sourceText": "ett mejl",
+      "fileName": "c1_u1_qp_032_ett_mejl_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_032_ett_mejl_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_033_en_information_v1",
+      "sourceText": "en information",
+      "fileName": "c1_u1_qp_033_en_information_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_033_en_information_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_034_en_mage_v1",
+      "sourceText": "en mage",
+      "fileName": "c1_u1_qp_034_en_mage_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_034_en_mage_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_035_jag_akte_till_goteborg_i_helgen_v1",
+      "sourceText": "Jag åkte till Göteborg i helgen.",
+      "fileName": "c1_u1_qp_035_jag_akte_till_goteborg_i_helgen_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_035_jag_akte_till_goteborg_i_helgen_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_036_vi_bodde_pa_hotell_v1",
+      "sourceText": "Vi bodde på hotell.",
+      "fileName": "c1_u1_qp_036_vi_bodde_pa_hotell_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_036_vi_bodde_pa_hotell_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_037_vi_at_fisk_och_rakor_v1",
+      "sourceText": "Vi åt fisk och räkor.",
+      "fileName": "c1_u1_qp_037_vi_at_fisk_och_rakor_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_037_vi_at_fisk_och_rakor_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_038_barnen_drack_saft_v1",
+      "sourceText": "Barnen drack saft.",
+      "fileName": "c1_u1_qp_038_barnen_drack_saft_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_038_barnen_drack_saft_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_039_vi_traffade_gamla_vanner_v1",
+      "sourceText": "Vi träffade gamla vänner.",
+      "fileName": "c1_u1_qp_039_vi_traffade_gamla_vanner_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_039_vi_traffade_gamla_vanner_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_040_du_var_inte_pa_motet_igar_v1",
+      "sourceText": "Du var inte på mötet igår.",
+      "fileName": "c1_u1_qp_040_du_var_inte_pa_motet_igar_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_040_du_var_inte_pa_motet_igar_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_041_vad_hande_v1",
+      "sourceText": "Vad hände?",
+      "fileName": "c1_u1_qp_041_vad_hande_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_041_vad_hande_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_042_jag_fick_mejlet_v1",
+      "sourceText": "Jag fick mejlet.",
+      "fileName": "c1_u1_qp_042_jag_fick_mejlet_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_042_jag_fick_mejlet_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_043_jag_laste_det_just_v1",
+      "sourceText": "Jag läste det just.",
+      "fileName": "c1_u1_qp_043_jag_laste_det_just_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_043_jag_laste_det_just_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_044_jag_glomde_det_v1",
+      "sourceText": "Jag glömde det.",
+      "fileName": "c1_u1_qp_044_jag_glomde_det_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_044_jag_glomde_det_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_045_jag_hade_ont_i_magen_v1",
+      "sourceText": "Jag hade ont i magen.",
+      "fileName": "c1_u1_qp_045_jag_hade_ont_i_magen_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_045_jag_hade_ont_i_magen_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_046_jag_stannade_hemma_v1",
+      "sourceText": "Jag stannade hemma.",
+      "fileName": "c1_u1_qp_046_jag_stannade_hemma_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_046_jag_stannade_hemma_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_047_vi_diskuterade_det_nya_projektet_v1",
+      "sourceText": "Vi diskuterade det nya projektet.",
+      "fileName": "c1_u1_qp_047_vi_diskuterade_det_nya_projektet_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_047_vi_diskuterade_det_nya_projektet_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_048_chefen_presenterade_planen_v1",
+      "sourceText": "Chefen presenterade planen.",
+      "fileName": "c1_u1_qp_048_chefen_presenterade_planen_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_048_chefen_presenterade_planen_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_049_alla_tyckte_att_det_lat_bra_v1",
+      "sourceText": "Alla tyckte att det lät bra.",
+      "fileName": "c1_u1_qp_049_alla_tyckte_att_det_lat_bra_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_049_alla_tyckte_att_det_lat_bra_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_050_vi_bestamde_att_starta_projektet_nasta_manad_v1",
+      "sourceText": "Vi bestämde att starta projektet nästa månad.",
+      "fileName": "c1_u1_qp_050_vi_bestamde_att_starta_projektet_nasta_manad_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_050_vi_bestamde_att_starta_projektet_nasta_manad_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_051_jag_skickade_ett_mejl_med_all_information_v1",
+      "sourceText": "Jag skickade ett mejl med all information.",
+      "fileName": "c1_u1_qp_051_jag_skickade_ett_mejl_med_all_information_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_051_jag_skickade_ett_mejl_med_all_information_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_052_vad_gjorde_du_i_helgen_v1",
+      "sourceText": "Vad gjorde du i helgen?",
+      "fileName": "c1_u1_qp_052_vad_gjorde_du_i_helgen_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_052_vad_gjorde_du_i_helgen_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_053_at_ni_nagot_speciellt_v1",
+      "sourceText": "Åt ni något speciellt?",
+      "fileName": "c1_u1_qp_053_at_ni_nagot_speciellt_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_053_at_ni_nagot_speciellt_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_054_bestamde_ni_nagot_v1",
+      "sourceText": "Bestämde ni något?",
+      "fileName": "c1_u1_dialog_002_line_04_bestamde_ni_nagot_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/dialogue/c1_u1_dialog_002_line_04_bestamde_ni_nagot_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_dialog_002_line_04_bestamde_ni_nagot_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_055_fick_du_det_v1",
+      "sourceText": "Fick du det?",
+      "fileName": "c1_u1_qp_055_fick_du_det_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_055_fick_du_det_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_056_vad_gjorde_du_i_helgen_v1",
+      "sourceText": "Vad gjorde du i helgen?",
+      "fileName": "c1_u1_qp_052_vad_gjorde_du_i_helgen_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_052_vad_gjorde_du_i_helgen_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_qp_052_vad_gjorde_du_i_helgen_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_057_jag_akte_till_goteborg_med_familjen_v1",
+      "sourceText": "Jag åkte till Göteborg med familjen.",
+      "fileName": "c1_u1_qp_057_jag_akte_till_goteborg_med_familjen_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_057_jag_akte_till_goteborg_med_familjen_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_058_vi_bodde_pa_hotell_och_besokte_liseberg_v1",
+      "sourceText": "Vi bodde på hotell och besökte Liseberg.",
+      "fileName": "c1_u1_qp_058_vi_bodde_pa_hotell_och_besokte_liseberg_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_058_vi_bodde_pa_hotell_och_besokte_liseberg_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_059_at_ni_nagot_speciellt_v1",
+      "sourceText": "Åt ni något speciellt?",
+      "fileName": "c1_u1_qp_053_at_ni_nagot_speciellt_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_053_at_ni_nagot_speciellt_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_qp_053_at_ni_nagot_speciellt_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_060_vi_at_fisk_och_rakor_vid_hamnen_v1",
+      "sourceText": "Vi åt fisk och räkor vid hamnen.",
+      "fileName": "c1_u1_qp_060_vi_at_fisk_och_rakor_vid_hamnen_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_060_vi_at_fisk_och_rakor_vid_hamnen_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_061_barnen_drack_saft_och_vi_vuxna_drack_vin_v1",
+      "sourceText": "Barnen drack saft och vi vuxna drack vin.",
+      "fileName": "c1_u1_qp_061_barnen_drack_saft_och_vi_vuxna_drack_vin_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_061_barnen_drack_saft_och_vi_vuxna_drack_vin_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_062_traffade_ni_nagra_gamla_vanner_v1",
+      "sourceText": "Träffade ni några gamla vänner?",
+      "fileName": "c1_u1_dialog_001_line_05_traffade_ni_nagra_gamla_vanner_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/dialogue/c1_u1_dialog_001_line_05_traffade_ni_nagra_gamla_vanner_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_dialog_001_line_05_traffade_ni_nagra_gamla_vanner_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_063_vi_pratade_i_flera_timmar_v1",
+      "sourceText": "Vi pratade i flera timmar.",
+      "fileName": "c1_u1_qp_063_vi_pratade_i_flera_timmar_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_063_vi_pratade_i_flera_timmar_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_064_vi_kom_ihag_massa_saker_fran_skolan_v1",
+      "sourceText": "Vi kom ihåg massa saker från skolan.",
+      "fileName": "c1_u1_qp_064_vi_kom_ihag_massa_saker_fran_skolan_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_064_vi_kom_ihag_massa_saker_fran_skolan_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_065_du_var_inte_pa_motet_igar_vad_hande_v1",
+      "sourceText": "Du var inte på mötet igår. Vad hände?",
+      "fileName": "c1_u1_dialog_002_line_01_du_var_inte_pa_motet_igar_vad_hande_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/dialogue/c1_u1_dialog_002_line_01_du_var_inte_pa_motet_igar_vad_hande_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_dialog_002_line_01_du_var_inte_pa_motet_igar_vad_hande_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_066_forlat_jag_glomde_det_v1",
+      "sourceText": "Förlåt, jag glömde det.",
+      "fileName": "c1_u1_qp_066_forlat_jag_glomde_det_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_066_forlat_jag_glomde_det_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_067_jag_hade_ont_i_magen_och_stannade_hemma_v1",
+      "sourceText": "Jag hade ont i magen och stannade hemma.",
+      "fileName": "c1_u1_qp_067_jag_hade_ont_i_magen_och_stannade_hemma_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_067_jag_hade_ont_i_magen_och_stannade_hemma_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_068_vi_diskuterade_det_nya_projektet_v1",
+      "sourceText": "Vi diskuterade det nya projektet.",
+      "fileName": "c1_u1_qp_047_vi_diskuterade_det_nya_projektet_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_047_vi_diskuterade_det_nya_projektet_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_qp_047_vi_diskuterade_det_nya_projektet_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_069_chefen_presenterade_planen_v1",
+      "sourceText": "Chefen presenterade planen.",
+      "fileName": "c1_u1_qp_048_chefen_presenterade_planen_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_048_chefen_presenterade_planen_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_qp_048_chefen_presenterade_planen_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_070_alla_tyckte_att_det_lat_bra_v1",
+      "sourceText": "Alla tyckte att det lät bra.",
+      "fileName": "c1_u1_qp_049_alla_tyckte_att_det_lat_bra_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_049_alla_tyckte_att_det_lat_bra_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_qp_049_alla_tyckte_att_det_lat_bra_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_071_bestamde_ni_nagot_v1",
+      "sourceText": "Bestämde ni något?",
+      "fileName": "c1_u1_dialog_002_line_04_bestamde_ni_nagot_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/dialogue/c1_u1_dialog_002_line_04_bestamde_ni_nagot_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_dialog_002_line_04_bestamde_ni_nagot_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_072_vi_bestamde_att_starta_projektet_nasta_manad_v1",
+      "sourceText": "Vi bestämde att starta projektet nästa månad.",
+      "fileName": "c1_u1_qp_050_vi_bestamde_att_starta_projektet_nasta_manad_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_050_vi_bestamde_att_starta_projektet_nasta_manad_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_qp_050_vi_bestamde_att_starta_projektet_nasta_manad_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_073_jag_skickade_ett_mejl_med_all_information_v1",
+      "sourceText": "Jag skickade ett mejl med all information.",
+      "fileName": "c1_u1_qp_051_jag_skickade_ett_mejl_med_all_information_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_051_jag_skickade_ett_mejl_med_all_information_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_qp_051_jag_skickade_ett_mejl_med_all_information_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_074_fick_du_det_v1",
+      "sourceText": "Fick du det?",
+      "fileName": "c1_u1_qp_055_fick_du_det_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_055_fick_du_det_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_qp_055_fick_du_det_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_075_jag_laste_det_just_v1",
+      "sourceText": "Jag läste det just.",
+      "fileName": "c1_u1_qp_043_jag_laste_det_just_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_043_jag_laste_det_just_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_qp_043_jag_laste_det_just_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_qp_076_det_verkade_intressant_v1",
+      "sourceText": "Det verkade intressant.",
+      "fileName": "c1_u1_qp_076_det_verkade_intressant_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_076_det_verkade_intressant_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_001_vara_v1",
+      "sourceText": "vara",
+      "fileName": "a1_u1_vocab_011_vara_v1.mp3",
+      "filePath": "/audio/sv/a1/unit1/vocab/a1_u1_vocab_011_vara_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_a1_u1_vocab_011_vara_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_002_ar_v1",
+      "sourceText": "är",
+      "fileName": "a1_u1_vocab_013_ar_v1.mp3",
+      "filePath": "/audio/sv/a1/unit1/vocab/a1_u1_vocab_013_ar_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_a1_u1_vocab_013_ar_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_003_var_v1",
+      "sourceText": "var",
+      "fileName": "a1_u1_adv_011_var_v1.mp3",
+      "filePath": "/audio/sv/a1/unit1/question/a1_u1_adv_011_var_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_a1_u1_adv_011_var_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_004_varit_v1",
+      "sourceText": "varit",
+      "fileName": "a1_u1_adv_012_varit_v1.mp3",
+      "filePath": "/audio/sv/a1/unit1/question/a1_u1_adv_012_varit_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_a1_u1_adv_012_varit_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_005_ga_v1",
+      "sourceText": "gå",
+      "fileName": "b1_u2_vocab_073_ga_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_073_ga_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_073_ga_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_006_gar_v1",
+      "sourceText": "går",
+      "fileName": "b1_u2_vocab_074_gar_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_074_gar_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_074_gar_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_007_gick_v1",
+      "sourceText": "gick",
+      "fileName": "b1_u2_vocab_075_gick_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_075_gick_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_075_gick_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_008_gatt_v1",
+      "sourceText": "gått",
+      "fileName": "b1_u2_vocab_076_gatt_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_076_gatt_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_076_gatt_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_009_ata_v1",
+      "sourceText": "äta",
+      "fileName": "b1_u4_vocab_049_ata_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_049_ata_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u4_vocab_049_ata_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_010_ater_v1",
+      "sourceText": "äter",
+      "fileName": "b1_u4_vocab_050_ater_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_050_ater_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u4_vocab_050_ater_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_011_at_v1",
+      "sourceText": "åt",
+      "fileName": "b1_u4_vocab_051_at_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_051_at_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u4_vocab_051_at_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_012_atit_v1",
+      "sourceText": "ätit",
+      "fileName": "b1_u4_vocab_052_atit_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_052_atit_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u4_vocab_052_atit_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_013_komma_v1",
+      "sourceText": "komma",
+      "fileName": "b1_u2_vocab_041_komma_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_041_komma_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_041_komma_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_014_kommer_v1",
+      "sourceText": "kommer",
+      "fileName": "b1_u2_vocab_042_kommer_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_042_kommer_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_042_kommer_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_015_kom_v1",
+      "sourceText": "kom",
+      "fileName": "b1_u2_vocab_043_kom_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_043_kom_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_043_kom_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_016_kommit_v1",
+      "sourceText": "kommit",
+      "fileName": "b1_u2_vocab_044_kommit_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_044_kommit_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_044_kommit_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_017_dricka_v1",
+      "sourceText": "dricka",
+      "fileName": "b1_u4_vocab_053_dricka_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_053_dricka_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u4_vocab_053_dricka_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_018_dricker_v1",
+      "sourceText": "dricker",
+      "fileName": "b1_u4_vocab_054_dricker_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_054_dricker_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u4_vocab_054_dricker_v1"
+    },
+    {
+      "audioId": "sv_b1_u4_vocab_054_dricker_v1",
+      "sourceText": "dricker",
+      "fileName": "b1_u4_vocab_054_dricker_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_054_dricker_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_adv_verb_018_dricker_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_019_drack_v1",
+      "sourceText": "drack",
+      "fileName": "b1_u4_vocab_055_drack_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_055_drack_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u4_vocab_055_drack_v1"
+    },
+    {
+      "audioId": "sv_b1_u4_vocab_055_drack_v1",
+      "sourceText": "drack",
+      "fileName": "b1_u4_vocab_055_drack_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_055_drack_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_adv_verb_019_drack_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_020_druckit_v1",
+      "sourceText": "druckit",
+      "fileName": "b1_u4_vocab_056_druckit_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_056_druckit_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u4_vocab_056_druckit_v1"
+    },
+    {
+      "audioId": "sv_b1_u4_vocab_056_druckit_v1",
+      "sourceText": "druckit",
+      "fileName": "b1_u4_vocab_056_druckit_v1.mp3",
+      "filePath": "/audio/sv/b4/unit4/vocab/b1_u4_vocab_056_druckit_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_adv_verb_020_druckit_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_021_fa_v1",
+      "sourceText": "få",
+      "fileName": "b1_u2_vocab_113_fa_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_113_fa_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_113_fa_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_022_far_v1",
+      "sourceText": "får",
+      "fileName": "b1_u2_vocab_114_far_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_114_far_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_114_far_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_114_far_v1",
+      "sourceText": "får",
+      "fileName": "b1_u2_vocab_114_far_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_114_far_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_adv_verb_022_far_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_023_fick_v1",
+      "sourceText": "fick",
+      "fileName": "b1_u2_vocab_115_fick_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_115_fick_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_115_fick_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_115_fick_v1",
+      "sourceText": "fick",
+      "fileName": "b1_u2_vocab_115_fick_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_115_fick_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_adv_verb_023_fick_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_024_fatt_v1",
+      "sourceText": "fått",
+      "fileName": "b1_u2_vocab_116_fatt_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_116_fatt_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_116_fatt_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_116_fatt_v1",
+      "sourceText": "fått",
+      "fileName": "b1_u2_vocab_116_fatt_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_116_fatt_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_adv_verb_024_fatt_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_025_lasa_v1",
+      "sourceText": "läsa",
+      "fileName": "b1_u2_vocab_045_lasa_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_045_lasa_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_045_lasa_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_026_laser_v1",
+      "sourceText": "läser",
+      "fileName": "b1_u2_vocab_046_laser_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_046_laser_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_046_laser_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_027_laste_v1",
+      "sourceText": "läste",
+      "fileName": "b1_u2_vocab_047_laste_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_047_laste_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_047_laste_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_028_last_v1",
+      "sourceText": "läst",
+      "fileName": "b1_u2_vocab_048_last_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_048_last_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_048_last_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_029_gora_v1",
+      "sourceText": "göra",
+      "fileName": "b1_u2_vocab_121_gora_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_121_gora_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_121_gora_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_121_gora_v1",
+      "sourceText": "göra",
+      "fileName": "b1_u2_vocab_121_gora_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_121_gora_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_adv_verb_029_gora_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_030_gor_v1",
+      "sourceText": "gör",
+      "fileName": "b1_u2_vocab_122_gor_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_122_gor_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_122_gor_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_122_gor_v1",
+      "sourceText": "gör",
+      "fileName": "b1_u2_vocab_122_gor_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_122_gor_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_adv_verb_030_gor_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_031_gjorde_v1",
+      "sourceText": "gjorde",
+      "fileName": "b1_u2_vocab_123_gjorde_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_123_gjorde_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_123_gjorde_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_123_gjorde_v1",
+      "sourceText": "gjorde",
+      "fileName": "b1_u2_vocab_123_gjorde_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_123_gjorde_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_adv_verb_031_gjorde_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_032_gjort_v1",
+      "sourceText": "gjort",
+      "fileName": "b1_u2_vocab_124_gjort_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_124_gjort_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_124_gjort_v1"
+    },
+    {
+      "audioId": "sv_b1_u2_vocab_124_gjort_v1",
+      "sourceText": "gjort",
+      "fileName": "b1_u2_vocab_124_gjort_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_124_gjort_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_adv_verb_032_gjort_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_033_glomma_v1",
+      "sourceText": "glömma",
+      "fileName": "c1_u1_vocab_021_glomma_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_021_glomma_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_021_glomma_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_034_glommer_v1",
+      "sourceText": "glömmer",
+      "fileName": "c1_u1_vocab_022_glommer_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_022_glommer_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_022_glommer_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_035_glomde_v1",
+      "sourceText": "glömde",
+      "fileName": "c1_u1_vocab_023_glomde_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_023_glomde_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_023_glomde_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_036_glomt_v1",
+      "sourceText": "glömt",
+      "fileName": "c1_u1_vocab_024_glomt_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_024_glomt_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_024_glomt_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_037_stanna_v1",
+      "sourceText": "stanna",
+      "fileName": "c1_u1_vocab_005_stanna_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_005_stanna_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_005_stanna_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_038_stannar_v1",
+      "sourceText": "stannar",
+      "fileName": "c1_u1_vocab_006_stannar_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_006_stannar_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_006_stannar_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_039_stannade_v1",
+      "sourceText": "stannade",
+      "fileName": "c1_u1_vocab_007_stannade_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_007_stannade_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_007_stannade_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_040_stannat_v1",
+      "sourceText": "stannat",
+      "fileName": "c1_u1_vocab_008_stannat_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_008_stannat_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_008_stannat_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_041_diskutera_v1",
+      "sourceText": "diskutera",
+      "fileName": "c1_u1_vocab_025_diskutera_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_025_diskutera_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_025_diskutera_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_042_diskuterar_v1",
+      "sourceText": "diskuterar",
+      "fileName": "c1_u1_vocab_026_diskuterar_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_026_diskuterar_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_026_diskuterar_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_043_diskuterade_v1",
+      "sourceText": "diskuterade",
+      "fileName": "c1_u1_vocab_027_diskuterade_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_027_diskuterade_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_027_diskuterade_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_044_diskuterat_v1",
+      "sourceText": "diskuterat",
+      "fileName": "c1_u1_vocab_028_diskuterat_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_028_diskuterat_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_028_diskuterat_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_045_presentera_v1",
+      "sourceText": "presentera",
+      "fileName": "c1_u1_qp_010_presentera_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_010_presentera_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_qp_010_presentera_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_046_presenterar_v1",
+      "sourceText": "presenterar",
+      "fileName": "c1_u1_adv_verb_046_presenterar_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_adv_verb_046_presenterar_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_047_presenterade_v1",
+      "sourceText": "presenterade",
+      "fileName": "c1_u1_adv_verb_047_presenterade_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_adv_verb_047_presenterade_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_048_presenterat_v1",
+      "sourceText": "presenterat",
+      "fileName": "c1_u1_adv_verb_048_presenterat_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_adv_verb_048_presenterat_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_049_tycka_v1",
+      "sourceText": "tycka",
+      "fileName": "c1_u1_qp_011_tycka_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_011_tycka_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_qp_011_tycka_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_050_tycker_v1",
+      "sourceText": "tycker",
+      "fileName": "c1_u1_adv_verb_050_tycker_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_adv_verb_050_tycker_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_051_tyckte_v1",
+      "sourceText": "tyckte",
+      "fileName": "c1_u1_adv_verb_051_tyckte_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_adv_verb_051_tyckte_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_052_tyckt_v1",
+      "sourceText": "tyckt",
+      "fileName": "c1_u1_adv_verb_052_tyckt_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_adv_verb_052_tyckt_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_053_bestamma_v1",
+      "sourceText": "bestämma",
+      "fileName": "c1_u1_vocab_029_bestamma_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_029_bestamma_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_029_bestamma_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_054_bestammer_v1",
+      "sourceText": "bestämmer",
+      "fileName": "c1_u1_vocab_030_bestammer_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_030_bestammer_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_030_bestammer_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_055_bestamde_v1",
+      "sourceText": "bestämde",
+      "fileName": "c1_u1_vocab_031_bestamde_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_031_bestamde_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_031_bestamde_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_056_bestamt_v1",
+      "sourceText": "bestämt",
+      "fileName": "c1_u1_vocab_032_bestamt_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_032_bestamt_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_032_bestamt_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_057_starta_v1",
+      "sourceText": "starta",
+      "fileName": "c1_u1_qp_013_starta_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_013_starta_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_qp_013_starta_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_058_startar_v1",
+      "sourceText": "startar",
+      "fileName": "c1_u1_adv_verb_058_startar_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_adv_verb_058_startar_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_059_startade_v1",
+      "sourceText": "startade",
+      "fileName": "c1_u1_adv_verb_059_startade_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_adv_verb_059_startade_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_060_startat_v1",
+      "sourceText": "startat",
+      "fileName": "c1_u1_adv_verb_060_startat_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_adv_verb_060_startat_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_061_skicka_v1",
+      "sourceText": "skicka",
+      "fileName": "c1_u1_vocab_033_skicka_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_033_skicka_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_033_skicka_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_062_skickar_v1",
+      "sourceText": "skickar",
+      "fileName": "c1_u1_vocab_034_skickar_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_034_skickar_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_034_skickar_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_063_skickade_v1",
+      "sourceText": "skickade",
+      "fileName": "c1_u1_vocab_035_skickade_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_035_skickade_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_035_skickade_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_064_skickat_v1",
+      "sourceText": "skickat",
+      "fileName": "c1_u1_vocab_036_skickat_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_036_skickat_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_036_skickat_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_065_prata_v1",
+      "sourceText": "prata",
+      "fileName": "b1_u2_vocab_021_prata_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_021_prata_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_021_prata_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_066_pratar_v1",
+      "sourceText": "pratar",
+      "fileName": "b1_u2_vocab_022_pratar_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_022_pratar_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_022_pratar_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_067_pratade_v1",
+      "sourceText": "pratade",
+      "fileName": "b1_u2_vocab_023_pratade_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_023_pratade_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_023_pratade_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_068_pratat_v1",
+      "sourceText": "pratat",
+      "fileName": "b1_u2_vocab_024_pratat_v1.mp3",
+      "filePath": "/audio/sv/b2/unit2/vocab/b1_u2_vocab_024_pratat_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u2_vocab_024_pratat_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_069_verka_v1",
+      "sourceText": "verka",
+      "fileName": "b1_u5_vocab_117_verka_v1.mp3",
+      "filePath": "/audio/sv/b5/unit5/vocab/b1_u5_vocab_117_verka_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u5_vocab_117_verka_v1"
+    },
+    {
+      "audioId": "sv_b1_u5_vocab_117_verka_v1",
+      "sourceText": "verka",
+      "fileName": "b1_u5_vocab_117_verka_v1.mp3",
+      "filePath": "/audio/sv/b5/unit5/vocab/b1_u5_vocab_117_verka_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_adv_verb_069_verka_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_070_verkar_v1",
+      "sourceText": "verkar",
+      "fileName": "b1_u5_vocab_118_verkar_v1.mp3",
+      "filePath": "/audio/sv/b5/unit5/vocab/b1_u5_vocab_118_verkar_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u5_vocab_118_verkar_v1"
+    },
+    {
+      "audioId": "sv_b1_u5_vocab_118_verkar_v1",
+      "sourceText": "verkar",
+      "fileName": "b1_u5_vocab_118_verkar_v1.mp3",
+      "filePath": "/audio/sv/b5/unit5/vocab/b1_u5_vocab_118_verkar_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_adv_verb_070_verkar_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_071_verkade_v1",
+      "sourceText": "verkade",
+      "fileName": "b1_u5_vocab_119_verkade_v1.mp3",
+      "filePath": "/audio/sv/b5/unit5/vocab/b1_u5_vocab_119_verkade_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u5_vocab_119_verkade_v1"
+    },
+    {
+      "audioId": "sv_b1_u5_vocab_119_verkade_v1",
+      "sourceText": "verkade",
+      "fileName": "b1_u5_vocab_119_verkade_v1.mp3",
+      "filePath": "/audio/sv/b5/unit5/vocab/b1_u5_vocab_119_verkade_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_adv_verb_071_verkade_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_072_verkat_v1",
+      "sourceText": "verkat",
+      "fileName": "b1_u5_vocab_120_verkat_v1.mp3",
+      "filePath": "/audio/sv/b5/unit5/vocab/b1_u5_vocab_120_verkat_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u5_vocab_120_verkat_v1"
+    },
+    {
+      "audioId": "sv_b1_u5_vocab_120_verkat_v1",
+      "sourceText": "verkat",
+      "fileName": "b1_u5_vocab_120_verkat_v1.mp3",
+      "filePath": "/audio/sv/b5/unit5/vocab/b1_u5_vocab_120_verkat_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_adv_verb_072_verkat_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_073_traffa_v1",
+      "sourceText": "träffa",
+      "fileName": "c1_u1_vocab_013_traffa_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_013_traffa_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_013_traffa_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_074_traffar_v1",
+      "sourceText": "träffar",
+      "fileName": "c1_u1_vocab_014_traffar_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_014_traffar_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_014_traffar_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_075_traffade_v1",
+      "sourceText": "träffade",
+      "fileName": "c1_u1_vocab_015_traffade_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_015_traffade_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_015_traffade_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_076_traffat_v1",
+      "sourceText": "träffat",
+      "fileName": "c1_u1_vocab_016_traffat_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_016_traffat_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_016_traffat_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_077_besoka_v1",
+      "sourceText": "besöka",
+      "fileName": "c1_u1_vocab_009_besoka_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_009_besoka_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_009_besoka_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_078_besoker_v1",
+      "sourceText": "besöker",
+      "fileName": "c1_u1_vocab_010_besoker_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_010_besoker_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_010_besoker_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_079_besokte_v1",
+      "sourceText": "besökte",
+      "fileName": "c1_u1_vocab_011_besokte_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_011_besokte_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_011_besokte_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_080_besokt_v1",
+      "sourceText": "besökt",
+      "fileName": "c1_u1_vocab_012_besokt_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_012_besokt_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_012_besokt_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_081_aka_v1",
+      "sourceText": "åka",
+      "fileName": "c1_u1_vocab_045_aka_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_045_aka_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_045_aka_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_082_aker_v1",
+      "sourceText": "åker",
+      "fileName": "c1_u1_vocab_046_aker_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_046_aker_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_046_aker_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_083_akte_v1",
+      "sourceText": "åkte",
+      "fileName": "c1_u1_vocab_047_akte_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_047_akte_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_047_akte_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_084_akt_v1",
+      "sourceText": "åkt",
+      "fileName": "c1_u1_vocab_048_akt_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_048_akt_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_048_akt_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_085_bo_v1",
+      "sourceText": "bo",
+      "fileName": "a1_u3_vocab_032_bo_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_032_bo_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_a1_u3_vocab_032_bo_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_086_bor_v1",
+      "sourceText": "bor",
+      "fileName": "a1_u3_adv_043_bor_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_043_bor_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_a1_u3_adv_043_bor_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_087_bodde_v1",
+      "sourceText": "bodde",
+      "fileName": "a1_u3_adv_044_bodde_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_044_bodde_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_a1_u3_adv_044_bodde_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_088_bott_v1",
+      "sourceText": "bott",
+      "fileName": "a1_u3_adv_045_bott_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_045_bott_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_a1_u3_adv_045_bott_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_089_handa_v1",
+      "sourceText": "hända",
+      "fileName": "c1_u1_vocab_049_handa_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_049_handa_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_049_handa_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_090_hander_v1",
+      "sourceText": "händer",
+      "fileName": "b1_u3_vocab_063_hander_v1.mp3",
+      "filePath": "/audio/sv/b3/unit3/vocab/b1_u3_vocab_063_hander_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_b1_u3_vocab_063_hander_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_091_hande_v1",
+      "sourceText": "hände",
+      "fileName": "c1_u1_vocab_051_hande_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_051_hande_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_051_hande_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_verb_092_hant_v1",
+      "sourceText": "hänt",
+      "fileName": "c1_u1_vocab_052_hant_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_052_hant_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_052_hant_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_024_en_helg_v1",
+      "sourceText": "en helg",
+      "fileName": "c1_u1_qp_021_en_helg_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_021_en_helg_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_qp_021_en_helg_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_025_helgen_v1",
+      "sourceText": "helgen",
+      "fileName": "c1_u1_adv_025_helgen_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_adv_025_helgen_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_026_helger_v1",
+      "sourceText": "helger",
+      "fileName": "c1_u1_adv_026_helger_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_adv_026_helger_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_027_helgerna_v1",
+      "sourceText": "helgerna",
+      "fileName": "c1_u1_adv_027_helgerna_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_adv_027_helgerna_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_028_en_familj_v1",
+      "sourceText": "en familj",
+      "fileName": "a1_u3_vocab_006_en_familj_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/vocab/a1_u3_vocab_006_en_familj_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_a1_u3_vocab_006_en_familj_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_029_familjen_v1",
+      "sourceText": "familjen",
+      "fileName": "a1_u3_adv_024_familjen_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_024_familjen_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_a1_u3_adv_024_familjen_v1"
+    },
+    {
+      "audioId": "sv_a1_u3_adv_024_familjen_v1",
+      "sourceText": "familjen",
+      "fileName": "a1_u3_adv_024_familjen_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_024_familjen_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_adv_029_familjen_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_030_familjer_v1",
+      "sourceText": "familjer",
+      "fileName": "a1_u3_adv_025_familjer_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_025_familjer_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_a1_u3_adv_025_familjer_v1"
+    },
+    {
+      "audioId": "sv_a1_u3_adv_025_familjer_v1",
+      "sourceText": "familjer",
+      "fileName": "a1_u3_adv_025_familjer_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_025_familjer_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_adv_030_familjer_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_031_familjerna_v1",
+      "sourceText": "familjerna",
+      "fileName": "a1_u3_adv_026_familjerna_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_026_familjerna_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_a1_u3_adv_026_familjerna_v1"
+    },
+    {
+      "audioId": "sv_a1_u3_adv_026_familjerna_v1",
+      "sourceText": "familjerna",
+      "fileName": "a1_u3_adv_026_familjerna_v1.mp3",
+      "filePath": "/audio/sv/a3/unit3/question/a1_u3_adv_026_familjerna_v1.mp3",
+      "status": "ready",
+      "aliasFor": "sv_c1_u1_adv_031_familjerna_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_032_ett_hotell_v1",
+      "sourceText": "ett hotell",
+      "fileName": "c1_u1_qp_023_ett_hotell_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_023_ett_hotell_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_qp_023_ett_hotell_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_033_hotellet_v1",
+      "sourceText": "hotellet",
+      "fileName": "c1_u1_adv_033_hotellet_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_adv_033_hotellet_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_034_hotell_v1",
+      "sourceText": "hotell",
+      "fileName": "c1_u1_adv_034_hotell_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_adv_034_hotell_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_035_hotellen_v1",
+      "sourceText": "hotellen",
+      "fileName": "c1_u1_adv_035_hotellen_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_adv_035_hotellen_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_036_en_hamn_v1",
+      "sourceText": "en hamn",
+      "fileName": "c1_u1_vocab_097_en_hamn_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_097_en_hamn_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_097_en_hamn_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_037_hamnen_v1",
+      "sourceText": "hamnen",
+      "fileName": "c1_u1_vocab_098_hamnen_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_098_hamnen_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_098_hamnen_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_038_hamnar_v1",
+      "sourceText": "hamnar",
+      "fileName": "c1_u1_vocab_099_hamnar_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_099_hamnar_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_099_hamnar_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_039_hamnarna_v1",
+      "sourceText": "hamnarna",
+      "fileName": "c1_u1_vocab_100_hamnarna_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_100_hamnarna_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_100_hamnarna_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_040_ett_mote_v1",
+      "sourceText": "ett möte",
+      "fileName": "c1_u1_vocab_085_ett_mote_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_085_ett_mote_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_085_ett_mote_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_041_motet_v1",
+      "sourceText": "mötet",
+      "fileName": "c1_u1_vocab_086_motet_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_086_motet_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_086_motet_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_042_moten_v1",
+      "sourceText": "möten",
+      "fileName": "c1_u1_vocab_087_moten_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_087_moten_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_087_moten_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_043_motena_v1",
+      "sourceText": "mötena",
+      "fileName": "c1_u1_vocab_088_motena_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_088_motena_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_088_motena_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_044_ett_projekt_v1",
+      "sourceText": "ett projekt",
+      "fileName": "c1_u1_vocab_089_ett_projekt_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_089_ett_projekt_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_089_ett_projekt_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_045_projektet_v1",
+      "sourceText": "projektet",
+      "fileName": "c1_u1_vocab_090_projektet_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_090_projektet_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_090_projektet_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_046_projekt_v1",
+      "sourceText": "projekt",
+      "fileName": "c1_u1_vocab_091_projekt_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_091_projekt_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_091_projekt_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_047_projekten_v1",
+      "sourceText": "projekten",
+      "fileName": "c1_u1_vocab_092_projekten_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_092_projekten_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_092_projekten_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_048_en_plan_v1",
+      "sourceText": "en plan",
+      "fileName": "c1_u1_vocab_093_en_plan_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_093_en_plan_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_093_en_plan_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_049_planen_v1",
+      "sourceText": "planen",
+      "fileName": "c1_u1_vocab_094_planen_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_094_planen_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_094_planen_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_050_planer_v1",
+      "sourceText": "planer",
+      "fileName": "c1_u1_vocab_095_planer_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_095_planer_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_095_planer_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_051_planerna_v1",
+      "sourceText": "planerna",
+      "fileName": "c1_u1_vocab_096_planerna_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/vocab/c1_u1_vocab_096_planerna_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_vocab_096_planerna_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_052_ett_mejl_v1",
+      "sourceText": "ett mejl",
+      "fileName": "c1_u1_qp_032_ett_mejl_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_032_ett_mejl_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_qp_032_ett_mejl_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_053_mejlet_v1",
+      "sourceText": "mejlet",
+      "fileName": "c1_u1_adv_053_mejlet_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_adv_053_mejlet_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_054_mejl_v1",
+      "sourceText": "mejl",
+      "fileName": "c1_u1_adv_054_mejl_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_adv_054_mejl_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_055_mejlen_v1",
+      "sourceText": "mejlen",
+      "fileName": "c1_u1_adv_055_mejlen_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_adv_055_mejlen_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_056_en_mage_v1",
+      "sourceText": "en mage",
+      "fileName": "c1_u1_qp_034_en_mage_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_qp_034_en_mage_v1.mp3",
+      "status": "ready",
+      "reusedFromAudioId": "sv_c1_u1_qp_034_en_mage_v1"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_057_magen_v1",
+      "sourceText": "magen",
+      "fileName": "c1_u1_adv_057_magen_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_adv_057_magen_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_058_magar_v1",
+      "sourceText": "magar",
+      "fileName": "c1_u1_adv_058_magar_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_adv_058_magar_v1.mp3",
+      "status": "ready"
+    },
+    {
+      "audioId": "sv_c1_u1_adv_059_magarna_v1",
+      "sourceText": "magarna",
+      "fileName": "c1_u1_adv_059_magarna_v1.mp3",
+      "filePath": "/audio/sv/c1/unit1/question/c1_u1_adv_059_magarna_v1.mp3",
+      "status": "ready"
+    }
+  ]
+}

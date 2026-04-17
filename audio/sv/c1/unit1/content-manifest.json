@@ -1,0 +1,2848 @@
+{
+  "unit": "c1",
+  "generatedBy": "02 tools/build_unit_audio_manifests.py",
+  "items": [
+    {
+      "contentId": "c1_u1_vocab_001_arbeta_v1",
+      "audioType": "vocab",
+      "sourceText": "arbeta",
+      "audioRef": "sv_c1_u1_vocab_001_arbeta_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_002_arbetar_v1",
+      "audioType": "vocab",
+      "sourceText": "arbetar",
+      "audioRef": "sv_c1_u1_vocab_002_arbetar_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_003_arbetade_v1",
+      "audioType": "vocab",
+      "sourceText": "arbetade",
+      "audioRef": "sv_c1_u1_vocab_003_arbetade_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_004_arbetat_v1",
+      "audioType": "vocab",
+      "sourceText": "arbetat",
+      "audioRef": "sv_c1_u1_vocab_004_arbetat_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_005_stanna_v1",
+      "audioType": "vocab",
+      "sourceText": "stanna",
+      "audioRef": "sv_c1_u1_vocab_005_stanna_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_006_stannar_v1",
+      "audioType": "vocab",
+      "sourceText": "stannar",
+      "audioRef": "sv_c1_u1_vocab_006_stannar_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_007_stannade_v1",
+      "audioType": "vocab",
+      "sourceText": "stannade",
+      "audioRef": "sv_c1_u1_vocab_007_stannade_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_008_stannat_v1",
+      "audioType": "vocab",
+      "sourceText": "stannat",
+      "audioRef": "sv_c1_u1_vocab_008_stannat_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_009_besoka_v1",
+      "audioType": "vocab",
+      "sourceText": "besöka",
+      "audioRef": "sv_c1_u1_vocab_009_besoka_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_010_besoker_v1",
+      "audioType": "vocab",
+      "sourceText": "besöker",
+      "audioRef": "sv_c1_u1_vocab_010_besoker_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_011_besokte_v1",
+      "audioType": "vocab",
+      "sourceText": "besökte",
+      "audioRef": "sv_c1_u1_vocab_011_besokte_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_012_besokt_v1",
+      "audioType": "vocab",
+      "sourceText": "besökt",
+      "audioRef": "sv_c1_u1_vocab_012_besokt_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_013_traffa_v1",
+      "audioType": "vocab",
+      "sourceText": "träffa",
+      "audioRef": "sv_c1_u1_vocab_013_traffa_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_014_traffar_v1",
+      "audioType": "vocab",
+      "sourceText": "träffar",
+      "audioRef": "sv_c1_u1_vocab_014_traffar_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_015_traffade_v1",
+      "audioType": "vocab",
+      "sourceText": "träffade",
+      "audioRef": "sv_c1_u1_vocab_015_traffade_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_016_traffat_v1",
+      "audioType": "vocab",
+      "sourceText": "träffat",
+      "audioRef": "sv_c1_u1_vocab_016_traffat_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_017_prata_v1",
+      "audioType": "vocab",
+      "sourceText": "prata",
+      "audioRef": "sv_c1_u1_vocab_017_prata_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_018_pratar_v1",
+      "audioType": "vocab",
+      "sourceText": "pratar",
+      "audioRef": "sv_c1_u1_vocab_018_pratar_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_019_pratade_v1",
+      "audioType": "vocab",
+      "sourceText": "pratade",
+      "audioRef": "sv_c1_u1_vocab_019_pratade_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_020_pratat_v1",
+      "audioType": "vocab",
+      "sourceText": "pratat",
+      "audioRef": "sv_c1_u1_vocab_020_pratat_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_021_glomma_v1",
+      "audioType": "vocab",
+      "sourceText": "glömma",
+      "audioRef": "sv_c1_u1_vocab_021_glomma_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_022_glommer_v1",
+      "audioType": "vocab",
+      "sourceText": "glömmer",
+      "audioRef": "sv_c1_u1_vocab_022_glommer_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_023_glomde_v1",
+      "audioType": "vocab",
+      "sourceText": "glömde",
+      "audioRef": "sv_c1_u1_vocab_023_glomde_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_024_glomt_v1",
+      "audioType": "vocab",
+      "sourceText": "glömt",
+      "audioRef": "sv_c1_u1_vocab_024_glomt_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_025_diskutera_v1",
+      "audioType": "vocab",
+      "sourceText": "diskutera",
+      "audioRef": "sv_c1_u1_vocab_025_diskutera_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_026_diskuterar_v1",
+      "audioType": "vocab",
+      "sourceText": "diskuterar",
+      "audioRef": "sv_c1_u1_vocab_026_diskuterar_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_027_diskuterade_v1",
+      "audioType": "vocab",
+      "sourceText": "diskuterade",
+      "audioRef": "sv_c1_u1_vocab_027_diskuterade_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_028_diskuterat_v1",
+      "audioType": "vocab",
+      "sourceText": "diskuterat",
+      "audioRef": "sv_c1_u1_vocab_028_diskuterat_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_029_bestamma_v1",
+      "audioType": "vocab",
+      "sourceText": "bestämma",
+      "audioRef": "sv_c1_u1_vocab_029_bestamma_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_030_bestammer_v1",
+      "audioType": "vocab",
+      "sourceText": "bestämmer",
+      "audioRef": "sv_c1_u1_vocab_030_bestammer_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_031_bestamde_v1",
+      "audioType": "vocab",
+      "sourceText": "bestämde",
+      "audioRef": "sv_c1_u1_vocab_031_bestamde_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_032_bestamt_v1",
+      "audioType": "vocab",
+      "sourceText": "bestämt",
+      "audioRef": "sv_c1_u1_vocab_032_bestamt_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_033_skicka_v1",
+      "audioType": "vocab",
+      "sourceText": "skicka",
+      "audioRef": "sv_c1_u1_vocab_033_skicka_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_034_skickar_v1",
+      "audioType": "vocab",
+      "sourceText": "skickar",
+      "audioRef": "sv_c1_u1_vocab_034_skickar_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_035_skickade_v1",
+      "audioType": "vocab",
+      "sourceText": "skickade",
+      "audioRef": "sv_c1_u1_vocab_035_skickade_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_036_skickat_v1",
+      "audioType": "vocab",
+      "sourceText": "skickat",
+      "audioRef": "sv_c1_u1_vocab_036_skickat_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_037_lasa_v1",
+      "audioType": "vocab",
+      "sourceText": "läsa",
+      "audioRef": "sv_c1_u1_vocab_037_lasa_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_038_laser_v1",
+      "audioType": "vocab",
+      "sourceText": "läser",
+      "audioRef": "sv_c1_u1_vocab_038_laser_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_039_laste_v1",
+      "audioType": "vocab",
+      "sourceText": "läste",
+      "audioRef": "sv_c1_u1_vocab_039_laste_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_040_last_v1",
+      "audioType": "vocab",
+      "sourceText": "läst",
+      "audioRef": "sv_c1_u1_vocab_040_last_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_041_bo_v1",
+      "audioType": "vocab",
+      "sourceText": "bo",
+      "audioRef": "sv_c1_u1_vocab_041_bo_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_042_bor_v1",
+      "audioType": "vocab",
+      "sourceText": "bor",
+      "audioRef": "sv_c1_u1_vocab_042_bor_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_043_bodde_v1",
+      "audioType": "vocab",
+      "sourceText": "bodde",
+      "audioRef": "sv_c1_u1_vocab_043_bodde_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_044_bott_v1",
+      "audioType": "vocab",
+      "sourceText": "bott",
+      "audioRef": "sv_c1_u1_vocab_044_bott_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_045_aka_v1",
+      "audioType": "vocab",
+      "sourceText": "åka",
+      "audioRef": "sv_c1_u1_vocab_045_aka_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_046_aker_v1",
+      "audioType": "vocab",
+      "sourceText": "åker",
+      "audioRef": "sv_c1_u1_vocab_046_aker_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_047_akte_v1",
+      "audioType": "vocab",
+      "sourceText": "åkte",
+      "audioRef": "sv_c1_u1_vocab_047_akte_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_048_akt_v1",
+      "audioType": "vocab",
+      "sourceText": "åkt",
+      "audioRef": "sv_c1_u1_vocab_048_akt_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_049_handa_v1",
+      "audioType": "vocab",
+      "sourceText": "hända",
+      "audioRef": "sv_c1_u1_vocab_049_handa_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_050_hander_v1",
+      "audioType": "vocab",
+      "sourceText": "händer",
+      "audioRef": "sv_c1_u1_vocab_050_hander_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_051_hande_v1",
+      "audioType": "vocab",
+      "sourceText": "hände",
+      "audioRef": "sv_c1_u1_vocab_051_hande_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_052_hant_v1",
+      "audioType": "vocab",
+      "sourceText": "hänt",
+      "audioRef": "sv_c1_u1_vocab_052_hant_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_053_vara_v1",
+      "audioType": "vocab",
+      "sourceText": "vara",
+      "audioRef": "sv_c1_u1_vocab_053_vara_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_054_ar_v1",
+      "audioType": "vocab",
+      "sourceText": "är",
+      "audioRef": "sv_c1_u1_vocab_054_ar_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_055_var_v1",
+      "audioType": "vocab",
+      "sourceText": "var",
+      "audioRef": "sv_c1_u1_vocab_055_var_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_056_varit_v1",
+      "audioType": "vocab",
+      "sourceText": "varit",
+      "audioRef": "sv_c1_u1_vocab_056_varit_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_057_ha_v1",
+      "audioType": "vocab",
+      "sourceText": "ha",
+      "audioRef": "sv_c1_u1_vocab_057_ha_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_058_har_v1",
+      "audioType": "vocab",
+      "sourceText": "har",
+      "audioRef": "sv_c1_u1_vocab_058_har_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_059_hade_v1",
+      "audioType": "vocab",
+      "sourceText": "hade",
+      "audioRef": "sv_c1_u1_vocab_059_hade_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_060_haft_v1",
+      "audioType": "vocab",
+      "sourceText": "haft",
+      "audioRef": "sv_c1_u1_vocab_060_haft_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_061_ga_v1",
+      "audioType": "vocab",
+      "sourceText": "gå",
+      "audioRef": "sv_c1_u1_vocab_061_ga_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_062_gar_v1",
+      "audioType": "vocab",
+      "sourceText": "går",
+      "audioRef": "sv_c1_u1_vocab_062_gar_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_063_gick_v1",
+      "audioType": "vocab",
+      "sourceText": "gick",
+      "audioRef": "sv_c1_u1_vocab_063_gick_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_064_gatt_v1",
+      "audioType": "vocab",
+      "sourceText": "gått",
+      "audioRef": "sv_c1_u1_vocab_064_gatt_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_065_komma_v1",
+      "audioType": "vocab",
+      "sourceText": "komma",
+      "audioRef": "sv_c1_u1_vocab_065_komma_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_066_kommer_v1",
+      "audioType": "vocab",
+      "sourceText": "kommer",
+      "audioRef": "sv_c1_u1_vocab_066_kommer_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_067_kom_v1",
+      "audioType": "vocab",
+      "sourceText": "kom",
+      "audioRef": "sv_c1_u1_vocab_067_kom_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_068_kommit_v1",
+      "audioType": "vocab",
+      "sourceText": "kommit",
+      "audioRef": "sv_c1_u1_vocab_068_kommit_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_069_ta_v1",
+      "audioType": "vocab",
+      "sourceText": "ta",
+      "audioRef": "sv_c1_u1_vocab_069_ta_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_070_tar_v1",
+      "audioType": "vocab",
+      "sourceText": "tar",
+      "audioRef": "sv_c1_u1_vocab_070_tar_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_071_tog_v1",
+      "audioType": "vocab",
+      "sourceText": "tog",
+      "audioRef": "sv_c1_u1_vocab_071_tog_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_072_tagit_v1",
+      "audioType": "vocab",
+      "sourceText": "tagit",
+      "audioRef": "sv_c1_u1_vocab_072_tagit_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_073_se_v1",
+      "audioType": "vocab",
+      "sourceText": "se",
+      "audioRef": "sv_c1_u1_vocab_073_se_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_074_ser_v1",
+      "audioType": "vocab",
+      "sourceText": "ser",
+      "audioRef": "sv_c1_u1_vocab_074_ser_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_075_sag_v1",
+      "audioType": "vocab",
+      "sourceText": "såg",
+      "audioRef": "sv_c1_u1_vocab_075_sag_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_076_sett_v1",
+      "audioType": "vocab",
+      "sourceText": "sett",
+      "audioRef": "sv_c1_u1_vocab_076_sett_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_077_ata_v1",
+      "audioType": "vocab",
+      "sourceText": "äta",
+      "audioRef": "sv_c1_u1_vocab_077_ata_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_078_ater_v1",
+      "audioType": "vocab",
+      "sourceText": "äter",
+      "audioRef": "sv_c1_u1_vocab_078_ater_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_079_at_v1",
+      "audioType": "vocab",
+      "sourceText": "åt",
+      "audioRef": "sv_c1_u1_vocab_079_at_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_080_atit_v1",
+      "audioType": "vocab",
+      "sourceText": "ätit",
+      "audioRef": "sv_c1_u1_vocab_080_atit_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_081_saga_v1",
+      "audioType": "vocab",
+      "sourceText": "säga",
+      "audioRef": "sv_c1_u1_vocab_081_saga_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_082_sager_v1",
+      "audioType": "vocab",
+      "sourceText": "säger",
+      "audioRef": "sv_c1_u1_vocab_082_sager_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_083_sa_v1",
+      "audioType": "vocab",
+      "sourceText": "sa",
+      "audioRef": "sv_c1_u1_vocab_083_sa_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_084_sagt_v1",
+      "audioType": "vocab",
+      "sourceText": "sagt",
+      "audioRef": "sv_c1_u1_vocab_084_sagt_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_085_ett_mote_v1",
+      "audioType": "vocab",
+      "sourceText": "ett möte",
+      "audioRef": "sv_c1_u1_vocab_085_ett_mote_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_086_motet_v1",
+      "audioType": "vocab",
+      "sourceText": "mötet",
+      "audioRef": "sv_c1_u1_vocab_086_motet_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_087_moten_v1",
+      "audioType": "vocab",
+      "sourceText": "möten",
+      "audioRef": "sv_c1_u1_vocab_087_moten_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_088_motena_v1",
+      "audioType": "vocab",
+      "sourceText": "mötena",
+      "audioRef": "sv_c1_u1_vocab_088_motena_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_089_ett_projekt_v1",
+      "audioType": "vocab",
+      "sourceText": "ett projekt",
+      "audioRef": "sv_c1_u1_vocab_089_ett_projekt_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_090_projektet_v1",
+      "audioType": "vocab",
+      "sourceText": "projektet",
+      "audioRef": "sv_c1_u1_vocab_090_projektet_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_091_projekt_v1",
+      "audioType": "vocab",
+      "sourceText": "projekt",
+      "audioRef": "sv_c1_u1_vocab_091_projekt_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_092_projekten_v1",
+      "audioType": "vocab",
+      "sourceText": "projekten",
+      "audioRef": "sv_c1_u1_vocab_092_projekten_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_093_en_plan_v1",
+      "audioType": "vocab",
+      "sourceText": "en plan",
+      "audioRef": "sv_c1_u1_vocab_093_en_plan_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_094_planen_v1",
+      "audioType": "vocab",
+      "sourceText": "planen",
+      "audioRef": "sv_c1_u1_vocab_094_planen_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_095_planer_v1",
+      "audioType": "vocab",
+      "sourceText": "planer",
+      "audioRef": "sv_c1_u1_vocab_095_planer_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_096_planerna_v1",
+      "audioType": "vocab",
+      "sourceText": "planerna",
+      "audioRef": "sv_c1_u1_vocab_096_planerna_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_097_en_hamn_v1",
+      "audioType": "vocab",
+      "sourceText": "en hamn",
+      "audioRef": "sv_c1_u1_vocab_097_en_hamn_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_098_hamnen_v1",
+      "audioType": "vocab",
+      "sourceText": "hamnen",
+      "audioRef": "sv_c1_u1_vocab_098_hamnen_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_099_hamnar_v1",
+      "audioType": "vocab",
+      "sourceText": "hamnar",
+      "audioRef": "sv_c1_u1_vocab_099_hamnar_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_100_hamnarna_v1",
+      "audioType": "vocab",
+      "sourceText": "hamnarna",
+      "audioRef": "sv_c1_u1_vocab_100_hamnarna_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_101_igar_v1",
+      "audioType": "vocab",
+      "sourceText": "igår",
+      "audioRef": "sv_c1_u1_vocab_101_igar_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_102_i_helgen_v1",
+      "audioType": "vocab",
+      "sourceText": "i helgen",
+      "audioRef": "sv_c1_u1_vocab_102_i_helgen_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_103_forra_veckan_v1",
+      "audioType": "vocab",
+      "sourceText": "förra veckan",
+      "audioRef": "sv_c1_u1_vocab_103_forra_veckan_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_104_forra_aret_v1",
+      "audioType": "vocab",
+      "sourceText": "förra året",
+      "audioRef": "sv_c1_u1_vocab_104_forra_aret_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_105_da_v1",
+      "audioType": "vocab",
+      "sourceText": "då",
+      "audioRef": "sv_c1_u1_vocab_105_da_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_106_sedan_v1",
+      "audioType": "vocab",
+      "sourceText": "sedan",
+      "audioRef": "sv_c1_u1_vocab_106_sedan_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_107_nyss_v1",
+      "audioType": "vocab",
+      "sourceText": "nyss",
+      "audioRef": "sv_c1_u1_vocab_107_nyss_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_108_tidigare_v1",
+      "audioType": "vocab",
+      "sourceText": "tidigare",
+      "audioRef": "sv_c1_u1_vocab_108_tidigare_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_109_plotsligt_v1",
+      "audioType": "vocab",
+      "sourceText": "plötsligt",
+      "audioRef": "sv_c1_u1_vocab_109_plotsligt_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_110_aldrig_v1",
+      "audioType": "vocab",
+      "sourceText": "aldrig",
+      "audioRef": "sv_c1_u1_vocab_110_aldrig_v1"
+    },
+    {
+      "contentId": "c1_u1_vocab_111_just_v1",
+      "audioType": "vocab",
+      "sourceText": "just",
+      "audioRef": "sv_c1_u1_vocab_111_just_v1"
+    },
+    {
+      "contentId": "c1_u1_dialog_001_line_01_hej_vad_gjorde_du_i_helgen_v1",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Hej! Vad gjorde du i helgen?",
+      "audioRef": "sv_c1_u1_dialog_001_line_01_hej_vad_gjorde_du_i_helgen_v1"
+    },
+    {
+      "contentId": "c1_dialog_line_001_01",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Hej! Vad gjorde du i helgen?",
+      "audioRef": "sv_c1_u1_dialog_001_line_01_hej_vad_gjorde_du_i_helgen_v1"
+    },
+    {
+      "contentId": "c1_u1_dialog_001_line_02_jag_akte_till_goteborg_med_familjen_vi_bodde_pa_hotell_och_besokte_liseberg_v1",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Jag åkte till Göteborg med familjen. Vi bodde på hotell och besökte Liseberg.",
+      "audioRef": "sv_c1_u1_dialog_001_line_02_jag_akte_till_goteborg_med_familjen_vi_bodde_pa_hotell_och_besokte_liseberg_v1"
+    },
+    {
+      "contentId": "c1_dialog_line_001_02",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Jag åkte till Göteborg med familjen. Vi bodde på hotell och besökte Liseberg.",
+      "audioRef": "sv_c1_u1_dialog_001_line_02_jag_akte_till_goteborg_med_familjen_vi_bodde_pa_hotell_och_besokte_liseberg_v1"
+    },
+    {
+      "contentId": "c1_u1_dialog_001_line_03_vad_roligt_at_ni_nagot_speciellt_v1",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Vad roligt! Åt ni något speciellt?",
+      "audioRef": "sv_c1_u1_dialog_001_line_03_vad_roligt_at_ni_nagot_speciellt_v1"
+    },
+    {
+      "contentId": "c1_dialog_line_001_03",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Vad roligt! Åt ni något speciellt?",
+      "audioRef": "sv_c1_u1_dialog_001_line_03_vad_roligt_at_ni_nagot_speciellt_v1"
+    },
+    {
+      "contentId": "c1_u1_dialog_001_line_04_ja_vi_at_fisk_och_rakor_vid_hamnen_det_var_jattegott_barnen_drack_saft_och_vi_vuxna_drack_vin_v1",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Ja! Vi åt fisk och räkor vid hamnen. Det var jättegott! Barnen drack saft och vi vuxna drack vin.",
+      "audioRef": "sv_c1_u1_dialog_001_line_04_ja_vi_at_fisk_och_rakor_vid_hamnen_det_var_jattegott_barnen_drack_saft_och_vi_vuxna_drack_vin_v1"
+    },
+    {
+      "contentId": "c1_dialog_line_001_04",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Ja! Vi åt fisk och räkor vid hamnen. Det var jättegott! Barnen drack saft och vi vuxna drack vin.",
+      "audioRef": "sv_c1_u1_dialog_001_line_04_ja_vi_at_fisk_och_rakor_vid_hamnen_det_var_jattegott_barnen_drack_saft_och_vi_vuxna_drack_vin_v1"
+    },
+    {
+      "contentId": "c1_u1_dialog_001_line_05_traffade_ni_nagra_gamla_vanner_v1",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Träffade ni några gamla vänner?",
+      "audioRef": "sv_c1_u1_dialog_001_line_05_traffade_ni_nagra_gamla_vanner_v1"
+    },
+    {
+      "contentId": "c1_dialog_line_001_05",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Träffade ni några gamla vänner?",
+      "audioRef": "sv_c1_u1_dialog_001_line_05_traffade_ni_nagra_gamla_vanner_v1"
+    },
+    {
+      "contentId": "c1_u1_dialog_001_line_06_ja_vi_traffade_min_gamla_klasskompis_vi_pratade_i_flera_timmar_och_kom_ihag_massa_saker_fran_skolan_v1",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Ja, vi träffade min gamla klasskompis. Vi pratade i flera timmar och kom ihåg massa saker från skolan.",
+      "audioRef": "sv_c1_u1_dialog_001_line_06_ja_vi_traffade_min_gamla_klasskompis_vi_pratade_i_flera_timmar_och_kom_ihag_massa_saker_fran_skolan_v1"
+    },
+    {
+      "contentId": "c1_dialog_line_001_06",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Ja, vi träffade min gamla klasskompis. Vi pratade i flera timmar och kom ihåg massa saker från skolan.",
+      "audioRef": "sv_c1_u1_dialog_001_line_06_ja_vi_traffade_min_gamla_klasskompis_vi_pratade_i_flera_timmar_och_kom_ihag_massa_saker_fran_skolan_v1"
+    },
+    {
+      "contentId": "c1_u1_dialog_002_line_01_du_var_inte_pa_motet_igar_vad_hande_v1",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Du var inte på mötet igår. Vad hände?",
+      "audioRef": "sv_c1_u1_dialog_002_line_01_du_var_inte_pa_motet_igar_vad_hande_v1"
+    },
+    {
+      "contentId": "c1_dialog_line_002_01",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Du var inte på mötet igår. Vad hände?",
+      "audioRef": "sv_c1_u1_dialog_002_line_01_du_var_inte_pa_motet_igar_vad_hande_v1"
+    },
+    {
+      "contentId": "c1_u1_dialog_002_line_02_forlat_jag_glomde_det_jag_hade_ont_i_magen_och_stannade_hemma_v1",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Förlåt, jag glömde det. Jag hade ont i magen och stannade hemma.",
+      "audioRef": "sv_c1_u1_dialog_002_line_02_forlat_jag_glomde_det_jag_hade_ont_i_magen_och_stannade_hemma_v1"
+    },
+    {
+      "contentId": "c1_dialog_line_002_02",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Förlåt, jag glömde det. Jag hade ont i magen och stannade hemma.",
+      "audioRef": "sv_c1_u1_dialog_002_line_02_forlat_jag_glomde_det_jag_hade_ont_i_magen_och_stannade_hemma_v1"
+    },
+    {
+      "contentId": "c1_u1_dialog_002_line_03_okej_vi_diskuterade_det_nya_projektet_chefen_presenterade_planen_och_alla_tyckte_att_det_lat_bra_v1",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Okej. Vi diskuterade det nya projektet. Chefen presenterade planen och alla tyckte att det lät bra.",
+      "audioRef": "sv_c1_u1_dialog_002_line_03_okej_vi_diskuterade_det_nya_projektet_chefen_presenterade_planen_och_alla_tyckte_att_det_lat_bra_v1"
+    },
+    {
+      "contentId": "c1_dialog_line_002_03",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Okej. Vi diskuterade det nya projektet. Chefen presenterade planen och alla tyckte att det lät bra.",
+      "audioRef": "sv_c1_u1_dialog_002_line_03_okej_vi_diskuterade_det_nya_projektet_chefen_presenterade_planen_och_alla_tyckte_att_det_lat_bra_v1"
+    },
+    {
+      "contentId": "c1_u1_dialog_002_line_04_bestamde_ni_nagot_v1",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Bestämde ni något?",
+      "audioRef": "sv_c1_u1_dialog_002_line_04_bestamde_ni_nagot_v1"
+    },
+    {
+      "contentId": "c1_dialog_line_002_04",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Bestämde ni något?",
+      "audioRef": "sv_c1_u1_dialog_002_line_04_bestamde_ni_nagot_v1"
+    },
+    {
+      "contentId": "c1_u1_dialog_002_line_05_ja_vi_bestamde_att_starta_projektet_nasta_manad_jag_skickade_ett_mejl_med_all_information_fick_du_det_v1",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Ja, vi bestämde att starta projektet nästa månad. Jag skickade ett mejl med all information. Fick du det?",
+      "audioRef": "sv_c1_u1_dialog_002_line_05_ja_vi_bestamde_att_starta_projektet_nasta_manad_jag_skickade_ett_mejl_med_all_information_fick_du_det_v1"
+    },
+    {
+      "contentId": "c1_dialog_line_002_05",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Ja, vi bestämde att starta projektet nästa månad. Jag skickade ett mejl med all information. Fick du det?",
+      "audioRef": "sv_c1_u1_dialog_002_line_05_ja_vi_bestamde_att_starta_projektet_nasta_manad_jag_skickade_ett_mejl_med_all_information_fick_du_det_v1"
+    },
+    {
+      "contentId": "c1_u1_dialog_002_line_06_ja_tack_jag_laste_det_just_det_verkade_intressant_v1",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Ja, tack! Jag läste det just. Det verkade intressant!",
+      "audioRef": "sv_c1_u1_dialog_002_line_06_ja_tack_jag_laste_det_just_det_verkade_intressant_v1"
+    },
+    {
+      "contentId": "c1_dialog_line_002_06",
+      "audioType": "dialogue_line_group",
+      "sourceText": "Ja, tack! Jag läste det just. Det verkade intressant!",
+      "audioRef": "sv_c1_u1_dialog_002_line_06_ja_tack_jag_laste_det_just_det_verkade_intressant_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_001_ga_v1",
+      "audioType": "question_prompt",
+      "sourceText": "gå",
+      "audioRef": "sv_c1_u1_qp_001_ga_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_002_ata_v1",
+      "audioType": "question_prompt",
+      "sourceText": "äta",
+      "audioRef": "sv_c1_u1_qp_002_ata_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_003_komma_v1",
+      "audioType": "question_prompt",
+      "sourceText": "komma",
+      "audioRef": "sv_c1_u1_qp_003_komma_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_004_dricka_v1",
+      "audioType": "question_prompt",
+      "sourceText": "dricka",
+      "audioRef": "sv_c1_u1_qp_004_dricka_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_005_fa_v1",
+      "audioType": "question_prompt",
+      "sourceText": "få",
+      "audioRef": "sv_c1_u1_qp_005_fa_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_006_lasa_v1",
+      "audioType": "question_prompt",
+      "sourceText": "läsa",
+      "audioRef": "sv_c1_u1_qp_006_lasa_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_007_glomma_v1",
+      "audioType": "question_prompt",
+      "sourceText": "glömma",
+      "audioRef": "sv_c1_u1_qp_007_glomma_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_008_stanna_v1",
+      "audioType": "question_prompt",
+      "sourceText": "stanna",
+      "audioRef": "sv_c1_u1_qp_008_stanna_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_009_diskutera_v1",
+      "audioType": "question_prompt",
+      "sourceText": "diskutera",
+      "audioRef": "sv_c1_u1_qp_009_diskutera_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_010_presentera_v1",
+      "audioType": "question_prompt",
+      "sourceText": "presentera",
+      "audioRef": "sv_c1_u1_qp_010_presentera_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_011_tycka_v1",
+      "audioType": "question_prompt",
+      "sourceText": "tycka",
+      "audioRef": "sv_c1_u1_qp_011_tycka_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_012_bestamma_v1",
+      "audioType": "question_prompt",
+      "sourceText": "bestämma",
+      "audioRef": "sv_c1_u1_qp_012_bestamma_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_013_starta_v1",
+      "audioType": "question_prompt",
+      "sourceText": "starta",
+      "audioRef": "sv_c1_u1_qp_013_starta_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_014_skicka_v1",
+      "audioType": "question_prompt",
+      "sourceText": "skicka",
+      "audioRef": "sv_c1_u1_qp_014_skicka_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_015_prata_v1",
+      "audioType": "question_prompt",
+      "sourceText": "prata",
+      "audioRef": "sv_c1_u1_qp_015_prata_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_016_komma_ihag_v1",
+      "audioType": "question_prompt",
+      "sourceText": "komma ihåg",
+      "audioRef": "sv_c1_u1_qp_016_komma_ihag_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_017_handa_v1",
+      "audioType": "question_prompt",
+      "sourceText": "hända",
+      "audioRef": "sv_c1_u1_qp_017_handa_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_018_besoka_v1",
+      "audioType": "question_prompt",
+      "sourceText": "besöka",
+      "audioRef": "sv_c1_u1_qp_018_besoka_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_019_traffa_v1",
+      "audioType": "question_prompt",
+      "sourceText": "träffa",
+      "audioRef": "sv_c1_u1_qp_019_traffa_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_020_aka_v1",
+      "audioType": "question_prompt",
+      "sourceText": "åka",
+      "audioRef": "sv_c1_u1_qp_020_aka_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_021_en_helg_v1",
+      "audioType": "question_prompt",
+      "sourceText": "en helg",
+      "audioRef": "sv_c1_u1_qp_021_en_helg_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_022_en_familj_v1",
+      "audioType": "question_prompt",
+      "sourceText": "en familj",
+      "audioRef": "sv_c1_u1_qp_022_en_familj_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_023_ett_hotell_v1",
+      "audioType": "question_prompt",
+      "sourceText": "ett hotell",
+      "audioRef": "sv_c1_u1_qp_023_ett_hotell_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_024_en_hamn_v1",
+      "audioType": "question_prompt",
+      "sourceText": "en hamn",
+      "audioRef": "sv_c1_u1_qp_024_en_hamn_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_025_en_van_v1",
+      "audioType": "question_prompt",
+      "sourceText": "en vän",
+      "audioRef": "sv_c1_u1_qp_025_en_van_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_026_en_skola_v1",
+      "audioType": "question_prompt",
+      "sourceText": "en skola",
+      "audioRef": "sv_c1_u1_qp_026_en_skola_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_027_ett_mote_v1",
+      "audioType": "question_prompt",
+      "sourceText": "ett möte",
+      "audioRef": "sv_c1_u1_qp_027_ett_mote_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_028_ett_projekt_v1",
+      "audioType": "question_prompt",
+      "sourceText": "ett projekt",
+      "audioRef": "sv_c1_u1_qp_028_ett_projekt_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_029_en_chef_v1",
+      "audioType": "question_prompt",
+      "sourceText": "en chef",
+      "audioRef": "sv_c1_u1_qp_029_en_chef_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_030_en_plan_v1",
+      "audioType": "question_prompt",
+      "sourceText": "en plan",
+      "audioRef": "sv_c1_u1_qp_030_en_plan_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_031_en_manad_v1",
+      "audioType": "question_prompt",
+      "sourceText": "en månad",
+      "audioRef": "sv_c1_u1_qp_031_en_manad_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_032_ett_mejl_v1",
+      "audioType": "question_prompt",
+      "sourceText": "ett mejl",
+      "audioRef": "sv_c1_u1_qp_032_ett_mejl_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_033_en_information_v1",
+      "audioType": "question_prompt",
+      "sourceText": "en information",
+      "audioRef": "sv_c1_u1_qp_033_en_information_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_034_en_mage_v1",
+      "audioType": "question_prompt",
+      "sourceText": "en mage",
+      "audioRef": "sv_c1_u1_qp_034_en_mage_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_035_jag_akte_till_goteborg_i_helgen_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Jag åkte till Göteborg i helgen.",
+      "audioRef": "sv_c1_u1_qp_035_jag_akte_till_goteborg_i_helgen_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_036_vi_bodde_pa_hotell_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Vi bodde på hotell.",
+      "audioRef": "sv_c1_u1_qp_036_vi_bodde_pa_hotell_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_037_vi_at_fisk_och_rakor_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Vi åt fisk och räkor.",
+      "audioRef": "sv_c1_u1_qp_037_vi_at_fisk_och_rakor_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_038_barnen_drack_saft_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Barnen drack saft.",
+      "audioRef": "sv_c1_u1_qp_038_barnen_drack_saft_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_039_vi_traffade_gamla_vanner_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Vi träffade gamla vänner.",
+      "audioRef": "sv_c1_u1_qp_039_vi_traffade_gamla_vanner_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_040_du_var_inte_pa_motet_igar_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Du var inte på mötet igår.",
+      "audioRef": "sv_c1_u1_qp_040_du_var_inte_pa_motet_igar_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_041_vad_hande_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Vad hände?",
+      "audioRef": "sv_c1_u1_qp_041_vad_hande_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_042_jag_fick_mejlet_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Jag fick mejlet.",
+      "audioRef": "sv_c1_u1_qp_042_jag_fick_mejlet_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_043_jag_laste_det_just_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Jag läste det just.",
+      "audioRef": "sv_c1_u1_qp_043_jag_laste_det_just_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_044_jag_glomde_det_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Jag glömde det.",
+      "audioRef": "sv_c1_u1_qp_044_jag_glomde_det_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_045_jag_hade_ont_i_magen_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Jag hade ont i magen.",
+      "audioRef": "sv_c1_u1_qp_045_jag_hade_ont_i_magen_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_046_jag_stannade_hemma_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Jag stannade hemma.",
+      "audioRef": "sv_c1_u1_qp_046_jag_stannade_hemma_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_047_vi_diskuterade_det_nya_projektet_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Vi diskuterade det nya projektet.",
+      "audioRef": "sv_c1_u1_qp_047_vi_diskuterade_det_nya_projektet_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_048_chefen_presenterade_planen_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Chefen presenterade planen.",
+      "audioRef": "sv_c1_u1_qp_048_chefen_presenterade_planen_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_049_alla_tyckte_att_det_lat_bra_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Alla tyckte att det lät bra.",
+      "audioRef": "sv_c1_u1_qp_049_alla_tyckte_att_det_lat_bra_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_050_vi_bestamde_att_starta_projektet_nasta_manad_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Vi bestämde att starta projektet nästa månad.",
+      "audioRef": "sv_c1_u1_qp_050_vi_bestamde_att_starta_projektet_nasta_manad_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_051_jag_skickade_ett_mejl_med_all_information_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Jag skickade ett mejl med all information.",
+      "audioRef": "sv_c1_u1_qp_051_jag_skickade_ett_mejl_med_all_information_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_052_vad_gjorde_du_i_helgen_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Vad gjorde du i helgen?",
+      "audioRef": "sv_c1_u1_qp_052_vad_gjorde_du_i_helgen_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_053_at_ni_nagot_speciellt_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Åt ni något speciellt?",
+      "audioRef": "sv_c1_u1_qp_053_at_ni_nagot_speciellt_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_054_bestamde_ni_nagot_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Bestämde ni något?",
+      "audioRef": "sv_c1_u1_qp_054_bestamde_ni_nagot_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_055_fick_du_det_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Fick du det?",
+      "audioRef": "sv_c1_u1_qp_055_fick_du_det_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_056_vad_gjorde_du_i_helgen_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Vad gjorde du i helgen?",
+      "audioRef": "sv_c1_u1_qp_056_vad_gjorde_du_i_helgen_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_057_jag_akte_till_goteborg_med_familjen_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Jag åkte till Göteborg med familjen.",
+      "audioRef": "sv_c1_u1_qp_057_jag_akte_till_goteborg_med_familjen_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_058_vi_bodde_pa_hotell_och_besokte_liseberg_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Vi bodde på hotell och besökte Liseberg.",
+      "audioRef": "sv_c1_u1_qp_058_vi_bodde_pa_hotell_och_besokte_liseberg_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_059_at_ni_nagot_speciellt_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Åt ni något speciellt?",
+      "audioRef": "sv_c1_u1_qp_059_at_ni_nagot_speciellt_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_060_vi_at_fisk_och_rakor_vid_hamnen_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Vi åt fisk och räkor vid hamnen.",
+      "audioRef": "sv_c1_u1_qp_060_vi_at_fisk_och_rakor_vid_hamnen_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_061_barnen_drack_saft_och_vi_vuxna_drack_vin_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Barnen drack saft och vi vuxna drack vin.",
+      "audioRef": "sv_c1_u1_qp_061_barnen_drack_saft_och_vi_vuxna_drack_vin_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_062_traffade_ni_nagra_gamla_vanner_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Träffade ni några gamla vänner?",
+      "audioRef": "sv_c1_u1_qp_062_traffade_ni_nagra_gamla_vanner_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_063_vi_pratade_i_flera_timmar_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Vi pratade i flera timmar.",
+      "audioRef": "sv_c1_u1_qp_063_vi_pratade_i_flera_timmar_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_064_vi_kom_ihag_massa_saker_fran_skolan_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Vi kom ihåg massa saker från skolan.",
+      "audioRef": "sv_c1_u1_qp_064_vi_kom_ihag_massa_saker_fran_skolan_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_065_du_var_inte_pa_motet_igar_vad_hande_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Du var inte på mötet igår. Vad hände?",
+      "audioRef": "sv_c1_u1_qp_065_du_var_inte_pa_motet_igar_vad_hande_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_066_forlat_jag_glomde_det_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Förlåt, jag glömde det.",
+      "audioRef": "sv_c1_u1_qp_066_forlat_jag_glomde_det_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_067_jag_hade_ont_i_magen_och_stannade_hemma_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Jag hade ont i magen och stannade hemma.",
+      "audioRef": "sv_c1_u1_qp_067_jag_hade_ont_i_magen_och_stannade_hemma_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_068_vi_diskuterade_det_nya_projektet_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Vi diskuterade det nya projektet.",
+      "audioRef": "sv_c1_u1_qp_068_vi_diskuterade_det_nya_projektet_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_069_chefen_presenterade_planen_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Chefen presenterade planen.",
+      "audioRef": "sv_c1_u1_qp_069_chefen_presenterade_planen_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_070_alla_tyckte_att_det_lat_bra_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Alla tyckte att det lät bra.",
+      "audioRef": "sv_c1_u1_qp_070_alla_tyckte_att_det_lat_bra_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_071_bestamde_ni_nagot_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Bestämde ni något?",
+      "audioRef": "sv_c1_u1_qp_071_bestamde_ni_nagot_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_072_vi_bestamde_att_starta_projektet_nasta_manad_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Vi bestämde att starta projektet nästa månad.",
+      "audioRef": "sv_c1_u1_qp_072_vi_bestamde_att_starta_projektet_nasta_manad_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_073_jag_skickade_ett_mejl_med_all_information_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Jag skickade ett mejl med all information.",
+      "audioRef": "sv_c1_u1_qp_073_jag_skickade_ett_mejl_med_all_information_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_074_fick_du_det_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Fick du det?",
+      "audioRef": "sv_c1_u1_qp_074_fick_du_det_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_075_jag_laste_det_just_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Jag läste det just.",
+      "audioRef": "sv_c1_u1_qp_075_jag_laste_det_just_v1"
+    },
+    {
+      "contentId": "c1_u1_qp_076_det_verkade_intressant_v1",
+      "audioType": "question_prompt",
+      "sourceText": "Det verkade intressant.",
+      "audioRef": "sv_c1_u1_qp_076_det_verkade_intressant_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_001_vara_v1",
+      "audioType": "question_prompt",
+      "sourceText": "vara",
+      "audioRef": "sv_c1_u1_adv_verb_001_vara_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_002_ar_v1",
+      "audioType": "question_prompt",
+      "sourceText": "är",
+      "audioRef": "sv_c1_u1_adv_verb_002_ar_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_003_var_v1",
+      "audioType": "question_prompt",
+      "sourceText": "var",
+      "audioRef": "sv_c1_u1_adv_verb_003_var_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_004_varit_v1",
+      "audioType": "question_prompt",
+      "sourceText": "varit",
+      "audioRef": "sv_c1_u1_adv_verb_004_varit_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_005_ga_v1",
+      "audioType": "question_prompt",
+      "sourceText": "gå",
+      "audioRef": "sv_c1_u1_adv_verb_005_ga_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_006_gar_v1",
+      "audioType": "question_prompt",
+      "sourceText": "går",
+      "audioRef": "sv_c1_u1_adv_verb_006_gar_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_007_gick_v1",
+      "audioType": "question_prompt",
+      "sourceText": "gick",
+      "audioRef": "sv_c1_u1_adv_verb_007_gick_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_008_gatt_v1",
+      "audioType": "question_prompt",
+      "sourceText": "gått",
+      "audioRef": "sv_c1_u1_adv_verb_008_gatt_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_009_ata_v1",
+      "audioType": "question_prompt",
+      "sourceText": "äta",
+      "audioRef": "sv_c1_u1_adv_verb_009_ata_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_010_ater_v1",
+      "audioType": "question_prompt",
+      "sourceText": "äter",
+      "audioRef": "sv_c1_u1_adv_verb_010_ater_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_011_at_v1",
+      "audioType": "question_prompt",
+      "sourceText": "åt",
+      "audioRef": "sv_c1_u1_adv_verb_011_at_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_012_atit_v1",
+      "audioType": "question_prompt",
+      "sourceText": "ätit",
+      "audioRef": "sv_c1_u1_adv_verb_012_atit_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_013_komma_v1",
+      "audioType": "question_prompt",
+      "sourceText": "komma",
+      "audioRef": "sv_c1_u1_adv_verb_013_komma_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_014_kommer_v1",
+      "audioType": "question_prompt",
+      "sourceText": "kommer",
+      "audioRef": "sv_c1_u1_adv_verb_014_kommer_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_015_kom_v1",
+      "audioType": "question_prompt",
+      "sourceText": "kom",
+      "audioRef": "sv_c1_u1_adv_verb_015_kom_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_016_kommit_v1",
+      "audioType": "question_prompt",
+      "sourceText": "kommit",
+      "audioRef": "sv_c1_u1_adv_verb_016_kommit_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_017_dricka_v1",
+      "audioType": "question_prompt",
+      "sourceText": "dricka",
+      "audioRef": "sv_c1_u1_adv_verb_017_dricka_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_018_dricker_v1",
+      "audioType": "question_prompt",
+      "sourceText": "dricker",
+      "audioRef": "sv_c1_u1_adv_verb_018_dricker_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_019_drack_v1",
+      "audioType": "question_prompt",
+      "sourceText": "drack",
+      "audioRef": "sv_c1_u1_adv_verb_019_drack_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_020_druckit_v1",
+      "audioType": "question_prompt",
+      "sourceText": "druckit",
+      "audioRef": "sv_c1_u1_adv_verb_020_druckit_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_021_fa_v1",
+      "audioType": "question_prompt",
+      "sourceText": "få",
+      "audioRef": "sv_c1_u1_adv_verb_021_fa_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_022_far_v1",
+      "audioType": "question_prompt",
+      "sourceText": "får",
+      "audioRef": "sv_c1_u1_adv_verb_022_far_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_023_fick_v1",
+      "audioType": "question_prompt",
+      "sourceText": "fick",
+      "audioRef": "sv_c1_u1_adv_verb_023_fick_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_024_fatt_v1",
+      "audioType": "question_prompt",
+      "sourceText": "fått",
+      "audioRef": "sv_c1_u1_adv_verb_024_fatt_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_025_lasa_v1",
+      "audioType": "question_prompt",
+      "sourceText": "läsa",
+      "audioRef": "sv_c1_u1_adv_verb_025_lasa_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_026_laser_v1",
+      "audioType": "question_prompt",
+      "sourceText": "läser",
+      "audioRef": "sv_c1_u1_adv_verb_026_laser_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_027_laste_v1",
+      "audioType": "question_prompt",
+      "sourceText": "läste",
+      "audioRef": "sv_c1_u1_adv_verb_027_laste_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_028_last_v1",
+      "audioType": "question_prompt",
+      "sourceText": "läst",
+      "audioRef": "sv_c1_u1_adv_verb_028_last_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_029_gora_v1",
+      "audioType": "question_prompt",
+      "sourceText": "göra",
+      "audioRef": "sv_c1_u1_adv_verb_029_gora_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_030_gor_v1",
+      "audioType": "question_prompt",
+      "sourceText": "gör",
+      "audioRef": "sv_c1_u1_adv_verb_030_gor_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_031_gjorde_v1",
+      "audioType": "question_prompt",
+      "sourceText": "gjorde",
+      "audioRef": "sv_c1_u1_adv_verb_031_gjorde_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_032_gjort_v1",
+      "audioType": "question_prompt",
+      "sourceText": "gjort",
+      "audioRef": "sv_c1_u1_adv_verb_032_gjort_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_033_glomma_v1",
+      "audioType": "question_prompt",
+      "sourceText": "glömma",
+      "audioRef": "sv_c1_u1_adv_verb_033_glomma_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_034_glommer_v1",
+      "audioType": "question_prompt",
+      "sourceText": "glömmer",
+      "audioRef": "sv_c1_u1_adv_verb_034_glommer_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_035_glomde_v1",
+      "audioType": "question_prompt",
+      "sourceText": "glömde",
+      "audioRef": "sv_c1_u1_adv_verb_035_glomde_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_036_glomt_v1",
+      "audioType": "question_prompt",
+      "sourceText": "glömt",
+      "audioRef": "sv_c1_u1_adv_verb_036_glomt_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_037_stanna_v1",
+      "audioType": "question_prompt",
+      "sourceText": "stanna",
+      "audioRef": "sv_c1_u1_adv_verb_037_stanna_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_038_stannar_v1",
+      "audioType": "question_prompt",
+      "sourceText": "stannar",
+      "audioRef": "sv_c1_u1_adv_verb_038_stannar_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_039_stannade_v1",
+      "audioType": "question_prompt",
+      "sourceText": "stannade",
+      "audioRef": "sv_c1_u1_adv_verb_039_stannade_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_040_stannat_v1",
+      "audioType": "question_prompt",
+      "sourceText": "stannat",
+      "audioRef": "sv_c1_u1_adv_verb_040_stannat_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_041_diskutera_v1",
+      "audioType": "question_prompt",
+      "sourceText": "diskutera",
+      "audioRef": "sv_c1_u1_adv_verb_041_diskutera_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_042_diskuterar_v1",
+      "audioType": "question_prompt",
+      "sourceText": "diskuterar",
+      "audioRef": "sv_c1_u1_adv_verb_042_diskuterar_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_043_diskuterade_v1",
+      "audioType": "question_prompt",
+      "sourceText": "diskuterade",
+      "audioRef": "sv_c1_u1_adv_verb_043_diskuterade_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_044_diskuterat_v1",
+      "audioType": "question_prompt",
+      "sourceText": "diskuterat",
+      "audioRef": "sv_c1_u1_adv_verb_044_diskuterat_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_045_presentera_v1",
+      "audioType": "question_prompt",
+      "sourceText": "presentera",
+      "audioRef": "sv_c1_u1_adv_verb_045_presentera_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_046_presenterar_v1",
+      "audioType": "question_prompt",
+      "sourceText": "presenterar",
+      "audioRef": "sv_c1_u1_adv_verb_046_presenterar_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_047_presenterade_v1",
+      "audioType": "question_prompt",
+      "sourceText": "presenterade",
+      "audioRef": "sv_c1_u1_adv_verb_047_presenterade_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_048_presenterat_v1",
+      "audioType": "question_prompt",
+      "sourceText": "presenterat",
+      "audioRef": "sv_c1_u1_adv_verb_048_presenterat_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_049_tycka_v1",
+      "audioType": "question_prompt",
+      "sourceText": "tycka",
+      "audioRef": "sv_c1_u1_adv_verb_049_tycka_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_050_tycker_v1",
+      "audioType": "question_prompt",
+      "sourceText": "tycker",
+      "audioRef": "sv_c1_u1_adv_verb_050_tycker_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_051_tyckte_v1",
+      "audioType": "question_prompt",
+      "sourceText": "tyckte",
+      "audioRef": "sv_c1_u1_adv_verb_051_tyckte_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_052_tyckt_v1",
+      "audioType": "question_prompt",
+      "sourceText": "tyckt",
+      "audioRef": "sv_c1_u1_adv_verb_052_tyckt_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_053_bestamma_v1",
+      "audioType": "question_prompt",
+      "sourceText": "bestämma",
+      "audioRef": "sv_c1_u1_adv_verb_053_bestamma_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_054_bestammer_v1",
+      "audioType": "question_prompt",
+      "sourceText": "bestämmer",
+      "audioRef": "sv_c1_u1_adv_verb_054_bestammer_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_055_bestamde_v1",
+      "audioType": "question_prompt",
+      "sourceText": "bestämde",
+      "audioRef": "sv_c1_u1_adv_verb_055_bestamde_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_056_bestamt_v1",
+      "audioType": "question_prompt",
+      "sourceText": "bestämt",
+      "audioRef": "sv_c1_u1_adv_verb_056_bestamt_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_057_starta_v1",
+      "audioType": "question_prompt",
+      "sourceText": "starta",
+      "audioRef": "sv_c1_u1_adv_verb_057_starta_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_058_startar_v1",
+      "audioType": "question_prompt",
+      "sourceText": "startar",
+      "audioRef": "sv_c1_u1_adv_verb_058_startar_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_059_startade_v1",
+      "audioType": "question_prompt",
+      "sourceText": "startade",
+      "audioRef": "sv_c1_u1_adv_verb_059_startade_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_060_startat_v1",
+      "audioType": "question_prompt",
+      "sourceText": "startat",
+      "audioRef": "sv_c1_u1_adv_verb_060_startat_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_061_skicka_v1",
+      "audioType": "question_prompt",
+      "sourceText": "skicka",
+      "audioRef": "sv_c1_u1_adv_verb_061_skicka_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_062_skickar_v1",
+      "audioType": "question_prompt",
+      "sourceText": "skickar",
+      "audioRef": "sv_c1_u1_adv_verb_062_skickar_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_063_skickade_v1",
+      "audioType": "question_prompt",
+      "sourceText": "skickade",
+      "audioRef": "sv_c1_u1_adv_verb_063_skickade_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_064_skickat_v1",
+      "audioType": "question_prompt",
+      "sourceText": "skickat",
+      "audioRef": "sv_c1_u1_adv_verb_064_skickat_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_065_prata_v1",
+      "audioType": "question_prompt",
+      "sourceText": "prata",
+      "audioRef": "sv_c1_u1_adv_verb_065_prata_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_066_pratar_v1",
+      "audioType": "question_prompt",
+      "sourceText": "pratar",
+      "audioRef": "sv_c1_u1_adv_verb_066_pratar_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_067_pratade_v1",
+      "audioType": "question_prompt",
+      "sourceText": "pratade",
+      "audioRef": "sv_c1_u1_adv_verb_067_pratade_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_068_pratat_v1",
+      "audioType": "question_prompt",
+      "sourceText": "pratat",
+      "audioRef": "sv_c1_u1_adv_verb_068_pratat_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_069_verka_v1",
+      "audioType": "question_prompt",
+      "sourceText": "verka",
+      "audioRef": "sv_c1_u1_adv_verb_069_verka_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_070_verkar_v1",
+      "audioType": "question_prompt",
+      "sourceText": "verkar",
+      "audioRef": "sv_c1_u1_adv_verb_070_verkar_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_071_verkade_v1",
+      "audioType": "question_prompt",
+      "sourceText": "verkade",
+      "audioRef": "sv_c1_u1_adv_verb_071_verkade_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_072_verkat_v1",
+      "audioType": "question_prompt",
+      "sourceText": "verkat",
+      "audioRef": "sv_c1_u1_adv_verb_072_verkat_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_073_traffa_v1",
+      "audioType": "question_prompt",
+      "sourceText": "träffa",
+      "audioRef": "sv_c1_u1_adv_verb_073_traffa_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_074_traffar_v1",
+      "audioType": "question_prompt",
+      "sourceText": "träffar",
+      "audioRef": "sv_c1_u1_adv_verb_074_traffar_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_075_traffade_v1",
+      "audioType": "question_prompt",
+      "sourceText": "träffade",
+      "audioRef": "sv_c1_u1_adv_verb_075_traffade_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_076_traffat_v1",
+      "audioType": "question_prompt",
+      "sourceText": "träffat",
+      "audioRef": "sv_c1_u1_adv_verb_076_traffat_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_077_besoka_v1",
+      "audioType": "question_prompt",
+      "sourceText": "besöka",
+      "audioRef": "sv_c1_u1_adv_verb_077_besoka_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_078_besoker_v1",
+      "audioType": "question_prompt",
+      "sourceText": "besöker",
+      "audioRef": "sv_c1_u1_adv_verb_078_besoker_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_079_besokte_v1",
+      "audioType": "question_prompt",
+      "sourceText": "besökte",
+      "audioRef": "sv_c1_u1_adv_verb_079_besokte_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_080_besokt_v1",
+      "audioType": "question_prompt",
+      "sourceText": "besökt",
+      "audioRef": "sv_c1_u1_adv_verb_080_besokt_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_081_aka_v1",
+      "audioType": "question_prompt",
+      "sourceText": "åka",
+      "audioRef": "sv_c1_u1_adv_verb_081_aka_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_082_aker_v1",
+      "audioType": "question_prompt",
+      "sourceText": "åker",
+      "audioRef": "sv_c1_u1_adv_verb_082_aker_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_083_akte_v1",
+      "audioType": "question_prompt",
+      "sourceText": "åkte",
+      "audioRef": "sv_c1_u1_adv_verb_083_akte_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_084_akt_v1",
+      "audioType": "question_prompt",
+      "sourceText": "åkt",
+      "audioRef": "sv_c1_u1_adv_verb_084_akt_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_085_bo_v1",
+      "audioType": "question_prompt",
+      "sourceText": "bo",
+      "audioRef": "sv_c1_u1_adv_verb_085_bo_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_086_bor_v1",
+      "audioType": "question_prompt",
+      "sourceText": "bor",
+      "audioRef": "sv_c1_u1_adv_verb_086_bor_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_087_bodde_v1",
+      "audioType": "question_prompt",
+      "sourceText": "bodde",
+      "audioRef": "sv_c1_u1_adv_verb_087_bodde_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_088_bott_v1",
+      "audioType": "question_prompt",
+      "sourceText": "bott",
+      "audioRef": "sv_c1_u1_adv_verb_088_bott_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_089_handa_v1",
+      "audioType": "question_prompt",
+      "sourceText": "hända",
+      "audioRef": "sv_c1_u1_adv_verb_089_handa_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_090_hander_v1",
+      "audioType": "question_prompt",
+      "sourceText": "händer",
+      "audioRef": "sv_c1_u1_adv_verb_090_hander_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_091_hande_v1",
+      "audioType": "question_prompt",
+      "sourceText": "hände",
+      "audioRef": "sv_c1_u1_adv_verb_091_hande_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_verb_092_hant_v1",
+      "audioType": "question_prompt",
+      "sourceText": "hänt",
+      "audioRef": "sv_c1_u1_adv_verb_092_hant_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_024_en_helg_v1",
+      "audioType": "question_prompt",
+      "sourceText": "en helg",
+      "audioRef": "sv_c1_u1_adv_024_en_helg_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_025_helgen_v1",
+      "audioType": "question_prompt",
+      "sourceText": "helgen",
+      "audioRef": "sv_c1_u1_adv_025_helgen_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_026_helger_v1",
+      "audioType": "question_prompt",
+      "sourceText": "helger",
+      "audioRef": "sv_c1_u1_adv_026_helger_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_027_helgerna_v1",
+      "audioType": "question_prompt",
+      "sourceText": "helgerna",
+      "audioRef": "sv_c1_u1_adv_027_helgerna_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_028_en_familj_v1",
+      "audioType": "question_prompt",
+      "sourceText": "en familj",
+      "audioRef": "sv_c1_u1_adv_028_en_familj_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_029_familjen_v1",
+      "audioType": "question_prompt",
+      "sourceText": "familjen",
+      "audioRef": "sv_c1_u1_adv_029_familjen_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_030_familjer_v1",
+      "audioType": "question_prompt",
+      "sourceText": "familjer",
+      "audioRef": "sv_c1_u1_adv_030_familjer_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_031_familjerna_v1",
+      "audioType": "question_prompt",
+      "sourceText": "familjerna",
+      "audioRef": "sv_c1_u1_adv_031_familjerna_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_032_ett_hotell_v1",
+      "audioType": "question_prompt",
+      "sourceText": "ett hotell",
+      "audioRef": "sv_c1_u1_adv_032_ett_hotell_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_033_hotellet_v1",
+      "audioType": "question_prompt",
+      "sourceText": "hotellet",
+      "audioRef": "sv_c1_u1_adv_033_hotellet_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_034_hotell_v1",
+      "audioType": "question_prompt",
+      "sourceText": "hotell",
+      "audioRef": "sv_c1_u1_adv_034_hotell_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_035_hotellen_v1",
+      "audioType": "question_prompt",
+      "sourceText": "hotellen",
+      "audioRef": "sv_c1_u1_adv_035_hotellen_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_036_en_hamn_v1",
+      "audioType": "question_prompt",
+      "sourceText": "en hamn",
+      "audioRef": "sv_c1_u1_adv_036_en_hamn_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_037_hamnen_v1",
+      "audioType": "question_prompt",
+      "sourceText": "hamnen",
+      "audioRef": "sv_c1_u1_adv_037_hamnen_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_038_hamnar_v1",
+      "audioType": "question_prompt",
+      "sourceText": "hamnar",
+      "audioRef": "sv_c1_u1_adv_038_hamnar_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_039_hamnarna_v1",
+      "audioType": "question_prompt",
+      "sourceText": "hamnarna",
+      "audioRef": "sv_c1_u1_adv_039_hamnarna_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_040_ett_mote_v1",
+      "audioType": "question_prompt",
+      "sourceText": "ett möte",
+      "audioRef": "sv_c1_u1_adv_040_ett_mote_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_041_motet_v1",
+      "audioType": "question_prompt",
+      "sourceText": "mötet",
+      "audioRef": "sv_c1_u1_adv_041_motet_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_042_moten_v1",
+      "audioType": "question_prompt",
+      "sourceText": "möten",
+      "audioRef": "sv_c1_u1_adv_042_moten_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_043_motena_v1",
+      "audioType": "question_prompt",
+      "sourceText": "mötena",
+      "audioRef": "sv_c1_u1_adv_043_motena_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_044_ett_projekt_v1",
+      "audioType": "question_prompt",
+      "sourceText": "ett projekt",
+      "audioRef": "sv_c1_u1_adv_044_ett_projekt_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_045_projektet_v1",
+      "audioType": "question_prompt",
+      "sourceText": "projektet",
+      "audioRef": "sv_c1_u1_adv_045_projektet_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_046_projekt_v1",
+      "audioType": "question_prompt",
+      "sourceText": "projekt",
+      "audioRef": "sv_c1_u1_adv_046_projekt_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_047_projekten_v1",
+      "audioType": "question_prompt",
+      "sourceText": "projekten",
+      "audioRef": "sv_c1_u1_adv_047_projekten_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_048_en_plan_v1",
+      "audioType": "question_prompt",
+      "sourceText": "en plan",
+      "audioRef": "sv_c1_u1_adv_048_en_plan_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_049_planen_v1",
+      "audioType": "question_prompt",
+      "sourceText": "planen",
+      "audioRef": "sv_c1_u1_adv_049_planen_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_050_planer_v1",
+      "audioType": "question_prompt",
+      "sourceText": "planer",
+      "audioRef": "sv_c1_u1_adv_050_planer_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_051_planerna_v1",
+      "audioType": "question_prompt",
+      "sourceText": "planerna",
+      "audioRef": "sv_c1_u1_adv_051_planerna_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_052_ett_mejl_v1",
+      "audioType": "question_prompt",
+      "sourceText": "ett mejl",
+      "audioRef": "sv_c1_u1_adv_052_ett_mejl_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_053_mejlet_v1",
+      "audioType": "question_prompt",
+      "sourceText": "mejlet",
+      "audioRef": "sv_c1_u1_adv_053_mejlet_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_054_mejl_v1",
+      "audioType": "question_prompt",
+      "sourceText": "mejl",
+      "audioRef": "sv_c1_u1_adv_054_mejl_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_055_mejlen_v1",
+      "audioType": "question_prompt",
+      "sourceText": "mejlen",
+      "audioRef": "sv_c1_u1_adv_055_mejlen_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_056_en_mage_v1",
+      "audioType": "question_prompt",
+      "sourceText": "en mage",
+      "audioRef": "sv_c1_u1_adv_056_en_mage_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_057_magen_v1",
+      "audioType": "question_prompt",
+      "sourceText": "magen",
+      "audioRef": "sv_c1_u1_adv_057_magen_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_058_magar_v1",
+      "audioType": "question_prompt",
+      "sourceText": "magar",
+      "audioRef": "sv_c1_u1_adv_058_magar_v1"
+    },
+    {
+      "contentId": "c1_u1_adv_059_magarna_v1",
+      "audioType": "question_prompt",
+      "sourceText": "magarna",
+      "audioRef": "sv_c1_u1_adv_059_magarna_v1"
+    },
+    {
+      "contentId": "c1_vocab_ga",
+      "audioType": "question_prompt",
+      "sourceText": "gå",
+      "audioRef": "sv_c1_u1_qp_001_ga_v1"
+    },
+    {
+      "contentId": "c1_vocab_ata",
+      "audioType": "question_prompt",
+      "sourceText": "äta",
+      "audioRef": "sv_c1_u1_qp_002_ata_v1"
+    },
+    {
+      "contentId": "c1_vocab_komma",
+      "audioType": "question_prompt",
+      "sourceText": "komma",
+      "audioRef": "sv_c1_u1_qp_003_komma_v1"
+    },
+    {
+      "contentId": "c1_vocab_dricka",
+      "audioType": "question_prompt",
+      "sourceText": "dricka",
+      "audioRef": "sv_c1_u1_qp_004_dricka_v1"
+    },
+    {
+      "contentId": "c1_vocab_fa",
+      "audioType": "question_prompt",
+      "sourceText": "få",
+      "audioRef": "sv_c1_u1_qp_005_fa_v1"
+    },
+    {
+      "contentId": "c1_vocab_lasa",
+      "audioType": "question_prompt",
+      "sourceText": "läsa",
+      "audioRef": "sv_c1_u1_qp_006_lasa_v1"
+    },
+    {
+      "contentId": "c1_vocab_glomma",
+      "audioType": "question_prompt",
+      "sourceText": "glömma",
+      "audioRef": "sv_c1_u1_qp_007_glomma_v1"
+    },
+    {
+      "contentId": "c1_vocab_stanna",
+      "audioType": "question_prompt",
+      "sourceText": "stanna",
+      "audioRef": "sv_c1_u1_qp_008_stanna_v1"
+    },
+    {
+      "contentId": "c1_vocab_diskutera",
+      "audioType": "question_prompt",
+      "sourceText": "diskutera",
+      "audioRef": "sv_c1_u1_qp_009_diskutera_v1"
+    },
+    {
+      "contentId": "c1_vocab_presentera",
+      "audioType": "question_prompt",
+      "sourceText": "presentera",
+      "audioRef": "sv_c1_u1_qp_010_presentera_v1"
+    },
+    {
+      "contentId": "c1_vocab_tycka",
+      "audioType": "question_prompt",
+      "sourceText": "tycka",
+      "audioRef": "sv_c1_u1_qp_011_tycka_v1"
+    },
+    {
+      "contentId": "c1_vocab_bestamma",
+      "audioType": "question_prompt",
+      "sourceText": "bestämma",
+      "audioRef": "sv_c1_u1_qp_012_bestamma_v1"
+    },
+    {
+      "contentId": "c1_vocab_starta",
+      "audioType": "question_prompt",
+      "sourceText": "starta",
+      "audioRef": "sv_c1_u1_qp_013_starta_v1"
+    },
+    {
+      "contentId": "c1_vocab_skicka",
+      "audioType": "question_prompt",
+      "sourceText": "skicka",
+      "audioRef": "sv_c1_u1_qp_014_skicka_v1"
+    },
+    {
+      "contentId": "c1_vocab_prata",
+      "audioType": "question_prompt",
+      "sourceText": "prata",
+      "audioRef": "sv_c1_u1_qp_015_prata_v1"
+    },
+    {
+      "contentId": "c1_vocab_komma_ihag",
+      "audioType": "question_prompt",
+      "sourceText": "komma ihåg",
+      "audioRef": "sv_c1_u1_qp_016_komma_ihag_v1"
+    },
+    {
+      "contentId": "c1_vocab_handa",
+      "audioType": "question_prompt",
+      "sourceText": "hända",
+      "audioRef": "sv_c1_u1_qp_017_handa_v1"
+    },
+    {
+      "contentId": "c1_vocab_besoka",
+      "audioType": "question_prompt",
+      "sourceText": "besöka",
+      "audioRef": "sv_c1_u1_qp_018_besoka_v1"
+    },
+    {
+      "contentId": "c1_vocab_traffa",
+      "audioType": "question_prompt",
+      "sourceText": "träffa",
+      "audioRef": "sv_c1_u1_qp_019_traffa_v1"
+    },
+    {
+      "contentId": "c1_vocab_aka",
+      "audioType": "question_prompt",
+      "sourceText": "åka",
+      "audioRef": "sv_c1_u1_qp_020_aka_v1"
+    },
+    {
+      "contentId": "c1_vocab_helg",
+      "audioType": "question_prompt",
+      "sourceText": "en helg",
+      "audioRef": "sv_c1_u1_qp_021_en_helg_v1"
+    },
+    {
+      "contentId": "c1_vocab_familj",
+      "audioType": "question_prompt",
+      "sourceText": "en familj",
+      "audioRef": "sv_c1_u1_qp_022_en_familj_v1"
+    },
+    {
+      "contentId": "c1_vocab_hotell",
+      "audioType": "question_prompt",
+      "sourceText": "ett hotell",
+      "audioRef": "sv_c1_u1_qp_023_ett_hotell_v1"
+    },
+    {
+      "contentId": "c1_vocab_hamn",
+      "audioType": "question_prompt",
+      "sourceText": "en hamn",
+      "audioRef": "sv_c1_u1_qp_024_en_hamn_v1"
+    },
+    {
+      "contentId": "c1_vocab_van",
+      "audioType": "question_prompt",
+      "sourceText": "en vän",
+      "audioRef": "sv_c1_u1_qp_025_en_van_v1"
+    },
+    {
+      "contentId": "c1_vocab_skola",
+      "audioType": "question_prompt",
+      "sourceText": "en skola",
+      "audioRef": "sv_c1_u1_qp_026_en_skola_v1"
+    },
+    {
+      "contentId": "c1_vocab_mote",
+      "audioType": "question_prompt",
+      "sourceText": "ett möte",
+      "audioRef": "sv_c1_u1_qp_027_ett_mote_v1"
+    },
+    {
+      "contentId": "c1_vocab_projekt",
+      "audioType": "question_prompt",
+      "sourceText": "ett projekt",
+      "audioRef": "sv_c1_u1_qp_028_ett_projekt_v1"
+    },
+    {
+      "contentId": "c1_vocab_chef",
+      "audioType": "question_prompt",
+      "sourceText": "en chef",
+      "audioRef": "sv_c1_u1_qp_029_en_chef_v1"
+    },
+    {
+      "contentId": "c1_vocab_plan",
+      "audioType": "question_prompt",
+      "sourceText": "en plan",
+      "audioRef": "sv_c1_u1_qp_030_en_plan_v1"
+    },
+    {
+      "contentId": "c1_vocab_manad",
+      "audioType": "question_prompt",
+      "sourceText": "en månad",
+      "audioRef": "sv_c1_u1_qp_031_en_manad_v1"
+    },
+    {
+      "contentId": "c1_vocab_mejl",
+      "audioType": "question_prompt",
+      "sourceText": "ett mejl",
+      "audioRef": "sv_c1_u1_qp_032_ett_mejl_v1"
+    },
+    {
+      "contentId": "c1_vocab_information",
+      "audioType": "question_prompt",
+      "sourceText": "en information",
+      "audioRef": "sv_c1_u1_qp_033_en_information_v1"
+    },
+    {
+      "contentId": "c1_vocab_mage",
+      "audioType": "question_prompt",
+      "sourceText": "en mage",
+      "audioRef": "sv_c1_u1_qp_034_en_mage_v1"
+    },
+    {
+      "contentId": "c1_phrase_jag_akte_till_goteborg",
+      "audioType": "question_prompt",
+      "sourceText": "Jag åkte till Göteborg i helgen.",
+      "audioRef": "sv_c1_u1_qp_035_jag_akte_till_goteborg_i_helgen_v1"
+    },
+    {
+      "contentId": "c1_phrase_vi_bodde_pa_hotell",
+      "audioType": "question_prompt",
+      "sourceText": "Vi bodde på hotell.",
+      "audioRef": "sv_c1_u1_qp_036_vi_bodde_pa_hotell_v1"
+    },
+    {
+      "contentId": "c1_phrase_vi_at_fisk_och_rakor",
+      "audioType": "question_prompt",
+      "sourceText": "Vi åt fisk och räkor.",
+      "audioRef": "sv_c1_u1_qp_037_vi_at_fisk_och_rakor_v1"
+    },
+    {
+      "contentId": "c1_phrase_barnen_drack_saft",
+      "audioType": "question_prompt",
+      "sourceText": "Barnen drack saft.",
+      "audioRef": "sv_c1_u1_qp_038_barnen_drack_saft_v1"
+    },
+    {
+      "contentId": "c1_phrase_vi_traffade_gamla_vanner",
+      "audioType": "question_prompt",
+      "sourceText": "Vi träffade gamla vänner.",
+      "audioRef": "sv_c1_u1_qp_039_vi_traffade_gamla_vanner_v1"
+    },
+    {
+      "contentId": "c1_phrase_du_var_inte_pa_motet",
+      "audioType": "question_prompt",
+      "sourceText": "Du var inte på mötet igår.",
+      "audioRef": "sv_c1_u1_qp_040_du_var_inte_pa_motet_igar_v1"
+    },
+    {
+      "contentId": "c1_phrase_vad_hande",
+      "audioType": "question_prompt",
+      "sourceText": "Vad hände?",
+      "audioRef": "sv_c1_u1_qp_041_vad_hande_v1"
+    },
+    {
+      "contentId": "c1_phrase_jag_fick_mejlet",
+      "audioType": "question_prompt",
+      "sourceText": "Jag fick mejlet.",
+      "audioRef": "sv_c1_u1_qp_042_jag_fick_mejlet_v1"
+    },
+    {
+      "contentId": "c1_phrase_jag_laste_det_just",
+      "audioType": "question_prompt",
+      "sourceText": "Jag läste det just.",
+      "audioRef": "sv_c1_u1_qp_043_jag_laste_det_just_v1"
+    },
+    {
+      "contentId": "c1_phrase_jag_glomde_det",
+      "audioType": "question_prompt",
+      "sourceText": "Jag glömde det.",
+      "audioRef": "sv_c1_u1_qp_044_jag_glomde_det_v1"
+    },
+    {
+      "contentId": "c1_phrase_jag_hade_ont_i_magen",
+      "audioType": "question_prompt",
+      "sourceText": "Jag hade ont i magen.",
+      "audioRef": "sv_c1_u1_qp_045_jag_hade_ont_i_magen_v1"
+    },
+    {
+      "contentId": "c1_phrase_jag_stannade_hemma",
+      "audioType": "question_prompt",
+      "sourceText": "Jag stannade hemma.",
+      "audioRef": "sv_c1_u1_qp_046_jag_stannade_hemma_v1"
+    },
+    {
+      "contentId": "c1_phrase_vi_diskuterade_det_nya_projektet",
+      "audioType": "question_prompt",
+      "sourceText": "Vi diskuterade det nya projektet.",
+      "audioRef": "sv_c1_u1_qp_047_vi_diskuterade_det_nya_projektet_v1"
+    },
+    {
+      "contentId": "c1_phrase_chefen_presenterade_planen",
+      "audioType": "question_prompt",
+      "sourceText": "Chefen presenterade planen.",
+      "audioRef": "sv_c1_u1_qp_048_chefen_presenterade_planen_v1"
+    },
+    {
+      "contentId": "c1_phrase_alla_tyckte_att_det_lat_bra",
+      "audioType": "question_prompt",
+      "sourceText": "Alla tyckte att det lät bra.",
+      "audioRef": "sv_c1_u1_qp_049_alla_tyckte_att_det_lat_bra_v1"
+    },
+    {
+      "contentId": "c1_phrase_vi_bestamde_att_starta",
+      "audioType": "question_prompt",
+      "sourceText": "Vi bestämde att starta projektet nästa månad.",
+      "audioRef": "sv_c1_u1_qp_050_vi_bestamde_att_starta_projektet_nasta_manad_v1"
+    },
+    {
+      "contentId": "c1_phrase_jag_skickade_ett_mejl",
+      "audioType": "question_prompt",
+      "sourceText": "Jag skickade ett mejl med all information.",
+      "audioRef": "sv_c1_u1_qp_051_jag_skickade_ett_mejl_med_all_information_v1"
+    },
+    {
+      "contentId": "c1_phrase_vad_gjorde_du_i_helgen",
+      "audioType": "question_prompt",
+      "sourceText": "Vad gjorde du i helgen?",
+      "audioRef": "sv_c1_u1_qp_052_vad_gjorde_du_i_helgen_v1"
+    },
+    {
+      "contentId": "c1_phrase_at_ni_nagot_speciellt",
+      "audioType": "question_prompt",
+      "sourceText": "Åt ni något speciellt?",
+      "audioRef": "sv_c1_u1_qp_053_at_ni_nagot_speciellt_v1"
+    },
+    {
+      "contentId": "c1_phrase_bestamde_ni_nagot",
+      "audioType": "question_prompt",
+      "sourceText": "Bestämde ni något?",
+      "audioRef": "sv_c1_u1_qp_054_bestamde_ni_nagot_v1"
+    },
+    {
+      "contentId": "c1_phrase_fick_du_det",
+      "audioType": "question_prompt",
+      "sourceText": "Fick du det?",
+      "audioRef": "sv_c1_u1_qp_055_fick_du_det_v1"
+    },
+    {
+      "contentId": "c1_dialog_vad_gjorde_du_i_helgen",
+      "audioType": "question_prompt",
+      "sourceText": "Vad gjorde du i helgen?",
+      "audioRef": "sv_c1_u1_qp_052_vad_gjorde_du_i_helgen_v1"
+    },
+    {
+      "contentId": "c1_dialog_jag_akte_till_goteborg_med_familjen",
+      "audioType": "question_prompt",
+      "sourceText": "Jag åkte till Göteborg med familjen.",
+      "audioRef": "sv_c1_u1_qp_057_jag_akte_till_goteborg_med_familjen_v1"
+    },
+    {
+      "contentId": "c1_dialog_vi_bodde_pa_hotell_och_besokte_liseberg",
+      "audioType": "question_prompt",
+      "sourceText": "Vi bodde på hotell och besökte Liseberg.",
+      "audioRef": "sv_c1_u1_qp_058_vi_bodde_pa_hotell_och_besokte_liseberg_v1"
+    },
+    {
+      "contentId": "c1_dialog_at_ni_nagot_speciellt_dialog",
+      "audioType": "question_prompt",
+      "sourceText": "Åt ni något speciellt?",
+      "audioRef": "sv_c1_u1_qp_053_at_ni_nagot_speciellt_v1"
+    },
+    {
+      "contentId": "c1_dialog_vi_at_fisk_och_rakor_vid_hamnen",
+      "audioType": "question_prompt",
+      "sourceText": "Vi åt fisk och räkor vid hamnen.",
+      "audioRef": "sv_c1_u1_qp_060_vi_at_fisk_och_rakor_vid_hamnen_v1"
+    },
+    {
+      "contentId": "c1_dialog_barnen_drack_saft_och_vi_vuxna_drack_vin",
+      "audioType": "question_prompt",
+      "sourceText": "Barnen drack saft och vi vuxna drack vin.",
+      "audioRef": "sv_c1_u1_qp_061_barnen_drack_saft_och_vi_vuxna_drack_vin_v1"
+    },
+    {
+      "contentId": "c1_dialog_traffade_ni_nagra_gamla_vanner",
+      "audioType": "question_prompt",
+      "sourceText": "Träffade ni några gamla vänner?",
+      "audioRef": "sv_c1_u1_qp_062_traffade_ni_nagra_gamla_vanner_v1"
+    },
+    {
+      "contentId": "c1_dialog_vi_pratade_i_flera_timmar",
+      "audioType": "question_prompt",
+      "sourceText": "Vi pratade i flera timmar.",
+      "audioRef": "sv_c1_u1_qp_063_vi_pratade_i_flera_timmar_v1"
+    },
+    {
+      "contentId": "c1_dialog_vi_kom_ihag_massa_saker",
+      "audioType": "question_prompt",
+      "sourceText": "Vi kom ihåg massa saker från skolan.",
+      "audioRef": "sv_c1_u1_qp_064_vi_kom_ihag_massa_saker_fran_skolan_v1"
+    },
+    {
+      "contentId": "c1_dialog_du_var_inte_pa_motet_igar",
+      "audioType": "question_prompt",
+      "sourceText": "Du var inte på mötet igår. Vad hände?",
+      "audioRef": "sv_c1_u1_qp_065_du_var_inte_pa_motet_igar_vad_hande_v1"
+    },
+    {
+      "contentId": "c1_dialog_forlat_jag_glomde_det",
+      "audioType": "question_prompt",
+      "sourceText": "Förlåt, jag glömde det.",
+      "audioRef": "sv_c1_u1_qp_066_forlat_jag_glomde_det_v1"
+    },
+    {
+      "contentId": "c1_dialog_jag_hade_ont_i_magen_och_stannade_hemma",
+      "audioType": "question_prompt",
+      "sourceText": "Jag hade ont i magen och stannade hemma.",
+      "audioRef": "sv_c1_u1_qp_067_jag_hade_ont_i_magen_och_stannade_hemma_v1"
+    },
+    {
+      "contentId": "c1_dialog_vi_diskuterade_det_nya_projektet",
+      "audioType": "question_prompt",
+      "sourceText": "Vi diskuterade det nya projektet.",
+      "audioRef": "sv_c1_u1_qp_047_vi_diskuterade_det_nya_projektet_v1"
+    },
+    {
+      "contentId": "c1_dialog_chefen_presenterade_planen",
+      "audioType": "question_prompt",
+      "sourceText": "Chefen presenterade planen.",
+      "audioRef": "sv_c1_u1_qp_048_chefen_presenterade_planen_v1"
+    },
+    {
+      "contentId": "c1_dialog_alla_tyckte_att_det_lat_bra",
+      "audioType": "question_prompt",
+      "sourceText": "Alla tyckte att det lät bra.",
+      "audioRef": "sv_c1_u1_qp_049_alla_tyckte_att_det_lat_bra_v1"
+    },
+    {
+      "contentId": "c1_dialog_bestamde_ni_nagot_dialog",
+      "audioType": "question_prompt",
+      "sourceText": "Bestämde ni något?",
+      "audioRef": "sv_c1_u1_qp_054_bestamde_ni_nagot_v1"
+    },
+    {
+      "contentId": "c1_dialog_vi_bestamde_att_starta_projektet",
+      "audioType": "question_prompt",
+      "sourceText": "Vi bestämde att starta projektet nästa månad.",
+      "audioRef": "sv_c1_u1_qp_050_vi_bestamde_att_starta_projektet_nasta_manad_v1"
+    },
+    {
+      "contentId": "c1_dialog_jag_skickade_ett_mejl_med_all_information",
+      "audioType": "question_prompt",
+      "sourceText": "Jag skickade ett mejl med all information.",
+      "audioRef": "sv_c1_u1_qp_051_jag_skickade_ett_mejl_med_all_information_v1"
+    },
+    {
+      "contentId": "c1_dialog_fick_du_det",
+      "audioType": "question_prompt",
+      "sourceText": "Fick du det?",
+      "audioRef": "sv_c1_u1_qp_055_fick_du_det_v1"
+    },
+    {
+      "contentId": "c1_dialog_jag_laste_det_just",
+      "audioType": "question_prompt",
+      "sourceText": "Jag läste det just.",
+      "audioRef": "sv_c1_u1_qp_043_jag_laste_det_just_v1"
+    },
+    {
+      "contentId": "c1_dialog_det_verkade_intressant",
+      "audioType": "question_prompt",
+      "sourceText": "Det verkade intressant.",
+      "audioRef": "sv_c1_u1_qp_076_det_verkade_intressant_v1"
+    },
+    {
+      "contentId": "c1_verb_vara_group",
+      "audioType": "question_prompt",
+      "sourceText": "vara är var varit",
+      "audioRefs": [
+        "sv_c1_u1_adv_verb_001_vara_v1",
+        "sv_c1_u1_adv_verb_002_ar_v1",
+        "sv_c1_u1_adv_verb_003_var_v1",
+        "sv_c1_u1_adv_verb_004_varit_v1"
+      ]
+    },
+    {
+      "contentId": "c1_verb_ga_group",
+      "audioType": "question_prompt",
+      "sourceText": "gå går gick gått",
+      "audioRefs": [
+        "sv_c1_u1_qp_001_ga_v1",
+        "sv_c1_u1_adv_verb_006_gar_v1",
+        "sv_c1_u1_adv_verb_007_gick_v1",
+        "sv_c1_u1_adv_verb_008_gatt_v1"
+      ]
+    },
+    {
+      "contentId": "c1_verb_ata_group",
+      "audioType": "question_prompt",
+      "sourceText": "äta äter åt ätit",
+      "audioRefs": [
+        "sv_c1_u1_qp_002_ata_v1",
+        "sv_c1_u1_adv_verb_010_ater_v1",
+        "sv_c1_u1_adv_verb_011_at_v1",
+        "sv_c1_u1_adv_verb_012_atit_v1"
+      ]
+    },
+    {
+      "contentId": "c1_verb_komma_group",
+      "audioType": "question_prompt",
+      "sourceText": "komma kommer kom kommit",
+      "audioRefs": [
+        "sv_c1_u1_qp_003_komma_v1",
+        "sv_c1_u1_adv_verb_014_kommer_v1",
+        "sv_c1_u1_adv_verb_015_kom_v1",
+        "sv_c1_u1_adv_verb_016_kommit_v1"
+      ]
+    },
+    {
+      "contentId": "c1_verb_dricka_group",
+      "audioType": "question_prompt",
+      "sourceText": "dricka dricker drack druckit",
+      "audioRefs": [
+        "sv_c1_u1_qp_004_dricka_v1",
+        "sv_c1_u1_adv_verb_018_dricker_v1",
+        "sv_c1_u1_adv_verb_019_drack_v1",
+        "sv_c1_u1_adv_verb_020_druckit_v1"
+      ]
+    },
+    {
+      "contentId": "c1_verb_fa_group",
+      "audioType": "question_prompt",
+      "sourceText": "få får fick fått",
+      "audioRefs": [
+        "sv_c1_u1_qp_005_fa_v1",
+        "sv_c1_u1_adv_verb_022_far_v1",
+        "sv_c1_u1_adv_verb_023_fick_v1",
+        "sv_c1_u1_adv_verb_024_fatt_v1"
+      ]
+    },
+    {
+      "contentId": "c1_verb_lasa_group",
+      "audioType": "question_prompt",
+      "sourceText": "läsa läser läste läst",
+      "audioRefs": [
+        "sv_c1_u1_qp_006_lasa_v1",
+        "sv_c1_u1_adv_verb_026_laser_v1",
+        "sv_c1_u1_adv_verb_027_laste_v1",
+        "sv_c1_u1_adv_verb_028_last_v1"
+      ]
+    },
+    {
+      "contentId": "c1_verb_gora_group",
+      "audioType": "question_prompt",
+      "sourceText": "göra gör gjorde gjort",
+      "audioRefs": [
+        "sv_c1_u1_adv_verb_029_gora_v1",
+        "sv_c1_u1_adv_verb_030_gor_v1",
+        "sv_c1_u1_adv_verb_031_gjorde_v1",
+        "sv_c1_u1_adv_verb_032_gjort_v1"
+      ]
+    },
+    {
+      "contentId": "c1_verb_glomma_group",
+      "audioType": "question_prompt",
+      "sourceText": "glömma glömmer glömde glömt",
+      "audioRefs": [
+        "sv_c1_u1_qp_007_glomma_v1",
+        "sv_c1_u1_adv_verb_034_glommer_v1",
+        "sv_c1_u1_adv_verb_035_glomde_v1",
+        "sv_c1_u1_adv_verb_036_glomt_v1"
+      ]
+    },
+    {
+      "contentId": "c1_verb_stanna_group",
+      "audioType": "question_prompt",
+      "sourceText": "stanna stannar stannade stannat",
+      "audioRefs": [
+        "sv_c1_u1_qp_008_stanna_v1",
+        "sv_c1_u1_adv_verb_038_stannar_v1",
+        "sv_c1_u1_adv_verb_039_stannade_v1",
+        "sv_c1_u1_adv_verb_040_stannat_v1"
+      ]
+    },
+    {
+      "contentId": "c1_verb_diskutera_group",
+      "audioType": "question_prompt",
+      "sourceText": "diskutera diskuterar diskuterade diskuterat",
+      "audioRefs": [
+        "sv_c1_u1_qp_009_diskutera_v1",
+        "sv_c1_u1_adv_verb_042_diskuterar_v1",
+        "sv_c1_u1_adv_verb_043_diskuterade_v1",
+        "sv_c1_u1_adv_verb_044_diskuterat_v1"
+      ]
+    },
+    {
+      "contentId": "c1_verb_presentera_group",
+      "audioType": "question_prompt",
+      "sourceText": "presentera presenterar presenterade presenterat",
+      "audioRefs": [
+        "sv_c1_u1_qp_010_presentera_v1",
+        "sv_c1_u1_adv_verb_046_presenterar_v1",
+        "sv_c1_u1_adv_verb_047_presenterade_v1",
+        "sv_c1_u1_adv_verb_048_presenterat_v1"
+      ]
+    },
+    {
+      "contentId": "c1_verb_tycka_group",
+      "audioType": "question_prompt",
+      "sourceText": "tycka tycker tyckte tyckt",
+      "audioRefs": [
+        "sv_c1_u1_qp_011_tycka_v1",
+        "sv_c1_u1_adv_verb_050_tycker_v1",
+        "sv_c1_u1_adv_verb_051_tyckte_v1",
+        "sv_c1_u1_adv_verb_052_tyckt_v1"
+      ]
+    },
+    {
+      "contentId": "c1_verb_bestamma_group",
+      "audioType": "question_prompt",
+      "sourceText": "bestämma bestämmer bestämde bestämt",
+      "audioRefs": [
+        "sv_c1_u1_qp_012_bestamma_v1",
+        "sv_c1_u1_adv_verb_054_bestammer_v1",
+        "sv_c1_u1_adv_verb_055_bestamde_v1",
+        "sv_c1_u1_adv_verb_056_bestamt_v1"
+      ]
+    },
+    {
+      "contentId": "c1_verb_starta_group",
+      "audioType": "question_prompt",
+      "sourceText": "starta startar startade startat",
+      "audioRefs": [
+        "sv_c1_u1_qp_013_starta_v1",
+        "sv_c1_u1_adv_verb_058_startar_v1",
+        "sv_c1_u1_adv_verb_059_startade_v1",
+        "sv_c1_u1_adv_verb_060_startat_v1"
+      ]
+    },
+    {
+      "contentId": "c1_verb_skicka_group",
+      "audioType": "question_prompt",
+      "sourceText": "skicka skickar skickade skickat",
+      "audioRefs": [
+        "sv_c1_u1_qp_014_skicka_v1",
+        "sv_c1_u1_adv_verb_062_skickar_v1",
+        "sv_c1_u1_adv_verb_063_skickade_v1",
+        "sv_c1_u1_adv_verb_064_skickat_v1"
+      ]
+    },
+    {
+      "contentId": "c1_verb_prata_group",
+      "audioType": "question_prompt",
+      "sourceText": "prata pratar pratade pratat",
+      "audioRefs": [
+        "sv_c1_u1_qp_015_prata_v1",
+        "sv_c1_u1_adv_verb_066_pratar_v1",
+        "sv_c1_u1_adv_verb_067_pratade_v1",
+        "sv_c1_u1_adv_verb_068_pratat_v1"
+      ]
+    },
+    {
+      "contentId": "c1_verb_verka_group",
+      "audioType": "question_prompt",
+      "sourceText": "verka verkar verkade verkat",
+      "audioRefs": [
+        "sv_c1_u1_adv_verb_069_verka_v1",
+        "sv_c1_u1_adv_verb_070_verkar_v1",
+        "sv_c1_u1_adv_verb_071_verkade_v1",
+        "sv_c1_u1_adv_verb_072_verkat_v1"
+      ]
+    },
+    {
+      "contentId": "c1_verb_traffa_group",
+      "audioType": "question_prompt",
+      "sourceText": "träffa träffar träffade träffat",
+      "audioRefs": [
+        "sv_c1_u1_qp_019_traffa_v1",
+        "sv_c1_u1_adv_verb_074_traffar_v1",
+        "sv_c1_u1_adv_verb_075_traffade_v1",
+        "sv_c1_u1_adv_verb_076_traffat_v1"
+      ]
+    },
+    {
+      "contentId": "c1_verb_besoka_group",
+      "audioType": "question_prompt",
+      "sourceText": "besöka besöker besökte besökt",
+      "audioRefs": [
+        "sv_c1_u1_qp_018_besoka_v1",
+        "sv_c1_u1_adv_verb_078_besoker_v1",
+        "sv_c1_u1_adv_verb_079_besokte_v1",
+        "sv_c1_u1_adv_verb_080_besokt_v1"
+      ]
+    },
+    {
+      "contentId": "c1_verb_aka_group",
+      "audioType": "question_prompt",
+      "sourceText": "åka åker åkte åkt",
+      "audioRefs": [
+        "sv_c1_u1_qp_020_aka_v1",
+        "sv_c1_u1_adv_verb_082_aker_v1",
+        "sv_c1_u1_adv_verb_083_akte_v1",
+        "sv_c1_u1_adv_verb_084_akt_v1"
+      ]
+    },
+    {
+      "contentId": "c1_verb_bo_group",
+      "audioType": "question_prompt",
+      "sourceText": "bo bor bodde bott",
+      "audioRefs": [
+        "sv_c1_u1_adv_verb_085_bo_v1",
+        "sv_c1_u1_adv_verb_086_bor_v1",
+        "sv_c1_u1_adv_verb_087_bodde_v1",
+        "sv_c1_u1_adv_verb_088_bott_v1"
+      ]
+    },
+    {
+      "contentId": "c1_verb_handa_group",
+      "audioType": "question_prompt",
+      "sourceText": "hända händer hände hänt",
+      "audioRefs": [
+        "sv_c1_u1_qp_017_handa_v1",
+        "sv_c1_u1_adv_verb_090_hander_v1",
+        "sv_c1_u1_adv_verb_091_hande_v1",
+        "sv_c1_u1_adv_verb_092_hant_v1"
+      ]
+    },
+    {
+      "contentId": "c1_noun_helg_group",
+      "audioType": "question_prompt",
+      "sourceText": "en helg helgen helger helgerna",
+      "audioRefs": [
+        "sv_c1_u1_qp_021_en_helg_v1",
+        "sv_c1_u1_adv_025_helgen_v1",
+        "sv_c1_u1_adv_026_helger_v1",
+        "sv_c1_u1_adv_027_helgerna_v1"
+      ]
+    },
+    {
+      "contentId": "c1_noun_familj_group",
+      "audioType": "question_prompt",
+      "sourceText": "en familj familjen familjer familjerna",
+      "audioRefs": [
+        "sv_c1_u1_qp_022_en_familj_v1",
+        "sv_c1_u1_adv_029_familjen_v1",
+        "sv_c1_u1_adv_030_familjer_v1",
+        "sv_c1_u1_adv_031_familjerna_v1"
+      ]
+    },
+    {
+      "contentId": "c1_noun_hotell_group",
+      "audioType": "question_prompt",
+      "sourceText": "ett hotell hotellet hotell hotellen",
+      "audioRefs": [
+        "sv_c1_u1_qp_023_ett_hotell_v1",
+        "sv_c1_u1_adv_033_hotellet_v1",
+        "sv_c1_u1_adv_034_hotell_v1",
+        "sv_c1_u1_adv_035_hotellen_v1"
+      ]
+    },
+    {
+      "contentId": "c1_noun_hamn_group",
+      "audioType": "question_prompt",
+      "sourceText": "en hamn hamnen hamnar hamnarna",
+      "audioRefs": [
+        "sv_c1_u1_qp_024_en_hamn_v1",
+        "sv_c1_u1_adv_037_hamnen_v1",
+        "sv_c1_u1_adv_038_hamnar_v1",
+        "sv_c1_u1_adv_039_hamnarna_v1"
+      ]
+    },
+    {
+      "contentId": "c1_noun_mote_group",
+      "audioType": "question_prompt",
+      "sourceText": "ett möte mötet möten mötena",
+      "audioRefs": [
+        "sv_c1_u1_qp_027_ett_mote_v1",
+        "sv_c1_u1_adv_041_motet_v1",
+        "sv_c1_u1_adv_042_moten_v1",
+        "sv_c1_u1_adv_043_motena_v1"
+      ]
+    },
+    {
+      "contentId": "c1_noun_projekt_group",
+      "audioType": "question_prompt",
+      "sourceText": "ett projekt projektet projekt projekten",
+      "audioRefs": [
+        "sv_c1_u1_qp_028_ett_projekt_v1",
+        "sv_c1_u1_adv_045_projektet_v1",
+        "sv_c1_u1_adv_046_projekt_v1",
+        "sv_c1_u1_adv_047_projekten_v1"
+      ]
+    },
+    {
+      "contentId": "c1_noun_plan_group",
+      "audioType": "question_prompt",
+      "sourceText": "en plan planen planer planerna",
+      "audioRefs": [
+        "sv_c1_u1_qp_030_en_plan_v1",
+        "sv_c1_u1_adv_049_planen_v1",
+        "sv_c1_u1_adv_050_planer_v1",
+        "sv_c1_u1_adv_051_planerna_v1"
+      ]
+    },
+    {
+      "contentId": "c1_noun_mejl_group",
+      "audioType": "question_prompt",
+      "sourceText": "ett mejl mejlet mejl mejlen",
+      "audioRefs": [
+        "sv_c1_u1_qp_032_ett_mejl_v1",
+        "sv_c1_u1_adv_053_mejlet_v1",
+        "sv_c1_u1_adv_054_mejl_v1",
+        "sv_c1_u1_adv_055_mejlen_v1"
+      ]
+    },
+    {
+      "contentId": "c1_noun_mage_group",
+      "audioType": "question_prompt",
+      "sourceText": "en mage magen magar magarna",
+      "audioRefs": [
+        "sv_c1_u1_qp_034_en_mage_v1",
+        "sv_c1_u1_adv_057_magen_v1",
+        "sv_c1_u1_adv_058_magar_v1",
+        "sv_c1_u1_adv_059_magarna_v1"
+      ]
+    }
+  ]
+}
