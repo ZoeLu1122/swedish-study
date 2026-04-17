@@ -419,7 +419,7 @@ nav{
 }
 
 body.sfi-show-quiz-type-badges .qq-type-badge {
-  display: inline-flex !important;
+  display: none !important;
 }
 
 /* ===================================================

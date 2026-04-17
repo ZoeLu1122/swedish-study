@@ -891,33 +891,9 @@ body {
 <script src="common.js?v=20260415-vocab-card-uniform"></script>
 <script src="practice-common.js?v=20260415-vocab-card-uniform"></script>
 <script>
-  (function () {
-    const script = document.createElement('script');
-    script.src = 'c1_unit1_bank.js';
-    script.onload = function () {
-      const bank = window.UNIT_BANK_C1;
-      if (!bank) {
-        console.error('Bank object not found: UNIT_BANK_C1');
-        return;
-      }
-      document.title = `${bank.unitTitle || bank.title || '练习'} · SFI`;
-      const tbLevel = document.getElementById('tb-level');
-      const tbUnitName = document.getElementById('tb-unit-name');
-      if (tbLevel) tbLevel.textContent = 'C级';
-      if (tbUnitName) tbUnitName.textContent = bank.unitTitle || bank.title || '单元练习';
-      window.SFI_BOOT({
-        unit: bank.unit,
-        title: bank.unitTitle || bank.title || '',
-        basicPool: bank.basicPool || [],
-        advancedPool: bank.advancedPool || [],
-        properNames: (window.PAGE_CONFIG && window.PAGE_CONFIG.properNames) || []
-      });
-    };
-    script.onerror = function () {
-      console.error('Failed to load bank file: c1_unit1_bank.js');
-    };
-    document.body.appendChild(script);
-  })();
+  window.PracticeCommon.bootFromBank({
+    practiceSets: { enabled: true, size: 20 }
+  });
 </script>
 </body>
 </html>

@@ -1049,7 +1049,8 @@ body {
         title: bank.title || bank.unitTitle || '',
         basicPool: bank.basicPool || [],
         advancedPool: bank.advancedPool || [],
-        properNames: (window.PAGE_CONFIG && window.PAGE_CONFIG.properNames) || []
+        properNames: (window.PAGE_CONFIG && window.PAGE_CONFIG.properNames) || [],
+        practiceSets: { enabled: true, size: 20 }
       });
     };
     script.onerror = function () {

@@ -351,13 +351,42 @@
     });
   }
 
+  let quizTypeBadgeObserver = null;
+
+  function injectQuizTypeBadgeStyles() {
+    if (document.getElementById('sfi-quiz-type-badge-styles')) return;
+    const style = document.createElement('style');
+    style.id = 'sfi-quiz-type-badge-styles';
+    style.textContent = `
+      .qq-type-badge {
+        display: none !important;
+      }
+      body.sfi-show-quiz-type-badges .qq-type-badge {
+        display: none !important;
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  function syncQuizTypeBadges() {
+    document.querySelectorAll('.qq-type-badge').forEach(badge => {
+      badge.hidden = true;
+      badge.setAttribute('aria-hidden', 'true');
+      badge.style.display = 'none';
+    });
+  }
+
   function applyCommonDisplayConfig() {
-    const config = window.PAGE_CONFIG || {};
-    const showQuizTypeBadges =
-      window.SFI_SHOW_QUIZ_TYPE_BADGES === true ||
-      config.showQuizTypeBadges === true ||
-      (config.quiz && config.quiz.showTypeBadges === true);
-    document.body.classList.toggle('sfi-show-quiz-type-badges', showQuizTypeBadges);
+    injectQuizTypeBadgeStyles();
+    document.body.classList.remove('sfi-show-quiz-type-badges');
+    syncQuizTypeBadges();
+
+    if (!quizTypeBadgeObserver) {
+      quizTypeBadgeObserver = new MutationObserver(() => {
+        syncQuizTypeBadges();
+      });
+      quizTypeBadgeObserver.observe(document.body, { childList: true, subtree: true });
+    }
   }
 
   function normalizeVocabCardFlow(root = document) {
@@ -541,26 +570,35 @@
       // 优先用 mp3 顺序播放，降级到 TTS
       if (!window.SfiCore.audio) { fallbackTTS(); return; }
       window.SfiCore.manifest.ensure(function () {
-        // lines 是对话文本数组；对每行用 dialogue_line_group 匹配 contentId
-        // 需要从 window.dialogueContentIds[dialogueId] 取 contentId 列表
-        // 若页面未提供则降级 TTS
-        const cidList = window.dialogueContentIds && window.dialogueContentIds[dialogueId];
-        if (!cidList || !cidList.length) { fallbackTTS(); return; }
-
-        const allPaths = [];
-        for (const cid of cidList) {
-          const item = window.SfiCore.manifest.lookupByContentId(cid);
-          if (!item) { fallbackTTS(); return; }
+        function appendItemPaths(item, out) {
+          if (!item) return false;
           if (item.audioRefs && item.audioRefs.length) {
             const paths = item.audioRefs.map(id => window.SfiCore.manifest.getFilePath(id)).filter(Boolean);
-            if (!paths.length) { fallbackTTS(); return; }
-            allPaths.push(...paths);
-          } else if (item.audioRef) {
+            if (!paths.length) return false;
+            out.push(...paths);
+            return true;
+          }
+          if (item.audioRef) {
             const path = window.SfiCore.manifest.getFilePath(item.audioRef);
-            if (!path) { fallbackTTS(); return; }
-            allPaths.push(path);
-          } else {
-            fallbackTTS(); return;
+            if (!path) return false;
+            out.push(path);
+            return true;
+          }
+          return false;
+        }
+
+        const cidList = window.dialogueContentIds && window.dialogueContentIds[dialogueId];
+
+        const allPaths = [];
+        if (cidList && cidList.length) {
+          for (const cid of cidList) {
+            const item = window.SfiCore.manifest.lookupByContentId(cid);
+            if (!appendItemPaths(item, allPaths)) { fallbackTTS(); return; }
+          }
+        } else {
+          for (const line of lines) {
+            const item = window.SfiCore.manifest.lookupBySourceText(line, 'dialogue_line_group');
+            if (!appendItemPaths(item, allPaths)) { fallbackTTS(); return; }
           }
         }
         window.SfiCore.audio.playSequence(allPaths, onFullEnd, fallbackTTS);

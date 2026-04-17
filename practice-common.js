@@ -788,6 +788,8 @@
     const candidates = getModeCandidates();
 
     if (!dom.wrap || !dom.qCard) return;
+    syncModeButtons(dom);
+    document.body.classList.add('sfi-practice-set-active');
     dom.wrap.style.display = 'flex';
     if (dom.completionScreen) dom.completionScreen.classList.remove('show');
     dom.qCard.style.display = 'flex';
@@ -818,17 +820,19 @@
     closeAnswerReveal();
   }
 
+  function syncModeButtons(dom = getDOM()) {
+    if (!dom.modeBasicBtn || !dom.modeAdvBtn) return;
+    dom.modeBasicBtn.textContent = '基础';
+    dom.modeAdvBtn.textContent = '进阶';
+    dom.modeBasicBtn.classList.toggle('active-mode', STATE.currentMode === 'basic');
+    dom.modeAdvBtn.classList.toggle('active-mode', STATE.currentMode === 'advanced');
+  }
+
   function setMode(mode) {
     STATE.currentMode = mode === 'advanced' ? 'advanced' : 'basic';
     STATE.practiceSet = null;
 
-    const dom = getDOM();
-    if (dom.modeBasicBtn && dom.modeAdvBtn) {
-      dom.modeBasicBtn.textContent = '基础';
-      dom.modeAdvBtn.textContent = '进阶';
-      dom.modeBasicBtn.classList.toggle('active-mode', STATE.currentMode === 'basic');
-      dom.modeAdvBtn.classList.toggle('active-mode', STATE.currentMode === 'advanced');
-    }
+    syncModeButtons();
 
     applyModeFilter();
     STATE.isCompleted = false;
@@ -1005,6 +1009,15 @@ const fallbackText = (item && item.sourceText) ||
         display: flex;
         flex-direction: column;
         gap: 18px;
+      }
+
+      body.sfi-practice-set-active .practice-wrap {
+        justify-content: flex-start !important;
+        padding-top: clamp(2rem, 6vh, 4rem) !important;
+      }
+
+      body.sfi-practice-set-active .q-card {
+        gap: 1.45rem;
       }
 
       .practice-set-head {
@@ -1413,6 +1426,8 @@ const fallbackText = (item && item.sourceText) ||
     const question = getActiveQuestion();
 
     if (!dom.wrap || !dom.qCard) return;
+    document.body.classList.remove('sfi-practice-set-active');
+    syncModeButtons(dom);
 
     if (!question) {
       showCompletionScreen();
@@ -1461,6 +1476,7 @@ const fallbackText = (item && item.sourceText) ||
   function showCompletionScreen() {
     updateReviewScheduleOnSessionComplete();
     const dom = getDOM();
+    document.body.classList.remove('sfi-practice-set-active');
     if (dom.wrap) dom.wrap.style.display = 'none';
     if (dom.completionScreen) dom.completionScreen.classList.add('show');
 

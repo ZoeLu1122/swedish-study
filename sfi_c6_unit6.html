@@ -508,12 +508,13 @@ const vocabData = [
 // ═══════════════════════════════════════════════════════════
 
 function renderNounCard(v) {
+  const headwordAudio = `${v.en} ${v.sv}`;
   const enBadge = v.en === 'en' ? `<span class="vc-en-badge en-b">🔵 en</span>` : `<span class="vc-en-badge ett-b">🟠 ett</span>`;
   const defHL = diffHL(v.sv, v.def, 'd-def'), plHL = diffHL(v.sv, v.pl, 'd-pl'), pldefHL = diffHL(v.sv, v.plDef, 'd-pd');
   return `<div class="vocab-card noun">
     <div class="vc-top"><span class="vc-type-badge">📦 名词</span>${enBadge}</div>
     <div class="vc-headword">
-      <span class="vc-headword-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.sv}" title="点击发音">${v.en} ${v.sv}</span>
+      <span class="vc-headword-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${headwordAudio}" title="点击发音">${headwordAudio}</span>
       <span class="vc-headword-py">${v.py}</span>
     </div>
     <div class="vc-form-row"><div class="vc-form-top"><span class="vc-row-label">定冠词</span><span class="vc-row-sv speak-word" onclick="speakWord(this.dataset.word)" data-word="${v.def}" title="点击发音">${defHL}</span></div><span class="vc-row-py">${v.defPy}</span></div>
@@ -547,6 +548,7 @@ function flipForms(v) {
 
 function makeFlipCard(v) {
   const dispSv = v.type === 'noun' ? `${v.en} ${v.sv}` : v.sv;
+  const audioWord = v.type === 'noun' ? dispSv : v.sv;
   const typeLabel = {noun:'名词', verb:'动词'}[v.type] || v.type;
   return `<div class="flip-card-wrap" onclick="flipCard(this)">
     <div class="flip-card-inner">
@@ -555,7 +557,7 @@ function makeFlipCard(v) {
         <div class="flip-type">${typeLabel}</div>
       </div>
       <div class="flip-back">
-        <div class="flip-sv speak-word" onclick="speakWord(this.dataset.word);event.stopPropagation();" data-word="${v.sv}" title="点击发音">${dispSv}</div>
+        <div class="flip-sv speak-word" onclick="speakWord(this.dataset.word);event.stopPropagation();" data-word="${audioWord}" title="点击发音">${dispSv}</div>
         <div class="flip-forms">${flipForms(v)}</div>
       </div>
     </div>
